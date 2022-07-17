@@ -78,9 +78,9 @@ def get_content(url_lst):
     else:
         #减少获取的个数
         if len(end_bas64) >= 150:
-            bas64 = ''.join(end_bas64[-150:]).replace('\n', "")
+            bas64 = ''.join(end_bas64[-50:]).replace('\n', "")
         elif 150 > len(end_bas64) >= 100:
-            bas64 = ''.join(end_bas64[-100:]).replace('\n', "")
+            bas64 = ''.join(end_bas64[-50:]).replace('\n', "")
         elif 100 > len(end_bas64) >= 50:
             bas64 = ''.join(end_bas64[-50:]).replace('\n', "")
         elif 50 > len(end_bas64) >= 10:
