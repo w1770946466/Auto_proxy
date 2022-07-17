@@ -89,6 +89,9 @@ def get_content(url_lst):
         file = open(txt_dir, 'w', encoding= 'utf-8')
         file.write(bas64)
         file.close()
+        file_L = open("Long_term_subscription.txt", 'w', encoding= 'utf-8')
+        file_L.write(bas64)
+        file_L.close()
         return end_list_clash[-1],end_list_v2ray[-1]
 
 
