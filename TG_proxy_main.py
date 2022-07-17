@@ -3,6 +3,7 @@ import base64
 import requests
 import re
 import time
+import os
 
 
 #获取群组聊天中的HTTP链接
