@@ -33,9 +33,6 @@ jobs:
         pip install -r ./requirements.txt
     - name: 执行任务
       run: |
-        wget -O subconverter.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
-        tar -zxvf subconverter.tar.gz -C ./
-        chmod +x ./subconverter/subconverter && nohup ./subconverter/subconverter >./subconverter.log 2>&1 &
         python ./TG_proxy_main.py
       
     - name: 提交更改
