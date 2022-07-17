@@ -75,7 +75,7 @@ def get_content(url_lst):
     else:
         #print(end_list[-1])
         bas64 = ''.join(end_bas64).replace('\n', "")
-        with open('./'+time.strftime('%Y%m%d', time.localtime())+'.txt', 'w') as f:
+        with open("./"+time.strftime('%Y%m%d', time.localtime())+"/"+time.strftime('%H:%M:%S', time.localtime())+'.txt', 'w') as f:
             f.write(bas64)
         return end_list_clash[-1],end_list_v2ray[-1]
 
