@@ -78,6 +78,8 @@ def get_content(url_lst):
     else:
         #print(end_list[-1])
         bas64 = ''.join(end_bas64).replace('\n', "")
+        obj = base64.b64encode(bas64.encode())
+        plaintext_result = obj.decode()
         t = time.localtime()
         date = time.strftime('%y%m', t)
         date_day = time.strftime('%y%m%d', t)
@@ -90,7 +92,7 @@ def get_content(url_lst):
         file.write(bas64)
         file.close()
         file_L = open("Long_term_subscription.txt", 'w', encoding= 'utf-8')
-        file_L.write(base64.b64encode(bas64.encode('utf-8')))
+        file_L.write(plaintext_result)
         file_L.close()
         return end_list_clash[-1],end_list_v2ray[-1]
 
