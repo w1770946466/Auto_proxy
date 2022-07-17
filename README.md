@@ -12,4 +12,4 @@
 ## ⏩使用方法
 将以下订阅链接导入相应客户端即可。链接中大部分为 SS 协议节点，少量 Vmess, Trojan ,SSR 协议节点，建议选择协议支持完整的客户端。
 
-- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription.txt)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription.txt`
+- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription`
