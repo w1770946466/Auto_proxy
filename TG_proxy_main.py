@@ -6,6 +6,8 @@ import time
 import os
 
 
+update_path = "./sub/"
+
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
     headers = {
@@ -76,10 +78,17 @@ def get_content(url_lst):
     else:
         #print(end_list[-1])
         bas64 = ''.join(end_bas64).replace('\n', "")
-        path = "./sub/"+time.strftime('%Y%m%d', time.localtime())+"/"+time.strftime('%H', time.localtime())
-        os.makedirs(path)
-        with open(path , 'w',encoding='utf-8') as f:
-            f.write(bas64)
+        t = time.localtime()
+        date = time.strftime('%y%m', t)
+        date_day = time.strftime('%y%m%d', t)
+        try:
+            os.mkdir(f'{update_path}{date}')
+        except FileExistsError:
+            pass
+        txt_dir = update_path + date + '/' + date_day + '.txt'
+        file = open(txt_dir, 'w', encoding= 'utf-8')
+        file.write(bas64)
+        file.close()
         return end_list_clash[-1],end_list_v2ray[-1]
 
 
