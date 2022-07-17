@@ -76,21 +76,37 @@ def get_content(url_lst):
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
-        #print(end_list[-1])
-        bas64 = ''.join(end_bas64).replace('\n', "")
+        #减少获取的个数
+        if len(end_bas64) >= 150:
+            bas64 = ''.join(end_bas64[-150:]).replace('\n', "")
+        elif 150 > len(end_bas64) >= 100:
+            bas64 = ''.join(end_bas64[-100:]).replace('\n', "")
+        elif 100 > len(end_bas64) >= 50:
+            bas64 = ''.join(end_bas64[-50:]).replace('\n', "")
+        elif 50 > len(end_bas64) >= 10:
+            bas64 = ''.join(end_bas64[-10:]).replace('\n', "")
+        elif len(end_bas64) == 0:
+            print("未获取节点，请检查后再试")
+            return 0
+        #将获得的节点变成base64加密，为了长期订阅
+        #print(len(end_bas64))
         obj = base64.b64encode(bas64.encode())
         plaintext_result = obj.decode()
+        #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
         date_day = time.strftime('%y%m%d', t)
+        #创建文件路径
         try:
             os.mkdir(f'{update_path}{date}')
         except FileExistsError:
             pass
         txt_dir = update_path + date + '/' + date_day + '.txt'
+        #写入时间订阅
         file = open(txt_dir, 'w', encoding= 'utf-8')
         file.write(bas64)
         file.close()
+        #写入长期订阅
         file_L = open("Long_term_subscription.txt", 'w', encoding= 'utf-8')
         file_L.write(plaintext_result)
         file_L.close()
