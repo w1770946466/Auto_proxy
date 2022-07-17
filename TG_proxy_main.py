@@ -75,7 +75,7 @@ def get_content(url_lst):
     else:
         #print(end_list[-1])
         bas64 = ''.join(end_bas64).replace('\n', "")
-        with open("./sub/"+time.strftime('%Y%m%d', time.localtime())+"/"+time.strftime('%H', time.localtime()), 'w',encoding='utf-8') as f:
+        with open("Auto_proxy/sub/"+time.strftime('%Y%m%d', time.localtime())+"/"+time.strftime('%H', time.localtime()), 'w',encoding='utf-8') as f:
             f.write(bas64)
         return end_list_clash[-1],end_list_v2ray[-1]
 
