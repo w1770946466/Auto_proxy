@@ -107,7 +107,7 @@ def get_content(url_lst):
         file.write(bas64)
         file.close()
         #写入长期订阅
-        file_L = open("Long_term_subscription.txt", 'w', encoding= 'utf-8')
+        file_L = open("Long_term_subscription", 'w', encoding= 'utf-8')
         file_L.write(plaintext_result)
         file_L.close()
         return end_list_clash[-1],end_list_v2ray[-1]
