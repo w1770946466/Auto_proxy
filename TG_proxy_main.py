@@ -114,6 +114,6 @@ def get_content(url_lst):
 
 
 if __name__ == '__main__':
-    url = "https://t.me/s/kxswa"
+    url = "https://t.me/s/airproxies"
     resp = get_content(get_channel_http(url))
     print(resp)
