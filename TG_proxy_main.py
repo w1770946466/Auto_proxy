@@ -87,7 +87,8 @@ def get_content(url_lst):
             bas64_list = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n").replace('\n\n', "\n")
         elif len(end_bas64) == 0:
             print("未获取节点，请检查后再试")
-            return 0
+            bas64_list = ''
+            return bas64_list
         #将获得的节点变成base64加密，为了长期订阅
         #print(bas64)
         obj = base64.b64encode(bas64_list.encode())
