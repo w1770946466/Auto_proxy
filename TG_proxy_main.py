@@ -7,6 +7,7 @@ import os
 
 
 update_path = "./sub/"
+end_bas64 = []
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
@@ -50,7 +51,6 @@ def get_content(url_lst):
     print("共获得", len(new_list), "条链接")
     end_list_clash = []
     end_list_v2ray = []
-    end_bas64 = []
     #获取单个订阅链接进行判断
     i = 1
     for o in new_list:
@@ -87,8 +87,7 @@ def get_content(url_lst):
             bas64_list = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n").replace('\n\n', "\n")
         elif len(end_bas64) == 0:
             print("未获取节点，请检查后再试")
-            bas64_list = ''
-            return bas64_list
+            return 0
         #将获得的节点变成base64加密，为了长期订阅
         #print(bas64)
         obj = base64.b64encode(bas64_list.encode())
