@@ -89,7 +89,8 @@ def get_content(url_lst):
             print("未获取节点，请检查后再试")
             return 0
         #将获得的节点变成base64加密，为了长期订阅
-        #print(bas64)
+        print(bas64_list)
+        print(len(bas64_list))
         obj = base64.b64encode(bas64_list.encode())
         plaintext_result = obj.decode()
         #获取时间，给文档命名用
