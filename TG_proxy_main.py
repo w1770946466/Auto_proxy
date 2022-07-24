@@ -80,18 +80,7 @@ def get_content(url_lst):
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
         #减少获取的个数
-        if len(end_bas64) >= 150:
-            bas64 = '\n'.join(end_bas64[-150:]).replace('\n\n', "\n").replace('\n\n', "\n")
-        elif 150 > len(end_bas64) >= 100:
-            bas64 = '\n'.join(end_bas64[-100:]).replace('\n\n', "\n").replace('\n\n', "\n")
-        elif 100 > len(end_bas64) >= 50:
-            bas64 = '\n'.join(end_bas64[-50:]).replace('\n\n', "\n").replace('\n\n', "\n")
-        elif 50 > len(end_bas64) >= 10:
-            bas64 = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n").replace('\n\n', "\n")
-        elif len(end_bas64) == 0:
-            print("未获取节点，请检查后再试")
-            return 0
-        #print(bas64)
+        bas64 = '\n'.join(end_bas64).replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
         obj = base64.b64encode(bas64.encode())
