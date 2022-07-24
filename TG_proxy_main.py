@@ -1,5 +1,6 @@
 # coding=utf-8
 import base64
+from email.mime import base
 import requests
 import re
 import time
@@ -7,9 +8,10 @@ import os
 
 
 update_path = "./sub/"
-end_bas64 = []
 
 #获取群组聊天中的HTTP链接
+
+
 def get_channel_http(url):
     headers = {
         'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
@@ -51,6 +53,7 @@ def get_content(url_lst):
     print("共获得", len(new_list), "条链接")
     end_list_clash = []
     end_list_v2ray = []
+    end_bas64 = []
     #获取单个订阅链接进行判断
     i = 1
     for o in new_list:
@@ -59,18 +62,18 @@ def get_content(url_lst):
         try:
             skuid = re.findall('proxies:', res.text)[0]
             if skuid == "proxies:":
-                print(i,".这是个clash订阅", o)
+                print(i, ".这是个clash订阅", o)
                 end_list_clash.append(o)
         except:
             #判断是否为v2
             try:
                 peoxy = jiemi_base64(res.text)
-                print(i,".这是个v2ray订阅", o)
+                print(i, ".这是个v2ray订阅", o)
                 end_list_v2ray.append(o)
                 end_bas64.append(peoxy)
             #均不是则非订阅链接
             except:
-                print(i,".非订阅链接")
+                print(i, ".非订阅链接")
         i += 1
     if end_list_v2ray == [] or end_list_clash == []:
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
@@ -78,20 +81,20 @@ def get_content(url_lst):
     else:
         #减少获取的个数
         if len(end_bas64) >= 150:
-            bas64_list = '\n'.join(end_bas64[-150:]).replace('\n\n', "\n")
+            bas64 = '\n'.join(end_bas64[-150:]).replace('\n\n', "\n").replace('\n\n', "\n")
         elif 150 > len(end_bas64) >= 100:
-            bas64_list = '\n'.join(end_bas64[-100:]).replace('\n\n', "\n")
+            bas64 = '\n'.join(end_bas64[-100:]).replace('\n\n', "\n").replace('\n\n', "\n")
         elif 100 > len(end_bas64) >= 50:
-            bas64_list = '\n'.join(end_bas64[-50:]).replace('\n\n', "\n")
+            bas64 = '\n'.join(end_bas64[-50:]).replace('\n\n', "\n").replace('\n\n', "\n")
         elif 50 > len(end_bas64) >= 10:
-            bas64_list = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n")
+            bas64 = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n").replace('\n\n', "\n")
         elif len(end_bas64) == 0:
             print("未获取节点，请检查后再试")
             return 0
+        #print(bas64)
         #将获得的节点变成base64加密，为了长期订阅
-        print(bas64_list)
-        print(len(bas64_list))
-        obj = base64.b64encode(bas64_list.encode())
+        #print(len(end_bas64))
+        obj = base64.b64encode(bas64.encode())
         plaintext_result = obj.decode()
         #获取时间，给文档命名用
         t = time.localtime()
@@ -104,15 +107,14 @@ def get_content(url_lst):
             pass
         txt_dir = update_path + date + '/' + date_day + '.txt'
         #写入时间订阅
-        file = open(txt_dir, 'w', encoding= 'utf-8')
-        file.write(bas64_list)
+        file = open(txt_dir, 'w', encoding='utf-8')
+        file.write(bas64)
         file.close()
         #写入长期订阅
-        file_L = open("Long_term_subscription", 'w', encoding= 'utf-8')
+        file_L = open("Long_term_subscription", 'w', encoding='utf-8')
         file_L.write(plaintext_result)
         file_L.close()
-        return end_list_clash[-1],end_list_v2ray[-1]
-
+        return end_list_clash[-1], end_list_v2ray[-1]
 
 if __name__ == '__main__':
     url = "https://t.me/s/airproxies"
