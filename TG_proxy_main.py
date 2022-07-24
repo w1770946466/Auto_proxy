@@ -78,13 +78,13 @@ def get_content(url_lst):
     else:
         #减少获取的个数
         if len(end_bas64) >= 150:
-            bas64_list = '\n'.join(end_bas64[-150:]).replace('\n\n', "\n").replace('\n\n', "\n")
+            bas64_list = '\n'.join(end_bas64[-150:]).replace('\n\n', "\n")
         elif 150 > len(end_bas64) >= 100:
-            bas64_list = '\n'.join(end_bas64[-100:]).replace('\n\n', "\n").replace('\n\n', "\n")
+            bas64_list = '\n'.join(end_bas64[-100:]).replace('\n\n', "\n")
         elif 100 > len(end_bas64) >= 50:
-            bas64_list = '\n'.join(end_bas64[-50:]).replace('\n\n', "\n").replace('\n\n', "\n")
+            bas64_list = '\n'.join(end_bas64[-50:]).replace('\n\n', "\n")
         elif 50 > len(end_bas64) >= 10:
-            bas64_list = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n").replace('\n\n', "\n")
+            bas64_list = '\n'.join(end_bas64[-10:]).replace('\n\n', "\n")
         elif len(end_bas64) == 0:
             print("未获取节点，请检查后再试")
             return 0
@@ -104,7 +104,7 @@ def get_content(url_lst):
         txt_dir = update_path + date + '/' + date_day + '.txt'
         #写入时间订阅
         file = open(txt_dir, 'w', encoding= 'utf-8')
-        file.write(bas64)
+        file.write(bas64_list)
         file.close()
         #写入长期订阅
         file_L = open("Long_term_subscription", 'w', encoding= 'utf-8')
