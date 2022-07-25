@@ -17,3 +17,5 @@
 另有国内加速链接：
 
 - [多协议Base64编码](https://v1.mk/vihVzbR)`https://v1.mk/vihVzbR`
+
+- [clash订阅](https://v1.mk/JwFAciY)`https://v1.mk/JwFAciY`
