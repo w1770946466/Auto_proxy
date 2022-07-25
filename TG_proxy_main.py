@@ -106,6 +106,6 @@ def get_content(url_lst):
         return end_list_clash[-1], end_list_v2ray[-1]
 
 if __name__ == '__main__':
-    url = "https://t.me/s/kxswa"
+    url = "https://t.me/s/airproxies"
     resp = get_content(get_channel_http(url))
     print(resp)
