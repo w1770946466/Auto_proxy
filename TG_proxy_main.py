@@ -57,23 +57,27 @@ def get_content(url_lst):
     #获取单个订阅链接进行判断
     i = 1
     for o in new_list:
-        res = requests.get(o)
-        #判断是否为clash
         try:
-            skuid = re.findall('proxies:', res.text)[0]
-            if skuid == "proxies:":
-                print(i, ".这是个clash订阅", o)
-                end_list_clash.append(o)
-        except:
-            #判断是否为v2
+            res = requests.get(o)
+            #判断是否为clash
             try:
-                peoxy = jiemi_base64(res.text)
-                print(i, ".这是个v2ray订阅", o)
-                end_list_v2ray.append(o)
-                end_bas64.append(peoxy)
-            #均不是则非订阅链接
+                skuid = re.findall('proxies:', res.text)[0]
+                if skuid == "proxies:":
+                    print(i, ".这是个clash订阅", o)
+                    end_list_clash.append(o)
             except:
-                print(i, ".非订阅链接")
+                #判断是否为v2
+                try:
+                    #解密base64
+                    peoxy = jiemi_base64(res.text)
+                    print(i, ".这是个v2ray订阅", o)
+                    end_list_v2ray.append(o)
+                    end_bas64.append(peoxy)
+                #均不是则非订阅链接
+                except:
+                    print(i, ".非订阅链接")
+        except:
+            print("第",i,"个链接获取失败跳过！")
         i += 1
     if end_list_v2ray == [] or end_list_clash == []:
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
