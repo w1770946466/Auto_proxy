@@ -77,7 +77,7 @@ def get_content(url_lst):
                 except:
                     print(i, ".非订阅链接")
         except:
-            print("第",i,"个链接获取失败跳过！")
+            print(i, ".链接内容获取失败跳过！")
         i += 1
     if end_list_v2ray == [] or end_list_clash == []:
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
