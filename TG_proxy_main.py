@@ -6,12 +6,19 @@ import re
 import time
 import os
 
-
+#文件路径
 update_path = "./sub/"
+#所有的clash订阅链接
+end_list_clash = []
+#所有的v2ray订阅链接
+end_list_v2ray = []
+#所有的节点明文信息
+end_bas64 = []
+#获得格式化后的链接
+new_list = []
+
 
 #获取群组聊天中的HTTP链接
-
-
 def get_channel_http(url):
     headers = {
         'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
@@ -22,7 +29,8 @@ def get_channel_http(url):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
         'sec-ch-ua-platform': '"Windows"',
     }
-    response = requests.post(url, headers=headers)
+    response = requests.post(
+        url, headers=headers)
     #print(response.text)
     pattren = re.compile(r'"https+:[^\s]*"')
     url_lst = pattren.findall(response.text)
@@ -43,7 +51,6 @@ def jiemi_base64(data):  # 解密base64
 
 #判读是否为订阅链接
 def get_content(url_lst):
-    new_list = []
     #对链接进行格式化
     for i in url_lst:
         result = i.replace("\\", "").replace('"', "")
@@ -51,9 +58,6 @@ def get_content(url_lst):
             new_list.append(result)
     #print(new_list)
     print("共获得", len(new_list), "条链接")
-    end_list_clash = []
-    end_list_v2ray = []
-    end_bas64 = []
     #获取单个订阅链接进行判断
     i = 1
     for o in new_list:
@@ -77,8 +81,12 @@ def get_content(url_lst):
                 except:
                     print(i, ".非订阅链接")
         except:
-            print(i, ".链接内容获取失败跳过！")
+            print("第",i,"个链接获取失败跳过！")
         i += 1
+    return
+
+
+def  write_document():
     if end_list_v2ray == [] or end_list_clash == []:
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
@@ -107,9 +115,14 @@ def get_content(url_lst):
         file_L = open("Long_term_subscription", 'w', encoding='utf-8')
         file_L.write(plaintext_result)
         file_L.close()
-        return end_list_clash[-1], end_list_v2ray[-1]
+        print("任务完成！")
+        return 
 
 if __name__ == '__main__':
-    url = "https://t.me/s/kxswa"
-    resp = get_content(get_channel_http(url))
-    print(resp)
+    urls = ["https://t.me/s/airproxies",
+           "https://t.me/s/kxswa", "https://t.me/s/baipiao01"]
+    for url in urls:
+        resp = get_content(get_channel_http(url))
+        print(url,"获取完毕！！")
+    res = write_document()
+    print("执行完毕！！")
