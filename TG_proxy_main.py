@@ -1,6 +1,5 @@
 # coding=utf-8
 import base64
-from email.mime import base
 import requests
 import re
 import time
@@ -92,11 +91,18 @@ def  write_document():
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
         #减少获取的个数
-        bas64 = '\n'.join(end_bas64).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
+        bas64 = '\n'.join(end_bas64).replace(
+            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
+        bas64_one = '\n'.join(end_bas64[len(end_bas64)%2:]).replace(
+            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
+        bas64_two = '\n'.join(end_bas64[0:len(end_bas64)%2]).replace(
+            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
-        obj = base64.b64encode(bas64.encode())
-        plaintext_result = obj.decode()
+        obj_one = base64.b64encode(bas64_one.encode())
+        plaintext_result_one = obj_one.decode()
+        obj_two= base64.b64encode(bas64_two.encode())
+        plaintext_result_two = obj_two.decode()
         #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
@@ -113,7 +119,10 @@ def  write_document():
         file.close()
         #写入长期订阅
         file_L = open("Long_term_subscription", 'w', encoding='utf-8')
-        file_L.write(plaintext_result)
+        file_L.write(plaintext_result_one)
+        file_L.close()
+        file_L = open("Long_term_subscription2", 'w', encoding='utf-8')
+        file_L.write(plaintext_result_two)
         file_L.close()
         print("任务完成！")
         return 
