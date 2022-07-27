@@ -93,9 +93,9 @@ def  write_document():
         #减少获取的个数
         bas64 = '\n'.join(end_bas64).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_one = '\n'.join(end_bas64[len(end_bas64)%2:]).replace(
+        bas64_one = '\n'.join(end_bas64[len(end_bas64) // 2:]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_two = '\n'.join(end_bas64[0:len(end_bas64)%2]).replace(
+        bas64_two = '\n'.join(end_bas64[0:len(end_bas64) // 2]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
