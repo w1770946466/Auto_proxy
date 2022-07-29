@@ -93,9 +93,11 @@ def  write_document():
         #减少获取的个数
         bas64 = '\n'.join(end_bas64).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_one = '\n'.join(end_bas64[len(end_bas64) // 2:]).replace(
+        bas64_one = '\n'.join(end_bas64[0 : len(end_bas64)//3:]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_two = '\n'.join(end_bas64[0:len(end_bas64) // 2]).replace(
+        bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3 : len(end_bas64) // (3/2)]).replace(
+            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
+        bas64_three = '\n'.join(end_bas64[len(end_bas64) // (3/2):]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
@@ -103,6 +105,8 @@ def  write_document():
         plaintext_result_one = obj_one.decode()
         obj_two= base64.b64encode(bas64_two.encode())
         plaintext_result_two = obj_two.decode()
+        obj_three = base64.b64encode(bas64_three.encode())
+        plaintext_result_three= obj_three.decode()
         #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
@@ -123,6 +127,9 @@ def  write_document():
         file_L.close()
         file_L = open("Long_term_subscription2", 'w', encoding='utf-8')
         file_L.write(plaintext_result_two)
+        file_L.close()
+        file_L = open("Long_term_subscription3", 'w', encoding='utf-8')
+        file_L.write(plaintext_result_three)
         file_L.close()
         print("任务完成！")
         return 
