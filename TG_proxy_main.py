@@ -95,9 +95,9 @@ def  write_document():
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         bas64_one = '\n'.join(end_bas64[0 : len(end_bas64)//3:]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3 : len(end_bas64) // (3/2)]).replace(
+        bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3 : len(end_bas64)*2 // 3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_three = '\n'.join(end_bas64[len(end_bas64) // (3/2):]).replace(
+        bas64_three = '\n'.join(end_bas64[len(end_bas64)*2 // 3:]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
