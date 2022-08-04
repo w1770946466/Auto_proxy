@@ -135,8 +135,7 @@ def  write_document():
         return 
 
 if __name__ == '__main__':
-    urls = ["https://t.me/s/airproxies",
-           "https://t.me/s/kxswa", "https://t.me/s/baipiao01"]
+    urls = ["https://t.me/s/airproxies", "https://t.me/s/baipiao01"]
     for url in urls:
         resp = get_content(get_channel_http(url))
         print(url,"获取完毕！！")
