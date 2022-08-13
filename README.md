@@ -20,4 +20,4 @@
 
 - [clash订阅](https://v1.mk/JwFAciY)`https://v1.mk/JwFAciY`
 
-- [clash订阅2](https://sub.cm/zDgsO0D)`https://sub.cm/zDgsO0D
+- [clash订阅2](https://sub.cm/zDgsO0D)`https://sub.cm/zDgsO0D`
