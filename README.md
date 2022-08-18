@@ -14,6 +14,10 @@
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription`
 
+- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2
+
+- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3
+
 另有国内加速链接：
 
 - [多协议Base64编码](https://v1.mk/vihVzbR)`https://v1.mk/vihVzbR`
