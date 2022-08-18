@@ -59,6 +59,7 @@ def get_content(url_lst):
     print("共获得", len(new_list), "条链接")
     #获取单个订阅链接进行判断
     i = 1
+    new_list = new_list[len(new_list)//2 : -1 ]
     for o in new_list:
         try:
             res = requests.get(o)
@@ -93,7 +94,7 @@ def  write_document():
         #减少获取的个数
         bas64 = '\n'.join(end_bas64).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_one = '\n'.join(end_bas64[0 : len(end_bas64)//3:]).replace(
+        bas64_one = '\n'.join(end_bas64[0 : len(end_bas64)//3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3 : len(end_bas64)*2 // 3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
