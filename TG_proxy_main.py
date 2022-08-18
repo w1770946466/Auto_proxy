@@ -56,10 +56,11 @@ def get_content(url_lst):
         if result not in new_list:
             new_list.append(result)
     #print(new_list)
-    print("共获得", len(new_list), "条链接")
+    #print("共获得", len(new_list), "条链接")
     #获取单个订阅链接进行判断
     i = 1
     new_list_down = new_list[len(new_list) * 2 // 3 : -1 ]
+    print("共获得", len(new_list_down), "条链接")
     for o in new_list_down:
         try:
             res = requests.get(o)
