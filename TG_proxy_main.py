@@ -138,6 +138,7 @@ def write_document():
 
 #获取clash订阅
 def get_yaml():
+    print("开始获取clsah订阅")
     urls = ["https://v1.mk/JwFAciY",
             "https://v1.mk/pZq0jn7", "https://v1.mk/gQ9lQJO"]
     n = 1
