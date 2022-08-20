@@ -59,7 +59,7 @@ def get_content(url_lst):
     #print("共获得", len(new_list), "条链接")
     #获取单个订阅链接进行判断
     i = 1
-    new_list_down = new_list[len(new_list) * 2 // 3 : -1 ]
+    new_list_down = new_list[len(new_list) * 2 // 3: -1]
     print("共获得", len(new_list_down), "条链接")
     for o in new_list_down:
         try:
@@ -82,12 +82,12 @@ def get_content(url_lst):
                 except:
                     print(i, ".非订阅链接")
         except:
-            print("第",i,"个链接获取失败跳过！")
+            print("第", i, "个链接获取失败跳过！")
         i += 1
     return
 
 
-def  write_document():
+def write_document():
     if end_list_v2ray == [] or end_list_clash == []:
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
@@ -95,20 +95,20 @@ def  write_document():
         #减少获取的个数
         bas64 = '\n'.join(end_bas64).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_one = '\n'.join(end_bas64[0 : len(end_bas64)//3]).replace(
+        bas64_one = '\n'.join(end_bas64[0: len(end_bas64)//3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3 : len(end_bas64)*2 // 3]).replace(
+        bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3: len(end_bas64)*2 // 3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_three = '\n'.join(end_bas64[len(end_bas64)*2 // 3 : -1]).replace(
+        bas64_three = '\n'.join(end_bas64[len(end_bas64)*2 // 3: -1]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
         obj_one = base64.b64encode(bas64_one.encode())
         plaintext_result_one = obj_one.decode()
-        obj_two= base64.b64encode(bas64_two.encode())
+        obj_two = base64.b64encode(bas64_two.encode())
         plaintext_result_two = obj_two.decode()
         obj_three = base64.b64encode(bas64_three.encode())
-        plaintext_result_three= obj_three.decode()
+        plaintext_result_three = obj_three.decode()
         #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
@@ -134,12 +134,29 @@ def  write_document():
         file_L.write(plaintext_result_three)
         file_L.close()
         print("任务完成！")
-        return 
+    return
+
+#获取clash订阅
+def get_yaml():
+    urls = ["https://v1.mk/JwFAciY",
+            "https://v1.mk/pZq0jn7", "https://v1.mk/gQ9lQJO"]
+    n = 1
+    for i in urls:
+        response = requests.get(i)
+        #print(response.text)
+        file_L = open("Long_term_subscription" + str(n) +".yaml", 'w', encoding='utf-8')
+        file_L.write(response.text)
+        file_L.close()
+        n += 1
+    print("clash订阅获取完成！")
+
 
 if __name__ == '__main__':
-    urls = ["https://t.me/s/airproxies", "https://t.me/s/baipiao01", "https://t.me/s/Jsnzk", "https://t.me/s/masco899", "https://t.me/s/fffffx2"]
+    urls = ["https://t.me/s/airproxies", "https://t.me/s/baipiao01",
+            "https://t.me/s/Jsnzk", "https://t.me/s/masco899", "https://t.me/s/fffffx2"]
     for url in urls:
         resp = get_content(get_channel_http(url))
-        print(url,"获取完毕！！")
+        print(url, "获取完毕！！")
     res = write_document()
+    clash_sub = get_yaml()
     print("执行完毕！！")
