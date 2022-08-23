@@ -118,6 +118,18 @@ proxies:
   - {name: 台北Sky-dip, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4}
   - {name: 🇨🇳 台湾 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4}
   - {name: 🇨🇳 台湾 3, server: 103.177.32.202, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 99a98b14cf3a}
+  - {name: "🇭🇰 香港✈️中转 [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: 7934b860-42ce-46bc-bff5-2c359cced9ed, sni: xg1.xianggang1.xyz, skip-cert-verify: false}
+  - {name: "🇨🇳 台湾✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 31097, type: trojan, password: 7934b860-42ce-46bc-bff5-2c359cced9ed, sni: aa1.liumeit.xyz, skip-cert-verify: false}
+  - {name: "🇰🇷 韩国✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 39124, type: trojan, password: 7934b860-42ce-46bc-bff5-2c359cced9ed, sni: hg1.hanguo1.xyz, skip-cert-verify: false}
+  - {name: "🇸🇬 新加坡✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 26539, type: trojan, password: 7934b860-42ce-46bc-bff5-2c359cced9ed, sni: xjp1.xinjiapo1.xyz, skip-cert-verify: false}
+  - {name: "🇸🇬 新加坡✈️中转 [广州BGP]", server: az.az-bgp.chuangshi999.xyz, port: 30484, type: trojan, password: 7934b860-42ce-46bc-bff5-2c359cced9ed, sni: xjp1.xinjiapo1.xyz, skip-cert-verify: false}
+  - {name: "🇷🇺 俄罗斯✈️中转  [湘沪BGP]", server: hlu.bgp2.liuliangzhuanfa.xyz, port: 42167, type: trojan, password: 7934b860-42ce-46bc-bff5-2c359cced9ed, sni: els1.eluosi1.xyz, skip-cert-verify: false}
+  - {name: cxkv2.xyz, server: 6.3.2.2, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾 4, server: 716tw.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 716tw.fx6688.top}}}
+  - {name: 🇭🇰 香港0, server: 810hk01.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 810hk01.fx6688.top}}}
+  - {name: 🇭🇰 香港1, server: 810hk05.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 810hk05.fx6688.top}}}
+  - {name: 🇭🇰 香港2, server: 817hk.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 817hk.fx6688.top}}}
+  - {name: 🇭🇰 香港6-三网优化-强加密, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}}
   - {name: 🇺🇸 「TCP」海外·美国｜US, server: us.msuoolwbcmkrefye.spnet.vip, port: 1089, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 「绿通」海外·美国｜US, server: 23.94.123.76, port: 46794, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
   - {name: 🇺🇸 「广停」海外·美国｜US, server: us.msuoolwbcmkrefye.spnet.vip, port: 1082, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
@@ -206,62 +218,6 @@ proxies:
   - {name: 🇨🇳 lv1 台湾TFN1 直连 2, server: 211.23.149.95, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
   - {name: 🇺🇸 lv1 美国1 2, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
   - {name: 🇺🇸 lv1 美国2 2, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台北Hinet-dip 6, server: 60.251.66.118, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4}
-  - {name: 🇨🇳 新北Hinet-dip 3, server: 59.125.98.30, port: 443, type: ss, cipher: aes-256-gcm, password: be0c0bd0c146}
-  - {name: 🇨🇳 台湾03 2, server: 59.125.98.29, port: 443, type: ss, cipher: aes-256-gcm, password: 301c9d6c6e14}
-  - {name: 🇨🇳 台北Hinet-dip 7, server: 61.220.179.25, port: 443, type: ss, cipher: aes-256-gcm, password: 7e8cf62e17ca}
-  - {name: 🇭🇰 香港BCPL 4, server: 27.124.38.42, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9}
-  - {name: 🇨🇳 新北Hinet-dip 4, server: 59.125.98.29, port: 443, type: ss, cipher: aes-256-gcm, password: 301c9d6c6e14}
-  - {name: 🇭🇰 香港亿速云-dip 2, server: 154.221.22.201, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a11a783e60ec}
-  - {name: 🇨🇳 台湾 4, server: 61.220.179.25, port: 443, type: ss, cipher: aes-256-gcm, password: 7e8cf62e17ca}
-  - {name: 🇨🇳 台北Hinet-dip 8, server: 61.220.191.237, port: 443, type: ss, cipher: aes-256-gcm, password: 45f98047b87c}
-  - {name: 🇸🇬 新加坡 2, server: 27.124.38.41, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9}
-  - {name: 🇭🇰 香港BCPL 5, server: 27.124.38.41, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9}
-  - {name: Bangkok-Metrabyte 3, server: 119.59.127.153, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 161df779f26d}
-  - {name: Gyeonggi_do-Daou-dip 2, server: 27.102.106.171, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 40d5089833fc}
-  - {name: 🇯🇵 日本01 2, server: 137.220.244.204, port: 1443, type: ss, cipher: aes-256-gcm, password: d11f468ac5ca}
-  - {name: 🇯🇵 Tokyo-BCPL 3, server: 137.220.244.207, port: 1443, type: ss, cipher: aes-256-gcm, password: d11f468ac5ca}
-  - {name: 🇯🇵 Tokyo-Kirin-dip 2, server: 103.177.244.31, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a1e041734a14}
-  - {name: 🇰🇷 韩国 2, server: 27.102.66.214, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4b7c2bae5095}
-  - {name: 这是教程赠送免费节点 2, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: edge.apple.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港 2, server: 154.221.22.201, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a11a783e60ec}
-  - {name: 🇯🇵 Tokyo-BCPL 4, server: 137.220.244.204, port: 1443, type: ss, cipher: aes-256-gcm, password: d11f468ac5ca}
-  - {name: Bangkok-Metrabyte 4, server: 119.59.127.110, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 665e01c008a0}
-  - {name: LAX-Sharktech 2, server: 107.167.2.186, port: 443, type: ss, cipher: aes-256-gcm, password: 93310e8db124}
-  - {name: 🇨🇳 台北Hinet-dip 9, server: 61.220.179.26, port: 4433, type: ss, cipher: aes-256-gcm, password: 03378e208106}
-  - {name: 🇨🇳 台湾10 2, server: 61.220.191.237, port: 443, type: ss, cipher: aes-256-gcm, password: 45f98047b87c}
-  - {name: 🇯🇵 日本 2, server: 103.177.244.31, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a1e041734a14}
-  - {name: 🇨🇳 台北Hinet-dip 10, server: 210.71.190.104, port: 443, type: ss, cipher: aes-256-gcm, password: 4618413f9a07}
-  - {name: 🇺🇸 美国 4, server: 174.139.49.26, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a69428cc1964}
-  - {name: 🇭🇰 香港BCPL 6, server: 27.124.38.39, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8cad99fbe8b9}
-  - {name: 🇺🇸 美国01 2, server: 107.167.2.186, port: 443, type: ss, cipher: aes-256-gcm, password: 93310e8db124}
-  - {name: LAX-Krypt 3, server: 67.229.101.66, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d73446755f5d}
-  - {name: 🇺🇸 美国 5, server: 67.229.101.66, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d73446755f5d}
-  - {name: LAX-Krypt 4, server: 67.229.154.34, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: b4b2140ea45e}
-  - {name: Orange-Krypt 2, server: 174.139.49.26, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a69428cc1964}
-  - {name: 🇺🇸 美国 6, server: 67.229.154.34, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: b4b2140ea45e}
-  - {name: 🇩🇪 德国 2, server: 89.163.222.8, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 6452617cd30d}
-  - {name: 🇹🇭 泰国 2, server: 119.59.127.110, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 665e01c008a0}
-  - {name: Dusseldorf-myLoc 2, server: 89.163.222.8, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 6452617cd30d}
-  - {name: 台北Sky-dip 2, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4}
-  - {name: 🇨🇳 台湾 5, server: 103.177.32.147, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8247a4cf6ed4}
-  - {name: 🇨🇳 台湾 6, server: 103.177.32.202, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 99a98b14cf3a}
-  - {name: 距离下次重置剩余：8 天, server: agroup.node1.t.nodelist-gfwairport.download, port: 50001, type: trojan, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, skip-cert-verify: false}
-  - {name: "🇯🇵 Tokyo, Tj", server: agroup.node1.t.nodelist-gfwairport.download, port: 50001, type: trojan, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, skip-cert-verify: false}
-  - {name: "Incheon, Tj", server: agroup.node2.t.nodelist-gfwairport.download, port: 50001, type: trojan, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, skip-cert-verify: false}
-  - {name: "🇸🇬 Singapore, Tj", server: agroup.node3.t.nodelist-gfwairport.download, port: 50001, type: trojan, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, skip-cert-verify: false}
-  - {name: "🇭🇰 Hongkong, Tj", server: agroup.node4.t.nodelist-gfwairport.download, port: 50001, type: trojan, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, skip-cert-verify: false}
-  - {name: "California, Tj", server: agroup.node5.t.nodelist-gfwairport.download, port: 50001, type: trojan, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, skip-cert-verify: false}
-  - {name: "🇯🇵 Tokyo, SS", server: agroup.node1.s.nodelist-gfwairport.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac}
-  - {name: "Incheon, SS", server: agroup.node2.s.nodelist-gfwairport.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac}
-  - {name: "🇸🇬 Singapore, SS", server: agroup.node3.s.nodelist-gfwairport.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac}
-  - {name: "🇭🇰 Hongkong, SS", server: agroup.node4.s.nodelist-gfwairport.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac}
-  - {name: "California, SS", server: agroup.node5.s.nodelist-gfwairport.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac}
-  - {name: "🇯🇵 Tokyo, V2", server: agroup.node1.v.nodelist-gfwairport.download, port: 50001, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "Incheon, V2", server: agroup.node2.v.nodelist-gfwairport.download, port: 50001, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇸🇬 Singapore, V2", server: agroup.node3.v.nodelist-gfwairport.download, port: 50001, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 Hongkong, V2", server: agroup.node4.v.nodelist-gfwairport.download, port: 50001, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "California, V2", server: agroup.node5.v.nodelist-gfwairport.download, port: 50001, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -393,6 +349,18 @@ proxy-groups:
       - 台北Sky-dip
       - 🇨🇳 台湾 2
       - 🇨🇳 台湾 3
+      - 🇭🇰 香港✈️中转 [湘沪BGP]
+      - 🇨🇳 台湾✈️中转  [湘沪BGP]
+      - 🇰🇷 韩国✈️中转 [广州BGP]
+      - 🇸🇬 新加坡✈️中转  [湘沪BGP]
+      - 🇸🇬 新加坡✈️中转 [广州BGP]
+      - 🇷🇺 俄罗斯✈️中转  [湘沪BGP]
+      - cxkv2.xyz
+      - 🇨🇳 台湾 4
+      - 🇭🇰 香港0
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港6-三网优化-强加密
       - 🇺🇸 「TCP」海外·美国｜US
       - 🇺🇸 「绿通」海外·美国｜US
       - 🇺🇸 「广停」海外·美国｜US
@@ -481,62 +449,6 @@ proxy-groups:
       - 🇨🇳 lv1 台湾TFN1 直连 2
       - 🇺🇸 lv1 美国1 2
       - 🇺🇸 lv1 美国2 2
-      - 🇨🇳 台北Hinet-dip 6
-      - 🇨🇳 新北Hinet-dip 3
-      - 🇨🇳 台湾03 2
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇭🇰 香港BCPL 4
-      - 🇨🇳 新北Hinet-dip 4
-      - 🇭🇰 香港亿速云-dip 2
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 新加坡 2
-      - 🇭🇰 香港BCPL 5
-      - Bangkok-Metrabyte 3
-      - Gyeonggi_do-Daou-dip 2
-      - 🇯🇵 日本01 2
-      - 🇯🇵 Tokyo-BCPL 3
-      - 🇯🇵 Tokyo-Kirin-dip 2
-      - 🇰🇷 韩国 2
-      - 这是教程赠送免费节点 2
-      - 🇭🇰 香港 2
-      - 🇯🇵 Tokyo-BCPL 4
-      - Bangkok-Metrabyte 4
-      - LAX-Sharktech 2
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台湾10 2
-      - 🇯🇵 日本 2
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 美国 4
-      - 🇭🇰 香港BCPL 6
-      - 🇺🇸 美国01 2
-      - LAX-Krypt 3
-      - 🇺🇸 美国 5
-      - LAX-Krypt 4
-      - Orange-Krypt 2
-      - 🇺🇸 美国 6
-      - 🇩🇪 德国 2
-      - 🇹🇭 泰国 2
-      - Dusseldorf-myLoc 2
-      - 台北Sky-dip 2
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 Tokyo, Tj
-      - Incheon, Tj
-      - 🇸🇬 Singapore, Tj
-      - 🇭🇰 Hongkong, Tj
-      - California, Tj
-      - 🇯🇵 Tokyo, SS
-      - Incheon, SS
-      - 🇸🇬 Singapore, SS
-      - 🇭🇰 Hongkong, SS
-      - California, SS
-      - 🇯🇵 Tokyo, V2
-      - Incheon, V2
-      - 🇸🇬 Singapore, V2
-      - 🇭🇰 Hongkong, V2
-      - California, V2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -656,6 +568,18 @@ proxy-groups:
       - 台北Sky-dip
       - 🇨🇳 台湾 2
       - 🇨🇳 台湾 3
+      - 🇭🇰 香港✈️中转 [湘沪BGP]
+      - 🇨🇳 台湾✈️中转  [湘沪BGP]
+      - 🇰🇷 韩国✈️中转 [广州BGP]
+      - 🇸🇬 新加坡✈️中转  [湘沪BGP]
+      - 🇸🇬 新加坡✈️中转 [广州BGP]
+      - 🇷🇺 俄罗斯✈️中转  [湘沪BGP]
+      - cxkv2.xyz
+      - 🇨🇳 台湾 4
+      - 🇭🇰 香港0
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港6-三网优化-强加密
       - 🇺🇸 「TCP」海外·美国｜US
       - 🇺🇸 「绿通」海外·美国｜US
       - 🇺🇸 「广停」海外·美国｜US
@@ -744,62 +668,6 @@ proxy-groups:
       - 🇨🇳 lv1 台湾TFN1 直连 2
       - 🇺🇸 lv1 美国1 2
       - 🇺🇸 lv1 美国2 2
-      - 🇨🇳 台北Hinet-dip 6
-      - 🇨🇳 新北Hinet-dip 3
-      - 🇨🇳 台湾03 2
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇭🇰 香港BCPL 4
-      - 🇨🇳 新北Hinet-dip 4
-      - 🇭🇰 香港亿速云-dip 2
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 新加坡 2
-      - 🇭🇰 香港BCPL 5
-      - Bangkok-Metrabyte 3
-      - Gyeonggi_do-Daou-dip 2
-      - 🇯🇵 日本01 2
-      - 🇯🇵 Tokyo-BCPL 3
-      - 🇯🇵 Tokyo-Kirin-dip 2
-      - 🇰🇷 韩国 2
-      - 这是教程赠送免费节点 2
-      - 🇭🇰 香港 2
-      - 🇯🇵 Tokyo-BCPL 4
-      - Bangkok-Metrabyte 4
-      - LAX-Sharktech 2
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台湾10 2
-      - 🇯🇵 日本 2
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 美国 4
-      - 🇭🇰 香港BCPL 6
-      - 🇺🇸 美国01 2
-      - LAX-Krypt 3
-      - 🇺🇸 美国 5
-      - LAX-Krypt 4
-      - Orange-Krypt 2
-      - 🇺🇸 美国 6
-      - 🇩🇪 德国 2
-      - 🇹🇭 泰国 2
-      - Dusseldorf-myLoc 2
-      - 台北Sky-dip 2
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 Tokyo, Tj
-      - Incheon, Tj
-      - 🇸🇬 Singapore, Tj
-      - 🇭🇰 Hongkong, Tj
-      - California, Tj
-      - 🇯🇵 Tokyo, SS
-      - Incheon, SS
-      - 🇸🇬 Singapore, SS
-      - 🇭🇰 Hongkong, SS
-      - California, SS
-      - 🇯🇵 Tokyo, V2
-      - Incheon, V2
-      - 🇸🇬 Singapore, V2
-      - 🇭🇰 Hongkong, V2
-      - California, V2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -919,6 +787,18 @@ proxy-groups:
       - 台北Sky-dip
       - 🇨🇳 台湾 2
       - 🇨🇳 台湾 3
+      - 🇭🇰 香港✈️中转 [湘沪BGP]
+      - 🇨🇳 台湾✈️中转  [湘沪BGP]
+      - 🇰🇷 韩国✈️中转 [广州BGP]
+      - 🇸🇬 新加坡✈️中转  [湘沪BGP]
+      - 🇸🇬 新加坡✈️中转 [广州BGP]
+      - 🇷🇺 俄罗斯✈️中转  [湘沪BGP]
+      - cxkv2.xyz
+      - 🇨🇳 台湾 4
+      - 🇭🇰 香港0
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港6-三网优化-强加密
       - 🇺🇸 「TCP」海外·美国｜US
       - 🇺🇸 「绿通」海外·美国｜US
       - 🇺🇸 「广停」海外·美国｜US
@@ -1007,62 +887,6 @@ proxy-groups:
       - 🇨🇳 lv1 台湾TFN1 直连 2
       - 🇺🇸 lv1 美国1 2
       - 🇺🇸 lv1 美国2 2
-      - 🇨🇳 台北Hinet-dip 6
-      - 🇨🇳 新北Hinet-dip 3
-      - 🇨🇳 台湾03 2
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇭🇰 香港BCPL 4
-      - 🇨🇳 新北Hinet-dip 4
-      - 🇭🇰 香港亿速云-dip 2
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 新加坡 2
-      - 🇭🇰 香港BCPL 5
-      - Bangkok-Metrabyte 3
-      - Gyeonggi_do-Daou-dip 2
-      - 🇯🇵 日本01 2
-      - 🇯🇵 Tokyo-BCPL 3
-      - 🇯🇵 Tokyo-Kirin-dip 2
-      - 🇰🇷 韩国 2
-      - 这是教程赠送免费节点 2
-      - 🇭🇰 香港 2
-      - 🇯🇵 Tokyo-BCPL 4
-      - Bangkok-Metrabyte 4
-      - LAX-Sharktech 2
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台湾10 2
-      - 🇯🇵 日本 2
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 美国 4
-      - 🇭🇰 香港BCPL 6
-      - 🇺🇸 美国01 2
-      - LAX-Krypt 3
-      - 🇺🇸 美国 5
-      - LAX-Krypt 4
-      - Orange-Krypt 2
-      - 🇺🇸 美国 6
-      - 🇩🇪 德国 2
-      - 🇹🇭 泰国 2
-      - Dusseldorf-myLoc 2
-      - 台北Sky-dip 2
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 Tokyo, Tj
-      - Incheon, Tj
-      - 🇸🇬 Singapore, Tj
-      - 🇭🇰 Hongkong, Tj
-      - California, Tj
-      - 🇯🇵 Tokyo, SS
-      - Incheon, SS
-      - 🇸🇬 Singapore, SS
-      - 🇭🇰 Hongkong, SS
-      - California, SS
-      - 🇯🇵 Tokyo, V2
-      - Incheon, V2
-      - 🇸🇬 Singapore, V2
-      - 🇭🇰 Hongkong, V2
-      - California, V2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -1183,6 +1007,18 @@ proxy-groups:
       - 台北Sky-dip
       - 🇨🇳 台湾 2
       - 🇨🇳 台湾 3
+      - 🇭🇰 香港✈️中转 [湘沪BGP]
+      - 🇨🇳 台湾✈️中转  [湘沪BGP]
+      - 🇰🇷 韩国✈️中转 [广州BGP]
+      - 🇸🇬 新加坡✈️中转  [湘沪BGP]
+      - 🇸🇬 新加坡✈️中转 [广州BGP]
+      - 🇷🇺 俄罗斯✈️中转  [湘沪BGP]
+      - cxkv2.xyz
+      - 🇨🇳 台湾 4
+      - 🇭🇰 香港0
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港6-三网优化-强加密
       - 🇺🇸 「TCP」海外·美国｜US
       - 🇺🇸 「绿通」海外·美国｜US
       - 🇺🇸 「广停」海外·美国｜US
@@ -1271,62 +1107,6 @@ proxy-groups:
       - 🇨🇳 lv1 台湾TFN1 直连 2
       - 🇺🇸 lv1 美国1 2
       - 🇺🇸 lv1 美国2 2
-      - 🇨🇳 台北Hinet-dip 6
-      - 🇨🇳 新北Hinet-dip 3
-      - 🇨🇳 台湾03 2
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇭🇰 香港BCPL 4
-      - 🇨🇳 新北Hinet-dip 4
-      - 🇭🇰 香港亿速云-dip 2
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 新加坡 2
-      - 🇭🇰 香港BCPL 5
-      - Bangkok-Metrabyte 3
-      - Gyeonggi_do-Daou-dip 2
-      - 🇯🇵 日本01 2
-      - 🇯🇵 Tokyo-BCPL 3
-      - 🇯🇵 Tokyo-Kirin-dip 2
-      - 🇰🇷 韩国 2
-      - 这是教程赠送免费节点 2
-      - 🇭🇰 香港 2
-      - 🇯🇵 Tokyo-BCPL 4
-      - Bangkok-Metrabyte 4
-      - LAX-Sharktech 2
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台湾10 2
-      - 🇯🇵 日本 2
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 美国 4
-      - 🇭🇰 香港BCPL 6
-      - 🇺🇸 美国01 2
-      - LAX-Krypt 3
-      - 🇺🇸 美国 5
-      - LAX-Krypt 4
-      - Orange-Krypt 2
-      - 🇺🇸 美国 6
-      - 🇩🇪 德国 2
-      - 🇹🇭 泰国 2
-      - Dusseldorf-myLoc 2
-      - 台北Sky-dip 2
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 Tokyo, Tj
-      - Incheon, Tj
-      - 🇸🇬 Singapore, Tj
-      - 🇭🇰 Hongkong, Tj
-      - California, Tj
-      - 🇯🇵 Tokyo, SS
-      - Incheon, SS
-      - 🇸🇬 Singapore, SS
-      - 🇭🇰 Hongkong, SS
-      - California, SS
-      - 🇯🇵 Tokyo, V2
-      - Incheon, V2
-      - 🇸🇬 Singapore, V2
-      - 🇭🇰 Hongkong, V2
-      - California, V2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1548,6 +1328,11 @@ proxy-groups:
       - 🇭🇰 香港BCPL 2
       - 🇭🇰 香港
       - 🇭🇰 香港BCPL 3
+      - 🇭🇰 香港✈️中转 [湘沪BGP]
+      - 🇭🇰 香港0
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港6-三网优化-强加密
       - 🇭🇰 「80」特区·香港｜Azure
       - 🇭🇰 香港 02 | 广港 IEPL 2
       - 🇭🇰 香港 04 | 广港 IEPL 2
@@ -1579,11 +1364,6 @@ proxy-groups:
       - 🇭🇰 [LV2·原生] 香港B2 | 中转 2
       - 🇭🇰 [LV2·原生] 香港B3 | 中转 2
       - 🇭🇰 [LV2·原生] 香港B4 | 中转 2
-      - 🇭🇰 香港BCPL 4
-      - 🇭🇰 香港亿速云-dip 2
-      - 🇭🇰 香港BCPL 5
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港BCPL 6
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1617,8 +1397,6 @@ proxy-groups:
       - 🇯🇵 V2 JP 01 NF 2
       - 🇯🇵 V1 JP 03 2
       - 🇯🇵 V1 JP 04 2
-      - 🇯🇵 日本01 2
-      - 🇯🇵 日本 2
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1664,10 +1442,6 @@ proxy-groups:
       - 🇺🇸 [LV2·原生] 美国04 | 中转 2
       - 🇺🇸 lv1 美国1 2
       - 🇺🇸 lv1 美国2 2
-      - 🇺🇸 美国 4
-      - 🇺🇸 美国01 2
-      - 🇺🇸 美国 5
-      - 🇺🇸 美国 6
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1692,24 +1466,13 @@ proxy-groups:
       - 台北Sky-dip
       - 🇨🇳 台湾 2
       - 🇨🇳 台湾 3
+      - 🇨🇳 台湾✈️中转  [湘沪BGP]
+      - 🇨🇳 台湾 4
       - 🇨🇳 台湾1 - 1x 2
       - 🇨🇳 V2 TW 01 原生 2
       - 🇨🇳 lv1 台湾Hinet1 直连 2
       - 🇨🇳 lv1 台湾Hinet2 直连 2
       - 🇨🇳 lv1 台湾TFN1 直连 2
-      - 🇨🇳 台北Hinet-dip 6
-      - 🇨🇳 新北Hinet-dip 3
-      - 🇨🇳 台湾03 2
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇨🇳 新北Hinet-dip 4
-      - 🇨🇳 台湾 4
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台湾10 2
-      - 🇨🇳 台北Hinet-dip 10
-      - 台北Sky-dip 2
-      - 🇨🇳 台湾 5
-      - 🇨🇳 台湾 6
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1721,14 +1484,12 @@ proxy-groups:
       - 🇸🇬 新加坡1 - x1
       - 🇸🇬 V2 SG 02 NF
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡✈️中转  [湘沪BGP]
+      - 🇸🇬 新加坡✈️中转 [广州BGP]
       - 🇸🇬 新加坡 02 | 直连 2
       - 🇸🇬 新加坡 01 | 直连 2
       - 🇸🇬 新加坡1 - x1 2
       - 🇸🇬 V2 SG 02 NF 2
-      - 🇸🇬 新加坡 2
-      - 🇸🇬 Singapore, Tj
-      - 🇸🇬 Singapore, SS
-      - 🇸🇬 Singapore, V2
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1743,6 +1504,7 @@ proxy-groups:
       - 🇰🇷 V1 KR 01
       - 🇰🇷 V1 KR 03
       - 🇰🇷 韩国
+      - 🇰🇷 韩国✈️中转 [广州BGP]
       - 🇰🇷 韩国 春川 01【4 LB】 2
       - 🇰🇷 韩国1 - 1x 2
       - 🇰🇷 V1 KR 02 2
@@ -1750,7 +1512,6 @@ proxy-groups:
       - 🇰🇷 V1 KR 04 2
       - 🇰🇷 V1 KR 01 2
       - 🇰🇷 V1 KR 03 2
-      - 🇰🇷 韩国 2
   - name: 🎥 奈飞节点
     type: select
     proxies:
