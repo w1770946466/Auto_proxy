@@ -93,7 +93,7 @@ def write_document():
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
         #去重
-        end_bas64 = sorted(set(end_bas64), key=end_bas64.index)
+        end_bas64 = list(set(end_bas64))
         print("去重完毕！！得到" + len(end_bas64) + "个节点")
         #减少获取的个数
         bas64 = '\n'.join(end_bas64).replace(
