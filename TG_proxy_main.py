@@ -94,7 +94,7 @@ def write_document():
     else:
         #去重
         end_bas64_A = list(set(end_bas64))
-        print("去重完毕！！得到",len(end_bas64_A),"个节点")
+        print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
         #减少获取的个数
         bas64 = '\n'.join(end_bas64_A).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
