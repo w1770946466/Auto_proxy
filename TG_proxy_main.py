@@ -93,16 +93,16 @@ def write_document():
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
         #去重
-        end_bas64 = list(set(end_bas64))
-        print("去重完毕！！得到" + len(end_bas64) + "个节点")
+        end_bas64_A = list(set(end_bas64))
+        print("去重完毕！！得到" + len(end_bas64_A) + "个节点")
         #减少获取的个数
-        bas64 = '\n'.join(end_bas64).replace(
+        bas64 = '\n'.join(end_bas64_A).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_one = '\n'.join(end_bas64[0: len(end_bas64)//3]).replace(
+        bas64_one = '\n'.join(end_bas64_A[0: len(end_bas64_A)//3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_two = '\n'.join(end_bas64[len(end_bas64) // 3: len(end_bas64)*2 // 3]).replace(
+        bas64_two = '\n'.join(end_bas64_A[len(end_bas64_A) // 3: len(end_bas64_A)*2 // 3]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_three = '\n'.join(end_bas64[len(end_bas64)*2 // 3: -1]).replace(
+        bas64_three = '\n'.join(end_bas64_A[len(end_bas64_A)*2 // 3: -1]).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #将获得的节点变成base64加密，为了长期订阅
         #print(len(end_bas64))
