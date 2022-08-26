@@ -5,152 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1&ip2, server: v2ray10.free4444.xyz, port: 443, type: vmess, uuid: d3ceb960-10dd-463b-851f-923377ea9d84, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: v2ray10.free4444.xyz}}}
-  - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip4, server: lg4.free4444.xyz, port: 443, type: vmess, uuid: fd0c0fca-599a-4ca7-931c-beec46d4f71b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg4.free4444.xyz}}}
-  - {name: 🇨🇳 www.dongtaiwang.com+洛杉矶2SS+V2RAY, server: 121.0.97.70, port: 11780, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, plugin: v2ray-plugin, plugin-opts: {mode: "", host: cloudfront.com, path: /UVY6f, tls: false, mux: true, skip-cert-verify: false}}
-  - {name: 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR, server: clash16.free4444.xyz, port: 44004, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: SG_00 @WangCai_1, server: 81.90.189.52, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_01 @WangCai_1, server: 81.90.189.52, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_02 @WangCai_1, server: 81.90.189.52, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_03 @WangCai_1, server: 81.90.189.52, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_04 @WangCai_1, server: 81.90.189.52, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_05 @WangCai_1, server: 81.90.189.52, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_06 @WangCai_1, server: 81.90.189.52, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_07 @WangCai_1, server: 81.90.189.52, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_08 @WangCai_1, server: 81.90.189.52, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_09 @WangCai_1, server: 81.90.189.52, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_10 @WangCai_1, server: 81.90.189.52, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_11 @WangCai_1, server: 81.90.189.52, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_12 @WangCai_1, server: 81.90.189.52, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: US_0443 @WangCai_1, server: 38.121.43.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_2375 @WangCai_1, server: 38.121.43.204, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: US_2376 @WangCai_1, server: 38.121.43.204, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: US_3306 @WangCai_1, server: 38.121.43.204, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_3389 @WangCai_1, server: 38.121.43.204, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_4444 @WangCai_1, server: 38.121.43.204, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_5000 @WangCai_1, server: 38.121.43.204, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_5001 @WangCai_1, server: 38.121.43.204, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_5003 @WangCai_1, server: 38.121.43.204, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_5004 @WangCai_1, server: 38.121.43.204, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: US_5500 @WangCai_1, server: 38.121.43.204, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_5600 @WangCai_1, server: 38.121.43.204, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_5601 @WangCai_1, server: 38.121.43.204, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_6379 @WangCai_1, server: 38.121.43.204, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: US_6679 @WangCai_1, server: 38.121.43.204, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_6697 @WangCai_1, server: 38.121.43.204, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: US_7001 @WangCai_1, server: 38.121.43.204, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US_7002 @WangCai_1, server: 38.121.43.204, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: US_7306 @WangCai_1, server: 38.121.43.204, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_7307 @WangCai_1, server: 38.121.43.204, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: US_8000 @WangCai_1, server: 38.121.43.204, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_8008 @WangCai_1, server: 38.121.43.204, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: US_8009 @WangCai_1, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: US_8080 @WangCai_1, server: 38.121.43.204, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: US_8090 @WangCai_1, server: 38.121.43.204, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_8091 @WangCai_1, server: 38.121.43.204, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: US_8118 @WangCai_1, server: 38.121.43.204, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_8119 @WangCai_1, server: 38.121.43.204, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: US_8881 @WangCai_1, server: 38.121.43.204, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_8882 @WangCai_1, server: 38.121.43.204, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: US_8888 @WangCai_1, server: 38.121.43.204, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: US_9101 @WangCai_1, server: 38.121.43.204, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: US_9102 @WangCai_1, server: 38.121.43.204, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 9203 @WangCai_1, server: 183.232.158.66, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9205 @WangCai_1, server: 183.232.158.66, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9206 @WangCai_1, server: 183.232.158.66, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9203 @WangCai_1 2, server: 183.232.158.67, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9205 @WangCai_1 2, server: 183.232.158.67, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9206 @WangCai_1 2, server: 183.232.158.67, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9203 @WangCai_1 3, server: 120.233.151.122, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9205 @WangCai_1 3, server: 120.233.151.122, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9206 @WangCai_1 3, server: 120.233.151.122, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9403 @WangCai_1, server: 183.232.158.66, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9405 @WangCai_1, server: 183.232.158.66, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9407 @WangCai_1, server: 183.232.158.66, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9403 @WangCai_1 2, server: 183.232.158.67, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9405 @WangCai_1 2, server: 183.232.158.67, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9407 @WangCai_1 2, server: 183.232.158.67, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9403 @WangCai_1 3, server: 120.233.151.122, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9405 @WangCai_1 3, server: 120.233.151.122, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: 9407 @WangCai_1 3, server: 120.233.151.122, port: 9407, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
-  - {name: cxkv2.xyz, server: 6.3.2.2, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾, server: 716tw.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 716tw.fx6688.top}}}
-  - {name: 🇭🇰 香港0, server: 810hk01.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 810hk01.fx6688.top}}}
-  - {name: 🇭🇰 香港1, server: 810hk05.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 810hk05.fx6688.top}}}
-  - {name: 🇭🇰 香港2, server: 817hk.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 817hk.fx6688.top}}}
-  - {name: 🇭🇰 香港6-三网优化-强加密, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}}
-  - {name: 距离下次重置剩余：8 天, server: sjapan01.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
-  - {name: "🇯🇵 [S]日本 01 免流 1x", server: sjapan01.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
+  - {name: 🇺🇸 圣何塞-MyTrojan7, server: rn.755657.xyz, port: 443, type: trojan, password: 845b1b45-b93c-49c0-ae84-c0743a2ef978, sni: rn.755657.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 圣何塞-MyShadowsocks7, server: fengzheng1552.cf, port: 10183, type: ss, cipher: chacha20-ietf-poly1305, password: 845b1b45-b93c-49c0-ae84-c0743a2ef978}
+  - {name: 🇺🇸 圣何塞-MyVmess7, server: rn.cloudorg.uk, port: 8443, type: vmess, uuid: 845b1b45-b93c-49c0-ae84-c0743a2ef978, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn.cloudorg.uk, network: ws, ws-opts: {path: /, headers: {Host: rn.cloudorg.uk}}}
+  - {name: 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」, server: 42.186.175.8, port: 443, type: vmess, uuid: c19b138c-6e30-43b4-f66d-a94c6e869d12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: usarm.ptuu.cf}}}
+  - {name: 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」, server: 42.186.175.8, port: 443, type: vmess, uuid: a928a26c-2adb-45fe-e57d-8a27dade309e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: sgarm.ptuu.cf}}}
+  - {name: 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」, server: 42.186.175.8, port: 443, type: vmess, uuid: 2962b6dc-8de5-40c2-f5fb-5039f72d9a95, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: sgarm.ptuu.ml}}}
+  - {name: 距离下次重置剩余：7 天, server: asiapacific.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
   - {name: "[S]亚太 01 免流 1x", server: asiapacific.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
   - {name: 请勿泄露节点IP，谢谢合作, server: 1.1.1.1, port: 80, type: vmess, uuid: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
   - {name: "[S1]亚太 01 1x", server: asiapacific.xn--z4q48lcvp.com, port: 35472, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: asiapacific.xn--z4q48lcvp.com, skip-cert-verify: false}
   - {name: "[S1]亚太 02 1x", server: asiapacific.xn--z4q48lcvp.com, port: 35473, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: asiapacific.xn--z4q48lcvp.com, skip-cert-verify: false}
   - {name: "[S1]亚太 03 1x", server: asiapacific.xn--z4q48lcvp.com, port: 35474, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: asiapacific.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S1]日本 01 1x", server: sjapan01.xn--z4q48lcvp.com, port: 35472, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: sjapan01.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S1]日本 02 1x", server: sjapan01.xn--z4q48lcvp.com, port: 35473, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: sjapan01.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S1]日本 03 1x", server: sjapan01.xn--z4q48lcvp.com, port: 35474, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: sjapan01.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S1]日本 04 1x", server: sjapan01.xn--z4q48lcvp.com, port: 35475, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: sjapan01.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S1]日本 05 1x", server: sjapan01.xn--z4q48lcvp.com, port: 35476, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: sjapan01.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S]日本 01 1x", server: paneljapan.xn--z4q48lcvp.com, port: 35472, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: paneljapan.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S]日本 02 1x", server: paneljapan.xn--z4q48lcvp.com, port: 35473, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: paneljapan.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: "🇯🇵 [S]日本 03 1x", server: paneljapan.xn--z4q48lcvp.com, port: 35474, type: trojan, password: 5685fc2d-3f2d-47e6-80aa-a712a83bcfbf, sni: paneljapan.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇺🇸 圣何塞-MyTrojan7, server: rn.755657.xyz, port: 443, type: trojan, password: 845b1b45-b93c-49c0-ae84-c0743a2ef978, sni: rn.755657.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 圣何塞-MyShadowsocks7, server: fengzheng1552.cf, port: 10183, type: ss, cipher: chacha20-ietf-poly1305, password: 845b1b45-b93c-49c0-ae84-c0743a2ef978}
-  - {name: 🇺🇸 圣何塞-MyVmess7, server: rn.cloudorg.uk, port: 8443, type: vmess, uuid: 845b1b45-b93c-49c0-ae84-c0743a2ef978, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn.cloudorg.uk, network: ws, ws-opts: {path: /, headers: {Host: rn.cloudorg.uk}}}
-  - {name: 🇭🇰 香港咖喱鱼蛋 01-D, server: 20.205.14.195, port: 12377, type: trojan, password: e1c386fa-7d0e-4e85-a4c9-c62d21699d4f, sni: 20-187-95-105.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港丝袜奶茶 02-D, server: 20.239.185.238, port: 12339, type: trojan, password: e1c386fa-7d0e-4e85-a4c9-c62d21699d4f, sni: 20-187-95-105.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港杨枝甘露 03-D, server: 20.239.162.164, port: 12369, type: trojan, password: e1c386fa-7d0e-4e85-a4c9-c62d21699d4f, sni: 20-187-95-105.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港煎酿三宝 04-D, server: 20.24.95.111, port: 12388, type: trojan, password: e1c386fa-7d0e-4e85-a4c9-c62d21699d4f, sni: 20-187-95-105.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-ByWave-01, server: ceea167a5a36dedd.jijifun.com, port: 40002, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇭🇰 香港-ByWave-02, server: 3463d06de0ca9a15.jijifun.com, port: 40003, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇭🇰 香港-ByWave-03, server: ceea167a5a36dedd.jijifun.com, port: 40012, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇭🇰 香港-ByWave-04, server: 3463d06de0ca9a15.jijifun.com, port: 40013, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇨🇳 台湾-HINET-01, server: 7a37563370ded05f.jijifun.com, port: 40032, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇨🇳 台湾-HINET-02, server: 3463d06de0ca9a15.jijifun.com, port: 40033, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇸🇬 新加坡-DP-01, server: 7a37563370ded05f.jijifun.com, port: 40042, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇸🇬 新加坡-DP-02, server: 7a37563370ded05f.jijifun.com, port: 40043, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇯🇵 日本-HALO-01, server: ceea167a5a36dedd.jijifun.com, port: 40052, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇯🇵 日本-DP-02, server: 3463d06de0ca9a15.jijifun.com, port: 40053, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-RANDOM-OUT-01, server: ceea167a5a36dedd.jijifun.com, port: 40064, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-02, server: 3463d06de0ca9a15.jijifun.com, port: 40065, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-03, server: 3463d06de0ca9a15.jijifun.com, port: 40066, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-04, server: ceea167a5a36dedd.jijifun.com, port: 40067, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇬🇧 英国-DP-01, server: ceea167a5a36dedd.jijifun.com, port: 40071, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇬🇧 英国-DP-02, server: ceea167a5a36dedd.jijifun.com, port: 40072, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: 🇬🇧 英国-DP-03, server: 3463d06de0ca9a15.jijifun.com, port: 40073, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7555ba386a.microsoft.com}}
-  - {name: "🇭🇰 [LV3·原生] 香港01 | IEPL 专线 | 1x", server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34004, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇺🇸 [LV2·原生] 美国03 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 33001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: "🇺🇸 [LV2·原生] 美国04 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港01 | IEPL 专线 | 3x", server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港02 | IEPL 专线 | 3x", server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港03 | IEPL 专线 | 3x", server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港04 | IEPL 专线 | 3x", server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港B1 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港B2 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港B3 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: "🇭🇰 [LV2·原生] 香港B4 | 中转", server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇨🇳 lv1 台湾Hinet1 直连, server: gbo02.vsvideo.shop, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇨🇳 lv1 台湾Hinet2 直连, server: gbo03.vsvideo.shop, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇨🇳 lv1 台湾TFN1 直连, server: 211.23.149.95, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇸 lv1 美国1, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: ip3884414509.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇺🇸 lv1 美国2, server: 161.129.60.17, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: 111-47-215-139.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-ByWave-01 2, server: c9b086079795c442.jijifun.com, port: 40002, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇭🇰 香港-ByWave-02 2, server: c9b086079795c442.jijifun.com, port: 40003, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇭🇰 香港-ByWave-03 2, server: 22bcc25a6f606eb5.jijifun.com, port: 40012, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇭🇰 香港-ByWave-04 2, server: 22bcc25a6f606eb5.jijifun.com, port: 40013, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇨🇳 台湾-HINET-01 2, server: c9b086079795c442.jijifun.com, port: 40032, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇨🇳 台湾-HINET-02 2, server: c9b086079795c442.jijifun.com, port: 40033, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇸🇬 新加坡-DP-01 2, server: 22bcc25a6f606eb5.jijifun.com, port: 40042, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇸🇬 新加坡-DP-02 2, server: c9b086079795c442.jijifun.com, port: 40043, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇯🇵 日本-HALO-01 2, server: 4005f8da13f42943.jijifun.com, port: 40052, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇯🇵 日本-DP-02 2, server: 22bcc25a6f606eb5.jijifun.com, port: 40053, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-RANDOM-OUT-01 2, server: c9b086079795c442.jijifun.com, port: 40064, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-02 2, server: c9b086079795c442.jijifun.com, port: 40065, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-03 2, server: 4005f8da13f42943.jijifun.com, port: 40066, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇺🇸 美国-HALO-04 2, server: 22bcc25a6f606eb5.jijifun.com, port: 40067, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇬🇧 英国-DP-01 2, server: 4005f8da13f42943.jijifun.com, port: 40071, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇬🇧 英国-DP-02 2, server: c9b086079795c442.jijifun.com, port: 40072, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
-  - {name: 🇬🇧 英国-DP-03 2, server: c9b086079795c442.jijifun.com, port: 40073, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 7d17a71a96.microsoft.com}}
+  - {name: 🇯🇵 Japan「Basic-S1」1x, server: sh001.esmk.xyz, port: 26818, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇯🇵 Japan「Basic-S2」1x, server: sh001.esmk.xyz, port: 9000, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇯🇵 Japan「Basic-S3」1x, server: sh001.esmk.xyz, port: 5288, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇯🇵 Japan「Basic-S4」1x, server: sh001.esmk.xyz, port: 1121, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇭🇰 HongKong「Basic-S1」1x, server: bgp.esmk.xyz, port: 20187, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇭🇰 HongKong「Basic-S2」1x, server: bgp.esmk.xyz, port: 12389, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇭🇰 HongKong「Basic-S3」1x, server: bgp.esmk.xyz, port: 19992, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇭🇰 HongKong「Basic-S4」1x, server: bgp.esmk.xyz, port: 20087, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇭🇰 HongKong「Basic-S5」1x, server: bgp.esmk.xyz, port: 30686, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇭🇰 HongKong「Basic-S6」1x, server: bgp.esmk.xyz, port: 8099, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇨🇳 Taiwan「Stream-S1」1x, server: bgp.esmk.xyz, port: 29240, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇨🇳 Taiwan「Stream-S2」1x, server: bgp.esmk.xyz, port: 29241, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇸🇬 Singapore「Stream-S1」1x, server: bgp.esmk.xyz, port: 1233, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇸🇬 Singapore「Stream-S2」1x, server: bgp.esmk.xyz, port: 1232, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇸🇬 Singapore「Stream-S3」1x, server: bgp.esmk.xyz, port: 1276, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇸🇬 Singapore「Stream-S4」1x, server: bgp.esmk.xyz, port: 1265, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇸🇬 Singapore「Stream-S5」1x, server: bgp.esmk.xyz, port: 12333, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇸🇬 Singapore「Stream-S6」1x, server: bgp.esmk.xyz, port: 12334, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇺🇸 America「Stream-S1」1x, server: sh001.esmk.xyz, port: 8076, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇺🇸 America「Stream-S2」1x, server: sh001.esmk.xyz, port: 3998, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇺🇸 America「Stream-S3」1x, server: sh001.esmk.xyz, port: 8077, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇺🇸 America「Stream-S4」1x, server: sh001.esmk.xyz, port: 4999, type: ss, cipher: aes-256-gcm, password: 826447b8-afba-37d4-b9df-1da5f5a59f2d}
+  - {name: 🇺🇸 「TCP」海外·美国｜US, server: us.msuoolwbcmkrefye.spnet.vip, port: 1089, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 「绿通」海外·美国｜US, server: 23.94.123.76, port: 46794, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
+  - {name: 🇺🇸 「广停」海外·美国｜US, server: us.msuoolwbcmkrefye.spnet.vip, port: 1082, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: 🇺🇸 「443」海外·美国｜US, server: us.msuoolwbcmkrefye.spnet.vip, port: 443, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇺🇸 「80」海外·美国｜US, server: us.msuoolwbcmkrefye.spnet.vip, port: 80, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇯🇵 「80」海外·日本2｜Oracle, server: jp.xmpfdnxtiptdmoaq.spnet.vip, port: 80, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇭🇰 「80」特区·香港｜Azure, server: hk1.cycfly.xyz, port: 80, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇯🇵 「443」海外·日本2｜Oracle, server: jp.xmpfdnxtiptdmoaq.spnet.vip, port: 443, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇯🇵 「广停」海外·日本2｜Oracle, server: jp.xmpfdnxtiptdmoaq.spnet.vip, port: 1082, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: 🇯🇵 「绿通」海外·日本2｜Oracle, server: 158.101.138.200, port: 46794, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
+  - {name: 🇯🇵 「TCP」海外·日本2｜Oracle, server: jp.xmpfdnxtiptdmoaq.spnet.vip, port: 1089, type: vmess, uuid: 02bc60c4-59e7-4f08-931c-93405ef1aada, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 「TCP」海外·美国, server: us.msuoolwbcmkrefye.spnet.vip, port: 1089, type: vmess, uuid: fc003c8b-c06c-4782-854f-08d3d5dd5678, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 「80」海外·美国, server: us.msuoolwbcmkrefye.spnet.vip, port: 80, type: vmess, uuid: fc003c8b-c06c-4782-854f-08d3d5dd5678, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇺🇸 「443」海外·美国, server: us.msuoolwbcmkrefye.spnet.vip, port: 443, type: vmess, uuid: fc003c8b-c06c-4782-854f-08d3d5dd5678, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇺🇸 「广停」海外·美国, server: us.msuoolwbcmkrefye.spnet.vip, port: 1082, type: vmess, uuid: fc003c8b-c06c-4782-854f-08d3d5dd5678, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: cxkv2.xyz, server: 6.3.2.2, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾, server: 716tw.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 716tw.fx6688.top}}}
+  - {name: 🇭🇰 香港1, server: 825hk05.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 825hk05.fx6688.top}}}
+  - {name: 🇭🇰 香港2, server: 825hk09.fx6688.top, port: 4433, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 825hk09.fx6688.top}}}
+  - {name: 🇭🇰 香港7, server: 825hk01.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 825hk01.fx6688.top}}}
+  - {name: 🇭🇰 香港8, server: 825hk02.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 825hk02.fx6688.top}}}
+  - {name: 🇭🇰 香港 02 | 广港 IEPL, server: 08e7642f-a70d-4fdc-9c3e-d77fa0fe0e16.ed6e2c67-b607-48a7-8498-6a0b15891991.317aa722-1472-407a-b579-7bbaf58f47e9.yiyuan.cyou, port: 12001, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 04 | 广港 IEPL, server: 08e7642f-a70d-4fdc-9c3e-d77fa0fe0e16.ed6e2c67-b607-48a7-8498-6a0b15891991.317aa722-1472-407a-b579-7bbaf58f47e9.yiyuan.cyou, port: 12001, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: HKy, server: 08e7642f-a70d-4fdc-9c3e-d77fa0fe0e16.ed6e2c67-b607-48a7-8498-6a0b15891991.317aa722-1472-407a-b579-7bbaf58f47e9.yiyuan.cyou, port: 12001, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 01 | 广港 IEPL, server: 08e7642f-a70d-4fdc-9c3e-d77fa0fe0e16.ed6e2c67-b607-48a7-8498-6a0b15891991.317aa722-1472-407a-b579-7bbaf58f47e9.yiyuan.cyou, port: 12001, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡 02 | 直连, server: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡 01 | 直连, server: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港 03 | 广港 IEPL, server: 08e7642f-a70d-4fdc-9c3e-d77fa0fe0e16.ed6e2c67-b607-48a7-8498-6a0b15891991.317aa722-1472-407a-b579-7bbaf58f47e9.yiyuan.cyou, port: 12001, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇸🇬 无法使用请刷新订阅，邀请60%返利, server: 08e7642f-a70d-4fdc-9c3e-d77fa0fe0e16.ed6e2c67-b607-48a7-8498-6a0b15891991.317aa722-1472-407a-b579-7bbaf58f47e9.yiyuan.cyou, port: 12001, type: trojan, password: 217c396e-e3b7-4c43-8e76-6ad8130a73ed, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本 大阪 01【4 LB】, server: 40.73.113.150, port: 30005, type: ss, cipher: aes-128-gcm, password: Hk6KvsfBlZMDoGgy}
+  - {name: 🇰🇷 韩国 春川 01【4 LB】, server: 40.73.113.150, port: 30007, type: ss, cipher: aes-128-gcm, password: Hk6KvsfBlZMDoGgy}
+  - {name: 🇺🇸 美国 洛杉矶 01, server: 40.73.113.150, port: 30015, type: ss, cipher: aes-128-gcm, password: Hk6KvsfBlZMDoGgy}
+  - {name: 🇩🇪 德国 法兰克福 01 【4 LB】, server: 40.73.113.150, port: 30008, type: ss, cipher: aes-128-gcm, password: Hk6KvsfBlZMDoGgy}
+  - {name: 🇺🇸 美国 凤凰城 01【4 LB】, server: 40.73.113.150, port: 30006, type: ss, cipher: aes-128-gcm, password: Hk6KvsfBlZMDoGgy}
+  - {name: 🇭🇰 香港1 - 1x, server: x-mm.speedabc.xyz, port: 37111, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: hk1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾1 - 1x, server: x-mm.speedabc.xyz, port: 37121, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: tw1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本1 - 1x, server: x-mm.speedabc.xyz, port: 37131, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: jp1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国1 - 1x, server: x-mm.speedabc.xyz, port: 37151, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: kr1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国1 - 1x, server: x-mm.speedabc.xyz, port: 37161, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: us1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡1 - x1, server: x-mm.speedabc.xyz, port: 37141, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: sg1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇬🇧 英国1 - 1x, server: cm1.speedabc.xyz, port: 37193, type: trojan, password: 624a4b62-496c-4ef8-a33b-61b1c25584d6, sni: gb1.speedabc.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾-TW-01, server: asiuhdhs78adh82.com, port: 15824, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-SG-01, server: asiuhdhs78adh82.com, port: 15809, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-SG-02, server: asiuhdhs78adh82.com, port: 15822, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-SG-03, server: asiuhdhs78adh82.com, port: 15827, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-SG-04, server: asiuhdhs78adh82.com, port: 15805, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本-JP-01, server: asiuhdhs78adh82.com, port: 15808, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本-JP-02, server: asiuhdhs78adh82.com, port: 15815, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本-JP-03, server: asiuhdhs78adh82.com, port: 15816, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇯🇵 日本-JP-04, server: asiuhdhs78adh82.com, port: 15826, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-HK-01, server: asiuhdhs78adh82.com, port: 15806, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-HK-02, server: asiuhdhs78adh82.com, port: 15825, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-HK-03, server: asiuhdhs78adh82.com, port: 15828, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-HK-04-负载均衡, server: asiuhdhs78adh82.com, port: 15829, type: trojan, password: 867cbd9f-6a65-324a-b1a8-5f9b03d9882c, sni: eplcgame.com, skip-cert-verify: false}
+  - {name: 不限速千兆-hk100, server: fnhk1glines002re.fnline.club, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: edbe138e9e7d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1glines002re.fnline.club, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw11, server: fn600mliness011.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 2d59efdde6c9, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness011.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw32, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw73, server: fn600mliness016.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: bd04a7b470fb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness016.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw254, server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk25, server: fndxshk1000mline003.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: c3d44eb5b92f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline003.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk86, server: fndxshk1000mline001.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 50db7fd78cdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline001.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw247, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk68, server: fndxshk1000mline007.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 2fbf6ae5c0de, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline007.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk99, server: fnhk1gline001.fnline.xyz, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: 35b13f9dd755, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1gline001.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2110, server: fn600mliness019.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 61f301daaf4e, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness019.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2611, server: fn600mlines020.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5dac918f6134, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines020.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk412, server: fnhk1gline002.fnline.me, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: 957abf07c5a6, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1gline002.fnline.me, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw513, server: fn600mliness015.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 696744f948f3, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness015.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2914, server: fn600mlines023.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4a386af7970a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines023.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw1115, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw616, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2317, server: fn600mliness018.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness018.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2718, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2819, server: fn600mlines022.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a57a10279872, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines022.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw220, server: fn600mliness012.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a7f2fb3db93c, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness012.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk521, server: fndxshk1000mline006.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: db83a372671f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline006.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw1322, server: fn600mliness009.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cafd390e3444, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness009.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-hk1123, server: fndxshk1000mline002re.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 16c5fe596bfb, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline002re.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-us124, server: fndxus1000mline001.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 563b1dc7d669, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxus1000mline001.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-tw2225, server: fn600mlines008re.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cc05a17e6195, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008re.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-us326, server: fnbg1gline001.fnline.xyz, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: 6fce24dde8c5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnbg1gline001.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-us827, server: bjus1glines007.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: f7b2af773c6e, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bjus1glines007.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-us128, server: fnbg1gline003.fnline.xyz, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: cf533d2acaa3, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnbg1gline003.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 不限速千兆-us229, server: fnbg1gline002.fnline.xyz, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: 33d0b611860f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnbg1gline002.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（kr4）30, server: fn50mjckrline001.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: dc638ac923b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn50mjckrline001.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（eur）31, server: fn100mltvline001.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8525fd2e202b, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn100mltvline001.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇸🇬 优质线路（sg）32, server: fn100mnmsgpline001.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0391ed69a1b5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn100mnmsgpline001.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（jp3）33, server: fn50mxwjpline002.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4138ea5f87df, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn50mxwjpline002.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（hk1）34, server: fnhk1glines004.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 7ebf987cedac, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1glines004.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（us3）35, server: bjus1glines011.feisujiasu.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a82fbbd272e6, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bjus1glines011.feisujiasu.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（us4）36, server: bjus1glines005.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 37242aed6a99, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bjus1glines005.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（us1）37, server: fnbg1glines004.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 772183321102, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnbg1glines004.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（us2）38, server: bjus1glines010.feisujiasu.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: b98227c85ab5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bjus1glines010.feisujiasu.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 优质线路（jp2）39, server: fn50mxwjpline001.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8777fef1dd40, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn50mxwjpline001.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -169,456 +152,405 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1&ip2
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip4
-      - 🇨🇳 www.dongtaiwang.com+洛杉矶2SS+V2RAY
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
-      - cxkv2.xyz
-      - 🇨🇳 台湾
-      - 🇭🇰 香港0
-      - 🇭🇰 香港1
-      - 🇭🇰 香港2
-      - 🇭🇰 香港6-三网优化-强加密
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 [S]日本 01 免流 1x
+      - 🇺🇸 圣何塞-MyTrojan7
+      - 🇺🇸 圣何塞-MyShadowsocks7
+      - 🇺🇸 圣何塞-MyVmess7
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
+      - 距离下次重置剩余：7 天
       - "[S]亚太 01 免流 1x"
       - 请勿泄露节点IP，谢谢合作
       - "[S1]亚太 01 1x"
       - "[S1]亚太 02 1x"
       - "[S1]亚太 03 1x"
-      - 🇯🇵 [S1]日本 01 1x
-      - 🇯🇵 [S1]日本 02 1x
-      - 🇯🇵 [S1]日本 03 1x
-      - 🇯🇵 [S1]日本 04 1x
-      - 🇯🇵 [S1]日本 05 1x
-      - 🇯🇵 [S]日本 01 1x
-      - 🇯🇵 [S]日本 02 1x
-      - 🇯🇵 [S]日本 03 1x
-      - 🇺🇸 圣何塞-MyTrojan7
-      - 🇺🇸 圣何塞-MyShadowsocks7
-      - 🇺🇸 圣何塞-MyVmess7
-      - 🇭🇰 香港咖喱鱼蛋 01-D
-      - 🇭🇰 香港丝袜奶茶 02-D
-      - 🇭🇰 香港杨枝甘露 03-D
-      - 🇭🇰 香港煎酿三宝 04-D
-      - 🇭🇰 香港-ByWave-01
-      - 🇭🇰 香港-ByWave-02
-      - 🇭🇰 香港-ByWave-03
-      - 🇭🇰 香港-ByWave-04
-      - 🇨🇳 台湾-HINET-01
-      - 🇨🇳 台湾-HINET-02
-      - 🇸🇬 新加坡-DP-01
-      - 🇸🇬 新加坡-DP-02
-      - 🇯🇵 日本-HALO-01
-      - 🇯🇵 日本-DP-02
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01
-      - 🇺🇸 美国-HALO-02
-      - 🇺🇸 美国-HALO-03
-      - 🇺🇸 美国-HALO-04
-      - 🇬🇧 英国-DP-01
-      - 🇬🇧 英国-DP-02
-      - 🇬🇧 英国-DP-03
-      - 🇭🇰 [LV3·原生] 香港01 | IEPL 专线 | 1x
-      - 🇺🇸 [LV2·原生] 美国03 | 中转
-      - 🇺🇸 [LV2·原生] 美国04 | 中转
-      - 🇭🇰 [LV2·原生] 香港01 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港02 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港03 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港04 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港B1 | 中转
-      - 🇭🇰 [LV2·原生] 香港B2 | 中转
-      - 🇭🇰 [LV2·原生] 香港B3 | 中转
-      - 🇭🇰 [LV2·原生] 香港B4 | 中转
-      - 🇨🇳 lv1 台湾Hinet1 直连
-      - 🇨🇳 lv1 台湾Hinet2 直连
-      - 🇨🇳 lv1 台湾TFN1 直连
-      - 🇺🇸 lv1 美国1
-      - 🇺🇸 lv1 美国2
-      - 🇭🇰 香港-ByWave-01 2
-      - 🇭🇰 香港-ByWave-02 2
-      - 🇭🇰 香港-ByWave-03 2
-      - 🇭🇰 香港-ByWave-04 2
-      - 🇨🇳 台湾-HINET-01 2
-      - 🇨🇳 台湾-HINET-02 2
-      - 🇸🇬 新加坡-DP-01 2
-      - 🇸🇬 新加坡-DP-02 2
-      - 🇯🇵 日本-HALO-01 2
-      - 🇯🇵 日本-DP-02 2
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01 2
-      - 🇺🇸 美国-HALO-02 2
-      - 🇺🇸 美国-HALO-03 2
-      - 🇺🇸 美国-HALO-04 2
-      - 🇬🇧 英国-DP-01 2
-      - 🇬🇧 英国-DP-02 2
-      - 🇬🇧 英国-DP-03 2
+      - 🇯🇵 Japan「Basic-S1」1x
+      - 🇯🇵 Japan「Basic-S2」1x
+      - 🇯🇵 Japan「Basic-S3」1x
+      - 🇯🇵 Japan「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S1」1x
+      - 🇭🇰 HongKong「Basic-S2」1x
+      - 🇭🇰 HongKong「Basic-S3」1x
+      - 🇭🇰 HongKong「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S5」1x
+      - 🇭🇰 HongKong「Basic-S6」1x
+      - 🇨🇳 Taiwan「Stream-S1」1x
+      - 🇨🇳 Taiwan「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S1」1x
+      - 🇸🇬 Singapore「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S3」1x
+      - 🇸🇬 Singapore「Stream-S4」1x
+      - 🇸🇬 Singapore「Stream-S5」1x
+      - 🇸🇬 Singapore「Stream-S6」1x
+      - 🇺🇸 America「Stream-S1」1x
+      - 🇺🇸 America「Stream-S2」1x
+      - 🇺🇸 America「Stream-S3」1x
+      - 🇺🇸 America「Stream-S4」1x
+      - 🇺🇸 「TCP」海外·美国｜US
+      - 🇺🇸 「绿通」海外·美国｜US
+      - 🇺🇸 「广停」海外·美国｜US
+      - 🇺🇸 「443」海外·美国｜US
+      - 🇺🇸 「80」海外·美国｜US
+      - 🇯🇵 「80」海外·日本2｜Oracle
+      - 🇭🇰 「80」特区·香港｜Azure
+      - 🇯🇵 「443」海外·日本2｜Oracle
+      - 🇯🇵 「广停」海外·日本2｜Oracle
+      - 🇯🇵 「绿通」海外·日本2｜Oracle
+      - 🇯🇵 「TCP」海外·日本2｜Oracle
+      - 🇺🇸 「TCP」海外·美国
+      - 🇺🇸 「80」海外·美国
+      - 🇺🇸 「443」海外·美国
+      - 🇺🇸 「广停」海外·美国
+      - cxkv2.xyz
+      - 🇨🇳 台湾
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港7
+      - 🇭🇰 香港8
+      - 🇭🇰 香港 02 | 广港 IEPL
+      - 🇭🇰 香港 04 | 广港 IEPL
+      - HKy
+      - 🇭🇰 香港 01 | 广港 IEPL
+      - 🇸🇬 新加坡 02 | 直连
+      - 🇸🇬 新加坡 01 | 直连
+      - 🇭🇰 香港 03 | 广港 IEPL
+      - 🇯🇵 日本 01 | 直连
+      - 🇸🇬 无法使用请刷新订阅，邀请60%返利
+      - 🇯🇵 日本 大阪 01【4 LB】
+      - 🇰🇷 韩国 春川 01【4 LB】
+      - 🇺🇸 美国 洛杉矶 01
+      - 🇩🇪 德国 法兰克福 01 【4 LB】
+      - 🇺🇸 美国 凤凰城 01【4 LB】
+      - 🇭🇰 香港1 - 1x
+      - 🇨🇳 台湾1 - 1x
+      - 🇯🇵 日本1 - 1x
+      - 🇰🇷 韩国1 - 1x
+      - 🇺🇸 美国1 - 1x
+      - 🇸🇬 新加坡1 - x1
+      - 🇬🇧 英国1 - 1x
+      - 🇨🇳 台湾-TW-01
+      - 🇸🇬 新加坡-SG-01
+      - 🇸🇬 新加坡-SG-02
+      - 🇸🇬 新加坡-SG-03
+      - 🇸🇬 新加坡-SG-04
+      - 🇯🇵 日本-JP-01
+      - 🇯🇵 日本-JP-02
+      - 🇯🇵 日本-JP-03
+      - 🇯🇵 日本-JP-04
+      - 🇭🇰 香港-HK-01
+      - 🇭🇰 香港-HK-02
+      - 🇭🇰 香港-HK-03
+      - 🇭🇰 香港-HK-04-负载均衡
+      - 不限速千兆-hk100
+      - 不限速千兆-tw11
+      - 不限速千兆-tw32
+      - 不限速千兆-tw73
+      - 不限速千兆-tw254
+      - 不限速千兆-hk25
+      - 不限速千兆-hk86
+      - 不限速千兆-tw247
+      - 不限速千兆-hk68
+      - 不限速千兆-hk99
+      - 不限速千兆-tw2110
+      - 不限速千兆-tw2611
+      - 不限速千兆-hk412
+      - 不限速千兆-tw513
+      - 不限速千兆-tw2914
+      - 不限速千兆-tw1115
+      - 不限速千兆-tw616
+      - 不限速千兆-tw2317
+      - 不限速千兆-tw2718
+      - 不限速千兆-tw2819
+      - 不限速千兆-tw220
+      - 不限速千兆-hk521
+      - 不限速千兆-tw1322
+      - 不限速千兆-hk1123
+      - 不限速千兆-us124
+      - 不限速千兆-tw2225
+      - 不限速千兆-us326
+      - 不限速千兆-us827
+      - 不限速千兆-us128
+      - 不限速千兆-us229
+      - 优质线路（kr4）30
+      - 优质线路（eur）31
+      - 🇸🇬 优质线路（sg）32
+      - 优质线路（jp3）33
+      - 优质线路（hk1）34
+      - 优质线路（us3）35
+      - 优质线路（us4）36
+      - 优质线路（us1）37
+      - 优质线路（us2）38
+      - 优质线路（jp2）39
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1&ip2
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip4
-      - 🇨🇳 www.dongtaiwang.com+洛杉矶2SS+V2RAY
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
-      - cxkv2.xyz
-      - 🇨🇳 台湾
-      - 🇭🇰 香港0
-      - 🇭🇰 香港1
-      - 🇭🇰 香港2
-      - 🇭🇰 香港6-三网优化-强加密
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 [S]日本 01 免流 1x
+      - 🇺🇸 圣何塞-MyTrojan7
+      - 🇺🇸 圣何塞-MyShadowsocks7
+      - 🇺🇸 圣何塞-MyVmess7
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
+      - 距离下次重置剩余：7 天
       - "[S]亚太 01 免流 1x"
       - 请勿泄露节点IP，谢谢合作
       - "[S1]亚太 01 1x"
       - "[S1]亚太 02 1x"
       - "[S1]亚太 03 1x"
-      - 🇯🇵 [S1]日本 01 1x
-      - 🇯🇵 [S1]日本 02 1x
-      - 🇯🇵 [S1]日本 03 1x
-      - 🇯🇵 [S1]日本 04 1x
-      - 🇯🇵 [S1]日本 05 1x
-      - 🇯🇵 [S]日本 01 1x
-      - 🇯🇵 [S]日本 02 1x
-      - 🇯🇵 [S]日本 03 1x
-      - 🇺🇸 圣何塞-MyTrojan7
-      - 🇺🇸 圣何塞-MyShadowsocks7
-      - 🇺🇸 圣何塞-MyVmess7
-      - 🇭🇰 香港咖喱鱼蛋 01-D
-      - 🇭🇰 香港丝袜奶茶 02-D
-      - 🇭🇰 香港杨枝甘露 03-D
-      - 🇭🇰 香港煎酿三宝 04-D
-      - 🇭🇰 香港-ByWave-01
-      - 🇭🇰 香港-ByWave-02
-      - 🇭🇰 香港-ByWave-03
-      - 🇭🇰 香港-ByWave-04
-      - 🇨🇳 台湾-HINET-01
-      - 🇨🇳 台湾-HINET-02
-      - 🇸🇬 新加坡-DP-01
-      - 🇸🇬 新加坡-DP-02
-      - 🇯🇵 日本-HALO-01
-      - 🇯🇵 日本-DP-02
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01
-      - 🇺🇸 美国-HALO-02
-      - 🇺🇸 美国-HALO-03
-      - 🇺🇸 美国-HALO-04
-      - 🇬🇧 英国-DP-01
-      - 🇬🇧 英国-DP-02
-      - 🇬🇧 英国-DP-03
-      - 🇭🇰 [LV3·原生] 香港01 | IEPL 专线 | 1x
-      - 🇺🇸 [LV2·原生] 美国03 | 中转
-      - 🇺🇸 [LV2·原生] 美国04 | 中转
-      - 🇭🇰 [LV2·原生] 香港01 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港02 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港03 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港04 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港B1 | 中转
-      - 🇭🇰 [LV2·原生] 香港B2 | 中转
-      - 🇭🇰 [LV2·原生] 香港B3 | 中转
-      - 🇭🇰 [LV2·原生] 香港B4 | 中转
-      - 🇨🇳 lv1 台湾Hinet1 直连
-      - 🇨🇳 lv1 台湾Hinet2 直连
-      - 🇨🇳 lv1 台湾TFN1 直连
-      - 🇺🇸 lv1 美国1
-      - 🇺🇸 lv1 美国2
-      - 🇭🇰 香港-ByWave-01 2
-      - 🇭🇰 香港-ByWave-02 2
-      - 🇭🇰 香港-ByWave-03 2
-      - 🇭🇰 香港-ByWave-04 2
-      - 🇨🇳 台湾-HINET-01 2
-      - 🇨🇳 台湾-HINET-02 2
-      - 🇸🇬 新加坡-DP-01 2
-      - 🇸🇬 新加坡-DP-02 2
-      - 🇯🇵 日本-HALO-01 2
-      - 🇯🇵 日本-DP-02 2
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01 2
-      - 🇺🇸 美国-HALO-02 2
-      - 🇺🇸 美国-HALO-03 2
-      - 🇺🇸 美国-HALO-04 2
-      - 🇬🇧 英国-DP-01 2
-      - 🇬🇧 英国-DP-02 2
-      - 🇬🇧 英国-DP-03 2
+      - 🇯🇵 Japan「Basic-S1」1x
+      - 🇯🇵 Japan「Basic-S2」1x
+      - 🇯🇵 Japan「Basic-S3」1x
+      - 🇯🇵 Japan「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S1」1x
+      - 🇭🇰 HongKong「Basic-S2」1x
+      - 🇭🇰 HongKong「Basic-S3」1x
+      - 🇭🇰 HongKong「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S5」1x
+      - 🇭🇰 HongKong「Basic-S6」1x
+      - 🇨🇳 Taiwan「Stream-S1」1x
+      - 🇨🇳 Taiwan「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S1」1x
+      - 🇸🇬 Singapore「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S3」1x
+      - 🇸🇬 Singapore「Stream-S4」1x
+      - 🇸🇬 Singapore「Stream-S5」1x
+      - 🇸🇬 Singapore「Stream-S6」1x
+      - 🇺🇸 America「Stream-S1」1x
+      - 🇺🇸 America「Stream-S2」1x
+      - 🇺🇸 America「Stream-S3」1x
+      - 🇺🇸 America「Stream-S4」1x
+      - 🇺🇸 「TCP」海外·美国｜US
+      - 🇺🇸 「绿通」海外·美国｜US
+      - 🇺🇸 「广停」海外·美国｜US
+      - 🇺🇸 「443」海外·美国｜US
+      - 🇺🇸 「80」海外·美国｜US
+      - 🇯🇵 「80」海外·日本2｜Oracle
+      - 🇭🇰 「80」特区·香港｜Azure
+      - 🇯🇵 「443」海外·日本2｜Oracle
+      - 🇯🇵 「广停」海外·日本2｜Oracle
+      - 🇯🇵 「绿通」海外·日本2｜Oracle
+      - 🇯🇵 「TCP」海外·日本2｜Oracle
+      - 🇺🇸 「TCP」海外·美国
+      - 🇺🇸 「80」海外·美国
+      - 🇺🇸 「443」海外·美国
+      - 🇺🇸 「广停」海外·美国
+      - cxkv2.xyz
+      - 🇨🇳 台湾
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港7
+      - 🇭🇰 香港8
+      - 🇭🇰 香港 02 | 广港 IEPL
+      - 🇭🇰 香港 04 | 广港 IEPL
+      - HKy
+      - 🇭🇰 香港 01 | 广港 IEPL
+      - 🇸🇬 新加坡 02 | 直连
+      - 🇸🇬 新加坡 01 | 直连
+      - 🇭🇰 香港 03 | 广港 IEPL
+      - 🇯🇵 日本 01 | 直连
+      - 🇸🇬 无法使用请刷新订阅，邀请60%返利
+      - 🇯🇵 日本 大阪 01【4 LB】
+      - 🇰🇷 韩国 春川 01【4 LB】
+      - 🇺🇸 美国 洛杉矶 01
+      - 🇩🇪 德国 法兰克福 01 【4 LB】
+      - 🇺🇸 美国 凤凰城 01【4 LB】
+      - 🇭🇰 香港1 - 1x
+      - 🇨🇳 台湾1 - 1x
+      - 🇯🇵 日本1 - 1x
+      - 🇰🇷 韩国1 - 1x
+      - 🇺🇸 美国1 - 1x
+      - 🇸🇬 新加坡1 - x1
+      - 🇬🇧 英国1 - 1x
+      - 🇨🇳 台湾-TW-01
+      - 🇸🇬 新加坡-SG-01
+      - 🇸🇬 新加坡-SG-02
+      - 🇸🇬 新加坡-SG-03
+      - 🇸🇬 新加坡-SG-04
+      - 🇯🇵 日本-JP-01
+      - 🇯🇵 日本-JP-02
+      - 🇯🇵 日本-JP-03
+      - 🇯🇵 日本-JP-04
+      - 🇭🇰 香港-HK-01
+      - 🇭🇰 香港-HK-02
+      - 🇭🇰 香港-HK-03
+      - 🇭🇰 香港-HK-04-负载均衡
+      - 不限速千兆-hk100
+      - 不限速千兆-tw11
+      - 不限速千兆-tw32
+      - 不限速千兆-tw73
+      - 不限速千兆-tw254
+      - 不限速千兆-hk25
+      - 不限速千兆-hk86
+      - 不限速千兆-tw247
+      - 不限速千兆-hk68
+      - 不限速千兆-hk99
+      - 不限速千兆-tw2110
+      - 不限速千兆-tw2611
+      - 不限速千兆-hk412
+      - 不限速千兆-tw513
+      - 不限速千兆-tw2914
+      - 不限速千兆-tw1115
+      - 不限速千兆-tw616
+      - 不限速千兆-tw2317
+      - 不限速千兆-tw2718
+      - 不限速千兆-tw2819
+      - 不限速千兆-tw220
+      - 不限速千兆-hk521
+      - 不限速千兆-tw1322
+      - 不限速千兆-hk1123
+      - 不限速千兆-us124
+      - 不限速千兆-tw2225
+      - 不限速千兆-us326
+      - 不限速千兆-us827
+      - 不限速千兆-us128
+      - 不限速千兆-us229
+      - 优质线路（kr4）30
+      - 优质线路（eur）31
+      - 🇸🇬 优质线路（sg）32
+      - 优质线路（jp3）33
+      - 优质线路（hk1）34
+      - 优质线路（us3）35
+      - 优质线路（us4）36
+      - 优质线路（us1）37
+      - 优质线路（us2）38
+      - 优质线路（jp2）39
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1&ip2
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip4
-      - 🇨🇳 www.dongtaiwang.com+洛杉矶2SS+V2RAY
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
-      - cxkv2.xyz
-      - 🇨🇳 台湾
-      - 🇭🇰 香港0
-      - 🇭🇰 香港1
-      - 🇭🇰 香港2
-      - 🇭🇰 香港6-三网优化-强加密
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 [S]日本 01 免流 1x
+      - 🇺🇸 圣何塞-MyTrojan7
+      - 🇺🇸 圣何塞-MyShadowsocks7
+      - 🇺🇸 圣何塞-MyVmess7
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
+      - 距离下次重置剩余：7 天
       - "[S]亚太 01 免流 1x"
       - 请勿泄露节点IP，谢谢合作
       - "[S1]亚太 01 1x"
       - "[S1]亚太 02 1x"
       - "[S1]亚太 03 1x"
-      - 🇯🇵 [S1]日本 01 1x
-      - 🇯🇵 [S1]日本 02 1x
-      - 🇯🇵 [S1]日本 03 1x
-      - 🇯🇵 [S1]日本 04 1x
-      - 🇯🇵 [S1]日本 05 1x
-      - 🇯🇵 [S]日本 01 1x
-      - 🇯🇵 [S]日本 02 1x
-      - 🇯🇵 [S]日本 03 1x
-      - 🇺🇸 圣何塞-MyTrojan7
-      - 🇺🇸 圣何塞-MyShadowsocks7
-      - 🇺🇸 圣何塞-MyVmess7
-      - 🇭🇰 香港咖喱鱼蛋 01-D
-      - 🇭🇰 香港丝袜奶茶 02-D
-      - 🇭🇰 香港杨枝甘露 03-D
-      - 🇭🇰 香港煎酿三宝 04-D
-      - 🇭🇰 香港-ByWave-01
-      - 🇭🇰 香港-ByWave-02
-      - 🇭🇰 香港-ByWave-03
-      - 🇭🇰 香港-ByWave-04
-      - 🇨🇳 台湾-HINET-01
-      - 🇨🇳 台湾-HINET-02
-      - 🇸🇬 新加坡-DP-01
-      - 🇸🇬 新加坡-DP-02
-      - 🇯🇵 日本-HALO-01
-      - 🇯🇵 日本-DP-02
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01
-      - 🇺🇸 美国-HALO-02
-      - 🇺🇸 美国-HALO-03
-      - 🇺🇸 美国-HALO-04
-      - 🇬🇧 英国-DP-01
-      - 🇬🇧 英国-DP-02
-      - 🇬🇧 英国-DP-03
-      - 🇭🇰 [LV3·原生] 香港01 | IEPL 专线 | 1x
-      - 🇺🇸 [LV2·原生] 美国03 | 中转
-      - 🇺🇸 [LV2·原生] 美国04 | 中转
-      - 🇭🇰 [LV2·原生] 香港01 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港02 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港03 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港04 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港B1 | 中转
-      - 🇭🇰 [LV2·原生] 香港B2 | 中转
-      - 🇭🇰 [LV2·原生] 香港B3 | 中转
-      - 🇭🇰 [LV2·原生] 香港B4 | 中转
-      - 🇨🇳 lv1 台湾Hinet1 直连
-      - 🇨🇳 lv1 台湾Hinet2 直连
-      - 🇨🇳 lv1 台湾TFN1 直连
-      - 🇺🇸 lv1 美国1
-      - 🇺🇸 lv1 美国2
-      - 🇭🇰 香港-ByWave-01 2
-      - 🇭🇰 香港-ByWave-02 2
-      - 🇭🇰 香港-ByWave-03 2
-      - 🇭🇰 香港-ByWave-04 2
-      - 🇨🇳 台湾-HINET-01 2
-      - 🇨🇳 台湾-HINET-02 2
-      - 🇸🇬 新加坡-DP-01 2
-      - 🇸🇬 新加坡-DP-02 2
-      - 🇯🇵 日本-HALO-01 2
-      - 🇯🇵 日本-DP-02 2
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01 2
-      - 🇺🇸 美国-HALO-02 2
-      - 🇺🇸 美国-HALO-03 2
-      - 🇺🇸 美国-HALO-04 2
-      - 🇬🇧 英国-DP-01 2
-      - 🇬🇧 英国-DP-02 2
-      - 🇬🇧 英国-DP-03 2
+      - 🇯🇵 Japan「Basic-S1」1x
+      - 🇯🇵 Japan「Basic-S2」1x
+      - 🇯🇵 Japan「Basic-S3」1x
+      - 🇯🇵 Japan「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S1」1x
+      - 🇭🇰 HongKong「Basic-S2」1x
+      - 🇭🇰 HongKong「Basic-S3」1x
+      - 🇭🇰 HongKong「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S5」1x
+      - 🇭🇰 HongKong「Basic-S6」1x
+      - 🇨🇳 Taiwan「Stream-S1」1x
+      - 🇨🇳 Taiwan「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S1」1x
+      - 🇸🇬 Singapore「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S3」1x
+      - 🇸🇬 Singapore「Stream-S4」1x
+      - 🇸🇬 Singapore「Stream-S5」1x
+      - 🇸🇬 Singapore「Stream-S6」1x
+      - 🇺🇸 America「Stream-S1」1x
+      - 🇺🇸 America「Stream-S2」1x
+      - 🇺🇸 America「Stream-S3」1x
+      - 🇺🇸 America「Stream-S4」1x
+      - 🇺🇸 「TCP」海外·美国｜US
+      - 🇺🇸 「绿通」海外·美国｜US
+      - 🇺🇸 「广停」海外·美国｜US
+      - 🇺🇸 「443」海外·美国｜US
+      - 🇺🇸 「80」海外·美国｜US
+      - 🇯🇵 「80」海外·日本2｜Oracle
+      - 🇭🇰 「80」特区·香港｜Azure
+      - 🇯🇵 「443」海外·日本2｜Oracle
+      - 🇯🇵 「广停」海外·日本2｜Oracle
+      - 🇯🇵 「绿通」海外·日本2｜Oracle
+      - 🇯🇵 「TCP」海外·日本2｜Oracle
+      - 🇺🇸 「TCP」海外·美国
+      - 🇺🇸 「80」海外·美国
+      - 🇺🇸 「443」海外·美国
+      - 🇺🇸 「广停」海外·美国
+      - cxkv2.xyz
+      - 🇨🇳 台湾
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港7
+      - 🇭🇰 香港8
+      - 🇭🇰 香港 02 | 广港 IEPL
+      - 🇭🇰 香港 04 | 广港 IEPL
+      - HKy
+      - 🇭🇰 香港 01 | 广港 IEPL
+      - 🇸🇬 新加坡 02 | 直连
+      - 🇸🇬 新加坡 01 | 直连
+      - 🇭🇰 香港 03 | 广港 IEPL
+      - 🇯🇵 日本 01 | 直连
+      - 🇸🇬 无法使用请刷新订阅，邀请60%返利
+      - 🇯🇵 日本 大阪 01【4 LB】
+      - 🇰🇷 韩国 春川 01【4 LB】
+      - 🇺🇸 美国 洛杉矶 01
+      - 🇩🇪 德国 法兰克福 01 【4 LB】
+      - 🇺🇸 美国 凤凰城 01【4 LB】
+      - 🇭🇰 香港1 - 1x
+      - 🇨🇳 台湾1 - 1x
+      - 🇯🇵 日本1 - 1x
+      - 🇰🇷 韩国1 - 1x
+      - 🇺🇸 美国1 - 1x
+      - 🇸🇬 新加坡1 - x1
+      - 🇬🇧 英国1 - 1x
+      - 🇨🇳 台湾-TW-01
+      - 🇸🇬 新加坡-SG-01
+      - 🇸🇬 新加坡-SG-02
+      - 🇸🇬 新加坡-SG-03
+      - 🇸🇬 新加坡-SG-04
+      - 🇯🇵 日本-JP-01
+      - 🇯🇵 日本-JP-02
+      - 🇯🇵 日本-JP-03
+      - 🇯🇵 日本-JP-04
+      - 🇭🇰 香港-HK-01
+      - 🇭🇰 香港-HK-02
+      - 🇭🇰 香港-HK-03
+      - 🇭🇰 香港-HK-04-负载均衡
+      - 不限速千兆-hk100
+      - 不限速千兆-tw11
+      - 不限速千兆-tw32
+      - 不限速千兆-tw73
+      - 不限速千兆-tw254
+      - 不限速千兆-hk25
+      - 不限速千兆-hk86
+      - 不限速千兆-tw247
+      - 不限速千兆-hk68
+      - 不限速千兆-hk99
+      - 不限速千兆-tw2110
+      - 不限速千兆-tw2611
+      - 不限速千兆-hk412
+      - 不限速千兆-tw513
+      - 不限速千兆-tw2914
+      - 不限速千兆-tw1115
+      - 不限速千兆-tw616
+      - 不限速千兆-tw2317
+      - 不限速千兆-tw2718
+      - 不限速千兆-tw2819
+      - 不限速千兆-tw220
+      - 不限速千兆-hk521
+      - 不限速千兆-tw1322
+      - 不限速千兆-hk1123
+      - 不限速千兆-us124
+      - 不限速千兆-tw2225
+      - 不限速千兆-us326
+      - 不限速千兆-us827
+      - 不限速千兆-us128
+      - 不限速千兆-us229
+      - 优质线路（kr4）30
+      - 优质线路（eur）31
+      - 🇸🇬 优质线路（sg）32
+      - 优质线路（jp3）33
+      - 优质线路（hk1）34
+      - 优质线路（us3）35
+      - 优质线路（us4）36
+      - 优质线路（us1）37
+      - 优质线路（us2）38
+      - 优质线路（jp2）39
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -626,152 +558,135 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1&ip2
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip4
-      - 🇨🇳 www.dongtaiwang.com+洛杉矶2SS+V2RAY
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
-      - 9203 @WangCai_1
-      - 9205 @WangCai_1
-      - 9206 @WangCai_1
-      - 9203 @WangCai_1 2
-      - 9205 @WangCai_1 2
-      - 9206 @WangCai_1 2
-      - 9203 @WangCai_1 3
-      - 9205 @WangCai_1 3
-      - 9206 @WangCai_1 3
-      - 9403 @WangCai_1
-      - 9405 @WangCai_1
-      - 9407 @WangCai_1
-      - 9403 @WangCai_1 2
-      - 9405 @WangCai_1 2
-      - 9407 @WangCai_1 2
-      - 9403 @WangCai_1 3
-      - 9405 @WangCai_1 3
-      - 9407 @WangCai_1 3
-      - cxkv2.xyz
-      - 🇨🇳 台湾
-      - 🇭🇰 香港0
-      - 🇭🇰 香港1
-      - 🇭🇰 香港2
-      - 🇭🇰 香港6-三网优化-强加密
-      - 距离下次重置剩余：8 天
-      - 🇯🇵 [S]日本 01 免流 1x
+      - 🇺🇸 圣何塞-MyTrojan7
+      - 🇺🇸 圣何塞-MyShadowsocks7
+      - 🇺🇸 圣何塞-MyVmess7
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
+      - 距离下次重置剩余：7 天
       - "[S]亚太 01 免流 1x"
       - 请勿泄露节点IP，谢谢合作
       - "[S1]亚太 01 1x"
       - "[S1]亚太 02 1x"
       - "[S1]亚太 03 1x"
-      - 🇯🇵 [S1]日本 01 1x
-      - 🇯🇵 [S1]日本 02 1x
-      - 🇯🇵 [S1]日本 03 1x
-      - 🇯🇵 [S1]日本 04 1x
-      - 🇯🇵 [S1]日本 05 1x
-      - 🇯🇵 [S]日本 01 1x
-      - 🇯🇵 [S]日本 02 1x
-      - 🇯🇵 [S]日本 03 1x
-      - 🇺🇸 圣何塞-MyTrojan7
-      - 🇺🇸 圣何塞-MyShadowsocks7
-      - 🇺🇸 圣何塞-MyVmess7
-      - 🇭🇰 香港咖喱鱼蛋 01-D
-      - 🇭🇰 香港丝袜奶茶 02-D
-      - 🇭🇰 香港杨枝甘露 03-D
-      - 🇭🇰 香港煎酿三宝 04-D
-      - 🇭🇰 香港-ByWave-01
-      - 🇭🇰 香港-ByWave-02
-      - 🇭🇰 香港-ByWave-03
-      - 🇭🇰 香港-ByWave-04
-      - 🇨🇳 台湾-HINET-01
-      - 🇨🇳 台湾-HINET-02
-      - 🇸🇬 新加坡-DP-01
-      - 🇸🇬 新加坡-DP-02
-      - 🇯🇵 日本-HALO-01
-      - 🇯🇵 日本-DP-02
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01
-      - 🇺🇸 美国-HALO-02
-      - 🇺🇸 美国-HALO-03
-      - 🇺🇸 美国-HALO-04
-      - 🇬🇧 英国-DP-01
-      - 🇬🇧 英国-DP-02
-      - 🇬🇧 英国-DP-03
-      - 🇭🇰 [LV3·原生] 香港01 | IEPL 专线 | 1x
-      - 🇺🇸 [LV2·原生] 美国03 | 中转
-      - 🇺🇸 [LV2·原生] 美国04 | 中转
-      - 🇭🇰 [LV2·原生] 香港01 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港02 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港03 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港04 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港B1 | 中转
-      - 🇭🇰 [LV2·原生] 香港B2 | 中转
-      - 🇭🇰 [LV2·原生] 香港B3 | 中转
-      - 🇭🇰 [LV2·原生] 香港B4 | 中转
-      - 🇨🇳 lv1 台湾Hinet1 直连
-      - 🇨🇳 lv1 台湾Hinet2 直连
-      - 🇨🇳 lv1 台湾TFN1 直连
-      - 🇺🇸 lv1 美国1
-      - 🇺🇸 lv1 美国2
-      - 🇭🇰 香港-ByWave-01 2
-      - 🇭🇰 香港-ByWave-02 2
-      - 🇭🇰 香港-ByWave-03 2
-      - 🇭🇰 香港-ByWave-04 2
-      - 🇨🇳 台湾-HINET-01 2
-      - 🇨🇳 台湾-HINET-02 2
-      - 🇸🇬 新加坡-DP-01 2
-      - 🇸🇬 新加坡-DP-02 2
-      - 🇯🇵 日本-HALO-01 2
-      - 🇯🇵 日本-DP-02 2
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01 2
-      - 🇺🇸 美国-HALO-02 2
-      - 🇺🇸 美国-HALO-03 2
-      - 🇺🇸 美国-HALO-04 2
-      - 🇬🇧 英国-DP-01 2
-      - 🇬🇧 英国-DP-02 2
-      - 🇬🇧 英国-DP-03 2
+      - 🇯🇵 Japan「Basic-S1」1x
+      - 🇯🇵 Japan「Basic-S2」1x
+      - 🇯🇵 Japan「Basic-S3」1x
+      - 🇯🇵 Japan「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S1」1x
+      - 🇭🇰 HongKong「Basic-S2」1x
+      - 🇭🇰 HongKong「Basic-S3」1x
+      - 🇭🇰 HongKong「Basic-S4」1x
+      - 🇭🇰 HongKong「Basic-S5」1x
+      - 🇭🇰 HongKong「Basic-S6」1x
+      - 🇨🇳 Taiwan「Stream-S1」1x
+      - 🇨🇳 Taiwan「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S1」1x
+      - 🇸🇬 Singapore「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S3」1x
+      - 🇸🇬 Singapore「Stream-S4」1x
+      - 🇸🇬 Singapore「Stream-S5」1x
+      - 🇸🇬 Singapore「Stream-S6」1x
+      - 🇺🇸 America「Stream-S1」1x
+      - 🇺🇸 America「Stream-S2」1x
+      - 🇺🇸 America「Stream-S3」1x
+      - 🇺🇸 America「Stream-S4」1x
+      - 🇺🇸 「TCP」海外·美国｜US
+      - 🇺🇸 「绿通」海外·美国｜US
+      - 🇺🇸 「广停」海外·美国｜US
+      - 🇺🇸 「443」海外·美国｜US
+      - 🇺🇸 「80」海外·美国｜US
+      - 🇯🇵 「80」海外·日本2｜Oracle
+      - 🇭🇰 「80」特区·香港｜Azure
+      - 🇯🇵 「443」海外·日本2｜Oracle
+      - 🇯🇵 「广停」海外·日本2｜Oracle
+      - 🇯🇵 「绿通」海外·日本2｜Oracle
+      - 🇯🇵 「TCP」海外·日本2｜Oracle
+      - 🇺🇸 「TCP」海外·美国
+      - 🇺🇸 「80」海外·美国
+      - 🇺🇸 「443」海外·美国
+      - 🇺🇸 「广停」海外·美国
+      - cxkv2.xyz
+      - 🇨🇳 台湾
+      - 🇭🇰 香港1
+      - 🇭🇰 香港2
+      - 🇭🇰 香港7
+      - 🇭🇰 香港8
+      - 🇭🇰 香港 02 | 广港 IEPL
+      - 🇭🇰 香港 04 | 广港 IEPL
+      - HKy
+      - 🇭🇰 香港 01 | 广港 IEPL
+      - 🇸🇬 新加坡 02 | 直连
+      - 🇸🇬 新加坡 01 | 直连
+      - 🇭🇰 香港 03 | 广港 IEPL
+      - 🇯🇵 日本 01 | 直连
+      - 🇸🇬 无法使用请刷新订阅，邀请60%返利
+      - 🇯🇵 日本 大阪 01【4 LB】
+      - 🇰🇷 韩国 春川 01【4 LB】
+      - 🇺🇸 美国 洛杉矶 01
+      - 🇩🇪 德国 法兰克福 01 【4 LB】
+      - 🇺🇸 美国 凤凰城 01【4 LB】
+      - 🇭🇰 香港1 - 1x
+      - 🇨🇳 台湾1 - 1x
+      - 🇯🇵 日本1 - 1x
+      - 🇰🇷 韩国1 - 1x
+      - 🇺🇸 美国1 - 1x
+      - 🇸🇬 新加坡1 - x1
+      - 🇬🇧 英国1 - 1x
+      - 🇨🇳 台湾-TW-01
+      - 🇸🇬 新加坡-SG-01
+      - 🇸🇬 新加坡-SG-02
+      - 🇸🇬 新加坡-SG-03
+      - 🇸🇬 新加坡-SG-04
+      - 🇯🇵 日本-JP-01
+      - 🇯🇵 日本-JP-02
+      - 🇯🇵 日本-JP-03
+      - 🇯🇵 日本-JP-04
+      - 🇭🇰 香港-HK-01
+      - 🇭🇰 香港-HK-02
+      - 🇭🇰 香港-HK-03
+      - 🇭🇰 香港-HK-04-负载均衡
+      - 不限速千兆-hk100
+      - 不限速千兆-tw11
+      - 不限速千兆-tw32
+      - 不限速千兆-tw73
+      - 不限速千兆-tw254
+      - 不限速千兆-hk25
+      - 不限速千兆-hk86
+      - 不限速千兆-tw247
+      - 不限速千兆-hk68
+      - 不限速千兆-hk99
+      - 不限速千兆-tw2110
+      - 不限速千兆-tw2611
+      - 不限速千兆-hk412
+      - 不限速千兆-tw513
+      - 不限速千兆-tw2914
+      - 不限速千兆-tw1115
+      - 不限速千兆-tw616
+      - 不限速千兆-tw2317
+      - 不限速千兆-tw2718
+      - 不限速千兆-tw2819
+      - 不限速千兆-tw220
+      - 不限速千兆-hk521
+      - 不限速千兆-tw1322
+      - 不限速千兆-hk1123
+      - 不限速千兆-us124
+      - 不限速千兆-tw2225
+      - 不限速千兆-us326
+      - 不限速千兆-us827
+      - 不限速千兆-us128
+      - 不限速千兆-us229
+      - 优质线路（kr4）30
+      - 优质线路（eur）31
+      - 🇸🇬 优质线路（sg）32
+      - 优质线路（jp3）33
+      - 优质线路（hk1）34
+      - 优质线路（us3）35
+      - 优质线路（us4）36
+      - 优质线路（us1）37
+      - 优质线路（us2）38
+      - 优质线路（jp2）39
   - name: 📲 电报消息
     type: select
     proxies:
@@ -913,6 +828,9 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -958,156 +876,111 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港0
+      - 🇭🇰 「80」特区·香港｜Azure
       - 🇭🇰 香港1
       - 🇭🇰 香港2
-      - 🇭🇰 香港6-三网优化-强加密
-      - 🇭🇰 香港咖喱鱼蛋 01-D
-      - 🇭🇰 香港丝袜奶茶 02-D
-      - 🇭🇰 香港杨枝甘露 03-D
-      - 🇭🇰 香港煎酿三宝 04-D
-      - 🇭🇰 香港-ByWave-01
-      - 🇭🇰 香港-ByWave-02
-      - 🇭🇰 香港-ByWave-03
-      - 🇭🇰 香港-ByWave-04
-      - 🇭🇰 [LV3·原生] 香港01 | IEPL 专线 | 1x
-      - 🇭🇰 [LV2·原生] 香港01 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港02 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港03 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港04 | IEPL 专线 | 3x
-      - 🇭🇰 [LV2·原生] 香港B1 | 中转
-      - 🇭🇰 [LV2·原生] 香港B2 | 中转
-      - 🇭🇰 [LV2·原生] 香港B3 | 中转
-      - 🇭🇰 [LV2·原生] 香港B4 | 中转
-      - 🇭🇰 香港-ByWave-01 2
-      - 🇭🇰 香港-ByWave-02 2
-      - 🇭🇰 香港-ByWave-03 2
-      - 🇭🇰 香港-ByWave-04 2
+      - 🇭🇰 香港7
+      - 🇭🇰 香港8
+      - 🇭🇰 香港 02 | 广港 IEPL
+      - 🇭🇰 香港 04 | 广港 IEPL
+      - HKy
+      - 🇭🇰 香港 01 | 广港 IEPL
+      - 🇭🇰 香港 03 | 广港 IEPL
+      - 🇭🇰 香港1 - 1x
+      - 🇭🇰 香港-HK-01
+      - 🇭🇰 香港-HK-02
+      - 🇭🇰 香港-HK-03
+      - 🇭🇰 香港-HK-04-负载均衡
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 [S]日本 01 免流 1x
-      - 🇯🇵 [S1]日本 01 1x
-      - 🇯🇵 [S1]日本 02 1x
-      - 🇯🇵 [S1]日本 03 1x
-      - 🇯🇵 [S1]日本 04 1x
-      - 🇯🇵 [S1]日本 05 1x
-      - 🇯🇵 [S]日本 01 1x
-      - 🇯🇵 [S]日本 02 1x
-      - 🇯🇵 [S]日本 03 1x
-      - 🇯🇵 日本-HALO-01
-      - 🇯🇵 日本-DP-02
-      - 🇯🇵 日本-HALO-01 2
-      - 🇯🇵 日本-DP-02 2
+      - 🇯🇵 Japan「Basic-S1」1x
+      - 🇯🇵 Japan「Basic-S2」1x
+      - 🇯🇵 Japan「Basic-S3」1x
+      - 🇯🇵 Japan「Basic-S4」1x
+      - 🇯🇵 「80」海外·日本2｜Oracle
+      - 🇯🇵 「443」海外·日本2｜Oracle
+      - 🇯🇵 「广停」海外·日本2｜Oracle
+      - 🇯🇵 「绿通」海外·日本2｜Oracle
+      - 🇯🇵 「TCP」海外·日本2｜Oracle
+      - 🇯🇵 日本 01 | 直连
+      - 🇯🇵 日本 大阪 01【4 LB】
+      - 🇯🇵 日本1 - 1x
+      - 🇯🇵 日本-JP-01
+      - 🇯🇵 日本-JP-02
+      - 🇯🇵 日本-JP-03
+      - 🇯🇵 日本-JP-04
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip1&ip2
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶ip4
-      - 🇨🇳 www.dongtaiwang.com+洛杉矶2SS+V2RAY
-      - 🇺🇸 https://github.com/Alvin9999/new-pac/wiki 洛杉矶1SSR
-      - US_0443 @WangCai_1
-      - US_2375 @WangCai_1
-      - US_2376 @WangCai_1
-      - US_3306 @WangCai_1
-      - US_3389 @WangCai_1
-      - US_4444 @WangCai_1
-      - US_5000 @WangCai_1
-      - US_5001 @WangCai_1
-      - US_5003 @WangCai_1
-      - US_5004 @WangCai_1
-      - US_5500 @WangCai_1
-      - US_5600 @WangCai_1
-      - US_5601 @WangCai_1
-      - US_6379 @WangCai_1
-      - US_6679 @WangCai_1
-      - US_6697 @WangCai_1
-      - US_7001 @WangCai_1
-      - US_7002 @WangCai_1
-      - US_7306 @WangCai_1
-      - US_7307 @WangCai_1
-      - US_8000 @WangCai_1
-      - US_8008 @WangCai_1
-      - US_8009 @WangCai_1
-      - US_8080 @WangCai_1
-      - US_8090 @WangCai_1
-      - US_8091 @WangCai_1
-      - US_8118 @WangCai_1
-      - US_8119 @WangCai_1
-      - US_8881 @WangCai_1
-      - US_8882 @WangCai_1
-      - US_8888 @WangCai_1
-      - US_9101 @WangCai_1
-      - US_9102 @WangCai_1
       - 🇺🇸 圣何塞-MyTrojan7
       - 🇺🇸 圣何塞-MyShadowsocks7
       - 🇺🇸 圣何塞-MyVmess7
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01
-      - 🇺🇸 美国-HALO-02
-      - 🇺🇸 美国-HALO-03
-      - 🇺🇸 美国-HALO-04
-      - 🇺🇸 [LV2·原生] 美国03 | 中转
-      - 🇺🇸 [LV2·原生] 美国04 | 中转
-      - 🇺🇸 lv1 美国1
-      - 🇺🇸 lv1 美国2
-      - 🇺🇸 美国-HALO-RANDOM-OUT-01 2
-      - 🇺🇸 美国-HALO-02 2
-      - 🇺🇸 美国-HALO-03 2
-      - 🇺🇸 美国-HALO-04 2
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇺🇸 「TCP」海外·美国｜US
+      - 🇺🇸 「绿通」海外·美国｜US
+      - 🇺🇸 「广停」海外·美国｜US
+      - 🇺🇸 「443」海外·美国｜US
+      - 🇺🇸 「80」海外·美国｜US
+      - 🇺🇸 「TCP」海外·美国
+      - 🇺🇸 「80」海外·美国
+      - 🇺🇸 「443」海外·美国
+      - 🇺🇸 「广停」海外·美国
+      - 🇺🇸 美国 洛杉矶 01
+      - 🇺🇸 美国 凤凰城 01【4 LB】
+      - 🇺🇸 美国1 - 1x
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇨🇳 Taiwan「Stream-S1」1x
+      - 🇨🇳 Taiwan「Stream-S2」1x
       - 🇨🇳 台湾
-      - 🇨🇳 台湾-HINET-01
-      - 🇨🇳 台湾-HINET-02
-      - 🇨🇳 lv1 台湾Hinet1 直连
-      - 🇨🇳 lv1 台湾Hinet2 直连
-      - 🇨🇳 lv1 台湾TFN1 直连
-      - 🇨🇳 台湾-HINET-01 2
-      - 🇨🇳 台湾-HINET-02 2
+      - 🇨🇳 台湾1 - 1x
+      - 🇨🇳 台湾-TW-01
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - SG_00 @WangCai_1
-      - SG_01 @WangCai_1
-      - SG_02 @WangCai_1
-      - SG_03 @WangCai_1
-      - SG_04 @WangCai_1
-      - SG_05 @WangCai_1
-      - SG_06 @WangCai_1
-      - SG_07 @WangCai_1
-      - SG_08 @WangCai_1
-      - SG_09 @WangCai_1
-      - SG_10 @WangCai_1
-      - SG_11 @WangCai_1
-      - SG_12 @WangCai_1
-      - 🇸🇬 新加坡-DP-01
-      - 🇸🇬 新加坡-DP-02
-      - 🇸🇬 新加坡-DP-01 2
-      - 🇸🇬 新加坡-DP-02 2
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
+      - 🇸🇬 Singapore「Stream-S1」1x
+      - 🇸🇬 Singapore「Stream-S2」1x
+      - 🇸🇬 Singapore「Stream-S3」1x
+      - 🇸🇬 Singapore「Stream-S4」1x
+      - 🇸🇬 Singapore「Stream-S5」1x
+      - 🇸🇬 Singapore「Stream-S6」1x
+      - 🇸🇬 新加坡 02 | 直连
+      - 🇸🇬 新加坡 01 | 直连
+      - 🇸🇬 新加坡1 - x1
+      - 🇸🇬 新加坡-SG-01
+      - 🇸🇬 新加坡-SG-02
+      - 🇸🇬 新加坡-SG-03
+      - 🇸🇬 新加坡-SG-04
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇰🇷 韩国 春川 01【4 LB】
+      - 🇰🇷 韩国1 - 1x
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - DIRECT
+      - 🇺🇸 1.美国US（凤凰城）ARM_1_Oracle 「解锁Netflix」
+      - 🇸🇬 11.新加坡SG_ARM_1_Oracle「解锁Netflix」
+      - 🇸🇬 12.新加坡SG_ARM_2_Oracle「解锁Netflix」
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
