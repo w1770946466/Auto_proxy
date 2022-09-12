@@ -60,7 +60,7 @@ def get_content(url_lst):
     #获取单个订阅链接进行判断
     i = 1
     try:
-        new_list_down = new_list[-10::]
+        new_list_down = new_list[-50::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     print("共获得", len(new_list_down), "条链接")
