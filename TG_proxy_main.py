@@ -159,7 +159,7 @@ def get_yaml():
 
 
 if __name__ == '__main__':
-    urls =["https://t.me/s/airproxies", "https://t.me/s/baipiao01", "https://t.me/s/jokersfantastichome","https://t.me/s/masco899", "https://t.me/s/fffffx2","https://t.me/s/nice6677","https://t.me/s/FreeVpnChina","https://t.me/s/univstar","https://t.me/s/kxswa","https://t.me/s/sharingnode","https://t.me/s/hkaa0","https://t.me/s/BaiPiao166","https://t.me/s/v2rayN_admin_cn"]
+    urls =["https://t.me/s/airproxies", "https://t.me/s/jokersfantastichome","https://t.me/s/masco899", "https://t.me/s/fffffx2","https://t.me/s/univstar","https://t.me/s/kxswa","https://t.me/s/hkaa0","https://t.me/s/BaiPiao166","https://t.me/s/beiyiwangdeguodu"]
     for url in urls:
         resp = get_content(get_channel_http(url))
         print(url, "获取完毕！！")
