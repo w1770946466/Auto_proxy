@@ -10,7 +10,7 @@ update_path = "./sub/"
 #所有的clash订阅链接
 end_list_clash = []
 #所有的v2ray订阅链接
-end_list_v2ray = ['https://raw.githubusercontent.com/kxswa/k/k/v2ray']
+end_list_v2ray = []
 #所有的节点明文信息
 end_bas64 = []
 #获得格式化后的链接
