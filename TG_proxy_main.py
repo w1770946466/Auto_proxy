@@ -10,7 +10,7 @@ update_path = "./sub/"
 #所有的clash订阅链接
 end_list_clash = []
 #所有的v2ray订阅链接
-end_list_v2ray = []
+end_list_v2ray = [“http://file.52nfw.cn/word/obtain.php?user=111111&id=1”]
 #所有的节点明文信息
 end_bas64 = []
 #获得格式化后的链接
