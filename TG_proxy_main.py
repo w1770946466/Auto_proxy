@@ -10,7 +10,7 @@ update_path = "./sub/"
 #所有的clash订阅链接
 end_list_clash = []
 #所有的v2ray订阅链接
-end_list_v2ray = []
+end_list_v2ray = ['https://openit.daycat.space/long','https://gitlab.com/api/v4/projects/35506148/repository/files/data%2Fv2ray%2Fgeneral.txt/raw?ref=main&private_token=glpat-JmxhQF1Pta__KamyyKqV','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg']
 #所有的节点明文信息
 end_bas64 = []
 #获得格式化后的链接
