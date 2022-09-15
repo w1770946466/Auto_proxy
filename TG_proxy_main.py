@@ -10,11 +10,15 @@ update_path = "./sub/"
 #所有的clash订阅链接
 end_list_clash = []
 #所有的v2ray订阅链接
-end_list_v2ray = ['https://openit.daycat.space/long','https://gitlab.com/api/v4/projects/35506148/repository/files/data%2Fv2ray%2Fgeneral.txt/raw?ref=main&private_token=glpat-JmxhQF1Pta__KamyyKqV','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg']
+end_list_v2ray = []
 #所有的节点明文信息
 end_bas64 = []
 #获得格式化后的链接
 new_list = []
+#永久订阅
+e_sub = ['https://openit.daycat.space/long','https://gitlab.com/api/v4/projects/35506148/repository/files/data%2Fv2ray%2Fgeneral.txt/raw?ref=main&private_token=glpat-JmxhQF1Pta__KamyyKqV','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg']
+
+
 
 
 #获取群组聊天中的HTTP链接
@@ -95,6 +99,12 @@ def write_document():
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
+        #永久订阅
+        for e in e_sub:
+            res = requests.get(e)
+            proxys=jiemi_base64(res.text)
+            end_bas64.append(peoxys)
+            print('永久订阅更新完毕')
         #去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
