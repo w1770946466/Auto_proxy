@@ -16,7 +16,7 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = ['https://openit.daycat.space/long','https://gitlab.com/api/v4/projects/35506148/repository/files/data%2Fv2ray%2Fgeneral.txt/raw?ref=main&private_token=glpat-JmxhQF1Pta__KamyyKqV','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg']
+e_sub = ['https://openit.daycat.space/long','https://gitlab.com/api/v4/projects/35506148/repository/files/data%2Fv2ray%2Fgeneral.txt/raw?ref=main&private_token=glpat-JmxhQF1Pta__KamyyKqV','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
 
 
 
