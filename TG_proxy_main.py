@@ -103,7 +103,7 @@ def write_document():
         for e in e_sub:
             res = requests.get(e)
             proxys=jiemi_base64(res.text)
-            end_bas64.append(peoxys)
+            end_bas64.append(proxys)
             print('永久订阅更新完毕')
         #去重
         end_bas64_A = list(set(end_bas64))
