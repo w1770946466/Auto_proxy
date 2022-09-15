@@ -60,7 +60,7 @@ def get_content(url_lst):
     #获取单个订阅链接进行判断
     i = 1
     try:
-        new_list_down = new_list[-30::]
+        new_list_down = new_list[-50::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     print("共获得", len(new_list_down), "条链接")
@@ -159,7 +159,7 @@ def get_yaml():
 
 
 if __name__ == '__main__':
-    urls =["https://t.me/s/airproxies", "https://t.me/s/jokersfantastichome","https://t.me/s/masco899", "https://t.me/s/fffffx2","https://t.me/s/univstar","https://t.me/s/kxswa","https://t.me/s/hkaa0","https://t.me/s/BaiPiao166","https://t.me/s/beiyiwangdeguodu"]
+    urls =["https://t.me/s/airproxies", "https://t.me/s/masco899","https://t.me/s/univstar","https://t.me/s/kxswa","https://t.me/s/BaiPiao166","https://t.me/s/beiyiwangdeguodu"]
     for url in urls:
         resp = get_content(get_channel_http(url))
         print(url, "获取完毕！！")
