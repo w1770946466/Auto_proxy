@@ -28,8 +28,8 @@
 
 - [多协议Base64编码](https://v1.mk/vihVzbR)`https://v1.mk/vihVzbR`
 
-- [clash订阅](https://v1.mk/Ro1hLJ1)`https://v1.mk/Ro1hLJ1`
+- [clash订阅](https://d1.mk/Pwx1zlz)`https://d1.mk/Pwx1zlz`
 
-- [clash订阅2](https://v1.mk/kMjfdCy)`https://v1.mk/kMjfdCy`
+- [clash订阅2](https://d1.mk/WUskOTV)`https://d1.mk/WUskOTV`
 
-- [clash订阅3](https://v1.mk/J7rmFGw)`https://v1.mk/J7rmFGw`
+- [clash订阅3](https://d1.mk/gNsZoGU)`https://d1.mk/gNsZoGU`
