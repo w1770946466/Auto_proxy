@@ -1,4 +1,4 @@
-
+# coding=utf-8
 import base64
 import requests
 import re
@@ -102,8 +102,11 @@ def write_document():
         #永久订阅
         for e in e_sub:
             res = requests.get(e)
-            proxys=jiemi_base64(res.text)
-            end_bas64.append(proxys)
+            try:
+                proxys=jiemi_base64(res.text)
+                end_bas64.append(proxys)
+            except:
+                print("出现错误❌跳过")
         print('永久订阅更新完毕')
         #去重
         end_bas64_A = list(set(end_bas64))
