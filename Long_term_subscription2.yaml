@@ -5,85 +5,198 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 距离下次重置剩余：6天, server: 1.1.1.1, port: 65535, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 国内入口：大机场.cc固定入口：大机场.com电报：BigAirport_Group, server: 1.1.1.1, port: 65535, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 *敏感时期墙的比较频繁，不能用时请更新节点, server: 1.1.1.1, port: 65535, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: "*严禁测速，为了保证所有人的宽带公平", server: 1.1.1.1, port: 65535, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d37xr2wb5cxle7.cloudfront.net}}}
-  - {name: 🇭🇰 【直连】HKG/香港-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com, port: 80, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com}}}
-  - {name: 🇭🇰 【直连】HKG/香港-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com, port: 443, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com}}}
-  - {name: 【直连】TYO/东京-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com, port: 80, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】TYO/东京-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com, port: 443, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 【直连】SIN/狮城-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com, port: 80, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 【直连】SIN/狮城-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com, port: 443, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 【直连】ICN/首尔-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com, port: 80, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 【直连】ICN/首尔-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com, port: 443, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】SJC/圣荷西-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com, port: 80, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】SJC/圣荷西-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com, port: 443, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇩🇪 【直连】FRA/法兰克福-随机端口-1, server: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com, port: 26901, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇲 【直连】PDX/波特兰-随机端口-2, server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com, port: 10392, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇬🇧 【直连】LCY/伦敦-随机端口-3, server: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com, port: 43566, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇦🇷 【直连】PAR/巴黎-随机端口-4, server: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com, port: 12659, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇮🇪 【直连】DUB/爱尔兰-随机端口-5, server: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com, port: 15092, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【直连】HKG/香港-1, server: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【直连】HKG/香港-2, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】TYO/东京-1, server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】TYO/东京-2, server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 【直连】SIN/狮城-1, server: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 【直连】SIN/狮城-2, server: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 【直连】ICN/首尔-1, server: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 【直连】ICN/首尔-2, server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】SJC/圣荷西-1, server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】SJC/圣荷西-2, server: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com, port: 52356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【直连】HKG/香港-3, server: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 【直连】HKG/香港-4, server: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】TYO/东京-3, server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】TYO/东京-4, server: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 【直连】SIN/狮城-3, server: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 【直连】SIN/狮城-4, server: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 【直连】ICN/首尔-3, server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 【直连】ICN/首尔-4, server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】SJC/圣荷西-3, server: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 【直连】SJC/圣荷西-4, server: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com, port: 12356, type: vmess, uuid: 7686afa1-f45f-480e-adc6-b15f9b1803a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇦 加拿大-直连Z1-1G, server: caz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: caz1.1yuanfly.live}}}
-  - {name: 🇸🇬 新加坡-直连Z1-1G, server: sgz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sgz1.1yuanfly.live}}}
-  - {name: 🇸🇬 新加坡-直连Z2-1G, server: sgz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡-直连Z3-1G, server: sgz3.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡-直连Z4-1G\t", server: sgz4.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡-直连Z5-1G, server: sgz5.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡-直连免费-1G, server: sgfree1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z1-1G, server: jpz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z2-1G, server: jpz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z3-1G, server: jpz3.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z4-1G, server: jpz4.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z5-1G, server: jpz5.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z6-1G, server: jpz6.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本东京-直连Z7-1G, server: jpz7.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇦🇺 澳大利亚-直连Z1-1G, server: aoz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 美国达拉斯-直连Z1-1G, server: usz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 美国达拉斯-直连Z2-1G, server: usz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇬🇧 英国伦敦-直连免费-1G, server: ukfree1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🏳️‍🌈 过期时间：2022-10-03, server: 1yuan.live, port: 10086, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🏳️‍🌈 过期时间：2022-12-04, server: stardream.xyz, port: 10086, type: trojan, password: m9sawmaMxbSoWcPO, skip-cert-verify: false}
-  - {name: 🇷🇺 中转俄罗斯011x, server: xmsj-vip1.omo-m0m.com, port: 55004, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇯🇵 中转日本011x, server: xmsj-vip1.omo-m0m.com, port: 55005, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 中转美国011x, server: xmsj-vip1.omo-m0m.com, port: 55000, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 中转美国021xMedia, server: xmsj-vip1.omo-m0m.com, port: 55003, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇰🇷 中转韩国011xMedia, server: xmsj-vip1.omo-m0m.com, port: 55001, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇰🇷 中转韩国021xMedia, server: xmsj-vip1.omo-m0m.com, port: 55002, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 直连台湾011xResidential, server: 211.23.149.95, port: 8021, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇯🇵 直连日本010.5x, server: 160.16.150.125, port: 8021, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 直连美国011x, server: 185.199.224.197, port: 8021, type: trojan, password: e1b932a7-b178-3e77-b1b8-0bb0ae03a6c1, sni: 140-238-31-92.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港01免流0.5x, server: mianliu12346.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: d0c1d6da-9b81-40c1-ae02-412955762c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}}
-  - {name: 🇷🇺 |俄罗斯01免流1x, server: aeadruaes01.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: d0c1d6da-9b81-40c1-ae02-412955762c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.100010.com}}}
-  - {name: 🇯🇵 |日本01免流1x, server: aeadjpaes01.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: d0c1d6da-9b81-40c1-ae02-412955762c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.100010.com}}}
-  - {name: 🇯🇵 |日本011x, server: aeadjpaes01.xn--z4q48lcvp.com, port: 35474, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: aeadjpaes01.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本021x, server: jpjpjpjpjpjpaead6221al.xn--z4q48lcvp.com, port: 35475, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: jpjpjpjpjpjpaead6221al.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本031x, server: jpjpjpjpjpjpaead6221al.xn--z4q48lcvp.com, port: 35476, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: jpjpjpjpjpjpaead6221al.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本041x, server: jpjpjpjpjpjpaead6221al.xn--z4q48lcvp.com, port: 35477, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: jpjpjpjpjpjpaead6221al.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡011x, server: sgsgsgsgaead2652ad.xn--z4q48lcvp.com, port: 35478, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: sgsgsgsgaead2652ad.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡021x, server: sgsgsgsgaead2652ad.xn--z4q48lcvp.com, port: 35479, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: sgsgsgsgaead2652ad.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡031x, server: sgsgsgsgaead2652ad.xn--z4q48lcvp.com, port: 35480, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: sgsgsgsgaead2652ad.xn--z4q48lcvp.com, skip-cert-verify: false}
-  - {name: 🇷🇺 |俄罗斯011x, server: aeadruaes01.xn--z4q48lcvp.com, port: 35474, type: trojan, password: d0c1d6da-9b81-40c1-ae02-412955762c54, sni: aeadruaes01.xn--z4q48lcvp.com, skip-cert-verify: false}
+  - {name: 距离下次重置剩余：7天, server: 13.214.171.197, port: 44343, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 EC新加坡A, server: 13.214.171.197, port: 44343, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 EC新加坡B, server: 13.214.171.197, port: 44343, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 EC新加坡C, server: 13.251.63.10, port: 443, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 EC新加坡D, server: 13.251.63.10, port: 443, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HKT, server: gtm-cn-7mz2vfdwc01.gtm-a3b6.com, port: 20701, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: hkt.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HGC商宽, server: relay.alink123.com, port: 20701, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: hgc.n.optage.moe, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾HiNet, server: relay.alink123.com, port: 20704, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: tw.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇺🇲 美国Cogent, server: relay.alink123.com, port: 20705, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: us.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇺🇲 美国GTT, server: relay.alink123.com, port: 20706, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: usgt.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇫🇷 法国, server: relay.alink123.com, port: 20709, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: fr.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇬🇧 英国, server: relay.alink123.com, port: 20710, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: uk.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯, server: relay.alink123.com, port: 20708, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: ru.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇹🇷 土耳其, server: relay.alink123.com, port: 20711, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: tr.node.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇯🇵 尼日利亚, server: relay.alink123.com, port: 20712, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡Scloud, server: relay.alink123.com, port: 20713, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇹🇭 泰国, server: relay.alink123.com, port: 20714, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇵🇭 菲律宾, server: relay.alink123.com, port: 20715, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇻🇳 越南, server: relay.alink123.com, port: 20716, type: trojan, password: 0dd659b8-a536-4e5b-aa42-db4a61a04847, sni: cdn.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_1, server: 47.243.124.141, port: 41179, type: vmess, uuid: a50b1dc4-03ce-44d8-a5c4-f4753c57884e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 香港_tg+univstar_2, server: 47.243.124.141, port: 41179, type: vmess, uuid: a50b1dc4-03ce-44d8-a5c4-f4753c57884e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 香港_tg+univstar_3, server: 47.242.48.24, port: 54550, type: vmess, uuid: 0f2d7b3f-e144-4e97-867c-d07f49f6251d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 香港_tg+univstar_4, server: 47.243.136.17, port: 37205, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: tg+univstar_5, server: 103.173.254.43, port: 443, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_6, server: 47.242.48.24, port: 54550, type: vmess, uuid: 0f2d7b3f-e144-4e97-867c-d07f49f6251d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇨🇳 中国_tg+univstar_7, server: 120.195.181.51, port: 12323, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_8, server: 120.195.181.51, port: 12354, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_9, server: 120.195.181.72, port: 12333, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_10, server: 120.195.181.51, port: 12333, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_11, server: 120.195.181.51, port: 12353, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_12, server: 120.195.181.51, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_13, server: 120.195.181.72, port: 12337, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_14, server: 120.195.181.72, port: 12354, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_15, server: gy.alhttdw.cn, port: 11721, type: trojan, password: f2e57fc2-f887-4b7c-9f99-3b3ec10cd0d7, sni: gy.alhttdw.cn, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_16, server: 120.195.181.51, port: 12324, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_17, server: 47.242.236.239, port: 35707, type: vmess, uuid: 81acfa46-1c36-4950-8dd5-04dd0a1ff0f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇳🇱 荷兰_tg+univstar_18, server: nl2.v2rayserv.com, port: 80, type: vmess, uuid: 364cf68d-8821-4e57-8189-0d16bac31a58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: nl2.v2rayserv.com}}}
+  - {name: 🇭🇰 香港_tg+univstar_19, server: 47.242.203.43, port: 23501, type: vmess, uuid: 7b3f0c3e-5ba1-430f-b8e5-dcff591f93bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇨🇳 中国_tg+univstar_20, server: 120.195.181.72, port: 12353, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_21, server: 120.195.181.72, port: 12323, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡_tg+univstar_22, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_23, server: 120.195.181.51, port: 12337, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_24, server: 120.195.181.72, port: 12356, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_25, server: mycfwork.herokuapp.com, port: 443, type: vmess, uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-vmess, headers: {Host: mycfwork.herokuapp.com}}}
+  - {name: 🇺🇲 美国_tg+univstar_26, server: mycfwork.herokuapp.com, port: 443, type: vmess, uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-vmess, headers: {Host: mycfwork.herokuapp.com}}}
+  - {name: 🇨🇳 中国_tg+univstar_27, server: dgcm.pdjs.top, port: 49004, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: false}
+  - {name: 🇮🇹 意大利_tg+univstar_28, server: scus1.ddns-pop.cyou, port: 24567, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_29, server: 210.75.24.222, port: 443, type: vmess, uuid: c19b138c-6e30-43b4-f66d-a94c6e869d12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: usarm.ptuu.cf}}}
+  - {name: 🇭🇰 香港_tg+univstar_30, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇨🇳 中国_tg+univstar_31, server: dgcm.pdjs.top, port: 49007, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_32, server: 120.195.181.72, port: 12336, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_33, server: 120.195.181.72, port: 12351, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡_tg+univstar_34, server: 99tw02.tfzhc.top, port: 443, type: trojan, password: f089ab9d-dd52-42a0-b10c-980e70a00e1a, sni: 99tw02.tfzhc.top, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_35, server: 8.210.84.180, port: 51529, type: vmess, uuid: 3b38d661-b5e7-485e-96af-6d4518d819d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇨🇳 中国_tg+univstar_36, server: 120.195.181.51, port: 12355, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_37, server: 120.195.181.72, port: 12352, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾_tg+univstar_38, server: 913tw.tfzhc.top, port: 44318, type: trojan, password: f089ab9d-dd52-42a0-b10c-980e70a00e1a, sni: 913tw.tfzhc.top, skip-cert-verify: false}
+  - {name: tg+univstar_39, server: hvoou-1042-v2-1.tyo-d-kcd.ap.cjhh.beauty, port: 888, type: vmess, uuid: fc541302-7a84-4957-8e93-b974094cc7a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: "%7B%22Host%22:%22s3.cjhh.beauty%22%7D"}}}
+  - {name: 🇭🇰 香港_tg+univstar_40, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇨🇳 中国_tg+univstar_41, server: 120.195.181.51, port: 12356, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_42, server: 120.195.181.72, port: 12334, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_43, server: 120.195.181.72, port: 12350, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_44, server: 47.242.156.146, port: 60072, type: vmess, uuid: ab089f3f-bf1c-4a71-821b-1e4861eb39ab, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇨🇳 中国_tg+univstar_45, server: 120.195.181.51, port: 12351, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_46, server: 120.195.181.72, port: 12335, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_47, server: 120.195.181.51, port: 12334, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_48, server: 159.223.32.230, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 159.223.32.230}}}
+  - {name: 🇨🇳 中国_tg+univstar_49, server: 124.71.16.99, port: 12332, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_50, server: dgcm.pdjs.top, port: 49008, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_51, server: dgcm.pdjs.top, port: 49007, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_52, server: dgcm.pdjs.top, port: 49008, type: trojan, password: 0f3abc1b-5443-4edd-a012-886bf1a43898, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_53, server: 159.223.32.230, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 159.223.32.230}}}
+  - {name: 🇨🇳 中国_tg+univstar_54, server: 120.195.181.51, port: 12350, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_55, server: dgcm.pdjs.top, port: 49001, type: trojan, password: 69dc51ad-260d-4c10-8377-3d1658d8ad1e, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_56, server: 120.195.181.51, port: 12336, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_57, server: 120.195.181.51, port: 12335, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_58, server: 138.2.86.43, port: 32574, type: vmess, uuid: 6e0aae55-230c-45a0-8591-7fce1ec7a326, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_59, server: 120.195.181.72, port: 12355, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_60, server: 47.243.131.231, port: 58681, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 香港_tg+univstar_61, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}}
+  - {name: 🇺🇲 美国_tg+univstar_62, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: false}
+  - {name: 🇬🇧 英国_tg+univstar_63, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇬🇧 英国_tg+univstar_64, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇭🇰 香港_tg+univstar_65, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}}
+  - {name: 🇺🇲 美国_tg+univstar_66, server: 165.154.235.171, port: 24567, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡_tg+univstar_67, server: 99tw03.tfzhc.top, port: 443, type: trojan, password: f089ab9d-dd52-42a0-b10c-980e70a00e1a, skip-cert-verify: false}
+  - {name: 🇬🇧 英国_tg+univstar_68, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇸🇬 更新于09/24/14:20, server: 42.49.119.17, port: 38701, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国(), server: 42.49.119.17, port: 38707, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 2, server: 42.49.119.17, port: 38715, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 3, server: 42.49.119.17, port: 38704, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 4, server: 03.yunpan.dog, port: 38702, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇯🇵 日本(), server: 52.192.47.70, port: 25140, type: trojan, password: da5f9035-e488-3d6f-8a84-b3c4ef5f3784, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 5, server: guangzhouddns.xyz, port: 11804, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: MDE4YWIxMjAyMy5taWNyb3NvZnQuY29t}
+  - {name: 🇨🇳 中国() 6, server: 42.49.119.17, port: 38719, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 7, server: 124.225.24.137, port: 38735, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 8, server: 124.71.16.99, port: 12323, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 9, server: 42.49.119.17, port: 39504, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇺🇲 美国(), server: fnhk1glines002re.fnline.club, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: edbe138e9e7d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1glines002re.fnline.club, path: /, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇨🇳 中国() 10, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国(), server: 158.247.234.209, port: 21008, type: vmess, uuid: 210f5d72-27f5-4b23-a2d6-1c07e89f586c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国() 2, server: 193.122.96.32, port: 55044, type: trojan, password: da5f9035-e488-3d6f-8a84-b3c4ef5f3784, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 11, server: 42.49.119.17, port: 38710, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 12, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 13, server: 03.yunpan.dog, port: 38705, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇸🇬 新加坡(), server: sgp.purecloud.ga, port: 18888, type: trojan, password: 360c04ea-7509-4300-aed9-2d193732c99b, sni: sgp.purecloud.ga, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 14, server: 03.yunpan.dog, port: 38711, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇸🇬 新加坡() 2, server: 139.162.23.118, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}}
+  - {name: (), server: 103.173.178.110, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇺🇲 美国() 2, server: 159.223.32.230, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 159.223.32.230}}}
+  - {name: 🇺🇲 美国() 3, server: 159.223.32.230, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 159.223.32.230}}}
+  - {name: 🇨🇳 中国() 15, server: 03.yunpan.dog, port: 38775, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 16, server: liaoningddns.xyz, port: 11428, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: MDE4YWIxMjAyMy5taWNyb3NvZnQuY29t}
+  - {name: 🇨🇳 中国() 17, server: 120.195.181.51, port: 12355, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇺🇲 美国() 4, server: 34.220.146.25, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇲 美国() 5, server: 159.223.32.230, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22%257B%2522Host%2522:%2522159.223.32.230%2522%257D%22%7D"}}}
+  - {name: 🇺🇲 美国() 6, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇩🇪 德国(), server: 213.226.71.174, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇮🇳 印度(), server: 139.59.85.231, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 139.59.85.231}}}
+  - {name: 🇨🇳 中国() 18, server: 120.195.181.51, port: 12337, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 19, server: 43.155.89.234, port: 49513, type: vmess, uuid: c33d0646-0088-40b1-8b98-4bdad397c607, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇲 美国() 7, server: 35.91.237.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇷🇺 俄罗斯联邦(), server: 89.185.85.145, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 5595f1cf-d7c0-4121-a3bf-19e423c1f9a1}
+  - {name: 🇨🇳 中国() 20, server: 42.49.119.17, port: 38713, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇮🇳 印度() 2, server: 139.59.85.231, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22%257B%2522Host%2522:%2522139.59.85.231%2522%257D%22%7D"}}}
+  - {name: 🇮🇳 印度() 3, server: 139.59.85.231, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22139.59.85.231%22%7D"}}}
+  - {name: 🇸🇬 新加坡() 3, server: sg.securevpn.cc, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 200000000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: "TIB2ehlN1U.download.windowsupdate.com,449bff3663.douyincdn.com"}}
+  - {name: 🇮🇳 印度() 4, server: 139.59.85.231, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 139.59.85.231}}}
+  - {name: 🇨🇳 中国() 21, server: 124.71.16.99, port: 12337, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇺🇲 美国() 8, server: 216.24.243.195, port: 61917, type: vmess, uuid: 285f1578-1d3d-459a-8e0f-4b2087ccd96a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 216.24.243.195}}}
+  - {name: 🇨🇳 中国() 22, server: 120.195.181.51, port: 12334, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇺🇲 美国() 9, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s2.hass.win, skip-cert-verify: false}
+  - {name: 🇺🇲 美国() 10, server: 149.57.218.16, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇩🇪 德国() 2, server: 138.68.90.231, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 138.68.90.231}}}
+  - {name: 🇺🇲 美国() 11, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s3.hass.win, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 23, server: 03.yunpan.dog, port: 39511, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇦 加拿大(), server: 138.197.165.31, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 138.197.165.31}}}
+  - {name: 🇨🇳 中国() 24, server: liaoningddns.xyz, port: 11501, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 26786:r3uWHp, obfs-param: MDE4YWIxMjAyMy5taWNyb3NvZnQuY29t}
+  - {name: 🇨🇳 中国() 25, server: 42.49.119.17, port: 39502, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 中国() 26, server: 120.195.181.72, port: 12334, type: trojan, password: 26e219f2-5c2a-356c-9767-9fd681cc0134, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯联邦() 2, server: 88.210.37.106, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: () 2, server: 104.18.21.226, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fastssh/hshhsh/632bf4ff10ac7/, headers: {Host: id-ikd.v2-ray.com}}}
+  - {name: 🇷🇺 俄罗斯联邦() 3, server: 88.210.37.106, port: 41443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇺🇲 美国() 12, server: 20.168.85.79, port: 13142, type: vmess, uuid: ddbceb5c-8c65-49eb-b1a2-cb945963b2af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |09-|香港01, server: 42.49.119.17, port: 38701, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇭🇰 |09-|香港02, server: 03.yunpan.dog, port: 38702, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇭🇰 |09-|香港03, server: 124.225.24.137, port: 38703, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇯🇵 |09-|日本01, server: 42.49.119.17, port: 38704, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇯🇵 |09-|日本02, server: 03.yunpan.dog, port: 38705, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇯🇵 |09-|日本03, server: 124.225.24.137, port: 38706, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇺🇲 |09-|美国01, server: 42.49.119.17, port: 38710, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇺🇲 |09-|美国02, server: 03.yunpan.dog, port: 38711, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇺🇲 |09-|美国03, server: 124.225.24.137, port: 38712, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 |09-|台湾01, server: 42.49.119.17, port: 38713, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 |09-|台湾02, server: 03.yunpan.dog, port: 38733, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇨🇳 |09-|台湾03, server: 124.225.24.137, port: 38716, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇬🇧 |09-|英国01, server: 42.49.119.17, port: 38717, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇬🇧 |09-|英国02, server: 03.yunpan.dog, port: 38737, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇬🇧 |09-|英国03, server: 124.225.24.137, port: 38817, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇰🇷 |09-|韩国01, server: 42.49.119.17, port: 38719, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇰🇷 |09-|韩国02, server: 03.yunpan.dog, port: 38720, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇰🇷 |09-|韩国03, server: 124.225.24.137, port: 38721, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇧🇷 |09-|巴西01, server: 42.49.119.17, port: 39502, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇧🇷 |09-|巴西02, server: 03.yunpan.dog, port: 39512, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇮🇳 |09-|印度01, server: 42.49.119.17, port: 39504, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇸🇬 |09-|新加坡01, server: 42.49.119.17, port: 38707, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇸🇬 |09-|新加坡02, server: 03.yunpan.dog, port: 38708, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇸🇬 |09-|新加坡03, server: 124.225.24.137, port: 38709, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇦🇷 |09-|阿根廷02, server: 03.yunpan.dog, port: 39513, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: "|09-|墨西哥01", server: 42.49.119.17, port: 39501, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: "|09-|墨西哥02", server: 03.yunpan.dog, port: 39511, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇹🇷 |09-|土耳其01, server: 42.49.119.17, port: 38714, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇲🇾 |09-|马来西亚01, server: 42.49.119.17, port: 38715, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇲🇾 |09-|马来西亚02, server: 03.yunpan.dog, port: 38775, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 🇲🇾 |09-|马来西亚03, server: 124.225.24.137, port: 38735, type: ss, cipher: chacha20-ietf-poly1305, password: 1db2371a-55ea-4d4b-8219-64c832cb4d92}
+  - {name: 群组：https://t.me/bailmg, server: 127.0.0.1, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 公告：香港节点正在维护中, server: 127.0.0.1, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 80︱200Mdps︱沈阳, server: 42.56.80.127, port: 8080, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇳 80︱200Mdps︱镇江︱正在测试, server: 127.0.0.1, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 80︱1Gdps︱日本-1, server: jp-2.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp-2.chaoxn.top}}}
+  - {name: 🇯🇵 80︱1Gdps︱日本-2, server: jp-3.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp-3.chaoxn.top}}}
+  - {name: 🇯🇵 80︱1Gdps︱日本-3, server: jp1.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.chaoxn.top}}}
+  - {name: 🇯🇵 80︱1Gdps︱日本-4, server: jp2.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.chaoxn.top}}}
+  - {name: 🇸🇬 80︱1Gdps︱新加坡-1, server: k1.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: k1.chaoxn.top}}}
+  - {name: 🇸🇬 80︱1Gdps︱新加坡2, server: k2.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: k2.chaoxn.top}}}
+  - {name: 🇺🇲 80︱1Gdps︱美国-1, server: 205.185.121.4, port: 1080, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇲 80︱1Gdps︱美国-2, server: 205.185.114.137, port: 1080, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇩🇪 80︱1Gdps︱德国-1, server: o1.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: o1.chaoxn.top}}}
+  - {name: 🇩🇪 80︱1Gdps︱德国2, server: o2.chaoxn.top, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: o2.chaoxn.top}}}
+  - {name: 80︱10Mdps︱游戏1, server: 180.76.54.32, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 80︱10Mdps︱游戏2, server: 106.12.140.40, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 80︱10Mdps︱游戏3, server: 106.12.131.41, port: 80, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: SàiGòn1-Garena, server: hcm-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: SàiGòn1-Tiktok, server: hcm-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: v9-vn.tiktokcdn.com}}}
   - {name: HàNội3-Garena, server: hanoi-3.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
@@ -92,38 +205,6 @@ proxies:
   - {name: 🇸🇬 Singapore3-Tiktok, server: sing-3.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: v9-vn.tiktokcdn.com}}}
   - {name: 🇭🇰 HongKong1-Garena, server: hk-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: 🇭🇰 HongKong1-Tiktok, server: hk-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4g.mkvn.net, headers: {Host: v9-vn.tiktokcdn.com}}}
-  - {name: "🇭🇰 HK,Kowloon", server: 13.250.104.147, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇸🇬 SG,Singapore", server: 18.183.96.111, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "CA,Vancouver", server: 34.220.146.25, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇲 US,California", server: 65.49.193.51, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr01}
-  - {name: "🇯🇵 JP,Osaka", server: 13.212.139.148, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇨🇳 TW,Taipei", server: 18.183.231.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇯🇵 JP,Tokyo2", server: 3.112.34.128, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇯🇵 JP,Tokyo", server: 3.36.65.213, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇰🇷 KR,Incheon", server: 52.197.66.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇲 US,Dallas2", server: 35.87.114.40, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇲 US,Dallas", server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: "🇺🇲 US,Houston", server: 35.91.237.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇭🇰 HK,NewTerritories", server: 13.213.16.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇦 |加拿大丨LINODE丨特殊, server: gy.jjxcloud.xyz, port: 62038, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇨🇳 |台湾A丨HINET丨流媒体, server: gy.jjxcloud.xyz, port: 62012, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇨🇳 |台湾B丨HINET丨流媒体, server: gy.jjxcloud.xyz, port: 62005, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇸🇬 |新加坡A丨优化丨特殊, server: gy.jjxcloud.xyz, port: 62033, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇩🇪 |日本A丨LINODE丨流媒体, server: gy.jjxcloud.xyz, port: 62001, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇯🇵 |日本A丨直连丨备用, server: azjp.jjxcloud.xyz, port: 43389, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: azjp.jjxcloud.xyz}}}
-  - {name: 🇩🇪 |日本B丨LINODE丨流媒体, server: gy.jjxcloud.xyz, port: 62035, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇯🇵 |日本B丨直连丨备用, server: azjp2.jjxcloud.xyz, port: 8298, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: azjp2.jjxcloud.xyz}}}
-  - {name: 🇺🇲 |美国A丨洛杉矶丨流媒体, server: gy.jjxcloud.xyz, port: 62028, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇺🇲 |美国丨原生丨圣何塞, server: gy.jjxcloud.xyz, port: 62027, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇺🇲 |美国丨芝加哥丨流媒体, server: gy.jjxcloud.xyz, port: 62032, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇬🇧 |英国丨伦敦丨流媒体, server: gy.jjxcloud.xyz, port: 62037, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇰🇷 |韩国A丨首尔丨流媒体, server: gy.jjxcloud.xyz, port: 62023, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇭🇰 |香港A丨BGP丨流媒体, server: gy.jjxcloud.xyz, port: 62021, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇭🇰 |香港A丨HKBN丨流媒体, server: gy.jjxcloud.xyz, port: 62022, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇭🇰 |香港A丨HKT丨流媒体, server: gy.jjxcloud.xyz, port: 62016, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇭🇰 |香港A丨直连丨备用, server: azhk2.jjxcloud.xyz, port: 7538, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: azhk2.jjxcloud.xyz}}}
-  - {name: 🇭🇰 |香港B丨HKBN丨流媒体, server: gy.jjxcloud.xyz, port: 62031, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
-  - {name: 🇭🇰 |香港B丨HKT丨流媒体, server: gy.jjxcloud.xyz, port: 62010, type: vmess, uuid: fa7d06d6-bf9e-38b7-a2a6-ad02a98a646b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: gy.jjxcloud.xyz}}}
   - {name: 🇩🇪 DE9:@nodpai(Beta), server: 159.223.32.230, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 159.223.32.230}}}
   - {name: 🇨🇳 TW54:@nodpai(Beta), server: 157.254.193.68, port: 10020, type: vmess, uuid: f1f45005-f074-430b-a4db-7109f50c3bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: 🇩🇪 DE18:@nodpai(Beta), server: 139.59.85.231, port: 8080, type: vmess, uuid: 7002330d-fe27-4b56-b22f-d7e3eb825fdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: "%7B%22Host%22:%22139.59.85.231%22%7D"}}}
@@ -190,6 +271,25 @@ proxies:
   - {name: 🇭🇰 HK15:@nodpai(Beta), server: 68.183.129.197, port: 8080, type: vmess, uuid: e4e46233-376c-49be-b302-3ff6fce7a8fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 68.183.129.197}}}
   - {name: 🇭🇰 HK20:@nodpai(Beta), server: 68.183.129.197, port: 8080, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 68.183.129.197}}}
   - {name: 🇨🇳 TW5:@nodpai(Beta), server: 921tw.tfzhc.top, port: 443, type: trojan, password: eb50af3d-5339-4ef7-8471-6cde8dff1ba9, sni: 921tw.tfzhc.top, skip-cert-verify: false}
+  - {name: 🇨🇦 加拿大-直连Z1-1G, server: caz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: caz1.1yuanfly.live}}}
+  - {name: 🇸🇬 新加坡-直连Z1-1G, server: sgz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sgz1.1yuanfly.live}}}
+  - {name: 🇸🇬 新加坡-直连Z2-1G, server: sgz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-直连Z3-1G, server: sgz3.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: "🇸🇬 新加坡-直连Z4-1G\t", server: sgz4.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-直连Z5-1G, server: sgz5.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-直连免费-1G, server: sgfree1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z1-1G, server: jpz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z2-1G, server: jpz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z3-1G, server: jpz3.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z4-1G, server: jpz4.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z5-1G, server: jpz5.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z6-1G, server: jpz6.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本东京-直连Z7-1G, server: jpz7.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇦🇺 澳大利亚-直连Z1-1G, server: aoz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇺🇲 美国达拉斯-直连Z1-1G, server: usz1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇺🇲 美国达拉斯-直连Z2-1G, server: usz2.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇬🇧 英国伦敦-直连免费-1G, server: ukfree1.1yuanfly.live, port: 32399, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🏳️‍🌈 过期时间：2022-10-03, server: 1yuan.live, port: 10086, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -208,85 +308,198 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 距离下次重置剩余：6天
-      - 国内入口：大机场.cc固定入口：大机场.com电报：BigAirport_Group
-      - 🇸🇬 *敏感时期墙的比较频繁，不能用时请更新节点
-      - "*严禁测速，为了保证所有人的宽带公平"
-      - 🇭🇰 【直连】HKG/香港-80端口-1
-      - 🇭🇰 【直连】HKG/香港-443端口-2
-      - 【直连】TYO/东京-80端口-1
-      - 【直连】TYO/东京-443端口-2
-      - 🇸🇬 【直连】SIN/狮城-80端口-1
-      - 🇸🇬 【直连】SIN/狮城-443端口-2
-      - 🇰🇷 【直连】ICN/首尔-80端口-1
-      - 🇰🇷 【直连】ICN/首尔-443端口-2
-      - 【直连】SJC/圣荷西-80端口-1
-      - 【直连】SJC/圣荷西-443端口-2
-      - 🇩🇪 【直连】FRA/法兰克福-随机端口-1
-      - 🇺🇲 【直连】PDX/波特兰-随机端口-2
-      - 🇬🇧 【直连】LCY/伦敦-随机端口-3
-      - 🇦🇷 【直连】PAR/巴黎-随机端口-4
-      - 🇮🇪 【直连】DUB/爱尔兰-随机端口-5
-      - 🇭🇰 【直连】HKG/香港-1
-      - 🇭🇰 【直连】HKG/香港-2
-      - 【直连】TYO/东京-1
-      - 【直连】TYO/东京-2
-      - 🇸🇬 【直连】SIN/狮城-1
-      - 🇸🇬 【直连】SIN/狮城-2
-      - 🇰🇷 【直连】ICN/首尔-1
-      - 🇰🇷 【直连】ICN/首尔-2
-      - 【直连】SJC/圣荷西-1
-      - 【直连】SJC/圣荷西-2
-      - 🇭🇰 【直连】HKG/香港-3
-      - 🇭🇰 【直连】HKG/香港-4
-      - 【直连】TYO/东京-3
-      - 【直连】TYO/东京-4
-      - 🇸🇬 【直连】SIN/狮城-3
-      - 🇸🇬 【直连】SIN/狮城-4
-      - 🇰🇷 【直连】ICN/首尔-3
-      - 🇰🇷 【直连】ICN/首尔-4
-      - 【直连】SJC/圣荷西-3
-      - 【直连】SJC/圣荷西-4
-      - 🇨🇦 加拿大-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z2-1G
-      - 🇸🇬 新加坡-直连Z3-1G
-      - "🇸🇬 新加坡-直连Z4-1G\t"
-      - 🇸🇬 新加坡-直连Z5-1G
-      - 🇸🇬 新加坡-直连免费-1G
-      - 🇯🇵 日本东京-直连Z1-1G
-      - 🇯🇵 日本东京-直连Z2-1G
-      - 🇯🇵 日本东京-直连Z3-1G
-      - 🇯🇵 日本东京-直连Z4-1G
-      - 🇯🇵 日本东京-直连Z5-1G
-      - 🇯🇵 日本东京-直连Z6-1G
-      - 🇯🇵 日本东京-直连Z7-1G
-      - 🇦🇺 澳大利亚-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z2-1G
-      - 🇬🇧 英国伦敦-直连免费-1G
-      - 🏳️‍🌈 过期时间：2022-10-03
-      - 🏳️‍🌈 过期时间：2022-12-04
-      - 🇷🇺 中转俄罗斯011x
-      - 🇯🇵 中转日本011x
-      - 🇺🇲 中转美国011x
-      - 🇺🇲 中转美国021xMedia
-      - 🇰🇷 中转韩国011xMedia
-      - 🇰🇷 中转韩国021xMedia
-      - 🇨🇳 直连台湾011xResidential
-      - 🇯🇵 直连日本010.5x
-      - 🇺🇲 直连美国011x
-      - 🇭🇰 |香港01免流0.5x
-      - 🇷🇺 |俄罗斯01免流1x
-      - 🇯🇵 |日本01免流1x
-      - 🇯🇵 |日本011x
-      - 🇯🇵 |日本021x
-      - 🇯🇵 |日本031x
-      - 🇯🇵 |日本041x
-      - 🇸🇬 |新加坡011x
-      - 🇸🇬 |新加坡021x
-      - 🇸🇬 |新加坡031x
-      - 🇷🇺 |俄罗斯011x
+      - 距离下次重置剩余：7天
+      - 🇸🇬 EC新加坡A
+      - 🇸🇬 EC新加坡B
+      - 🇸🇬 EC新加坡C
+      - 🇸🇬 EC新加坡D
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港HGC商宽
+      - 🇨🇳 台湾HiNet
+      - 🇺🇲 美国Cogent
+      - 🇺🇲 美国GTT
+      - 🇫🇷 法国
+      - 🇬🇧 英国
+      - 🇷🇺 俄罗斯
+      - 🇹🇷 土耳其
+      - 🇯🇵 尼日利亚
+      - 🇸🇬 新加坡Scloud
+      - 🇹🇭 泰国
+      - 🇵🇭 菲律宾
+      - 🇻🇳 越南
+      - 🇭🇰 香港_tg+univstar_1
+      - 🇭🇰 香港_tg+univstar_2
+      - 🇭🇰 香港_tg+univstar_3
+      - 🇭🇰 香港_tg+univstar_4
+      - tg+univstar_5
+      - 🇭🇰 香港_tg+univstar_6
+      - 🇨🇳 中国_tg+univstar_7
+      - 🇨🇳 中国_tg+univstar_8
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇳 中国_tg+univstar_11
+      - 🇨🇳 中国_tg+univstar_12
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国_tg+univstar_14
+      - 🇨🇳 中国_tg+univstar_15
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇭🇰 香港_tg+univstar_17
+      - 🇳🇱 荷兰_tg+univstar_18
+      - 🇭🇰 香港_tg+univstar_19
+      - 🇨🇳 中国_tg+univstar_20
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_tg+univstar_22
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇺🇲 美国_tg+univstar_25
+      - 🇺🇲 美国_tg+univstar_26
+      - 🇨🇳 中国_tg+univstar_27
+      - 🇮🇹 意大利_tg+univstar_28
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港_tg+univstar_30
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 中国_tg+univstar_33
+      - 🇸🇬 新加坡_tg+univstar_34
+      - 🇭🇰 香港_tg+univstar_35
+      - 🇨🇳 中国_tg+univstar_36
+      - 🇨🇳 中国_tg+univstar_37
+      - 🇨🇳 台湾_tg+univstar_38
+      - tg+univstar_39
+      - 🇭🇰 香港_tg+univstar_40
+      - 🇨🇳 中国_tg+univstar_41
+      - 🇨🇳 中国_tg+univstar_42
+      - 🇨🇳 中国_tg+univstar_43
+      - 🇭🇰 香港_tg+univstar_44
+      - 🇨🇳 中国_tg+univstar_45
+      - 🇨🇳 中国_tg+univstar_46
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇺🇲 美国_tg+univstar_48
+      - 🇨🇳 中国_tg+univstar_49
+      - 🇨🇳 中国_tg+univstar_50
+      - 🇨🇳 中国_tg+univstar_51
+      - 🇨🇳 中国_tg+univstar_52
+      - 🇺🇲 美国_tg+univstar_53
+      - 🇨🇳 中国_tg+univstar_54
+      - 🇨🇳 中国_tg+univstar_55
+      - 🇨🇳 中国_tg+univstar_56
+      - 🇨🇳 中国_tg+univstar_57
+      - 🇺🇲 美国_tg+univstar_58
+      - 🇨🇳 中国_tg+univstar_59
+      - 🇭🇰 香港_tg+univstar_60
+      - 🇭🇰 香港_tg+univstar_61
+      - 🇺🇲 美国_tg+univstar_62
+      - 🇬🇧 英国_tg+univstar_63
+      - 🇬🇧 英国_tg+univstar_64
+      - 🇭🇰 香港_tg+univstar_65
+      - 🇺🇲 美国_tg+univstar_66
+      - 🇸🇬 新加坡_tg+univstar_67
+      - 🇬🇧 英国_tg+univstar_68
+      - 🇸🇬 更新于09/24/14:20
+      - 🇨🇳 中国()
+      - 🇨🇳 中国() 2
+      - 🇨🇳 中国() 3
+      - 🇨🇳 中国() 4
+      - 🇯🇵 日本()
+      - 🇨🇳 中国() 5
+      - 🇨🇳 中国() 6
+      - 🇨🇳 中国() 7
+      - 🇨🇳 中国() 8
+      - 🇨🇳 中国() 9
+      - 🇺🇲 美国()
+      - 🇨🇳 中国() 10
+      - 🇰🇷 韩国()
+      - 🇰🇷 韩国() 2
+      - 🇨🇳 中国() 11
+      - 🇨🇳 中国() 12
+      - 🇨🇳 中国() 13
+      - 🇸🇬 新加坡()
+      - 🇨🇳 中国() 14
+      - 🇸🇬 新加坡() 2
+      - ()
+      - 🇺🇲 美国() 2
+      - 🇺🇲 美国() 3
+      - 🇨🇳 中国() 15
+      - 🇨🇳 中国() 16
+      - 🇨🇳 中国() 17
+      - 🇺🇲 美国() 4
+      - 🇺🇲 美国() 5
+      - 🇺🇲 美国() 6
+      - 🇩🇪 德国()
+      - 🇮🇳 印度()
+      - 🇨🇳 中国() 18
+      - 🇨🇳 中国() 19
+      - 🇺🇲 美国() 7
+      - 🇷🇺 俄罗斯联邦()
+      - 🇨🇳 中国() 20
+      - 🇮🇳 印度() 2
+      - 🇮🇳 印度() 3
+      - 🇸🇬 新加坡() 3
+      - 🇮🇳 印度() 4
+      - 🇨🇳 中国() 21
+      - 🇺🇲 美国() 8
+      - 🇨🇳 中国() 22
+      - 🇺🇲 美国() 9
+      - 🇺🇲 美国() 10
+      - 🇩🇪 德国() 2
+      - 🇺🇲 美国() 11
+      - 🇨🇳 中国() 23
+      - 🇨🇦 加拿大()
+      - 🇨🇳 中国() 24
+      - 🇨🇳 中国() 25
+      - 🇨🇳 中国() 26
+      - 🇷🇺 俄罗斯联邦() 2
+      - () 2
+      - 🇷🇺 俄罗斯联邦() 3
+      - 🇺🇲 美国() 12
+      - 🇭🇰 |09-|香港01
+      - 🇭🇰 |09-|香港02
+      - 🇭🇰 |09-|香港03
+      - 🇯🇵 |09-|日本01
+      - 🇯🇵 |09-|日本02
+      - 🇯🇵 |09-|日本03
+      - 🇺🇲 |09-|美国01
+      - 🇺🇲 |09-|美国02
+      - 🇺🇲 |09-|美国03
+      - 🇨🇳 |09-|台湾01
+      - 🇨🇳 |09-|台湾02
+      - 🇨🇳 |09-|台湾03
+      - 🇬🇧 |09-|英国01
+      - 🇬🇧 |09-|英国02
+      - 🇬🇧 |09-|英国03
+      - 🇰🇷 |09-|韩国01
+      - 🇰🇷 |09-|韩国02
+      - 🇰🇷 |09-|韩国03
+      - 🇧🇷 |09-|巴西01
+      - 🇧🇷 |09-|巴西02
+      - 🇮🇳 |09-|印度01
+      - 🇸🇬 |09-|新加坡01
+      - 🇸🇬 |09-|新加坡02
+      - 🇸🇬 |09-|新加坡03
+      - 🇦🇷 |09-|阿根廷02
+      - "|09-|墨西哥01"
+      - "|09-|墨西哥02"
+      - 🇹🇷 |09-|土耳其01
+      - 🇲🇾 |09-|马来西亚01
+      - 🇲🇾 |09-|马来西亚02
+      - 🇲🇾 |09-|马来西亚03
+      - 群组：https://t.me/bailmg
+      - 🇭🇰 公告：香港节点正在维护中
+      - 80︱200Mdps︱沈阳
+      - 🇨🇳 80︱200Mdps︱镇江︱正在测试
+      - 🇯🇵 80︱1Gdps︱日本-1
+      - 🇯🇵 80︱1Gdps︱日本-2
+      - 🇯🇵 80︱1Gdps︱日本-3
+      - 🇯🇵 80︱1Gdps︱日本-4
+      - 🇸🇬 80︱1Gdps︱新加坡-1
+      - 🇸🇬 80︱1Gdps︱新加坡2
+      - 🇺🇲 80︱1Gdps︱美国-1
+      - 🇺🇲 80︱1Gdps︱美国-2
+      - 🇩🇪 80︱1Gdps︱德国-1
+      - 🇩🇪 80︱1Gdps︱德国2
+      - 80︱10Mdps︱游戏1
+      - 80︱10Mdps︱游戏2
+      - 80︱10Mdps︱游戏3
       - SàiGòn1-Garena
       - SàiGòn1-Tiktok
       - HàNội3-Garena
@@ -295,38 +508,6 @@ proxy-groups:
       - 🇸🇬 Singapore3-Tiktok
       - 🇭🇰 HongKong1-Garena
       - 🇭🇰 HongKong1-Tiktok
-      - 🇭🇰 HK,Kowloon
-      - 🇸🇬 SG,Singapore
-      - CA,Vancouver
-      - 🇺🇲 US,California
-      - 🇯🇵 JP,Osaka
-      - 🇨🇳 TW,Taipei
-      - 🇯🇵 JP,Tokyo2
-      - 🇯🇵 JP,Tokyo
-      - 🇰🇷 KR,Incheon
-      - 🇺🇲 US,Dallas2
-      - 🇺🇲 US,Dallas
-      - 🇺🇲 US,Houston
-      - 🇭🇰 HK,NewTerritories
-      - 🇨🇦 |加拿大丨LINODE丨特殊
-      - 🇨🇳 |台湾A丨HINET丨流媒体
-      - 🇨🇳 |台湾B丨HINET丨流媒体
-      - 🇸🇬 |新加坡A丨优化丨特殊
-      - 🇩🇪 |日本A丨LINODE丨流媒体
-      - 🇯🇵 |日本A丨直连丨备用
-      - 🇩🇪 |日本B丨LINODE丨流媒体
-      - 🇯🇵 |日本B丨直连丨备用
-      - 🇺🇲 |美国A丨洛杉矶丨流媒体
-      - 🇺🇲 |美国丨原生丨圣何塞
-      - 🇺🇲 |美国丨芝加哥丨流媒体
-      - 🇬🇧 |英国丨伦敦丨流媒体
-      - 🇰🇷 |韩国A丨首尔丨流媒体
-      - 🇭🇰 |香港A丨BGP丨流媒体
-      - 🇭🇰 |香港A丨HKBN丨流媒体
-      - 🇭🇰 |香港A丨HKT丨流媒体
-      - 🇭🇰 |香港A丨直连丨备用
-      - 🇭🇰 |香港B丨HKBN丨流媒体
-      - 🇭🇰 |香港B丨HKT丨流媒体
       - 🇩🇪 DE9:@nodpai(Beta)
       - 🇨🇳 TW54:@nodpai(Beta)
       - 🇩🇪 DE18:@nodpai(Beta)
@@ -393,91 +574,223 @@ proxy-groups:
       - 🇭🇰 HK15:@nodpai(Beta)
       - 🇭🇰 HK20:@nodpai(Beta)
       - 🇨🇳 TW5:@nodpai(Beta)
+      - 🇨🇦 加拿大-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z2-1G
+      - 🇸🇬 新加坡-直连Z3-1G
+      - "🇸🇬 新加坡-直连Z4-1G\t"
+      - 🇸🇬 新加坡-直连Z5-1G
+      - 🇸🇬 新加坡-直连免费-1G
+      - 🇯🇵 日本东京-直连Z1-1G
+      - 🇯🇵 日本东京-直连Z2-1G
+      - 🇯🇵 日本东京-直连Z3-1G
+      - 🇯🇵 日本东京-直连Z4-1G
+      - 🇯🇵 日本东京-直连Z5-1G
+      - 🇯🇵 日本东京-直连Z6-1G
+      - 🇯🇵 日本东京-直连Z7-1G
+      - 🇦🇺 澳大利亚-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z2-1G
+      - 🇬🇧 英国伦敦-直连免费-1G
+      - 🏳️‍🌈 过期时间：2022-10-03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 距离下次重置剩余：6天
-      - 国内入口：大机场.cc固定入口：大机场.com电报：BigAirport_Group
-      - 🇸🇬 *敏感时期墙的比较频繁，不能用时请更新节点
-      - "*严禁测速，为了保证所有人的宽带公平"
-      - 🇭🇰 【直连】HKG/香港-80端口-1
-      - 🇭🇰 【直连】HKG/香港-443端口-2
-      - 【直连】TYO/东京-80端口-1
-      - 【直连】TYO/东京-443端口-2
-      - 🇸🇬 【直连】SIN/狮城-80端口-1
-      - 🇸🇬 【直连】SIN/狮城-443端口-2
-      - 🇰🇷 【直连】ICN/首尔-80端口-1
-      - 🇰🇷 【直连】ICN/首尔-443端口-2
-      - 【直连】SJC/圣荷西-80端口-1
-      - 【直连】SJC/圣荷西-443端口-2
-      - 🇩🇪 【直连】FRA/法兰克福-随机端口-1
-      - 🇺🇲 【直连】PDX/波特兰-随机端口-2
-      - 🇬🇧 【直连】LCY/伦敦-随机端口-3
-      - 🇦🇷 【直连】PAR/巴黎-随机端口-4
-      - 🇮🇪 【直连】DUB/爱尔兰-随机端口-5
-      - 🇭🇰 【直连】HKG/香港-1
-      - 🇭🇰 【直连】HKG/香港-2
-      - 【直连】TYO/东京-1
-      - 【直连】TYO/东京-2
-      - 🇸🇬 【直连】SIN/狮城-1
-      - 🇸🇬 【直连】SIN/狮城-2
-      - 🇰🇷 【直连】ICN/首尔-1
-      - 🇰🇷 【直连】ICN/首尔-2
-      - 【直连】SJC/圣荷西-1
-      - 【直连】SJC/圣荷西-2
-      - 🇭🇰 【直连】HKG/香港-3
-      - 🇭🇰 【直连】HKG/香港-4
-      - 【直连】TYO/东京-3
-      - 【直连】TYO/东京-4
-      - 🇸🇬 【直连】SIN/狮城-3
-      - 🇸🇬 【直连】SIN/狮城-4
-      - 🇰🇷 【直连】ICN/首尔-3
-      - 🇰🇷 【直连】ICN/首尔-4
-      - 【直连】SJC/圣荷西-3
-      - 【直连】SJC/圣荷西-4
-      - 🇨🇦 加拿大-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z2-1G
-      - 🇸🇬 新加坡-直连Z3-1G
-      - "🇸🇬 新加坡-直连Z4-1G\t"
-      - 🇸🇬 新加坡-直连Z5-1G
-      - 🇸🇬 新加坡-直连免费-1G
-      - 🇯🇵 日本东京-直连Z1-1G
-      - 🇯🇵 日本东京-直连Z2-1G
-      - 🇯🇵 日本东京-直连Z3-1G
-      - 🇯🇵 日本东京-直连Z4-1G
-      - 🇯🇵 日本东京-直连Z5-1G
-      - 🇯🇵 日本东京-直连Z6-1G
-      - 🇯🇵 日本东京-直连Z7-1G
-      - 🇦🇺 澳大利亚-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z2-1G
-      - 🇬🇧 英国伦敦-直连免费-1G
-      - 🏳️‍🌈 过期时间：2022-10-03
-      - 🏳️‍🌈 过期时间：2022-12-04
-      - 🇷🇺 中转俄罗斯011x
-      - 🇯🇵 中转日本011x
-      - 🇺🇲 中转美国011x
-      - 🇺🇲 中转美国021xMedia
-      - 🇰🇷 中转韩国011xMedia
-      - 🇰🇷 中转韩国021xMedia
-      - 🇨🇳 直连台湾011xResidential
-      - 🇯🇵 直连日本010.5x
-      - 🇺🇲 直连美国011x
-      - 🇭🇰 |香港01免流0.5x
-      - 🇷🇺 |俄罗斯01免流1x
-      - 🇯🇵 |日本01免流1x
-      - 🇯🇵 |日本011x
-      - 🇯🇵 |日本021x
-      - 🇯🇵 |日本031x
-      - 🇯🇵 |日本041x
-      - 🇸🇬 |新加坡011x
-      - 🇸🇬 |新加坡021x
-      - 🇸🇬 |新加坡031x
-      - 🇷🇺 |俄罗斯011x
+      - 距离下次重置剩余：7天
+      - 🇸🇬 EC新加坡A
+      - 🇸🇬 EC新加坡B
+      - 🇸🇬 EC新加坡C
+      - 🇸🇬 EC新加坡D
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港HGC商宽
+      - 🇨🇳 台湾HiNet
+      - 🇺🇲 美国Cogent
+      - 🇺🇲 美国GTT
+      - 🇫🇷 法国
+      - 🇬🇧 英国
+      - 🇷🇺 俄罗斯
+      - 🇹🇷 土耳其
+      - 🇯🇵 尼日利亚
+      - 🇸🇬 新加坡Scloud
+      - 🇹🇭 泰国
+      - 🇵🇭 菲律宾
+      - 🇻🇳 越南
+      - 🇭🇰 香港_tg+univstar_1
+      - 🇭🇰 香港_tg+univstar_2
+      - 🇭🇰 香港_tg+univstar_3
+      - 🇭🇰 香港_tg+univstar_4
+      - tg+univstar_5
+      - 🇭🇰 香港_tg+univstar_6
+      - 🇨🇳 中国_tg+univstar_7
+      - 🇨🇳 中国_tg+univstar_8
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇳 中国_tg+univstar_11
+      - 🇨🇳 中国_tg+univstar_12
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国_tg+univstar_14
+      - 🇨🇳 中国_tg+univstar_15
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇭🇰 香港_tg+univstar_17
+      - 🇳🇱 荷兰_tg+univstar_18
+      - 🇭🇰 香港_tg+univstar_19
+      - 🇨🇳 中国_tg+univstar_20
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_tg+univstar_22
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇺🇲 美国_tg+univstar_25
+      - 🇺🇲 美国_tg+univstar_26
+      - 🇨🇳 中国_tg+univstar_27
+      - 🇮🇹 意大利_tg+univstar_28
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港_tg+univstar_30
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 中国_tg+univstar_33
+      - 🇸🇬 新加坡_tg+univstar_34
+      - 🇭🇰 香港_tg+univstar_35
+      - 🇨🇳 中国_tg+univstar_36
+      - 🇨🇳 中国_tg+univstar_37
+      - 🇨🇳 台湾_tg+univstar_38
+      - tg+univstar_39
+      - 🇭🇰 香港_tg+univstar_40
+      - 🇨🇳 中国_tg+univstar_41
+      - 🇨🇳 中国_tg+univstar_42
+      - 🇨🇳 中国_tg+univstar_43
+      - 🇭🇰 香港_tg+univstar_44
+      - 🇨🇳 中国_tg+univstar_45
+      - 🇨🇳 中国_tg+univstar_46
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇺🇲 美国_tg+univstar_48
+      - 🇨🇳 中国_tg+univstar_49
+      - 🇨🇳 中国_tg+univstar_50
+      - 🇨🇳 中国_tg+univstar_51
+      - 🇨🇳 中国_tg+univstar_52
+      - 🇺🇲 美国_tg+univstar_53
+      - 🇨🇳 中国_tg+univstar_54
+      - 🇨🇳 中国_tg+univstar_55
+      - 🇨🇳 中国_tg+univstar_56
+      - 🇨🇳 中国_tg+univstar_57
+      - 🇺🇲 美国_tg+univstar_58
+      - 🇨🇳 中国_tg+univstar_59
+      - 🇭🇰 香港_tg+univstar_60
+      - 🇭🇰 香港_tg+univstar_61
+      - 🇺🇲 美国_tg+univstar_62
+      - 🇬🇧 英国_tg+univstar_63
+      - 🇬🇧 英国_tg+univstar_64
+      - 🇭🇰 香港_tg+univstar_65
+      - 🇺🇲 美国_tg+univstar_66
+      - 🇸🇬 新加坡_tg+univstar_67
+      - 🇬🇧 英国_tg+univstar_68
+      - 🇸🇬 更新于09/24/14:20
+      - 🇨🇳 中国()
+      - 🇨🇳 中国() 2
+      - 🇨🇳 中国() 3
+      - 🇨🇳 中国() 4
+      - 🇯🇵 日本()
+      - 🇨🇳 中国() 5
+      - 🇨🇳 中国() 6
+      - 🇨🇳 中国() 7
+      - 🇨🇳 中国() 8
+      - 🇨🇳 中国() 9
+      - 🇺🇲 美国()
+      - 🇨🇳 中国() 10
+      - 🇰🇷 韩国()
+      - 🇰🇷 韩国() 2
+      - 🇨🇳 中国() 11
+      - 🇨🇳 中国() 12
+      - 🇨🇳 中国() 13
+      - 🇸🇬 新加坡()
+      - 🇨🇳 中国() 14
+      - 🇸🇬 新加坡() 2
+      - ()
+      - 🇺🇲 美国() 2
+      - 🇺🇲 美国() 3
+      - 🇨🇳 中国() 15
+      - 🇨🇳 中国() 16
+      - 🇨🇳 中国() 17
+      - 🇺🇲 美国() 4
+      - 🇺🇲 美国() 5
+      - 🇺🇲 美国() 6
+      - 🇩🇪 德国()
+      - 🇮🇳 印度()
+      - 🇨🇳 中国() 18
+      - 🇨🇳 中国() 19
+      - 🇺🇲 美国() 7
+      - 🇷🇺 俄罗斯联邦()
+      - 🇨🇳 中国() 20
+      - 🇮🇳 印度() 2
+      - 🇮🇳 印度() 3
+      - 🇸🇬 新加坡() 3
+      - 🇮🇳 印度() 4
+      - 🇨🇳 中国() 21
+      - 🇺🇲 美国() 8
+      - 🇨🇳 中国() 22
+      - 🇺🇲 美国() 9
+      - 🇺🇲 美国() 10
+      - 🇩🇪 德国() 2
+      - 🇺🇲 美国() 11
+      - 🇨🇳 中国() 23
+      - 🇨🇦 加拿大()
+      - 🇨🇳 中国() 24
+      - 🇨🇳 中国() 25
+      - 🇨🇳 中国() 26
+      - 🇷🇺 俄罗斯联邦() 2
+      - () 2
+      - 🇷🇺 俄罗斯联邦() 3
+      - 🇺🇲 美国() 12
+      - 🇭🇰 |09-|香港01
+      - 🇭🇰 |09-|香港02
+      - 🇭🇰 |09-|香港03
+      - 🇯🇵 |09-|日本01
+      - 🇯🇵 |09-|日本02
+      - 🇯🇵 |09-|日本03
+      - 🇺🇲 |09-|美国01
+      - 🇺🇲 |09-|美国02
+      - 🇺🇲 |09-|美国03
+      - 🇨🇳 |09-|台湾01
+      - 🇨🇳 |09-|台湾02
+      - 🇨🇳 |09-|台湾03
+      - 🇬🇧 |09-|英国01
+      - 🇬🇧 |09-|英国02
+      - 🇬🇧 |09-|英国03
+      - 🇰🇷 |09-|韩国01
+      - 🇰🇷 |09-|韩国02
+      - 🇰🇷 |09-|韩国03
+      - 🇧🇷 |09-|巴西01
+      - 🇧🇷 |09-|巴西02
+      - 🇮🇳 |09-|印度01
+      - 🇸🇬 |09-|新加坡01
+      - 🇸🇬 |09-|新加坡02
+      - 🇸🇬 |09-|新加坡03
+      - 🇦🇷 |09-|阿根廷02
+      - "|09-|墨西哥01"
+      - "|09-|墨西哥02"
+      - 🇹🇷 |09-|土耳其01
+      - 🇲🇾 |09-|马来西亚01
+      - 🇲🇾 |09-|马来西亚02
+      - 🇲🇾 |09-|马来西亚03
+      - 群组：https://t.me/bailmg
+      - 🇭🇰 公告：香港节点正在维护中
+      - 80︱200Mdps︱沈阳
+      - 🇨🇳 80︱200Mdps︱镇江︱正在测试
+      - 🇯🇵 80︱1Gdps︱日本-1
+      - 🇯🇵 80︱1Gdps︱日本-2
+      - 🇯🇵 80︱1Gdps︱日本-3
+      - 🇯🇵 80︱1Gdps︱日本-4
+      - 🇸🇬 80︱1Gdps︱新加坡-1
+      - 🇸🇬 80︱1Gdps︱新加坡2
+      - 🇺🇲 80︱1Gdps︱美国-1
+      - 🇺🇲 80︱1Gdps︱美国-2
+      - 🇩🇪 80︱1Gdps︱德国-1
+      - 🇩🇪 80︱1Gdps︱德国2
+      - 80︱10Mdps︱游戏1
+      - 80︱10Mdps︱游戏2
+      - 80︱10Mdps︱游戏3
       - SàiGòn1-Garena
       - SàiGòn1-Tiktok
       - HàNội3-Garena
@@ -486,38 +799,6 @@ proxy-groups:
       - 🇸🇬 Singapore3-Tiktok
       - 🇭🇰 HongKong1-Garena
       - 🇭🇰 HongKong1-Tiktok
-      - 🇭🇰 HK,Kowloon
-      - 🇸🇬 SG,Singapore
-      - CA,Vancouver
-      - 🇺🇲 US,California
-      - 🇯🇵 JP,Osaka
-      - 🇨🇳 TW,Taipei
-      - 🇯🇵 JP,Tokyo2
-      - 🇯🇵 JP,Tokyo
-      - 🇰🇷 KR,Incheon
-      - 🇺🇲 US,Dallas2
-      - 🇺🇲 US,Dallas
-      - 🇺🇲 US,Houston
-      - 🇭🇰 HK,NewTerritories
-      - 🇨🇦 |加拿大丨LINODE丨特殊
-      - 🇨🇳 |台湾A丨HINET丨流媒体
-      - 🇨🇳 |台湾B丨HINET丨流媒体
-      - 🇸🇬 |新加坡A丨优化丨特殊
-      - 🇩🇪 |日本A丨LINODE丨流媒体
-      - 🇯🇵 |日本A丨直连丨备用
-      - 🇩🇪 |日本B丨LINODE丨流媒体
-      - 🇯🇵 |日本B丨直连丨备用
-      - 🇺🇲 |美国A丨洛杉矶丨流媒体
-      - 🇺🇲 |美国丨原生丨圣何塞
-      - 🇺🇲 |美国丨芝加哥丨流媒体
-      - 🇬🇧 |英国丨伦敦丨流媒体
-      - 🇰🇷 |韩国A丨首尔丨流媒体
-      - 🇭🇰 |香港A丨BGP丨流媒体
-      - 🇭🇰 |香港A丨HKBN丨流媒体
-      - 🇭🇰 |香港A丨HKT丨流媒体
-      - 🇭🇰 |香港A丨直连丨备用
-      - 🇭🇰 |香港B丨HKBN丨流媒体
-      - 🇭🇰 |香港B丨HKT丨流媒体
       - 🇩🇪 DE9:@nodpai(Beta)
       - 🇨🇳 TW54:@nodpai(Beta)
       - 🇩🇪 DE18:@nodpai(Beta)
@@ -584,91 +865,223 @@ proxy-groups:
       - 🇭🇰 HK15:@nodpai(Beta)
       - 🇭🇰 HK20:@nodpai(Beta)
       - 🇨🇳 TW5:@nodpai(Beta)
+      - 🇨🇦 加拿大-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z2-1G
+      - 🇸🇬 新加坡-直连Z3-1G
+      - "🇸🇬 新加坡-直连Z4-1G\t"
+      - 🇸🇬 新加坡-直连Z5-1G
+      - 🇸🇬 新加坡-直连免费-1G
+      - 🇯🇵 日本东京-直连Z1-1G
+      - 🇯🇵 日本东京-直连Z2-1G
+      - 🇯🇵 日本东京-直连Z3-1G
+      - 🇯🇵 日本东京-直连Z4-1G
+      - 🇯🇵 日本东京-直连Z5-1G
+      - 🇯🇵 日本东京-直连Z6-1G
+      - 🇯🇵 日本东京-直连Z7-1G
+      - 🇦🇺 澳大利亚-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z2-1G
+      - 🇬🇧 英国伦敦-直连免费-1G
+      - 🏳️‍🌈 过期时间：2022-10-03
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 距离下次重置剩余：6天
-      - 国内入口：大机场.cc固定入口：大机场.com电报：BigAirport_Group
-      - 🇸🇬 *敏感时期墙的比较频繁，不能用时请更新节点
-      - "*严禁测速，为了保证所有人的宽带公平"
-      - 🇭🇰 【直连】HKG/香港-80端口-1
-      - 🇭🇰 【直连】HKG/香港-443端口-2
-      - 【直连】TYO/东京-80端口-1
-      - 【直连】TYO/东京-443端口-2
-      - 🇸🇬 【直连】SIN/狮城-80端口-1
-      - 🇸🇬 【直连】SIN/狮城-443端口-2
-      - 🇰🇷 【直连】ICN/首尔-80端口-1
-      - 🇰🇷 【直连】ICN/首尔-443端口-2
-      - 【直连】SJC/圣荷西-80端口-1
-      - 【直连】SJC/圣荷西-443端口-2
-      - 🇩🇪 【直连】FRA/法兰克福-随机端口-1
-      - 🇺🇲 【直连】PDX/波特兰-随机端口-2
-      - 🇬🇧 【直连】LCY/伦敦-随机端口-3
-      - 🇦🇷 【直连】PAR/巴黎-随机端口-4
-      - 🇮🇪 【直连】DUB/爱尔兰-随机端口-5
-      - 🇭🇰 【直连】HKG/香港-1
-      - 🇭🇰 【直连】HKG/香港-2
-      - 【直连】TYO/东京-1
-      - 【直连】TYO/东京-2
-      - 🇸🇬 【直连】SIN/狮城-1
-      - 🇸🇬 【直连】SIN/狮城-2
-      - 🇰🇷 【直连】ICN/首尔-1
-      - 🇰🇷 【直连】ICN/首尔-2
-      - 【直连】SJC/圣荷西-1
-      - 【直连】SJC/圣荷西-2
-      - 🇭🇰 【直连】HKG/香港-3
-      - 🇭🇰 【直连】HKG/香港-4
-      - 【直连】TYO/东京-3
-      - 【直连】TYO/东京-4
-      - 🇸🇬 【直连】SIN/狮城-3
-      - 🇸🇬 【直连】SIN/狮城-4
-      - 🇰🇷 【直连】ICN/首尔-3
-      - 🇰🇷 【直连】ICN/首尔-4
-      - 【直连】SJC/圣荷西-3
-      - 【直连】SJC/圣荷西-4
-      - 🇨🇦 加拿大-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z2-1G
-      - 🇸🇬 新加坡-直连Z3-1G
-      - "🇸🇬 新加坡-直连Z4-1G\t"
-      - 🇸🇬 新加坡-直连Z5-1G
-      - 🇸🇬 新加坡-直连免费-1G
-      - 🇯🇵 日本东京-直连Z1-1G
-      - 🇯🇵 日本东京-直连Z2-1G
-      - 🇯🇵 日本东京-直连Z3-1G
-      - 🇯🇵 日本东京-直连Z4-1G
-      - 🇯🇵 日本东京-直连Z5-1G
-      - 🇯🇵 日本东京-直连Z6-1G
-      - 🇯🇵 日本东京-直连Z7-1G
-      - 🇦🇺 澳大利亚-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z2-1G
-      - 🇬🇧 英国伦敦-直连免费-1G
-      - 🏳️‍🌈 过期时间：2022-10-03
-      - 🏳️‍🌈 过期时间：2022-12-04
-      - 🇷🇺 中转俄罗斯011x
-      - 🇯🇵 中转日本011x
-      - 🇺🇲 中转美国011x
-      - 🇺🇲 中转美国021xMedia
-      - 🇰🇷 中转韩国011xMedia
-      - 🇰🇷 中转韩国021xMedia
-      - 🇨🇳 直连台湾011xResidential
-      - 🇯🇵 直连日本010.5x
-      - 🇺🇲 直连美国011x
-      - 🇭🇰 |香港01免流0.5x
-      - 🇷🇺 |俄罗斯01免流1x
-      - 🇯🇵 |日本01免流1x
-      - 🇯🇵 |日本011x
-      - 🇯🇵 |日本021x
-      - 🇯🇵 |日本031x
-      - 🇯🇵 |日本041x
-      - 🇸🇬 |新加坡011x
-      - 🇸🇬 |新加坡021x
-      - 🇸🇬 |新加坡031x
-      - 🇷🇺 |俄罗斯011x
+      - 距离下次重置剩余：7天
+      - 🇸🇬 EC新加坡A
+      - 🇸🇬 EC新加坡B
+      - 🇸🇬 EC新加坡C
+      - 🇸🇬 EC新加坡D
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港HGC商宽
+      - 🇨🇳 台湾HiNet
+      - 🇺🇲 美国Cogent
+      - 🇺🇲 美国GTT
+      - 🇫🇷 法国
+      - 🇬🇧 英国
+      - 🇷🇺 俄罗斯
+      - 🇹🇷 土耳其
+      - 🇯🇵 尼日利亚
+      - 🇸🇬 新加坡Scloud
+      - 🇹🇭 泰国
+      - 🇵🇭 菲律宾
+      - 🇻🇳 越南
+      - 🇭🇰 香港_tg+univstar_1
+      - 🇭🇰 香港_tg+univstar_2
+      - 🇭🇰 香港_tg+univstar_3
+      - 🇭🇰 香港_tg+univstar_4
+      - tg+univstar_5
+      - 🇭🇰 香港_tg+univstar_6
+      - 🇨🇳 中国_tg+univstar_7
+      - 🇨🇳 中国_tg+univstar_8
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇳 中国_tg+univstar_11
+      - 🇨🇳 中国_tg+univstar_12
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国_tg+univstar_14
+      - 🇨🇳 中国_tg+univstar_15
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇭🇰 香港_tg+univstar_17
+      - 🇳🇱 荷兰_tg+univstar_18
+      - 🇭🇰 香港_tg+univstar_19
+      - 🇨🇳 中国_tg+univstar_20
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_tg+univstar_22
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇺🇲 美国_tg+univstar_25
+      - 🇺🇲 美国_tg+univstar_26
+      - 🇨🇳 中国_tg+univstar_27
+      - 🇮🇹 意大利_tg+univstar_28
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港_tg+univstar_30
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 中国_tg+univstar_33
+      - 🇸🇬 新加坡_tg+univstar_34
+      - 🇭🇰 香港_tg+univstar_35
+      - 🇨🇳 中国_tg+univstar_36
+      - 🇨🇳 中国_tg+univstar_37
+      - 🇨🇳 台湾_tg+univstar_38
+      - tg+univstar_39
+      - 🇭🇰 香港_tg+univstar_40
+      - 🇨🇳 中国_tg+univstar_41
+      - 🇨🇳 中国_tg+univstar_42
+      - 🇨🇳 中国_tg+univstar_43
+      - 🇭🇰 香港_tg+univstar_44
+      - 🇨🇳 中国_tg+univstar_45
+      - 🇨🇳 中国_tg+univstar_46
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇺🇲 美国_tg+univstar_48
+      - 🇨🇳 中国_tg+univstar_49
+      - 🇨🇳 中国_tg+univstar_50
+      - 🇨🇳 中国_tg+univstar_51
+      - 🇨🇳 中国_tg+univstar_52
+      - 🇺🇲 美国_tg+univstar_53
+      - 🇨🇳 中国_tg+univstar_54
+      - 🇨🇳 中国_tg+univstar_55
+      - 🇨🇳 中国_tg+univstar_56
+      - 🇨🇳 中国_tg+univstar_57
+      - 🇺🇲 美国_tg+univstar_58
+      - 🇨🇳 中国_tg+univstar_59
+      - 🇭🇰 香港_tg+univstar_60
+      - 🇭🇰 香港_tg+univstar_61
+      - 🇺🇲 美国_tg+univstar_62
+      - 🇬🇧 英国_tg+univstar_63
+      - 🇬🇧 英国_tg+univstar_64
+      - 🇭🇰 香港_tg+univstar_65
+      - 🇺🇲 美国_tg+univstar_66
+      - 🇸🇬 新加坡_tg+univstar_67
+      - 🇬🇧 英国_tg+univstar_68
+      - 🇸🇬 更新于09/24/14:20
+      - 🇨🇳 中国()
+      - 🇨🇳 中国() 2
+      - 🇨🇳 中国() 3
+      - 🇨🇳 中国() 4
+      - 🇯🇵 日本()
+      - 🇨🇳 中国() 5
+      - 🇨🇳 中国() 6
+      - 🇨🇳 中国() 7
+      - 🇨🇳 中国() 8
+      - 🇨🇳 中国() 9
+      - 🇺🇲 美国()
+      - 🇨🇳 中国() 10
+      - 🇰🇷 韩国()
+      - 🇰🇷 韩国() 2
+      - 🇨🇳 中国() 11
+      - 🇨🇳 中国() 12
+      - 🇨🇳 中国() 13
+      - 🇸🇬 新加坡()
+      - 🇨🇳 中国() 14
+      - 🇸🇬 新加坡() 2
+      - ()
+      - 🇺🇲 美国() 2
+      - 🇺🇲 美国() 3
+      - 🇨🇳 中国() 15
+      - 🇨🇳 中国() 16
+      - 🇨🇳 中国() 17
+      - 🇺🇲 美国() 4
+      - 🇺🇲 美国() 5
+      - 🇺🇲 美国() 6
+      - 🇩🇪 德国()
+      - 🇮🇳 印度()
+      - 🇨🇳 中国() 18
+      - 🇨🇳 中国() 19
+      - 🇺🇲 美国() 7
+      - 🇷🇺 俄罗斯联邦()
+      - 🇨🇳 中国() 20
+      - 🇮🇳 印度() 2
+      - 🇮🇳 印度() 3
+      - 🇸🇬 新加坡() 3
+      - 🇮🇳 印度() 4
+      - 🇨🇳 中国() 21
+      - 🇺🇲 美国() 8
+      - 🇨🇳 中国() 22
+      - 🇺🇲 美国() 9
+      - 🇺🇲 美国() 10
+      - 🇩🇪 德国() 2
+      - 🇺🇲 美国() 11
+      - 🇨🇳 中国() 23
+      - 🇨🇦 加拿大()
+      - 🇨🇳 中国() 24
+      - 🇨🇳 中国() 25
+      - 🇨🇳 中国() 26
+      - 🇷🇺 俄罗斯联邦() 2
+      - () 2
+      - 🇷🇺 俄罗斯联邦() 3
+      - 🇺🇲 美国() 12
+      - 🇭🇰 |09-|香港01
+      - 🇭🇰 |09-|香港02
+      - 🇭🇰 |09-|香港03
+      - 🇯🇵 |09-|日本01
+      - 🇯🇵 |09-|日本02
+      - 🇯🇵 |09-|日本03
+      - 🇺🇲 |09-|美国01
+      - 🇺🇲 |09-|美国02
+      - 🇺🇲 |09-|美国03
+      - 🇨🇳 |09-|台湾01
+      - 🇨🇳 |09-|台湾02
+      - 🇨🇳 |09-|台湾03
+      - 🇬🇧 |09-|英国01
+      - 🇬🇧 |09-|英国02
+      - 🇬🇧 |09-|英国03
+      - 🇰🇷 |09-|韩国01
+      - 🇰🇷 |09-|韩国02
+      - 🇰🇷 |09-|韩国03
+      - 🇧🇷 |09-|巴西01
+      - 🇧🇷 |09-|巴西02
+      - 🇮🇳 |09-|印度01
+      - 🇸🇬 |09-|新加坡01
+      - 🇸🇬 |09-|新加坡02
+      - 🇸🇬 |09-|新加坡03
+      - 🇦🇷 |09-|阿根廷02
+      - "|09-|墨西哥01"
+      - "|09-|墨西哥02"
+      - 🇹🇷 |09-|土耳其01
+      - 🇲🇾 |09-|马来西亚01
+      - 🇲🇾 |09-|马来西亚02
+      - 🇲🇾 |09-|马来西亚03
+      - 群组：https://t.me/bailmg
+      - 🇭🇰 公告：香港节点正在维护中
+      - 80︱200Mdps︱沈阳
+      - 🇨🇳 80︱200Mdps︱镇江︱正在测试
+      - 🇯🇵 80︱1Gdps︱日本-1
+      - 🇯🇵 80︱1Gdps︱日本-2
+      - 🇯🇵 80︱1Gdps︱日本-3
+      - 🇯🇵 80︱1Gdps︱日本-4
+      - 🇸🇬 80︱1Gdps︱新加坡-1
+      - 🇸🇬 80︱1Gdps︱新加坡2
+      - 🇺🇲 80︱1Gdps︱美国-1
+      - 🇺🇲 80︱1Gdps︱美国-2
+      - 🇩🇪 80︱1Gdps︱德国-1
+      - 🇩🇪 80︱1Gdps︱德国2
+      - 80︱10Mdps︱游戏1
+      - 80︱10Mdps︱游戏2
+      - 80︱10Mdps︱游戏3
       - SàiGòn1-Garena
       - SàiGòn1-Tiktok
       - HàNội3-Garena
@@ -677,38 +1090,6 @@ proxy-groups:
       - 🇸🇬 Singapore3-Tiktok
       - 🇭🇰 HongKong1-Garena
       - 🇭🇰 HongKong1-Tiktok
-      - 🇭🇰 HK,Kowloon
-      - 🇸🇬 SG,Singapore
-      - CA,Vancouver
-      - 🇺🇲 US,California
-      - 🇯🇵 JP,Osaka
-      - 🇨🇳 TW,Taipei
-      - 🇯🇵 JP,Tokyo2
-      - 🇯🇵 JP,Tokyo
-      - 🇰🇷 KR,Incheon
-      - 🇺🇲 US,Dallas2
-      - 🇺🇲 US,Dallas
-      - 🇺🇲 US,Houston
-      - 🇭🇰 HK,NewTerritories
-      - 🇨🇦 |加拿大丨LINODE丨特殊
-      - 🇨🇳 |台湾A丨HINET丨流媒体
-      - 🇨🇳 |台湾B丨HINET丨流媒体
-      - 🇸🇬 |新加坡A丨优化丨特殊
-      - 🇩🇪 |日本A丨LINODE丨流媒体
-      - 🇯🇵 |日本A丨直连丨备用
-      - 🇩🇪 |日本B丨LINODE丨流媒体
-      - 🇯🇵 |日本B丨直连丨备用
-      - 🇺🇲 |美国A丨洛杉矶丨流媒体
-      - 🇺🇲 |美国丨原生丨圣何塞
-      - 🇺🇲 |美国丨芝加哥丨流媒体
-      - 🇬🇧 |英国丨伦敦丨流媒体
-      - 🇰🇷 |韩国A丨首尔丨流媒体
-      - 🇭🇰 |香港A丨BGP丨流媒体
-      - 🇭🇰 |香港A丨HKBN丨流媒体
-      - 🇭🇰 |香港A丨HKT丨流媒体
-      - 🇭🇰 |香港A丨直连丨备用
-      - 🇭🇰 |香港B丨HKBN丨流媒体
-      - 🇭🇰 |香港B丨HKT丨流媒体
       - 🇩🇪 DE9:@nodpai(Beta)
       - 🇨🇳 TW54:@nodpai(Beta)
       - 🇩🇪 DE18:@nodpai(Beta)
@@ -775,6 +1156,25 @@ proxy-groups:
       - 🇭🇰 HK15:@nodpai(Beta)
       - 🇭🇰 HK20:@nodpai(Beta)
       - 🇨🇳 TW5:@nodpai(Beta)
+      - 🇨🇦 加拿大-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z2-1G
+      - 🇸🇬 新加坡-直连Z3-1G
+      - "🇸🇬 新加坡-直连Z4-1G\t"
+      - 🇸🇬 新加坡-直连Z5-1G
+      - 🇸🇬 新加坡-直连免费-1G
+      - 🇯🇵 日本东京-直连Z1-1G
+      - 🇯🇵 日本东京-直连Z2-1G
+      - 🇯🇵 日本东京-直连Z3-1G
+      - 🇯🇵 日本东京-直连Z4-1G
+      - 🇯🇵 日本东京-直连Z5-1G
+      - 🇯🇵 日本东京-直连Z6-1G
+      - 🇯🇵 日本东京-直连Z7-1G
+      - 🇦🇺 澳大利亚-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z2-1G
+      - 🇬🇧 英国伦敦-直连免费-1G
+      - 🏳️‍🌈 过期时间：2022-10-03
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -782,85 +1182,198 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 距离下次重置剩余：6天
-      - 国内入口：大机场.cc固定入口：大机场.com电报：BigAirport_Group
-      - 🇸🇬 *敏感时期墙的比较频繁，不能用时请更新节点
-      - "*严禁测速，为了保证所有人的宽带公平"
-      - 🇭🇰 【直连】HKG/香港-80端口-1
-      - 🇭🇰 【直连】HKG/香港-443端口-2
-      - 【直连】TYO/东京-80端口-1
-      - 【直连】TYO/东京-443端口-2
-      - 🇸🇬 【直连】SIN/狮城-80端口-1
-      - 🇸🇬 【直连】SIN/狮城-443端口-2
-      - 🇰🇷 【直连】ICN/首尔-80端口-1
-      - 🇰🇷 【直连】ICN/首尔-443端口-2
-      - 【直连】SJC/圣荷西-80端口-1
-      - 【直连】SJC/圣荷西-443端口-2
-      - 🇩🇪 【直连】FRA/法兰克福-随机端口-1
-      - 🇺🇲 【直连】PDX/波特兰-随机端口-2
-      - 🇬🇧 【直连】LCY/伦敦-随机端口-3
-      - 🇦🇷 【直连】PAR/巴黎-随机端口-4
-      - 🇮🇪 【直连】DUB/爱尔兰-随机端口-5
-      - 🇭🇰 【直连】HKG/香港-1
-      - 🇭🇰 【直连】HKG/香港-2
-      - 【直连】TYO/东京-1
-      - 【直连】TYO/东京-2
-      - 🇸🇬 【直连】SIN/狮城-1
-      - 🇸🇬 【直连】SIN/狮城-2
-      - 🇰🇷 【直连】ICN/首尔-1
-      - 🇰🇷 【直连】ICN/首尔-2
-      - 【直连】SJC/圣荷西-1
-      - 【直连】SJC/圣荷西-2
-      - 🇭🇰 【直连】HKG/香港-3
-      - 🇭🇰 【直连】HKG/香港-4
-      - 【直连】TYO/东京-3
-      - 【直连】TYO/东京-4
-      - 🇸🇬 【直连】SIN/狮城-3
-      - 🇸🇬 【直连】SIN/狮城-4
-      - 🇰🇷 【直连】ICN/首尔-3
-      - 🇰🇷 【直连】ICN/首尔-4
-      - 【直连】SJC/圣荷西-3
-      - 【直连】SJC/圣荷西-4
-      - 🇨🇦 加拿大-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z1-1G
-      - 🇸🇬 新加坡-直连Z2-1G
-      - 🇸🇬 新加坡-直连Z3-1G
-      - "🇸🇬 新加坡-直连Z4-1G\t"
-      - 🇸🇬 新加坡-直连Z5-1G
-      - 🇸🇬 新加坡-直连免费-1G
-      - 🇯🇵 日本东京-直连Z1-1G
-      - 🇯🇵 日本东京-直连Z2-1G
-      - 🇯🇵 日本东京-直连Z3-1G
-      - 🇯🇵 日本东京-直连Z4-1G
-      - 🇯🇵 日本东京-直连Z5-1G
-      - 🇯🇵 日本东京-直连Z6-1G
-      - 🇯🇵 日本东京-直连Z7-1G
-      - 🇦🇺 澳大利亚-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z2-1G
-      - 🇬🇧 英国伦敦-直连免费-1G
-      - 🏳️‍🌈 过期时间：2022-10-03
-      - 🏳️‍🌈 过期时间：2022-12-04
-      - 🇷🇺 中转俄罗斯011x
-      - 🇯🇵 中转日本011x
-      - 🇺🇲 中转美国011x
-      - 🇺🇲 中转美国021xMedia
-      - 🇰🇷 中转韩国011xMedia
-      - 🇰🇷 中转韩国021xMedia
-      - 🇨🇳 直连台湾011xResidential
-      - 🇯🇵 直连日本010.5x
-      - 🇺🇲 直连美国011x
-      - 🇭🇰 |香港01免流0.5x
-      - 🇷🇺 |俄罗斯01免流1x
-      - 🇯🇵 |日本01免流1x
-      - 🇯🇵 |日本011x
-      - 🇯🇵 |日本021x
-      - 🇯🇵 |日本031x
-      - 🇯🇵 |日本041x
-      - 🇸🇬 |新加坡011x
-      - 🇸🇬 |新加坡021x
-      - 🇸🇬 |新加坡031x
-      - 🇷🇺 |俄罗斯011x
+      - 距离下次重置剩余：7天
+      - 🇸🇬 EC新加坡A
+      - 🇸🇬 EC新加坡B
+      - 🇸🇬 EC新加坡C
+      - 🇸🇬 EC新加坡D
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港HGC商宽
+      - 🇨🇳 台湾HiNet
+      - 🇺🇲 美国Cogent
+      - 🇺🇲 美国GTT
+      - 🇫🇷 法国
+      - 🇬🇧 英国
+      - 🇷🇺 俄罗斯
+      - 🇹🇷 土耳其
+      - 🇯🇵 尼日利亚
+      - 🇸🇬 新加坡Scloud
+      - 🇹🇭 泰国
+      - 🇵🇭 菲律宾
+      - 🇻🇳 越南
+      - 🇭🇰 香港_tg+univstar_1
+      - 🇭🇰 香港_tg+univstar_2
+      - 🇭🇰 香港_tg+univstar_3
+      - 🇭🇰 香港_tg+univstar_4
+      - tg+univstar_5
+      - 🇭🇰 香港_tg+univstar_6
+      - 🇨🇳 中国_tg+univstar_7
+      - 🇨🇳 中国_tg+univstar_8
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇳 中国_tg+univstar_11
+      - 🇨🇳 中国_tg+univstar_12
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国_tg+univstar_14
+      - 🇨🇳 中国_tg+univstar_15
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇭🇰 香港_tg+univstar_17
+      - 🇳🇱 荷兰_tg+univstar_18
+      - 🇭🇰 香港_tg+univstar_19
+      - 🇨🇳 中国_tg+univstar_20
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_tg+univstar_22
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇺🇲 美国_tg+univstar_25
+      - 🇺🇲 美国_tg+univstar_26
+      - 🇨🇳 中国_tg+univstar_27
+      - 🇮🇹 意大利_tg+univstar_28
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港_tg+univstar_30
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 中国_tg+univstar_33
+      - 🇸🇬 新加坡_tg+univstar_34
+      - 🇭🇰 香港_tg+univstar_35
+      - 🇨🇳 中国_tg+univstar_36
+      - 🇨🇳 中国_tg+univstar_37
+      - 🇨🇳 台湾_tg+univstar_38
+      - tg+univstar_39
+      - 🇭🇰 香港_tg+univstar_40
+      - 🇨🇳 中国_tg+univstar_41
+      - 🇨🇳 中国_tg+univstar_42
+      - 🇨🇳 中国_tg+univstar_43
+      - 🇭🇰 香港_tg+univstar_44
+      - 🇨🇳 中国_tg+univstar_45
+      - 🇨🇳 中国_tg+univstar_46
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇺🇲 美国_tg+univstar_48
+      - 🇨🇳 中国_tg+univstar_49
+      - 🇨🇳 中国_tg+univstar_50
+      - 🇨🇳 中国_tg+univstar_51
+      - 🇨🇳 中国_tg+univstar_52
+      - 🇺🇲 美国_tg+univstar_53
+      - 🇨🇳 中国_tg+univstar_54
+      - 🇨🇳 中国_tg+univstar_55
+      - 🇨🇳 中国_tg+univstar_56
+      - 🇨🇳 中国_tg+univstar_57
+      - 🇺🇲 美国_tg+univstar_58
+      - 🇨🇳 中国_tg+univstar_59
+      - 🇭🇰 香港_tg+univstar_60
+      - 🇭🇰 香港_tg+univstar_61
+      - 🇺🇲 美国_tg+univstar_62
+      - 🇬🇧 英国_tg+univstar_63
+      - 🇬🇧 英国_tg+univstar_64
+      - 🇭🇰 香港_tg+univstar_65
+      - 🇺🇲 美国_tg+univstar_66
+      - 🇸🇬 新加坡_tg+univstar_67
+      - 🇬🇧 英国_tg+univstar_68
+      - 🇸🇬 更新于09/24/14:20
+      - 🇨🇳 中国()
+      - 🇨🇳 中国() 2
+      - 🇨🇳 中国() 3
+      - 🇨🇳 中国() 4
+      - 🇯🇵 日本()
+      - 🇨🇳 中国() 5
+      - 🇨🇳 中国() 6
+      - 🇨🇳 中国() 7
+      - 🇨🇳 中国() 8
+      - 🇨🇳 中国() 9
+      - 🇺🇲 美国()
+      - 🇨🇳 中国() 10
+      - 🇰🇷 韩国()
+      - 🇰🇷 韩国() 2
+      - 🇨🇳 中国() 11
+      - 🇨🇳 中国() 12
+      - 🇨🇳 中国() 13
+      - 🇸🇬 新加坡()
+      - 🇨🇳 中国() 14
+      - 🇸🇬 新加坡() 2
+      - ()
+      - 🇺🇲 美国() 2
+      - 🇺🇲 美国() 3
+      - 🇨🇳 中国() 15
+      - 🇨🇳 中国() 16
+      - 🇨🇳 中国() 17
+      - 🇺🇲 美国() 4
+      - 🇺🇲 美国() 5
+      - 🇺🇲 美国() 6
+      - 🇩🇪 德国()
+      - 🇮🇳 印度()
+      - 🇨🇳 中国() 18
+      - 🇨🇳 中国() 19
+      - 🇺🇲 美国() 7
+      - 🇷🇺 俄罗斯联邦()
+      - 🇨🇳 中国() 20
+      - 🇮🇳 印度() 2
+      - 🇮🇳 印度() 3
+      - 🇸🇬 新加坡() 3
+      - 🇮🇳 印度() 4
+      - 🇨🇳 中国() 21
+      - 🇺🇲 美国() 8
+      - 🇨🇳 中国() 22
+      - 🇺🇲 美国() 9
+      - 🇺🇲 美国() 10
+      - 🇩🇪 德国() 2
+      - 🇺🇲 美国() 11
+      - 🇨🇳 中国() 23
+      - 🇨🇦 加拿大()
+      - 🇨🇳 中国() 24
+      - 🇨🇳 中国() 25
+      - 🇨🇳 中国() 26
+      - 🇷🇺 俄罗斯联邦() 2
+      - () 2
+      - 🇷🇺 俄罗斯联邦() 3
+      - 🇺🇲 美国() 12
+      - 🇭🇰 |09-|香港01
+      - 🇭🇰 |09-|香港02
+      - 🇭🇰 |09-|香港03
+      - 🇯🇵 |09-|日本01
+      - 🇯🇵 |09-|日本02
+      - 🇯🇵 |09-|日本03
+      - 🇺🇲 |09-|美国01
+      - 🇺🇲 |09-|美国02
+      - 🇺🇲 |09-|美国03
+      - 🇨🇳 |09-|台湾01
+      - 🇨🇳 |09-|台湾02
+      - 🇨🇳 |09-|台湾03
+      - 🇬🇧 |09-|英国01
+      - 🇬🇧 |09-|英国02
+      - 🇬🇧 |09-|英国03
+      - 🇰🇷 |09-|韩国01
+      - 🇰🇷 |09-|韩国02
+      - 🇰🇷 |09-|韩国03
+      - 🇧🇷 |09-|巴西01
+      - 🇧🇷 |09-|巴西02
+      - 🇮🇳 |09-|印度01
+      - 🇸🇬 |09-|新加坡01
+      - 🇸🇬 |09-|新加坡02
+      - 🇸🇬 |09-|新加坡03
+      - 🇦🇷 |09-|阿根廷02
+      - "|09-|墨西哥01"
+      - "|09-|墨西哥02"
+      - 🇹🇷 |09-|土耳其01
+      - 🇲🇾 |09-|马来西亚01
+      - 🇲🇾 |09-|马来西亚02
+      - 🇲🇾 |09-|马来西亚03
+      - 群组：https://t.me/bailmg
+      - 🇭🇰 公告：香港节点正在维护中
+      - 80︱200Mdps︱沈阳
+      - 🇨🇳 80︱200Mdps︱镇江︱正在测试
+      - 🇯🇵 80︱1Gdps︱日本-1
+      - 🇯🇵 80︱1Gdps︱日本-2
+      - 🇯🇵 80︱1Gdps︱日本-3
+      - 🇯🇵 80︱1Gdps︱日本-4
+      - 🇸🇬 80︱1Gdps︱新加坡-1
+      - 🇸🇬 80︱1Gdps︱新加坡2
+      - 🇺🇲 80︱1Gdps︱美国-1
+      - 🇺🇲 80︱1Gdps︱美国-2
+      - 🇩🇪 80︱1Gdps︱德国-1
+      - 🇩🇪 80︱1Gdps︱德国2
+      - 80︱10Mdps︱游戏1
+      - 80︱10Mdps︱游戏2
+      - 80︱10Mdps︱游戏3
       - SàiGòn1-Garena
       - SàiGòn1-Tiktok
       - HàNội3-Garena
@@ -869,38 +1382,6 @@ proxy-groups:
       - 🇸🇬 Singapore3-Tiktok
       - 🇭🇰 HongKong1-Garena
       - 🇭🇰 HongKong1-Tiktok
-      - 🇭🇰 HK,Kowloon
-      - 🇸🇬 SG,Singapore
-      - CA,Vancouver
-      - 🇺🇲 US,California
-      - 🇯🇵 JP,Osaka
-      - 🇨🇳 TW,Taipei
-      - 🇯🇵 JP,Tokyo2
-      - 🇯🇵 JP,Tokyo
-      - 🇰🇷 KR,Incheon
-      - 🇺🇲 US,Dallas2
-      - 🇺🇲 US,Dallas
-      - 🇺🇲 US,Houston
-      - 🇭🇰 HK,NewTerritories
-      - 🇨🇦 |加拿大丨LINODE丨特殊
-      - 🇨🇳 |台湾A丨HINET丨流媒体
-      - 🇨🇳 |台湾B丨HINET丨流媒体
-      - 🇸🇬 |新加坡A丨优化丨特殊
-      - 🇩🇪 |日本A丨LINODE丨流媒体
-      - 🇯🇵 |日本A丨直连丨备用
-      - 🇩🇪 |日本B丨LINODE丨流媒体
-      - 🇯🇵 |日本B丨直连丨备用
-      - 🇺🇲 |美国A丨洛杉矶丨流媒体
-      - 🇺🇲 |美国丨原生丨圣何塞
-      - 🇺🇲 |美国丨芝加哥丨流媒体
-      - 🇬🇧 |英国丨伦敦丨流媒体
-      - 🇰🇷 |韩国A丨首尔丨流媒体
-      - 🇭🇰 |香港A丨BGP丨流媒体
-      - 🇭🇰 |香港A丨HKBN丨流媒体
-      - 🇭🇰 |香港A丨HKT丨流媒体
-      - 🇭🇰 |香港A丨直连丨备用
-      - 🇭🇰 |香港B丨HKBN丨流媒体
-      - 🇭🇰 |香港B丨HKT丨流媒体
       - 🇩🇪 DE9:@nodpai(Beta)
       - 🇨🇳 TW54:@nodpai(Beta)
       - 🇩🇪 DE18:@nodpai(Beta)
@@ -967,6 +1448,25 @@ proxy-groups:
       - 🇭🇰 HK15:@nodpai(Beta)
       - 🇭🇰 HK20:@nodpai(Beta)
       - 🇨🇳 TW5:@nodpai(Beta)
+      - 🇨🇦 加拿大-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z1-1G
+      - 🇸🇬 新加坡-直连Z2-1G
+      - 🇸🇬 新加坡-直连Z3-1G
+      - "🇸🇬 新加坡-直连Z4-1G\t"
+      - 🇸🇬 新加坡-直连Z5-1G
+      - 🇸🇬 新加坡-直连免费-1G
+      - 🇯🇵 日本东京-直连Z1-1G
+      - 🇯🇵 日本东京-直连Z2-1G
+      - 🇯🇵 日本东京-直连Z3-1G
+      - 🇯🇵 日本东京-直连Z4-1G
+      - 🇯🇵 日本东京-直连Z5-1G
+      - 🇯🇵 日本东京-直连Z6-1G
+      - 🇯🇵 日本东京-直连Z7-1G
+      - 🇦🇺 澳大利亚-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z2-1G
+      - 🇬🇧 英国伦敦-直连免费-1G
+      - 🏳️‍🌈 过期时间：2022-10-03
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1153,21 +1653,26 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 【直连】HKG/香港-80端口-1
-      - 🇭🇰 【直连】HKG/香港-443端口-2
-      - 🇭🇰 【直连】HKG/香港-1
-      - 🇭🇰 【直连】HKG/香港-2
-      - 🇭🇰 【直连】HKG/香港-3
-      - 🇭🇰 【直连】HKG/香港-4
-      - 🇭🇰 |香港01免流0.5x
-      - 🇭🇰 HK,Kowloon
-      - 🇭🇰 HK,NewTerritories
-      - 🇭🇰 |香港A丨BGP丨流媒体
-      - 🇭🇰 |香港A丨HKBN丨流媒体
-      - 🇭🇰 |香港A丨HKT丨流媒体
-      - 🇭🇰 |香港A丨直连丨备用
-      - 🇭🇰 |香港B丨HKBN丨流媒体
-      - 🇭🇰 |香港B丨HKT丨流媒体
+      - 🇭🇰 香港HKT
+      - 🇭🇰 香港HGC商宽
+      - 🇭🇰 香港_tg+univstar_1
+      - 🇭🇰 香港_tg+univstar_2
+      - 🇭🇰 香港_tg+univstar_3
+      - 🇭🇰 香港_tg+univstar_4
+      - 🇭🇰 香港_tg+univstar_6
+      - 🇭🇰 香港_tg+univstar_17
+      - 🇭🇰 香港_tg+univstar_19
+      - 🇭🇰 香港_tg+univstar_30
+      - 🇭🇰 香港_tg+univstar_35
+      - 🇭🇰 香港_tg+univstar_40
+      - 🇭🇰 香港_tg+univstar_44
+      - 🇭🇰 香港_tg+univstar_60
+      - 🇭🇰 香港_tg+univstar_61
+      - 🇭🇰 香港_tg+univstar_65
+      - 🇭🇰 |09-|香港01
+      - 🇭🇰 |09-|香港02
+      - 🇭🇰 |09-|香港03
+      - 🇭🇰 公告：香港节点正在维护中
       - 🇭🇰 HK17:@nodpai(Beta)
       - 🇭🇰 HK18:@nodpai(Beta)
       - 🇭🇰 HK39:@nodpai(Beta)
@@ -1199,12 +1704,15 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 【直连】TYO/东京-80端口-1
-      - 【直连】TYO/东京-443端口-2
-      - 【直连】TYO/东京-1
-      - 【直连】TYO/东京-2
-      - 【直连】TYO/东京-3
-      - 【直连】TYO/东京-4
+      - 🇯🇵 尼日利亚
+      - 🇯🇵 日本()
+      - 🇯🇵 |09-|日本01
+      - 🇯🇵 |09-|日本02
+      - 🇯🇵 |09-|日本03
+      - 🇯🇵 80︱1Gdps︱日本-1
+      - 🇯🇵 80︱1Gdps︱日本-2
+      - 🇯🇵 80︱1Gdps︱日本-3
+      - 🇯🇵 80︱1Gdps︱日本-4
       - 🇯🇵 日本东京-直连Z1-1G
       - 🇯🇵 日本东京-直连Z2-1G
       - 🇯🇵 日本东京-直连Z3-1G
@@ -1212,39 +1720,38 @@ proxy-groups:
       - 🇯🇵 日本东京-直连Z5-1G
       - 🇯🇵 日本东京-直连Z6-1G
       - 🇯🇵 日本东京-直连Z7-1G
-      - 🇯🇵 中转日本011x
-      - 🇯🇵 直连日本010.5x
-      - 🇯🇵 |日本01免流1x
-      - 🇯🇵 |日本011x
-      - 🇯🇵 |日本021x
-      - 🇯🇵 |日本031x
-      - 🇯🇵 |日本041x
-      - 🇯🇵 JP,Osaka
-      - 🇯🇵 JP,Tokyo2
-      - 🇯🇵 JP,Tokyo
-      - 🇩🇪 |日本A丨LINODE丨流媒体
-      - 🇯🇵 |日本A丨直连丨备用
-      - 🇩🇪 |日本B丨LINODE丨流媒体
-      - 🇯🇵 |日本B丨直连丨备用
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 【直连】PDX/波特兰-随机端口-2
-      - 🇺🇲 美国达拉斯-直连Z1-1G
-      - 🇺🇲 美国达拉斯-直连Z2-1G
-      - 🇺🇲 中转美国011x
-      - 🇺🇲 中转美国021xMedia
-      - 🇺🇲 直连美国011x
-      - 🇺🇲 US,California
-      - 🇺🇲 US,Dallas2
-      - 🇺🇲 US,Dallas
-      - 🇺🇲 US,Houston
-      - 🇺🇲 |美国A丨洛杉矶丨流媒体
-      - 🇺🇲 |美国丨原生丨圣何塞
-      - 🇺🇲 |美国丨芝加哥丨流媒体
+      - 🇺🇲 美国Cogent
+      - 🇺🇲 美国GTT
+      - 🇺🇲 美国_tg+univstar_25
+      - 🇺🇲 美国_tg+univstar_26
+      - 🇺🇲 美国_tg+univstar_48
+      - 🇺🇲 美国_tg+univstar_53
+      - 🇺🇲 美国_tg+univstar_58
+      - 🇺🇲 美国_tg+univstar_62
+      - 🇺🇲 美国_tg+univstar_66
+      - 🇺🇲 美国()
+      - 🇺🇲 美国() 2
+      - 🇺🇲 美国() 3
+      - 🇺🇲 美国() 4
+      - 🇺🇲 美国() 5
+      - 🇺🇲 美国() 6
+      - 🇺🇲 美国() 7
+      - 🇺🇲 美国() 8
+      - 🇺🇲 美国() 9
+      - 🇺🇲 美国() 10
+      - 🇺🇲 美国() 11
+      - 🇺🇲 美国() 12
+      - 🇺🇲 |09-|美国01
+      - 🇺🇲 |09-|美国02
+      - 🇺🇲 |09-|美国03
+      - 🇺🇲 80︱1Gdps︱美国-1
+      - 🇺🇲 80︱1Gdps︱美国-2
       - 🇺🇲 US40:@nodpai(Beta)
       - 🇺🇲 US39:@nodpai(Beta)
       - 🇺🇲 US37:@nodpai(Beta)
@@ -1263,16 +1770,19 @@ proxy-groups:
       - 🇺🇲 US30:@nodpai(Beta)
       - 🇺🇲 US3:@nodpai(Beta)
       - 🇺🇲 US6:@nodpai(Beta)
+      - 🇺🇲 美国达拉斯-直连Z1-1G
+      - 🇺🇲 美国达拉斯-直连Z2-1G
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 直连台湾011xResidential
-      - 🇨🇳 TW,Taipei
-      - 🇨🇳 |台湾A丨HINET丨流媒体
-      - 🇨🇳 |台湾B丨HINET丨流媒体
+      - 🇨🇳 台湾HiNet
+      - 🇨🇳 台湾_tg+univstar_38
+      - 🇨🇳 |09-|台湾01
+      - 🇨🇳 |09-|台湾02
+      - 🇨🇳 |09-|台湾03
       - 🇨🇳 TW54:@nodpai(Beta)
       - 🇨🇳 TW26:@nodpai(Beta)
       - 🇨🇳 TW24:@nodpai(Beta)
@@ -1284,47 +1794,45 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 【直连】SIN/狮城-80端口-1
-      - 🇸🇬 【直连】SIN/狮城-443端口-2
-      - 🇸🇬 【直连】SIN/狮城-1
-      - 🇸🇬 【直连】SIN/狮城-2
-      - 🇸🇬 【直连】SIN/狮城-3
-      - 🇸🇬 【直连】SIN/狮城-4
+      - 🇸🇬 EC新加坡A
+      - 🇸🇬 EC新加坡B
+      - 🇸🇬 EC新加坡C
+      - 🇸🇬 EC新加坡D
+      - 🇸🇬 新加坡Scloud
+      - 🇸🇬 新加坡_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_34
+      - 🇸🇬 新加坡_tg+univstar_67
+      - 🇸🇬 新加坡()
+      - 🇸🇬 新加坡() 2
+      - 🇸🇬 新加坡() 3
+      - 🇸🇬 |09-|新加坡01
+      - 🇸🇬 |09-|新加坡02
+      - 🇸🇬 |09-|新加坡03
+      - 🇸🇬 80︱1Gdps︱新加坡-1
+      - 🇸🇬 80︱1Gdps︱新加坡2
+      - 🇸🇬 Singapore3-Garena
+      - 🇸🇬 Singapore3-Tiktok
       - 🇸🇬 新加坡-直连Z1-1G
       - 🇸🇬 新加坡-直连Z2-1G
       - 🇸🇬 新加坡-直连Z3-1G
       - "🇸🇬 新加坡-直连Z4-1G\t"
       - 🇸🇬 新加坡-直连Z5-1G
       - 🇸🇬 新加坡-直连免费-1G
-      - 🇸🇬 |新加坡011x
-      - 🇸🇬 |新加坡021x
-      - 🇸🇬 |新加坡031x
-      - 🇸🇬 Singapore3-Garena
-      - 🇸🇬 Singapore3-Tiktok
-      - 🇸🇬 SG,Singapore
-      - 🇸🇬 |新加坡A丨优化丨特殊
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 【直连】ICN/首尔-80端口-1
-      - 🇰🇷 【直连】ICN/首尔-443端口-2
-      - 🇰🇷 【直连】ICN/首尔-1
-      - 🇰🇷 【直连】ICN/首尔-2
-      - 🇰🇷 【直连】ICN/首尔-3
-      - 🇰🇷 【直连】ICN/首尔-4
-      - 🇰🇷 中转韩国011xMedia
-      - 🇰🇷 中转韩国021xMedia
-      - 🇰🇷 KR,Incheon
-      - 🇰🇷 |韩国A丨首尔丨流媒体
+      - 🇰🇷 韩国()
+      - 🇰🇷 韩国() 2
+      - 🇰🇷 |09-|韩国01
+      - 🇰🇷 |09-|韩国02
+      - 🇰🇷 |09-|韩国03
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇺🇲 中转美国021xMedia
-      - 🇰🇷 中转韩国011xMedia
-      - 🇰🇷 中转韩国021xMedia
+      - DIRECT
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
