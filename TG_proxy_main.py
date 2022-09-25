@@ -111,6 +111,7 @@ def write_document():
         #去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
+        print("共获得",len(end_bas64_A),"个节点")
         #减少获取的个数
         bas64 = '\n'.join(end_bas64_A).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
@@ -128,6 +129,8 @@ def write_document():
         plaintext_result_two = obj_two.decode()
         obj_three = base64.b64encode(bas64_three.encode())
         plaintext_result_three = obj_three.decode()
+        obj_num = base64.b64encode(bas64.encode())
+        plaintext_result_num = obj_num.decode()
         #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
@@ -151,6 +154,9 @@ def write_document():
         file_L.close()
         file_L = open("Long_term_subscription3", 'w', encoding='utf-8')
         file_L.write(plaintext_result_three)
+        file_L.close()
+        file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
+        file_L.write(plaintext_result_num)
         file_L.close()
         print("任务完成！")
     return
