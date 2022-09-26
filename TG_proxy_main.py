@@ -84,8 +84,7 @@ def get_content(url_lst):
                     peoxy = jiemi_base64(res.text)
                     print(i, ".这是个v2ray订阅", o)
                     end_list_v2ray.append(o)
-                    for element in peoxy:
-                        end_bas64.append(element)
+                    end_bas64.extend(peoxy.splitlines())
                     
                 #均不是则非订阅链接
                 except:
@@ -107,8 +106,7 @@ def write_document():
             res = requests.get(e)
             try:
                 proxys=jiemi_base64(res.text)
-                for element in proxys:
-                    end_bas64.append(element)
+                end_bas64.extend(proxys.splitlines())
             except:
                 print("出现错误❌跳过")
         print('永久订阅更新完毕')
