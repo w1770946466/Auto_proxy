@@ -100,7 +100,6 @@ def write_document():
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
-        print(end_bas64)
         #永久订阅
         for e in e_sub:
             res = requests.get(e)
@@ -116,6 +115,33 @@ def write_document():
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
         
         #减少获取的个数
+        length = len(end_bas64_A)  # 总长
+        n = 3  # 切分成多少份
+        step = int(length / n) + 1  # 每份的长度
+        for i in range(0, length, step):
+            print(end_bas64_A[i: i + step])
+            zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
+            #将获得的节点变成base64加密，为了长期订阅
+            obj = base64.b64encode(zhengli.encode())
+            plaintext_result = obj.decode()
+            n = 1
+
+            for i in urls:
+
+                response = requests.get(i)
+
+        #print(response.text)
+
+        file_L = open("Long_term_subscription" + str(n) +".yaml", 'w', encoding='utf-8')
+
+        file_L.write(response.text)
+
+        file_L.close()
+
+        n += 1
+            file_L = open("Long_term_subscription", 'w', encoding='utf-8')
+            file_L.write(plaintext_result_one)
+        
         bas64 = '\n'.join(end_bas64_A).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         bas64_one = '\n'.join(end_bas64_A[0: len(end_bas64_A)//3]).replace(
