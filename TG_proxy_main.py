@@ -85,6 +85,7 @@ def get_content(url_lst):
                     print(i, ".这是个v2ray订阅", o)
                     end_list_v2ray.append(o)
                     end_bas64 += peoxy.splitlines()
+                    print(peoxy.splitlines())
                 #均不是则非订阅链接
                 except:
                     print(i, ".非订阅链接")
@@ -99,7 +100,7 @@ def write_document():
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
-        print(end_bas64)
+        
         #永久订阅
         for e in e_sub:
             res = requests.get(e)
