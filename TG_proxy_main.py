@@ -99,6 +99,7 @@ def write_document():
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
+        print(end_bas64)
         #永久订阅
         for e in e_sub:
             res = requests.get(e)
@@ -108,7 +109,7 @@ def write_document():
             except:
                 print("出现错误❌跳过")
         print('永久订阅更新完毕')
-        print(end_bas64)
+        
         #去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
