@@ -136,7 +136,6 @@ def write_document():
         m = 3  # 切分成多少份
         step = int(length / m) + 1  # 每份的长度
         for i in range(0, length, step):
-            print(end_bas64_A[i: i + step])
             zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
             #将获得的节点变成base64加密，为了长期订阅
             obj = base64.b64encode(zhengli.encode())
@@ -145,6 +144,12 @@ def write_document():
             file_L = open("Long_term_subscription"+str(r), 'w', encoding='utf-8')
             file_L.write(plaintext_result)
             r += 1
+        #写入总长期订阅
+        obj = base64.b64encode(bas64.encode())
+        plaintext_result = obj.decode()
+        file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
+        file_L.write(plaintext_result)
+        print("订阅写入完成✅")
         try:
             numbers =sum(1 for _ in open(txt_dir))
             print("共获取到",numbers,"节点")
