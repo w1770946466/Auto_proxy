@@ -157,7 +157,7 @@ def write_document():
         file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
         file_L.write(plaintext_result_num)
         file_L.close()
-        print("共获取到",len(open(Long_term_subscription_num).readlines()),"节点")
+        print("共获取到",sum(1 for _ in open(Long_term_subscription_num)),"节点")
     return
 
 #获取clash订阅
