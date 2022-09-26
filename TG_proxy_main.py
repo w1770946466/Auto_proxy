@@ -111,8 +111,6 @@ def write_document():
         #去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
-        print("共获得",len(end_bas64_A),"个节点")
-        print(end_bas64_A)
         #减少获取的个数
         bas64 = '\n'.join(end_bas64_A).replace(
             '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
@@ -159,7 +157,7 @@ def write_document():
         file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
         file_L.write(plaintext_result_num)
         file_L.close()
-        print("任务完成！")
+        print("共获取到",len(open(Long_term_subscription_num).readlines())),"节点")
     return
 
 #获取clash订阅
