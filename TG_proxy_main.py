@@ -84,8 +84,8 @@ def get_content(url_lst):
                     peoxy = jiemi_base64(res.text)
                     print(i, ".这是个v2ray订阅", o)
                     end_list_v2ray.append(o)
-                    end_bas64 += peoxy.split("\r\n")
-                    print(peoxy.splitlines())
+                    end_bas64 += peoxy.splitlines()
+                    
                 #均不是则非订阅链接
                 except:
                     print(i, ".非订阅链接")
@@ -100,19 +100,19 @@ def write_document():
         #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
-        
+        print(end_bas64)
         #永久订阅
         for e in e_sub:
             res = requests.get(e)
             try:
                 proxys=jiemi_base64(res.text)
-                end_bas64 += proxys.split("\r\n")
+                end_bas64 += proxys.splitlines()
             except:
                 print("出现错误❌跳过")
         print('永久订阅更新完毕')
         
         #去重
-        end_bas64_A = list(set(end_bas64))
+        #end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
         
         #减少获取的个数
