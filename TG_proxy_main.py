@@ -113,53 +113,8 @@ def write_document():
         #去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
+        bas64 = '\n'.join(end_bas64_A).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         
-        #减少获取的个数
-        length = len(end_bas64_A)  # 总长
-        n = 3  # 切分成多少份
-        step = int(length / n) + 1  # 每份的长度
-        for i in range(0, length, step):
-            print(end_bas64_A[i: i + step])
-            zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-            #将获得的节点变成base64加密，为了长期订阅
-            obj = base64.b64encode(zhengli.encode())
-            plaintext_result = obj.decode()
-            n = 1
-
-            for i in urls:
-
-                response = requests.get(i)
-
-        #print(response.text)
-
-        file_L = open("Long_term_subscription" + str(n) +".yaml", 'w', encoding='utf-8')
-
-        file_L.write(response.text)
-
-        file_L.close()
-
-        n += 1
-            file_L = open("Long_term_subscription", 'w', encoding='utf-8')
-            file_L.write(plaintext_result_one)
-        
-        bas64 = '\n'.join(end_bas64_A).replace(
-            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_one = '\n'.join(end_bas64_A[0: len(end_bas64_A)//3]).replace(
-            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_two = '\n'.join(end_bas64_A[len(end_bas64_A) // 3: len(end_bas64_A)*2 // 3]).replace(
-            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        bas64_three = '\n'.join(end_bas64_A[len(end_bas64_A)*2 // 3: -1]).replace(
-            '\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        #将获得的节点变成base64加密，为了长期订阅
-        #print(len(end_bas64))
-        obj_one = base64.b64encode(bas64_one.encode())
-        plaintext_result_one = obj_one.decode()
-        obj_two = base64.b64encode(bas64_two.encode())
-        plaintext_result_two = obj_two.decode()
-        obj_three = base64.b64encode(bas64_three.encode())
-        plaintext_result_three = obj_three.decode()
-        obj_num = base64.b64encode(bas64.encode())
-        plaintext_result_num = obj_num.decode()
         #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
@@ -173,20 +128,23 @@ def write_document():
         #写入时间订阅
         file = open(txt_dir, 'w', encoding='utf-8')
         file.write(bas64)
-        file.close()
-        #写入长期订阅
-        file_L = open("Long_term_subscription", 'w', encoding='utf-8')
-        file_L.write(plaintext_result_one)
-        file_L.close()
-        file_L = open("Long_term_subscription2", 'w', encoding='utf-8')
-        file_L.write(plaintext_result_two)
-        file_L.close()
-        file_L = open("Long_term_subscription3", 'w', encoding='utf-8')
-        file_L.write(plaintext_result_three)
-        file_L.close()
-        file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
-        file_L.write(plaintext_result_num)
-        file_L.close()
+        file.close()       
+        
+        #减少获取的个数
+        r = 1
+        length = len(end_bas64_A)  # 总长
+        m = 3  # 切分成多少份
+        step = int(length / m) + 1  # 每份的长度
+        for i in range(0, length, step):
+            print(end_bas64_A[i: i + step])
+            zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
+            #将获得的节点变成base64加密，为了长期订阅
+            obj = base64.b64encode(zhengli.encode())
+            plaintext_result = obj.decode()
+            #写入长期订阅
+            file_L = open("Long_term_subscription"+str(r), 'w', encoding='utf-8')
+            file_L.write(plaintext_result)
+            r += 1
         try:
             numbers =sum(1 for _ in open(txt_dir))
             print("共获取到",numbers,"节点")
