@@ -158,7 +158,7 @@ def write_document():
         file_L.write(plaintext_result_num)
         file_L.close()
         try:
-            numbers =sum(1 for _ in open(Long_term_subscription_num))
+            numbers =sum(1 for _ in open(txt_dir))
             print("共获取到",numbers,"节点")
         except:
             print("出现错误！")
