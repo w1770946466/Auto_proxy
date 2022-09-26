@@ -92,7 +92,7 @@ def get_content(url_lst):
         except:
             print("第", i, "个链接获取失败跳过！")
         i += 1
-    return
+    return end_bas64
 
 
 def write_document():
