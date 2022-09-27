@@ -31,5 +31,6 @@
 
 - [clash订阅3](https://d1.mk/gNsZoGU)`https://d1.mk/gNsZoGU`
 
-
+## ✨星标统计
+[![Star History Chart](https://api.star-history.com/svg?repos=w1770946466/Auto_proxy&type=Date)](https://star-history.com/#w1770946466/Auto_proxy&Date)
 
