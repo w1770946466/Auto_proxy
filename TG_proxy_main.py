@@ -108,7 +108,7 @@ def write_document():
                 proxys=jiemi_base64(res.text)
                 end_bas64.extend(proxys.splitlines())
             except:
-                
+                print("第",em,"永久订阅出现错误❌跳过")
             em += 1
         print('永久订阅更新完毕')
         
