@@ -101,13 +101,15 @@ def write_document():
         return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
     else:
         #永久订阅
+        em = 1
         for e in e_sub:
             try:
                 res = requests.get(e)
                 proxys=jiemi_base64(res.text)
                 end_bas64.extend(proxys.splitlines())
             except:
-                print("出现错误❌跳过")
+                
+            em += 1
         print('永久订阅更新完毕')
         
         #去重
