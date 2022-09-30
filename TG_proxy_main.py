@@ -102,8 +102,8 @@ def write_document():
     else:
         #永久订阅
         for e in e_sub:
-            res = requests.get(e)
             try:
+                res = requests.get(e)
                 proxys=jiemi_base64(res.text)
                 end_bas64.extend(proxys.splitlines())
             except:
