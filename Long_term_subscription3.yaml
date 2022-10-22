@@ -5,230 +5,260 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇿🇦 ZA2, server: 156.240.112.58, port: 20870, type: vmess, uuid: 29c2062c-484f-44ea-a90f-1c7491ab62fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇲 美国(), server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, sni: basics.efcloud.cc, skip-cert-verify: false}
-  - {name: 🇨🇳 CN3, server: vphk-2.gito.cc, port: 33401, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 30855:0FvZRy, obfs-param: 940c230855.download.windowsupdate.com}
-  - {name: 🇸🇬 Singapore-M247@univstar_6, server: 1.71.136.24, port: 19224, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: SanJose-EDCL-dip, server: 183.232.141.116, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港HKT-dip, server: 183.232.141.109, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 HK4, server: c551397.gc.gladns.com, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: Seattle-Dedicated_5, server: 223.166.145.12, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: "🇸🇬 |[V2]+新加坡+01", server: zj.ecvvvw.cn, port: 48001, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇭🇰 |GLaDOS-GEOIP-HK-03, server: c551397.gc.gladns.com, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇺🇲 |🇺🇸美国A, server: 143.198.237.122, port: 10002, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g13.xingbayun.buzz, skip-cert-verify: false}
-  - {name: LAX-DediPath, server: 112.64.53.74, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: "🇨🇳 |台湾02[1.5]", server: moblev2.mipglxi.cn, port: 5622, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇨🇳 台湾=@bpjzx2=21, server: 1.71.136.24, port: 19213, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港有线-dip@univstar_5, server: 182.151.8.150, port: 19204, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇯🇵 JP1:@airproxies, server: jp1.bafang.vip, port: 10023, type: ss, cipher: chacha20-ietf-poly1305, password: 88217f59-d96e-478a-82c9-42c42c272be0}
-  - {name: 🇭🇰 香港=@bpjzx2=2, server: 183.232.141.121, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇨🇳 CN2, server: id-1.gito.cc, port: 3328, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 30855:0FvZRy, obfs-param: 940c230855.download.windowsupdate.com}
-  - {name: "|Tykyo🌅", server: tykyo.alisa.buzz, port: 61111, type: vmess, uuid: 660a139f-2602-4e9c-9b81-32a297a8d1e1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇪🇸 ES1, server: 185.194.30.40, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇮🇳 |印度-边缘访问DOIN, server: dtin1.bnnodeservice.com, port: 33017, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 免费节点定期失效, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: Santa+Clara-DigitalOcean@univstar_2, server: 222.84.250.35, port: 19241, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港04, server: 120.226.189.121, port: 26013, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 台湾V108|深港隧道、流媒体|2x, server: 139.227.182.232, port: 15010, type: trojan, password: TT5RvB, sni: if2e.ft3.us, skip-cert-verify: false}
-  - {name: 🇺🇲 美国西雅图|解锁流媒体, server: 198.41.209.68, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/us3?ed=2048", headers: {Host: us3.meizhiyuanya.xyz}}}
-  - {name: 🇭🇰 香港=@bpjzx2=10, server: 183.232.141.85, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: Tokyo-M247@univstar_3, server: 182.151.8.150, port: 19242, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: "🇭🇰 |香港08[1.5]", server: moblev2.mipglxi.cn, port: 5608, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: San+Jose-Krypt@univstar_7, server: 1.71.136.24, port: 19231, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本Cappuccino, server: hnct.cmcc.wiki, port: 10939, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
-  - {name: 🇨🇳 |台湾01, server: 120.226.189.121, port: 26059, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港=@bpjzx2=9, server: 183.232.141.82, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇬🇧 |GLaDOS-GEOIP-UK-01, server: c551397.ga.gladns.com, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: "🇺🇲 |美国03[1.5]", server: unicomus.mipglxi.cn, port: 5629, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: "🇭🇰 |香港04[1.5]", server: moblev2.mipglxi.cn, port: 5604, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇭🇰 香港HKT-dip 2, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港-VI|10G|80端口, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡-测试-ii|1G|80端口, server: sg-test-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇭🇰 香港HKBN-dip, server: 183.232.141.85, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: "|GLaDOS-N2-02", server: c551397.nc.gladns.com, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇨🇳 高雄Hinet-dip, server: 116.162.120.25, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 新加坡=@bpjzx2=38, server: 182.151.8.150, port: 19229, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 圣荷西=@bpjzx2=32, server: 1.71.136.24, port: 19231, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02|v2直连|x2, server: hk2.bfyun.top, port: 10021, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk2.bfyun.top, network: ws, ws-opts: {path: /cctv10/hd.m3u8, headers: {Host: hk2.bfyun.top}}}
-  - {name: 🇸🇬 SG-FDCservers-dip, server: 223.166.145.41, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 Singapore-M247@univstar_2, server: 1.71.136.24, port: 19226, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇨🇳 |台湾04, server: 120.226.189.121, port: 26062, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇦🇺 |澳大利亚-边缘访问VUAU, server: dtau1.bnnodeservice.com, port: 33012, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_1020019, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾=@bpjzx2=4, server: 182.151.8.150, port: 19212, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港=@bpjzx2=37, server: 183.232.141.85, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇺🇲 US1, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: false}
-  - {name: 🇮🇳 印度01|v2直连|x2, server: ln1.bafang.vip, port: 10025, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ln1.bafang.vip, network: ws, ws-opts: {path: /cctv11/hd.m3u8, headers: {Host: ln1.bafang.vip}}}
-  - {name: 🇯🇵 日本=@bpjzx2=41, server: 1.71.136.24, port: 19244, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: h650196.waihuizhibiaowang.com:11743, server: h650196.waihuizhibiaowang.com, port: 11743, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: h207532.waihuizhibiaowang.com:11443, server: h207532.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇨🇳 高雄Hinet-dip 2, server: 116.162.120.25, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 中国(频道)4, server: s4.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 高雄Hinet-dip 3, server: 112.64.53.108, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港=@bpjzx2=13, server: 183.232.141.108, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇫🇷 |法国-边缘访问DP, server: dtfr1.bnnodeservice.com, port: 33009, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: LAX-DediPath 2, server: 112.64.53.74, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 新加坡=@bpjzx2=7, server: 182.151.8.150, port: 19227, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇫🇷 FR1:@airproxies, server: 27fr.networklinkpro.net, port: 443, type: trojan, password: e392bfdd-d4ce-4df2-9534-fef23f037121, skip-cert-verify: false}
-  - {name: 🇺🇲 洛杉矶=@bpjzx2=34, server: 222.84.250.35, port: 19236, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: h650196.waihuizhibiaowang.com:11143, server: h650196.waihuizhibiaowang.com, port: 11143, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡=@bpjzx2=3, server: 222.84.250.35, port: 19228, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 网址:hass.win/reg, server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港有线-dip@univstar_1, server: 1.71.136.24, port: 19204, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT-dip 3, server: 112.64.98.215, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港-6|1G|80端口, server: hk-6.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: LAX-Krypt@univstar_2, server: 222.84.250.35, port: 19234, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇸🇬 大萝卜鸡新加坡, server: 222.84.250.35, port: 19228, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇯🇵 大萝卜鸡日本, server: 137.220.244.206, port: 1443, type: ss, cipher: aes-256-gcm, password: d11f468ac5ca}
-  - {name: 🇺🇲 |GLaDOS-GEOIP-US-03, server: c551397.gc.gladns.com, port: 3381, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-II|10G|80端口, server: hk-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: "🇨🇳 |台湾05[1.5]", server: moblev2.mipglxi.cn, port: 5625, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: SanJose-EDCL-dip 2, server: 183.232.141.118, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 台湾=@bpjzx2=38, server: 116.162.120.25, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇭🇰 香港=@bpjzx2=33, server: 222.84.250.35, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: h961359.strongpipe.live:11545, server: h961359.strongpipe.live, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 香港bgp|, server: 103.137.22.45, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff}
-  - {name: 🇭🇰 香港(), server: 165.154.244.29, port: 443, type: vmess, uuid: e13a9c42-54d6-4fe1-9578-0ca3bfc17122, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 AWS香港01tcp, server: 16.162.48.217, port: 8848, type: vmess, uuid: 23a2d9b7-d9f0-43ea-adc9-2502559d9734, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 大萝卜鸡新加坡 2, server: 222.84.250.35, port: 19229, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: LAX-DediPath 3, server: 112.64.53.74, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇿🇦 ZA4, server: 156.240.119.249, port: 27557, type: vmess, uuid: 718ae059-94a0-49be-8bbb-d01cea95070a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: Chuncheon-Oracle, server: 183.232.141.120, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: "🇭🇰 |香港06[1.5]", server: moblev2.mipglxi.cn, port: 5606, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇭🇰 香港HKT-dip 4, server: 183.232.141.82, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇲 美国2|, server: 172.64.153.102, port: 443, type: vmess, uuid: bed3d876-2d26-4d4d-b789-3063438ee774, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash2.trump2023.us}}}
-  - {name: 🇭🇰 香港HKT, server: 116.162.120.33, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 日本(), server: aeadjpaes01.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: 3e820eb0-3f06-4337-a4fc-0c3c7c0d3b4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}}
-  - {name: 🇵🇭 |菲律宾-边缘访问Comfac, server: dtph1.bnnodeservice.com, port: 33013, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HGC-dip@univstar_7, server: 1.71.136.24, port: 19205, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇺🇲 洛杉矶=@bpjzx2=22, server: 182.151.8.150, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇬🇧 |GLaDOS-GEOIP-UK-03, server: c551397.gc.gladns.com, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇯🇵 |🇯🇵日本D, server: 172.105.238.12, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, skip-cert-verify: false}
-  - {name: Seattle-Dedicated, server: 223.166.145.12, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: Seattle-Dedicated 2, server: 223.166.145.12, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港HKT-dip 5, server: 183.232.141.119, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: Seattle-Dedicated_4, server: 223.166.145.12, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: "🇵🇭 [BGP-GSLB]菲律宾马尼拉", server: 15.168.33.3, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-ph.optage.moe, skip-cert-verify: false}
-  - {name: 🇭🇰 tg+univstar_香港HKT-dip_3, server: 183.232.141.109, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: 🇺🇲 US2, server: 154.85.56.140, port: 22347, type: vmess, uuid: 9da624b8-9f9f-480a-a9e9-2e376ac8c49d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: "🇭🇰 |香港05[1.5]", server: moblev2.mipglxi.cn, port: 5605, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇨🇳 高雄Hinet-dip 4, server: 112.64.53.108, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 tg+univstar_香港HKT-dip_4, server: 183.232.141.105, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: 🇨🇳 大萝卜鸡台湾, server: 182.151.8.150, port: 19214, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇨🇳 高雄Hinet-dip 5, server: 112.64.53.108, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港=@bpjzx2=3, server: 183.232.141.109, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: "🇨🇳 |台湾04[1.5]", server: moblev2.mipglxi.cn, port: 5624, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇭🇰 大萝卜鸡香港, server: hk3.yga1.top, port: 44401, type: vmess, uuid: bbddb019-8be9-3aed-b29c-bb429845092e, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /suning, headers: {Host: hk3.yga1.top}}}
-  - {name: "🇯🇵 |日本05[1.5]", server: unicomv2.mipglxi.cn, port: 5619, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇺🇲 美国洛杉矶-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: i0.hdslb.com}}}
-  - {name: 🇺🇲 |美国01, server: 116.129.254.6, port: 26001, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT-dip 6, server: 183.232.141.108, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: "🇯🇵 |[V2]+日本+01", server: zj.ecvvvw.cn, port: 46000, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡=@bpjzx2=37, server: 1.71.136.24, port: 19228, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: Tokyo-M247@univstar_8, server: 222.84.250.35, port: 19243, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇸🇬 |GLaDOS-GEOIP-SG-03, server: c551397.gc.gladns.com, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇺🇲 |GLaDOS-GEOIP-US-02, server: c551397.gb.gladns.com, port: 3381, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: Moscow-Melbicom, server: 116.162.120.23, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇷🇺 |俄罗斯-核心访问GCore, server: traru1.bnnodeservice.com, port: 32008, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: Moscow-Melbicom 2, server: 116.162.120.23, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: LAX-Krypt@univstar_1, server: 1.71.136.24, port: 19235, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国02, server: 116.129.254.6, port: 26002, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "|GLaDOS-T1-Netflix", server: c551397.f1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /s/c551397.fm.apple.com:113941, headers: {Host: n2.gladns.com}}}
-  - {name: "🇯🇵 |日本01[1.5]", server: unicomv2.mipglxi.cn, port: 5615, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: 🇭🇰 香港=@bpjzx2=5, server: 183.232.141.89, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇭🇰 HK8, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: "%7B%22Host%22:%22vsg1.0bad.com%22%7D"}}}
-  - {name: 🇷🇺 |俄罗斯-边缘访问GCore, server: dtru1.bnnodeservice.com, port: 33008, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT-dip 7, server: 112.64.98.215, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇯🇵 JP3:@airproxies, server: jp1.bafang.vip, port: 10021, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jp1.bafang.vip}}}
-  - {name: 🇩🇪 |德国-边缘访问DP, server: dtde1.bnnodeservice.com, port: 33011, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL, server: 183.232.141.119, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 中国内蒙古|100M|80端口, server: nmg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇨🇦 大萝卜鸡加拿大, server: 222.84.250.35, port: 19249, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT 2, server: 183.232.141.93, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港HKT-dip 8, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港HGC-dip@univstar_3, server: 182.151.8.150, port: 19205, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇰🇷 大萝卜鸡韩国, server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com, port: 12356, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: LAX-Aiyun-dip@univstar_4, server: 1.71.136.24, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇰🇷 |韩国01, server: 120.226.189.121, port: 26072, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国Americano, server: hnct.cmcc.wiki, port: 10941, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
-  - {name: 🇿🇦 ZA3, server: 156.240.120.13, port: 57661, type: vmess, uuid: f360b24a-7b07-49be-9a16-d676c517974f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇭🇰 香港=@bpjzx2=6, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇦🇷 |阿根廷-边缘访问DonWeb, server: dtar1.bnnodeservice.com, port: 33015, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKBN-dip 2, server: 183.232.141.107, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 Singapore-M247@univstar_5, server: 182.151.8.150, port: 19221, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: (), server: lsrug-1037-v2-9.hkg-d-cmi.jd.cjhh.lol, port: 888, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: node.inforun.work}}}
-  - {name: 🇭🇰 香港HKBN, server: 183.232.141.108, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 香港HKT-dip 9, server: 112.64.98.215, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 |香港03, server: 120.226.189.121, port: 26012, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 中国III|1G|80端口, server: cn-iii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇯🇵 日本=@bpjzx2=35, server: 182.151.8.150, port: 19245, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇸🇬 |GLaDOS-GEOIP-SG-02, server: c551397.gb.gladns.com, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇸🇬 |🇸🇬新加坡A, server: 139.162.2.187, port: 10004, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g09.xingbayun.buzz, skip-cert-verify: false}
-  - {name: LAX-Krypt@univstar_5, server: 182.151.8.150, port: 19234, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港01|SS直连|x2, server: ea1.bafang.vip, port: 10023, type: ss, cipher: chacha20-ietf-poly1305, password: 88217f59-d96e-478a-82c9-42c42c272be0}
-  - {name: 🇺🇲 圣克拉拉=@bpjzx2=11, server: 1.71.136.24, port: 19241, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇵🇭 |菲律宾-核心访问Comfac, server: traph1.bnnodeservice.com, port: 32013, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 巴基斯坦+002, server: fn600mliness017.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇰🇷 |韩国03, server: 120.226.189.121, port: 26074, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇦🇺 |🇦🇺澳大利亚A, server: 170.187.240.199, port: 10003, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g27.xingbayun.buzz, skip-cert-verify: false}
-  - {name: Tokyo-M247@univstar_9, server: 222.84.250.35, port: 19242, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: "🇻🇳 [BGP-GSLB]越南胡志明", server: 15.168.33.3, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-vn.optage.moe, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT 3, server: 116.162.120.33, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: "🇨🇳 |台湾01[1.5]", server: moblev2.mipglxi.cn, port: 5621, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
+  - {name: 🇯🇵 |日本まつやましauひかりホーム1ギガD03, server: jp03.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]", server: ie.ednovas.cloud, port: 22124, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇲 大萝卜鸡美国, server: 88.210.37.18, port: 23453, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT-dip 10, server: 183.232.141.107, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇨🇳 高雄Hinet-dip 6, server: 112.64.53.108, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: SanJose-EDCL-dip 3, server: 183.232.141.118, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇭🇰 AWS香港02tcp, server: 16.162.48.189, port: 8848, type: vmess, uuid: 23a2d9b7-d9f0-43ea-adc9-2502559d9734, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: SanJose-EDCL-dip 4, server: 183.232.141.118, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 新加坡|1000M|80端口, server: sg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-sg?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇯🇵 日本() 2, server: tykyo.alisa.buzz, port: 61111, type: vmess, uuid: 660a139f-2602-4e9c-9b81-32a297a8d1e1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇨🇳 高雄Hinet-dip 7, server: 112.64.53.108, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇺🇲 |美国Moccha, server: hnct.cmcc.wiki, port: 10941, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
-  - {name: 🇭🇰 HK3, server: c551397.ga.gladns.com, port: 3383, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港=@bpjzx2=28, server: 1.71.136.24, port: 19205, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇰🇷 KR4:@airproxies, server: kr1.bafang.vip, port: 10021, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: kr1.bafang.vip}}}
-  - {name: 🇨🇳 |台湾-边缘访问BGP, server: dttw1.bnnodeservice.com, port: 33003, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国03, server: 116.129.254.6, port: 26003, type: vmess, uuid: 969a2445-04d8-3f35-abe0-15fd31e05585, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港() 2, server: hk.alisa.buzz, port: 80, type: vmess, uuid: 660a139f-2602-4e9c-9b81-32a297a8d1e1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 香港=@bpjzx2=4, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇭🇰 |🇭🇰香港03|直连, server: hk3.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 392f508f-0e49-4b14-be89-e85419574ebb, sni: apple.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港=@bpjzx2=14, server: 1.71.136.24, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇺🇲 洛杉矶=@bpjzx2=17, server: 1.71.136.24, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: LAX-Aiyun-dip@univstar_1, server: 222.84.250.35, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 tg+univstar_香港HKT_1, server: 183.232.141.93, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: dC5tZS92cG5oYXQ}
-  - {name: dafeivpn.com5元专线机场, server: kwdod-1056-v2-1.hkg-r-kcd-e.ap.cjhh.beauty, port: 29988, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: s3.cjhh.beauty}}}
-  - {name: 🇬🇧 英国(), server: uk.xlkjjs.top, port: 31000, type: vmess, uuid: 0a6b7226-2f9c-393c-bc94-5a34859250c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk.xlkjjs.top}}}
-  - {name: 🇺🇲 |GLaDOS-GEOIP-US-01, server: c551397.ga.gladns.com, port: 3381, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: h207532.waihuizhibiaowang.com:11543, server: h207532.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国01|v2直连|x2, server: kr1.bafang.vip, port: 10021, type: vmess, uuid: 88217f59-d96e-478a-82c9-42c42c272be0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr1.bafang.vip, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: kr1.bafang.vip}}}
-  - {name: 🇨🇳 |台湾FlatWhite, server: hnct.cmcc.wiki, port: 10933, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
-  - {name: 🇭🇰 |香港-核心访问HKT, server: trahk5.bnnodeservice.com, port: 32000, type: trojan, password: 700f759e-6ecb-4632-861c-2c88b1ffc6c4, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇯🇵 JP6:@nodpai, server: jp2js1.bafang.vip, port: 10027, type: ss, cipher: chacha20-ietf-poly1305, password: 88217f59-d96e-478a-82c9-42c42c272be0}
-  - {name: 🇨🇳 台湾=@bpjzx2=16, server: 1.71.136.24, port: 19215, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL-dip, server: 183.232.141.120, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 大萝卜鸡, server: 222.84.250.35, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇺🇲 西雅图=@bpjzx2=21, server: 223.166.145.12, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: ""}
-  - {name: 🇨🇳 CN1, server: tw-3.gito.cc, port: 813, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 30855:0FvZRy, obfs-param: 940c230855.download.windowsupdate.com}
-  - {name: 🇺🇲 美国() 2, server: us.xlkjjs.top, port: 36379, type: vmess, uuid: 0a6b7226-2f9c-393c-bc94-5a34859250c0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.xlkjjs.top}}}
-  - {name: 🇺🇲 US14:@nodpai, server: 172.64.155.201, port: 443, type: vmess, uuid: 28dad69c-c9d6-47c5-ad05-c66afb87ccbd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash3.trump2023.org}}}
-  - {name: LAX-DediPath 4, server: 112.64.53.74, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇰🇷 KR3:@airproxies, server: kr1.bafang.vip, port: 10023, type: ss, cipher: chacha20-ietf-poly1305, password: 88217f59-d96e-478a-82c9-42c42c272be0}
-  - {name: 🇨🇳 大萝卜鸡台湾 2, server: 202.153.5.65, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8}
-  - {name: 🇭🇰 香港HKBN-dip 3, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 新竹Seednet-dip@univstar_1, server: 182.151.8.150, port: 19214, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: "🇸🇬 |[V2]+新加坡+02", server: zj.ecvvvw.cn, port: 48002, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡(), server: sg-aaa-sjf-4555-ass-78xa.jumaonet.com, port: 22209, type: trojan, password: 3e820eb0-3f06-4337-a4fc-0c3c7c0d3b4d, sni: sg-aaa-sjf-4555-ass-78xa.jumaonet.com, skip-cert-verify: false}
-  - {name: 🇬🇧 |GLaDOS-GEOIP-UK-02, server: c551397.gb.gladns.com, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: "|GLaDOS-N2-02", server: c551397.nc.gladns.com, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: LAX-Aiyun-dip@univstar_3, server: 222.84.250.35, port: 19238, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-4|1G|80端口, server: hk-4.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: "🇭🇰 |4xKCD🇭🇰HongKong[NF][D+]", server: ie.ednovas.cloud, port: 22132, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 |GLaDOS-GEOIP-TW-03, server: c551397.gc.gladns.com, port: 3383, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇰🇷 |中国-韩国IPLCD10Netflix, server: kr10.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇺🇲 |0.3xAY🇺🇸AmericaSanJose1[NF][D+]", server: ie.ednovas.cloud, port: 22153, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |GLaDOS-GEOIP-HK-01, server: c551397.ga.gladns.com, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾Hinet-1号线路|解锁流媒体, server: 141.101.115.158, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.meizhiyuanya.xyz}}}
+  - {name: Santa+Clara-DigitalOcean@univstar_3, server: 222.84.250.35, port: 19239, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: "🇬🇧 [BGP-GSLB]英国•0.8x", server: 18.178.87.42, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-uk.optage.moe, skip-cert-verify: false}
+  - {name: 🇺🇲 |GLaDOS-GEOIP-US-02, server: c551397.gb.gladns.com, port: 3381, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix, server: sgp04.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 日本02|grpc直连|x2, server: jp2.bafang.vip, port: 10024, type: vmess, uuid: b473ddbc-57b4-41f4-95da-949d4267e43b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡高级IEPL中继D02Netflix, server: sgp12.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇺🇲 美国US|, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: 新竹Seednet-dip@univstar_3, server: 182.151.8.150, port: 19212, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇬🇧 |中国-英国伦敦电信IEPLD4, server: uk04.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇨🇳 大萝卜鸡台湾, server: 103.208.196.174, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 61f301daaf4e}
+  - {name: "|GLaDOS-T1-Netflix", server: c551397.f1.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /s/c551397.fm.apple.com:113941, headers: {Host: n2.gladns.com}}}
+  - {name: 🇺🇲 |2xBWG🇺🇸AmericaLosAngelesCN2GT2, server: ie.ednovas.cloud, port: 22016, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 距离下次重置剩余：9天, server: 141.101.114.199, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.meizhiyuanya.xyz}}}
+  - {name: 🇦🇺 |中国-澳大利亚IPLC悉尼D05, server: au05.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本まつやましauひかりホーム1ギガD10, server: jp10.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D05, server: kr15.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-22", server: azbj.ed-novas.com, port: 46035, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azjp1.ednovas.org}}}
+  - {name: 🇰🇷 |中国-韩国IPLCD01Netflix, server: kr01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |中国-日本多协议标签交换虚拟专用网D71000Mbps, server: hr07.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇨🇳 |中国-台湾宜兰IPLCD06, server: tw06.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
   - {name: "🇭🇰 [BGP-GSLB]香港•HGC", server: ap-northeast.6641634715834932.me, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-hgc.optage.moe, skip-cert-verify: false}
-  - {name: 🇨🇳 中国江苏|100M|非80端口|停机卡, server: xz-cm1.cloudiplc.com, port: 20999, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇭🇰 香港HKT-dip 11, server: 223.167.159.34, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 53924:hjgjuy6t655jjg, obfs-param: t.me/vpnhat}
-  - {name: 🇸🇬 |🇸🇬新加坡01|直连, server: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: 392f508f-0e49-4b14-be89-e85419574ebb, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇯🇵 JP1, server: 146.56.189.146, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: false}
-  - {name: 🇸🇬 中转🇸🇬SG1:@nodpai, server: moblev2.mipglxi.cn, port: 5611, type: ss, cipher: aes-128-gcm, password: 27fdeaac-dee2-469d-928f-4de839daac45}
-  - {name: "🇭🇰 |[V2]+香港+04", server: zj.ecvvvw.cn, port: 45003, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
-  - {name: 🇭🇰 |🇭🇰香港A, server: 16.163.103.71, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g03.xingbayun.buzz, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡|06|奈飞DO, server: 178.128.51.24, port: 10000, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: sgmax06.170203.xyz, skip-cert-verify: false}
+  - {name: 🇩🇪 |德国H5, server: ge5.amamya.live, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 大萝卜鸡日本, server: 137.220.244.207, port: 1443, type: ss, cipher: aes-256-gcm, password: d11f468ac5ca}
+  - {name: 🇬🇧 |GLaDOS-GEOIP-UK-02, server: c551397.gb.gladns.com, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国实验性IEPL中继D02, server: us07.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-1", server: metahk.ed-novas.com, port: 10059, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azhk4.ednovas.org}}}
+  - {name: 🇨🇳 大萝卜鸡台湾 2, server: 202.153.5.65, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8}
+  - {name: 🇰🇷 KR4:@airproxies, server: 130.162.145.24, port: 8848, type: vmess, uuid: 2429b2a2-1ff3-4c2d-b289-f3344de9482a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 |GLaDOS-GEOIP-SG-03, server: c551397.gc.gladns.com, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D06, server: kr16.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |[V2]+香港+01", server: zj.ecvvvw.cn, port: 45000, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
+  - {name: 🇨🇳 |台湾FlatWhite, server: hnct.cmcc.wiki, port: 10933, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
+  - {name: 🇺🇲 |美国高级IEPL中继D01, server: us01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-3", server: azsh.ed-novas.com, port: 58464, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azhk4.ednovas.org}}}
+  - {name: 🇭🇰 |中国-香港IEPLEquinixHK2D011GbpsHBOTVB, server: hk01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: h961359.strongpipe.live:11545, server: h961359.strongpipe.live, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
+  - {name: 🇭🇰 |GLaDOS-GEOIP-HK-02, server: c551397.gb.gladns.com, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: Tokyo-M247@univstar_3, server: 182.151.8.150, port: 19242, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: "🇦🇷 |0.8x[Direct]Oracle🇨🇦CanadaTorontoARM2[NF][D+]", server: oracletorontoarm2.ednovas.org, port: 443, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-测试-ii|1G|80端口, server: sg-test-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: "🇨🇦 |0.5xOracle🇨🇦CanadaToronto2[NF][D+]2", server: ie.ednovas.cloud, port: 22019, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 |GLaDOS-GEOIP-US-01, server: b13f959.ga.gladns.com, port: 3381, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇺🇲 美国圣何塞-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}}
+  - {name: 🇺🇲 US5, server: 154.85.62.219, port: 64901, type: vmess, uuid: b01cad59-e722-4455-9745-a1ca08db07b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: "🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2", server: ie.ednovas.cloud, port: 22128, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK26:@airproxies, server: v2.big234.com, port: 443, type: trojan, password: 2429b2a2-1ff3-4c2d-b289-f3344de9482a, sni: v2.big234.com, skip-cert-verify: false}
+  - {name: 🇯🇵 JP1, server: kr1.api-aws.com, port: 443, type: trojan, password: cbd08acf-2d47-4065-aafa-4201e5307f67, skip-cert-verify: false}
+  - {name: 🇸🇬 |GLaDOS-GEOIP-SG-02, server: b13f959.gb.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: "🇭🇰 |5xGC🇭🇰HongKong2[NF]2", server: ie.ednovas.cloud, port: 21957, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-M247@univstar_4, server: 182.151.8.150, port: 19223, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇬🇧 |GLaDOS-GEOIP-UK-01, server: b13f959.ga.gladns.com, port: 3386, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02, server: hg02.ptrecord.com, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 群组:xxmym, server: hk-i.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D04, server: hkt04.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇯🇵 |Oracle🇯🇵JapanTokyo[NF]", server: ie.ednovas.cloud, port: 22117, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |中国-香港IPLCEquinixHK2D061GbpsHBOTVB, server: sg06.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]", server: ie.ednovas.cloud, port: 22010, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港C|, server: 119.36.161.40, port: 443, type: vmess, uuid: 946ba5df-5771-4873-a3cb-892378526147, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.99136853.xyz}}}
+  - {name: 🇭🇰 |中国-香港IEPLEquinixHK2D101GbpsHBOTVB, server: hk10.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |GLaDOS-GEOIP-JP-02, server: c551397.gb.gladns.com, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: "|GLaDOS-N2-03", server: b13f959.nd.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇨🇳 |台湾|01奈飞三网优化, server: hn.suyun.live, port: 13697, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: tw01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡测试-iii|1G|80端口, server: sg-test-iii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04, server: hg04.ptrecord.com, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇬🇧 |GLaDOS-GEOIP-UK-03, server: c551397.gc.gladns.com, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 稳定高速可购买付费节点↓, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: 🇨🇳 中国(), server: aasg3.fdhsujj.xyz, port: 11197, type: ssr, cipher: aes-256-cfb, password: J3ITPq, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 286652:Ky6KOw, obfs-param: Vm0weGQxTXdNVWhTV0doVlYwZDRWVmxVUm5kVlZscDBaVWRHV0Zac2JETlhhMUpUVm14YWMxZHViRmROYWxaTVdXdGFZV014VG5WalJtUlhUVEZKZWxkV1VrZFhiVkY1Vkd0a2FWSnVRbTlVVjNoS1pXeGtWMWt6YUZSTlZuQlpWVEowVjFkSFNrbFJiVGxhVmtVMVJGbHFSbUZTTVZweldrVTVVMDFWY0VsV2JHTXhWakZrU0ZOc2FHeFNiVkpZVm0xMFZn}
+  - {name: "🇺🇲 |0.2xET🇺🇸AmericaLosAngeles[NF][D+]", server: ie.ednovas.cloud, port: 22004, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇲 |2xCP🇺🇸AmericaLosAngeles4837[NF][D+]2", server: ie.ednovas.cloud, port: 22013, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 美国-测试|1G|80端口, server: us-test.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: "🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-12", server: metahk.ed-novas.com, port: 10059, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azhk4.ednovas.org}}}
+  - {name: 🇭🇰 |香港|17AZ电信优化, server: 52.184.88.5, port: 11376, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: hkmax17.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡MagicIEPL中继D02Netflix, server: sgp07.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇨🇳 |中国-台湾IEPLHinet固接D07, server: tw17.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |2xCMI🇭🇰HongKong8[NF][D+]", server: ie.ednovas.cloud, port: 22146, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===, server: bwgsoftbank.ednovas.net, port: 443, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: bwgsoftbank.ednovas.net}}}
+  - {name: DJB, server: loveycould.top, port: 58741, type: trojan, password: hongkongdoll, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国|01|AZ中转, server: 52.194.224.198, port: 45783, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: kr001.170203.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 |中国-日本多协议标签交换虚拟专用网D61000Mbps, server: hr06.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇨🇳 TW3:@airproxies, server: 165.154.243.161, port: 443, type: vmess, uuid: f338a59d-9c5c-4e83-a2d0-7a378884c969, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港bgp|, server: 103.137.22.45, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff}
+  - {name: 🇰🇷 |0.5xSC🇰🇷KoreaSeoul2, server: ie.ednovas.cloud, port: 22114, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 |中国-台湾宜兰IPLCD07, server: tw07.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |中国-日本多协议标签交换虚拟专用网D51000Mbps, server: hr05.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D04, server: kr14.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇭🇰 |中国-香港IPLCEquinixHK2D091GbpsHBOTVB, server: sg09.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-32", server: azsh.ed-novas.com, port: 39984, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1020680, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]", server: ie.ednovas.cloud, port: 22131, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D02, server: hkt02.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇮🇳 |中国-印度马哈拉施特拉IPLCD01, server: in01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇸🇬 |新加坡|03|奈飞OC电信优化3, server: hn.suyun.live, port: 12242, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: false}
+  - {name: "🇺🇲 |[V3]+美国+IEPL+3x", server: zj.ecvvvw.cn, port: 36003, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
+  - {name: 🇮🇳 |中国-印度马哈拉施特拉IPLCD06, server: in06.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇷🇺 |俄罗斯01, server: ru01.ptrecord.com, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本|02|奈飞LIN三网优化2, server: josuebutlerb07.170809.xyz, port: 35529, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: jpmax02.170203.xyz, skip-cert-verify: false}
+  - {name: LAX-Krypt@univstar_5, server: 182.151.8.150, port: 19234, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国|05|DO, server: 159.203.188.193, port: 10000, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: usmax05.170203.xyz, skip-cert-verify: false}
+  - {name: "🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2", server: ie.ednovas.cloud, port: 22154, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 |3xNR🇭🇰HongKong2[NF][D+]", server: ie.ednovas.cloud, port: 22134, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇬🇧 |中国-英国伦敦电信IEPLD6, server: uk06.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇭🇰 香港HGC-dip@univstar_4, server: 182.151.8.150, port: 19202, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: San+Jose-Krypt@univstar_2, server: 182.151.8.150, port: 19232, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇯🇵 |中国-日本多协议标签交换虚拟专用网D121000Mbps, server: hr12.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇰🇷 |中国-韩国IPLCD05Netflix, server: kr05.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇨🇳 中国() 2, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D11, server: kr21.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: Tokyo-M247@univstar_9, server: 222.84.250.35, port: 19242, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇬🇧 |中国-英国伦敦电信IEPLD3, server: uk03.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇭🇰 香港_1020380, server: 47.243.182.204, port: 22082, type: vmess, uuid: f46292d1-a5c6-44e3-9539-c45ea9f7ec6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: "🇺🇲 |[V2]+美国+04", server: zj.ecvvvw.cn, port: 47003, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
+  - {name: "🇺🇲 |RN🇺🇸AmericaLosAngeles3[NF][D+]2", server: ie.ednovas.cloud, port: 22001, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Santa+Clara-DigitalOcean@univstar_2, server: 222.84.250.35, port: 19241, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇭🇰 |中国-香港IPLCEquinixHK2D111GbpsHBOTVB, server: sg11.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇺🇲 |0.8xOracle🇺🇸AmericaSanJose12, server: ie.ednovas.cloud, port: 21999, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 |俄罗斯03, server: ru03.ptrecord.com, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇭🇰 HK14, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, sni: if22a.ft3.us, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 3, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国Moccha, server: hnct.cmcc.wiki, port: 10941, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
+  - {name: 🇮🇪 |中国-爱尔兰IPLCD01, server: ir01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: San+Jose-Krypt@univstar_4, server: 222.84.250.35, port: 19233, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇭🇰 |中国-香港IEPLEquinixHK2D051GbpsHBOTVB, server: hk05.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇸🇬 |[V2]+新加坡+01", server: zj.ecvvvw.cn, port: 48001, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
+  - {name: "🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2", server: ie.ednovas.cloud, port: 22125, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇲 |0.2xBV🇺🇸AmericaLasVegas[NF][D+]2", server: ie.ednovas.cloud, port: 22003, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]", server: ie.ednovas.cloud, port: 22020, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国Americano, server: hnct.cmcc.wiki, port: 10941, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
+  - {name: 🇨🇳 大萝卜鸡台湾 3, server: 220.128.127.238, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: cc05a17e6195}
+  - {name: "|GLaDOS-T3-Netflix", server: b13f959.f3.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /s/b13f959.fm.apple.com:111174, headers: {Host: n2.gladns.com}}}
+  - {name: "🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2", server: ie.ednovas.cloud, port: 21992, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇲 |0.1xGC🇺🇸AmericaKansas[NF][D+]2", server: ie.ednovas.cloud, port: 22004, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡|04|奈飞DO, server: 174.138.25.213, port: 444, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: sgmax04.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 |中国-台湾IEPLHinet固接D06, server: tw16.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: LAX-Aiyun-dip@univstar_5, server: 182.151.8.150, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: "|0.5xBV🇱🇺Luxembourg", server: ie.ednovas.cloud, port: 22029, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 |0.5xSC🇰🇷KoreaSeoul, server: ie.ednovas.cloud, port: 22114, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2", server: ie.ednovas.cloud, port: 22103, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡|08|OC三网优化, server: josuebutlerb07.170809.xyz, port: 21716, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: sgmax08.170203.xyz, skip-cert-verify: false}
+  - {name: "🇺🇲 |AY🇺🇸AmericaSanJose2[NF][D+]", server: ie.ednovas.cloud, port: 22161, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: dafeivpn.com5元专线机场, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡|02|奈飞DO三网优化, server: josuebutlerb07.170809.xyz, port: 26330, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: sgmax02.170203.xyz, skip-cert-verify: false}
+  - {name: "🇮🇩 [BGP-GSLB]印度尼西亚•0.8x", server: ap-northeast.6641634715834932.me, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-id.optage.moe, skip-cert-verify: false}
+  - {name: 🇷🇺 |俄罗斯05, server: ru05.ptrecord.com, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
+  - {name: "🇭🇰 |2xDYCMI🇭🇰HongKong3[NF][D+]2", server: ie.ednovas.cloud, port: 22141, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]2", server: ie.ednovas.cloud, port: 22020, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |中国-香港IPLCEquinixHK2D011GbpsHBOTVB, server: sg01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本まつやましauひかりホーム1ギガD06, server: jp06.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇻🇳 [BGP-GSLB]越南胡志明", server: 18.178.87.42, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-vn.optage.moe, skip-cert-verify: false}
+  - {name: GB1, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: false}
+  - {name: "🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]", server: ie.ednovas.cloud, port: 22130, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇫🇷 |中国-法国IPLCD01, server: fr01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |3xGG🇭🇰HongKong[D+]2", server: ie.ednovas.cloud, port: 22137, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇫🇷 |中国-法国IPLCD02, server: fr02.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇸🇬 |新加坡|01|LIN三网优化, server: 52.194.224.198, port: 19109, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: sgmax01.170203.xyz, skip-cert-verify: false}
+  - {name: "🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2", server: ie.ednovas.cloud, port: 22106, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 香港-V|10G|80端口, server: hk-v.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇳🇱 NL1, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix, server: sgp03.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-2", server: vpszjp.ed-novas.com, port: 13181, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-12", server: metajp.ed-novas.com, port: 10014, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azjp1.ednovas.org}}}
+  - {name: "🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong2-22", server: vpszjp.ed-novas.com, port: 26045, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azhk2.ednovas.org}}}
+  - {name: 🇺🇲 美国洛杉矶-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}}
+  - {name: 🇸🇬 大萝卜鸡新加坡, server: 222.84.250.35, port: 19229, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1020684, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_10201419, server: 161.129.34.102, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 161.129.34.102}}}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D03, server: kr13.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本|高速|03|LIN, server: jpmax03.170203.xyz, port: 10002, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: jpmax03.170203.xyz, skip-cert-verify: false}
+  - {name: "🇸🇬 |VT🇸🇬Singapore[NF]", server: ie.ednovas.cloud, port: 22102, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡_1020128, server: 51.79.164.146, port: 443, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/}}
+  - {name: 这是教程赠送免费节点, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港Ristretto, server: hnct.cmcc.wiki, port: 10931, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
+  - {name: 🇭🇰 香港-I|10G|80端口, server: hk-i-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇰🇷 KR5:@nodpai, server: 130.162.145.24, port: 8849, type: vmess, uuid: 2429b2a2-1ff3-4c2d-b289-f3344de9482a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇭🇰 [BGP-GSLB]香港•BGP", server: 43.198.38.137, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-hk.optage.moe, skip-cert-verify: false}
+  - {name: 🇩🇪 |德国H4, server: ge4.amamya.live, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇸🇬 新加坡|1000M|80端口, server: sg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-sg?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇺🇲 美国3|, server: 47.87.149.164, port: 443, type: vmess, uuid: f338a59d-9c5c-4e83-a2d0-7a378884c969, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D12, server: kr22.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇺🇲 |3xBWG🇺🇸AmericaLosAngelesCN2GIA[NF][D+]", server: ie.ednovas.cloud, port: 22017, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡|, server: xrayr1.277428.xyz, port: 12790, type: vmess, uuid: d606b881-2b4d-4cae-f0be-6c6249b81355, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: "🇭🇰 |0.2x[LoadBalance][Tunnel]AZ🇭🇰HongKong2", server: vpszjp.ed-novas.com, port: 64441, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ednovas, headers: {Host: azhk4.ednovas.org}}}
+  - {name: 🇰🇷 大萝卜鸡韩国, server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com, port: 80, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇮🇳 |中国-印度马哈拉施特拉IPLCD08, server: in08.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本|03|LIN三网优化, server: josuebutlerb07.170809.xyz, port: 65450, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: jpmax03.170203.xyz, skip-cert-verify: false}
+  - {name: "🇦🇺 |0.8xOracle🇦🇺AustraliaSydney3[NF][D+]", server: ie.ednovas.cloud, port: 21990, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 大萝卜鸡台湾 4, server: 182.151.8.150, port: 19211, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇨🇳 |GLaDOS-GEOIP-TW-01, server: b13f959.ga.gladns.com, port: 3383, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: "🇬🇧 |0.1xNT🇺🇦UkraineOdessa[D+]", server: ie.ednovas.cloud, port: 22080, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港2, server: 165.154.244.29, port: 443, type: vmess, uuid: f338a59d-9c5c-4e83-a2d0-7a378884c969, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾2, server: 165.154.253.63, port: 443, type: vmess, uuid: f338a59d-9c5c-4e83-a2d0-7a378884c969, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 大萝卜鸡台湾 5, server: 103.137.22.44, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff}
+  - {name: 🇸🇬 |新加坡|03|LIN三网优化, server: josuebutlerb07.170809.xyz, port: 16541, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: sgmax03.170203.xyz, skip-cert-verify: false}
+  - {name: "|GLaDOS-T2-Netflix", server: c551397.f2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /s/c551397.fm.apple.com:113941, headers: {Host: n2.gladns.com}}}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D13, server: kr23.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]", server: ie.ednovas.cloud, port: 22140, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK7, server: c551397.gc.gladns.com, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国实验性IEPL中继D05, server: us10.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]2", server: ie.ednovas.cloud, port: 22014, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港有线-dip@univstar_2, server: 182.151.8.150, port: 19201, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇸🇬 |GLaDOS-GEOIP-SG-03 2, server: b13f959.gc.gladns.com, port: 3385, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国전라북도전주시商宽D09, server: kr19.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]2", server: ie.ednovas.cloud, port: 22140, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |中国-香港IPLCEquinixHK2D071GbpsHBOTVB, server: sg07.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇺🇲 [BGP-GSLB]美国1", server: 18.178.87.42, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-usgt.qchwnd.moe, skip-cert-verify: false}
+  - {name: 🇭🇰 HK3, server: c551397.ga.gladns.com, port: 3383, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇯🇵 |中国-日本多协议标签交换虚拟专用网D41000Mbps, server: hr04.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇦🇷 |Oracle🇺🇸AmericaSanJoseARM[NF][D+]2", server: ie.ednovas.cloud, port: 21995, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "|GLaDOS-N2-03 2", server: c551397.nd.gladns.com, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇨🇳 |中国-台湾IEPLHinet固接D03, server: tw13.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本|05|LIN, server: 172.104.91.161, port: 10003, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: jpmax05.170203.xyz, skip-cert-verify: false}
+  - {name: "🇺🇲 |1.3xRN🇺🇸AmericaSanJose2[NF][D+]", server: ie.ednovas.cloud, port: 21997, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix, server: sgp01.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇭🇰 |2xCMI🇭🇰HongKong7[NF][D+]", server: ie.ednovas.cloud, port: 22145, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: (), server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: 🇭🇰 HK15, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, sni: if22a.ft3.us, skip-cert-verify: false}
+  - {name: "|GLaDOS-N2-05", server: b13f959.nf.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾(), server: 103.137.23.194, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8812c0e4e2b0, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness017.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 🇿🇦 ZA3, server: 156.240.120.13, port: 57661, type: vmess, uuid: f360b24a-7b07-49be-9a16-d676c517974f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: ✈付费机场推荐✈, server: sg153.hkaa0.tk, port: 14358, type: vmess, uuid: bbf423d8-6b78-416a-8f12-2546e1af87ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg153.hkaa0.tk}}}
+  - {name: "🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]2", server: ie.ednovas.cloud, port: 22010, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1020675, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 US9, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: "🇷🇺 [BGP-GSLB]俄罗斯•0.1x", server: 18.178.87.42, port: 2053, type: trojan, password: de39d941-eaf6-405d-958a-ebebe1315574, sni: wel-ru.qchwnd.moe, skip-cert-verify: false}
+  - {name: "|GLaDOS-N2-00", server: c551397.na.gladns.com, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: CA1:@nodpai, server: jnd.big234.com, port: 443, type: trojan, password: 2429b2a2-1ff3-4c2d-b289-f3344de9482a, sni: jnd.big234.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡_1020111, server: 51.79.164.146, port: 443, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: 51.79.164.146}}}
+  - {name: "|GLaDOS-N2-07", server: b13f959.nh.gladns.com, port: 3389, type: trojan, password: 182228812d1e0f23, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: "🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]", server: oraclesgamd1.ednovas.org, port: 443, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]", server: ie.ednovas.cloud, port: 22014, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 |中国-日本多协议标签交换虚拟专用网D31000Mbps, server: hr03.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "|GLaDOS-N2-04", server: c551397.ne.gladns.com, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇭🇰 AWS香港02tcp, server: 16.162.48.189, port: 8848, type: vmess, uuid: 23a2d9b7-d9f0-43ea-adc9-2502559d9734, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇮🇳 |中国-印度马哈拉施特拉IPLCD03, server: in03.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇮🇳 |中国-印度马哈拉施特拉IPLCD05, server: in05.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: 🇯🇵 |日本|01|LIN三网优化, server: 52.194.224.198, port: 29757, type: trojan, password: cae77766-ef3d-499e-a043-67d3f19e7f1d, sni: jp01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 |GLaDOS-GEOIP-SG-01, server: c551397.ga.gladns.com, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: "🇨🇳 |[V2]+台湾+03", server: zj.ecvvvw.cn, port: 49002, type: trojan, password: c00d4818-febd-3d95-839a-f4ea6355463f, sni: ip153740813.mobgslb.tbcache.com, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本Cappuccino, server: hnct.cmcc.wiki, port: 10939, type: ss, cipher: chacha20-ietf-poly1305, password: 40a86bbc-6453-41ed-b7c1-5c7c0777ed67}
+  - {name: 🇭🇰 |中国-香港IPLCEquinixHK2D021GbpsHBOTVB, server: sg02.clashcloud.tech, port: 55261, type: ss, cipher: rc4-md5, password: bLWIPj}
+  - {name: "🇺🇲 |0.7xCC🇺🇸AmericaLosAngeles吃一口[NF][D+]", server: ie.ednovas.cloud, port: 22006, type: vmess, uuid: e5168132-05b9-41c7-94ba-9efc9b697948, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -247,690 +277,780 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇿🇦 ZA2
-      - 🇺🇲 美国()
-      - 🇨🇳 CN3
-      - 🇸🇬 Singapore-M247@univstar_6
-      - SanJose-EDCL-dip
-      - 🇭🇰 香港HKT-dip
-      - 🇭🇰 HK4
-      - Seattle-Dedicated_5
-      - 🇸🇬 |[V2]+新加坡+01
-      - 🇭🇰 |GLaDOS-GEOIP-HK-03
-      - 🇺🇲 |🇺🇸美国A
-      - LAX-DediPath
-      - 🇨🇳 |台湾02[1.5]
-      - 🇨🇳 台湾=@bpjzx2=21
-      - 🇭🇰 香港有线-dip@univstar_5
-      - 🇯🇵 JP1:@airproxies
-      - 🇭🇰 香港=@bpjzx2=2
-      - 🇨🇳 CN2
-      - "|Tykyo🌅"
-      - 🇪🇸 ES1
-      - 🇮🇳 |印度-边缘访问DOIN
-      - 免费节点定期失效
-      - Santa+Clara-DigitalOcean@univstar_2
-      - 🇭🇰 |香港04
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇺🇲 美国西雅图|解锁流媒体
-      - 🇭🇰 香港=@bpjzx2=10
-      - Tokyo-M247@univstar_3
-      - 🇭🇰 |香港08[1.5]
-      - San+Jose-Krypt@univstar_7
-      - 🇯🇵 |日本Cappuccino
-      - 🇨🇳 |台湾01
-      - 🇭🇰 香港=@bpjzx2=9
-      - 🇬🇧 |GLaDOS-GEOIP-UK-01
-      - 🇺🇲 |美国03[1.5]
-      - 🇭🇰 |香港04[1.5]
-      - 🇭🇰 香港HKT-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡-测试-ii|1G|80端口
-      - 🇭🇰 香港HKBN-dip
-      - "|GLaDOS-N2-02"
-      - 🇨🇳 高雄Hinet-dip
-      - 🇸🇬 新加坡=@bpjzx2=38
-      - 圣荷西=@bpjzx2=32
-      - 🇭🇰 香港02|v2直连|x2
-      - 🇸🇬 SG-FDCservers-dip
-      - 🇸🇬 Singapore-M247@univstar_2
-      - 🇨🇳 |台湾04
-      - 🇦🇺 |澳大利亚-边缘访问VUAU
-      - 🇨🇳 中国_1020019
-      - 🇨🇳 台湾=@bpjzx2=4
-      - 🇭🇰 香港=@bpjzx2=37
-      - 🇺🇲 US1
-      - 🇮🇳 印度01|v2直连|x2
-      - 🇯🇵 日本=@bpjzx2=41
-      - h650196.waihuizhibiaowang.com:11743
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇨🇳 高雄Hinet-dip 2
-      - 🇨🇳 中国(频道)4
-      - 🇨🇳 高雄Hinet-dip 3
-      - 🇭🇰 香港=@bpjzx2=13
-      - 🇫🇷 |法国-边缘访问DP
-      - LAX-DediPath 2
-      - 🇸🇬 新加坡=@bpjzx2=7
-      - 🇫🇷 FR1:@airproxies
-      - 🇺🇲 洛杉矶=@bpjzx2=34
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇸🇬 新加坡=@bpjzx2=3
-      - 网址:hass.win/reg
-      - 🇭🇰 香港有线-dip@univstar_1
-      - 🇭🇰 香港HKT-dip 3
-      - 🇭🇰 香港-6|1G|80端口
-      - LAX-Krypt@univstar_2
-      - 🇸🇬 大萝卜鸡新加坡
-      - 🇯🇵 大萝卜鸡日本
-      - 🇺🇲 |GLaDOS-GEOIP-US-03
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 |台湾05[1.5]
-      - SanJose-EDCL-dip 2
-      - 🇨🇳 台湾=@bpjzx2=38
-      - 🇭🇰 香港=@bpjzx2=33
-      - h961359.strongpipe.live:11545
-      - 🇭🇰 香港bgp|
-      - 🇭🇰 香港()
-      - 🇭🇰 AWS香港01tcp
-      - 🇸🇬 大萝卜鸡新加坡 2
-      - LAX-DediPath 3
-      - 🇿🇦 ZA4
-      - Chuncheon-Oracle
-      - 🇭🇰 |香港06[1.5]
-      - 🇭🇰 香港HKT-dip 4
-      - 🇺🇲 美国2|
-      - 🇭🇰 香港HKT
-      - 🇯🇵 日本()
-      - 🇵🇭 |菲律宾-边缘访问Comfac
-      - 🇭🇰 香港HGC-dip@univstar_7
-      - 🇺🇲 洛杉矶=@bpjzx2=22
-      - 🇬🇧 |GLaDOS-GEOIP-UK-03
-      - 🇯🇵 |🇯🇵日本D
-      - Seattle-Dedicated
-      - Seattle-Dedicated 2
-      - 🇭🇰 香港HKT-dip 5
-      - Seattle-Dedicated_4
-      - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
-      - 🇭🇰 tg+univstar_香港HKT-dip_3
-      - 🇺🇲 US2
-      - 🇭🇰 |香港05[1.5]
-      - 🇨🇳 高雄Hinet-dip 4
-      - 🇭🇰 tg+univstar_香港HKT-dip_4
-      - 🇨🇳 大萝卜鸡台湾
-      - 🇨🇳 高雄Hinet-dip 5
-      - 🇭🇰 香港=@bpjzx2=3
-      - 🇨🇳 |台湾04[1.5]
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |日本05[1.5]
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇺🇲 |美国01
-      - 🇭🇰 香港HKT-dip 6
-      - 🇯🇵 |[V2]+日本+01
-      - 🇸🇬 新加坡=@bpjzx2=37
-      - Tokyo-M247@univstar_8
-      - 🇸🇬 |GLaDOS-GEOIP-SG-03
-      - 🇺🇲 |GLaDOS-GEOIP-US-02
-      - Moscow-Melbicom
-      - 🇷🇺 |俄罗斯-核心访问GCore
-      - Moscow-Melbicom 2
-      - LAX-Krypt@univstar_1
-      - 🇺🇲 |美国02
-      - "|GLaDOS-T1-Netflix"
-      - 🇯🇵 |日本01[1.5]
-      - 🇭🇰 香港=@bpjzx2=5
-      - 🇭🇰 HK8
-      - 🇷🇺 |俄罗斯-边缘访问GCore
-      - 🇭🇰 香港HKT-dip 7
-      - 🇯🇵 JP3:@airproxies
-      - 🇩🇪 |德国-边缘访问DP
-      - 🇭🇰 香港EDCL
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇨🇦 大萝卜鸡加拿大
-      - 🇭🇰 香港HKT 2
-      - 🇭🇰 香港HKT-dip 8
-      - 🇭🇰 香港HGC-dip@univstar_3
-      - 🇰🇷 大萝卜鸡韩国
-      - LAX-Aiyun-dip@univstar_4
-      - 🇰🇷 |韩国01
-      - 🇺🇲 |美国Americano
-      - 🇿🇦 ZA3
-      - 🇭🇰 香港=@bpjzx2=6
-      - 🇦🇷 |阿根廷-边缘访问DonWeb
-      - 🇭🇰 香港HKBN-dip 2
-      - 🇸🇬 Singapore-M247@univstar_5
-      - ()
-      - 🇭🇰 香港HKBN
-      - 🇭🇰 香港HKT-dip 9
-      - 🇭🇰 |香港03
-      - 🇨🇳 中国III|1G|80端口
-      - 🇯🇵 日本=@bpjzx2=35
-      - 🇸🇬 |GLaDOS-GEOIP-SG-02
-      - 🇸🇬 |🇸🇬新加坡A
-      - LAX-Krypt@univstar_5
-      - 🇭🇰 香港01|SS直连|x2
-      - 🇺🇲 圣克拉拉=@bpjzx2=11
-      - 🇵🇭 |菲律宾-核心访问Comfac
-      - 巴基斯坦+002
-      - 🇰🇷 |韩国03
-      - 🇦🇺 |🇦🇺澳大利亚A
-      - Tokyo-M247@univstar_9
-      - 🇻🇳 [BGP-GSLB]越南胡志明
-      - 🇭🇰 香港HKT 3
-      - 🇨🇳 |台湾01[1.5]
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD03
+      - 🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]
       - 🇺🇲 大萝卜鸡美国
-      - 🇭🇰 香港HKT-dip 10
-      - 🇨🇳 高雄Hinet-dip 6
-      - SanJose-EDCL-dip 3
-      - 🇭🇰 AWS香港02tcp
-      - SanJose-EDCL-dip 4
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇯🇵 日本() 2
-      - 🇨🇳 高雄Hinet-dip 7
-      - 🇺🇲 |美国Moccha
-      - 🇭🇰 HK3
-      - 🇭🇰 香港=@bpjzx2=28
-      - 🇰🇷 KR4:@airproxies
-      - 🇨🇳 |台湾-边缘访问BGP
-      - 🇺🇲 |美国03
-      - 🇭🇰 香港() 2
-      - 🇭🇰 香港=@bpjzx2=4
-      - 🇭🇰 |🇭🇰香港03|直连
-      - 🇭🇰 香港=@bpjzx2=14
-      - 🇺🇲 洛杉矶=@bpjzx2=17
-      - LAX-Aiyun-dip@univstar_1
-      - 🇭🇰 tg+univstar_香港HKT_1
-      - dafeivpn.com5元专线机场
-      - 🇬🇧 英国()
-      - 🇺🇲 |GLaDOS-GEOIP-US-01
-      - h207532.waihuizhibiaowang.com:11543
-      - 🇰🇷 韩国01|v2直连|x2
-      - 🇨🇳 |台湾FlatWhite
-      - 🇭🇰 |香港-核心访问HKT
-      - 🇯🇵 JP6:@nodpai
-      - 🇨🇳 台湾=@bpjzx2=16
-      - 🇭🇰 香港EDCL-dip
-      - 大萝卜鸡
-      - 🇺🇲 西雅图=@bpjzx2=21
-      - 🇨🇳 CN1
-      - 🇺🇲 美国() 2
-      - 🇺🇲 US14:@nodpai
-      - LAX-DediPath 4
-      - 🇰🇷 KR3:@airproxies
-      - 🇨🇳 大萝卜鸡台湾 2
-      - 🇭🇰 香港HKBN-dip 3
-      - 新竹Seednet-dip@univstar_1
-      - 🇸🇬 |[V2]+新加坡+02
-      - 🇸🇬 新加坡()
-      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - "|GLaDOS-N2-02"
+      - LAX-Aiyun-dip@univstar_3
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇭🇰 |4xKCD🇭🇰HongKong[NF][D+]
+      - 🇨🇳 |GLaDOS-GEOIP-TW-03
+      - 🇰🇷 |中国-韩国IPLCD10Netflix
+      - 🇺🇲 |0.3xAY🇺🇸AmericaSanJose1[NF][D+]
+      - 🇭🇰 |GLaDOS-GEOIP-HK-01
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
+      - Santa+Clara-DigitalOcean@univstar_3
+      - 🇬🇧 [BGP-GSLB]英国•0.8x
+      - 🇺🇲 |GLaDOS-GEOIP-US-02
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix
+      - 🇯🇵 日本02|grpc直连|x2
+      - 🇸🇬 |新加坡高级IEPL中继D02Netflix
+      - 🇺🇲 美国US|
+      - 新竹Seednet-dip@univstar_3
+      - 🇬🇧 |中国-英国伦敦电信IEPLD4
+      - 🇨🇳 大萝卜鸡台湾
+      - "|GLaDOS-T1-Netflix"
+      - 🇺🇲 |2xBWG🇺🇸AmericaLosAngelesCN2GT2
+      - 距离下次重置剩余：9天
+      - 🇦🇺 |中国-澳大利亚IPLC悉尼D05
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD10
+      - 🇰🇷 |韩国전라북도전주시商宽D05
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-22
+      - 🇰🇷 |中国-韩国IPLCD01Netflix
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D71000Mbps
+      - 🇨🇳 |中国-台湾宜兰IPLCD06
       - 🇭🇰 [BGP-GSLB]香港•HGC
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - 🇭🇰 香港HKT-dip 11
-      - 🇸🇬 |🇸🇬新加坡01|直连
+      - 🇸🇬 |新加坡|06|奈飞DO
+      - 🇩🇪 |德国H5
+      - 🇯🇵 大萝卜鸡日本
+      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - 🇺🇲 |美国实验性IEPL中继D02
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-1
+      - 🇨🇳 大萝卜鸡台湾 2
+      - 🇰🇷 KR4:@airproxies
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03
+      - 🇰🇷 |韩国전라북도전주시商宽D06
+      - 🇭🇰 |[V2]+香港+01
+      - 🇨🇳 |台湾FlatWhite
+      - 🇺🇲 |美国高级IEPL中继D01
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-3
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D011GbpsHBOTVB
+      - h961359.strongpipe.live:11545
+      - 🇭🇰 |GLaDOS-GEOIP-HK-02
+      - Tokyo-M247@univstar_3
+      - 🇦🇷 |0.8x[Direct]Oracle🇨🇦CanadaTorontoARM2[NF][D+]
+      - 🇸🇬 新加坡-测试-ii|1G|80端口
+      - 🇨🇦 |0.5xOracle🇨🇦CanadaToronto2[NF][D+]2
+      - 🇺🇲 |GLaDOS-GEOIP-US-01
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇺🇲 US5
+      - 🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2
+      - 🇭🇰 HK26:@airproxies
       - 🇯🇵 JP1
-      - 🇸🇬 中转🇸🇬SG1:@nodpai
-      - 🇭🇰 |[V2]+香港+04
-      - 🇭🇰 |🇭🇰香港A
+      - 🇸🇬 |GLaDOS-GEOIP-SG-02
+      - 🇭🇰 |5xGC🇭🇰HongKong2[NF]2
+      - 🇸🇬 Singapore-M247@univstar_4
+      - 🇬🇧 |GLaDOS-GEOIP-UK-01
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 群组:xxmym
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D04
+      - 🇯🇵 |Oracle🇯🇵JapanTokyo[NF]
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D061GbpsHBOTVB
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]
+      - 🇭🇰 香港C|
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D101GbpsHBOTVB
+      - 🇯🇵 |GLaDOS-GEOIP-JP-02
+      - "|GLaDOS-N2-03"
+      - 🇨🇳 |台湾|01奈飞三网优化
+      - 🇸🇬 新加坡测试-iii|1G|80端口
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
+      - 🇬🇧 |GLaDOS-GEOIP-UK-03
+      - 稳定高速可购买付费节点↓
+      - 🇨🇳 中国()
+      - 🇺🇲 |0.2xET🇺🇸AmericaLosAngeles[NF][D+]
+      - 🇺🇲 |2xCP🇺🇸AmericaLosAngeles4837[NF][D+]2
+      - 🇺🇲 美国-测试|1G|80端口
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-12
+      - 🇭🇰 |香港|17AZ电信优化
+      - 🇸🇬 |新加坡MagicIEPL中继D02Netflix
+      - 🇨🇳 |中国-台湾IEPLHinet固接D07
+      - 🇭🇰 |2xCMI🇭🇰HongKong8[NF][D+]
+      - 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===
+      - DJB
+      - 🇰🇷 |韩国|01|AZ中转
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D61000Mbps
+      - 🇨🇳 TW3:@airproxies
+      - 🇭🇰 香港bgp|
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul2
+      - 🇨🇳 |中国-台湾宜兰IPLCD07
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D51000Mbps
+      - 🇰🇷 |韩国전라북도전주시商宽D04
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D091GbpsHBOTVB
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-32
+      - 🇨🇳 中国_1020680
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D02
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD01
+      - 🇸🇬 |新加坡|03|奈飞OC电信优化3
+      - 🇺🇲 |[V3]+美国+IEPL+3x
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD06
+      - 🇷🇺 |俄罗斯01
+      - 🇯🇵 |日本|02|奈飞LIN三网优化2
+      - LAX-Krypt@univstar_5
+      - 🇺🇲 |美国|05|DO
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |3xNR🇭🇰HongKong2[NF][D+]
+      - 🇬🇧 |中国-英国伦敦电信IEPLD6
+      - 🇭🇰 香港HGC-dip@univstar_4
+      - San+Jose-Krypt@univstar_2
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D121000Mbps
+      - 🇰🇷 |中国-韩国IPLCD05Netflix
+      - 🇨🇳 中国() 2
+      - 🇰🇷 |韩国전라북도전주시商宽D11
+      - Tokyo-M247@univstar_9
+      - 🇬🇧 |中国-英国伦敦电信IEPLD3
+      - 🇭🇰 香港_1020380
+      - 🇺🇲 |[V2]+美国+04
+      - 🇺🇲 |RN🇺🇸AmericaLosAngeles3[NF][D+]2
+      - Santa+Clara-DigitalOcean@univstar_2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D111GbpsHBOTVB
+      - 🇺🇲 |0.8xOracle🇺🇸AmericaSanJose12
+      - 🇷🇺 |俄罗斯03
+      - 🇭🇰 HK14
+      - 🇨🇳 中国() 3
+      - 🇺🇲 |美国Moccha
+      - 🇮🇪 |中国-爱尔兰IPLCD01
+      - San+Jose-Krypt@univstar_4
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D051GbpsHBOTVB
+      - 🇸🇬 |[V2]+新加坡+01
+      - 🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2
+      - 🇺🇲 |0.2xBV🇺🇸AmericaLasVegas[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]
+      - 🇺🇲 |美国Americano
+      - 🇨🇳 大萝卜鸡台湾 3
+      - "|GLaDOS-T3-Netflix"
+      - 🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2
+      - 🇺🇲 |0.1xGC🇺🇸AmericaKansas[NF][D+]2
+      - 🇸🇬 |新加坡|04|奈飞DO
+      - 🇨🇳 |中国-台湾IEPLHinet固接D06
+      - LAX-Aiyun-dip@univstar_5
+      - "|0.5xBV🇱🇺Luxembourg"
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul
+      - 🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2
+      - 🇸🇬 |新加坡|08|OC三网优化
+      - 🇺🇲 |AY🇺🇸AmericaSanJose2[NF][D+]
+      - dafeivpn.com5元专线机场
+      - 🇸🇬 |新加坡|02|奈飞DO三网优化
+      - 🇮🇩 [BGP-GSLB]印度尼西亚•0.8x
+      - 🇷🇺 |俄罗斯05
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 |2xDYCMI🇭🇰HongKong3[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D011GbpsHBOTVB
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD06
+      - 🇻🇳 [BGP-GSLB]越南胡志明
+      - GB1
+      - 🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]
+      - 🇫🇷 |中国-法国IPLCD01
+      - 🇭🇰 |3xGG🇭🇰HongKong[D+]2
+      - 🇫🇷 |中国-法国IPLCD02
+      - 🇸🇬 |新加坡|01|LIN三网优化
+      - 🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2
       - 🇭🇰 香港-V|10G|80端口
+      - 🇳🇱 NL1
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-2
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-12
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong2-22
+      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 中国_1020684
+      - 🇺🇲 美国_10201419
+      - 🇰🇷 |韩国전라북도전주시商宽D03
+      - 🇯🇵 |日本|高速|03|LIN
+      - 🇸🇬 |VT🇸🇬Singapore[NF]
+      - 🇸🇬 新加坡_1020128
+      - 这是教程赠送免费节点
+      - 🇭🇰 |香港Ristretto
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 KR5:@nodpai
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇩🇪 |德国H4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 🇺🇲 美国3|
+      - 🇰🇷 |韩国전라북도전주시商宽D12
+      - 🇺🇲 |3xBWG🇺🇸AmericaLosAngelesCN2GIA[NF][D+]
+      - 🇸🇬 新加坡|
+      - 🇭🇰 |0.2x[LoadBalance][Tunnel]AZ🇭🇰HongKong2
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD08
+      - 🇯🇵 |日本|03|LIN三网优化
+      - 🇦🇺 |0.8xOracle🇦🇺AustraliaSydney3[NF][D+]
+      - 🇨🇳 大萝卜鸡台湾 4
+      - 🇨🇳 |GLaDOS-GEOIP-TW-01
+      - 🇬🇧 |0.1xNT🇺🇦UkraineOdessa[D+]
+      - 🇭🇰 香港2
+      - 🇨🇳 台湾2
+      - 🇨🇳 大萝卜鸡台湾 5
+      - 🇸🇬 |新加坡|03|LIN三网优化
+      - "|GLaDOS-T2-Netflix"
+      - 🇰🇷 |韩国전라북도전주시商宽D13
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]
+      - 🇭🇰 HK7
+      - 🇺🇲 |美国实验性IEPL中继D05
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]2
+      - 🇭🇰 香港有线-dip@univstar_2
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03 2
+      - 🇰🇷 |韩国전라북도전주시商宽D09
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D071GbpsHBOTVB
+      - 🇺🇲 [BGP-GSLB]美国1
+      - 🇭🇰 HK3
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D41000Mbps
+      - 🇦🇷 |Oracle🇺🇸AmericaSanJoseARM[NF][D+]2
+      - "|GLaDOS-N2-03 2"
+      - 🇨🇳 |中国-台湾IEPLHinet固接D03
+      - 🇯🇵 |日本|05|LIN
+      - 🇺🇲 |1.3xRN🇺🇸AmericaSanJose2[NF][D+]
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix
+      - 🇭🇰 |2xCMI🇭🇰HongKong7[NF][D+]
+      - ()
+      - 🇭🇰 HK15
+      - "|GLaDOS-N2-05"
+      - 🇨🇳 台湾()
+      - 🇿🇦 ZA3
+      - ✈付费机场推荐✈
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]2
+      - 🇨🇳 中国_1020675
+      - 🇺🇲 US9
+      - 🇷🇺 [BGP-GSLB]俄罗斯•0.1x
+      - "|GLaDOS-N2-00"
+      - CA1:@nodpai
+      - 🇸🇬 新加坡_1020111
+      - "|GLaDOS-N2-07"
+      - 🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D31000Mbps
+      - "|GLaDOS-N2-04"
+      - 🇭🇰 AWS香港02tcp
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD03
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD05
+      - 🇯🇵 |日本|01|LIN三网优化
+      - 🇸🇬 |GLaDOS-GEOIP-SG-01
+      - 🇨🇳 |[V2]+台湾+03
+      - 🇯🇵 |日本Cappuccino
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D021GbpsHBOTVB
+      - 🇺🇲 |0.7xCC🇺🇸AmericaLosAngeles吃一口[NF][D+]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇿🇦 ZA2
-      - 🇺🇲 美国()
-      - 🇨🇳 CN3
-      - 🇸🇬 Singapore-M247@univstar_6
-      - SanJose-EDCL-dip
-      - 🇭🇰 香港HKT-dip
-      - 🇭🇰 HK4
-      - Seattle-Dedicated_5
-      - 🇸🇬 |[V2]+新加坡+01
-      - 🇭🇰 |GLaDOS-GEOIP-HK-03
-      - 🇺🇲 |🇺🇸美国A
-      - LAX-DediPath
-      - 🇨🇳 |台湾02[1.5]
-      - 🇨🇳 台湾=@bpjzx2=21
-      - 🇭🇰 香港有线-dip@univstar_5
-      - 🇯🇵 JP1:@airproxies
-      - 🇭🇰 香港=@bpjzx2=2
-      - 🇨🇳 CN2
-      - "|Tykyo🌅"
-      - 🇪🇸 ES1
-      - 🇮🇳 |印度-边缘访问DOIN
-      - 免费节点定期失效
-      - Santa+Clara-DigitalOcean@univstar_2
-      - 🇭🇰 |香港04
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇺🇲 美国西雅图|解锁流媒体
-      - 🇭🇰 香港=@bpjzx2=10
-      - Tokyo-M247@univstar_3
-      - 🇭🇰 |香港08[1.5]
-      - San+Jose-Krypt@univstar_7
-      - 🇯🇵 |日本Cappuccino
-      - 🇨🇳 |台湾01
-      - 🇭🇰 香港=@bpjzx2=9
-      - 🇬🇧 |GLaDOS-GEOIP-UK-01
-      - 🇺🇲 |美国03[1.5]
-      - 🇭🇰 |香港04[1.5]
-      - 🇭🇰 香港HKT-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡-测试-ii|1G|80端口
-      - 🇭🇰 香港HKBN-dip
-      - "|GLaDOS-N2-02"
-      - 🇨🇳 高雄Hinet-dip
-      - 🇸🇬 新加坡=@bpjzx2=38
-      - 圣荷西=@bpjzx2=32
-      - 🇭🇰 香港02|v2直连|x2
-      - 🇸🇬 SG-FDCservers-dip
-      - 🇸🇬 Singapore-M247@univstar_2
-      - 🇨🇳 |台湾04
-      - 🇦🇺 |澳大利亚-边缘访问VUAU
-      - 🇨🇳 中国_1020019
-      - 🇨🇳 台湾=@bpjzx2=4
-      - 🇭🇰 香港=@bpjzx2=37
-      - 🇺🇲 US1
-      - 🇮🇳 印度01|v2直连|x2
-      - 🇯🇵 日本=@bpjzx2=41
-      - h650196.waihuizhibiaowang.com:11743
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇨🇳 高雄Hinet-dip 2
-      - 🇨🇳 中国(频道)4
-      - 🇨🇳 高雄Hinet-dip 3
-      - 🇭🇰 香港=@bpjzx2=13
-      - 🇫🇷 |法国-边缘访问DP
-      - LAX-DediPath 2
-      - 🇸🇬 新加坡=@bpjzx2=7
-      - 🇫🇷 FR1:@airproxies
-      - 🇺🇲 洛杉矶=@bpjzx2=34
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇸🇬 新加坡=@bpjzx2=3
-      - 网址:hass.win/reg
-      - 🇭🇰 香港有线-dip@univstar_1
-      - 🇭🇰 香港HKT-dip 3
-      - 🇭🇰 香港-6|1G|80端口
-      - LAX-Krypt@univstar_2
-      - 🇸🇬 大萝卜鸡新加坡
-      - 🇯🇵 大萝卜鸡日本
-      - 🇺🇲 |GLaDOS-GEOIP-US-03
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 |台湾05[1.5]
-      - SanJose-EDCL-dip 2
-      - 🇨🇳 台湾=@bpjzx2=38
-      - 🇭🇰 香港=@bpjzx2=33
-      - h961359.strongpipe.live:11545
-      - 🇭🇰 香港bgp|
-      - 🇭🇰 香港()
-      - 🇭🇰 AWS香港01tcp
-      - 🇸🇬 大萝卜鸡新加坡 2
-      - LAX-DediPath 3
-      - 🇿🇦 ZA4
-      - Chuncheon-Oracle
-      - 🇭🇰 |香港06[1.5]
-      - 🇭🇰 香港HKT-dip 4
-      - 🇺🇲 美国2|
-      - 🇭🇰 香港HKT
-      - 🇯🇵 日本()
-      - 🇵🇭 |菲律宾-边缘访问Comfac
-      - 🇭🇰 香港HGC-dip@univstar_7
-      - 🇺🇲 洛杉矶=@bpjzx2=22
-      - 🇬🇧 |GLaDOS-GEOIP-UK-03
-      - 🇯🇵 |🇯🇵日本D
-      - Seattle-Dedicated
-      - Seattle-Dedicated 2
-      - 🇭🇰 香港HKT-dip 5
-      - Seattle-Dedicated_4
-      - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
-      - 🇭🇰 tg+univstar_香港HKT-dip_3
-      - 🇺🇲 US2
-      - 🇭🇰 |香港05[1.5]
-      - 🇨🇳 高雄Hinet-dip 4
-      - 🇭🇰 tg+univstar_香港HKT-dip_4
-      - 🇨🇳 大萝卜鸡台湾
-      - 🇨🇳 高雄Hinet-dip 5
-      - 🇭🇰 香港=@bpjzx2=3
-      - 🇨🇳 |台湾04[1.5]
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |日本05[1.5]
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇺🇲 |美国01
-      - 🇭🇰 香港HKT-dip 6
-      - 🇯🇵 |[V2]+日本+01
-      - 🇸🇬 新加坡=@bpjzx2=37
-      - Tokyo-M247@univstar_8
-      - 🇸🇬 |GLaDOS-GEOIP-SG-03
-      - 🇺🇲 |GLaDOS-GEOIP-US-02
-      - Moscow-Melbicom
-      - 🇷🇺 |俄罗斯-核心访问GCore
-      - Moscow-Melbicom 2
-      - LAX-Krypt@univstar_1
-      - 🇺🇲 |美国02
-      - "|GLaDOS-T1-Netflix"
-      - 🇯🇵 |日本01[1.5]
-      - 🇭🇰 香港=@bpjzx2=5
-      - 🇭🇰 HK8
-      - 🇷🇺 |俄罗斯-边缘访问GCore
-      - 🇭🇰 香港HKT-dip 7
-      - 🇯🇵 JP3:@airproxies
-      - 🇩🇪 |德国-边缘访问DP
-      - 🇭🇰 香港EDCL
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇨🇦 大萝卜鸡加拿大
-      - 🇭🇰 香港HKT 2
-      - 🇭🇰 香港HKT-dip 8
-      - 🇭🇰 香港HGC-dip@univstar_3
-      - 🇰🇷 大萝卜鸡韩国
-      - LAX-Aiyun-dip@univstar_4
-      - 🇰🇷 |韩国01
-      - 🇺🇲 |美国Americano
-      - 🇿🇦 ZA3
-      - 🇭🇰 香港=@bpjzx2=6
-      - 🇦🇷 |阿根廷-边缘访问DonWeb
-      - 🇭🇰 香港HKBN-dip 2
-      - 🇸🇬 Singapore-M247@univstar_5
-      - ()
-      - 🇭🇰 香港HKBN
-      - 🇭🇰 香港HKT-dip 9
-      - 🇭🇰 |香港03
-      - 🇨🇳 中国III|1G|80端口
-      - 🇯🇵 日本=@bpjzx2=35
-      - 🇸🇬 |GLaDOS-GEOIP-SG-02
-      - 🇸🇬 |🇸🇬新加坡A
-      - LAX-Krypt@univstar_5
-      - 🇭🇰 香港01|SS直连|x2
-      - 🇺🇲 圣克拉拉=@bpjzx2=11
-      - 🇵🇭 |菲律宾-核心访问Comfac
-      - 巴基斯坦+002
-      - 🇰🇷 |韩国03
-      - 🇦🇺 |🇦🇺澳大利亚A
-      - Tokyo-M247@univstar_9
-      - 🇻🇳 [BGP-GSLB]越南胡志明
-      - 🇭🇰 香港HKT 3
-      - 🇨🇳 |台湾01[1.5]
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD03
+      - 🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]
       - 🇺🇲 大萝卜鸡美国
-      - 🇭🇰 香港HKT-dip 10
-      - 🇨🇳 高雄Hinet-dip 6
-      - SanJose-EDCL-dip 3
-      - 🇭🇰 AWS香港02tcp
-      - SanJose-EDCL-dip 4
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇯🇵 日本() 2
-      - 🇨🇳 高雄Hinet-dip 7
-      - 🇺🇲 |美国Moccha
-      - 🇭🇰 HK3
-      - 🇭🇰 香港=@bpjzx2=28
-      - 🇰🇷 KR4:@airproxies
-      - 🇨🇳 |台湾-边缘访问BGP
-      - 🇺🇲 |美国03
-      - 🇭🇰 香港() 2
-      - 🇭🇰 香港=@bpjzx2=4
-      - 🇭🇰 |🇭🇰香港03|直连
-      - 🇭🇰 香港=@bpjzx2=14
-      - 🇺🇲 洛杉矶=@bpjzx2=17
-      - LAX-Aiyun-dip@univstar_1
-      - 🇭🇰 tg+univstar_香港HKT_1
-      - dafeivpn.com5元专线机场
-      - 🇬🇧 英国()
-      - 🇺🇲 |GLaDOS-GEOIP-US-01
-      - h207532.waihuizhibiaowang.com:11543
-      - 🇰🇷 韩国01|v2直连|x2
-      - 🇨🇳 |台湾FlatWhite
-      - 🇭🇰 |香港-核心访问HKT
-      - 🇯🇵 JP6:@nodpai
-      - 🇨🇳 台湾=@bpjzx2=16
-      - 🇭🇰 香港EDCL-dip
-      - 大萝卜鸡
-      - 🇺🇲 西雅图=@bpjzx2=21
-      - 🇨🇳 CN1
-      - 🇺🇲 美国() 2
-      - 🇺🇲 US14:@nodpai
-      - LAX-DediPath 4
-      - 🇰🇷 KR3:@airproxies
-      - 🇨🇳 大萝卜鸡台湾 2
-      - 🇭🇰 香港HKBN-dip 3
-      - 新竹Seednet-dip@univstar_1
-      - 🇸🇬 |[V2]+新加坡+02
-      - 🇸🇬 新加坡()
-      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - "|GLaDOS-N2-02"
+      - LAX-Aiyun-dip@univstar_3
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇭🇰 |4xKCD🇭🇰HongKong[NF][D+]
+      - 🇨🇳 |GLaDOS-GEOIP-TW-03
+      - 🇰🇷 |中国-韩国IPLCD10Netflix
+      - 🇺🇲 |0.3xAY🇺🇸AmericaSanJose1[NF][D+]
+      - 🇭🇰 |GLaDOS-GEOIP-HK-01
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
+      - Santa+Clara-DigitalOcean@univstar_3
+      - 🇬🇧 [BGP-GSLB]英国•0.8x
+      - 🇺🇲 |GLaDOS-GEOIP-US-02
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix
+      - 🇯🇵 日本02|grpc直连|x2
+      - 🇸🇬 |新加坡高级IEPL中继D02Netflix
+      - 🇺🇲 美国US|
+      - 新竹Seednet-dip@univstar_3
+      - 🇬🇧 |中国-英国伦敦电信IEPLD4
+      - 🇨🇳 大萝卜鸡台湾
+      - "|GLaDOS-T1-Netflix"
+      - 🇺🇲 |2xBWG🇺🇸AmericaLosAngelesCN2GT2
+      - 距离下次重置剩余：9天
+      - 🇦🇺 |中国-澳大利亚IPLC悉尼D05
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD10
+      - 🇰🇷 |韩国전라북도전주시商宽D05
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-22
+      - 🇰🇷 |中国-韩国IPLCD01Netflix
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D71000Mbps
+      - 🇨🇳 |中国-台湾宜兰IPLCD06
       - 🇭🇰 [BGP-GSLB]香港•HGC
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - 🇭🇰 香港HKT-dip 11
-      - 🇸🇬 |🇸🇬新加坡01|直连
+      - 🇸🇬 |新加坡|06|奈飞DO
+      - 🇩🇪 |德国H5
+      - 🇯🇵 大萝卜鸡日本
+      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - 🇺🇲 |美国实验性IEPL中继D02
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-1
+      - 🇨🇳 大萝卜鸡台湾 2
+      - 🇰🇷 KR4:@airproxies
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03
+      - 🇰🇷 |韩国전라북도전주시商宽D06
+      - 🇭🇰 |[V2]+香港+01
+      - 🇨🇳 |台湾FlatWhite
+      - 🇺🇲 |美国高级IEPL中继D01
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-3
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D011GbpsHBOTVB
+      - h961359.strongpipe.live:11545
+      - 🇭🇰 |GLaDOS-GEOIP-HK-02
+      - Tokyo-M247@univstar_3
+      - 🇦🇷 |0.8x[Direct]Oracle🇨🇦CanadaTorontoARM2[NF][D+]
+      - 🇸🇬 新加坡-测试-ii|1G|80端口
+      - 🇨🇦 |0.5xOracle🇨🇦CanadaToronto2[NF][D+]2
+      - 🇺🇲 |GLaDOS-GEOIP-US-01
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇺🇲 US5
+      - 🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2
+      - 🇭🇰 HK26:@airproxies
       - 🇯🇵 JP1
-      - 🇸🇬 中转🇸🇬SG1:@nodpai
-      - 🇭🇰 |[V2]+香港+04
-      - 🇭🇰 |🇭🇰香港A
+      - 🇸🇬 |GLaDOS-GEOIP-SG-02
+      - 🇭🇰 |5xGC🇭🇰HongKong2[NF]2
+      - 🇸🇬 Singapore-M247@univstar_4
+      - 🇬🇧 |GLaDOS-GEOIP-UK-01
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 群组:xxmym
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D04
+      - 🇯🇵 |Oracle🇯🇵JapanTokyo[NF]
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D061GbpsHBOTVB
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]
+      - 🇭🇰 香港C|
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D101GbpsHBOTVB
+      - 🇯🇵 |GLaDOS-GEOIP-JP-02
+      - "|GLaDOS-N2-03"
+      - 🇨🇳 |台湾|01奈飞三网优化
+      - 🇸🇬 新加坡测试-iii|1G|80端口
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
+      - 🇬🇧 |GLaDOS-GEOIP-UK-03
+      - 稳定高速可购买付费节点↓
+      - 🇨🇳 中国()
+      - 🇺🇲 |0.2xET🇺🇸AmericaLosAngeles[NF][D+]
+      - 🇺🇲 |2xCP🇺🇸AmericaLosAngeles4837[NF][D+]2
+      - 🇺🇲 美国-测试|1G|80端口
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-12
+      - 🇭🇰 |香港|17AZ电信优化
+      - 🇸🇬 |新加坡MagicIEPL中继D02Netflix
+      - 🇨🇳 |中国-台湾IEPLHinet固接D07
+      - 🇭🇰 |2xCMI🇭🇰HongKong8[NF][D+]
+      - 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===
+      - DJB
+      - 🇰🇷 |韩国|01|AZ中转
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D61000Mbps
+      - 🇨🇳 TW3:@airproxies
+      - 🇭🇰 香港bgp|
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul2
+      - 🇨🇳 |中国-台湾宜兰IPLCD07
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D51000Mbps
+      - 🇰🇷 |韩国전라북도전주시商宽D04
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D091GbpsHBOTVB
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-32
+      - 🇨🇳 中国_1020680
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D02
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD01
+      - 🇸🇬 |新加坡|03|奈飞OC电信优化3
+      - 🇺🇲 |[V3]+美国+IEPL+3x
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD06
+      - 🇷🇺 |俄罗斯01
+      - 🇯🇵 |日本|02|奈飞LIN三网优化2
+      - LAX-Krypt@univstar_5
+      - 🇺🇲 |美国|05|DO
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |3xNR🇭🇰HongKong2[NF][D+]
+      - 🇬🇧 |中国-英国伦敦电信IEPLD6
+      - 🇭🇰 香港HGC-dip@univstar_4
+      - San+Jose-Krypt@univstar_2
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D121000Mbps
+      - 🇰🇷 |中国-韩国IPLCD05Netflix
+      - 🇨🇳 中国() 2
+      - 🇰🇷 |韩国전라북도전주시商宽D11
+      - Tokyo-M247@univstar_9
+      - 🇬🇧 |中国-英国伦敦电信IEPLD3
+      - 🇭🇰 香港_1020380
+      - 🇺🇲 |[V2]+美国+04
+      - 🇺🇲 |RN🇺🇸AmericaLosAngeles3[NF][D+]2
+      - Santa+Clara-DigitalOcean@univstar_2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D111GbpsHBOTVB
+      - 🇺🇲 |0.8xOracle🇺🇸AmericaSanJose12
+      - 🇷🇺 |俄罗斯03
+      - 🇭🇰 HK14
+      - 🇨🇳 中国() 3
+      - 🇺🇲 |美国Moccha
+      - 🇮🇪 |中国-爱尔兰IPLCD01
+      - San+Jose-Krypt@univstar_4
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D051GbpsHBOTVB
+      - 🇸🇬 |[V2]+新加坡+01
+      - 🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2
+      - 🇺🇲 |0.2xBV🇺🇸AmericaLasVegas[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]
+      - 🇺🇲 |美国Americano
+      - 🇨🇳 大萝卜鸡台湾 3
+      - "|GLaDOS-T3-Netflix"
+      - 🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2
+      - 🇺🇲 |0.1xGC🇺🇸AmericaKansas[NF][D+]2
+      - 🇸🇬 |新加坡|04|奈飞DO
+      - 🇨🇳 |中国-台湾IEPLHinet固接D06
+      - LAX-Aiyun-dip@univstar_5
+      - "|0.5xBV🇱🇺Luxembourg"
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul
+      - 🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2
+      - 🇸🇬 |新加坡|08|OC三网优化
+      - 🇺🇲 |AY🇺🇸AmericaSanJose2[NF][D+]
+      - dafeivpn.com5元专线机场
+      - 🇸🇬 |新加坡|02|奈飞DO三网优化
+      - 🇮🇩 [BGP-GSLB]印度尼西亚•0.8x
+      - 🇷🇺 |俄罗斯05
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 |2xDYCMI🇭🇰HongKong3[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D011GbpsHBOTVB
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD06
+      - 🇻🇳 [BGP-GSLB]越南胡志明
+      - GB1
+      - 🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]
+      - 🇫🇷 |中国-法国IPLCD01
+      - 🇭🇰 |3xGG🇭🇰HongKong[D+]2
+      - 🇫🇷 |中国-法国IPLCD02
+      - 🇸🇬 |新加坡|01|LIN三网优化
+      - 🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2
       - 🇭🇰 香港-V|10G|80端口
+      - 🇳🇱 NL1
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-2
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-12
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong2-22
+      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 中国_1020684
+      - 🇺🇲 美国_10201419
+      - 🇰🇷 |韩国전라북도전주시商宽D03
+      - 🇯🇵 |日本|高速|03|LIN
+      - 🇸🇬 |VT🇸🇬Singapore[NF]
+      - 🇸🇬 新加坡_1020128
+      - 这是教程赠送免费节点
+      - 🇭🇰 |香港Ristretto
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 KR5:@nodpai
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇩🇪 |德国H4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 🇺🇲 美国3|
+      - 🇰🇷 |韩国전라북도전주시商宽D12
+      - 🇺🇲 |3xBWG🇺🇸AmericaLosAngelesCN2GIA[NF][D+]
+      - 🇸🇬 新加坡|
+      - 🇭🇰 |0.2x[LoadBalance][Tunnel]AZ🇭🇰HongKong2
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD08
+      - 🇯🇵 |日本|03|LIN三网优化
+      - 🇦🇺 |0.8xOracle🇦🇺AustraliaSydney3[NF][D+]
+      - 🇨🇳 大萝卜鸡台湾 4
+      - 🇨🇳 |GLaDOS-GEOIP-TW-01
+      - 🇬🇧 |0.1xNT🇺🇦UkraineOdessa[D+]
+      - 🇭🇰 香港2
+      - 🇨🇳 台湾2
+      - 🇨🇳 大萝卜鸡台湾 5
+      - 🇸🇬 |新加坡|03|LIN三网优化
+      - "|GLaDOS-T2-Netflix"
+      - 🇰🇷 |韩国전라북도전주시商宽D13
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]
+      - 🇭🇰 HK7
+      - 🇺🇲 |美国实验性IEPL中继D05
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]2
+      - 🇭🇰 香港有线-dip@univstar_2
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03 2
+      - 🇰🇷 |韩国전라북도전주시商宽D09
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D071GbpsHBOTVB
+      - 🇺🇲 [BGP-GSLB]美国1
+      - 🇭🇰 HK3
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D41000Mbps
+      - 🇦🇷 |Oracle🇺🇸AmericaSanJoseARM[NF][D+]2
+      - "|GLaDOS-N2-03 2"
+      - 🇨🇳 |中国-台湾IEPLHinet固接D03
+      - 🇯🇵 |日本|05|LIN
+      - 🇺🇲 |1.3xRN🇺🇸AmericaSanJose2[NF][D+]
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix
+      - 🇭🇰 |2xCMI🇭🇰HongKong7[NF][D+]
+      - ()
+      - 🇭🇰 HK15
+      - "|GLaDOS-N2-05"
+      - 🇨🇳 台湾()
+      - 🇿🇦 ZA3
+      - ✈付费机场推荐✈
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]2
+      - 🇨🇳 中国_1020675
+      - 🇺🇲 US9
+      - 🇷🇺 [BGP-GSLB]俄罗斯•0.1x
+      - "|GLaDOS-N2-00"
+      - CA1:@nodpai
+      - 🇸🇬 新加坡_1020111
+      - "|GLaDOS-N2-07"
+      - 🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D31000Mbps
+      - "|GLaDOS-N2-04"
+      - 🇭🇰 AWS香港02tcp
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD03
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD05
+      - 🇯🇵 |日本|01|LIN三网优化
+      - 🇸🇬 |GLaDOS-GEOIP-SG-01
+      - 🇨🇳 |[V2]+台湾+03
+      - 🇯🇵 |日本Cappuccino
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D021GbpsHBOTVB
+      - 🇺🇲 |0.7xCC🇺🇸AmericaLosAngeles吃一口[NF][D+]
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇿🇦 ZA2
-      - 🇺🇲 美国()
-      - 🇨🇳 CN3
-      - 🇸🇬 Singapore-M247@univstar_6
-      - SanJose-EDCL-dip
-      - 🇭🇰 香港HKT-dip
-      - 🇭🇰 HK4
-      - Seattle-Dedicated_5
-      - 🇸🇬 |[V2]+新加坡+01
-      - 🇭🇰 |GLaDOS-GEOIP-HK-03
-      - 🇺🇲 |🇺🇸美国A
-      - LAX-DediPath
-      - 🇨🇳 |台湾02[1.5]
-      - 🇨🇳 台湾=@bpjzx2=21
-      - 🇭🇰 香港有线-dip@univstar_5
-      - 🇯🇵 JP1:@airproxies
-      - 🇭🇰 香港=@bpjzx2=2
-      - 🇨🇳 CN2
-      - "|Tykyo🌅"
-      - 🇪🇸 ES1
-      - 🇮🇳 |印度-边缘访问DOIN
-      - 免费节点定期失效
-      - Santa+Clara-DigitalOcean@univstar_2
-      - 🇭🇰 |香港04
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇺🇲 美国西雅图|解锁流媒体
-      - 🇭🇰 香港=@bpjzx2=10
-      - Tokyo-M247@univstar_3
-      - 🇭🇰 |香港08[1.5]
-      - San+Jose-Krypt@univstar_7
-      - 🇯🇵 |日本Cappuccino
-      - 🇨🇳 |台湾01
-      - 🇭🇰 香港=@bpjzx2=9
-      - 🇬🇧 |GLaDOS-GEOIP-UK-01
-      - 🇺🇲 |美国03[1.5]
-      - 🇭🇰 |香港04[1.5]
-      - 🇭🇰 香港HKT-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡-测试-ii|1G|80端口
-      - 🇭🇰 香港HKBN-dip
-      - "|GLaDOS-N2-02"
-      - 🇨🇳 高雄Hinet-dip
-      - 🇸🇬 新加坡=@bpjzx2=38
-      - 圣荷西=@bpjzx2=32
-      - 🇭🇰 香港02|v2直连|x2
-      - 🇸🇬 SG-FDCservers-dip
-      - 🇸🇬 Singapore-M247@univstar_2
-      - 🇨🇳 |台湾04
-      - 🇦🇺 |澳大利亚-边缘访问VUAU
-      - 🇨🇳 中国_1020019
-      - 🇨🇳 台湾=@bpjzx2=4
-      - 🇭🇰 香港=@bpjzx2=37
-      - 🇺🇲 US1
-      - 🇮🇳 印度01|v2直连|x2
-      - 🇯🇵 日本=@bpjzx2=41
-      - h650196.waihuizhibiaowang.com:11743
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇨🇳 高雄Hinet-dip 2
-      - 🇨🇳 中国(频道)4
-      - 🇨🇳 高雄Hinet-dip 3
-      - 🇭🇰 香港=@bpjzx2=13
-      - 🇫🇷 |法国-边缘访问DP
-      - LAX-DediPath 2
-      - 🇸🇬 新加坡=@bpjzx2=7
-      - 🇫🇷 FR1:@airproxies
-      - 🇺🇲 洛杉矶=@bpjzx2=34
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇸🇬 新加坡=@bpjzx2=3
-      - 网址:hass.win/reg
-      - 🇭🇰 香港有线-dip@univstar_1
-      - 🇭🇰 香港HKT-dip 3
-      - 🇭🇰 香港-6|1G|80端口
-      - LAX-Krypt@univstar_2
-      - 🇸🇬 大萝卜鸡新加坡
-      - 🇯🇵 大萝卜鸡日本
-      - 🇺🇲 |GLaDOS-GEOIP-US-03
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 |台湾05[1.5]
-      - SanJose-EDCL-dip 2
-      - 🇨🇳 台湾=@bpjzx2=38
-      - 🇭🇰 香港=@bpjzx2=33
-      - h961359.strongpipe.live:11545
-      - 🇭🇰 香港bgp|
-      - 🇭🇰 香港()
-      - 🇭🇰 AWS香港01tcp
-      - 🇸🇬 大萝卜鸡新加坡 2
-      - LAX-DediPath 3
-      - 🇿🇦 ZA4
-      - Chuncheon-Oracle
-      - 🇭🇰 |香港06[1.5]
-      - 🇭🇰 香港HKT-dip 4
-      - 🇺🇲 美国2|
-      - 🇭🇰 香港HKT
-      - 🇯🇵 日本()
-      - 🇵🇭 |菲律宾-边缘访问Comfac
-      - 🇭🇰 香港HGC-dip@univstar_7
-      - 🇺🇲 洛杉矶=@bpjzx2=22
-      - 🇬🇧 |GLaDOS-GEOIP-UK-03
-      - 🇯🇵 |🇯🇵日本D
-      - Seattle-Dedicated
-      - Seattle-Dedicated 2
-      - 🇭🇰 香港HKT-dip 5
-      - Seattle-Dedicated_4
-      - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
-      - 🇭🇰 tg+univstar_香港HKT-dip_3
-      - 🇺🇲 US2
-      - 🇭🇰 |香港05[1.5]
-      - 🇨🇳 高雄Hinet-dip 4
-      - 🇭🇰 tg+univstar_香港HKT-dip_4
-      - 🇨🇳 大萝卜鸡台湾
-      - 🇨🇳 高雄Hinet-dip 5
-      - 🇭🇰 香港=@bpjzx2=3
-      - 🇨🇳 |台湾04[1.5]
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |日本05[1.5]
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇺🇲 |美国01
-      - 🇭🇰 香港HKT-dip 6
-      - 🇯🇵 |[V2]+日本+01
-      - 🇸🇬 新加坡=@bpjzx2=37
-      - Tokyo-M247@univstar_8
-      - 🇸🇬 |GLaDOS-GEOIP-SG-03
-      - 🇺🇲 |GLaDOS-GEOIP-US-02
-      - Moscow-Melbicom
-      - 🇷🇺 |俄罗斯-核心访问GCore
-      - Moscow-Melbicom 2
-      - LAX-Krypt@univstar_1
-      - 🇺🇲 |美国02
-      - "|GLaDOS-T1-Netflix"
-      - 🇯🇵 |日本01[1.5]
-      - 🇭🇰 香港=@bpjzx2=5
-      - 🇭🇰 HK8
-      - 🇷🇺 |俄罗斯-边缘访问GCore
-      - 🇭🇰 香港HKT-dip 7
-      - 🇯🇵 JP3:@airproxies
-      - 🇩🇪 |德国-边缘访问DP
-      - 🇭🇰 香港EDCL
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇨🇦 大萝卜鸡加拿大
-      - 🇭🇰 香港HKT 2
-      - 🇭🇰 香港HKT-dip 8
-      - 🇭🇰 香港HGC-dip@univstar_3
-      - 🇰🇷 大萝卜鸡韩国
-      - LAX-Aiyun-dip@univstar_4
-      - 🇰🇷 |韩国01
-      - 🇺🇲 |美国Americano
-      - 🇿🇦 ZA3
-      - 🇭🇰 香港=@bpjzx2=6
-      - 🇦🇷 |阿根廷-边缘访问DonWeb
-      - 🇭🇰 香港HKBN-dip 2
-      - 🇸🇬 Singapore-M247@univstar_5
-      - ()
-      - 🇭🇰 香港HKBN
-      - 🇭🇰 香港HKT-dip 9
-      - 🇭🇰 |香港03
-      - 🇨🇳 中国III|1G|80端口
-      - 🇯🇵 日本=@bpjzx2=35
-      - 🇸🇬 |GLaDOS-GEOIP-SG-02
-      - 🇸🇬 |🇸🇬新加坡A
-      - LAX-Krypt@univstar_5
-      - 🇭🇰 香港01|SS直连|x2
-      - 🇺🇲 圣克拉拉=@bpjzx2=11
-      - 🇵🇭 |菲律宾-核心访问Comfac
-      - 巴基斯坦+002
-      - 🇰🇷 |韩国03
-      - 🇦🇺 |🇦🇺澳大利亚A
-      - Tokyo-M247@univstar_9
-      - 🇻🇳 [BGP-GSLB]越南胡志明
-      - 🇭🇰 香港HKT 3
-      - 🇨🇳 |台湾01[1.5]
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD03
+      - 🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]
       - 🇺🇲 大萝卜鸡美国
-      - 🇭🇰 香港HKT-dip 10
-      - 🇨🇳 高雄Hinet-dip 6
-      - SanJose-EDCL-dip 3
-      - 🇭🇰 AWS香港02tcp
-      - SanJose-EDCL-dip 4
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇯🇵 日本() 2
-      - 🇨🇳 高雄Hinet-dip 7
-      - 🇺🇲 |美国Moccha
-      - 🇭🇰 HK3
-      - 🇭🇰 香港=@bpjzx2=28
-      - 🇰🇷 KR4:@airproxies
-      - 🇨🇳 |台湾-边缘访问BGP
-      - 🇺🇲 |美国03
-      - 🇭🇰 香港() 2
-      - 🇭🇰 香港=@bpjzx2=4
-      - 🇭🇰 |🇭🇰香港03|直连
-      - 🇭🇰 香港=@bpjzx2=14
-      - 🇺🇲 洛杉矶=@bpjzx2=17
-      - LAX-Aiyun-dip@univstar_1
-      - 🇭🇰 tg+univstar_香港HKT_1
-      - dafeivpn.com5元专线机场
-      - 🇬🇧 英国()
-      - 🇺🇲 |GLaDOS-GEOIP-US-01
-      - h207532.waihuizhibiaowang.com:11543
-      - 🇰🇷 韩国01|v2直连|x2
-      - 🇨🇳 |台湾FlatWhite
-      - 🇭🇰 |香港-核心访问HKT
-      - 🇯🇵 JP6:@nodpai
-      - 🇨🇳 台湾=@bpjzx2=16
-      - 🇭🇰 香港EDCL-dip
-      - 大萝卜鸡
-      - 🇺🇲 西雅图=@bpjzx2=21
-      - 🇨🇳 CN1
-      - 🇺🇲 美国() 2
-      - 🇺🇲 US14:@nodpai
-      - LAX-DediPath 4
-      - 🇰🇷 KR3:@airproxies
-      - 🇨🇳 大萝卜鸡台湾 2
-      - 🇭🇰 香港HKBN-dip 3
-      - 新竹Seednet-dip@univstar_1
-      - 🇸🇬 |[V2]+新加坡+02
-      - 🇸🇬 新加坡()
-      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - "|GLaDOS-N2-02"
+      - LAX-Aiyun-dip@univstar_3
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇭🇰 |4xKCD🇭🇰HongKong[NF][D+]
+      - 🇨🇳 |GLaDOS-GEOIP-TW-03
+      - 🇰🇷 |中国-韩国IPLCD10Netflix
+      - 🇺🇲 |0.3xAY🇺🇸AmericaSanJose1[NF][D+]
+      - 🇭🇰 |GLaDOS-GEOIP-HK-01
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
+      - Santa+Clara-DigitalOcean@univstar_3
+      - 🇬🇧 [BGP-GSLB]英国•0.8x
+      - 🇺🇲 |GLaDOS-GEOIP-US-02
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix
+      - 🇯🇵 日本02|grpc直连|x2
+      - 🇸🇬 |新加坡高级IEPL中继D02Netflix
+      - 🇺🇲 美国US|
+      - 新竹Seednet-dip@univstar_3
+      - 🇬🇧 |中国-英国伦敦电信IEPLD4
+      - 🇨🇳 大萝卜鸡台湾
+      - "|GLaDOS-T1-Netflix"
+      - 🇺🇲 |2xBWG🇺🇸AmericaLosAngelesCN2GT2
+      - 距离下次重置剩余：9天
+      - 🇦🇺 |中国-澳大利亚IPLC悉尼D05
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD10
+      - 🇰🇷 |韩国전라북도전주시商宽D05
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-22
+      - 🇰🇷 |中国-韩国IPLCD01Netflix
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D71000Mbps
+      - 🇨🇳 |中国-台湾宜兰IPLCD06
       - 🇭🇰 [BGP-GSLB]香港•HGC
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - 🇭🇰 香港HKT-dip 11
-      - 🇸🇬 |🇸🇬新加坡01|直连
+      - 🇸🇬 |新加坡|06|奈飞DO
+      - 🇩🇪 |德国H5
+      - 🇯🇵 大萝卜鸡日本
+      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - 🇺🇲 |美国实验性IEPL中继D02
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-1
+      - 🇨🇳 大萝卜鸡台湾 2
+      - 🇰🇷 KR4:@airproxies
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03
+      - 🇰🇷 |韩国전라북도전주시商宽D06
+      - 🇭🇰 |[V2]+香港+01
+      - 🇨🇳 |台湾FlatWhite
+      - 🇺🇲 |美国高级IEPL中继D01
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-3
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D011GbpsHBOTVB
+      - h961359.strongpipe.live:11545
+      - 🇭🇰 |GLaDOS-GEOIP-HK-02
+      - Tokyo-M247@univstar_3
+      - 🇦🇷 |0.8x[Direct]Oracle🇨🇦CanadaTorontoARM2[NF][D+]
+      - 🇸🇬 新加坡-测试-ii|1G|80端口
+      - 🇨🇦 |0.5xOracle🇨🇦CanadaToronto2[NF][D+]2
+      - 🇺🇲 |GLaDOS-GEOIP-US-01
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇺🇲 US5
+      - 🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2
+      - 🇭🇰 HK26:@airproxies
       - 🇯🇵 JP1
-      - 🇸🇬 中转🇸🇬SG1:@nodpai
-      - 🇭🇰 |[V2]+香港+04
-      - 🇭🇰 |🇭🇰香港A
+      - 🇸🇬 |GLaDOS-GEOIP-SG-02
+      - 🇭🇰 |5xGC🇭🇰HongKong2[NF]2
+      - 🇸🇬 Singapore-M247@univstar_4
+      - 🇬🇧 |GLaDOS-GEOIP-UK-01
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 群组:xxmym
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D04
+      - 🇯🇵 |Oracle🇯🇵JapanTokyo[NF]
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D061GbpsHBOTVB
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]
+      - 🇭🇰 香港C|
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D101GbpsHBOTVB
+      - 🇯🇵 |GLaDOS-GEOIP-JP-02
+      - "|GLaDOS-N2-03"
+      - 🇨🇳 |台湾|01奈飞三网优化
+      - 🇸🇬 新加坡测试-iii|1G|80端口
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
+      - 🇬🇧 |GLaDOS-GEOIP-UK-03
+      - 稳定高速可购买付费节点↓
+      - 🇨🇳 中国()
+      - 🇺🇲 |0.2xET🇺🇸AmericaLosAngeles[NF][D+]
+      - 🇺🇲 |2xCP🇺🇸AmericaLosAngeles4837[NF][D+]2
+      - 🇺🇲 美国-测试|1G|80端口
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-12
+      - 🇭🇰 |香港|17AZ电信优化
+      - 🇸🇬 |新加坡MagicIEPL中继D02Netflix
+      - 🇨🇳 |中国-台湾IEPLHinet固接D07
+      - 🇭🇰 |2xCMI🇭🇰HongKong8[NF][D+]
+      - 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===
+      - DJB
+      - 🇰🇷 |韩国|01|AZ中转
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D61000Mbps
+      - 🇨🇳 TW3:@airproxies
+      - 🇭🇰 香港bgp|
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul2
+      - 🇨🇳 |中国-台湾宜兰IPLCD07
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D51000Mbps
+      - 🇰🇷 |韩国전라북도전주시商宽D04
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D091GbpsHBOTVB
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-32
+      - 🇨🇳 中国_1020680
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D02
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD01
+      - 🇸🇬 |新加坡|03|奈飞OC电信优化3
+      - 🇺🇲 |[V3]+美国+IEPL+3x
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD06
+      - 🇷🇺 |俄罗斯01
+      - 🇯🇵 |日本|02|奈飞LIN三网优化2
+      - LAX-Krypt@univstar_5
+      - 🇺🇲 |美国|05|DO
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |3xNR🇭🇰HongKong2[NF][D+]
+      - 🇬🇧 |中国-英国伦敦电信IEPLD6
+      - 🇭🇰 香港HGC-dip@univstar_4
+      - San+Jose-Krypt@univstar_2
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D121000Mbps
+      - 🇰🇷 |中国-韩国IPLCD05Netflix
+      - 🇨🇳 中国() 2
+      - 🇰🇷 |韩国전라북도전주시商宽D11
+      - Tokyo-M247@univstar_9
+      - 🇬🇧 |中国-英国伦敦电信IEPLD3
+      - 🇭🇰 香港_1020380
+      - 🇺🇲 |[V2]+美国+04
+      - 🇺🇲 |RN🇺🇸AmericaLosAngeles3[NF][D+]2
+      - Santa+Clara-DigitalOcean@univstar_2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D111GbpsHBOTVB
+      - 🇺🇲 |0.8xOracle🇺🇸AmericaSanJose12
+      - 🇷🇺 |俄罗斯03
+      - 🇭🇰 HK14
+      - 🇨🇳 中国() 3
+      - 🇺🇲 |美国Moccha
+      - 🇮🇪 |中国-爱尔兰IPLCD01
+      - San+Jose-Krypt@univstar_4
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D051GbpsHBOTVB
+      - 🇸🇬 |[V2]+新加坡+01
+      - 🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2
+      - 🇺🇲 |0.2xBV🇺🇸AmericaLasVegas[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]
+      - 🇺🇲 |美国Americano
+      - 🇨🇳 大萝卜鸡台湾 3
+      - "|GLaDOS-T3-Netflix"
+      - 🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2
+      - 🇺🇲 |0.1xGC🇺🇸AmericaKansas[NF][D+]2
+      - 🇸🇬 |新加坡|04|奈飞DO
+      - 🇨🇳 |中国-台湾IEPLHinet固接D06
+      - LAX-Aiyun-dip@univstar_5
+      - "|0.5xBV🇱🇺Luxembourg"
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul
+      - 🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2
+      - 🇸🇬 |新加坡|08|OC三网优化
+      - 🇺🇲 |AY🇺🇸AmericaSanJose2[NF][D+]
+      - dafeivpn.com5元专线机场
+      - 🇸🇬 |新加坡|02|奈飞DO三网优化
+      - 🇮🇩 [BGP-GSLB]印度尼西亚•0.8x
+      - 🇷🇺 |俄罗斯05
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 |2xDYCMI🇭🇰HongKong3[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D011GbpsHBOTVB
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD06
+      - 🇻🇳 [BGP-GSLB]越南胡志明
+      - GB1
+      - 🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]
+      - 🇫🇷 |中国-法国IPLCD01
+      - 🇭🇰 |3xGG🇭🇰HongKong[D+]2
+      - 🇫🇷 |中国-法国IPLCD02
+      - 🇸🇬 |新加坡|01|LIN三网优化
+      - 🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2
       - 🇭🇰 香港-V|10G|80端口
+      - 🇳🇱 NL1
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-2
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-12
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong2-22
+      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 中国_1020684
+      - 🇺🇲 美国_10201419
+      - 🇰🇷 |韩国전라북도전주시商宽D03
+      - 🇯🇵 |日本|高速|03|LIN
+      - 🇸🇬 |VT🇸🇬Singapore[NF]
+      - 🇸🇬 新加坡_1020128
+      - 这是教程赠送免费节点
+      - 🇭🇰 |香港Ristretto
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 KR5:@nodpai
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇩🇪 |德国H4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 🇺🇲 美国3|
+      - 🇰🇷 |韩国전라북도전주시商宽D12
+      - 🇺🇲 |3xBWG🇺🇸AmericaLosAngelesCN2GIA[NF][D+]
+      - 🇸🇬 新加坡|
+      - 🇭🇰 |0.2x[LoadBalance][Tunnel]AZ🇭🇰HongKong2
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD08
+      - 🇯🇵 |日本|03|LIN三网优化
+      - 🇦🇺 |0.8xOracle🇦🇺AustraliaSydney3[NF][D+]
+      - 🇨🇳 大萝卜鸡台湾 4
+      - 🇨🇳 |GLaDOS-GEOIP-TW-01
+      - 🇬🇧 |0.1xNT🇺🇦UkraineOdessa[D+]
+      - 🇭🇰 香港2
+      - 🇨🇳 台湾2
+      - 🇨🇳 大萝卜鸡台湾 5
+      - 🇸🇬 |新加坡|03|LIN三网优化
+      - "|GLaDOS-T2-Netflix"
+      - 🇰🇷 |韩国전라북도전주시商宽D13
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]
+      - 🇭🇰 HK7
+      - 🇺🇲 |美国实验性IEPL中继D05
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]2
+      - 🇭🇰 香港有线-dip@univstar_2
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03 2
+      - 🇰🇷 |韩国전라북도전주시商宽D09
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D071GbpsHBOTVB
+      - 🇺🇲 [BGP-GSLB]美国1
+      - 🇭🇰 HK3
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D41000Mbps
+      - 🇦🇷 |Oracle🇺🇸AmericaSanJoseARM[NF][D+]2
+      - "|GLaDOS-N2-03 2"
+      - 🇨🇳 |中国-台湾IEPLHinet固接D03
+      - 🇯🇵 |日本|05|LIN
+      - 🇺🇲 |1.3xRN🇺🇸AmericaSanJose2[NF][D+]
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix
+      - 🇭🇰 |2xCMI🇭🇰HongKong7[NF][D+]
+      - ()
+      - 🇭🇰 HK15
+      - "|GLaDOS-N2-05"
+      - 🇨🇳 台湾()
+      - 🇿🇦 ZA3
+      - ✈付费机场推荐✈
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]2
+      - 🇨🇳 中国_1020675
+      - 🇺🇲 US9
+      - 🇷🇺 [BGP-GSLB]俄罗斯•0.1x
+      - "|GLaDOS-N2-00"
+      - CA1:@nodpai
+      - 🇸🇬 新加坡_1020111
+      - "|GLaDOS-N2-07"
+      - 🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D31000Mbps
+      - "|GLaDOS-N2-04"
+      - 🇭🇰 AWS香港02tcp
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD03
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD05
+      - 🇯🇵 |日本|01|LIN三网优化
+      - 🇸🇬 |GLaDOS-GEOIP-SG-01
+      - 🇨🇳 |[V2]+台湾+03
+      - 🇯🇵 |日本Cappuccino
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D021GbpsHBOTVB
+      - 🇺🇲 |0.7xCC🇺🇸AmericaLosAngeles吃一口[NF][D+]
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -938,230 +1058,260 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇿🇦 ZA2
-      - 🇺🇲 美国()
-      - 🇨🇳 CN3
-      - 🇸🇬 Singapore-M247@univstar_6
-      - SanJose-EDCL-dip
-      - 🇭🇰 香港HKT-dip
-      - 🇭🇰 HK4
-      - Seattle-Dedicated_5
-      - 🇸🇬 |[V2]+新加坡+01
-      - 🇭🇰 |GLaDOS-GEOIP-HK-03
-      - 🇺🇲 |🇺🇸美国A
-      - LAX-DediPath
-      - 🇨🇳 |台湾02[1.5]
-      - 🇨🇳 台湾=@bpjzx2=21
-      - 🇭🇰 香港有线-dip@univstar_5
-      - 🇯🇵 JP1:@airproxies
-      - 🇭🇰 香港=@bpjzx2=2
-      - 🇨🇳 CN2
-      - "|Tykyo🌅"
-      - 🇪🇸 ES1
-      - 🇮🇳 |印度-边缘访问DOIN
-      - 免费节点定期失效
-      - Santa+Clara-DigitalOcean@univstar_2
-      - 🇭🇰 |香港04
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇺🇲 美国西雅图|解锁流媒体
-      - 🇭🇰 香港=@bpjzx2=10
-      - Tokyo-M247@univstar_3
-      - 🇭🇰 |香港08[1.5]
-      - San+Jose-Krypt@univstar_7
-      - 🇯🇵 |日本Cappuccino
-      - 🇨🇳 |台湾01
-      - 🇭🇰 香港=@bpjzx2=9
-      - 🇬🇧 |GLaDOS-GEOIP-UK-01
-      - 🇺🇲 |美国03[1.5]
-      - 🇭🇰 |香港04[1.5]
-      - 🇭🇰 香港HKT-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡-测试-ii|1G|80端口
-      - 🇭🇰 香港HKBN-dip
-      - "|GLaDOS-N2-02"
-      - 🇨🇳 高雄Hinet-dip
-      - 🇸🇬 新加坡=@bpjzx2=38
-      - 圣荷西=@bpjzx2=32
-      - 🇭🇰 香港02|v2直连|x2
-      - 🇸🇬 SG-FDCservers-dip
-      - 🇸🇬 Singapore-M247@univstar_2
-      - 🇨🇳 |台湾04
-      - 🇦🇺 |澳大利亚-边缘访问VUAU
-      - 🇨🇳 中国_1020019
-      - 🇨🇳 台湾=@bpjzx2=4
-      - 🇭🇰 香港=@bpjzx2=37
-      - 🇺🇲 US1
-      - 🇮🇳 印度01|v2直连|x2
-      - 🇯🇵 日本=@bpjzx2=41
-      - h650196.waihuizhibiaowang.com:11743
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇨🇳 高雄Hinet-dip 2
-      - 🇨🇳 中国(频道)4
-      - 🇨🇳 高雄Hinet-dip 3
-      - 🇭🇰 香港=@bpjzx2=13
-      - 🇫🇷 |法国-边缘访问DP
-      - LAX-DediPath 2
-      - 🇸🇬 新加坡=@bpjzx2=7
-      - 🇫🇷 FR1:@airproxies
-      - 🇺🇲 洛杉矶=@bpjzx2=34
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇸🇬 新加坡=@bpjzx2=3
-      - 网址:hass.win/reg
-      - 🇭🇰 香港有线-dip@univstar_1
-      - 🇭🇰 香港HKT-dip 3
-      - 🇭🇰 香港-6|1G|80端口
-      - LAX-Krypt@univstar_2
-      - 🇸🇬 大萝卜鸡新加坡
-      - 🇯🇵 大萝卜鸡日本
-      - 🇺🇲 |GLaDOS-GEOIP-US-03
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 |台湾05[1.5]
-      - SanJose-EDCL-dip 2
-      - 🇨🇳 台湾=@bpjzx2=38
-      - 🇭🇰 香港=@bpjzx2=33
-      - h961359.strongpipe.live:11545
-      - 🇭🇰 香港bgp|
-      - 🇭🇰 香港()
-      - 🇭🇰 AWS香港01tcp
-      - 🇸🇬 大萝卜鸡新加坡 2
-      - LAX-DediPath 3
-      - 🇿🇦 ZA4
-      - Chuncheon-Oracle
-      - 🇭🇰 |香港06[1.5]
-      - 🇭🇰 香港HKT-dip 4
-      - 🇺🇲 美国2|
-      - 🇭🇰 香港HKT
-      - 🇯🇵 日本()
-      - 🇵🇭 |菲律宾-边缘访问Comfac
-      - 🇭🇰 香港HGC-dip@univstar_7
-      - 🇺🇲 洛杉矶=@bpjzx2=22
-      - 🇬🇧 |GLaDOS-GEOIP-UK-03
-      - 🇯🇵 |🇯🇵日本D
-      - Seattle-Dedicated
-      - Seattle-Dedicated 2
-      - 🇭🇰 香港HKT-dip 5
-      - Seattle-Dedicated_4
-      - 🇵🇭 [BGP-GSLB]菲律宾马尼拉
-      - 🇭🇰 tg+univstar_香港HKT-dip_3
-      - 🇺🇲 US2
-      - 🇭🇰 |香港05[1.5]
-      - 🇨🇳 高雄Hinet-dip 4
-      - 🇭🇰 tg+univstar_香港HKT-dip_4
-      - 🇨🇳 大萝卜鸡台湾
-      - 🇨🇳 高雄Hinet-dip 5
-      - 🇭🇰 香港=@bpjzx2=3
-      - 🇨🇳 |台湾04[1.5]
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |日本05[1.5]
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇺🇲 |美国01
-      - 🇭🇰 香港HKT-dip 6
-      - 🇯🇵 |[V2]+日本+01
-      - 🇸🇬 新加坡=@bpjzx2=37
-      - Tokyo-M247@univstar_8
-      - 🇸🇬 |GLaDOS-GEOIP-SG-03
-      - 🇺🇲 |GLaDOS-GEOIP-US-02
-      - Moscow-Melbicom
-      - 🇷🇺 |俄罗斯-核心访问GCore
-      - Moscow-Melbicom 2
-      - LAX-Krypt@univstar_1
-      - 🇺🇲 |美国02
-      - "|GLaDOS-T1-Netflix"
-      - 🇯🇵 |日本01[1.5]
-      - 🇭🇰 香港=@bpjzx2=5
-      - 🇭🇰 HK8
-      - 🇷🇺 |俄罗斯-边缘访问GCore
-      - 🇭🇰 香港HKT-dip 7
-      - 🇯🇵 JP3:@airproxies
-      - 🇩🇪 |德国-边缘访问DP
-      - 🇭🇰 香港EDCL
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇨🇦 大萝卜鸡加拿大
-      - 🇭🇰 香港HKT 2
-      - 🇭🇰 香港HKT-dip 8
-      - 🇭🇰 香港HGC-dip@univstar_3
-      - 🇰🇷 大萝卜鸡韩国
-      - LAX-Aiyun-dip@univstar_4
-      - 🇰🇷 |韩国01
-      - 🇺🇲 |美国Americano
-      - 🇿🇦 ZA3
-      - 🇭🇰 香港=@bpjzx2=6
-      - 🇦🇷 |阿根廷-边缘访问DonWeb
-      - 🇭🇰 香港HKBN-dip 2
-      - 🇸🇬 Singapore-M247@univstar_5
-      - ()
-      - 🇭🇰 香港HKBN
-      - 🇭🇰 香港HKT-dip 9
-      - 🇭🇰 |香港03
-      - 🇨🇳 中国III|1G|80端口
-      - 🇯🇵 日本=@bpjzx2=35
-      - 🇸🇬 |GLaDOS-GEOIP-SG-02
-      - 🇸🇬 |🇸🇬新加坡A
-      - LAX-Krypt@univstar_5
-      - 🇭🇰 香港01|SS直连|x2
-      - 🇺🇲 圣克拉拉=@bpjzx2=11
-      - 🇵🇭 |菲律宾-核心访问Comfac
-      - 巴基斯坦+002
-      - 🇰🇷 |韩国03
-      - 🇦🇺 |🇦🇺澳大利亚A
-      - Tokyo-M247@univstar_9
-      - 🇻🇳 [BGP-GSLB]越南胡志明
-      - 🇭🇰 香港HKT 3
-      - 🇨🇳 |台湾01[1.5]
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD03
+      - 🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]
       - 🇺🇲 大萝卜鸡美国
-      - 🇭🇰 香港HKT-dip 10
-      - 🇨🇳 高雄Hinet-dip 6
-      - SanJose-EDCL-dip 3
-      - 🇭🇰 AWS香港02tcp
-      - SanJose-EDCL-dip 4
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇯🇵 日本() 2
-      - 🇨🇳 高雄Hinet-dip 7
-      - 🇺🇲 |美国Moccha
-      - 🇭🇰 HK3
-      - 🇭🇰 香港=@bpjzx2=28
-      - 🇰🇷 KR4:@airproxies
-      - 🇨🇳 |台湾-边缘访问BGP
-      - 🇺🇲 |美国03
-      - 🇭🇰 香港() 2
-      - 🇭🇰 香港=@bpjzx2=4
-      - 🇭🇰 |🇭🇰香港03|直连
-      - 🇭🇰 香港=@bpjzx2=14
-      - 🇺🇲 洛杉矶=@bpjzx2=17
-      - LAX-Aiyun-dip@univstar_1
-      - 🇭🇰 tg+univstar_香港HKT_1
-      - dafeivpn.com5元专线机场
-      - 🇬🇧 英国()
-      - 🇺🇲 |GLaDOS-GEOIP-US-01
-      - h207532.waihuizhibiaowang.com:11543
-      - 🇰🇷 韩国01|v2直连|x2
-      - 🇨🇳 |台湾FlatWhite
-      - 🇭🇰 |香港-核心访问HKT
-      - 🇯🇵 JP6:@nodpai
-      - 🇨🇳 台湾=@bpjzx2=16
-      - 🇭🇰 香港EDCL-dip
-      - 大萝卜鸡
-      - 🇺🇲 西雅图=@bpjzx2=21
-      - 🇨🇳 CN1
-      - 🇺🇲 美国() 2
-      - 🇺🇲 US14:@nodpai
-      - LAX-DediPath 4
-      - 🇰🇷 KR3:@airproxies
-      - 🇨🇳 大萝卜鸡台湾 2
-      - 🇭🇰 香港HKBN-dip 3
-      - 新竹Seednet-dip@univstar_1
-      - 🇸🇬 |[V2]+新加坡+02
-      - 🇸🇬 新加坡()
-      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - "|GLaDOS-N2-02"
+      - LAX-Aiyun-dip@univstar_3
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇭🇰 |4xKCD🇭🇰HongKong[NF][D+]
+      - 🇨🇳 |GLaDOS-GEOIP-TW-03
+      - 🇰🇷 |中国-韩国IPLCD10Netflix
+      - 🇺🇲 |0.3xAY🇺🇸AmericaSanJose1[NF][D+]
+      - 🇭🇰 |GLaDOS-GEOIP-HK-01
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
+      - Santa+Clara-DigitalOcean@univstar_3
+      - 🇬🇧 [BGP-GSLB]英国•0.8x
+      - 🇺🇲 |GLaDOS-GEOIP-US-02
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix
+      - 🇯🇵 日本02|grpc直连|x2
+      - 🇸🇬 |新加坡高级IEPL中继D02Netflix
+      - 🇺🇲 美国US|
+      - 新竹Seednet-dip@univstar_3
+      - 🇬🇧 |中国-英国伦敦电信IEPLD4
+      - 🇨🇳 大萝卜鸡台湾
+      - "|GLaDOS-T1-Netflix"
+      - 🇺🇲 |2xBWG🇺🇸AmericaLosAngelesCN2GT2
+      - 距离下次重置剩余：9天
+      - 🇦🇺 |中国-澳大利亚IPLC悉尼D05
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD10
+      - 🇰🇷 |韩国전라북도전주시商宽D05
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-22
+      - 🇰🇷 |中国-韩国IPLCD01Netflix
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D71000Mbps
+      - 🇨🇳 |中国-台湾宜兰IPLCD06
       - 🇭🇰 [BGP-GSLB]香港•HGC
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - 🇭🇰 香港HKT-dip 11
-      - 🇸🇬 |🇸🇬新加坡01|直连
+      - 🇸🇬 |新加坡|06|奈飞DO
+      - 🇩🇪 |德国H5
+      - 🇯🇵 大萝卜鸡日本
+      - 🇬🇧 |GLaDOS-GEOIP-UK-02
+      - 🇺🇲 |美国实验性IEPL中继D02
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-1
+      - 🇨🇳 大萝卜鸡台湾 2
+      - 🇰🇷 KR4:@airproxies
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03
+      - 🇰🇷 |韩国전라북도전주시商宽D06
+      - 🇭🇰 |[V2]+香港+01
+      - 🇨🇳 |台湾FlatWhite
+      - 🇺🇲 |美国高级IEPL中继D01
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-3
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D011GbpsHBOTVB
+      - h961359.strongpipe.live:11545
+      - 🇭🇰 |GLaDOS-GEOIP-HK-02
+      - Tokyo-M247@univstar_3
+      - 🇦🇷 |0.8x[Direct]Oracle🇨🇦CanadaTorontoARM2[NF][D+]
+      - 🇸🇬 新加坡-测试-ii|1G|80端口
+      - 🇨🇦 |0.5xOracle🇨🇦CanadaToronto2[NF][D+]2
+      - 🇺🇲 |GLaDOS-GEOIP-US-01
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇺🇲 US5
+      - 🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2
+      - 🇭🇰 HK26:@airproxies
       - 🇯🇵 JP1
-      - 🇸🇬 中转🇸🇬SG1:@nodpai
-      - 🇭🇰 |[V2]+香港+04
-      - 🇭🇰 |🇭🇰香港A
+      - 🇸🇬 |GLaDOS-GEOIP-SG-02
+      - 🇭🇰 |5xGC🇭🇰HongKong2[NF]2
+      - 🇸🇬 Singapore-M247@univstar_4
+      - 🇬🇧 |GLaDOS-GEOIP-UK-01
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 群组:xxmym
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D04
+      - 🇯🇵 |Oracle🇯🇵JapanTokyo[NF]
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D061GbpsHBOTVB
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]
+      - 🇭🇰 香港C|
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D101GbpsHBOTVB
+      - 🇯🇵 |GLaDOS-GEOIP-JP-02
+      - "|GLaDOS-N2-03"
+      - 🇨🇳 |台湾|01奈飞三网优化
+      - 🇸🇬 新加坡测试-iii|1G|80端口
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
+      - 🇬🇧 |GLaDOS-GEOIP-UK-03
+      - 稳定高速可购买付费节点↓
+      - 🇨🇳 中国()
+      - 🇺🇲 |0.2xET🇺🇸AmericaLosAngeles[NF][D+]
+      - 🇺🇲 |2xCP🇺🇸AmericaLosAngeles4837[NF][D+]2
+      - 🇺🇲 美国-测试|1G|80端口
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong4-12
+      - 🇭🇰 |香港|17AZ电信优化
+      - 🇸🇬 |新加坡MagicIEPL中继D02Netflix
+      - 🇨🇳 |中国-台湾IEPLHinet固接D07
+      - 🇭🇰 |2xCMI🇭🇰HongKong8[NF][D+]
+      - 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===
+      - DJB
+      - 🇰🇷 |韩国|01|AZ中转
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D61000Mbps
+      - 🇨🇳 TW3:@airproxies
+      - 🇭🇰 香港bgp|
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul2
+      - 🇨🇳 |中国-台湾宜兰IPLCD07
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D51000Mbps
+      - 🇰🇷 |韩国전라북도전주시商宽D04
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D091GbpsHBOTVB
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-32
+      - 🇨🇳 中国_1020680
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D02
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD01
+      - 🇸🇬 |新加坡|03|奈飞OC电信优化3
+      - 🇺🇲 |[V3]+美国+IEPL+3x
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD06
+      - 🇷🇺 |俄罗斯01
+      - 🇯🇵 |日本|02|奈飞LIN三网优化2
+      - LAX-Krypt@univstar_5
+      - 🇺🇲 |美国|05|DO
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |3xNR🇭🇰HongKong2[NF][D+]
+      - 🇬🇧 |中国-英国伦敦电信IEPLD6
+      - 🇭🇰 香港HGC-dip@univstar_4
+      - San+Jose-Krypt@univstar_2
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D121000Mbps
+      - 🇰🇷 |中国-韩国IPLCD05Netflix
+      - 🇨🇳 中国() 2
+      - 🇰🇷 |韩国전라북도전주시商宽D11
+      - Tokyo-M247@univstar_9
+      - 🇬🇧 |中国-英国伦敦电信IEPLD3
+      - 🇭🇰 香港_1020380
+      - 🇺🇲 |[V2]+美国+04
+      - 🇺🇲 |RN🇺🇸AmericaLosAngeles3[NF][D+]2
+      - Santa+Clara-DigitalOcean@univstar_2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D111GbpsHBOTVB
+      - 🇺🇲 |0.8xOracle🇺🇸AmericaSanJose12
+      - 🇷🇺 |俄罗斯03
+      - 🇭🇰 HK14
+      - 🇨🇳 中国() 3
+      - 🇺🇲 |美国Moccha
+      - 🇮🇪 |中国-爱尔兰IPLCD01
+      - San+Jose-Krypt@univstar_4
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D051GbpsHBOTVB
+      - 🇸🇬 |[V2]+新加坡+01
+      - 🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2
+      - 🇺🇲 |0.2xBV🇺🇸AmericaLasVegas[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]
+      - 🇺🇲 |美国Americano
+      - 🇨🇳 大萝卜鸡台湾 3
+      - "|GLaDOS-T3-Netflix"
+      - 🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2
+      - 🇺🇲 |0.1xGC🇺🇸AmericaKansas[NF][D+]2
+      - 🇸🇬 |新加坡|04|奈飞DO
+      - 🇨🇳 |中国-台湾IEPLHinet固接D06
+      - LAX-Aiyun-dip@univstar_5
+      - "|0.5xBV🇱🇺Luxembourg"
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul
+      - 🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2
+      - 🇸🇬 |新加坡|08|OC三网优化
+      - 🇺🇲 |AY🇺🇸AmericaSanJose2[NF][D+]
+      - dafeivpn.com5元专线机场
+      - 🇸🇬 |新加坡|02|奈飞DO三网优化
+      - 🇮🇩 [BGP-GSLB]印度尼西亚•0.8x
+      - 🇷🇺 |俄罗斯05
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 |2xDYCMI🇭🇰HongKong3[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D011GbpsHBOTVB
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD06
+      - 🇻🇳 [BGP-GSLB]越南胡志明
+      - GB1
+      - 🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]
+      - 🇫🇷 |中国-法国IPLCD01
+      - 🇭🇰 |3xGG🇭🇰HongKong[D+]2
+      - 🇫🇷 |中国-法国IPLCD02
+      - 🇸🇬 |新加坡|01|LIN三网优化
+      - 🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2
       - 🇭🇰 香港-V|10G|80端口
+      - 🇳🇱 NL1
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong1-2
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-12
+      - 🇭🇰 |0.2x[Tunnel]AZ🇭🇰HongKong2-22
+      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 中国_1020684
+      - 🇺🇲 美国_10201419
+      - 🇰🇷 |韩国전라북도전주시商宽D03
+      - 🇯🇵 |日本|高速|03|LIN
+      - 🇸🇬 |VT🇸🇬Singapore[NF]
+      - 🇸🇬 新加坡_1020128
+      - 这是教程赠送免费节点
+      - 🇭🇰 |香港Ristretto
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 KR5:@nodpai
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇩🇪 |德国H4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 🇺🇲 美国3|
+      - 🇰🇷 |韩国전라북도전주시商宽D12
+      - 🇺🇲 |3xBWG🇺🇸AmericaLosAngelesCN2GIA[NF][D+]
+      - 🇸🇬 新加坡|
+      - 🇭🇰 |0.2x[LoadBalance][Tunnel]AZ🇭🇰HongKong2
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD08
+      - 🇯🇵 |日本|03|LIN三网优化
+      - 🇦🇺 |0.8xOracle🇦🇺AustraliaSydney3[NF][D+]
+      - 🇨🇳 大萝卜鸡台湾 4
+      - 🇨🇳 |GLaDOS-GEOIP-TW-01
+      - 🇬🇧 |0.1xNT🇺🇦UkraineOdessa[D+]
+      - 🇭🇰 香港2
+      - 🇨🇳 台湾2
+      - 🇨🇳 大萝卜鸡台湾 5
+      - 🇸🇬 |新加坡|03|LIN三网优化
+      - "|GLaDOS-T2-Netflix"
+      - 🇰🇷 |韩国전라북도전주시商宽D13
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]
+      - 🇭🇰 HK7
+      - 🇺🇲 |美国实验性IEPL中继D05
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]2
+      - 🇭🇰 香港有线-dip@univstar_2
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03 2
+      - 🇰🇷 |韩国전라북도전주시商宽D09
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D071GbpsHBOTVB
+      - 🇺🇲 [BGP-GSLB]美国1
+      - 🇭🇰 HK3
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D41000Mbps
+      - 🇦🇷 |Oracle🇺🇸AmericaSanJoseARM[NF][D+]2
+      - "|GLaDOS-N2-03 2"
+      - 🇨🇳 |中国-台湾IEPLHinet固接D03
+      - 🇯🇵 |日本|05|LIN
+      - 🇺🇲 |1.3xRN🇺🇸AmericaSanJose2[NF][D+]
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix
+      - 🇭🇰 |2xCMI🇭🇰HongKong7[NF][D+]
+      - ()
+      - 🇭🇰 HK15
+      - "|GLaDOS-N2-05"
+      - 🇨🇳 台湾()
+      - 🇿🇦 ZA3
+      - ✈付费机场推荐✈
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]2
+      - 🇨🇳 中国_1020675
+      - 🇺🇲 US9
+      - 🇷🇺 [BGP-GSLB]俄罗斯•0.1x
+      - "|GLaDOS-N2-00"
+      - CA1:@nodpai
+      - 🇸🇬 新加坡_1020111
+      - "|GLaDOS-N2-07"
+      - 🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D31000Mbps
+      - "|GLaDOS-N2-04"
+      - 🇭🇰 AWS香港02tcp
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD03
+      - 🇮🇳 |中国-印度马哈拉施特拉IPLCD05
+      - 🇯🇵 |日本|01|LIN三网优化
+      - 🇸🇬 |GLaDOS-GEOIP-SG-01
+      - 🇨🇳 |[V2]+台湾+03
+      - 🇯🇵 |日本Cappuccino
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D021GbpsHBOTVB
+      - 🇺🇲 |0.7xCC🇺🇸AmericaLosAngeles吃一口[NF][D+]
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1303,7 +1453,10 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇺🇲 美国西雅图|解锁流媒体
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
       - 🇺🇲 美国洛杉矶-江移|解锁流媒体
   - name: 🎯 全球直连
     type: select
@@ -1350,188 +1503,252 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港HKT-dip
-      - 🇭🇰 HK4
-      - 🇭🇰 |GLaDOS-GEOIP-HK-03
-      - 🇭🇰 香港有线-dip@univstar_5
-      - 🇭🇰 香港=@bpjzx2=2
-      - 🇭🇰 |香港04
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇭🇰 香港=@bpjzx2=10
-      - 🇭🇰 |香港08[1.5]
-      - 🇭🇰 香港=@bpjzx2=9
-      - 🇭🇰 |香港04[1.5]
-      - 🇭🇰 香港HKT-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 香港HKBN-dip
-      - 🇭🇰 香港02|v2直连|x2
-      - 🇭🇰 香港=@bpjzx2=37
-      - 🇭🇰 香港=@bpjzx2=13
-      - 🇭🇰 香港有线-dip@univstar_1
-      - 🇭🇰 香港HKT-dip 3
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇭🇰 香港=@bpjzx2=33
-      - 🇭🇰 香港bgp|
-      - 🇭🇰 香港()
-      - 🇭🇰 AWS香港01tcp
-      - 🇭🇰 |香港06[1.5]
-      - 🇭🇰 香港HKT-dip 4
-      - 🇭🇰 香港HKT
-      - 🇭🇰 香港HGC-dip@univstar_7
-      - 🇭🇰 香港HKT-dip 5
-      - 🇭🇰 tg+univstar_香港HKT-dip_3
-      - 🇭🇰 |香港05[1.5]
-      - 🇭🇰 tg+univstar_香港HKT-dip_4
-      - 🇭🇰 香港=@bpjzx2=3
-      - 🇭🇰 大萝卜鸡香港
-      - 🇭🇰 香港HKT-dip 6
-      - 🇭🇰 香港=@bpjzx2=5
-      - 🇭🇰 HK8
-      - 🇭🇰 香港HKT-dip 7
-      - 🇭🇰 香港EDCL
-      - 🇭🇰 香港HKT 2
-      - 🇭🇰 香港HKT-dip 8
-      - 🇭🇰 香港HGC-dip@univstar_3
-      - 🇭🇰 香港=@bpjzx2=6
-      - 🇭🇰 香港HKBN-dip 2
-      - 🇭🇰 香港HKBN
-      - 🇭🇰 香港HKT-dip 9
-      - 🇭🇰 |香港03
-      - 🇭🇰 香港01|SS直连|x2
-      - 🇭🇰 香港HKT 3
-      - 🇭🇰 香港HKT-dip 10
-      - 🇭🇰 AWS香港02tcp
-      - 🇭🇰 HK3
-      - 🇭🇰 香港=@bpjzx2=28
-      - 🇭🇰 香港() 2
-      - 🇭🇰 香港=@bpjzx2=4
-      - 🇭🇰 |🇭🇰香港03|直连
-      - 🇭🇰 香港=@bpjzx2=14
-      - 🇭🇰 tg+univstar_香港HKT_1
-      - 🇭🇰 |香港-核心访问HKT
-      - 🇭🇰 香港EDCL-dip
-      - 🇭🇰 香港HKBN-dip 3
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇭🇰 |GLaDOS-GEOIP-HK-01
       - 🇭🇰 [BGP-GSLB]香港•HGC
-      - 🇭🇰 香港HKT-dip 11
-      - 🇭🇰 |[V2]+香港+04
-      - 🇭🇰 |🇭🇰香港A
+      - 🇭🇰 |[V2]+香港+01
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D011GbpsHBOTVB
+      - 🇭🇰 |GLaDOS-GEOIP-HK-02
+      - 🇭🇰 HK26:@airproxies
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D04
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D061GbpsHBOTVB
+      - 🇭🇰 香港C|
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D101GbpsHBOTVB
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
+      - 🇭🇰 |香港|17AZ电信优化
+      - 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===
+      - 🇭🇰 香港bgp|
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D091GbpsHBOTVB
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]
+      - 🇭🇰 |香港油尖旺御金·国峯網上行寬頻D02
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 香港HGC-dip@univstar_4
+      - 🇭🇰 香港_1020380
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D111GbpsHBOTVB
+      - 🇭🇰 HK14
+      - 🇭🇰 |中国-香港IEPLEquinixHK2D051GbpsHBOTVB
+      - 🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D011GbpsHBOTVB
+      - 🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]
       - 🇭🇰 香港-V|10G|80端口
+      - 🇭🇰 |香港Ristretto
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇭🇰 香港2
+      - 🇭🇰 HK7
+      - 🇭🇰 香港有线-dip@univstar_2
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D071GbpsHBOTVB
+      - 🇭🇰 HK3
+      - 🇭🇰 HK15
+      - 🇭🇰 AWS香港02tcp
+      - 🇭🇰 |中国-香港IPLCEquinixHK2D021GbpsHBOTVB
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP1:@airproxies
-      - 🇯🇵 |日本Cappuccino
-      - 🇯🇵 日本=@bpjzx2=41
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD03
+      - 🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]
+      - 🇯🇵 日本02|grpc直连|x2
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD10
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-22
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D71000Mbps
       - 🇯🇵 大萝卜鸡日本
-      - 🇯🇵 日本()
-      - 🇯🇵 |🇯🇵日本D
-      - 🇯🇵 |日本05[1.5]
-      - 🇯🇵 |[V2]+日本+01
-      - 🇯🇵 |日本01[1.5]
-      - 🇯🇵 JP3:@airproxies
-      - 🇯🇵 日本=@bpjzx2=35
-      - 🇯🇵 日本() 2
-      - 🇯🇵 JP6:@nodpai
       - 🇯🇵 JP1
+      - 🇯🇵 |Oracle🇯🇵JapanTokyo[NF]
+      - 🇯🇵 |GLaDOS-GEOIP-JP-02
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D61000Mbps
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D51000Mbps
+      - 🇯🇵 |日本|02|奈飞LIN三网优化2
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D121000Mbps
+      - 🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2
+      - 🇯🇵 |日本まつやましauひかりホーム1ギガD06
+      - 🇯🇵 |0.2x[Tunnel]AZ🇯🇵JapanTokyo1-12
+      - 🇯🇵 |日本|高速|03|LIN
+      - 🇯🇵 |日本|03|LIN三网优化
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D41000Mbps
+      - 🇯🇵 |日本|05|LIN
+      - 🇯🇵 |中国-日本多协议标签交换虚拟专用网D31000Mbps
+      - 🇯🇵 |日本|01|LIN三网优化
+      - 🇯🇵 |日本Cappuccino
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 美国()
-      - 🇺🇲 |🇺🇸美国A
-      - 🇺🇲 美国西雅图|解锁流媒体
-      - 🇺🇲 |美国03[1.5]
-      - 🇺🇲 US1
-      - 🇺🇲 洛杉矶=@bpjzx2=34
-      - 🇺🇲 |GLaDOS-GEOIP-US-03
-      - 🇺🇲 美国2|
-      - 🇺🇲 洛杉矶=@bpjzx2=22
-      - 🇺🇲 US2
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇺🇲 |美国01
-      - 🇺🇲 |GLaDOS-GEOIP-US-02
-      - 🇺🇲 |美国02
-      - 🇺🇲 |美国Americano
-      - 🇺🇲 圣克拉拉=@bpjzx2=11
       - 🇺🇲 大萝卜鸡美国
-      - 🇺🇲 |美国Moccha
-      - 🇺🇲 |美国03
-      - 🇺🇲 洛杉矶=@bpjzx2=17
+      - 🇺🇲 |GLaDOS-GEOIP-US-02
+      - 🇺🇲 美国US|
+      - 🇺🇲 |美国实验性IEPL中继D02
+      - 🇺🇲 |美国高级IEPL中继D01
       - 🇺🇲 |GLaDOS-GEOIP-US-01
-      - 🇺🇲 西雅图=@bpjzx2=21
-      - 🇺🇲 美国() 2
-      - 🇺🇲 US14:@nodpai
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇺🇲 US5
+      - 🇺🇲 美国-测试|1G|80端口
+      - 🇺🇲 |[V3]+美国+IEPL+3x
+      - 🇺🇲 |美国|05|DO
+      - 🇺🇲 |[V2]+美国+04
+      - 🇺🇲 |美国Moccha
+      - 🇺🇲 |美国Americano
+      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇺🇲 美国_10201419
+      - 🇺🇲 美国3|
+      - 🇺🇲 |美国实验性IEPL中继D05
+      - 🇺🇲 [BGP-GSLB]美国1
+      - 🇺🇲 US9
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 |台湾02[1.5]
-      - 🇨🇳 台湾=@bpjzx2=21
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇨🇳 |台湾01
-      - 🇨🇳 |台湾04
-      - 🇨🇳 台湾=@bpjzx2=4
-      - 🇨🇳 |台湾05[1.5]
-      - 🇨🇳 台湾=@bpjzx2=38
+      - 🇨🇳 |GLaDOS-GEOIP-TW-03
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
       - 🇨🇳 大萝卜鸡台湾
-      - 🇨🇳 |台湾04[1.5]
-      - 🇨🇳 |台湾01[1.5]
-      - 🇨🇳 |台湾-边缘访问BGP
-      - 🇨🇳 |台湾FlatWhite
-      - 🇨🇳 台湾=@bpjzx2=16
+      - 🇨🇳 |中国-台湾宜兰IPLCD06
       - 🇨🇳 大萝卜鸡台湾 2
+      - 🇨🇳 |台湾FlatWhite
+      - 🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2
+      - 🇨🇳 |台湾|01奈飞三网优化
+      - 🇨🇳 |中国-台湾IEPLHinet固接D07
+      - 🇭🇰 |===HongKong/Macao/TaiwanProxies港澳台节点===
+      - 🇨🇳 TW3:@airproxies
+      - 🇨🇳 |中国-台湾宜兰IPLCD07
+      - 🇨🇳 大萝卜鸡台湾 3
+      - 🇨🇳 |中国-台湾IEPLHinet固接D06
+      - 🇨🇳 大萝卜鸡台湾 4
+      - 🇨🇳 |GLaDOS-GEOIP-TW-01
+      - 🇨🇳 台湾2
+      - 🇨🇳 大萝卜鸡台湾 5
+      - 🇨🇳 |中国-台湾IEPLHinet固接D03
+      - 🇨🇳 台湾()
+      - 🇨🇳 |[V2]+台湾+03
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 Singapore-M247@univstar_6
-      - 🇸🇬 |[V2]+新加坡+01
-      - 🇸🇬 新加坡-测试-ii|1G|80端口
-      - 🇸🇬 新加坡=@bpjzx2=38
-      - 🇸🇬 SG-FDCservers-dip
-      - 🇸🇬 Singapore-M247@univstar_2
-      - 🇸🇬 新加坡=@bpjzx2=7
-      - 🇸🇬 新加坡=@bpjzx2=3
-      - 🇸🇬 大萝卜鸡新加坡
-      - 🇸🇬 大萝卜鸡新加坡 2
-      - 🇸🇬 新加坡=@bpjzx2=37
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix
+      - 🇸🇬 |新加坡高级IEPL中继D02Netflix
+      - 🇸🇬 |新加坡|06|奈飞DO
       - 🇸🇬 |GLaDOS-GEOIP-SG-03
-      - 🇸🇬 Singapore-M247@univstar_5
+      - 🇸🇬 新加坡-测试-ii|1G|80端口
       - 🇸🇬 |GLaDOS-GEOIP-SG-02
-      - 🇸🇬 |🇸🇬新加坡A
+      - 🇸🇬 Singapore-M247@univstar_4
+      - 🇸🇬 新加坡测试-iii|1G|80端口
+      - 🇸🇬 |新加坡MagicIEPL中继D02Netflix
+      - 🇸🇬 |新加坡|03|奈飞OC电信优化3
+      - 🇸🇬 |[V2]+新加坡+01
+      - 🇸🇬 |新加坡|04|奈飞DO
+      - 🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2
+      - 🇸🇬 |新加坡|08|OC三网优化
+      - 🇸🇬 |新加坡|02|奈飞DO三网优化
+      - 🇸🇬 |新加坡|01|LIN三网优化
+      - 🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇸🇬 |VT🇸🇬Singapore[NF]
+      - 🇸🇬 新加坡_1020128
       - 🇸🇬 新加坡|1000M|80端口
-      - 🇸🇬 |[V2]+新加坡+02
-      - 🇸🇬 新加坡()
-      - 🇸🇬 |🇸🇬新加坡01|直连
-      - 🇸🇬 中转🇸🇬SG1:@nodpai
+      - 🇸🇬 新加坡|
+      - 🇸🇬 |新加坡|03|LIN三网优化
+      - 🇸🇬 |GLaDOS-GEOIP-SG-03 2
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix
+      - 🇸🇬 新加坡_1020111
+      - 🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]
+      - 🇸🇬 |GLaDOS-GEOIP-SG-01
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 大萝卜鸡韩国
-      - 🇰🇷 |韩国01
-      - 🇰🇷 |韩国03
+      - 🇰🇷 |中国-韩国IPLCD10Netflix
+      - 🇰🇷 |韩国전라북도전주시商宽D05
+      - 🇰🇷 |中国-韩国IPLCD01Netflix
       - 🇰🇷 KR4:@airproxies
-      - 🇰🇷 韩国01|v2直连|x2
-      - 🇰🇷 KR3:@airproxies
+      - 🇰🇷 |韩国전라북도전주시商宽D06
+      - 🇰🇷 |韩国|01|AZ中转
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul2
+      - 🇰🇷 |韩国전라북도전주시商宽D04
+      - 🇰🇷 |中国-韩国IPLCD05Netflix
+      - 🇰🇷 |韩国전라북도전주시商宽D11
+      - 🇰🇷 |0.5xSC🇰🇷KoreaSeoul
+      - 🇰🇷 |韩国전라북도전주시商宽D03
+      - 🇰🇷 KR5:@nodpai
+      - 🇰🇷 |韩国전라북도전주시商宽D12
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇰🇷 |韩国전라북도전주시商宽D13
+      - 🇰🇷 |韩国전라북도전주시商宽D09
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇺🇲 美国西雅图|解锁流媒体
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇯🇵 |0.7xGC🇯🇵JapanTokyo1[NF][D+]
+      - 🇭🇰 |4xKCD🇭🇰HongKong[NF][D+]
+      - 🇰🇷 |中国-韩国IPLCD10Netflix
+      - 🇺🇲 |0.3xAY🇺🇸AmericaSanJose1[NF][D+]
+      - 🇨🇳 台湾Hinet-1号线路|解锁流媒体
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D04Netflix
+      - 🇸🇬 |新加坡高级IEPL中继D02Netflix
       - "|GLaDOS-T1-Netflix"
+      - 🇰🇷 |中国-韩国IPLCD01Netflix
+      - 🇸🇬 |新加坡|06|奈飞DO
+      - 🇦🇷 |0.8x[Direct]Oracle🇨🇦CanadaTorontoARM2[NF][D+]
+      - 🇨🇦 |0.5xOracle🇨🇦CanadaToronto2[NF][D+]2
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇨🇳 |2xSC🇹🇼Taiwan[NF][D+]2
+      - 🇭🇰 |5xGC🇭🇰HongKong2[NF]2
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁02
+      - 🇯🇵 |Oracle🇯🇵JapanTokyo[NF]
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]
+      - 🇨🇳 |台湾|01奈飞三网优化
+      - 🇭🇰 |沪港IEPL专线港区TVB/HBO/Netflix解锁04
+      - 🇺🇲 |0.2xET🇺🇸AmericaLosAngeles[NF][D+]
+      - 🇺🇲 |2xCP🇺🇸AmericaLosAngeles4837[NF][D+]2
+      - 🇸🇬 |新加坡MagicIEPL中继D02Netflix
+      - 🇭🇰 |2xCMI🇭🇰HongKong8[NF][D+]
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong1[NF][D+]
+      - 🇸🇬 |新加坡|03|奈飞OC电信优化3
+      - 🇯🇵 |日本|02|奈飞LIN三网优化2
+      - 🇭🇰 |0.5xHEHKIX🇭🇰HongKong2[NF][D+]2
+      - 🇭🇰 |3xNR🇭🇰HongKong2[NF][D+]
+      - 🇰🇷 |中国-韩国IPLCD05Netflix
+      - 🇺🇲 |RN🇺🇸AmericaLosAngeles3[NF][D+]2
+      - 🇯🇵 |1.5xKCD🇯🇵JapanTokyo[NF][D+]2
+      - 🇺🇲 |0.2xBV🇺🇸AmericaLasVegas[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]
+      - "|GLaDOS-T3-Netflix"
+      - 🇭🇰 |0.2xHEHKIX🇭🇰HongKong4[NF][D+]2
+      - 🇺🇲 |0.1xGC🇺🇸AmericaKansas[NF][D+]2
+      - 🇸🇬 |新加坡|04|奈飞DO
+      - 🇸🇬 |0.8xGC🇸🇬Singapore[NF][D+]2
+      - 🇺🇲 |AY🇺🇸AmericaSanJose2[NF][D+]
+      - 🇸🇬 |新加坡|02|奈飞DO三网优化
+      - 🇭🇰 |2xDYCMI🇭🇰HongKong3[NF][D+]2
+      - 🇦🇷 |0.8xOracle🇨🇦CanadaTorontoARM1[NF][D+]2
+      - 🇭🇰 |0.5xHKT🇭🇰HongKong1[NF][D+]
+      - 🇸🇬 |0.5xOracle🇸🇬Singapore2[NF][D+]2
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D03Netflix
+      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
+      - 🇸🇬 |VT🇸🇬Singapore[NF]
+      - 🇺🇲 |3xBWG🇺🇸AmericaLosAngelesCN2GIA[NF][D+]
+      - 🇦🇺 |0.8xOracle🇦🇺AustraliaSydney3[NF][D+]
+      - "|GLaDOS-T2-Netflix"
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]2
+      - 🇭🇰 |2xCMI🇭🇰HongKong2[NF][D+]2
+      - 🇦🇷 |Oracle🇺🇸AmericaSanJoseARM[NF][D+]2
+      - 🇺🇲 |1.3xRN🇺🇸AmericaSanJose2[NF][D+]
+      - 🇸🇬 |新加坡LegacyMagicIEPL中继D01Netflix
+      - 🇭🇰 |2xCMI🇭🇰HongKong7[NF][D+]
+      - 🇺🇲 |66🇺🇸AmericaLosAngelesCUVIP[NF][D+]2
+      - 🇸🇬 |0.5x[Direct]Oracle🇸🇬Singapore1[NF][D+]
+      - 🇺🇲 |1.2xHMB🇺🇸AmericaLosAngelesCN2GIA1[NF][D+]
+      - 🇺🇲 |0.7xCC🇺🇸AmericaLosAngeles吃一口[NF][D+]
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
