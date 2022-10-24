@@ -5,204 +5,219 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: Fremont-Nato, server: 134.195.101.32, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 134.195.101.32, skip-cert-verify: false}
-  - {name: 群组:xxmym, server: hk-i.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: London-AWS, server: 116.129.253.191, port: 3386, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇰🇷 |韩国01|v2直连|x2, server: kr1.bfyun.top, port: 10021, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: kr1.bfyun.top}}}
-  - {name: 🇭🇰 HK6, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false}
-  - {name: Tokyo-M247_2, server: 106.75.154.24, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.154.24, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL_3, server: 120.241.144.204, port: 3384, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HGC-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hkhgc, headers: {Host: www.189.cn}}}
-  - {name: 🇸🇬 Singapore-Melbikom, server: 5.44.249.45, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.45, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本03|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 🇭🇰 香港(), server: 20.189.112.217, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.189.112.217}}}
-  - {name: LAX-Melbicom, server: 116.129.253.134, port: 3381, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: 🇨🇳 台中Hinet, server: 116.129.253.191, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇨🇳 中国(), server: s4.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_15, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇫🇷 FR【付费推荐：https//goo.gs/vip】, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us2, headers: {Host: ushksw888x.vzwzasc.cn}}}
-  - {name: 🇮🇳 |印度, server: 20.205.57.174, port: 48005, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.57.174}}}
-  - {name: 距离下次重置剩余：21天, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇨🇳 中国江苏|100M|非80端口|停机卡, server: xz-cm1.cloudiplc.com, port: 20999, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: Tokyo-Linode_11, server: 116.129.254.29, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.254.29, skip-cert-verify: false}
-  - {name: 🇩🇪 |DE德国001, server: de.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: de.liangyuandian.top, skip-cert-verify: false}
-  - {name: 🇨🇦 CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港BGP02, server: hk.relay.112w.foxinode.com, port: 10112, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: 🇺🇲 美国(), server: 165.22.4.188, port: 10003, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, skip-cert-verify: false}
-  - {name: 距离下次重置剩余：7天, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hkhgc, headers: {Host: www.189.cn}}}
-  - {name: 🇭🇰 香港_1022065, server: fullaccesstohongkongnet.azurewebsites.net, port: 443, type: vmess, uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: fullaccesstohongkongnet.azurewebsites.net}}}
-  - {name: 🇨🇳 台北Hinet_4, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.227, skip-cert-verify: false}
-  - {name: 🇭🇰 HK7, server: c551397.gc.gladns.com, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国02, server: us02.internetsmartrouting.asia, port: 22580, type: vmess, uuid: 86155150-d86d-42e2-af55-986e3d72323a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, headers: {Host: apple.com}}}
-  - {name: 🇯🇵 |日本06|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 🇨🇳 |台湾01, server: gz-hk.iepl.0000.foxinode.com, port: 10401, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: univstar~Islamabad-COMSATS-dip, server: 116.129.254.184, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台北Hinet, server: 60.249.3.228, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.228, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL, server: 116.129.253.134, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: 🇺🇲 美国US|, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
-  - {name: 🇭🇰 |香港04, server: 16.162.55.130, port: 44300, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 16.162.55.130}}}
-  - {name: 🇭🇰 香港EDCL_1, server: 116.129.253.134, port: 3384, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: h745768.waihuizhibiaowang.com:11343, server: h745768.waihuizhibiaowang.com, port: 11343, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 HK459VMS, server: 156.240.114.45, port: 57005, type: vmess, uuid: 816ed784-6323-4981-ba21-85f7766091c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: 🇺🇲 美国西雅图-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}}
-  - {name: 🇭🇰 香港-2|1G|80端口, server: hk-2-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: LAX-Melbicom 2, server: 116.129.253.134, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA10, server: 156.240.117.24, port: 38521, type: vmess, uuid: 374c191b-2265-43e2-be5b-ee823d55efb5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: London-AWS 2, server: 116.129.254.29, port: 3386, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.29, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbikom 2, server: 5.44.249.53, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.53, skip-cert-verify: false}
-  - {name: h650196.waihuizhibiaowang.com:11743, server: h650196.waihuizhibiaowang.com, port: 11743, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 US8, server: 154.85.62.219, port: 64901, type: vmess, uuid: b01cad59-e722-4455-9745-a1ca08db07b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇲 US9, server: jd100.8faka.tk, port: 35100, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, skip-cert-verify: false}
-  - {name: 🇨🇳 台北Hinet_7, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.230, skip-cert-verify: false}
-  - {name: 🇭🇰 HK15, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, sni: if22a.ft3.us, skip-cert-verify: false}
-  - {name: 🇻🇳 |越南01, server: gz-hk.iepl.0000.foxinode.com, port: 10881, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: Fremont-Nato 2, server: 116.129.253.191, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_1022529, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇦🇺 澳大利亚(), server: dtin1.bitznet.one, port: 33017, type: trojan, password: 22ffc763-7081-4497-bd1f-d6e573c536a4, sni: dtin1.bitznet.one, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国D, server: 45.33.109.181, port: 10003, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g16.xingbayun.buzz, skip-cert-verify: false}
-  - {name: 🇮🇳 |印度01|v2直连|x2, server: ln1.bfyun.top, port: 10025, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv11/hd.m3u8, headers: {Host: ln1.bfyun.top}}}
-  - {name: 🇸🇬 |新加坡01|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp1, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: univstar~Riyadh-Kaopu-dip, server: 116.129.254.184, port: 11910, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: -伊朗-5.161.131.122, server: 5.161.131.122, port: 45113, type: vmess, uuid: 157fffd5-5db2-4dbc-d55b-c350bc64bc16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇲 美国洛杉矶-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}}
-  - {name: 🇭🇰 HK14, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, sni: if22a.ft3.us, skip-cert-verify: false}
-  - {name: 🇸🇬 SGP🇸🇬, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}}
-  - {name: 🇨🇳 台北Hinet 2, server: 60.249.3.125, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.125, skip-cert-verify: false}
-  - {name: 🇺🇲 US1, server: 154.85.56.140, port: 22347, type: vmess, uuid: 9da624b8-9f9f-480a-a9e9-2e376ac8c49d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇯🇵 |日本05|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 🇨🇳 中国() 2, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 |JP日本003, server: jp.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: jp.liangyuandian.top, skip-cert-verify: false}
-  - {name: 🇩🇪 |德国01, server: germany01.internetsmartrouting.asia, port: 23685, type: vmess, uuid: 86155150-d86d-42e2-af55-986e3d72323a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, headers: {Host: apple.com}}}
-  - {name: 🇭🇰 |香港02, server: hk02.internetsmartrouting.asia, port: 25241, type: vmess, uuid: 86155150-d86d-42e2-af55-986e3d72323a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, headers: {Host: apple.com}}}
-  - {name: 🇫🇷 FR10TJN, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbikom 3, server: 5.44.249.51, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.51, skip-cert-verify: false}
-  - {name: 🇸🇬 |SG新加坡002, server: sg.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: sg.liangyuandian.top, skip-cert-verify: false}
-  - {name: 🇺🇲 |USAY美国亚特兰大001, server: usay.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usay.liangyuandian.top, skip-cert-verify: false}
-  - {name: h207532.waihuizhibiaowang.com:11443, server: h207532.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-II|10G|80端口, server: hk-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇨🇳 中国_tg+univstar_9, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇲 美国A|, server: 142.0.130.139, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/270132212224, headers: {Host: www.61617561.xyz}}}
-  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇨🇳 台中hinet_1, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 211.72.35.152, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港02|v2直连|x2, server: hk2.bfyun.top, port: 10021, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv10/hd.m3u8, headers: {Host: hk2.bfyun.top}}}
-  - {name: 🇦🇺 AU澳大利亚002, server: ap.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇨🇳 台北Hinet_13, server: 60.249.3.228, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.228, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
-  - {name: 🇨🇳 台北Hinet 3, server: 60.249.3.229, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.229, skip-cert-verify: false}
-  - {name: Tokyo-Linode, server: 116.129.253.134, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbikom 4, server: 5.44.249.43, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.43, skip-cert-verify: false}
-  - {name: 🇰🇷 |韩国02|IP均衡优化|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33331, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-kr2, headers: {Host: baidu.com}}}
-  - {name: 🇯🇵 |日本02, server: gz-hk.iepl.0000.foxinode.com, port: 10202, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: 🇨🇳 台中Hinet 2, server: 120.241.144.71, port: 3383, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.71, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_1022016, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本07|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 全球直连④, server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本01, server: 20.205.57.174, port: 48002, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.57.174}}}
-  - {name: 巴基斯坦001, server: fn600mlines021.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0ac84efef442, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines021.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇯🇵 JP日本002, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇭🇰 香港|, server: free.big234.com, port: 8866, type: trojan, password: c8387c14-3f48-4267-9499-73ef363471f9, sni: free.big234.com, skip-cert-verify: false}
-  - {name: 🇭🇰 HK_45.11.104.94_102227c4-151, server: 45.11.104.94, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: false}
-  - {name: 🇨🇳 台北Hinet_2, server: 60.249.3.125, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.125, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA11, server: 156.240.114.20, port: 38709, type: vmess, uuid: 37ed43e7-b54b-457e-9b7a-b00fb96e7f45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇯🇵 |日本02|grpc直连|x2, server: jp2.bfyun.top, port: 10024, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: jp2.bfyun.top, grpc-opts: {grpc-service-name: jp2.bfyun.top}}
-  - {name: 🇨🇳 中国_tg+univstar_12, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本(), server: 20.78.19.142, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.78.19.142}}}
-  - {name: 🇩🇪 DE德国002, server: de.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA1, server: 156.240.118.228, port: 61942, type: vmess, uuid: c7b15b4e-ba59-40c5-b2f4-c962bc60d1ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇨🇳 中国() 3, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: "%7B%22Host%22:%22www.189.cn%22%7D"}}}
-  - {name: 🇨🇳 台北Hinet_12, server: 60.249.3.227, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.227, skip-cert-verify: false}
-  - {name: 稳定高速可购买付费节点↓, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-V|10G|80端口, server: hk-v.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇨🇳 台北Hinet 4, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.228, skip-cert-verify: false}
-  - {name: 🇭🇰 香港ssr|, server: n92.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 426137:LQMF86, obfs-param: download.windowsupdate.com}
-  - {name: 🇿🇦 南非(), server: 102.37.157.62, port: 8443, type: vmess, uuid: d6783caf-ac05-4b79-9b6a-d2db93d44b43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 102.37.157.62}}}
-  - {name: 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp2, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp4, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: Fremont-Nato_1, server: 116.129.253.191, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL 2, server: 120.241.144.204, port: 3384, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
-  - {name: Tokyo-Linode_7, server: 106.75.173.173, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.173.173, skip-cert-verify: false}
-  - {name: Fremont-Nato 3, server: 134.195.101.32, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 134.195.101.32, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbicom_8, server: 116.129.253.191, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡A, server: 139.162.36.203, port: 10002, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g09.xingbayun.buzz, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
-  - {name: 🇺🇲 US4, server: 154.85.61.100, port: 22863, type: vmess, uuid: 4a09b3b9-09a8-432b-9c97-5b8c74df1cdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇯🇵 |日本05|IP均衡优化|混合负载|600Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
-  - {name: 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享 2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp4, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: Fremont-Nato_3, server: 120.241.144.204, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
-  - {name: 🇭🇰 HK2, server: zz3.8faka.tk, port: 35113, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, skip-cert-verify: false}
-  - {name: Fremont-Nato 4, server: 116.129.253.191, port: 3381, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA5, server: 156.240.112.58, port: 20870, type: vmess, uuid: 29c2062c-484f-44ea-a90f-1c7491ab62fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇸🇬 Singapore-Melbikom 5, server: 5.44.249.53, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.53, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL 3, server: 116.129.253.191, port: 3384, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇩🇪 |德国A, server: 139.144.183.244, port: 10030, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g18.xingbayun.buzz, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbicom, server: 120.241.144.71, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.71, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbicom 2, server: 5.44.249.157, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.157, skip-cert-verify: false}
-  - {name: LAX-Melbicom_1, server: 116.129.253.134, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: 🇨🇳 台中hinet, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 211.72.35.152, skip-cert-verify: false}
-  - {name: 🇨🇳 CN447VMS, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: London-AWS_5, server: 116.129.253.191, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: univstar~Islamabad-COMSATS-dip_2, server: 111.45.22.136, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本01|grpc直连|x2, server: jp1.bfyun.top, port: 10024, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: jp1.bfyun.top, grpc-opts: {grpc-service-name: jp1.bfyun.top}}
-  - {name: 🇨🇳 中国_tg+univstar_15 2, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡, server: 20.205.57.174, port: 48001, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.57.174}}}
-  - {name: 🇿🇦 ZA4, server: 156.240.120.190, port: 59024, type: vmess, uuid: c2f0a14d-ae16-4631-b6f7-dd580d8737d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇨🇳 中国() 4, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国01, server: gz-hk.iepl.0000.foxinode.com, port: 10301, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: 🇺🇲 |USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA7, server: 156.240.119.158, port: 33921, type: vmess, uuid: a292ec16-a675-4015-9e3d-a7589fd1f552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇸🇬 Singapore-Melbikom_9, server: 5.44.249.53, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.53, skip-cert-verify: false}
-  - {name: 🇸🇬 订阅永久更新, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: 🇨🇳 中国_1022538, server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港EDCL 4, server: 116.129.253.191, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33331, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-kr4, headers: {Host: baidu.com}}}
-  - {name: 🇺🇲 US10, server: jp1.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, sni: jp1.sanfen001.pics, skip-cert-verify: false}
-  - {name: 🇭🇰 HK2 2, server: 165.154.243.161, port: 443, type: vmess, uuid: f338a59d-9c5c-4e83-a2d0-7a378884c969, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本31|原生家宽, server: gz-hk.iepl.0000.foxinode.com, port: 10231, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: 🇸🇬 Singapore-Melbicom 3, server: 5.44.249.157, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.157, skip-cert-verify: false}
-  - {name: 🇨🇭 瑞士(), server: 20.208.139.156, port: 8443, type: vmess, uuid: d6783caf-ac05-4b79-9b6a-d2db93d44b43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.208.139.156}}}
-  - {name: 🇭🇰 香港-4|1G|80端口, server: hk-4.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us3, headers: {Host: ushksw888x.vzwzasc.cn}}}
-  - {name: Tokyo-M247, server: 106.75.239.176, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.239.176, skip-cert-verify: false}
-  - {name: 🇮🇳 印度(), server: 20.197.16.214, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.197.16.214}}}
-  - {name: 🇨🇳 中国内蒙古|100M|80端口, server: nmg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 Singapore-Melbicom 4, server: 116.129.253.191, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: London-AWS 3, server: 120.241.144.204, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.204, skip-cert-verify: false}
-  - {name: 🇺🇲 美国() 2, server: 20.21.144.197, port: 8443, type: vmess, uuid: d6783caf-ac05-4b79-9b6a-d2db93d44b43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.21.144.197}}}
-  - {name: Tokyo-Linode_12, server: 116.129.254.29, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.254.29, skip-cert-verify: false}
-  - {name: 🇨🇳 |台湾02, server: gz-hk.iepl.0000.foxinode.com, port: 10402, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
-  - {name: 🇸🇬 Singapore-Melbikom 6, server: 5.44.249.42, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.42, skip-cert-verify: false}
-  - {name: Tokyo-Linode_8, server: 116.129.253.134, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: Tokyo-M247 2, server: 120.241.144.71, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.71, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享 2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
-  - {name: 🇭🇰 香港Misaka, server: 116.129.254.29, port: 3384, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.29, skip-cert-verify: false}
-  - {name: 🇨🇳 台中Hinet 3, server: 120.241.144.71, port: 3383, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.71, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享 2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: 🇭🇰 台湾V108|深港隧道、流媒体|2x, server: 139.227.182.232, port: 15010, type: trojan, password: TT5RvB, sni: if2e.ft3.us, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾2|, server: 165.154.243.161, port: 443, type: vmess, uuid: 7108e796-55db-40f9-ae00-00153a457ea9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: Tokyo-M247 3, server: 120.241.144.71, port: 3382, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.71, skip-cert-verify: false}
-  - {name: 🇸🇬 SG新加坡001, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇺🇲 USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇺🇲 US470VMS, server: unus01.ajdkjaljdj.xyz, port: 1082, type: vmess, uuid: 95e9fda1-dc48-3bbd-8a15-e6528882ea3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6, headers: {Host: unus01.ajdkjaljdj.xyz}}}
-  - {name: 🇭🇰 香港2, server: 165.154.244.29, port: 443, type: vmess, uuid: f8c3fbfe-9f65-4861-b824-f0049aa55810, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇦 |CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ca.liangyuandian.top, skip-cert-verify: false}
-  - {name: 网址:hass.win/reg, server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-1|1G|80端口, server: hk-1-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇭🇰 香港EDCL 5, server: 120.241.144.204, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.204, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA9, server: 156.240.120.148, port: 27044, type: vmess, uuid: 29fed67f-8666-4331-8881-3f231ea1d13c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇸🇬 Singapore-Melbicom 5, server: 116.129.253.134, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
-  - {name: Tokyo-Linode_10, server: 116.129.253.191, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
-  - {name: Tokyo-M247 4, server: 116.129.254.47, port: 3382, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.47, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbicom_11, server: 5.44.249.156, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.156, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore-Melbikom_16, server: 5.44.249.51, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.51, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_16, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台北Hinet_3, server: 60.249.3.226, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.226, skip-cert-verify: false}
-  - {name: 🇨🇦 |CA加拿大003, server: ca.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ca.liangyuandian.top, skip-cert-verify: false}
-  - {name: 🇿🇦 ZA3, server: 156.240.120.13, port: 57661, type: vmess, uuid: f360b24a-7b07-49be-9a16-d676c517974f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇯🇵 |日本07|大阪|混合负载|800Mbps共享 2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 🇺🇲 美国() 3, server: 20.213.11.107, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.213.11.107}}}
+  - {name: London-AWS, server: 116.129.253.134, port: 3386, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
+  - {name: 🇨🇦 CA加拿大002, server: ca.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本02|IP均衡优化|混合负载|600Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
   - {name: (), server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: false}
+  - {name: 🇿🇦 ZA8, server: 156.240.119.242, port: 33719, type: vmess, uuid: a0b66cf7-9385-4643-9e61-3a885183bec1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇫🇷 FR2, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
+  - {name: 🇳🇱 _NL_荷兰2, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HKT|解锁流媒体, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: glc.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇮🇳 |印度, server: 20.205.57.174, port: 48005, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.57.174}}}
+  - {name: Tokyo-Linode, server: 116.129.253.134, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.134, skip-cert-verify: false}
+  - {name: Fremont-Nato_2, server: 116.129.254.29, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.29, skip-cert-verify: false}
+  - {name: Tokyo-M247_2, server: 106.75.154.24, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.154.24, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbikom_4, server: 5.44.249.44, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.44, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本05|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇨🇭 瑞士(), server: 20.208.139.156, port: 8443, type: vmess, uuid: d6783caf-ac05-4b79-9b6a-d2db93d44b43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.208.139.156}}}
+  - {name: Tokyo-Linode_8, server: 116.129.253.134, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.134, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国01, server: gz-hk.iepl.0000.foxinode.com, port: 10811, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
+  - {name: UN473VMS, server: vms-service.cloud, port: 443, type: vmess, uuid: 9fc7bf78-4596-4518-af1f-c64903b69039, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /4055-85e0-81e370743d1d, headers: {Host: vms-service.cloud}}}
+  - {name: 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: 🇭🇰 香港|, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false}
+  - {name: 🇺🇲 US6, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false}
+  - {name: 🇯🇵 JP1, server: hk1.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, skip-cert-verify: false}
+  - {name: Tokyo-Linode 2, server: 116.129.254.29, port: 3382, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.29, skip-cert-verify: false}
+  - {name: 捷克(), server: 195.123.246.120, port: 10000, type: vmess, uuid: b3a40b5e-4f82-11ed-918d-52cf00e461ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: 195.123.246.120}}}
+  - {name: 🇺🇲 美国-测试|1G|80端口, server: us-test.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 【直连】TYO/东京-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com, port: 443, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.227, skip-cert-verify: false}
+  - {name: Tokyo-M247, server: 106.75.187.25, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.187.25, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom_5, server: 5.44.249.156, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.156, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HK|, server: 219.76.13.180, port: 443, type: trojan, password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g, sni: golang.protocolbuffer.com, skip-cert-verify: false}
+  - {name: h207532.waihuizhibiaowang.com:11543, server: h207532.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
+  - {name: 🇨🇳 中国(), server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 美国(), server: 20.163.109.169, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.163.109.169}}}
+  - {name: 全球直连③, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1022543, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国内蒙古|100M|非80端口|停机卡, server: nmg.pannode.top, port: 800, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇨🇳 台北Hinet_7, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.230, skip-cert-verify: false}
+  - {name: 🇩🇪 DE德国002, server: de.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇦🇺 AU澳大利亚002, server: ap.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: London-AWS 2, server: 116.129.254.29, port: 3386, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.254.29, skip-cert-verify: false}
+  - {name: 🇺🇲 US14, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom_6, server: 5.44.249.157, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.157, skip-cert-verify: false}
+  - {name: 🇺🇲 美国A|, server: 142.0.130.139, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/270132212224, headers: {Host: www.61617561.xyz}}}
+  - {name: 🇨🇳 中国江苏|100M|非80端口|停机卡, server: xz-cm1.cloudiplc.com, port: 20999, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇯🇵 |日本03|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇨🇳 CN10, server: zfd-moblev2.gatknqh.cn, port: 16116, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Fremont-Nato_1, server: 116.129.253.191, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: 🇨🇳 CN7, server: 111.45.22.136, port: 9018, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom, server: 116.129.254.29, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.29, skip-cert-verify: false}
+  - {name: Tokyo-Linode 3, server: 116.129.254.29, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.29, skip-cert-verify: false}
+  - {name: 🇨🇳 CN9, server: 111.45.22.136, port: 11915, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us3, headers: {Host: ushksw888x.vzwzasc.cn}}}
+  - {name: 🇭🇰 HK8, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: "%7B%22Host%22:%22vsg1.0bad.com%22%7D"}}}
+  - {name: univstar~Islamabad-COMSATS-dip_2, server: 111.45.22.136, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇩🇪 |DE德国003, server: de.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: de.liangyuandian.top, skip-cert-verify: false}
+  - {name: 🇺🇲 US15, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: false}
+  - {name: 🇻🇳 越南-1号, server: 103.173.255.21, port: 28443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: glc.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-VI|10G|80端口, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇸🇬 新加坡linode, server: 211.72.35.110, port: 443, type: vmess, uuid: f6d7b072-de00-45dc-9e24-49f8cf43530d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linod, headers: {Host: lindo.cnabc.eu.org}}}
+  - {name: 🇨🇦 CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇦🇺 澳大利亚(), server: tratw1.bitznet.one, port: 32003, type: trojan, password: 93eaf6ea-2585-463a-a577-64b5750f5292, sni: tratw1.bitznet.one, skip-cert-verify: false}
+  - {name: Fremont-Nato, server: 116.129.253.191, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: 🇯🇵 日本(), server: 20.78.123.124, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.78.123.124}}}
+  - {name: 🇸🇬 SG新加坡001, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us2, headers: {Host: ushksw888x.vzwzasc.cn}}}
+  - {name: 🇯🇵 日本() 2, server: 172.105.238.12, port: 10002, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1022530, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国, server: 20.205.57.174, port: 48004, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.57.174}}}
+  - {name: 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
+  - {name: 🇭🇰 香港-V|10G|80端口, server: hk-v.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇸🇬 Singapore-Melbikom_8, server: 5.44.249.52, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.52, skip-cert-verify: false}
+  - {name: Tokyo-Linode_12, server: 116.129.254.29, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.254.29, skip-cert-verify: false}
+  - {name: 🇯🇵 JP4, server: kr1.api-aws.com, port: 443, type: trojan, password: 84773125-8f79-481c-a80b-e1f4aad86850, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国D, server: 45.33.109.181, port: 10003, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g16.xingbayun.buzz, skip-cert-verify: false}
+  - {name: 🇰🇷 【直连】ICN/首尔-2, server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com, port: 52356, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 CN1, server: 111.45.22.136, port: 11920, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港02|v2直连|x2, server: hk2.bfyun.top, port: 10021, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv10/hd.m3u8, headers: {Host: hk2.bfyun.top}}}
+  - {name: Fremont-Nato_4, server: 134.195.101.32, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 134.195.101.32, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom_12, server: 5.44.249.157, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.157, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbikom_10, server: 120.241.144.204, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: 🇯🇵 JP5, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: "%7B%22Host%22:%22vde1.0bad.com%22%7D"}}}
+  - {name: 🇭🇰 HK464VMS, server: 156.240.119.158, port: 33921, type: vmess, uuid: a292ec16-a675-4015-9e3d-a7589fd1f552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇯🇵 |日本03|大阪|混合负载|800Mbps共享 2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇯🇵 |日本04|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇨🇳 台湾Hinet2|解锁流媒体, server: download2tw.windowsupdate1.com, port: 28443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: glc.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇮🇳 |印度01|v2直连|x2, server: ln1.bfyun.top, port: 10025, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv11/hd.m3u8, headers: {Host: ln1.bfyun.top}}}
+  - {name: 🇸🇬 Singapore-Melbicom_1, server: 116.129.253.134, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本B, server: 172.105.237.183, port: 10001, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g06.xingbayun.buzz, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_12, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 免费节点定期失效, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-3|1G|80端口, server: hk-3-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: Tokyo-Linode_7, server: 106.75.173.173, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.173.173, skip-cert-verify: false}
+  - {name: univstar~Islamabad-COMSATS-dip_1, server: 183.232.229.134, port: 11932, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡05|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp5, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: 🇸🇬 Singapore-Melbikom, server: 5.44.249.43, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.43, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 2, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台中Hinet, server: 120.241.144.71, port: 3383, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.71, skip-cert-verify: false}
+  - {name: 🇺🇲 US3, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: false}
+  - {name: 🇨🇳 CN【付费推荐：https//goo.gs/vip】6, server: 106.12.168.13, port: 13156, type: vmess, uuid: 9bf4cba4-9e9e-4da4-8e65-f7c487c539df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
+  - {name: 🇿🇦 ZA7, server: 156.240.118.228, port: 61942, type: vmess, uuid: c7b15b4e-ba59-40c5-b2f4-c962bc60d1ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇲 US19, server: node-do-us-1.gitspeed.cyou, port: 443, type: trojan, password: pNDxTmWL, skip-cert-verify: false}
+  - {name: 🇺🇲 美国圣何塞-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}}
+  - {name: 🇸🇬 Singapore-Melbicom 2, server: 120.241.144.204, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbikom_2, server: 5.44.249.42, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.42, skip-cert-verify: false}
+  - {name: 🇸🇬 大萝卜鸡新加坡, server: 222.84.250.35, port: 19228, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾Hinet-江苏移动|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}}
+  - {name: Tokyo-M247 2, server: 116.129.254.47, port: 3382, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.254.47, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡C, server: 172.104.184.253, port: 10003, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g11.xingbayun.buzz, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 3, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 USAY美国亚特兰大003, server: usay.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom 3, server: 120.241.144.71, port: 3385, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.71, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_9, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 US450VMS, server: 154.85.42.138, port: 21335, type: vmess, uuid: f60f5ff2-782d-4ed7-8c31-d676fbc956f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: London-AWS 3, server: 116.129.253.191, port: 3386, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: 🇭🇰 香港EDCL_5, server: 116.129.253.191, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: ID14VMS, server: idnusa2.vpn-akcelluler.my.id, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: idnusa2.vpn-akcelluler.my.id}}}
+  - {name: 🇺🇲 美国2|, server: 219.76.13.175, port: 443, type: trojan, password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g, sni: golang.protocolbuffer.com, skip-cert-verify: false}
+  - {name: Tokyo-M247 3, server: 106.75.187.25, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 106.75.187.25, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet 2, server: 60.249.3.231, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.231, skip-cert-verify: false}
+  - {name: 🇺🇲 US5, server: 219.76.13.175, port: 443, type: trojan, password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g, sni: golang.protocolbuffer.com, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_16, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇦 CA加拿大003, server: ca.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 距离下次重置剩余：7天, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hkhgc, headers: {Host: www.189.cn}}}
+  - {name: Tokyo-Linode_4, server: 116.129.253.191, port: 3382, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: 🇨🇳 台中Hinet_3, server: 116.129.253.191, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom 4, server: 5.44.249.156, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.156, skip-cert-verify: false}
+  - {name: 🇭🇰 香港01|, server: hk01.xniuniu888.xyz, port: 30104, type: vmess, uuid: 2a3b4833-be2e-3bc2-9caa-c35af149de6d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本() 3, server: 139.162.74.122, port: 10001, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, skip-cert-verify: false}
+  - {name: 🇸🇬 |SG新加坡001, server: sg.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: sg.liangyuandian.top, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国02, server: 20.205.57.174, port: 48006, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.57.174}}}
+  - {name: 🇺🇲 US1, server: 111.45.22.136, port: 9000, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet 3, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 60.249.3.229, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp4, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: 🇨🇳 中国() 4, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}}
+  - {name: 🇸🇬 Singapore-Melbicom_4, server: 120.241.144.204, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: h961359.waihuizhibiaowang.com:11443, server: h961359.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
+  - {name: Fremont-Nato_3, server: 120.241.144.204, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: 网址:hass.win/reg, server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: 🇺🇲 美国西雅图-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}}
+  - {name: 🇭🇰 |香港HKT01, server: gz-hk.iepl.0000.foxinode.com, port: 10121, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
+  - {name: 🇺🇲 美国|, server: 104.17.146.10, port: 80, type: vmess, uuid: 007ed102-0ee7-4305-a0c4-d20372bef279, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tlfmWciG/, headers: {Host: us1.cachexy.ga}}}
+  - {name: 距离下次重置剩余：21天, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇨🇳 台中hinet_1, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 211.72.35.152, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本04|大阪|混合负载|800Mbps共享 2, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇨🇦 |加拿大01, server: Canada.internetsmartrouting.asia, port: 20562, type: vmess, uuid: 86155150-d86d-42e2-af55-986e3d72323a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, headers: {Host: apple.com}}}
+  - {name: 🇭🇰 HK459VMS, server: 156.240.114.45, port: 57005, type: vmess, uuid: 816ed784-6323-4981-ba21-85f7766091c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 香港-1|1G|80端口, server: hk-1-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇩🇪 |德国01, server: germany01.internetsmartrouting.asia, port: 23685, type: vmess, uuid: 86155150-d86d-42e2-af55-986e3d72323a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /Patti$Freud$4Clubs$spendable$lamar7$mollie7, headers: {Host: apple.com}}}
+  - {name: 🇸🇬 Singapore-Melbikom_17, server: 5.44.249.52, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.52, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 5, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Tokyo-M247 4, server: 116.129.254.47, port: 3382, type: trojan, password: 182228812d1e0f23, sni: 116.129.254.47, skip-cert-verify: false}
+  - {name: 🇨🇳 CN11, server: 111.45.22.136, port: 11922, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1022533, server: 42.193.191.50, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 6, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}}
+  - {name: 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33331, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-kr4, headers: {Host: baidu.com}}}
+  - {name: 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp2, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: London-AWS_2, server: 116.129.253.191, port: 3386, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.191, skip-cert-verify: false}
+  - {name: 🇺🇲 US12, server: 154.85.42.138, port: 21335, type: vmess, uuid: f60f5ff2-782d-4ed7-8c31-d676fbc956f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇲 |美国01, server: gz-hk.iepl.0000.foxinode.com, port: 10301, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
+  - {name: 🇸🇬 Singapore-Melbikom_13, server: 5.44.249.44, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.44, skip-cert-verify: false}
+  - {name: 🇭🇰 HK461VMS, server: 156.240.115.144, port: 26638, type: vmess, uuid: 88f188ec-f65f-4fba-b265-42ad16e67473, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇸🇬 Singapore-Melbikom 2, server: 5.44.249.52, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.52, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港03|v2直连|x2, server: hk3.bfyun.top, port: 10021, type: vmess, uuid: 9e055ad5-5b4c-4b8d-bc38-0ace41abe267, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: hk3.bfyun.top}}}
+  - {name: 🇸🇬 Singapore-Melbicom 5, server: 120.241.144.71, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.71, skip-cert-verify: false}
+  - {name: 🇺🇲 |美国原生04|IP均衡优化|混合负载|500Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us4, headers: {Host: ushksw888x.vzwzasc.cn}}}
+  - {name: 🇨🇦 CA加拿大002 2, server: ca.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇻🇳 |越南01, server: gz-hk.iepl.0000.foxinode.com, port: 10881, type: ss, cipher: chacha20-ietf-poly1305, password: e31cc8d4-5b95-4064-822e-b0524442a1fe}
+  - {name: 🇺🇲 USAY美国亚特兰大003 2, server: usay.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本07|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 94322aae-a1a4-3241-a8f1-cd70aa3e0947, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: LAX-Melbicom_2, server: 120.241.144.71, port: 3381, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.71, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet_9, server: 120.241.144.204, port: 3383, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: 🇨🇦 github.com/freefq-加拿大5, server: 165.154.253.63, port: 443, type: vmess, uuid: f8c3fbfe-9f65-4861-b824-f0049aa55810, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港04, server: 16.162.55.130, port: 44300, type: vmess, uuid: db063f99-aacc-3d26-86ba-c39cbf170902, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 16.162.55.130}}}
+  - {name: 🇭🇰 【直连】HKG/香港-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com, port: 80, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com}}}
+  - {name: 🇸🇬 Singapore-Melbikom 3, server: 5.44.249.51, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.51, skip-cert-verify: false}
+  - {name: Tokyo-M247 5, server: 106.75.154.24, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 106.75.154.24, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet 4, server: 60.249.3.229, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.229, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国01|IP均衡优化|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33331, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-kr1, headers: {Host: baidu.com}}}
+  - {name: 🇨🇳 CN2, server: 111.45.22.136, port: 11912, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇦 大萝卜鸡加拿大, server: 222.84.250.35, port: 19249, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: Tokyo-Linode_9, server: 116.129.253.134, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 116.129.253.134, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本06|大阪|混合负载|800Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇭🇰 香港EDCL_3, server: 120.241.144.204, port: 3384, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet 5, server: 60.249.3.230, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 60.249.3.230, skip-cert-verify: false}
+  - {name: 🇸🇬 更新于10/23/19:06, server: 20.78.123.124, port: 8443, type: vmess, uuid: d6783caf-ac05-4b79-9b6a-d2db93d44b43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.78.123.124}}}
+  - {name: 🇸🇬 Singapore-Melbikom 4, server: 5.44.249.42, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.42, skip-cert-verify: false}
+  - {name: 🇨🇳 CN446VMS, server: s4.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-6|1G|80端口, server: hk-6.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇸🇬 Singapore-Melbikom 5, server: 5.44.249.45, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, sni: 5.44.249.45, skip-cert-verify: false}
+  - {name: 🇯🇵 |JP日本002, server: jp.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: jp.liangyuandian.top, skip-cert-verify: false}
+  - {name: 🇿🇦 ZA9, server: 156.240.120.148, port: 27044, type: vmess, uuid: 29fed67f-8666-4331-8881-3f231ea1d13c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: univstar~Riyadh-Kaopu-dip, server: 116.129.254.184, port: 11910, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台北Hinet_1, server: 120.241.144.204, port: 3383, type: trojan, password: 182228812d1e0f23, sni: 120.241.144.204, skip-cert-verify: false}
+  - {name: 🇺🇲 USA美国002, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
+  - {name: 🇨🇭 瑞士() 2, server: 20.208.139.156, port: 8443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.208.139.156}}}
+  - {name: 🇺🇲 US1 2, server: 47.243.182.204, port: 22082, type: vmess, uuid: f46292d1-a5c6-44e3-9539-c45ea9f7ec6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇲 美国US|, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: 🇭🇰 香港EDCL, server: 120.241.144.71, port: 3384, type: trojan, password: faf42aa0a9ad4c1e, sni: 120.241.144.71, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbikom 6, server: 5.44.249.53, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.53, skip-cert-verify: false}
+  - {name: 🇨🇳 CN3, server: 111.45.22.246, port: 9044, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 US2, server: 16.162.55.130, port: 44300, type: vmess, uuid: bb865194-84f9-3777-a6f8-61de364fd034, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny}}
+  - {name: Tokyo-M247 6, server: 106.75.154.24, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 106.75.154.24, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 28372bca-1262-3773-b604-44e9c26f0264, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
+  - {name: 🇸🇬 Singapore-Melbikom 7, server: 5.44.249.42, port: 3389, type: trojan, password: 182228812d1e0f23, sni: 5.44.249.42, skip-cert-verify: false}
+  - {name: 🇺🇲 |USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: false}
+  - {name: 【直连】TYO/东京-80端口-1, server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com, port: 80, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 US7, server: 182.151.8.150, port: 19204, type: trojan, password: 05115a9b-067c-3cfa-9d8a-c696c3fc5660, skip-cert-verify: false}
+  - {name: 🇭🇰 香港| 2, server: free.big234.com, port: 8866, type: trojan, password: c8387c14-3f48-4267-9499-73ef363471f9, sni: free.big234.com, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡D, server: 172.104.184.239, port: 10004, type: trojan, password: ca98d907-57b1-4eab-b272-6eb248b71084, sni: aewfhe5z1pokrkw8bi9g12.xingbayun.buzz, skip-cert-verify: false}
+  - {name: 🇨🇦 |CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ca.liangyuandian.top, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_1022619, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇳🇱 NL1, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbicom 6, server: 116.129.253.134, port: 3385, type: trojan, password: 182228812d1e0f23, sni: 116.129.253.134, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -221,612 +236,657 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - Fremont-Nato
-      - 群组:xxmym
       - London-AWS
-      - 🇰🇷 |韩国01|v2直连|x2
-      - 🇭🇰 HK6
-      - Tokyo-M247_2
-      - 🇭🇰 香港EDCL_3
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
-      - 🇭🇰 香港()
-      - LAX-Melbicom
-      - 🇨🇳 台中Hinet
-      - 🇨🇳 中国()
-      - 🇨🇳 中国_tg+univstar_15
-      - 🇫🇷 FR【付费推荐：https//goo.gs/vip】
-      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
-      - 🇮🇳 |印度
-      - 距离下次重置剩余：21天
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - Tokyo-Linode_11
-      - 🇩🇪 |DE德国001
-      - 🇨🇦 CA加拿大001
-      - 🇭🇰 |香港BGP02
-      - 🇺🇲 美国()
-      - 距离下次重置剩余：7天
-      - 🇭🇰 香港_1022065
-      - 🇨🇳 台北Hinet_4
-      - 🇭🇰 HK7
-      - 🇺🇲 |美国02
-      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
-      - 🇨🇳 |台湾01
-      - univstar~Islamabad-COMSATS-dip
-      - 🇨🇳 台北Hinet
-      - 🇭🇰 香港EDCL
-      - 🇺🇲 美国US|
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港EDCL_1
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇭🇰 HK459VMS
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇭🇰 香港-2|1G|80端口
-      - LAX-Melbicom 2
-      - 🇿🇦 ZA10
-      - London-AWS 2
-      - 🇸🇬 Singapore-Melbikom 2
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇺🇲 US8
-      - 🇺🇲 US9
-      - 🇨🇳 台北Hinet_7
-      - 🇭🇰 HK15
-      - 🇻🇳 |越南01
-      - Fremont-Nato 2
-      - 🇨🇳 中国_1022529
-      - 🇦🇺 澳大利亚()
-      - 🇺🇲 |美国D
-      - 🇮🇳 |印度01|v2直连|x2
-      - 🇸🇬 |新加坡01|IP均衡优化|CTN加速|500Mbps共享
-      - univstar~Riyadh-Kaopu-dip
-      - -伊朗-5.161.131.122
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇭🇰 HK14
-      - 🇸🇬 SGP🇸🇬
-      - 🇨🇳 台北Hinet 2
-      - 🇺🇲 US1
-      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
-      - 🇨🇳 中国() 2
-      - 🇯🇵 |JP日本003
-      - 🇩🇪 |德国01
-      - 🇭🇰 |香港02
-      - 🇫🇷 FR10TJN
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 |SG新加坡002
-      - 🇺🇲 |USAY美国亚特兰大001
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 中国_tg+univstar_9
-      - 🇺🇲 美国A|
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇨🇳 台中hinet_1
-      - 🇭🇰 |香港02|v2直连|x2
-      - 🇦🇺 AU澳大利亚002
-      - 🇨🇳 台北Hinet_13
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
-      - 🇨🇳 台北Hinet 3
-      - Tokyo-Linode
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇰🇷 |韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇯🇵 |日本02
-      - 🇨🇳 台中Hinet 2
-      - 🇨🇳 中国_1022016
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
-      - 全球直连④
-      - 🇯🇵 |日本01
-      - 巴基斯坦001
-      - 🇯🇵 JP日本002
-      - 🇭🇰 香港|
-      - 🇭🇰 HK_45.11.104.94_102227c4-151
-      - 🇨🇳 台北Hinet_2
-      - 🇿🇦 ZA11
-      - 🇯🇵 |日本02|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇯🇵 日本()
-      - 🇩🇪 DE德国002
-      - 🇿🇦 ZA1
-      - 🇨🇳 中国() 3
-      - 🇨🇳 台北Hinet_12
-      - 稳定高速可购买付费节点↓
-      - 🇭🇰 香港-V|10G|80端口
-      - 🇨🇳 台北Hinet 4
-      - 🇭🇰 香港ssr|
-      - 🇿🇦 南非()
-      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
-      - Fremont-Nato_1
-      - 🇭🇰 香港EDCL 2
-      - Tokyo-Linode_7
-      - Fremont-Nato 3
-      - 🇸🇬 Singapore-Melbicom_8
-      - 🇸🇬 |新加坡A
-      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
-      - 🇺🇲 US4
-      - 🇯🇵 |日本05|IP均衡优化|混合负载|600Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享 2
-      - Fremont-Nato_3
-      - 🇭🇰 HK2
-      - Fremont-Nato 4
-      - 🇿🇦 ZA5
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇭🇰 香港EDCL 3
-      - 🇩🇪 |德国A
-      - 🇸🇬 Singapore-Melbicom
-      - 🇸🇬 Singapore-Melbicom 2
-      - LAX-Melbicom_1
-      - 🇨🇳 台中hinet
-      - 🇨🇳 CN447VMS
-      - London-AWS_5
-      - univstar~Islamabad-COMSATS-dip_2
-      - 🇯🇵 |日本01|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_15 2
-      - 🇸🇬 |新加坡
-      - 🇿🇦 ZA4
-      - 🇨🇳 中国() 4
-      - 🇺🇲 |美国01
-      - 🇺🇲 |USA美国001
-      - 🇿🇦 ZA7
-      - 🇸🇬 Singapore-Melbikom_9
-      - 🇸🇬 订阅永久更新
-      - 🇨🇳 中国_1022538
-      - 🇭🇰 香港EDCL 4
-      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
-      - 🇺🇲 US10
-      - 🇭🇰 HK2 2
-      - 🇯🇵 |日本31|原生家宽
-      - 🇸🇬 Singapore-Melbicom 3
-      - 🇨🇭 瑞士()
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
-      - Tokyo-M247
-      - 🇮🇳 印度()
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇸🇬 Singapore-Melbicom 4
-      - London-AWS 3
-      - 🇺🇲 美国() 2
-      - Tokyo-Linode_12
-      - 🇨🇳 |台湾02
-      - 🇸🇬 Singapore-Melbikom 6
-      - Tokyo-Linode_8
-      - Tokyo-M247 2
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享 2
-      - 🇭🇰 香港Misaka
-      - 🇨🇳 台中Hinet 3
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享 2
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇨🇳 台湾2|
-      - Tokyo-M247 3
-      - 🇸🇬 SG新加坡001
-      - 🇺🇲 USA美国001
-      - 🇺🇲 US470VMS
-      - 🇭🇰 香港2
-      - 🇨🇦 |CA加拿大001
-      - 网址:hass.win/reg
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港EDCL 5
-      - 🇿🇦 ZA9
-      - 🇸🇬 Singapore-Melbicom 5
-      - Tokyo-Linode_10
-      - Tokyo-M247 4
-      - 🇸🇬 Singapore-Melbicom_11
-      - 🇸🇬 Singapore-Melbikom_16
-      - 🇨🇳 中国_tg+univstar_16
-      - 🇨🇳 台北Hinet_3
-      - 🇨🇦 |CA加拿大003
-      - 🇿🇦 ZA3
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享 2
-      - 🇺🇲 美国() 3
+      - 🇨🇦 CA加拿大002
+      - 🇯🇵 |日本02|IP均衡优化|混合负载|600Mbps共享
       - ()
+      - 🇿🇦 ZA8
+      - 🇫🇷 FR2
+      - 🇳🇱 _NL_荷兰2
+      - 🇭🇰 香港HKT|解锁流媒体
+      - 🇮🇳 |印度
+      - Tokyo-Linode
+      - Fremont-Nato_2
+      - Tokyo-M247_2
+      - 🇸🇬 Singapore-Melbikom_4
+      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
+      - 🇨🇭 瑞士()
+      - Tokyo-Linode_8
+      - 🇰🇷 |韩国01
+      - UN473VMS
+      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇭🇰 香港|
+      - 🇺🇲 US6
+      - 🇯🇵 JP1
+      - Tokyo-Linode 2
+      - 捷克()
+      - 🇺🇲 美国-测试|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇨🇳 台北Hinet
+      - Tokyo-M247
+      - 🇸🇬 Singapore-Melbicom_5
+      - 🇭🇰 香港HK|
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇨🇳 中国()
+      - 🇺🇲 美国()
+      - 全球直连③
+      - 🇨🇳 中国_1022543
+      - 🇨🇳 中国内蒙古|100M|非80端口|停机卡
+      - 🇨🇳 台北Hinet_7
+      - 🇩🇪 DE德国002
+      - 🇦🇺 AU澳大利亚002
+      - London-AWS 2
+      - 🇺🇲 US14
+      - 🇸🇬 Singapore-Melbicom_6
+      - 🇺🇲 美国A|
+      - 🇨🇳 中国江苏|100M|非80端口|停机卡
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
+      - 🇨🇳 CN10
+      - Fremont-Nato_1
+      - 🇨🇳 CN7
+      - 🇸🇬 Singapore-Melbicom
+      - Tokyo-Linode 3
+      - 🇨🇳 CN9
+      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
+      - 🇭🇰 HK8
+      - univstar~Islamabad-COMSATS-dip_2
+      - 🇩🇪 |DE德国003
+      - 🇺🇲 US15
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港-VI|10G|80端口
+      - 🇸🇬 新加坡linode
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 澳大利亚()
+      - Fremont-Nato
+      - 🇯🇵 日本()
+      - 🇸🇬 SG新加坡001
+      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
+      - 🇯🇵 日本() 2
+      - 🇨🇳 中国_1022530
+      - 🇰🇷 |韩国
+      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
+      - 🇭🇰 香港-V|10G|80端口
+      - 🇸🇬 Singapore-Melbikom_8
+      - Tokyo-Linode_12
+      - 🇯🇵 JP4
+      - 🇺🇲 |美国D
+      - 🇰🇷 【直连】ICN/首尔-2
+      - 🇨🇳 CN1
+      - 🇭🇰 |香港02|v2直连|x2
+      - Fremont-Nato_4
+      - 🇸🇬 Singapore-Melbicom_12
+      - 🇸🇬 Singapore-Melbikom_10
+      - 🇯🇵 JP5
+      - 🇭🇰 HK464VMS
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇮🇳 |印度01|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom_1
+      - 🇯🇵 |日本B
+      - 🇨🇳 中国_tg+univstar_12
+      - 免费节点定期失效
+      - 🇭🇰 香港-3|1G|80端口
+      - Tokyo-Linode_7
+      - univstar~Islamabad-COMSATS-dip_1
+      - 🇸🇬 |新加坡05|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbikom
+      - 🇨🇳 中国() 2
+      - 🇨🇳 台中Hinet
+      - 🇺🇲 US3
+      - 🇨🇳 CN【付费推荐：https//goo.gs/vip】6
+      - 🇿🇦 ZA7
+      - 🇺🇲 US19
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇸🇬 Singapore-Melbicom 2
+      - 🇸🇬 Singapore-Melbikom_2
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
+      - Tokyo-M247 2
+      - 🇸🇬 |新加坡C
+      - 🇨🇳 中国() 3
+      - 🇺🇲 USAY美国亚特兰大003
+      - 🇸🇬 Singapore-Melbicom 3
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇺🇲 US450VMS
+      - London-AWS 3
+      - 🇭🇰 香港EDCL_5
+      - ID14VMS
+      - 🇺🇲 美国2|
+      - Tokyo-M247 3
+      - 🇨🇳 台北Hinet 2
+      - 🇺🇲 US5
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇨🇦 CA加拿大003
+      - 距离下次重置剩余：7天
+      - Tokyo-Linode_4
+      - 🇨🇳 台中Hinet_3
+      - 🇸🇬 Singapore-Melbicom 4
+      - 🇭🇰 香港01|
+      - 🇯🇵 日本() 3
+      - 🇸🇬 |SG新加坡001
+      - 🇺🇲 |美国02
+      - 🇺🇲 US1
+      - 🇨🇳 台北Hinet 3
+      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
+      - 🇨🇳 中国() 4
+      - 🇸🇬 Singapore-Melbicom_4
+      - h961359.waihuizhibiaowang.com:11443
+      - Fremont-Nato_3
+      - 网址:hass.win/reg
+      - 🇺🇲 美国西雅图-江移|解锁流媒体
+      - 🇭🇰 |香港HKT01
+      - 🇺🇲 美国|
+      - 距离下次重置剩余：21天
+      - 🇨🇳 台中hinet_1
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享 2
+      - 🇨🇦 |加拿大01
+      - 🇭🇰 HK459VMS
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇩🇪 |德国01
+      - 🇸🇬 Singapore-Melbikom_17
+      - 🇨🇳 中国() 5
+      - Tokyo-M247 4
+      - 🇨🇳 CN11
+      - 🇨🇳 中国_1022533
+      - 🇨🇳 中国() 6
+      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
+      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - London-AWS_2
+      - 🇺🇲 US12
+      - 🇺🇲 |美国01
+      - 🇸🇬 Singapore-Melbikom_13
+      - 🇭🇰 HK461VMS
+      - 🇸🇬 Singapore-Melbikom 2
+      - 🇭🇰 |香港03|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom 5
+      - 🇺🇲 |美国原生04|IP均衡优化|混合负载|500Mbps共享
+      - 🇨🇦 CA加拿大002 2
+      - 🇻🇳 |越南01
+      - 🇺🇲 USAY美国亚特兰大003 2
+      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
+      - LAX-Melbicom_2
+      - 🇨🇳 台北Hinet_9
+      - 🇨🇦 github.com/freefq-加拿大5
+      - 🇭🇰 |香港04
+      - 🇭🇰 【直连】HKG/香港-80端口-1
+      - 🇸🇬 Singapore-Melbikom 3
+      - Tokyo-M247 5
+      - 🇨🇳 台北Hinet 4
+      - 🇰🇷 |韩国01|IP均衡优化|混合负载|800Mbps共享
+      - 🇨🇳 CN2
+      - 🇨🇦 大萝卜鸡加拿大
+      - Tokyo-Linode_9
+      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
+      - 🇭🇰 香港EDCL_3
+      - 🇨🇳 台北Hinet 5
+      - 🇸🇬 更新于10/23/19:06
+      - 🇸🇬 Singapore-Melbikom 4
+      - 🇨🇳 CN446VMS
+      - 🇭🇰 香港-6|1G|80端口
+      - 🇸🇬 Singapore-Melbikom 5
+      - 🇯🇵 |JP日本002
+      - 🇿🇦 ZA9
+      - univstar~Riyadh-Kaopu-dip
+      - 🇨🇳 台北Hinet_1
+      - 🇺🇲 USA美国002
+      - 🇨🇭 瑞士() 2
+      - 🇺🇲 US1 2
+      - 🇺🇲 美国US|
+      - 🇭🇰 香港EDCL
+      - 🇸🇬 Singapore-Melbikom 6
+      - 🇨🇳 CN3
+      - 🇺🇲 US2
+      - Tokyo-M247 6
+      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 Singapore-Melbikom 7
+      - 🇺🇲 |USA美国001
+      - 【直连】TYO/东京-80端口-1
+      - 🇺🇲 US7
+      - 🇭🇰 香港| 2
+      - 🇸🇬 |新加坡D
+      - 🇨🇦 |CA加拿大001
+      - 🇨🇳 中国_1022619
+      - 🇳🇱 NL1
+      - 🇸🇬 Singapore-Melbicom 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Fremont-Nato
-      - 群组:xxmym
       - London-AWS
-      - 🇰🇷 |韩国01|v2直连|x2
-      - 🇭🇰 HK6
-      - Tokyo-M247_2
-      - 🇭🇰 香港EDCL_3
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
-      - 🇭🇰 香港()
-      - LAX-Melbicom
-      - 🇨🇳 台中Hinet
-      - 🇨🇳 中国()
-      - 🇨🇳 中国_tg+univstar_15
-      - 🇫🇷 FR【付费推荐：https//goo.gs/vip】
-      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
-      - 🇮🇳 |印度
-      - 距离下次重置剩余：21天
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - Tokyo-Linode_11
-      - 🇩🇪 |DE德国001
-      - 🇨🇦 CA加拿大001
-      - 🇭🇰 |香港BGP02
-      - 🇺🇲 美国()
-      - 距离下次重置剩余：7天
-      - 🇭🇰 香港_1022065
-      - 🇨🇳 台北Hinet_4
-      - 🇭🇰 HK7
-      - 🇺🇲 |美国02
-      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
-      - 🇨🇳 |台湾01
-      - univstar~Islamabad-COMSATS-dip
-      - 🇨🇳 台北Hinet
-      - 🇭🇰 香港EDCL
-      - 🇺🇲 美国US|
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港EDCL_1
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇭🇰 HK459VMS
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇭🇰 香港-2|1G|80端口
-      - LAX-Melbicom 2
-      - 🇿🇦 ZA10
-      - London-AWS 2
-      - 🇸🇬 Singapore-Melbikom 2
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇺🇲 US8
-      - 🇺🇲 US9
-      - 🇨🇳 台北Hinet_7
-      - 🇭🇰 HK15
-      - 🇻🇳 |越南01
-      - Fremont-Nato 2
-      - 🇨🇳 中国_1022529
-      - 🇦🇺 澳大利亚()
-      - 🇺🇲 |美国D
-      - 🇮🇳 |印度01|v2直连|x2
-      - 🇸🇬 |新加坡01|IP均衡优化|CTN加速|500Mbps共享
-      - univstar~Riyadh-Kaopu-dip
-      - -伊朗-5.161.131.122
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇭🇰 HK14
-      - 🇸🇬 SGP🇸🇬
-      - 🇨🇳 台北Hinet 2
-      - 🇺🇲 US1
-      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
-      - 🇨🇳 中国() 2
-      - 🇯🇵 |JP日本003
-      - 🇩🇪 |德国01
-      - 🇭🇰 |香港02
-      - 🇫🇷 FR10TJN
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 |SG新加坡002
-      - 🇺🇲 |USAY美国亚特兰大001
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 中国_tg+univstar_9
-      - 🇺🇲 美国A|
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇨🇳 台中hinet_1
-      - 🇭🇰 |香港02|v2直连|x2
-      - 🇦🇺 AU澳大利亚002
-      - 🇨🇳 台北Hinet_13
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
-      - 🇨🇳 台北Hinet 3
-      - Tokyo-Linode
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇰🇷 |韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇯🇵 |日本02
-      - 🇨🇳 台中Hinet 2
-      - 🇨🇳 中国_1022016
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
-      - 全球直连④
-      - 🇯🇵 |日本01
-      - 巴基斯坦001
-      - 🇯🇵 JP日本002
-      - 🇭🇰 香港|
-      - 🇭🇰 HK_45.11.104.94_102227c4-151
-      - 🇨🇳 台北Hinet_2
-      - 🇿🇦 ZA11
-      - 🇯🇵 |日本02|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇯🇵 日本()
-      - 🇩🇪 DE德国002
-      - 🇿🇦 ZA1
-      - 🇨🇳 中国() 3
-      - 🇨🇳 台北Hinet_12
-      - 稳定高速可购买付费节点↓
-      - 🇭🇰 香港-V|10G|80端口
-      - 🇨🇳 台北Hinet 4
-      - 🇭🇰 香港ssr|
-      - 🇿🇦 南非()
-      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
-      - Fremont-Nato_1
-      - 🇭🇰 香港EDCL 2
-      - Tokyo-Linode_7
-      - Fremont-Nato 3
-      - 🇸🇬 Singapore-Melbicom_8
-      - 🇸🇬 |新加坡A
-      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
-      - 🇺🇲 US4
-      - 🇯🇵 |日本05|IP均衡优化|混合负载|600Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享 2
-      - Fremont-Nato_3
-      - 🇭🇰 HK2
-      - Fremont-Nato 4
-      - 🇿🇦 ZA5
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇭🇰 香港EDCL 3
-      - 🇩🇪 |德国A
-      - 🇸🇬 Singapore-Melbicom
-      - 🇸🇬 Singapore-Melbicom 2
-      - LAX-Melbicom_1
-      - 🇨🇳 台中hinet
-      - 🇨🇳 CN447VMS
-      - London-AWS_5
-      - univstar~Islamabad-COMSATS-dip_2
-      - 🇯🇵 |日本01|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_15 2
-      - 🇸🇬 |新加坡
-      - 🇿🇦 ZA4
-      - 🇨🇳 中国() 4
-      - 🇺🇲 |美国01
-      - 🇺🇲 |USA美国001
-      - 🇿🇦 ZA7
-      - 🇸🇬 Singapore-Melbikom_9
-      - 🇸🇬 订阅永久更新
-      - 🇨🇳 中国_1022538
-      - 🇭🇰 香港EDCL 4
-      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
-      - 🇺🇲 US10
-      - 🇭🇰 HK2 2
-      - 🇯🇵 |日本31|原生家宽
-      - 🇸🇬 Singapore-Melbicom 3
-      - 🇨🇭 瑞士()
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
-      - Tokyo-M247
-      - 🇮🇳 印度()
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇸🇬 Singapore-Melbicom 4
-      - London-AWS 3
-      - 🇺🇲 美国() 2
-      - Tokyo-Linode_12
-      - 🇨🇳 |台湾02
-      - 🇸🇬 Singapore-Melbikom 6
-      - Tokyo-Linode_8
-      - Tokyo-M247 2
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享 2
-      - 🇭🇰 香港Misaka
-      - 🇨🇳 台中Hinet 3
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享 2
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇨🇳 台湾2|
-      - Tokyo-M247 3
-      - 🇸🇬 SG新加坡001
-      - 🇺🇲 USA美国001
-      - 🇺🇲 US470VMS
-      - 🇭🇰 香港2
-      - 🇨🇦 |CA加拿大001
-      - 网址:hass.win/reg
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港EDCL 5
-      - 🇿🇦 ZA9
-      - 🇸🇬 Singapore-Melbicom 5
-      - Tokyo-Linode_10
-      - Tokyo-M247 4
-      - 🇸🇬 Singapore-Melbicom_11
-      - 🇸🇬 Singapore-Melbikom_16
-      - 🇨🇳 中国_tg+univstar_16
-      - 🇨🇳 台北Hinet_3
-      - 🇨🇦 |CA加拿大003
-      - 🇿🇦 ZA3
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享 2
-      - 🇺🇲 美国() 3
+      - 🇨🇦 CA加拿大002
+      - 🇯🇵 |日本02|IP均衡优化|混合负载|600Mbps共享
       - ()
+      - 🇿🇦 ZA8
+      - 🇫🇷 FR2
+      - 🇳🇱 _NL_荷兰2
+      - 🇭🇰 香港HKT|解锁流媒体
+      - 🇮🇳 |印度
+      - Tokyo-Linode
+      - Fremont-Nato_2
+      - Tokyo-M247_2
+      - 🇸🇬 Singapore-Melbikom_4
+      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
+      - 🇨🇭 瑞士()
+      - Tokyo-Linode_8
+      - 🇰🇷 |韩国01
+      - UN473VMS
+      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇭🇰 香港|
+      - 🇺🇲 US6
+      - 🇯🇵 JP1
+      - Tokyo-Linode 2
+      - 捷克()
+      - 🇺🇲 美国-测试|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇨🇳 台北Hinet
+      - Tokyo-M247
+      - 🇸🇬 Singapore-Melbicom_5
+      - 🇭🇰 香港HK|
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇨🇳 中国()
+      - 🇺🇲 美国()
+      - 全球直连③
+      - 🇨🇳 中国_1022543
+      - 🇨🇳 中国内蒙古|100M|非80端口|停机卡
+      - 🇨🇳 台北Hinet_7
+      - 🇩🇪 DE德国002
+      - 🇦🇺 AU澳大利亚002
+      - London-AWS 2
+      - 🇺🇲 US14
+      - 🇸🇬 Singapore-Melbicom_6
+      - 🇺🇲 美国A|
+      - 🇨🇳 中国江苏|100M|非80端口|停机卡
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
+      - 🇨🇳 CN10
+      - Fremont-Nato_1
+      - 🇨🇳 CN7
+      - 🇸🇬 Singapore-Melbicom
+      - Tokyo-Linode 3
+      - 🇨🇳 CN9
+      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
+      - 🇭🇰 HK8
+      - univstar~Islamabad-COMSATS-dip_2
+      - 🇩🇪 |DE德国003
+      - 🇺🇲 US15
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港-VI|10G|80端口
+      - 🇸🇬 新加坡linode
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 澳大利亚()
+      - Fremont-Nato
+      - 🇯🇵 日本()
+      - 🇸🇬 SG新加坡001
+      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
+      - 🇯🇵 日本() 2
+      - 🇨🇳 中国_1022530
+      - 🇰🇷 |韩国
+      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
+      - 🇭🇰 香港-V|10G|80端口
+      - 🇸🇬 Singapore-Melbikom_8
+      - Tokyo-Linode_12
+      - 🇯🇵 JP4
+      - 🇺🇲 |美国D
+      - 🇰🇷 【直连】ICN/首尔-2
+      - 🇨🇳 CN1
+      - 🇭🇰 |香港02|v2直连|x2
+      - Fremont-Nato_4
+      - 🇸🇬 Singapore-Melbicom_12
+      - 🇸🇬 Singapore-Melbikom_10
+      - 🇯🇵 JP5
+      - 🇭🇰 HK464VMS
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇮🇳 |印度01|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom_1
+      - 🇯🇵 |日本B
+      - 🇨🇳 中国_tg+univstar_12
+      - 免费节点定期失效
+      - 🇭🇰 香港-3|1G|80端口
+      - Tokyo-Linode_7
+      - univstar~Islamabad-COMSATS-dip_1
+      - 🇸🇬 |新加坡05|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbikom
+      - 🇨🇳 中国() 2
+      - 🇨🇳 台中Hinet
+      - 🇺🇲 US3
+      - 🇨🇳 CN【付费推荐：https//goo.gs/vip】6
+      - 🇿🇦 ZA7
+      - 🇺🇲 US19
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇸🇬 Singapore-Melbicom 2
+      - 🇸🇬 Singapore-Melbikom_2
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
+      - Tokyo-M247 2
+      - 🇸🇬 |新加坡C
+      - 🇨🇳 中国() 3
+      - 🇺🇲 USAY美国亚特兰大003
+      - 🇸🇬 Singapore-Melbicom 3
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇺🇲 US450VMS
+      - London-AWS 3
+      - 🇭🇰 香港EDCL_5
+      - ID14VMS
+      - 🇺🇲 美国2|
+      - Tokyo-M247 3
+      - 🇨🇳 台北Hinet 2
+      - 🇺🇲 US5
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇨🇦 CA加拿大003
+      - 距离下次重置剩余：7天
+      - Tokyo-Linode_4
+      - 🇨🇳 台中Hinet_3
+      - 🇸🇬 Singapore-Melbicom 4
+      - 🇭🇰 香港01|
+      - 🇯🇵 日本() 3
+      - 🇸🇬 |SG新加坡001
+      - 🇺🇲 |美国02
+      - 🇺🇲 US1
+      - 🇨🇳 台北Hinet 3
+      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
+      - 🇨🇳 中国() 4
+      - 🇸🇬 Singapore-Melbicom_4
+      - h961359.waihuizhibiaowang.com:11443
+      - Fremont-Nato_3
+      - 网址:hass.win/reg
+      - 🇺🇲 美国西雅图-江移|解锁流媒体
+      - 🇭🇰 |香港HKT01
+      - 🇺🇲 美国|
+      - 距离下次重置剩余：21天
+      - 🇨🇳 台中hinet_1
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享 2
+      - 🇨🇦 |加拿大01
+      - 🇭🇰 HK459VMS
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇩🇪 |德国01
+      - 🇸🇬 Singapore-Melbikom_17
+      - 🇨🇳 中国() 5
+      - Tokyo-M247 4
+      - 🇨🇳 CN11
+      - 🇨🇳 中国_1022533
+      - 🇨🇳 中国() 6
+      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
+      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - London-AWS_2
+      - 🇺🇲 US12
+      - 🇺🇲 |美国01
+      - 🇸🇬 Singapore-Melbikom_13
+      - 🇭🇰 HK461VMS
+      - 🇸🇬 Singapore-Melbikom 2
+      - 🇭🇰 |香港03|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom 5
+      - 🇺🇲 |美国原生04|IP均衡优化|混合负载|500Mbps共享
+      - 🇨🇦 CA加拿大002 2
+      - 🇻🇳 |越南01
+      - 🇺🇲 USAY美国亚特兰大003 2
+      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
+      - LAX-Melbicom_2
+      - 🇨🇳 台北Hinet_9
+      - 🇨🇦 github.com/freefq-加拿大5
+      - 🇭🇰 |香港04
+      - 🇭🇰 【直连】HKG/香港-80端口-1
+      - 🇸🇬 Singapore-Melbikom 3
+      - Tokyo-M247 5
+      - 🇨🇳 台北Hinet 4
+      - 🇰🇷 |韩国01|IP均衡优化|混合负载|800Mbps共享
+      - 🇨🇳 CN2
+      - 🇨🇦 大萝卜鸡加拿大
+      - Tokyo-Linode_9
+      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
+      - 🇭🇰 香港EDCL_3
+      - 🇨🇳 台北Hinet 5
+      - 🇸🇬 更新于10/23/19:06
+      - 🇸🇬 Singapore-Melbikom 4
+      - 🇨🇳 CN446VMS
+      - 🇭🇰 香港-6|1G|80端口
+      - 🇸🇬 Singapore-Melbikom 5
+      - 🇯🇵 |JP日本002
+      - 🇿🇦 ZA9
+      - univstar~Riyadh-Kaopu-dip
+      - 🇨🇳 台北Hinet_1
+      - 🇺🇲 USA美国002
+      - 🇨🇭 瑞士() 2
+      - 🇺🇲 US1 2
+      - 🇺🇲 美国US|
+      - 🇭🇰 香港EDCL
+      - 🇸🇬 Singapore-Melbikom 6
+      - 🇨🇳 CN3
+      - 🇺🇲 US2
+      - Tokyo-M247 6
+      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 Singapore-Melbikom 7
+      - 🇺🇲 |USA美国001
+      - 【直连】TYO/东京-80端口-1
+      - 🇺🇲 US7
+      - 🇭🇰 香港| 2
+      - 🇸🇬 |新加坡D
+      - 🇨🇦 |CA加拿大001
+      - 🇨🇳 中国_1022619
+      - 🇳🇱 NL1
+      - 🇸🇬 Singapore-Melbicom 6
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Fremont-Nato
-      - 群组:xxmym
       - London-AWS
-      - 🇰🇷 |韩国01|v2直连|x2
-      - 🇭🇰 HK6
-      - Tokyo-M247_2
-      - 🇭🇰 香港EDCL_3
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
-      - 🇭🇰 香港()
-      - LAX-Melbicom
-      - 🇨🇳 台中Hinet
-      - 🇨🇳 中国()
-      - 🇨🇳 中国_tg+univstar_15
-      - 🇫🇷 FR【付费推荐：https//goo.gs/vip】
-      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
-      - 🇮🇳 |印度
-      - 距离下次重置剩余：21天
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - Tokyo-Linode_11
-      - 🇩🇪 |DE德国001
-      - 🇨🇦 CA加拿大001
-      - 🇭🇰 |香港BGP02
-      - 🇺🇲 美国()
-      - 距离下次重置剩余：7天
-      - 🇭🇰 香港_1022065
-      - 🇨🇳 台北Hinet_4
-      - 🇭🇰 HK7
-      - 🇺🇲 |美国02
-      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
-      - 🇨🇳 |台湾01
-      - univstar~Islamabad-COMSATS-dip
-      - 🇨🇳 台北Hinet
-      - 🇭🇰 香港EDCL
-      - 🇺🇲 美国US|
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港EDCL_1
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇭🇰 HK459VMS
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇭🇰 香港-2|1G|80端口
-      - LAX-Melbicom 2
-      - 🇿🇦 ZA10
-      - London-AWS 2
-      - 🇸🇬 Singapore-Melbikom 2
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇺🇲 US8
-      - 🇺🇲 US9
-      - 🇨🇳 台北Hinet_7
-      - 🇭🇰 HK15
-      - 🇻🇳 |越南01
-      - Fremont-Nato 2
-      - 🇨🇳 中国_1022529
-      - 🇦🇺 澳大利亚()
-      - 🇺🇲 |美国D
-      - 🇮🇳 |印度01|v2直连|x2
-      - 🇸🇬 |新加坡01|IP均衡优化|CTN加速|500Mbps共享
-      - univstar~Riyadh-Kaopu-dip
-      - -伊朗-5.161.131.122
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇭🇰 HK14
-      - 🇸🇬 SGP🇸🇬
-      - 🇨🇳 台北Hinet 2
-      - 🇺🇲 US1
-      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
-      - 🇨🇳 中国() 2
-      - 🇯🇵 |JP日本003
-      - 🇩🇪 |德国01
-      - 🇭🇰 |香港02
-      - 🇫🇷 FR10TJN
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 |SG新加坡002
-      - 🇺🇲 |USAY美国亚特兰大001
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 中国_tg+univstar_9
-      - 🇺🇲 美国A|
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇨🇳 台中hinet_1
-      - 🇭🇰 |香港02|v2直连|x2
-      - 🇦🇺 AU澳大利亚002
-      - 🇨🇳 台北Hinet_13
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
-      - 🇨🇳 台北Hinet 3
-      - Tokyo-Linode
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇰🇷 |韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇯🇵 |日本02
-      - 🇨🇳 台中Hinet 2
-      - 🇨🇳 中国_1022016
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
-      - 全球直连④
-      - 🇯🇵 |日本01
-      - 巴基斯坦001
-      - 🇯🇵 JP日本002
-      - 🇭🇰 香港|
-      - 🇭🇰 HK_45.11.104.94_102227c4-151
-      - 🇨🇳 台北Hinet_2
-      - 🇿🇦 ZA11
-      - 🇯🇵 |日本02|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇯🇵 日本()
-      - 🇩🇪 DE德国002
-      - 🇿🇦 ZA1
-      - 🇨🇳 中国() 3
-      - 🇨🇳 台北Hinet_12
-      - 稳定高速可购买付费节点↓
-      - 🇭🇰 香港-V|10G|80端口
-      - 🇨🇳 台北Hinet 4
-      - 🇭🇰 香港ssr|
-      - 🇿🇦 南非()
-      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
-      - Fremont-Nato_1
-      - 🇭🇰 香港EDCL 2
-      - Tokyo-Linode_7
-      - Fremont-Nato 3
-      - 🇸🇬 Singapore-Melbicom_8
-      - 🇸🇬 |新加坡A
-      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
-      - 🇺🇲 US4
-      - 🇯🇵 |日本05|IP均衡优化|混合负载|600Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享 2
-      - Fremont-Nato_3
-      - 🇭🇰 HK2
-      - Fremont-Nato 4
-      - 🇿🇦 ZA5
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇭🇰 香港EDCL 3
-      - 🇩🇪 |德国A
-      - 🇸🇬 Singapore-Melbicom
-      - 🇸🇬 Singapore-Melbicom 2
-      - LAX-Melbicom_1
-      - 🇨🇳 台中hinet
-      - 🇨🇳 CN447VMS
-      - London-AWS_5
-      - univstar~Islamabad-COMSATS-dip_2
-      - 🇯🇵 |日本01|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_15 2
-      - 🇸🇬 |新加坡
-      - 🇿🇦 ZA4
-      - 🇨🇳 中国() 4
-      - 🇺🇲 |美国01
-      - 🇺🇲 |USA美国001
-      - 🇿🇦 ZA7
-      - 🇸🇬 Singapore-Melbikom_9
-      - 🇸🇬 订阅永久更新
-      - 🇨🇳 中国_1022538
-      - 🇭🇰 香港EDCL 4
-      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
-      - 🇺🇲 US10
-      - 🇭🇰 HK2 2
-      - 🇯🇵 |日本31|原生家宽
-      - 🇸🇬 Singapore-Melbicom 3
-      - 🇨🇭 瑞士()
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
-      - Tokyo-M247
-      - 🇮🇳 印度()
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇸🇬 Singapore-Melbicom 4
-      - London-AWS 3
-      - 🇺🇲 美国() 2
-      - Tokyo-Linode_12
-      - 🇨🇳 |台湾02
-      - 🇸🇬 Singapore-Melbikom 6
-      - Tokyo-Linode_8
-      - Tokyo-M247 2
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享 2
-      - 🇭🇰 香港Misaka
-      - 🇨🇳 台中Hinet 3
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享 2
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇨🇳 台湾2|
-      - Tokyo-M247 3
-      - 🇸🇬 SG新加坡001
-      - 🇺🇲 USA美国001
-      - 🇺🇲 US470VMS
-      - 🇭🇰 香港2
-      - 🇨🇦 |CA加拿大001
-      - 网址:hass.win/reg
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港EDCL 5
-      - 🇿🇦 ZA9
-      - 🇸🇬 Singapore-Melbicom 5
-      - Tokyo-Linode_10
-      - Tokyo-M247 4
-      - 🇸🇬 Singapore-Melbicom_11
-      - 🇸🇬 Singapore-Melbikom_16
-      - 🇨🇳 中国_tg+univstar_16
-      - 🇨🇳 台北Hinet_3
-      - 🇨🇦 |CA加拿大003
-      - 🇿🇦 ZA3
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享 2
-      - 🇺🇲 美国() 3
+      - 🇨🇦 CA加拿大002
+      - 🇯🇵 |日本02|IP均衡优化|混合负载|600Mbps共享
       - ()
+      - 🇿🇦 ZA8
+      - 🇫🇷 FR2
+      - 🇳🇱 _NL_荷兰2
+      - 🇭🇰 香港HKT|解锁流媒体
+      - 🇮🇳 |印度
+      - Tokyo-Linode
+      - Fremont-Nato_2
+      - Tokyo-M247_2
+      - 🇸🇬 Singapore-Melbikom_4
+      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
+      - 🇨🇭 瑞士()
+      - Tokyo-Linode_8
+      - 🇰🇷 |韩国01
+      - UN473VMS
+      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇭🇰 香港|
+      - 🇺🇲 US6
+      - 🇯🇵 JP1
+      - Tokyo-Linode 2
+      - 捷克()
+      - 🇺🇲 美国-测试|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇨🇳 台北Hinet
+      - Tokyo-M247
+      - 🇸🇬 Singapore-Melbicom_5
+      - 🇭🇰 香港HK|
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇨🇳 中国()
+      - 🇺🇲 美国()
+      - 全球直连③
+      - 🇨🇳 中国_1022543
+      - 🇨🇳 中国内蒙古|100M|非80端口|停机卡
+      - 🇨🇳 台北Hinet_7
+      - 🇩🇪 DE德国002
+      - 🇦🇺 AU澳大利亚002
+      - London-AWS 2
+      - 🇺🇲 US14
+      - 🇸🇬 Singapore-Melbicom_6
+      - 🇺🇲 美国A|
+      - 🇨🇳 中国江苏|100M|非80端口|停机卡
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
+      - 🇨🇳 CN10
+      - Fremont-Nato_1
+      - 🇨🇳 CN7
+      - 🇸🇬 Singapore-Melbicom
+      - Tokyo-Linode 3
+      - 🇨🇳 CN9
+      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
+      - 🇭🇰 HK8
+      - univstar~Islamabad-COMSATS-dip_2
+      - 🇩🇪 |DE德国003
+      - 🇺🇲 US15
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港-VI|10G|80端口
+      - 🇸🇬 新加坡linode
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 澳大利亚()
+      - Fremont-Nato
+      - 🇯🇵 日本()
+      - 🇸🇬 SG新加坡001
+      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
+      - 🇯🇵 日本() 2
+      - 🇨🇳 中国_1022530
+      - 🇰🇷 |韩国
+      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
+      - 🇭🇰 香港-V|10G|80端口
+      - 🇸🇬 Singapore-Melbikom_8
+      - Tokyo-Linode_12
+      - 🇯🇵 JP4
+      - 🇺🇲 |美国D
+      - 🇰🇷 【直连】ICN/首尔-2
+      - 🇨🇳 CN1
+      - 🇭🇰 |香港02|v2直连|x2
+      - Fremont-Nato_4
+      - 🇸🇬 Singapore-Melbicom_12
+      - 🇸🇬 Singapore-Melbikom_10
+      - 🇯🇵 JP5
+      - 🇭🇰 HK464VMS
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇮🇳 |印度01|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom_1
+      - 🇯🇵 |日本B
+      - 🇨🇳 中国_tg+univstar_12
+      - 免费节点定期失效
+      - 🇭🇰 香港-3|1G|80端口
+      - Tokyo-Linode_7
+      - univstar~Islamabad-COMSATS-dip_1
+      - 🇸🇬 |新加坡05|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbikom
+      - 🇨🇳 中国() 2
+      - 🇨🇳 台中Hinet
+      - 🇺🇲 US3
+      - 🇨🇳 CN【付费推荐：https//goo.gs/vip】6
+      - 🇿🇦 ZA7
+      - 🇺🇲 US19
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇸🇬 Singapore-Melbicom 2
+      - 🇸🇬 Singapore-Melbikom_2
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
+      - Tokyo-M247 2
+      - 🇸🇬 |新加坡C
+      - 🇨🇳 中国() 3
+      - 🇺🇲 USAY美国亚特兰大003
+      - 🇸🇬 Singapore-Melbicom 3
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇺🇲 US450VMS
+      - London-AWS 3
+      - 🇭🇰 香港EDCL_5
+      - ID14VMS
+      - 🇺🇲 美国2|
+      - Tokyo-M247 3
+      - 🇨🇳 台北Hinet 2
+      - 🇺🇲 US5
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇨🇦 CA加拿大003
+      - 距离下次重置剩余：7天
+      - Tokyo-Linode_4
+      - 🇨🇳 台中Hinet_3
+      - 🇸🇬 Singapore-Melbicom 4
+      - 🇭🇰 香港01|
+      - 🇯🇵 日本() 3
+      - 🇸🇬 |SG新加坡001
+      - 🇺🇲 |美国02
+      - 🇺🇲 US1
+      - 🇨🇳 台北Hinet 3
+      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
+      - 🇨🇳 中国() 4
+      - 🇸🇬 Singapore-Melbicom_4
+      - h961359.waihuizhibiaowang.com:11443
+      - Fremont-Nato_3
+      - 网址:hass.win/reg
+      - 🇺🇲 美国西雅图-江移|解锁流媒体
+      - 🇭🇰 |香港HKT01
+      - 🇺🇲 美国|
+      - 距离下次重置剩余：21天
+      - 🇨🇳 台中hinet_1
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享 2
+      - 🇨🇦 |加拿大01
+      - 🇭🇰 HK459VMS
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇩🇪 |德国01
+      - 🇸🇬 Singapore-Melbikom_17
+      - 🇨🇳 中国() 5
+      - Tokyo-M247 4
+      - 🇨🇳 CN11
+      - 🇨🇳 中国_1022533
+      - 🇨🇳 中国() 6
+      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
+      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - London-AWS_2
+      - 🇺🇲 US12
+      - 🇺🇲 |美国01
+      - 🇸🇬 Singapore-Melbikom_13
+      - 🇭🇰 HK461VMS
+      - 🇸🇬 Singapore-Melbikom 2
+      - 🇭🇰 |香港03|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom 5
+      - 🇺🇲 |美国原生04|IP均衡优化|混合负载|500Mbps共享
+      - 🇨🇦 CA加拿大002 2
+      - 🇻🇳 |越南01
+      - 🇺🇲 USAY美国亚特兰大003 2
+      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
+      - LAX-Melbicom_2
+      - 🇨🇳 台北Hinet_9
+      - 🇨🇦 github.com/freefq-加拿大5
+      - 🇭🇰 |香港04
+      - 🇭🇰 【直连】HKG/香港-80端口-1
+      - 🇸🇬 Singapore-Melbikom 3
+      - Tokyo-M247 5
+      - 🇨🇳 台北Hinet 4
+      - 🇰🇷 |韩国01|IP均衡优化|混合负载|800Mbps共享
+      - 🇨🇳 CN2
+      - 🇨🇦 大萝卜鸡加拿大
+      - Tokyo-Linode_9
+      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
+      - 🇭🇰 香港EDCL_3
+      - 🇨🇳 台北Hinet 5
+      - 🇸🇬 更新于10/23/19:06
+      - 🇸🇬 Singapore-Melbikom 4
+      - 🇨🇳 CN446VMS
+      - 🇭🇰 香港-6|1G|80端口
+      - 🇸🇬 Singapore-Melbikom 5
+      - 🇯🇵 |JP日本002
+      - 🇿🇦 ZA9
+      - univstar~Riyadh-Kaopu-dip
+      - 🇨🇳 台北Hinet_1
+      - 🇺🇲 USA美国002
+      - 🇨🇭 瑞士() 2
+      - 🇺🇲 US1 2
+      - 🇺🇲 美国US|
+      - 🇭🇰 香港EDCL
+      - 🇸🇬 Singapore-Melbikom 6
+      - 🇨🇳 CN3
+      - 🇺🇲 US2
+      - Tokyo-M247 6
+      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 Singapore-Melbikom 7
+      - 🇺🇲 |USA美国001
+      - 【直连】TYO/东京-80端口-1
+      - 🇺🇲 US7
+      - 🇭🇰 香港| 2
+      - 🇸🇬 |新加坡D
+      - 🇨🇦 |CA加拿大001
+      - 🇨🇳 中国_1022619
+      - 🇳🇱 NL1
+      - 🇸🇬 Singapore-Melbicom 6
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -834,204 +894,219 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - Fremont-Nato
-      - 群组:xxmym
       - London-AWS
-      - 🇰🇷 |韩国01|v2直连|x2
-      - 🇭🇰 HK6
-      - Tokyo-M247_2
-      - 🇭🇰 香港EDCL_3
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
-      - 🇭🇰 香港()
-      - LAX-Melbicom
-      - 🇨🇳 台中Hinet
-      - 🇨🇳 中国()
-      - 🇨🇳 中国_tg+univstar_15
-      - 🇫🇷 FR【付费推荐：https//goo.gs/vip】
-      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
-      - 🇮🇳 |印度
-      - 距离下次重置剩余：21天
-      - 🇨🇳 中国江苏|100M|非80端口|停机卡
-      - Tokyo-Linode_11
-      - 🇩🇪 |DE德国001
-      - 🇨🇦 CA加拿大001
-      - 🇭🇰 |香港BGP02
-      - 🇺🇲 美国()
-      - 距离下次重置剩余：7天
-      - 🇭🇰 香港_1022065
-      - 🇨🇳 台北Hinet_4
-      - 🇭🇰 HK7
-      - 🇺🇲 |美国02
-      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
-      - 🇨🇳 |台湾01
-      - univstar~Islamabad-COMSATS-dip
-      - 🇨🇳 台北Hinet
-      - 🇭🇰 香港EDCL
-      - 🇺🇲 美国US|
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港EDCL_1
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇭🇰 HK459VMS
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇭🇰 香港-2|1G|80端口
-      - LAX-Melbicom 2
-      - 🇿🇦 ZA10
-      - London-AWS 2
-      - 🇸🇬 Singapore-Melbikom 2
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇺🇲 US8
-      - 🇺🇲 US9
-      - 🇨🇳 台北Hinet_7
-      - 🇭🇰 HK15
-      - 🇻🇳 |越南01
-      - Fremont-Nato 2
-      - 🇨🇳 中国_1022529
-      - 🇦🇺 澳大利亚()
-      - 🇺🇲 |美国D
-      - 🇮🇳 |印度01|v2直连|x2
-      - 🇸🇬 |新加坡01|IP均衡优化|CTN加速|500Mbps共享
-      - univstar~Riyadh-Kaopu-dip
-      - -伊朗-5.161.131.122
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇭🇰 HK14
-      - 🇸🇬 SGP🇸🇬
-      - 🇨🇳 台北Hinet 2
-      - 🇺🇲 US1
-      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
-      - 🇨🇳 中国() 2
-      - 🇯🇵 |JP日本003
-      - 🇩🇪 |德国01
-      - 🇭🇰 |香港02
-      - 🇫🇷 FR10TJN
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 |SG新加坡002
-      - 🇺🇲 |USAY美国亚特兰大001
-      - h207532.waihuizhibiaowang.com:11443
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇨🇳 中国_tg+univstar_9
-      - 🇺🇲 美国A|
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇨🇳 台中hinet_1
-      - 🇭🇰 |香港02|v2直连|x2
-      - 🇦🇺 AU澳大利亚002
-      - 🇨🇳 台北Hinet_13
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
-      - 🇨🇳 台北Hinet 3
-      - Tokyo-Linode
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇰🇷 |韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇯🇵 |日本02
-      - 🇨🇳 台中Hinet 2
-      - 🇨🇳 中国_1022016
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
-      - 全球直连④
-      - 🇯🇵 |日本01
-      - 巴基斯坦001
-      - 🇯🇵 JP日本002
-      - 🇭🇰 香港|
-      - 🇭🇰 HK_45.11.104.94_102227c4-151
-      - 🇨🇳 台北Hinet_2
-      - 🇿🇦 ZA11
-      - 🇯🇵 |日本02|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇯🇵 日本()
-      - 🇩🇪 DE德国002
-      - 🇿🇦 ZA1
-      - 🇨🇳 中国() 3
-      - 🇨🇳 台北Hinet_12
-      - 稳定高速可购买付费节点↓
-      - 🇭🇰 香港-V|10G|80端口
-      - 🇨🇳 台北Hinet 4
-      - 🇭🇰 香港ssr|
-      - 🇿🇦 南非()
-      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
-      - Fremont-Nato_1
-      - 🇭🇰 香港EDCL 2
-      - Tokyo-Linode_7
-      - Fremont-Nato 3
-      - 🇸🇬 Singapore-Melbicom_8
-      - 🇸🇬 |新加坡A
-      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
-      - 🇺🇲 US4
-      - 🇯🇵 |日本05|IP均衡优化|混合负载|600Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享 2
-      - Fremont-Nato_3
-      - 🇭🇰 HK2
-      - Fremont-Nato 4
-      - 🇿🇦 ZA5
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇭🇰 香港EDCL 3
-      - 🇩🇪 |德国A
-      - 🇸🇬 Singapore-Melbicom
-      - 🇸🇬 Singapore-Melbicom 2
-      - LAX-Melbicom_1
-      - 🇨🇳 台中hinet
-      - 🇨🇳 CN447VMS
-      - London-AWS_5
-      - univstar~Islamabad-COMSATS-dip_2
-      - 🇯🇵 |日本01|grpc直连|x2
-      - 🇨🇳 中国_tg+univstar_15 2
-      - 🇸🇬 |新加坡
-      - 🇿🇦 ZA4
-      - 🇨🇳 中国() 4
-      - 🇺🇲 |美国01
-      - 🇺🇲 |USA美国001
-      - 🇿🇦 ZA7
-      - 🇸🇬 Singapore-Melbikom_9
-      - 🇸🇬 订阅永久更新
-      - 🇨🇳 中国_1022538
-      - 🇭🇰 香港EDCL 4
-      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
-      - 🇺🇲 US10
-      - 🇭🇰 HK2 2
-      - 🇯🇵 |日本31|原生家宽
-      - 🇸🇬 Singapore-Melbicom 3
-      - 🇨🇭 瑞士()
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
-      - Tokyo-M247
-      - 🇮🇳 印度()
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 🇸🇬 Singapore-Melbicom 4
-      - London-AWS 3
-      - 🇺🇲 美国() 2
-      - Tokyo-Linode_12
-      - 🇨🇳 |台湾02
-      - 🇸🇬 Singapore-Melbikom 6
-      - Tokyo-Linode_8
-      - Tokyo-M247 2
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享 2
-      - 🇭🇰 香港Misaka
-      - 🇨🇳 台中Hinet 3
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享 2
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇨🇳 台湾2|
-      - Tokyo-M247 3
-      - 🇸🇬 SG新加坡001
-      - 🇺🇲 USA美国001
-      - 🇺🇲 US470VMS
-      - 🇭🇰 香港2
-      - 🇨🇦 |CA加拿大001
-      - 网址:hass.win/reg
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港EDCL 5
-      - 🇿🇦 ZA9
-      - 🇸🇬 Singapore-Melbicom 5
-      - Tokyo-Linode_10
-      - Tokyo-M247 4
-      - 🇸🇬 Singapore-Melbicom_11
-      - 🇸🇬 Singapore-Melbikom_16
-      - 🇨🇳 中国_tg+univstar_16
-      - 🇨🇳 台北Hinet_3
-      - 🇨🇦 |CA加拿大003
-      - 🇿🇦 ZA3
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享 2
-      - 🇺🇲 美国() 3
+      - 🇨🇦 CA加拿大002
+      - 🇯🇵 |日本02|IP均衡优化|混合负载|600Mbps共享
       - ()
+      - 🇿🇦 ZA8
+      - 🇫🇷 FR2
+      - 🇳🇱 _NL_荷兰2
+      - 🇭🇰 香港HKT|解锁流媒体
+      - 🇮🇳 |印度
+      - Tokyo-Linode
+      - Fremont-Nato_2
+      - Tokyo-M247_2
+      - 🇸🇬 Singapore-Melbikom_4
+      - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
+      - 🇨🇭 瑞士()
+      - Tokyo-Linode_8
+      - 🇰🇷 |韩国01
+      - UN473VMS
+      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇭🇰 香港|
+      - 🇺🇲 US6
+      - 🇯🇵 JP1
+      - Tokyo-Linode 2
+      - 捷克()
+      - 🇺🇲 美国-测试|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇨🇳 台北Hinet
+      - Tokyo-M247
+      - 🇸🇬 Singapore-Melbicom_5
+      - 🇭🇰 香港HK|
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇨🇳 中国()
+      - 🇺🇲 美国()
+      - 全球直连③
+      - 🇨🇳 中国_1022543
+      - 🇨🇳 中国内蒙古|100M|非80端口|停机卡
+      - 🇨🇳 台北Hinet_7
+      - 🇩🇪 DE德国002
+      - 🇦🇺 AU澳大利亚002
+      - London-AWS 2
+      - 🇺🇲 US14
+      - 🇸🇬 Singapore-Melbicom_6
+      - 🇺🇲 美国A|
+      - 🇨🇳 中国江苏|100M|非80端口|停机卡
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
+      - 🇨🇳 CN10
+      - Fremont-Nato_1
+      - 🇨🇳 CN7
+      - 🇸🇬 Singapore-Melbicom
+      - Tokyo-Linode 3
+      - 🇨🇳 CN9
+      - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
+      - 🇭🇰 HK8
+      - univstar~Islamabad-COMSATS-dip_2
+      - 🇩🇪 |DE德国003
+      - 🇺🇲 US15
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港-VI|10G|80端口
+      - 🇸🇬 新加坡linode
+      - 🇨🇦 CA加拿大001
+      - 🇦🇺 澳大利亚()
+      - Fremont-Nato
+      - 🇯🇵 日本()
+      - 🇸🇬 SG新加坡001
+      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
+      - 🇯🇵 日本() 2
+      - 🇨🇳 中国_1022530
+      - 🇰🇷 |韩国
+      - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
+      - 🇭🇰 香港-V|10G|80端口
+      - 🇸🇬 Singapore-Melbikom_8
+      - Tokyo-Linode_12
+      - 🇯🇵 JP4
+      - 🇺🇲 |美国D
+      - 🇰🇷 【直连】ICN/首尔-2
+      - 🇨🇳 CN1
+      - 🇭🇰 |香港02|v2直连|x2
+      - Fremont-Nato_4
+      - 🇸🇬 Singapore-Melbicom_12
+      - 🇸🇬 Singapore-Melbikom_10
+      - 🇯🇵 JP5
+      - 🇭🇰 HK464VMS
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇮🇳 |印度01|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom_1
+      - 🇯🇵 |日本B
+      - 🇨🇳 中国_tg+univstar_12
+      - 免费节点定期失效
+      - 🇭🇰 香港-3|1G|80端口
+      - Tokyo-Linode_7
+      - univstar~Islamabad-COMSATS-dip_1
+      - 🇸🇬 |新加坡05|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbikom
+      - 🇨🇳 中国() 2
+      - 🇨🇳 台中Hinet
+      - 🇺🇲 US3
+      - 🇨🇳 CN【付费推荐：https//goo.gs/vip】6
+      - 🇿🇦 ZA7
+      - 🇺🇲 US19
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇸🇬 Singapore-Melbicom 2
+      - 🇸🇬 Singapore-Melbikom_2
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
+      - Tokyo-M247 2
+      - 🇸🇬 |新加坡C
+      - 🇨🇳 中国() 3
+      - 🇺🇲 USAY美国亚特兰大003
+      - 🇸🇬 Singapore-Melbicom 3
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇺🇲 US450VMS
+      - London-AWS 3
+      - 🇭🇰 香港EDCL_5
+      - ID14VMS
+      - 🇺🇲 美国2|
+      - Tokyo-M247 3
+      - 🇨🇳 台北Hinet 2
+      - 🇺🇲 US5
+      - 🇨🇳 中国_tg+univstar_16
+      - 🇨🇦 CA加拿大003
+      - 距离下次重置剩余：7天
+      - Tokyo-Linode_4
+      - 🇨🇳 台中Hinet_3
+      - 🇸🇬 Singapore-Melbicom 4
+      - 🇭🇰 香港01|
+      - 🇯🇵 日本() 3
+      - 🇸🇬 |SG新加坡001
+      - 🇺🇲 |美国02
+      - 🇺🇲 US1
+      - 🇨🇳 台北Hinet 3
+      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
+      - 🇨🇳 中国() 4
+      - 🇸🇬 Singapore-Melbicom_4
+      - h961359.waihuizhibiaowang.com:11443
+      - Fremont-Nato_3
+      - 网址:hass.win/reg
+      - 🇺🇲 美国西雅图-江移|解锁流媒体
+      - 🇭🇰 |香港HKT01
+      - 🇺🇲 美国|
+      - 距离下次重置剩余：21天
+      - 🇨🇳 台中hinet_1
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享 2
+      - 🇨🇦 |加拿大01
+      - 🇭🇰 HK459VMS
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇩🇪 |德国01
+      - 🇸🇬 Singapore-Melbikom_17
+      - 🇨🇳 中国() 5
+      - Tokyo-M247 4
+      - 🇨🇳 CN11
+      - 🇨🇳 中国_1022533
+      - 🇨🇳 中国() 6
+      - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
+      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - London-AWS_2
+      - 🇺🇲 US12
+      - 🇺🇲 |美国01
+      - 🇸🇬 Singapore-Melbikom_13
+      - 🇭🇰 HK461VMS
+      - 🇸🇬 Singapore-Melbikom 2
+      - 🇭🇰 |香港03|v2直连|x2
+      - 🇸🇬 Singapore-Melbicom 5
+      - 🇺🇲 |美国原生04|IP均衡优化|混合负载|500Mbps共享
+      - 🇨🇦 CA加拿大002 2
+      - 🇻🇳 |越南01
+      - 🇺🇲 USAY美国亚特兰大003 2
+      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
+      - LAX-Melbicom_2
+      - 🇨🇳 台北Hinet_9
+      - 🇨🇦 github.com/freefq-加拿大5
+      - 🇭🇰 |香港04
+      - 🇭🇰 【直连】HKG/香港-80端口-1
+      - 🇸🇬 Singapore-Melbikom 3
+      - Tokyo-M247 5
+      - 🇨🇳 台北Hinet 4
+      - 🇰🇷 |韩国01|IP均衡优化|混合负载|800Mbps共享
+      - 🇨🇳 CN2
+      - 🇨🇦 大萝卜鸡加拿大
+      - Tokyo-Linode_9
+      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
+      - 🇭🇰 香港EDCL_3
+      - 🇨🇳 台北Hinet 5
+      - 🇸🇬 更新于10/23/19:06
+      - 🇸🇬 Singapore-Melbikom 4
+      - 🇨🇳 CN446VMS
+      - 🇭🇰 香港-6|1G|80端口
+      - 🇸🇬 Singapore-Melbikom 5
+      - 🇯🇵 |JP日本002
+      - 🇿🇦 ZA9
+      - univstar~Riyadh-Kaopu-dip
+      - 🇨🇳 台北Hinet_1
+      - 🇺🇲 USA美国002
+      - 🇨🇭 瑞士() 2
+      - 🇺🇲 US1 2
+      - 🇺🇲 美国US|
+      - 🇭🇰 香港EDCL
+      - 🇸🇬 Singapore-Melbikom 6
+      - 🇨🇳 CN3
+      - 🇺🇲 US2
+      - Tokyo-M247 6
+      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 Singapore-Melbikom 7
+      - 🇺🇲 |USA美国001
+      - 【直连】TYO/东京-80端口-1
+      - 🇺🇲 US7
+      - 🇭🇰 香港| 2
+      - 🇸🇬 |新加坡D
+      - 🇨🇦 |CA加拿大001
+      - 🇨🇳 中国_1022619
+      - 🇳🇱 NL1
+      - 🇸🇬 Singapore-Melbicom 6
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1173,9 +1248,11 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇭🇰 香港HKT|解锁流媒体
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
       - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1221,160 +1298,168 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 HK6
-      - 🇭🇰 香港EDCL_3
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇭🇰 香港()
-      - 🇭🇰 |香港BGP02
-      - 🇭🇰 香港_1022065
-      - 🇭🇰 HK7
-      - 🇭🇰 香港EDCL
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港EDCL_1
-      - 🇭🇰 HK459VMS
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇭🇰 HK15
-      - 🇭🇰 HK14
-      - 🇭🇰 |香港02
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇭🇰 |香港02|v2直连|x2
+      - 🇭🇰 香港HKT|解锁流媒体
       - 🇭🇰 香港|
-      - 🇭🇰 HK_45.11.104.94_102227c4-151
+      - 🇭🇰 香港HK|
+      - 🇭🇰 HK8
+      - 🇭🇰 香港-VI|10G|80端口
       - 🇭🇰 香港-V|10G|80端口
-      - 🇭🇰 香港ssr|
-      - 🇭🇰 香港EDCL 2
-      - 🇭🇰 HK2
-      - 🇭🇰 香港EDCL 3
-      - 🇭🇰 香港EDCL 4
-      - 🇭🇰 HK2 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇭🇰 香港Misaka
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇭🇰 香港2
+      - 🇭🇰 |香港02|v2直连|x2
+      - 🇭🇰 HK464VMS
+      - 🇭🇰 香港-3|1G|80端口
+      - 🇭🇰 香港EDCL_5
+      - 🇭🇰 香港01|
+      - 🇭🇰 |香港HKT01
+      - 🇭🇰 HK459VMS
       - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港EDCL 5
+      - 🇭🇰 HK461VMS
+      - 🇭🇰 |香港03|v2直连|x2
+      - 🇭🇰 |香港04
+      - 🇭🇰 【直连】HKG/香港-80端口-1
+      - 🇭🇰 香港EDCL_3
+      - 🇭🇰 香港-6|1G|80端口
+      - 🇭🇰 香港EDCL
+      - 🇭🇰 香港| 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
-      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
+      - 🇯🇵 |日本02|IP均衡优化|混合负载|600Mbps共享
       - 🇯🇵 |日本05|大阪|混合负载|800Mbps共享
-      - 🇯🇵 |JP日本003
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
-      - 🇯🇵 |日本02
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
-      - 🇯🇵 |日本01
-      - 🇯🇵 JP日本002
-      - 🇯🇵 |日本02|grpc直连|x2
+      - 🇯🇵 JP1
+      - 【直连】TYO/东京-443端口-2
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享
       - 🇯🇵 日本()
+      - 🇯🇵 日本() 2
       - 🇯🇵 |日本04|IP均衡优化|混合负载|600Mbps共享
-      - 🇯🇵 |日本05|IP均衡优化|混合负载|600Mbps共享
-      - 🇯🇵 |日本01|grpc直连|x2
-      - 🇯🇵 |日本31|原生家宽
-      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享 2
-      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 JP4
+      - 🇯🇵 JP5
+      - 🇯🇵 |日本03|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享
+      - 🇯🇵 |日本B
+      - 🇯🇵 日本() 3
+      - 🇯🇵 |日本04|大阪|混合负载|800Mbps共享 2
+      - 🇯🇵 |日本07|大阪|混合负载|800Mbps共享
+      - 🇯🇵 |日本06|大阪|混合负载|800Mbps共享
+      - 🇯🇵 |JP日本002
+      - 🇯🇵 |日本01|IP均衡优化|混合负载|600Mbps共享
+      - 【直连】TYO/东京-80端口-1
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
+      - 🇺🇲 US6
+      - 🇺🇲 美国-测试|1G|80端口
       - 🇺🇲 美国()
-      - 🇺🇲 |美国02
-      - 🇺🇲 美国US|
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇺🇲 US8
-      - 🇺🇲 US9
-      - 🇺🇲 |美国D
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
-      - 🇺🇲 US1
-      - 🇺🇲 |USAY美国亚特兰大001
+      - 🇺🇲 US14
       - 🇺🇲 美国A|
-      - 🇺🇲 US4
-      - 🇺🇲 |美国01
-      - 🇺🇲 |USA美国001
-      - 🇺🇲 US10
       - 🇺🇲 |美国原生03|IP均衡优化|混合负载|500Mbps共享
-      - 🇺🇲 美国() 2
-      - 🇺🇲 USA美国001
-      - 🇺🇲 US470VMS
-      - 🇺🇲 美国() 3
+      - 🇺🇲 US15
+      - 🇺🇲 |美国原生02|IP均衡优化|混合负载|500Mbps共享
+      - 🇺🇲 |美国D
+      - 🇺🇲 US3
+      - 🇺🇲 US19
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇺🇲 USAY美国亚特兰大003
+      - 🇺🇲 US450VMS
+      - 🇺🇲 美国2|
+      - 🇺🇲 US5
+      - 🇺🇲 |美国02
+      - 🇺🇲 US1
+      - 🇺🇲 美国西雅图-江移|解锁流媒体
+      - 🇺🇲 美国|
+      - 🇺🇲 US12
+      - 🇺🇲 |美国01
+      - 🇺🇲 |美国原生04|IP均衡优化|混合负载|500Mbps共享
+      - 🇺🇲 USAY美国亚特兰大003 2
+      - 🇺🇲 USA美国002
+      - 🇺🇲 US1 2
+      - 🇺🇲 美国US|
+      - 🇺🇲 US2
+      - 🇺🇲 |USA美国001
+      - 🇺🇲 US7
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台中Hinet
-      - 🇨🇳 台北Hinet_4
-      - 🇨🇳 |台湾01
       - 🇨🇳 台北Hinet
       - 🇨🇳 台北Hinet_7
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇨🇳 台中Hinet
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
       - 🇨🇳 台北Hinet 2
-      - 🇨🇳 台中hinet_1
-      - 🇨🇳 台北Hinet_13
+      - 🇨🇳 台中Hinet_3
       - 🇨🇳 台北Hinet 3
-      - 🇨🇳 台中Hinet 2
-      - 🇨🇳 台北Hinet_2
-      - 🇨🇳 台北Hinet_12
+      - 🇨🇳 台中hinet_1
+      - 🇨🇳 台北Hinet_9
       - 🇨🇳 台北Hinet 4
-      - 🇨🇳 台中hinet
-      - 🇨🇳 |台湾02
-      - 🇨🇳 台中Hinet 3
-      - 🇭🇰 台湾V108|深港隧道、流媒体|2x
-      - 🇨🇳 台湾2|
-      - 🇨🇳 台北Hinet_3
+      - 🇨🇳 台北Hinet 5
+      - 🇨🇳 台北Hinet_1
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 Singapore-Melbikom
+      - 🇸🇬 Singapore-Melbikom_4
       - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 Singapore-Melbikom 2
-      - 🇸🇬 |新加坡01|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 SGP🇸🇬
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 |SG新加坡002
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
-      - 🇸🇬 Singapore-Melbicom_8
-      - 🇸🇬 |新加坡A
-      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享 2
-      - 🇸🇬 Singapore-Melbikom 5
+      - 🇸🇬 Singapore-Melbicom_5
+      - 🇸🇬 Singapore-Melbicom_6
       - 🇸🇬 Singapore-Melbicom
+      - 🇸🇬 新加坡linode
+      - 🇸🇬 SG新加坡001
+      - 🇸🇬 Singapore-Melbikom_8
+      - 🇸🇬 Singapore-Melbicom_12
+      - 🇸🇬 Singapore-Melbikom_10
+      - 🇸🇬 Singapore-Melbicom_1
+      - 🇸🇬 |新加坡05|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbikom
       - 🇸🇬 Singapore-Melbicom 2
-      - 🇸🇬 |新加坡
-      - 🇸🇬 Singapore-Melbikom_9
+      - 🇸🇬 Singapore-Melbikom_2
+      - 🇸🇬 大萝卜鸡新加坡
+      - 🇸🇬 |新加坡C
       - 🇸🇬 Singapore-Melbicom 3
       - 🇸🇬 Singapore-Melbicom 4
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇸🇬 |新加坡03|IP均衡优化|CTN加速|500Mbps共享 2
-      - 🇸🇬 SG新加坡001
+      - 🇸🇬 |SG新加坡001
+      - 🇸🇬 |新加坡04|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbicom_4
+      - 🇸🇬 Singapore-Melbikom_17
+      - 🇸🇬 |新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 Singapore-Melbikom_13
+      - 🇸🇬 Singapore-Melbikom 2
       - 🇸🇬 Singapore-Melbicom 5
-      - 🇸🇬 Singapore-Melbicom_11
-      - 🇸🇬 Singapore-Melbikom_16
+      - 🇸🇬 Singapore-Melbikom 3
+      - 🇸🇬 Singapore-Melbikom 4
+      - 🇸🇬 Singapore-Melbikom 5
+      - 🇸🇬 Singapore-Melbikom 6
+      - 🇸🇬 Singapore-Melbikom 7
+      - 🇸🇬 |新加坡D
+      - 🇸🇬 Singapore-Melbicom 6
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 |韩国01|v2直连|x2
-      - 🇰🇷 |韩国02|IP均衡优化|混合负载|800Mbps共享
+      - 🇰🇷 |韩国01
+      - 🇰🇷 |韩国
+      - 🇰🇷 【直连】ICN/首尔-2
       - 🇰🇷 |韩国04|IP均衡优化|混合负载|800Mbps共享
+      - 🇰🇷 |韩国01|IP均衡优化|混合负载|800Mbps共享
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇭🇰 香港HKT|解锁流媒体
+      - 🇨🇳 台湾Hinet2|解锁流媒体
+      - 🇺🇲 美国圣何塞-江移|解锁流媒体
+      - 🇨🇳 台湾Hinet-江苏移动|解锁流媒体
       - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇺🇲 美国洛杉矶-江移|解锁流媒体
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
