@@ -5,138 +5,123 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇲 lv.3-美国3, server: zh01lv3us03.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇬🇧 lv.3-英国2, server: zh01lv3uk02.feiguayun.xyz, port: 50011, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇭🇰 香港(), server: 1024hk88.tfzhc.top, port: 443, type: trojan, password: 94a08db5-db61-487a-b208-c66445f32737, sni: 1024hk88.tfzhc.top, skip-cert-verify: false}
-  - {name: 🇭🇰 香港-测试|1G|80端口, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 专线_tg+univstar_8, server: 47.94.85.209, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 |广东移动转日本Azure[Trojan][倍率:1]", server: 120.241.126.83, port: 65205, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: gzjpaz.cc.tjcct.xyz, skip-cert-verify: false}
-  - {name: 专线_tg+univstar_49, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港二区|负载均衡, server: hkrx.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: hkrx.hotfun.buzz, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港3, server: hk3.linghun3.xyz, port: 40003, type: ss, cipher: aes-256-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU, server: traau1.bnnodeservice.com, port: 32012, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇺🇲 洛杉矶×0.2, server: shs.p1.gay, port: 25168, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: shs.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: shs.p1.gay}}}
-  - {name: 🇨🇳 CN6→openitsub.com, server: 116.129.254.29, port: 3385, type: trojan, password: 182228812d1e0f23, skip-cert-verify: false}
-  - {name: 🇺🇲 美国-测试|1G|80端口, server: us-test.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: "|🇺🇦乌克兰-边缘访问Vik", server: dtua1.bnnodeservice.com, port: 33019, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 专线_tg+univstar_38, server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇭🇰 |深港专线转香港HGC3[M][Trojan][倍率:2.5]", server: 211.99.96.118, port: 65023, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.sghgch3.cc.tjcct.xyz, skip-cert-verify: false}
-  - {name: "🇸🇬 lv.3-新加坡2-NF&D+", server: zh01lv3sgp02.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 🇨🇳 |🇹🇼台湾-边缘访问BGP, server: dttw1.bnnodeservice.com, port: 33003, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾(), server: 220.130.80.179, port: 443, type: vmess, uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /howdy, headers: {Host: v2ray2.udpgw.com}}}
-  - {name: 🇨🇳 台湾Hinet|解锁流媒体, server: download1tw.windowsupdate.lol, port: 443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: dc1-download.windowsupdate1.com, skip-cert-verify: false}
-  - {name: 专线_tg+univstar_4, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本02, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
-  - {name: 🇭🇰 lv.3-香港3, server: zh01lv3hk03.feiguayun.xyz, port: 50311, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: "🇯🇵 lv.3-日本1-NF&AbemaTV", server: zh01lv3jp01.feiguayun.xyz, port: 50021, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇰🇷 |IEPL韩国₃.₅ₓ, server: iepl.linghun3.xyz, port: 39994, type: ss, cipher: aes-256-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 专线_tg+univstar_19, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇲 |IEPL美国₃.₅ₓ, server: iepl.linghun3.xyz, port: 39995, type: ss, cipher: aes-256-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇺🇲 US3, server: 219.76.13.175, port: 443, type: trojan, password: ZlYZ0KxC8uxngp736aR34y3TaFwFOC95DO2XR8yeeAD3cESNDSCBqAYIjpaSlz, sni: python.protocolbuffer.com, skip-cert-verify: false}
-  - {name: h961359.waihuizhibiaowang.com:11443, server: h961359.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 US1→openitsub.com, server: 32a16649-2d4e-4368-85e0-2b1395259f95.cheme.tech, port: 80, type: vmess, uuid: cce5649e-bfb0-4011-b4e4-4833b4dab2e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yitai, headers: {Host: gd.189.cn}}}
-  - {name: 专线_tg+univstar_22, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港bgp|, server: 103.137.22.45, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff}
-  - {name: 🇷🇺 俄罗斯联邦(), server: pf.napsternetv.com, port: 40046, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾_tg+univstar_52, server: download2tw.windowsupdate.lol, port: 443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: dc1-download.windowsupdate1.com, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国A|, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 7811:nelpro123, obfs-param: ""}
-  - {name: 🇸🇬 大萝卜鸡新加, server: 222.84.250.35, port: 19223, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇹🇷 |🇹🇷土耳其-核心访问DeHost, server: tratr1.bnnodeservice.com, port: 32014, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-6|1G|80端口, server: hk-6.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: "🇨🇳 lv.3-台湾2-NF&动画疯", server: zh01lv3tw02.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
+  - {name: "|GLaDOS-N2-01", server: c47ab06.pb.glados-config.net, port: 3389, type: trojan, password: 7b06d22a8a7c764f, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: h207532.waihuizhibiaowang.com:11543, server: h207532.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-2|1G|80端口, server: hk-2-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇯🇵 |日本2, server: jp2.linghun3.xyz, port: 40012, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
   - {name: 专线_tg+univstar_33, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港實驗性C/02x1.0, server: 183.245.146.6, port: 21002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国(), server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}}
-  - {name: 专线_tg+univstar_44, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 lv.3-香港1, server: zh01lv3hk01.feiguayun.xyz, port: 50311, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 专线_tg+univstar_36, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}}
-  - {name: "🇭🇰 |长沙联通转香港BGP2[M][Trojan][倍率:0.9]", server: 116.129.254.7, port: 4572, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.cscuhkbgp2.cc.tjcct.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 中国内蒙古|100M|80端口, server: nmg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 专线_tg+univstar_15, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "|GLaDOS-N2-03", server: c47ab06.pd.glados-config.net, port: 3389, type: trojan, password: 7b06d22a8a7c764f, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇬🇧 英国|, server: 104.18.28.19, port: 80, type: vmess, uuid: 6215e55d-94b3-4399-915b-724ca7dbafd8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /5nXG6yC4/, headers: {Host: uk1.cachexy.ga}}}
-  - {name: 🇫🇷 法国-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/fr, headers: {Host: i0.hdslb.com}}}
-  - {name: "🇯🇵 lv.3-日本3-NF&AbemaTV", server: zh01lv3jp03.feiguayun.xyz, port: 50021, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇭🇰 香港B/03x1.0, server: 111.29.60.217, port: 21003, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇸🇬 lv.3-新加坡1-NF&D+", server: zh01lv3sgp01.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: "|澳洲1", server: gy.linghun3.xyz, port: 40069, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇭🇰 香港-1|1G|80端口, server: hk-1-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 专线_tg+univstar_34, server: 116.129.253.191, port: 3385, type: trojan, password: 182228812d1e0f23, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡2, server: sg2.linghun3.xyz, port: 40009, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇭🇰 香港-I|10G|80端口, server: hk-i-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 专线_tg+univstar_25, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 7811:nelpro123, obfs-param: ""}
-  - {name: 🇸🇬 新加坡_tg+univstar_50, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇲 美国西雅图-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}}
-  - {name: 🇸🇬 |🇸🇬新加坡-核心访问DP, server: trasg1.bnnodeservice.com, port: 32007, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国3, server: us3.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 专线_tg+univstar_23, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇷🇺 俄罗斯二区, server: er.p1.gay, port: 24114, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: er.p1.gay, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国原生02, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us2, headers: {Host: ushksw888x.vzwzasc.cn}}}
-  - {name: 🇺🇲 lv.3-美国3 2, server: zh01lv3us03.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: "🇨🇳 |上海电信转台湾HiNet[M][Trojan][倍率:1.2]", server: cn-shtele.lfk5s2.ccddn4.icu, port: 4989, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: shtelehinet.cc.tjcct.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 中国() 2, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}}
-  - {name: 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁, server: mg1.xbywwcp.us, port: 25520, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: mg1.xbywwcp.us}}}
-  - {name: 🇰🇷 韩国_tg+univstar_43, server: 158.247.236.172, port: 80, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adobe, headers: {Host: a.189.cn}}}
-  - {name: "🇺🇲 |广东移动转美国Cogent2[M][Trojan][倍率:0.8]", server: 120.241.126.83, port: 65216, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.gdusco2.cc.tjcct.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本|, server: jp1.lovemewjh.xyz, port: 12347, type: vmess, uuid: 9f270724-4083-3308-a26e-491c14cdf14f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇦 CA加拿大001, server: ca.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国|负载均衡, server: krws.hotfun.buzz, port: 25681, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: krws.hotfun.buzz, skip-cert-verify: false}
-  - {name: "🇸🇬 lv.3-新加坡2-NF&D+ 2", server: zh01lv3sgp02.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇯🇵 JP日本002, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, skip-cert-verify: false}
-  - {name: "|GLaDOS-N2-08", server: c47ab06.pi.glados-config.net, port: 3389, type: trojan, password: 7b06d22a8a7c764f, sni: n2.gladns.com, skip-cert-verify: false}
-  - {name: 🇹🇷 |🇹🇷土耳其-边缘访问DeHost, server: dttr1.bnnodeservice.com, port: 33014, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: "🇸🇬 lv.3-新加坡3-NF&D+", server: zh01lv3sgp03.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 🇺🇲 lv.3-美国1, server: zh01lv3us01.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 专线_tg+univstar_28, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 7811:nelpro123, obfs-param: ""}
-  - {name: "🇯🇵 |湖南联通转日本NTT[倍率:0.8]", server: 116.129.254.5, port: 4569, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
-  - {name: 🇨🇳 中国() 3, server: apollo.cn.v4.hdsky.org, port: 12531, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 大萝卜鸡, server: 222.84.250.35, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇭🇰 HK13, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, sni: if22a.ft3.us, skip-cert-verify: false}
-  - {name: 专线_tg+univstar_11, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡01, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp1, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: "|乌克兰1", server: gy.linghun3.xyz, port: 40076, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: h650196.waihuizhibiaowang.com:11143, server: h650196.waihuizhibiaowang.com, port: 11143, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 日本二区|负载均衡, server: jp2ws.hotfun.buzz, port: 25681, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: jp2ws.hotfun.buzz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港IEPL/03x3.0, server: 117.164.185.222, port: 21003, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 |🇭🇰香港-核心访问HKT, server: trahk5.bnnodeservice.com, port: 32000, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇬🇧 lv.3-英国3, server: zh01lv3uk03.feiguayun.xyz, port: 50011, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
-  - {name: 专线_tg+univstar_31, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 更新于10/25/16:44, server: 32a16649-2d4e-4368-85e0-2b1395259f95.cheme.tech, port: 80, type: vmess, uuid: cce5649e-bfb0-4011-b4e4-4833b4dab2e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yitai, headers: {Host: gd.189.cn}}}
-  - {name: 🇸🇬 新加坡B/02x1.0, server: 111.29.60.217, port: 61002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国1, server: us1.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇩🇪 |🇩🇪德国-边缘访问DP, server: dtde1.bnnodeservice.com, port: 33011, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇨🇳 中国(), server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}}
+  - {name: dafeivpn.com5元专线机场, server: apollo.cn.v4.hdsky.org, port: 58031, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
+  - {name: "🇯🇵 |广东移动转日本Webarena[M][Trojan][倍率:0.8]", server: 120.241.126.83, port: 65203, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.gdcmjpwea.cc.tjcct.xyz, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_19, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_6, server: 120.55.63.83, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 2, server: apollo.cn.v4.hdsky.org, port: 23201, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
+  - {name: 🇭🇰 |香港3, server: hk3.linghun3.xyz, port: 40003, type: ss, cipher: aes-256-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇸🇬 |新加坡1, server: sg1.linghun3.xyz, port: 40008, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 专线_tg+univstar_40, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-IV|10G|80端口, server: hk-iv.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 香港-4|1G|80端口, server: hk-4.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇺🇲 洛杉矶×0.2, server: shs.p1.gay, port: 25168, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: shs.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: shs.p1.gay}}}
+  - {name: "🇭🇰 |广东移动转香港NTT3[Trojan][倍率:0.8]", server: 120.241.126.83, port: 65211, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: gghkntt.cc.tjcct.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-II|10G|80端口, server: hk-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 专线_tg+univstar_10, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU, server: traau1.bnnodeservice.com, port: 32012, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
   - {name: 专线_tg+univstar_17, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: ✈付费机场推荐✈, server: apollo.cn.v4.hdsky.org, port: 19764, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 🇨🇳 中国() 4, server: diana.cn.iepl.hdsky.org, port: 31039, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 专线_tg+univstar_39, server: 42.193.191.50, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 专线_tg+univstar_3, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 |长沙联通转日本NTT[M][倍率:0.8]", server: 116.129.253.131, port: 65522, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
-  - {name: 🇸🇬 |新加坡03, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
-  - {name: "🇨🇳 lv.3-台湾1-NF&动画疯", server: zh01lv3tw01.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 台灣A/01x1.0, server: 117.164.185.220, port: 41001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇯🇵 日本|1000M|80端口, server: jp.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-jp?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇨🇳 中国() 5, server: apollo.cn.v4.hdsky.org, port: 23201, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 🇨🇳 CN3→openitsub.com, server: 222.84.250.35, port: 19238, type: trojan, password: 05115a9b-067c-3cfa-9d8a-c696c3fc5660, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本13, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: "🇯🇵 lv.3-日本2-NF&AbemaTV", server: zh01lv3jp02.feiguayun.xyz, port: 50021, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇹🇷 |土耳其1, server: gy.linghun3.xyz, port: 40065, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 专线_tg+univstar_9, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国亚马逊-3号|解锁流媒体, server: 3.38.117.60, port: 443, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}}
-  - {name: 群组:xxmym, server: hk-i.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇲 US6, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false}
-  - {name: "🇸🇬 lv.3-新加坡1-NF&D+ 2", server: zh01lv3sgp01.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
-  - {name: 🇯🇵 日本A/02x1.0, server: 117.164.185.220, port: 11002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国() 6, server: apollo.cn.v4.hdsky.org, port: 39343, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
-  - {name: 🇨🇦 加拿大(), server: ca2.v2rayserv.com, port: 80, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: ca2.v2rayserv.com}}}
-  - {name: 🇭🇰 香港HGC-江移|解锁流媒体, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hkhgc, headers: {Host: www.189.cn}}}
-  - {name: 🇬🇧 |🇬🇧英国-核心访问DP, server: trauk1.bnnodeservice.com, port: 32010, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: "🇯🇵 |长沙联通转日本NTT6[Trojan][倍率:0.8]", server: 116.129.254.7, port: 4573, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.cscujpntt6.cc.tjcct.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡IEPL/01x3.0, server: 117.164.185.222, port: 61001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯二区, server: er.p1.gay, port: 24114, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: er.p1.gay, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_45, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 HK14, server: 221.181.185.118, port: 13325, type: trojan, password: M0041901, sni: if22a.ft3.us, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_28, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 7811:nelpro123, obfs-param: ""}
+  - {name: 🇨🇳 台湾|, server: 172.67.154.11, port: 2095, type: vmess, uuid: 60b698c1-2d98-426e-d53e-0b5febe988f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@airproxies, headers: {Host: air.brink.ga}}}
+  - {name: 🇺🇲 US1→openitsub.com, server: 32a16649-2d4e-4368-85e0-2b1395259f95.cheme.tech, port: 80, type: vmess, uuid: cce5649e-bfb0-4011-b4e4-4833b4dab2e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yitai, headers: {Host: gd.189.cn}}}
+  - {name: 🇸🇬 |新加坡01, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp1, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: "🇯🇵 |湖南联通转日本Webarena[M][倍率:0.8]", server: 116.129.254.12, port: 65523, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
+  - {name: 🇯🇵 |IEPL日本₃.₅ₓ, server: iepl.linghun3.xyz, port: 39992, type: ss, cipher: aes-256-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇯🇵 日本二区|负载均衡, server: jp2ws.hotfun.buzz, port: 25681, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: jp2ws.hotfun.buzz, skip-cert-verify: false}
+  - {name: 🇭🇰 香港實驗性C/02x1.0, server: 183.245.146.6, port: 21002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: "|🇺🇦乌克兰-核心访问Vik", server: traua1.bnnodeservice.com, port: 32019, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇺🇲 |IEPL美国₃.₅ₓ, server: iepl.linghun3.xyz, port: 39995, type: ss, cipher: aes-256-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 专线_tg+univstar_5, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 US2→openitsub.com, server: 107.189.28.229, port: 20470, type: trojan, password: d4aac5d7-d17a-3ad0-9068-ac555f750b6d, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本07, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
   - {name: 🇸🇬 |新加坡3, server: sg3.linghun3.xyz, port: 40011, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇯🇵 日本B/01x1.0, server: 111.29.60.217, port: 11001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇯🇵 日本一区|负载均衡, server: pws.hotfun.buzz, port: 25681, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: jpws.hotfun.buzz, skip-cert-verify: false}
-  - {name: 🇸🇬 大萝卜鸡新, server: 222.84.250.35, port: 19229, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: 🇨🇳 |台湾1, server: tw1.linghun3.xyz, port: 40004, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇭🇰 大萝卜鸡香港, server: 222.84.250.35, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
-  - {name: "🇯🇵 |湖南联通转日本Webarena2[M][Trojan][倍率:0.8]", server: 116.129.254.7, port: 4571, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.hncujpwea2.cc.tjcct.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本10, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇺🇲 |美国3, server: us3.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇭🇰 香港B/04x1.0, server: 111.29.60.217, port: 21004, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇬🇧 |🇰🇷韩国-核心访问VUKR, server: trask1.bnnodeservice.com, port: 32005, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇭🇰 香港直连|, server: hk1.fun513.ga, port: 26549, type: vmess, uuid: 1ad38ec5-7bf9-4454-922d-da7286093f5e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hk01, headers: {Host: hk1.fun513.ga}}}
+  - {name: 🇰🇷 韩国|负载均衡, server: krws.hotfun.buzz, port: 25681, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: krws.hotfun.buzz, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯, server: ru.p1.gay, port: 24114, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: ru.p1.gay, skip-cert-verify: false}
+  - {name: 🇬🇧 lv.3-英国1, server: zh01lv3uk01.feiguayun.xyz, port: 50011, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
+  - {name: 大萝卜鸡, server: 222.84.250.35, port: 19237, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_48, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: 🇺🇲 |美国原生01, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us1, headers: {Host: ushksw888x.vzwzasc.cn}}}
-  - {name: 专线_tg+univstar_26, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-测试|1G|80端口, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇰🇷 韩国|, server: 43.201.15.45, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}}
+  - {name: 🇨🇳 台湾中转|, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}}
+  - {name: "🇨🇳 lv.3-台湾3-NF&动画疯", server: zh01lv3tw03.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
+  - {name: 🇨🇳 中国() 3, server: apollo.cn.v4.hdsky.org, port: 28000, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
+  - {name: 🇺🇲 lv.3-美国3, server: zh01lv3us03.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
+  - {name: 🇭🇰 大萝卜鸡香港, server: 222.84.250.35, port: 19206, type: trojan, password: 0389e88f-887f-31fd-9b16-624400bdbd71, skip-cert-verify: false}
+  - {name: "🇯🇵 |湖南联通转日本NTT4[倍率:0.8]", server: 116.129.254.12, port: 65521, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
+  - {name: 台灣A/01x1.0, server: 117.164.185.220, port: 41001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港(), server: 1024hk88.tfzhc.top, port: 443, type: trojan, password: 94a08db5-db61-487a-b208-c66445f32737, sni: 1024hk88.tfzhc.top, skip-cert-verify: false}
+  - {name: 🇺🇲 洛杉矶|沪美隧道, server: awsjp.hoot.cf, port: 25001, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c}
+  - {name: 🇧🇷 |🇧🇷巴西-边缘访问GCore, server: dtbr1.bnnodeservice.com, port: 33016, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇬🇧 lv.3-英国3, server: zh01lv3uk03.feiguayun.xyz, port: 50011, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
+  - {name: "|澳洲1", server: gy.linghun3.xyz, port: 40069, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 专线_tg+univstar_27, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本04, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇭🇰 |🇭🇰香港-核心访问DP, server: trahk1.bnnodeservice.com, port: 32443, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_46, server: 119.23.45.18, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本一区|负载均衡, server: pws.hotfun.buzz, port: 25681, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: jpws.hotfun.buzz, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_20, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-5|1G|80端口, server: hk-5.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 【直连】TYO/东京-443端口-2, server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com, port: 443, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-3|1G|80端口, server: hk-3-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇰🇷 韩国_tg+univstar_43, server: 158.247.236.172, port: 80, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adobe, headers: {Host: a.189.cn}}}
+  - {name: 🇺🇲 lv.3-美国2, server: zh01lv3us02.feiguayun.xyz, port: 50001, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
+  - {name: 专线_tg+univstar_3, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: h207532.waihuizhibiaowang.com:11443, server: h207532.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_11, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港-I|10G|80端口, server: hk-i-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇰🇷 大萝卜鸡韩国, server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com, port: 12356, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇯🇵 |湖南联通转日本NTT2[Trojan][倍率:0.8]", server: 116.129.254.7, port: 4570, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: hnjpntt2.cc.tjcct.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本13, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 43381, type: vmess, uuid: 826150a1-5522-3799-9204-7db0a83bcaed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: "|GLaDOS-N2-05", server: c47ab06.pf.glados-config.net, port: 3389, type: trojan, password: 7b06d22a8a7c764f, sni: n2.gladns.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港二区|负载均衡, server: hkrx.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: hkrx.hotfun.buzz, skip-cert-verify: false}
+  - {name: 🇺🇲 |🇺🇸美国-边缘访问DP, server: dtus1.bnnodeservice.com, port: 33001, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇺🇲 US3, server: 219.76.13.175, port: 443, type: trojan, password: ZlYZ0KxC8uxngp736aR34y3TaFwFOC95DO2XR8yeeAD3cESNDSCBqAYIjpaSlz, sni: python.protocolbuffer.com, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_56, server: 121.41.86.94, port: 1, type: vmess, uuid: 3781e552-2d72-40e4-dc1f-f06e10c8c1fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇩🇪 |德国1, server: gy.linghun3.xyz, port: 40067, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: "🇨🇳 lv.3-台湾3-NF&动画疯 2", server: zh01lv3tw03.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
+  - {name: 专线_tg+univstar_39, server: 42.193.191.50, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇺🇲 |上海电信转美国AN[M][Trojan][倍率:1.1]", server: cn-shtele.lfk5s2.ccddn4.icu, port: 4991, type: trojan, password: 730bf6da-3378-3c5b-9403-62cf1a5c794d, sni: dl.shteleusan.cc.tjcct.xyz, skip-cert-verify: false}
+  - {name: "🇭🇰 |上海电信转香港BGP3[M][倍率:1.1]", server: cn-shtele.lfk5s2.ccddn4.icu, port: 65001, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
+  - {name: "🇨🇳 lv.3-台湾2-NF&动画疯 2", server: zh01lv3tw02.feiguayun.xyz, port: 50321, type: ss, cipher: aes-256-gcm, password: 9eec2ee8-daf7-4894-b22e-82fa53d6145a}
+  - {name: 🇭🇰 香港() 2, server: 1002hk1326.tfzhc.top, port: 443, type: trojan, password: 94a08db5-db61-487a-b208-c66445f32737, sni: 1002hk1326.tfzhc.top, skip-cert-verify: false}
+  - {name: 🇹🇷 |🇹🇷土耳其-边缘访问DeHost, server: dttr1.bnnodeservice.com, port: 33014, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇨🇳 中国() 4, server: 223.111.122.199, port: 38080, type: vmess, uuid: 6248895b-4255-4f07-9479-d198bc1eb8db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}}
+  - {name: 🇬🇧 |🇬🇧英国-核心访问DP, server: trauk1.bnnodeservice.com, port: 32010, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: "|🇺🇦乌克兰-边缘访问Vik", server: dtua1.bnnodeservice.com, port: 33019, type: trojan, password: 6f8265bf-23de-4dc8-869a-58cc5408cccc, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: "🇨🇳 |长沙联通转台湾HiNet2[倍率:1]", server: 116.129.253.131, port: 65520, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
+  - {name: 🇭🇰 香港IEPL/02x3.0, server: 117.164.185.222, port: 21002, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_24, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本B/01x1.0, server: 111.29.60.217, port: 11001, type: trojan, password: 24913fd0-a94b-4ed9-9b0e-fddb06af63d3, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_49, server: 121.41.86.94, port: 5674, type: vmess, uuid: 79ce0633-5bc1-44ab-a47c-119916f2901d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇹🇷 |土耳其1, server: gy.linghun3.xyz, port: 40065, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 专线_tg+univstar_32, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 【直连】ICN/首尔-2, server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com, port: 52356, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: "🇸🇬 lv.3-新加坡1-NF&D+", server: zh01lv3sgp01.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
+  - {name: "🇯🇵 lv.3-日本3-NF&AbemaTV", server: zh01lv3jp03.feiguayun.xyz, port: 50021, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
+  - {name: "🇸🇬 lv.3-新加坡3-NF&D+", server: zh01lv3sgp03.feiguayun.xyz, port: 50031, type: ss, cipher: aes-256-gcm, password: f453f122-4c14-423f-b55b-86f10f040505}
+  - {name: "🇯🇵 |湖南联通转日本NTT5[倍率:0.8]", server: 116.129.254.12, port: 65522, type: ss, cipher: chacha20-ietf-poly1305, password: 4EyS3nbpwetIJvPQ}
+  - {name: 🇭🇰 香港bgp|, server: 103.137.22.45, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff}
+  - {name: 专线_tg+univstar_30, server: 112.132.215.13, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 专线_tg+univstar_34, server: 116.129.253.191, port: 3385, type: trojan, password: 182228812d1e0f23, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -155,414 +140,369 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇺🇲 lv.3-美国3
-      - 🇬🇧 lv.3-英国2
-      - 🇭🇰 香港()
-      - 🇭🇰 香港-测试|1G|80端口
-      - 专线_tg+univstar_8
-      - 🇯🇵 |广东移动转日本Azure[Trojan][倍率:1]
-      - 专线_tg+univstar_49
-      - 🇭🇰 香港二区|负载均衡
-      - 🇭🇰 |香港3
-      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
-      - 🇺🇲 洛杉矶×0.2
-      - 🇨🇳 CN6→openitsub.com
-      - 🇺🇲 美国-测试|1G|80端口
-      - "|🇺🇦乌克兰-边缘访问Vik"
-      - 专线_tg+univstar_38
-      - 🇭🇰 |深港专线转香港HGC3[M][Trojan][倍率:2.5]
-      - "🇸🇬 lv.3-新加坡2-NF&D+"
-      - 🇨🇳 |🇹🇼台湾-边缘访问BGP
-      - 🇨🇳 台湾()
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - 专线_tg+univstar_4
-      - 🇯🇵 |日本02
-      - 🇭🇰 lv.3-香港3
-      - "🇯🇵 lv.3-日本1-NF&AbemaTV"
-      - 🇰🇷 |IEPL韩国₃.₅ₓ
-      - 专线_tg+univstar_19
-      - 🇺🇲 |IEPL美国₃.₅ₓ
-      - 🇺🇲 US3
-      - h961359.waihuizhibiaowang.com:11443
-      - 🇺🇲 US1→openitsub.com
-      - 专线_tg+univstar_22
-      - 🇭🇰 香港bgp|
-      - 🇷🇺 俄罗斯联邦()
-      - 🇨🇳 台湾_tg+univstar_52
-      - 🇰🇷 韩国A|
-      - 🇸🇬 大萝卜鸡新加
-      - 🇹🇷 |🇹🇷土耳其-核心访问DeHost
+      - 🇭🇰 香港-6|1G|80端口
+      - "🇨🇳 lv.3-台湾2-NF&动画疯"
+      - "|GLaDOS-N2-01"
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇭🇰 香港-2|1G|80端口
+      - 🇯🇵 |日本2
       - 专线_tg+univstar_33
-      - 🇭🇰 香港實驗性C/02x1.0
+      - 🇩🇪 |🇩🇪德国-边缘访问DP
       - 🇨🇳 中国()
-      - 专线_tg+univstar_44
-      - 🇭🇰 lv.3-香港1
-      - 专线_tg+univstar_36
-      - 🇭🇰 |长沙联通转香港BGP2[M][Trojan][倍率:0.9]
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 专线_tg+univstar_15
-      - "|GLaDOS-N2-03"
-      - 🇬🇧 英国|
-      - 🇫🇷 法国-江移|解锁流媒体
-      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
-      - 🇭🇰 香港B/03x1.0
-      - "🇸🇬 lv.3-新加坡1-NF&D+"
-      - "|澳洲1"
-      - 🇭🇰 香港-1|1G|80端口
-      - 专线_tg+univstar_34
-      - 🇸🇬 |新加坡2
-      - 🇭🇰 香港-I|10G|80端口
-      - 专线_tg+univstar_25
-      - 🇸🇬 新加坡_tg+univstar_50
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇸🇬 |🇸🇬新加坡-核心访问DP
-      - 🇺🇲 |美国3
-      - 专线_tg+univstar_23
-      - 🇷🇺 俄罗斯二区
-      - 🇺🇲 |美国原生02
-      - 🇺🇲 lv.3-美国3 2
-      - 🇨🇳 |上海电信转台湾HiNet[M][Trojan][倍率:1.2]
+      - dafeivpn.com5元专线机场
+      - 🇯🇵 |广东移动转日本Webarena[M][Trojan][倍率:0.8]
+      - 专线_tg+univstar_19
+      - 专线_tg+univstar_6
       - 🇨🇳 中国() 2
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - 🇰🇷 韩国_tg+univstar_43
-      - 🇺🇲 |广东移动转美国Cogent2[M][Trojan][倍率:0.8]
-      - 🇯🇵 日本|
-      - 🇨🇦 CA加拿大001
-      - 🇰🇷 韩国|负载均衡
-      - "🇸🇬 lv.3-新加坡2-NF&D+ 2"
-      - 🇯🇵 JP日本002
-      - "|GLaDOS-N2-08"
-      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
-      - "🇸🇬 lv.3-新加坡3-NF&D+"
-      - 🇺🇲 lv.3-美国1
-      - 专线_tg+univstar_28
-      - 🇯🇵 |湖南联通转日本NTT[倍率:0.8]
-      - 🇨🇳 中国() 3
-      - 大萝卜鸡
-      - 🇭🇰 HK13
-      - 专线_tg+univstar_11
-      - 🇸🇬 |新加坡01
-      - "|乌克兰1"
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇯🇵 日本二区|负载均衡
-      - 🇭🇰 香港IEPL/03x3.0
-      - 🇭🇰 |🇭🇰香港-核心访问HKT
-      - 🇬🇧 lv.3-英国3
-      - 专线_tg+univstar_31
-      - 🇸🇬 更新于10/25/16:44
-      - 🇸🇬 新加坡B/02x1.0
-      - 🇺🇲 |美国1
+      - 🇭🇰 |香港3
+      - 🇸🇬 |新加坡1
+      - 专线_tg+univstar_40
+      - 🇭🇰 香港-IV|10G|80端口
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇺🇲 洛杉矶×0.2
+      - 🇭🇰 |广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 🇭🇰 香港-II|10G|80端口
+      - 专线_tg+univstar_10
+      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
       - 专线_tg+univstar_17
-      - ✈付费机场推荐✈
-      - 🇨🇳 中国() 4
-      - 专线_tg+univstar_39
-      - 专线_tg+univstar_3
-      - 🇯🇵 |长沙联通转日本NTT[M][倍率:0.8]
-      - 🇸🇬 |新加坡03
-      - "🇨🇳 lv.3-台湾1-NF&动画疯"
-      - 台灣A/01x1.0
-      - 🇯🇵 日本|1000M|80端口
-      - 🇨🇳 中国() 5
-      - 🇨🇳 CN3→openitsub.com
-      - 🇯🇵 |日本13
-      - "🇯🇵 lv.3-日本2-NF&AbemaTV"
-      - 🇹🇷 |土耳其1
-      - 专线_tg+univstar_9
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
-      - 群组:xxmym
-      - 🇺🇲 US6
-      - "🇸🇬 lv.3-新加坡1-NF&D+ 2"
-      - 🇯🇵 日本A/02x1.0
-      - 🇨🇳 中国() 6
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇬🇧 |🇬🇧英国-核心访问DP
-      - 🇯🇵 |长沙联通转日本NTT6[Trojan][倍率:0.8]
+      - 🇸🇬 新加坡IEPL/01x3.0
+      - 🇷🇺 俄罗斯二区
+      - 专线_tg+univstar_45
+      - 🇭🇰 HK14
+      - 专线_tg+univstar_28
+      - 🇨🇳 台湾|
+      - 🇺🇲 US1→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇯🇵 |湖南联通转日本Webarena[M][倍率:0.8]
+      - 🇯🇵 |IEPL日本₃.₅ₓ
+      - 🇯🇵 日本二区|负载均衡
+      - 🇭🇰 香港實驗性C/02x1.0
+      - "|🇺🇦乌克兰-核心访问Vik"
+      - 🇺🇲 |IEPL美国₃.₅ₓ
+      - 专线_tg+univstar_5
+      - 🇺🇲 US2→openitsub.com
+      - 🇯🇵 |日本07
       - 🇸🇬 |新加坡3
-      - 🇯🇵 日本B/01x1.0
-      - 🇯🇵 日本一区|负载均衡
-      - 🇸🇬 大萝卜鸡新
-      - 🇨🇳 |台湾1
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |湖南联通转日本Webarena2[M][Trojan][倍率:0.8]
+      - 🇯🇵 |日本10
+      - 🇺🇲 |美国3
+      - 🇭🇰 香港B/04x1.0
+      - 🇬🇧 |🇰🇷韩国-核心访问VUKR
+      - 🇭🇰 香港直连|
+      - 🇰🇷 韩国|负载均衡
+      - 🇷🇺 俄罗斯
+      - 🇬🇧 lv.3-英国1
+      - 大萝卜鸡
+      - 专线_tg+univstar_48
       - 🇺🇲 |美国原生01
-      - 专线_tg+univstar_26
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇰🇷 韩国|
+      - 🇨🇳 台湾中转|
+      - "🇨🇳 lv.3-台湾3-NF&动画疯"
+      - 🇨🇳 中国() 3
+      - 🇺🇲 lv.3-美国3
+      - 🇭🇰 大萝卜鸡香港
+      - 🇯🇵 |湖南联通转日本NTT4[倍率:0.8]
+      - 台灣A/01x1.0
+      - 🇭🇰 香港()
+      - 🇺🇲 洛杉矶|沪美隧道
+      - 🇧🇷 |🇧🇷巴西-边缘访问GCore
+      - 🇬🇧 lv.3-英国3
+      - "|澳洲1"
+      - 专线_tg+univstar_27
+      - 🇯🇵 |日本04
+      - 🇭🇰 |🇭🇰香港-核心访问DP
+      - 专线_tg+univstar_46
+      - 🇯🇵 日本一区|负载均衡
+      - 专线_tg+univstar_20
+      - 🇭🇰 香港-5|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇭🇰 香港-3|1G|80端口
+      - 🇰🇷 韩国_tg+univstar_43
+      - 🇺🇲 lv.3-美国2
+      - 专线_tg+univstar_3
+      - h207532.waihuizhibiaowang.com:11443
+      - 专线_tg+univstar_11
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇯🇵 |湖南联通转日本NTT2[Trojan][倍率:0.8]
+      - 🇯🇵 |日本13
+      - "|GLaDOS-N2-05"
+      - 🇭🇰 香港二区|负载均衡
+      - 🇺🇲 |🇺🇸美国-边缘访问DP
+      - 🇺🇲 US3
+      - 专线_tg+univstar_56
+      - 🇩🇪 |德国1
+      - "🇨🇳 lv.3-台湾3-NF&动画疯 2"
+      - 专线_tg+univstar_39
+      - 🇺🇲 |上海电信转美国AN[M][Trojan][倍率:1.1]
+      - 🇭🇰 |上海电信转香港BGP3[M][倍率:1.1]
+      - "🇨🇳 lv.3-台湾2-NF&动画疯 2"
+      - 🇭🇰 香港() 2
+      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
+      - 🇨🇳 中国() 4
+      - 🇬🇧 |🇬🇧英国-核心访问DP
+      - "|🇺🇦乌克兰-边缘访问Vik"
+      - 🇨🇳 |长沙联通转台湾HiNet2[倍率:1]
+      - 🇭🇰 香港IEPL/02x3.0
+      - 专线_tg+univstar_24
+      - 🇯🇵 日本B/01x1.0
+      - 专线_tg+univstar_49
+      - 🇹🇷 |土耳其1
+      - 专线_tg+univstar_32
+      - 🇰🇷 【直连】ICN/首尔-2
+      - "🇸🇬 lv.3-新加坡1-NF&D+"
+      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
+      - "🇸🇬 lv.3-新加坡3-NF&D+"
+      - 🇯🇵 |湖南联通转日本NTT5[倍率:0.8]
+      - 🇭🇰 香港bgp|
+      - 专线_tg+univstar_30
+      - 专线_tg+univstar_34
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇲 lv.3-美国3
-      - 🇬🇧 lv.3-英国2
-      - 🇭🇰 香港()
-      - 🇭🇰 香港-测试|1G|80端口
-      - 专线_tg+univstar_8
-      - 🇯🇵 |广东移动转日本Azure[Trojan][倍率:1]
-      - 专线_tg+univstar_49
-      - 🇭🇰 香港二区|负载均衡
-      - 🇭🇰 |香港3
-      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
-      - 🇺🇲 洛杉矶×0.2
-      - 🇨🇳 CN6→openitsub.com
-      - 🇺🇲 美国-测试|1G|80端口
-      - "|🇺🇦乌克兰-边缘访问Vik"
-      - 专线_tg+univstar_38
-      - 🇭🇰 |深港专线转香港HGC3[M][Trojan][倍率:2.5]
-      - "🇸🇬 lv.3-新加坡2-NF&D+"
-      - 🇨🇳 |🇹🇼台湾-边缘访问BGP
-      - 🇨🇳 台湾()
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - 专线_tg+univstar_4
-      - 🇯🇵 |日本02
-      - 🇭🇰 lv.3-香港3
-      - "🇯🇵 lv.3-日本1-NF&AbemaTV"
-      - 🇰🇷 |IEPL韩国₃.₅ₓ
-      - 专线_tg+univstar_19
-      - 🇺🇲 |IEPL美国₃.₅ₓ
-      - 🇺🇲 US3
-      - h961359.waihuizhibiaowang.com:11443
-      - 🇺🇲 US1→openitsub.com
-      - 专线_tg+univstar_22
-      - 🇭🇰 香港bgp|
-      - 🇷🇺 俄罗斯联邦()
-      - 🇨🇳 台湾_tg+univstar_52
-      - 🇰🇷 韩国A|
-      - 🇸🇬 大萝卜鸡新加
-      - 🇹🇷 |🇹🇷土耳其-核心访问DeHost
+      - 🇭🇰 香港-6|1G|80端口
+      - "🇨🇳 lv.3-台湾2-NF&动画疯"
+      - "|GLaDOS-N2-01"
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇭🇰 香港-2|1G|80端口
+      - 🇯🇵 |日本2
       - 专线_tg+univstar_33
-      - 🇭🇰 香港實驗性C/02x1.0
+      - 🇩🇪 |🇩🇪德国-边缘访问DP
       - 🇨🇳 中国()
-      - 专线_tg+univstar_44
-      - 🇭🇰 lv.3-香港1
-      - 专线_tg+univstar_36
-      - 🇭🇰 |长沙联通转香港BGP2[M][Trojan][倍率:0.9]
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 专线_tg+univstar_15
-      - "|GLaDOS-N2-03"
-      - 🇬🇧 英国|
-      - 🇫🇷 法国-江移|解锁流媒体
-      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
-      - 🇭🇰 香港B/03x1.0
-      - "🇸🇬 lv.3-新加坡1-NF&D+"
-      - "|澳洲1"
-      - 🇭🇰 香港-1|1G|80端口
-      - 专线_tg+univstar_34
-      - 🇸🇬 |新加坡2
-      - 🇭🇰 香港-I|10G|80端口
-      - 专线_tg+univstar_25
-      - 🇸🇬 新加坡_tg+univstar_50
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇸🇬 |🇸🇬新加坡-核心访问DP
-      - 🇺🇲 |美国3
-      - 专线_tg+univstar_23
-      - 🇷🇺 俄罗斯二区
-      - 🇺🇲 |美国原生02
-      - 🇺🇲 lv.3-美国3 2
-      - 🇨🇳 |上海电信转台湾HiNet[M][Trojan][倍率:1.2]
+      - dafeivpn.com5元专线机场
+      - 🇯🇵 |广东移动转日本Webarena[M][Trojan][倍率:0.8]
+      - 专线_tg+univstar_19
+      - 专线_tg+univstar_6
       - 🇨🇳 中国() 2
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - 🇰🇷 韩国_tg+univstar_43
-      - 🇺🇲 |广东移动转美国Cogent2[M][Trojan][倍率:0.8]
-      - 🇯🇵 日本|
-      - 🇨🇦 CA加拿大001
-      - 🇰🇷 韩国|负载均衡
-      - "🇸🇬 lv.3-新加坡2-NF&D+ 2"
-      - 🇯🇵 JP日本002
-      - "|GLaDOS-N2-08"
-      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
-      - "🇸🇬 lv.3-新加坡3-NF&D+"
-      - 🇺🇲 lv.3-美国1
-      - 专线_tg+univstar_28
-      - 🇯🇵 |湖南联通转日本NTT[倍率:0.8]
-      - 🇨🇳 中国() 3
-      - 大萝卜鸡
-      - 🇭🇰 HK13
-      - 专线_tg+univstar_11
-      - 🇸🇬 |新加坡01
-      - "|乌克兰1"
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇯🇵 日本二区|负载均衡
-      - 🇭🇰 香港IEPL/03x3.0
-      - 🇭🇰 |🇭🇰香港-核心访问HKT
-      - 🇬🇧 lv.3-英国3
-      - 专线_tg+univstar_31
-      - 🇸🇬 更新于10/25/16:44
-      - 🇸🇬 新加坡B/02x1.0
-      - 🇺🇲 |美国1
+      - 🇭🇰 |香港3
+      - 🇸🇬 |新加坡1
+      - 专线_tg+univstar_40
+      - 🇭🇰 香港-IV|10G|80端口
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇺🇲 洛杉矶×0.2
+      - 🇭🇰 |广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 🇭🇰 香港-II|10G|80端口
+      - 专线_tg+univstar_10
+      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
       - 专线_tg+univstar_17
-      - ✈付费机场推荐✈
-      - 🇨🇳 中国() 4
-      - 专线_tg+univstar_39
-      - 专线_tg+univstar_3
-      - 🇯🇵 |长沙联通转日本NTT[M][倍率:0.8]
-      - 🇸🇬 |新加坡03
-      - "🇨🇳 lv.3-台湾1-NF&动画疯"
-      - 台灣A/01x1.0
-      - 🇯🇵 日本|1000M|80端口
-      - 🇨🇳 中国() 5
-      - 🇨🇳 CN3→openitsub.com
-      - 🇯🇵 |日本13
-      - "🇯🇵 lv.3-日本2-NF&AbemaTV"
-      - 🇹🇷 |土耳其1
-      - 专线_tg+univstar_9
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
-      - 群组:xxmym
-      - 🇺🇲 US6
-      - "🇸🇬 lv.3-新加坡1-NF&D+ 2"
-      - 🇯🇵 日本A/02x1.0
-      - 🇨🇳 中国() 6
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇬🇧 |🇬🇧英国-核心访问DP
-      - 🇯🇵 |长沙联通转日本NTT6[Trojan][倍率:0.8]
+      - 🇸🇬 新加坡IEPL/01x3.0
+      - 🇷🇺 俄罗斯二区
+      - 专线_tg+univstar_45
+      - 🇭🇰 HK14
+      - 专线_tg+univstar_28
+      - 🇨🇳 台湾|
+      - 🇺🇲 US1→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇯🇵 |湖南联通转日本Webarena[M][倍率:0.8]
+      - 🇯🇵 |IEPL日本₃.₅ₓ
+      - 🇯🇵 日本二区|负载均衡
+      - 🇭🇰 香港實驗性C/02x1.0
+      - "|🇺🇦乌克兰-核心访问Vik"
+      - 🇺🇲 |IEPL美国₃.₅ₓ
+      - 专线_tg+univstar_5
+      - 🇺🇲 US2→openitsub.com
+      - 🇯🇵 |日本07
       - 🇸🇬 |新加坡3
-      - 🇯🇵 日本B/01x1.0
-      - 🇯🇵 日本一区|负载均衡
-      - 🇸🇬 大萝卜鸡新
-      - 🇨🇳 |台湾1
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |湖南联通转日本Webarena2[M][Trojan][倍率:0.8]
+      - 🇯🇵 |日本10
+      - 🇺🇲 |美国3
+      - 🇭🇰 香港B/04x1.0
+      - 🇬🇧 |🇰🇷韩国-核心访问VUKR
+      - 🇭🇰 香港直连|
+      - 🇰🇷 韩国|负载均衡
+      - 🇷🇺 俄罗斯
+      - 🇬🇧 lv.3-英国1
+      - 大萝卜鸡
+      - 专线_tg+univstar_48
       - 🇺🇲 |美国原生01
-      - 专线_tg+univstar_26
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇰🇷 韩国|
+      - 🇨🇳 台湾中转|
+      - "🇨🇳 lv.3-台湾3-NF&动画疯"
+      - 🇨🇳 中国() 3
+      - 🇺🇲 lv.3-美国3
+      - 🇭🇰 大萝卜鸡香港
+      - 🇯🇵 |湖南联通转日本NTT4[倍率:0.8]
+      - 台灣A/01x1.0
+      - 🇭🇰 香港()
+      - 🇺🇲 洛杉矶|沪美隧道
+      - 🇧🇷 |🇧🇷巴西-边缘访问GCore
+      - 🇬🇧 lv.3-英国3
+      - "|澳洲1"
+      - 专线_tg+univstar_27
+      - 🇯🇵 |日本04
+      - 🇭🇰 |🇭🇰香港-核心访问DP
+      - 专线_tg+univstar_46
+      - 🇯🇵 日本一区|负载均衡
+      - 专线_tg+univstar_20
+      - 🇭🇰 香港-5|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇭🇰 香港-3|1G|80端口
+      - 🇰🇷 韩国_tg+univstar_43
+      - 🇺🇲 lv.3-美国2
+      - 专线_tg+univstar_3
+      - h207532.waihuizhibiaowang.com:11443
+      - 专线_tg+univstar_11
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇯🇵 |湖南联通转日本NTT2[Trojan][倍率:0.8]
+      - 🇯🇵 |日本13
+      - "|GLaDOS-N2-05"
+      - 🇭🇰 香港二区|负载均衡
+      - 🇺🇲 |🇺🇸美国-边缘访问DP
+      - 🇺🇲 US3
+      - 专线_tg+univstar_56
+      - 🇩🇪 |德国1
+      - "🇨🇳 lv.3-台湾3-NF&动画疯 2"
+      - 专线_tg+univstar_39
+      - 🇺🇲 |上海电信转美国AN[M][Trojan][倍率:1.1]
+      - 🇭🇰 |上海电信转香港BGP3[M][倍率:1.1]
+      - "🇨🇳 lv.3-台湾2-NF&动画疯 2"
+      - 🇭🇰 香港() 2
+      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
+      - 🇨🇳 中国() 4
+      - 🇬🇧 |🇬🇧英国-核心访问DP
+      - "|🇺🇦乌克兰-边缘访问Vik"
+      - 🇨🇳 |长沙联通转台湾HiNet2[倍率:1]
+      - 🇭🇰 香港IEPL/02x3.0
+      - 专线_tg+univstar_24
+      - 🇯🇵 日本B/01x1.0
+      - 专线_tg+univstar_49
+      - 🇹🇷 |土耳其1
+      - 专线_tg+univstar_32
+      - 🇰🇷 【直连】ICN/首尔-2
+      - "🇸🇬 lv.3-新加坡1-NF&D+"
+      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
+      - "🇸🇬 lv.3-新加坡3-NF&D+"
+      - 🇯🇵 |湖南联通转日本NTT5[倍率:0.8]
+      - 🇭🇰 香港bgp|
+      - 专线_tg+univstar_30
+      - 专线_tg+univstar_34
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇲 lv.3-美国3
-      - 🇬🇧 lv.3-英国2
-      - 🇭🇰 香港()
-      - 🇭🇰 香港-测试|1G|80端口
-      - 专线_tg+univstar_8
-      - 🇯🇵 |广东移动转日本Azure[Trojan][倍率:1]
-      - 专线_tg+univstar_49
-      - 🇭🇰 香港二区|负载均衡
-      - 🇭🇰 |香港3
-      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
-      - 🇺🇲 洛杉矶×0.2
-      - 🇨🇳 CN6→openitsub.com
-      - 🇺🇲 美国-测试|1G|80端口
-      - "|🇺🇦乌克兰-边缘访问Vik"
-      - 专线_tg+univstar_38
-      - 🇭🇰 |深港专线转香港HGC3[M][Trojan][倍率:2.5]
-      - "🇸🇬 lv.3-新加坡2-NF&D+"
-      - 🇨🇳 |🇹🇼台湾-边缘访问BGP
-      - 🇨🇳 台湾()
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - 专线_tg+univstar_4
-      - 🇯🇵 |日本02
-      - 🇭🇰 lv.3-香港3
-      - "🇯🇵 lv.3-日本1-NF&AbemaTV"
-      - 🇰🇷 |IEPL韩国₃.₅ₓ
-      - 专线_tg+univstar_19
-      - 🇺🇲 |IEPL美国₃.₅ₓ
-      - 🇺🇲 US3
-      - h961359.waihuizhibiaowang.com:11443
-      - 🇺🇲 US1→openitsub.com
-      - 专线_tg+univstar_22
-      - 🇭🇰 香港bgp|
-      - 🇷🇺 俄罗斯联邦()
-      - 🇨🇳 台湾_tg+univstar_52
-      - 🇰🇷 韩国A|
-      - 🇸🇬 大萝卜鸡新加
-      - 🇹🇷 |🇹🇷土耳其-核心访问DeHost
+      - 🇭🇰 香港-6|1G|80端口
+      - "🇨🇳 lv.3-台湾2-NF&动画疯"
+      - "|GLaDOS-N2-01"
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇭🇰 香港-2|1G|80端口
+      - 🇯🇵 |日本2
       - 专线_tg+univstar_33
-      - 🇭🇰 香港實驗性C/02x1.0
+      - 🇩🇪 |🇩🇪德国-边缘访问DP
       - 🇨🇳 中国()
-      - 专线_tg+univstar_44
-      - 🇭🇰 lv.3-香港1
-      - 专线_tg+univstar_36
-      - 🇭🇰 |长沙联通转香港BGP2[M][Trojan][倍率:0.9]
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 专线_tg+univstar_15
-      - "|GLaDOS-N2-03"
-      - 🇬🇧 英国|
-      - 🇫🇷 法国-江移|解锁流媒体
-      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
-      - 🇭🇰 香港B/03x1.0
-      - "🇸🇬 lv.3-新加坡1-NF&D+"
-      - "|澳洲1"
-      - 🇭🇰 香港-1|1G|80端口
-      - 专线_tg+univstar_34
-      - 🇸🇬 |新加坡2
-      - 🇭🇰 香港-I|10G|80端口
-      - 专线_tg+univstar_25
-      - 🇸🇬 新加坡_tg+univstar_50
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇸🇬 |🇸🇬新加坡-核心访问DP
-      - 🇺🇲 |美国3
-      - 专线_tg+univstar_23
-      - 🇷🇺 俄罗斯二区
-      - 🇺🇲 |美国原生02
-      - 🇺🇲 lv.3-美国3 2
-      - 🇨🇳 |上海电信转台湾HiNet[M][Trojan][倍率:1.2]
+      - dafeivpn.com5元专线机场
+      - 🇯🇵 |广东移动转日本Webarena[M][Trojan][倍率:0.8]
+      - 专线_tg+univstar_19
+      - 专线_tg+univstar_6
       - 🇨🇳 中国() 2
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - 🇰🇷 韩国_tg+univstar_43
-      - 🇺🇲 |广东移动转美国Cogent2[M][Trojan][倍率:0.8]
-      - 🇯🇵 日本|
-      - 🇨🇦 CA加拿大001
-      - 🇰🇷 韩国|负载均衡
-      - "🇸🇬 lv.3-新加坡2-NF&D+ 2"
-      - 🇯🇵 JP日本002
-      - "|GLaDOS-N2-08"
-      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
-      - "🇸🇬 lv.3-新加坡3-NF&D+"
-      - 🇺🇲 lv.3-美国1
-      - 专线_tg+univstar_28
-      - 🇯🇵 |湖南联通转日本NTT[倍率:0.8]
-      - 🇨🇳 中国() 3
-      - 大萝卜鸡
-      - 🇭🇰 HK13
-      - 专线_tg+univstar_11
-      - 🇸🇬 |新加坡01
-      - "|乌克兰1"
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇯🇵 日本二区|负载均衡
-      - 🇭🇰 香港IEPL/03x3.0
-      - 🇭🇰 |🇭🇰香港-核心访问HKT
-      - 🇬🇧 lv.3-英国3
-      - 专线_tg+univstar_31
-      - 🇸🇬 更新于10/25/16:44
-      - 🇸🇬 新加坡B/02x1.0
-      - 🇺🇲 |美国1
+      - 🇭🇰 |香港3
+      - 🇸🇬 |新加坡1
+      - 专线_tg+univstar_40
+      - 🇭🇰 香港-IV|10G|80端口
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇺🇲 洛杉矶×0.2
+      - 🇭🇰 |广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 🇭🇰 香港-II|10G|80端口
+      - 专线_tg+univstar_10
+      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
       - 专线_tg+univstar_17
-      - ✈付费机场推荐✈
-      - 🇨🇳 中国() 4
-      - 专线_tg+univstar_39
-      - 专线_tg+univstar_3
-      - 🇯🇵 |长沙联通转日本NTT[M][倍率:0.8]
-      - 🇸🇬 |新加坡03
-      - "🇨🇳 lv.3-台湾1-NF&动画疯"
-      - 台灣A/01x1.0
-      - 🇯🇵 日本|1000M|80端口
-      - 🇨🇳 中国() 5
-      - 🇨🇳 CN3→openitsub.com
-      - 🇯🇵 |日本13
-      - "🇯🇵 lv.3-日本2-NF&AbemaTV"
-      - 🇹🇷 |土耳其1
-      - 专线_tg+univstar_9
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
-      - 群组:xxmym
-      - 🇺🇲 US6
-      - "🇸🇬 lv.3-新加坡1-NF&D+ 2"
-      - 🇯🇵 日本A/02x1.0
-      - 🇨🇳 中国() 6
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇬🇧 |🇬🇧英国-核心访问DP
-      - 🇯🇵 |长沙联通转日本NTT6[Trojan][倍率:0.8]
+      - 🇸🇬 新加坡IEPL/01x3.0
+      - 🇷🇺 俄罗斯二区
+      - 专线_tg+univstar_45
+      - 🇭🇰 HK14
+      - 专线_tg+univstar_28
+      - 🇨🇳 台湾|
+      - 🇺🇲 US1→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇯🇵 |湖南联通转日本Webarena[M][倍率:0.8]
+      - 🇯🇵 |IEPL日本₃.₅ₓ
+      - 🇯🇵 日本二区|负载均衡
+      - 🇭🇰 香港實驗性C/02x1.0
+      - "|🇺🇦乌克兰-核心访问Vik"
+      - 🇺🇲 |IEPL美国₃.₅ₓ
+      - 专线_tg+univstar_5
+      - 🇺🇲 US2→openitsub.com
+      - 🇯🇵 |日本07
       - 🇸🇬 |新加坡3
-      - 🇯🇵 日本B/01x1.0
-      - 🇯🇵 日本一区|负载均衡
-      - 🇸🇬 大萝卜鸡新
-      - 🇨🇳 |台湾1
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |湖南联通转日本Webarena2[M][Trojan][倍率:0.8]
+      - 🇯🇵 |日本10
+      - 🇺🇲 |美国3
+      - 🇭🇰 香港B/04x1.0
+      - 🇬🇧 |🇰🇷韩国-核心访问VUKR
+      - 🇭🇰 香港直连|
+      - 🇰🇷 韩国|负载均衡
+      - 🇷🇺 俄罗斯
+      - 🇬🇧 lv.3-英国1
+      - 大萝卜鸡
+      - 专线_tg+univstar_48
       - 🇺🇲 |美国原生01
-      - 专线_tg+univstar_26
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇰🇷 韩国|
+      - 🇨🇳 台湾中转|
+      - "🇨🇳 lv.3-台湾3-NF&动画疯"
+      - 🇨🇳 中国() 3
+      - 🇺🇲 lv.3-美国3
+      - 🇭🇰 大萝卜鸡香港
+      - 🇯🇵 |湖南联通转日本NTT4[倍率:0.8]
+      - 台灣A/01x1.0
+      - 🇭🇰 香港()
+      - 🇺🇲 洛杉矶|沪美隧道
+      - 🇧🇷 |🇧🇷巴西-边缘访问GCore
+      - 🇬🇧 lv.3-英国3
+      - "|澳洲1"
+      - 专线_tg+univstar_27
+      - 🇯🇵 |日本04
+      - 🇭🇰 |🇭🇰香港-核心访问DP
+      - 专线_tg+univstar_46
+      - 🇯🇵 日本一区|负载均衡
+      - 专线_tg+univstar_20
+      - 🇭🇰 香港-5|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇭🇰 香港-3|1G|80端口
+      - 🇰🇷 韩国_tg+univstar_43
+      - 🇺🇲 lv.3-美国2
+      - 专线_tg+univstar_3
+      - h207532.waihuizhibiaowang.com:11443
+      - 专线_tg+univstar_11
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇯🇵 |湖南联通转日本NTT2[Trojan][倍率:0.8]
+      - 🇯🇵 |日本13
+      - "|GLaDOS-N2-05"
+      - 🇭🇰 香港二区|负载均衡
+      - 🇺🇲 |🇺🇸美国-边缘访问DP
+      - 🇺🇲 US3
+      - 专线_tg+univstar_56
+      - 🇩🇪 |德国1
+      - "🇨🇳 lv.3-台湾3-NF&动画疯 2"
+      - 专线_tg+univstar_39
+      - 🇺🇲 |上海电信转美国AN[M][Trojan][倍率:1.1]
+      - 🇭🇰 |上海电信转香港BGP3[M][倍率:1.1]
+      - "🇨🇳 lv.3-台湾2-NF&动画疯 2"
+      - 🇭🇰 香港() 2
+      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
+      - 🇨🇳 中国() 4
+      - 🇬🇧 |🇬🇧英国-核心访问DP
+      - "|🇺🇦乌克兰-边缘访问Vik"
+      - 🇨🇳 |长沙联通转台湾HiNet2[倍率:1]
+      - 🇭🇰 香港IEPL/02x3.0
+      - 专线_tg+univstar_24
+      - 🇯🇵 日本B/01x1.0
+      - 专线_tg+univstar_49
+      - 🇹🇷 |土耳其1
+      - 专线_tg+univstar_32
+      - 🇰🇷 【直连】ICN/首尔-2
+      - "🇸🇬 lv.3-新加坡1-NF&D+"
+      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
+      - "🇸🇬 lv.3-新加坡3-NF&D+"
+      - 🇯🇵 |湖南联通转日本NTT5[倍率:0.8]
+      - 🇭🇰 香港bgp|
+      - 专线_tg+univstar_30
+      - 专线_tg+univstar_34
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -570,138 +510,123 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇲 lv.3-美国3
-      - 🇬🇧 lv.3-英国2
-      - 🇭🇰 香港()
-      - 🇭🇰 香港-测试|1G|80端口
-      - 专线_tg+univstar_8
-      - 🇯🇵 |广东移动转日本Azure[Trojan][倍率:1]
-      - 专线_tg+univstar_49
-      - 🇭🇰 香港二区|负载均衡
-      - 🇭🇰 |香港3
-      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
-      - 🇺🇲 洛杉矶×0.2
-      - 🇨🇳 CN6→openitsub.com
-      - 🇺🇲 美国-测试|1G|80端口
-      - "|🇺🇦乌克兰-边缘访问Vik"
-      - 专线_tg+univstar_38
-      - 🇭🇰 |深港专线转香港HGC3[M][Trojan][倍率:2.5]
-      - "🇸🇬 lv.3-新加坡2-NF&D+"
-      - 🇨🇳 |🇹🇼台湾-边缘访问BGP
-      - 🇨🇳 台湾()
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - 专线_tg+univstar_4
-      - 🇯🇵 |日本02
-      - 🇭🇰 lv.3-香港3
-      - "🇯🇵 lv.3-日本1-NF&AbemaTV"
-      - 🇰🇷 |IEPL韩国₃.₅ₓ
-      - 专线_tg+univstar_19
-      - 🇺🇲 |IEPL美国₃.₅ₓ
-      - 🇺🇲 US3
-      - h961359.waihuizhibiaowang.com:11443
-      - 🇺🇲 US1→openitsub.com
-      - 专线_tg+univstar_22
-      - 🇭🇰 香港bgp|
-      - 🇷🇺 俄罗斯联邦()
-      - 🇨🇳 台湾_tg+univstar_52
-      - 🇰🇷 韩国A|
-      - 🇸🇬 大萝卜鸡新加
-      - 🇹🇷 |🇹🇷土耳其-核心访问DeHost
+      - 🇭🇰 香港-6|1G|80端口
+      - "🇨🇳 lv.3-台湾2-NF&动画疯"
+      - "|GLaDOS-N2-01"
+      - h207532.waihuizhibiaowang.com:11543
+      - 🇭🇰 香港-2|1G|80端口
+      - 🇯🇵 |日本2
       - 专线_tg+univstar_33
-      - 🇭🇰 香港實驗性C/02x1.0
+      - 🇩🇪 |🇩🇪德国-边缘访问DP
       - 🇨🇳 中国()
-      - 专线_tg+univstar_44
-      - 🇭🇰 lv.3-香港1
-      - 专线_tg+univstar_36
-      - 🇭🇰 |长沙联通转香港BGP2[M][Trojan][倍率:0.9]
-      - 🇨🇳 中国内蒙古|100M|80端口
-      - 专线_tg+univstar_15
-      - "|GLaDOS-N2-03"
-      - 🇬🇧 英国|
-      - 🇫🇷 法国-江移|解锁流媒体
-      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
-      - 🇭🇰 香港B/03x1.0
-      - "🇸🇬 lv.3-新加坡1-NF&D+"
-      - "|澳洲1"
-      - 🇭🇰 香港-1|1G|80端口
-      - 专线_tg+univstar_34
-      - 🇸🇬 |新加坡2
-      - 🇭🇰 香港-I|10G|80端口
-      - 专线_tg+univstar_25
-      - 🇸🇬 新加坡_tg+univstar_50
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇸🇬 |🇸🇬新加坡-核心访问DP
-      - 🇺🇲 |美国3
-      - 专线_tg+univstar_23
-      - 🇷🇺 俄罗斯二区
-      - 🇺🇲 |美国原生02
-      - 🇺🇲 lv.3-美国3 2
-      - 🇨🇳 |上海电信转台湾HiNet[M][Trojan][倍率:1.2]
+      - dafeivpn.com5元专线机场
+      - 🇯🇵 |广东移动转日本Webarena[M][Trojan][倍率:0.8]
+      - 专线_tg+univstar_19
+      - 专线_tg+univstar_6
       - 🇨🇳 中国() 2
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - 🇰🇷 韩国_tg+univstar_43
-      - 🇺🇲 |广东移动转美国Cogent2[M][Trojan][倍率:0.8]
-      - 🇯🇵 日本|
-      - 🇨🇦 CA加拿大001
-      - 🇰🇷 韩国|负载均衡
-      - "🇸🇬 lv.3-新加坡2-NF&D+ 2"
-      - 🇯🇵 JP日本002
-      - "|GLaDOS-N2-08"
-      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
-      - "🇸🇬 lv.3-新加坡3-NF&D+"
-      - 🇺🇲 lv.3-美国1
-      - 专线_tg+univstar_28
-      - 🇯🇵 |湖南联通转日本NTT[倍率:0.8]
-      - 🇨🇳 中国() 3
-      - 大萝卜鸡
-      - 🇭🇰 HK13
-      - 专线_tg+univstar_11
-      - 🇸🇬 |新加坡01
-      - "|乌克兰1"
-      - h650196.waihuizhibiaowang.com:11143
-      - 🇯🇵 日本二区|负载均衡
-      - 🇭🇰 香港IEPL/03x3.0
-      - 🇭🇰 |🇭🇰香港-核心访问HKT
-      - 🇬🇧 lv.3-英国3
-      - 专线_tg+univstar_31
-      - 🇸🇬 更新于10/25/16:44
-      - 🇸🇬 新加坡B/02x1.0
-      - 🇺🇲 |美国1
+      - 🇭🇰 |香港3
+      - 🇸🇬 |新加坡1
+      - 专线_tg+univstar_40
+      - 🇭🇰 香港-IV|10G|80端口
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇺🇲 洛杉矶×0.2
+      - 🇭🇰 |广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 🇭🇰 香港-II|10G|80端口
+      - 专线_tg+univstar_10
+      - 🇦🇺 |🇦🇺澳大利亚-核心访问VUAU
       - 专线_tg+univstar_17
-      - ✈付费机场推荐✈
-      - 🇨🇳 中国() 4
-      - 专线_tg+univstar_39
-      - 专线_tg+univstar_3
-      - 🇯🇵 |长沙联通转日本NTT[M][倍率:0.8]
-      - 🇸🇬 |新加坡03
-      - "🇨🇳 lv.3-台湾1-NF&动画疯"
-      - 台灣A/01x1.0
-      - 🇯🇵 日本|1000M|80端口
-      - 🇨🇳 中国() 5
-      - 🇨🇳 CN3→openitsub.com
-      - 🇯🇵 |日本13
-      - "🇯🇵 lv.3-日本2-NF&AbemaTV"
-      - 🇹🇷 |土耳其1
-      - 专线_tg+univstar_9
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
-      - 群组:xxmym
-      - 🇺🇲 US6
-      - "🇸🇬 lv.3-新加坡1-NF&D+ 2"
-      - 🇯🇵 日本A/02x1.0
-      - 🇨🇳 中国() 6
-      - 🇨🇦 加拿大()
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇬🇧 |🇬🇧英国-核心访问DP
-      - 🇯🇵 |长沙联通转日本NTT6[Trojan][倍率:0.8]
+      - 🇸🇬 新加坡IEPL/01x3.0
+      - 🇷🇺 俄罗斯二区
+      - 专线_tg+univstar_45
+      - 🇭🇰 HK14
+      - 专线_tg+univstar_28
+      - 🇨🇳 台湾|
+      - 🇺🇲 US1→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇯🇵 |湖南联通转日本Webarena[M][倍率:0.8]
+      - 🇯🇵 |IEPL日本₃.₅ₓ
+      - 🇯🇵 日本二区|负载均衡
+      - 🇭🇰 香港實驗性C/02x1.0
+      - "|🇺🇦乌克兰-核心访问Vik"
+      - 🇺🇲 |IEPL美国₃.₅ₓ
+      - 专线_tg+univstar_5
+      - 🇺🇲 US2→openitsub.com
+      - 🇯🇵 |日本07
       - 🇸🇬 |新加坡3
-      - 🇯🇵 日本B/01x1.0
-      - 🇯🇵 日本一区|负载均衡
-      - 🇸🇬 大萝卜鸡新
-      - 🇨🇳 |台湾1
-      - 🇭🇰 大萝卜鸡香港
-      - 🇯🇵 |湖南联通转日本Webarena2[M][Trojan][倍率:0.8]
+      - 🇯🇵 |日本10
+      - 🇺🇲 |美国3
+      - 🇭🇰 香港B/04x1.0
+      - 🇬🇧 |🇰🇷韩国-核心访问VUKR
+      - 🇭🇰 香港直连|
+      - 🇰🇷 韩国|负载均衡
+      - 🇷🇺 俄罗斯
+      - 🇬🇧 lv.3-英国1
+      - 大萝卜鸡
+      - 专线_tg+univstar_48
       - 🇺🇲 |美国原生01
-      - 专线_tg+univstar_26
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇰🇷 韩国|
+      - 🇨🇳 台湾中转|
+      - "🇨🇳 lv.3-台湾3-NF&动画疯"
+      - 🇨🇳 中国() 3
+      - 🇺🇲 lv.3-美国3
+      - 🇭🇰 大萝卜鸡香港
+      - 🇯🇵 |湖南联通转日本NTT4[倍率:0.8]
+      - 台灣A/01x1.0
+      - 🇭🇰 香港()
+      - 🇺🇲 洛杉矶|沪美隧道
+      - 🇧🇷 |🇧🇷巴西-边缘访问GCore
+      - 🇬🇧 lv.3-英国3
+      - "|澳洲1"
+      - 专线_tg+univstar_27
+      - 🇯🇵 |日本04
+      - 🇭🇰 |🇭🇰香港-核心访问DP
+      - 专线_tg+univstar_46
+      - 🇯🇵 日本一区|负载均衡
+      - 专线_tg+univstar_20
+      - 🇭🇰 香港-5|1G|80端口
+      - 【直连】TYO/东京-443端口-2
+      - 🇭🇰 香港-3|1G|80端口
+      - 🇰🇷 韩国_tg+univstar_43
+      - 🇺🇲 lv.3-美国2
+      - 专线_tg+univstar_3
+      - h207532.waihuizhibiaowang.com:11443
+      - 专线_tg+univstar_11
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇯🇵 |湖南联通转日本NTT2[Trojan][倍率:0.8]
+      - 🇯🇵 |日本13
+      - "|GLaDOS-N2-05"
+      - 🇭🇰 香港二区|负载均衡
+      - 🇺🇲 |🇺🇸美国-边缘访问DP
+      - 🇺🇲 US3
+      - 专线_tg+univstar_56
+      - 🇩🇪 |德国1
+      - "🇨🇳 lv.3-台湾3-NF&动画疯 2"
+      - 专线_tg+univstar_39
+      - 🇺🇲 |上海电信转美国AN[M][Trojan][倍率:1.1]
+      - 🇭🇰 |上海电信转香港BGP3[M][倍率:1.1]
+      - "🇨🇳 lv.3-台湾2-NF&动画疯 2"
+      - 🇭🇰 香港() 2
+      - 🇹🇷 |🇹🇷土耳其-边缘访问DeHost
+      - 🇨🇳 中国() 4
+      - 🇬🇧 |🇬🇧英国-核心访问DP
+      - "|🇺🇦乌克兰-边缘访问Vik"
+      - 🇨🇳 |长沙联通转台湾HiNet2[倍率:1]
+      - 🇭🇰 香港IEPL/02x3.0
+      - 专线_tg+univstar_24
+      - 🇯🇵 日本B/01x1.0
+      - 专线_tg+univstar_49
+      - 🇹🇷 |土耳其1
+      - 专线_tg+univstar_32
+      - 🇰🇷 【直连】ICN/首尔-2
+      - "🇸🇬 lv.3-新加坡1-NF&D+"
+      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
+      - "🇸🇬 lv.3-新加坡3-NF&D+"
+      - 🇯🇵 |湖南联通转日本NTT5[倍率:0.8]
+      - 🇭🇰 香港bgp|
+      - 专线_tg+univstar_30
+      - 专线_tg+univstar_34
   - name: 📲 电报消息
     type: select
     proxies:
@@ -843,12 +768,6 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - 🇫🇷 法国-江移|解锁流媒体
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
-      - 🇭🇰 香港HGC-江移|解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -894,130 +813,117 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港()
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇭🇰 香港二区|负载均衡
+      - 🇭🇰 香港-6|1G|80端口
+      - 🇭🇰 香港-2|1G|80端口
       - 🇭🇰 |香港3
-      - 🇭🇰 |深港专线转香港HGC3[M][Trojan][倍率:2.5]
-      - 🇭🇰 lv.3-香港3
-      - 🇭🇰 香港bgp|
+      - 🇭🇰 香港-IV|10G|80端口
+      - 🇭🇰 香港-4|1G|80端口
+      - 🇭🇰 |广东移动转香港NTT3[Trojan][倍率:0.8]
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇭🇰 HK14
       - 🇭🇰 香港實驗性C/02x1.0
-      - 🇭🇰 lv.3-香港1
-      - 🇭🇰 |长沙联通转香港BGP2[M][Trojan][倍率:0.9]
-      - 🇭🇰 香港B/03x1.0
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇭🇰 HK13
-      - 🇭🇰 香港IEPL/03x3.0
-      - 🇭🇰 |🇭🇰香港-核心访问HKT
-      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇭🇰 香港B/04x1.0
+      - 🇭🇰 香港直连|
+      - 🇭🇰 香港-测试|1G|80端口
       - 🇭🇰 大萝卜鸡香港
+      - 🇭🇰 香港()
+      - 🇭🇰 |🇭🇰香港-核心访问DP
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇭🇰 香港-3|1G|80端口
+      - 🇭🇰 香港-I|10G|80端口
+      - 🇭🇰 香港二区|负载均衡
+      - 🇭🇰 |上海电信转香港BGP3[M][倍率:1.1]
+      - 🇭🇰 香港() 2
+      - 🇭🇰 香港IEPL/02x3.0
+      - 🇭🇰 香港bgp|
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 |广东移动转日本Azure[Trojan][倍率:1]
-      - 🇯🇵 |日本02
-      - "🇯🇵 lv.3-日本1-NF&AbemaTV"
-      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
-      - 🇯🇵 日本|
-      - 🇯🇵 JP日本002
-      - 🇯🇵 |湖南联通转日本NTT[倍率:0.8]
+      - 🇯🇵 |日本2
+      - 🇯🇵 |广东移动转日本Webarena[M][Trojan][倍率:0.8]
+      - 🇯🇵 |湖南联通转日本Webarena[M][倍率:0.8]
+      - 🇯🇵 |IEPL日本₃.₅ₓ
       - 🇯🇵 日本二区|负载均衡
-      - 🇯🇵 |长沙联通转日本NTT[M][倍率:0.8]
-      - 🇯🇵 日本|1000M|80端口
-      - 🇯🇵 |日本13
-      - "🇯🇵 lv.3-日本2-NF&AbemaTV"
-      - 🇯🇵 日本A/02x1.0
-      - 🇯🇵 |长沙联通转日本NTT6[Trojan][倍率:0.8]
-      - 🇯🇵 日本B/01x1.0
+      - 🇯🇵 |日本07
+      - 🇯🇵 |日本10
+      - 🇯🇵 |湖南联通转日本NTT4[倍率:0.8]
+      - 🇯🇵 |日本04
       - 🇯🇵 日本一区|负载均衡
-      - 🇯🇵 |湖南联通转日本Webarena2[M][Trojan][倍率:0.8]
+      - 【直连】TYO/东京-443端口-2
+      - 🇯🇵 |湖南联通转日本NTT2[Trojan][倍率:0.8]
+      - 🇯🇵 |日本13
+      - 🇯🇵 日本B/01x1.0
+      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
+      - 🇯🇵 |湖南联通转日本NTT5[倍率:0.8]
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 lv.3-美国3
       - 🇺🇲 洛杉矶×0.2
-      - 🇺🇲 美国-测试|1G|80端口
-      - 🇺🇲 |IEPL美国₃.₅ₓ
-      - 🇺🇲 US3
       - 🇺🇲 US1→openitsub.com
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
+      - 🇺🇲 |IEPL美国₃.₅ₓ
+      - 🇺🇲 US2→openitsub.com
       - 🇺🇲 |美国3
-      - 🇺🇲 |美国原生02
-      - 🇺🇲 lv.3-美国3 2
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - 🇺🇲 |广东移动转美国Cogent2[M][Trojan][倍率:0.8]
-      - 🇺🇲 lv.3-美国1
-      - 🇺🇲 |美国1
-      - 🇺🇲 US6
       - 🇺🇲 |美国原生01
+      - 🇺🇲 lv.3-美国3
+      - 🇺🇲 洛杉矶|沪美隧道
+      - 🇺🇲 lv.3-美国2
+      - 🇺🇲 |🇺🇸美国-边缘访问DP
+      - 🇺🇲 US3
+      - 🇺🇲 |上海电信转美国AN[M][Trojan][倍率:1.1]
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 |🇹🇼台湾-边缘访问BGP
-      - 🇨🇳 台湾()
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - 🇨🇳 台湾_tg+univstar_52
-      - 🇨🇳 |上海电信转台湾HiNet[M][Trojan][倍率:1.2]
-      - "🇨🇳 lv.3-台湾1-NF&动画疯"
+      - "🇨🇳 lv.3-台湾2-NF&动画疯"
+      - 🇨🇳 台湾|
+      - 🇨🇳 台湾中转|
+      - "🇨🇳 lv.3-台湾3-NF&动画疯"
       - 台灣A/01x1.0
-      - 🇨🇳 |台湾1
+      - "🇨🇳 lv.3-台湾3-NF&动画疯 2"
+      - "🇨🇳 lv.3-台湾2-NF&动画疯 2"
+      - 🇨🇳 |长沙联通转台湾HiNet2[倍率:1]
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "🇸🇬 lv.3-新加坡2-NF&D+"
-      - "🇸🇬 lv.3-新加坡1-NF&D+"
-      - 🇸🇬 |新加坡2
-      - 🇸🇬 新加坡_tg+univstar_50
-      - 🇸🇬 |🇸🇬新加坡-核心访问DP
-      - "🇸🇬 lv.3-新加坡2-NF&D+ 2"
-      - "🇸🇬 lv.3-新加坡3-NF&D+"
+      - 🇸🇬 |新加坡1
+      - 🇸🇬 新加坡IEPL/01x3.0
       - 🇸🇬 |新加坡01
-      - 🇸🇬 新加坡B/02x1.0
-      - 🇸🇬 |新加坡03
-      - "🇸🇬 lv.3-新加坡1-NF&D+ 2"
       - 🇸🇬 |新加坡3
+      - "🇸🇬 lv.3-新加坡1-NF&D+"
+      - "🇸🇬 lv.3-新加坡3-NF&D+"
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 |IEPL韩国₃.₅ₓ
-      - 🇰🇷 韩国A|
-      - 🇰🇷 韩国_tg+univstar_43
+      - 🇬🇧 |🇰🇷韩国-核心访问VUKR
       - 🇰🇷 韩国|负载均衡
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
+      - 🇰🇷 韩国|
+      - 🇰🇷 韩国_tg+univstar_43
+      - 🇰🇷 大萝卜鸡韩国
+      - 🇰🇷 【直连】ICN/首尔-2
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - "🇸🇬 lv.3-新加坡2-NF&D+"
-      - 🇨🇳 台湾Hinet|解锁流媒体
-      - "🇯🇵 lv.3-日本1-NF&AbemaTV"
-      - 🇫🇷 法国-江移|解锁流媒体
-      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
+      - "🇨🇳 lv.3-台湾2-NF&动画疯"
+      - "🇨🇳 lv.3-台湾3-NF&动画疯"
+      - "🇨🇳 lv.3-台湾3-NF&动画疯 2"
+      - "🇨🇳 lv.3-台湾2-NF&动画疯 2"
       - "🇸🇬 lv.3-新加坡1-NF&D+"
-      - 🇺🇲 美国西雅图-江移|解锁流媒体
-      - 🇺🇲 【美国】峰值1000M-NetFlix原生IP解锁
-      - "🇸🇬 lv.3-新加坡2-NF&D+ 2"
+      - "🇯🇵 lv.3-日本3-NF&AbemaTV"
       - "🇸🇬 lv.3-新加坡3-NF&D+"
-      - "🇨🇳 lv.3-台湾1-NF&动画疯"
-      - "🇯🇵 lv.3-日本2-NF&AbemaTV"
-      - 🇰🇷 韩国亚马逊-3号|解锁流媒体
-      - "🇸🇬 lv.3-新加坡1-NF&D+ 2"
-      - 🇭🇰 香港HGC-江移|解锁流媒体
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
