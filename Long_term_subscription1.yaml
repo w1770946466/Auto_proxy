@@ -5,757 +5,885 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中转_tg+univstar_62, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡 01, server: sg.520748.xyz, port: 10002, type: trojan, password: 9e1efeee-8911-4c5b-85ce-3c447ccfef6a, sni: sg.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇿 捷克(TG频道:@kxswa), server: 194.87.196.20, port: 34736, type: vmess, uuid: ad34e7ff-a389-492a-8e0b-aeb0ab2a2e2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-VI|10G|80端口, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇭🇰 俄罗斯 | 沪港隧道, server: awsjp.hoot.cf, port: 25004, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c, udp: true}
-  - {name: 🇭🇰 香港-6|1G|80端口, server: hk-6.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 CN 7 → openitsub.com, server: 119.36.161.40, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/120306182525, headers: {Host: www.69961573.xyz}}, udp: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: hk2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG, server: 28492a5.qf.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: enterprise.moss.network}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_2, server: hk2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_30, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/de, headers: {Host: i0.hdslb.com}}, udp: true}
-  - {name: 中转_tg+univstar_31, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/fr, headers: {Host: i0.hdslb.com}}, udp: true}
-  - {name: 中转_tg+univstar_58, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: ARM1-CF阿里, server: 8.219.105.248, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_22, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: ARM1-CF阿里 2, server: 8.219.172.204, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇭🇰 香港-4|1G|80端口, server: hk-4.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇲🇳 中国 内蒙古|100M|非80端口|停机卡, server: nmg.pannode.top, port: 800, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇯🇵 日本(TG频道:@kxswa), server: 139.162.84.30, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 202022100000000000000020, udp: true}
-  - {name: 🇨🇳 CN 6 → openitsub.com, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国01, server: 54.219.146.19, port: 2200, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国, server: 20013.purefast2.com, port: 20013, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: purefast1.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道, server: awsjp.hoot.cf, port: 25003, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c, udp: true}
-  - {name: 🇭🇰 香港-2|1G|80端口, server: hk-2-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_26, server: 47.252.41.249, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 🇭🇰 美国→广港隧道→1.6x, server: 14.18.108.154, port: 34570, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 法国A|tg频道:@ripaojiedian, server: 104.18.28.19, port: 80, type: vmess, uuid: 35556863-22b9-40b9-8722-a192b8526edc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /p9Dq67Nx/, headers: {Host: fr1.cachexy.ga}}, udp: true}
-  - {name: 🇸🇬 新加坡, server: airporthub.tech, port: 10099, type: trojan, password: 21ad03b0-a8f8-34d2-ab0b-27345d1608da, sni: airporthub.tech, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_65, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-3|1G|80端口, server: hk-3-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇨🇳 中国 江苏|100M|非80端口|停机卡, server: xz-cm1.cloudiplc.com, port: 20999, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇺🇸 US 5 → openitsub.com, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa), server: cf.731808.tk, port: 443, type: vmess, uuid: 810b1cf9-dff9-4274-8975-cea0c261132d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /citdvws, headers: {Host: 5528.1808.cf}}, udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_8, server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa) 2, server: 43.201.43.107, port: 443, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/kr?ed=2048", headers: {Host: dc1-download.windowsupdate1.com}}, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa), server: ah.yd01.paopaocloud.cyou, port: 10007, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: ssru.v2.jp01.2yun.win}}, udp: true}
-  - {name: 🇭🇰 香港-1|1G|80端口, server: hk-1-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇭🇰 香港ssr|tg频道:@ripaojiedian, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
-  - {name: 🇲🇳 中国 内蒙古|100M|80端口, server: nmg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 中转_tg+univstar_51, server: 42.193.191.50, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa), server: sg5.v2rayserv.com, port: 80, type: vmess, uuid: 02c99c32-0058-4b87-b51a-8f5d6a59bddd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: sg5.v2rayserv.com}}, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾01, server: 20.239.142.164, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: tw1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 印度→海港隧道→1.6x, server: 124.225.170.28, port: 50357, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇰🇷 韩国|tg频道:@ripaojiedian, server: s1.cray.eu.org, port: 27522, type: vmess, uuid: 52dd176a-6a57-4827-ffdf-aaa5a7ade1ed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: s1.cray.eu.org}}, udp: true}
-  - {name: 🇧🇷 巴西, server: 20012.purefast2.com, port: 20012, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: purefast1.com, skip-cert-verify: false, udp: true}
+  - {name: Linode, server: 170.187.230.86, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 202022100000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
   - {name: 🇭🇰 香港-III|10G|80端口, server: hk-iii-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇮🇳 印度01→直连→0.5x, server: 45.79.127.157, port: 62597, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 圣何塞×0.5, server: mrk.p1.gay, port: 26131, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mrk.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: mrk.p1.gay}}, udp: true}
-  - {name: ARM1-CF阿里 3, server: 47.242.32.110, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇭🇰 香港bgp|tg频道:@ripaojiedian, server: 103.137.22.45, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 55011c8548ff, udp: true}
-  - {name: 🇩🇪 德国_tg+univstar_47, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
-  - {name: 🇬🇧 英国01→直连→0.5x, server: 213.168.250.63, port: 62335, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 中转_tg+univstar_55, server: 119.45.28.201, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [CT/CM] HKT F", server: inlayer7.standurls.co, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 25443:Jsnzkpg888, obfs-param: "", udp: true}
-  - {name: 🇸🇬 狮城2|tg频道:@ripaojiedian, server: 1024sg99.tfzhc.top, port: 8083, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1024sg99.tfzhc.top, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-II|10G|80端口, server: hk-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa) 3, server: 172.64.154.201, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
-  - {name: 🇯🇵 Level1 Japan 04, server: 172.104.125.118, port: 2053, type: vmess, uuid: db95a78c-daed-4439-a0ef-1180ac2f6666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本二区 | 负载均衡, server: jptws.hotfun.buzz, port: 27469, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jptws.hotfun.buzz, network: ws, ws-opts: {path: /hootfun, headers: {Host: jptws.hotfun.buzz}}, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港01, server: 20.187.79.78, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa) 4, server: 172.64.154.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_29, server: 137.184.164.233, port: 80, type: vmess, uuid: 8d8a181d-c9e7-4eb5-8c0f-09c0bf10b923, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇲🇽 墨西哥(TG频道:@kxswa), server: 131.196.253.140, port: 80, type: vmess, uuid: d54226f9-4427-4466-957f-173b0a5b1cbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: 131.196.253.140}}, udp: true}
+  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
   - {name: 🇨🇳 中国(TG频道:@kxswa), server: 43.155.86.208, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇭🇰 【香港】峰值1000M-NetFlix 解锁, server: xg1.xbywwcp.us, port: 15264, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: xg1.xbywwcp.us}}, udp: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: 47.242.51.205, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇭🇰 HK 1 → openitsub.com, server: hk1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 使用前更新订阅, server: t.cccao.cyou, port: 16616, type: vmess, uuid: b5f7b27e-909c-4396-b296-09a172cc10b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: 🇺🇸 美国A|tg频道:@ripaojiedian, server: 104.17.146.10, port: 80, type: vmess, uuid: 80a7f429-049b-4e94-9f16-aed2a42c529f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tlfmWciG/, headers: {Host: us1.cachexy.ga}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hkhgc, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇰🇷 韩国, server: 20002.purefast2.com, port: 20002, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: purefast1.com, skip-cert-verify: false, udp: true}
-  - {name: ARM1-CF阿里 4, server: 47.74.53.167, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_43, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
-  - {name: 🇺🇸 洛杉矶 | 沪美隧道, server: awsjp.hoot.cf, port: 25001, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c, udp: true}
-  - {name: (TG频道:@kxswa), server: v4.gitvpn.eu.org, port: 443, type: vmess, uuid: 1a205ae2-be41-42b0-abdf-795a2ea3df4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: v4.gitvpn.eu.org, grpc-opts: {grpc-service-name: ihaxyyds}, udp: true}
-  - {name: 🇭🇰 香港A|tg频道:@ripaojiedian, server: 43.198.12.229, port: 28443, type: trojan, password: 16c267c7-9734-4703-b3fb-5a23c2ab7fda, sni: glc.hruqoaw.cn, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡_tg+univstar_19, server: 51.79.164.146, port: 80, type: vmess, uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fastssh/putdcbb/63500f2541b87/, headers: {Host: 51.79.164.146}}, udp: true}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: hg14.leifengkeji.live, port: 8942, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, sni: hg14.leifengkeji.live, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_23, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_42, server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_46, server: 155.94.198.8, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 🇸🇬 更新于10/28/12:01, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇺🇸 US 6 → openitsub.com, server: cf.731808.tk, port: 443, type: vmess, uuid: 810b1cf9-dff9-4274-8975-cea0c261132d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /citdvws, headers: {Host: 5528.1808.cf}}, udp: true}
+  - {name: cf, server: 8.209.113.133, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇭🇰 香港-5|1G|80端口, server: hk-5.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa), server: tw1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: tw1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: cf 2, server: 8.209.242.110, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: VN 1 → openitsub.com, server: yn.xbywwcp.us, port: 25365, type: vmess, uuid: 7c982e1d-647f-3a15-a8a4-102d73d1913d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: yn.xbywwcp.us}}, udp: true}
+  - {name: 🇭🇰 香港-II|10G|80端口, server: hk-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国01, server: 54.219.146.19, port: 2200, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us1.sanfen001.pics, skip-cert-verify: false, udp: true}
   - {name: 中转_tg+univstar_50, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 距离下次重置剩余：30 天, server: Tencent.cfd, port: 6666, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Tencent.cfd}}, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_43, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
+  - {name: 🇨🇳 CN 28 → openitsub.com, server: gzydv2.bdp666.top, port: 25350, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}, udp: true}
+  - {name: cf 3, server: 8.219.14.96, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇭🇰 美国→广港隧道→1.6x, server: 14.18.108.154, port: 34570, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇮🇳 TG频道:@kxswa|印度 01, server: in.520748.xyz, port: 443, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: in.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国 02, server: us2.520748.xyz, port: 10002, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: us2.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 17 → openitsub.com, server: bgp1.bdp666.top, port: 50186, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: cf 4, server: 8.219.170.170, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: h650196.waihuizhibiaowang.com:11743, server: h650196.waihuizhibiaowang.com, port: 11743, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
+  - {name: HK3, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇨🇳 CN 30 → openitsub.com, server: sgt.bdp666.top, port: 28021, type: trojan, password: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, sni: sga5.bieqiang.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 43 → openitsub.com, server: teshu.bdp666.top, port: 28172, type: trojan, password: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, sni: tu.bieqiang.xyz, skip-cert-verify: false, udp: true}
+  - {name: h961359.waihuizhibiaowang.com:11443, server: h961359.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 3, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/de, headers: {Host: i0.hdslb.com}}, udp: true}
+  - {name: 🇸🇬 新加坡(TG频道:@kxswa), server: 8.219.134.86, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: (TG频道:@kxswa), server: els200.jklist.ga, port: 2095, type: vmess, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /wo.png, headers: {Host: els200.jklist.ga}}, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港01, server: 20.187.79.78, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_36, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}, udp: true}
+  - {name: 🇨🇳 CN 3 → openitsub.com, server: vstw.bdp666.top, port: 30111, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sss, headers: {Host: vstw.bdp666.top}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 2, server: 150.230.249.15, port: 46842, type: vmess, uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度01→直连→0.5x, server: 45.79.127.157, port: 62597, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US 2 → openitsub.com, server: tg1.tgcunzhang.xyz, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tg1.tgcunzhang.xyz}}, udp: true}
+  - {name: 🇺🇸 德国 | 沪美隧道, server: awsjp.hoot.cf, port: 25005, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c, udp: true}
+  - {name: HK9, server: hk1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 20 → openitsub.com, server: bgpsg.bdp666.top, port: 50345, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 3 → openitsub.com, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus3.0bad.com}}, udp: true}
+  - {name: 🇸🇬 新加坡03→直连→0.5x, server: 172.105.123.163, port: 62341, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: cf 5, server: 8.219.105.248, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇨🇳 CN 33 → openitsub.com, server: bgphk.bdp666.top, port: 50366, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP, server: 28492a5.qh.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: ntt.moss.network}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 3, server: 172.64.154.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 4, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 5, server: cf.731808.tk, port: 443, type: vmess, uuid: 810b1cf9-dff9-4274-8975-cea0c261132d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /citdvws, headers: {Host: 5528.1808.cf}}, udp: true}
+  - {name: 🇺🇸 圣何塞×0.5, server: mrk.p1.gay, port: 26131, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mrk.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: mrk.p1.gay}}, udp: true}
+  - {name: cf 6, server: 47.74.53.167, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇭🇰 新加坡→广港隧道-1.6x, server: 14.18.108.154, port: 29891, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 CN 10 → openitsub.com, server: csltv.bdp666.top, port: 51189, type: trojan, password: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, sni: usa1.bieqiang.xyz, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_58, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本防失联×2, server: urgjp.hotfun.buzz, port: 27469, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: urgjp.hotfun.buzz, network: ws, ws-opts: {path: /hootfun, headers: {Host: urgjp.hotfun.buzz}}, udp: true}
+  - {name: 🇭🇰 印度→广港隧道→1.6x, server: 14.18.108.154, port: 12634, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 日本二区 | 负载均衡, server: jptws.hotfun.buzz, port: 27469, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jptws.hotfun.buzz, network: ws, ws-opts: {path: /hootfun, headers: {Host: jptws.hotfun.buzz}}, udp: true}
+  - {name: cf 7, server: 8.209.240.54, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 6, server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Deroxbxb7/63530b4859a5f/, headers: {Host: zoom.us}}, udp: true}
+  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 2, server: sg5.v2rayserv.com, port: 80, type: vmess, uuid: 02c99c32-0058-4b87-b51a-8f5d6a59bddd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: sg5.v2rayserv.com}}, udp: true}
+  - {name: 🇬🇧 TG频道:@kxswa|英国 01, server: uk.520748.xyz, port: 10002, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: uk.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 4, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hkhgc, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 🇺🇸 美国-测试|1G|80端口, server: us-test.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇸🇬 白嫖订阅永久更新, server: yes.iamagoodman.net, port: 16648, type: vmess, uuid: b5f7b27e-909c-4396-b296-09a172cc10b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
+  - {name: 🇨🇳 CN 45 → openitsub.com, server: iplc.bdp666.top, port: 46060, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: GLaDOS-Railgun-03, server: 1260eea.tt.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n1.glados-remote.com%22%7D"}}, udp: true}
+  - {name: cf 8, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇺🇸 拉斯维加斯 | 沪美隧道, server: awsjp.hoot.cf, port: 25000, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c, udp: true}
+  - {name: 🇸🇬 新加坡02→直连→0.5x, server: 172.104.163.105, port: 60156, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 中转_tg+univstar_28, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG, server: 28492a5.qf.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: enterprise.moss.network}}, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_32, server: cf.731808.tk, port: 443, type: vmess, uuid: 810b1cf9-dff9-4274-8975-cea0c261132d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /citdvws, headers: {Host: 5528.1808.cf}}, udp: true}
+  - {name: 🇺🇸 美国US|tg频道:@ripaojiedian, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
+  - {name: (TG频道:@kxswa) 2, server: v159.aagogo.cf, port: 443, type: vmess, uuid: 503b44b6-b701-370d-8f04-3bc852c647ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v159-dekDP6Otf, headers: {Host: v159.aagogo.cf}}, udp: true}
+  - {name: 🇺🇸 US 7 → openitsub.com, server: 193.123.244.188, port: 443, type: vmess, uuid: 34421e22-1933-4da2-ab05-a8580d6f051b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /NkiAUZ, headers: {Host: apulnion.com}}, udp: true}
+  - {name: 🇭🇰 日本→广 港隧道→1.6x, server: 14.18.108.154, port: 11983, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: cf 9, server: 8.209.82.148, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇺🇸 洛杉矶 | 沪美隧道, server: awsjp.hoot.cf, port: 25001, type: ss, cipher: chacha20-ietf-poly1305, password: e1f80416-5394-4fcd-af80-12ef9799a92c, udp: true}
+  - {name: 🇰🇷 【直连】ICN/首尔 - 80端口 - 1, server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com, port: 80, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本|1000M|80端口, server: jp.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-jp?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 中转_tg+univstar_60, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港-1|1G|80端口, server: hk-1-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 7, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: tg+univstar_38, server: qiqis.cf, port: 443, type: vmess, uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /b356a4/, headers: {Host: 1dcelis.qiqis.ml}}, udp: true}
+  - {name: 🇭🇰 【直连】HKG/香港 - 2, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: hk2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: tg+univstar_44, server: els200.jklist.ga, port: 2095, type: vmess, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /wo.png, headers: {Host: els200.jklist.ga}}, udp: true}
+  - {name: 🇨🇦 加拿大(TG频道:@kxswa), server: ca2.v2rayserv.com, port: 80, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: ca2.v2rayserv.com}}, udp: true}
+  - {name: tg+univstar_12, server: 198.41.212.100, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: HK2, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: false, udp: true}
+  - {name: tg+univstar_39, server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
+  - {name: 🇨🇳 CN 18 → openitsub.com, server: jpa.bdp666.top, port: 25351, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 11 → openitsub.com, server: twb.bdp666.top, port: 33201, type: trojan, password: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, sni: hinetddns.sttlink.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 47 → openitsub.com, server: vs1.bdp666.top, port: 30048, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /asuq, headers: {Host: vs1.bdp666.top}}, udp: true}
+  - {name: tg+univstar_40, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxuk.fovi.tk}}, udp: true}
+  - {name: 🇯🇵 日本JP|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_63, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 14 → openitsub.com, server: 116.129.253.134, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 40 → openitsub.com, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP, server: 28492a5.qb.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: ntt.moss.network}}, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国02, server: 54.219.146.19, port: 2200, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国(TG频道:@kxswa), server: london1.na.invari.na.oonvari.com, port: 443, type: vmess, uuid: 3f3c52f5-0e50-4fcf-8ee2-c8b7e0c8abab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /aaf44db73dfc/, headers: {Host: london1.na.invari.na.oonvari.com}}, udp: true}
+  - {name: 🇭🇰 香港-测试|1G|80端口, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 US 5 → openitsub.com, server: sg2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: sg1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 16 → openitsub.com, server: csltv.bdp666.top, port: 52405, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /asuq, headers: {Host: csltv.bdp666.top}}, udp: true}
+  - {name: 🇨🇳 CN 21 → openitsub.com, server: bgpsg.bdp666.top, port: 50355, type: vmess, uuid: 068dc1eb-24b6-3ca8-8328-1b606387a7d3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇩🇪 TG频道:@kxswa|德国 01, server: ger.520748.xyz, port: 443, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: ger.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 01, server: ger.520748.xyz, port: 443, type: trojan, password: 9e1efeee-8911-4c5b-85ce-3c447ccfef6a, sni: ger.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 荷兰, server: 20011.purefast2.com, port: 20011, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: purefast1.com, skip-cert-verify: false, udp: true}
-  - {name: h745768.waihuizhibiaowang.com:11343, server: h745768.waihuizhibiaowang.com, port: 11343, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 【越南】峰值150M-NetFlix 解锁, server: yn.xbywwcp.us, port: 25365, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: yn.xbywwcp.us}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -778,95 +906,111 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转_tg+univstar_62
-      - 🇸🇬 新加坡 01
-      - 🇨🇿 捷克(TG频道:@kxswa)
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇭🇰 俄罗斯 | 沪港隧道
-      - 🇭🇰 香港-6|1G|80端口
-      - 🇨🇳 CN 7 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
-      - 🇺🇸 美国_tg+univstar_2
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_31
-      - 中转_tg+univstar_58
-      - ARM1-CF阿里
-      - 🇺🇸 美国_tg+univstar_22
-      - ARM1-CF阿里 2
-      - 🇭🇰 香港-4|1G|80端口
-      - 🇲🇳 中国 内蒙古|100M|非80端口|停机卡
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇩🇪 德国
-      - 🇭🇰 达拉斯 | 流媒体解锁 | 沪港隧道
-      - 🇭🇰 香港-2|1G|80端口
-      - 🇺🇸 美国_tg+univstar_26
-      - 🇭🇰 美国→广港隧道→1.6x
-      - 🇫🇷 法国A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡
-      - 中转_tg+univstar_65
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg+univstar_8
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 香港ssr|tg频道:@ripaojiedian
-      - 🇲🇳 中国 内蒙古|100M|80端口
-      - 中转_tg+univstar_51
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇨🇳 TG频道:@kxswa|台湾01
-      - 🇭🇰 印度→海港隧道→1.6x
-      - 🇰🇷 韩国|tg频道:@ripaojiedian
-      - 🇧🇷 巴西
+      - Linode
       - 🇭🇰 香港-III|10G|80端口
-      - 🇮🇳 印度01→直连→0.5x
-      - 🇺🇸 圣何塞×0.5
-      - ARM1-CF阿里 3
-      - 🇭🇰 香港bgp|tg频道:@ripaojiedian
-      - 🇩🇪 德国_tg+univstar_47
-      - 🇬🇧 英国01→直连→0.5x
-      - 中转_tg+univstar_55
-      - 🇭🇰 [CT/CM] HKT F
-      - 🇸🇬 狮城2|tg频道:@ripaojiedian
-      - 🇭🇰 香港-II|10G|80端口
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇯🇵 Level1 Japan 04
-      - 🇯🇵 日本二区 | 负载均衡
-      - 🇭🇰 TG频道:@kxswa|香港01
-      - 🇺🇸 美国(TG频道:@kxswa) 4
-      - 🇺🇸 美国_tg+univstar_29
-      - 🇲🇽 墨西哥(TG频道:@kxswa)
+      - h745768.waihuizhibiaowang.com:11543
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇭🇰 【香港】峰值1000M-NetFlix 解锁
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 使用前更新订阅
-      - 🇺🇸 美国A|tg频道:@ripaojiedian
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇰🇷 韩国
-      - ARM1-CF阿里 4
-      - 🇺🇸 美国_tg+univstar_43
-      - 🇺🇸 洛杉矶 | 沪美隧道
-      - (TG频道:@kxswa)
-      - 🇭🇰 香港A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_tg+univstar_19
-      - 🇯🇵 JP 1 → openitsub.com
-      - 中转_tg+univstar_23
-      - 🇺🇸 美国_tg+univstar_42
-      - 🇺🇸 美国_tg+univstar_46
-      - 🇸🇬 更新于10/28/12:01
-      - 🇺🇸 US 6 → openitsub.com
+      - cf
+      - 🇭🇰 香港-5|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - cf 2
+      - VN 1 → openitsub.com
+      - 🇭🇰 香港-II|10G|80端口
+      - 🇺🇸 TG频道:@kxswa|美国01
       - 中转_tg+univstar_50
-      - 距离下次重置剩余：30 天
+      - 🇺🇸 美国_tg+univstar_43
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - cf 3
+      - 🇭🇰 美国→广港隧道→1.6x
+      - 🇮🇳 TG频道:@kxswa|印度 01
+      - 🇺🇸 TG频道:@kxswa|美国 02
+      - 🇨🇳 CN 17 → openitsub.com
+      - cf 4
+      - h650196.waihuizhibiaowang.com:11743
+      - HK3
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇨🇳 CN 43 → openitsub.com
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - (TG频道:@kxswa)
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇺🇸 美国_tg+univstar_36
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇮🇳 印度01→直连→0.5x
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇺🇸 德国 | 沪美隧道
+      - HK9
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇺🇸 US 3 → openitsub.com
+      - 🇸🇬 新加坡03→直连→0.5x
+      - cf 5
+      - 🇨🇳 CN 33 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - 🇺🇸 美国(TG频道:@kxswa) 3
+      - 🇺🇸 美国(TG频道:@kxswa) 4
+      - 🇺🇸 美国(TG频道:@kxswa) 5
+      - 🇺🇸 圣何塞×0.5
+      - cf 6
+      - 🇭🇰 新加坡→广港隧道-1.6x
+      - 🇨🇳 CN 10 → openitsub.com
+      - 中转_tg+univstar_58
+      - 🇯🇵 日本防失联×2
+      - 🇭🇰 印度→广港隧道→1.6x
+      - 🇯🇵 日本二区 | 负载均衡
+      - cf 7
+      - 🇺🇸 美国(TG频道:@kxswa) 6
+      - 🇸🇬 新加坡(TG频道:@kxswa) 2
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 美国-测试|1G|80端口
+      - 🇸🇬 白嫖订阅永久更新
+      - 🇨🇳 CN 45 → openitsub.com
+      - GLaDOS-Railgun-03
+      - cf 8
+      - 🇺🇸 拉斯维加斯 | 沪美隧道
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 中转_tg+univstar_28
+      - 🇸🇬 TG频道:@kxswa|GLaDOS-F2-SG
+      - 🇺🇸 美国_tg+univstar_32
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - cf 9
+      - 🇺🇸 洛杉矶 | 沪美隧道
+      - 🇰🇷 【直连】ICN/首尔 - 80端口 - 1
+      - 🇯🇵 日本|1000M|80端口
+      - 中转_tg+univstar_60
+      - 🇭🇰 香港-1|1G|80端口
+      - 🇺🇸 美国(TG频道:@kxswa) 7
+      - tg+univstar_38
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇺🇸 US 1 → openitsub.com
+      - tg+univstar_44
+      - 🇨🇦 加拿大(TG频道:@kxswa)
+      - tg+univstar_12
+      - HK2
+      - tg+univstar_39
+      - 🇨🇳 CN 18 → openitsub.com
+      - 🇨🇳 CN 11 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - tg+univstar_40
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 中转_tg+univstar_63
+      - 🇨🇳 CN 14 → openitsub.com
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F1-JP
+      - 🇺🇸 TG频道:@kxswa|美国02
+      - 🇩🇪 德国(TG频道:@kxswa)
+      - 🇭🇰 香港-测试|1G|80端口
+      - 🇺🇸 US 5 → openitsub.com
+      - 🇨🇳 CN 16 → openitsub.com
+      - 🇨🇳 CN 21 → openitsub.com
       - 🇩🇪 TG频道:@kxswa|德国 01
-      - 🇩🇪 德国 01
-      - 🇳🇱 荷兰
-      - h745768.waihuizhibiaowang.com:11343
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
