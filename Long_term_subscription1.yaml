@@ -5,1525 +5,1613 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 日本→广 港隧道→1.6x, server: 14.18.108.154, port: 11983, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE, server: 183.232.229.132, port: 9043, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Seoul-Scloud-dip, server: 183.232.229.132, port: 11923, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: Linode, server: 170.187.230.86, port: 20020, type: ss, cipher: aes-128-gcm, password: !<str> 202022100000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.cc}, udp: true}
-  - {name: 🇦🇪 vpnhat-Dubai-Kaopu-dip, server: 111.45.22.136, port: 11905, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_53, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 【直连】ICN/首尔 - 4, server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com, port: 12356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: h961359.waihuizhibiaowang.com:11543, server: h961359.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip, server: 111.45.22.136, port: 9016, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: tg+univstar_38, server: qiqis.cf, port: 443, type: vmess, uuid: 4e6d153c-e5b2-4911-bc72-e11c64f3ce93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /b356a4/, headers: {Host: 1dcelis.qiqis.ml}}, udp: true}
-  - {name: vpnhat-Johannesburg-Kaopu-dip, server: 111.45.22.246, port: 11909, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Amsterdam-DigitalOcean, server: 111.45.22.136, port: 11933, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Johannesburg-Kaopu-dip 2, server: 111.45.22.136, port: 11909, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 新加坡→广港隧道-1.6x, server: 14.18.108.154, port: 29891, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 2, server: 111.45.22.246, port: 9018, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip, server: 111.45.22.246, port: 9022, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国_tg+univstar_45, server: 146.56.162.25, port: 443, type: vmess, uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fastssh/1731390093/6357cedd7a199/, headers: {Host: sg1.31vpn.com}}, udp: true}
-  - {name: vpnhat-台北PNI-dip, server: 111.45.22.246, port: 9006, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU, server: 111.45.22.246, port: 9037, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa), server: 111.45.22.136, port: 11921, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip, server: 111.45.22.136, port: 11931, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: vpnhat-Frankfurt-DigitalOcean, server: 111.45.22.246, port: 11903, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-San Jose-Nato-dip, server: 116.129.254.184, port: 9026, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 22 → openitsub.com, server: 111.45.22.136, port: 11927, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 vpnhat-Tokyo-MIKU, server: 111.45.22.136, port: 9037, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: HK8, server: 8.209.240.54, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: 111.45.22.136, port: 11905, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 2, server: 111.45.22.136, port: 9027, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯联邦(TG频道:@kxswa), server: pf.napsternetv.com, port: 34141, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国 02, server: us2.520748.xyz, port: 10002, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: us2.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-New York-Nearoute-dip, server: 116.129.254.184, port: 9000, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: cf, server: 8.219.105.248, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇯🇵 日本|1000M|80端口, server: jp.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-jp?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: HK1, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
-  - {name: vpnhat-Buenos Aires-FDCservers-dip, server: 111.45.22.246, port: 11921, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|新加坡01, server: 13.214.206.178, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: sg1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 3, server: 111.45.22.136, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-New York-Nearoute-dip 2, server: 116.129.254.184, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 vpnpool-Montreal-OVH, server: 116.129.254.184, port: 11902, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 vpnhat-North Sydney-OVH, server: 111.45.22.136, port: 11925, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Frankfurt-DigitalOcean 2, server: 111.45.22.136, port: 11903, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 4, server: 183.232.229.132, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 24 → openitsub.com, server: 111.45.22.136, port: 11906, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: HK4, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
-  - {name: 🇩🇪 TG频道:@kxswa|德国 01, server: ger.520748.xyz, port: 443, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: ger.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_24, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}, udp: true}
-  - {name: tg+univstar_16, server: 104.18.28.19, port: 80, type: vmess, uuid: 35556863-22b9-40b9-8722-a192b8526edc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /p9Dq67Nx/, headers: {Host: fr1.cachexy.ga}}, udp: true}
-  - {name: vpnhat-台北PNI-dip 2, server: 111.45.22.246, port: 9005, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 vpnpool-Tokyo-MIKU-dip, server: 116.129.254.184, port: 9033, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG, server: 28492a5.qi.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: enterprise.moss.network}}, udp: true}
-  - {name: 🇦🇹 vpnhat-Vienna-FDCservers, server: 183.232.229.132, port: 11927, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 vpnhat-London-OVH, server: 183.232.229.132, port: 11901, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-CO-Bogota-FDCservers-dip, server: 116.129.254.184, port: 11922, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip, server: 111.45.22.246, port: 11931, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_35, server: 43.153.4.246, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇸🇬 新加坡03→直连→0.5x, server: 172.105.123.163, port: 62341, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnpool-San Jose-Nato-dip 2, server: 116.129.254.184, port: 9029, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: GLaDOS-Railgun-01, server: 1260eea.ts.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n1.glados-remote.com%22%7D"}}, udp: true}
-  - {name: vpnhat-New York-Nearoute-dip, server: 111.45.22.136, port: 9007, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Kharkiv-ITL, server: 111.45.22.246, port: 11919, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 5, server: 111.45.22.136, port: 9001, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港_tg+univstar_7, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false, udp: true}
-  - {name: HK2, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 澳大利亚01→直连→0.5x, server: 194.195.127.218, port: 63154, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 2, server: 111.45.22.246, port: 9039, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 vpnpool-彰化Hinet-dip, server: 116.129.254.184, port: 9012, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-台北PNI-dip, server: 116.129.254.184, port: 9004, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港02, server: 20.247.88.151, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Prague-ITL, server: 111.45.22.246, port: 11916, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: cf 2, server: 8.209.114.107, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇭🇰 香港-5|1G|80端口, server: hk-5.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇮🇳 TG频道:@kxswa|印度 01, server: in.520748.xyz, port: 443, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: in.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-Kharkiv-ITL, server: 116.129.254.184, port: 11919, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 3, server: 111.45.22.136, port: 9043, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Dhaka-Kaopu-dip, server: 111.45.22.136, port: 11908, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇵🇱 vpnpool-PL-Gdansk-ITL, server: 116.129.254.184, port: 11914, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国 江苏|100M|非80端口|停机卡, server: xz-cm1.cloudiplc.com, port: 20999, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 距离下次重置剩余：29 天, server: Tencent.cfd, port: 6666, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Tencent.cfd}}, udp: true}
-  - {name: 🇨🇦 vpnhat-Montreal-OVH, server: 111.45.22.246, port: 11902, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: tg+univstar_40, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxuk.fovi.tk}}, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 6, server: 111.45.22.246, port: 9028, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: h649960.waihuizhibiaowang.com:11443, server: h649960.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
-  - {name: HK7, server: 8.209.240.54, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
-  - {name: vpnpool-CH-Geneva-ITL, server: 116.129.254.184, port: 11918, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-IV|10G|80端口, server: hk-iv.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 中转_tg+univstar_30, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/de, headers: {Host: i0.hdslb.com}}, udp: true}
-  - {name: 中转_tg+univstar_52, server: 139.186.153.84, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Madrid-FDCservers, server: 183.232.229.132, port: 11926, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本(TG频道:@kxswa), server: 85.208.108.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: tg+univstar_11, server: 141.101.114.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip, server: 183.232.229.132, port: 9032, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-Prague-ITL, server: 116.129.254.184, port: 11916, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇵🇱 vpnhat-PL-Gdansk-ITL, server: 111.45.22.136, port: 11914, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 7 → openitsub.com, server: 223.111.122.199, port: 38080, type: vmess, uuid: b0a3ce89-1afe-4748-b8b6-6eaf0a53f5f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
-  - {name: vpnhat-台北PNI-dip 3, server: 183.232.229.132, port: 9005, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 10 → openitsub.com, server: 111.45.22.246, port: 11935, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本二区 | 负载均衡, server: jptws.hotfun.buzz, port: 27469, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jptws.hotfun.buzz, network: ws, ws-opts: {path: /hootfun, headers: {Host: jptws.hotfun.buzz}}, udp: true}
-  - {name: vpnpool-San Jose-Nato-dip 3, server: 116.129.254.184, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 频道有备用, server: v.tggroupv2ray233.tk, port: 443, type: vmess, uuid: 5f79f3f4-6c00-4da7-98d0-743d5d7515e7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: v.tggroupv2ray233.tk}}, udp: true}
-  - {name: 🇨🇳 台湾→HiNet→1.2x, server: tw1.tencent.cfd, port: 64387, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tw1.tencent.cfd}}, udp: true}
-  - {name: vpnhat-台北PNI-dip 4, server: 111.45.22.136, port: 9003, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-Manila-Kaopu-dip, server: 116.129.254.184, port: 11906, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: tg+univstar_15, server: 141.101.114.33, port: 443, type: vmess, uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.org}}, udp: true}
-  - {name: vpnpool-台北PNI-dip 2, server: 116.129.254.184, port: 9002, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Santiago-CARRASCO-dip, server: 183.232.229.132, port: 11935, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: ★腾讯云机场→快速|稳定|低价, server: Tencent.cfd, port: 6666, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Tencent.cfd}}, udp: true}
-  - {name: tg+univstar_39, server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
-  - {name: vpnhat-Dhaka-Kaopu-dip 2, server: 183.232.229.132, port: 11908, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: tg+univstar_44, server: els200.jklist.ga, port: 2095, type: vmess, uuid: e94c706a-235f-4663-e214-edfa052f256e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /wo.png, headers: {Host: els200.jklist.ga}}, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 7, server: 111.45.22.246, port: 9024, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 3, server: 111.45.22.136, port: 9014, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 vpnpool-North Sydney-OVH, server: 116.129.254.184, port: 11925, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-New York-Nearoute-dip 2, server: 111.45.22.246, port: 9000, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-VI|10G|80端口, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇸🇬 新加坡02→直连→0.5x, server: 172.104.163.105, port: 60156, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 2, server: 111.45.22.136, port: 9034, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 4, server: 111.45.22.246, port: 9041, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-测试|1G|80端口, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip 2, server: 183.232.229.132, port: 9030, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-CO-Bogota-FDCservers-dip, server: 111.45.22.246, port: 11922, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 5, server: 183.232.229.132, port: 9038, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 日本→海港隧道→1.6x, server: 124.225.170.28, port: 44585, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 6, server: 111.45.22.246, port: 9043, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Prague-ITL 2, server: 111.45.22.136, port: 11916, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国01, server: 54.219.146.19, port: 2200, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_59, server: s1.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 4, server: 111.45.22.246, port: 9016, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: HK9, server: hk1.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 21 → openitsub.com, server: 111.45.22.136, port: 11919, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Riyadh-Kaopu-dip, server: 111.45.22.136, port: 11910, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|新加坡 01, server: sg.520748.xyz, port: 10002, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: sg.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 更新于10/28/21:15, server: 1024hk02.tfzhc.top, port: 80, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1024hk02.tfzhc.top, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_64, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: cf 3, server: 47.242.51.205, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇺🇸 拉斯维加斯×0.5, server: lswjs.p1.gay, port: 56232, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lswjs.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: lswjs.p1.gay}}, udp: true}
-  - {name: 🇦🇪 vpnpool-Dubai-Kaopu-dip, server: 116.129.254.184, port: 11905, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-CO-Bogota-FDCservers-dip 2, server: 183.232.229.132, port: 11922, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 5, server: 111.45.22.246, port: 9014, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 vpnhat-Montreal-OVH 2, server: 111.45.22.136, port: 11902, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: HK3, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
-  - {name: h650196.waihuizhibiaowang.com:11743, server: h650196.waihuizhibiaowang.com, port: 11743, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-I|10G|80端口, server: hk-i-tunnel.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip 3, server: 111.45.22.136, port: 9031, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国_tg+univstar_27, server: 47.252.42.122, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 7, server: 111.45.22.246, port: 9040, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: (TG频道:@kxswa), server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: vpnhat-New York-Nearoute-dip 3, server: 111.45.22.136, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中转_tg+univstar_28, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 6, server: 183.232.229.132, port: 9014, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnpool-Riyadh-Kaopu-dip, server: 116.129.254.184, port: 11910, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Haifa-O.M.C., server: 111.45.22.246, port: 11934, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 8, server: 183.232.229.132, port: 9029, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: GLaDOS-Railgun-09, server: 1260eea.wz.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n2.glados-remote.com%22%7D"}}, udp: true}
-  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港一区 | 负载均衡, server: hkws.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: hkws.hotfun.buzz, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-New York-Nearoute-dip 4, server: 183.232.229.132, port: 9000, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾|tg频道:@ripaojiedian, server: 1024tw01.tfzhc.top, port: 443, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1024tw01.tfzhc.top, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 印度→广港隧道→1.6x, server: 14.18.108.154, port: 12634, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇧🇷 巴西, server: 20012.purefast2.com, port: 20012, type: trojan, password: 0989fa4f-7b43-34fd-8f7f-ce06427dce06, sni: purefast1.com, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Santiago-CARRASCO-dip 2, server: 111.45.22.246, port: 11935, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 3, server: 111.45.22.246, port: 9034, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国01→直连→0.5x, server: 45.33.57.201, port: 60578, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇭🇰 美国→海港隧道→1.6x, server: 124.225.170.28, port: 20633, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: vpnpool-New York-Nearoute-dip 3, server: 116.129.254.184, port: 9007, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 vpnpool-Singapore-GCORE, server: 116.129.254.184, port: 9041, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 vpnhat-North Sydney-OVH 2, server: 111.45.22.246, port: 11925, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 圣何塞×0.5, server: mrk.p1.gay, port: 26131, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mrk.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: mrk.p1.gay}}, udp: true}
-  - {name: vpnhat-Hanoi-Hostingviet-dip, server: 111.45.22.246, port: 11904, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 8, server: 111.45.22.246, port: 9038, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa), server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
-  - {name: 🇭🇰 英国→广港隧道→1.6x, server: 14.18.108.154, port: 24342, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: cf 4, server: 47.74.53.167, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE, server: 183.232.229.132, port: 9045, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Amsterdam-DigitalOcean, server: 111.45.22.136, port: 11933, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip, server: 111.45.22.136, port: 9032, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Athens-Kaopu-dip, server: 116.129.254.184, port: 11928, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnpool-彰化Hinet-dip, server: 116.129.254.184, port: 9016, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 2, server: 111.45.22.246, port: 9041, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 6 → openitsub.com, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
+  - {name: 🇸🇬 vpnpool-Singapore-GCORE, server: 116.129.254.184, port: 9042, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Istanbul-Hostigger, server: 183.232.229.132, port: 11912, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 3, server: 183.232.229.132, port: 9044, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Dhaka-Kaopu-dip, server: 183.232.229.132, port: 11908, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-台北PNI-dip, server: 183.232.229.132, port: 9003, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-LV-Riga-ITL, server: 116.129.254.184, port: 11917, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip, server: 183.232.229.132, port: 9026, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: cf.731808.tk, port: 443, type: vmess, uuid: acc94bf4-94c1-4a08-8b79-9be2b76499b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /2yevws, headers: {Host: cc.1808.cf}}, udp: true}
+  - {name: 🇨🇳 CN 30 → openitsub.com, server: 111.45.22.136, port: 11925, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【直连】HKG/香港 - 2, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 新加坡→海港隧道-1.6x, server: 124.225.170.28, port: 17915, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 CN 18 → openitsub.com, server: 116.129.254.184, port: 11927, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Madrid-FDCservers, server: 116.129.254.184, port: 11926, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnpool-Tokyo-MIKU-dip, server: 116.129.254.184, port: 9033, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Sofia-Neterra-dip, server: 111.45.22.136, port: 11913, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 2, server: 111.45.22.136, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 3, server: 183.232.229.132, port: 9029, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 4, server: 183.232.229.132, port: 9027, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇯🇵 日本_tg+univstar_34, server: 124.156.238.155, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
-  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 7, server: 183.232.229.132, port: 9017, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国01→直连→0.5x, server: 213.168.250.63, port: 62335, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: vpnpool-Dhaka-Kaopu-dip, server: 116.129.254.184, port: 11908, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Haifa-O.M.C., server: 116.129.254.184, port: 11934, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Frankfurt-DigitalOcean, server: 116.129.254.184, port: 11903, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: tg+univstar_18, server: 198.41.212.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: 🇵🇱 vpnhat-PL-Gdansk-ITL, server: 111.45.22.136, port: 11914, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇺 澳大利亚01→直连→0.5x, server: 194.195.127.218, port: 63154, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: vpnhat-台北PNI-dip 2, server: 111.45.22.136, port: 9003, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Buenos Aires-FDCservers-dip, server: 111.45.22.246, port: 11921, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_43, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
+  - {name: vpnpool-台北PNI-dip, server: 116.129.254.184, port: 9003, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 2, server: 183.232.229.132, port: 9034, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-LV-Riga-ITL, server: 111.45.22.246, port: 11917, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip, server: 111.45.22.136, port: 9019, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 3, server: 111.45.22.246, port: 9035, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡_tg+univstar_5, server: sg2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: sg1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip, server: 183.232.229.132, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 TG频道:@kxswa|德国 01, server: ger.520748.xyz, port: 443, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: ger.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: cf, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: tg+univstar_15, server: 141.101.114.33, port: 443, type: vmess, uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.org}}, udp: true}
+  - {name: 中转_tg+univstar_28, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/hinet, headers: {Host: www.189.cn}}, udp: true}
+  - {name: vpnhat-Istanbul-Hostigger 2, server: 111.45.22.136, port: 11912, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_26, server: 47.252.41.249, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: vpnhat-Seoul-Scloud-dip, server: 183.232.229.132, port: 11923, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Seoul-Scloud-dip 2, server: 111.45.22.136, port: 11923, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Bengaluru-DigitalOcean, server: 111.45.22.246, port: 11929, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip 2, server: 111.45.22.246, port: 9033, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Sofia-Neterra-dip 2, server: 183.232.229.132, port: 11913, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 vpnhat-Montreal-OVH, server: 111.45.22.136, port: 11902, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 5, server: 183.232.229.132, port: 9024, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_60, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 2, server: 111.45.22.246, port: 9009, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 6, server: 111.45.22.246, port: 9023, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡, server: dls.p1.gay, port: 25914, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: dls.p1.gay, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 17 → openitsub.com, server: 116.129.254.184, port: 11923, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_2, server: hk2.sanfen001.pics, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港一区 | 负载均衡, server: hkrx.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: hkrx.hotfun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 4, server: 111.45.22.136, port: 9044, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇸🇬 新加坡|1000M|80端口, server: sg.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-sg?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇰🇷 TG频道:@kxswa|韩国02, server: 43.200.123.162, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: kr1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-台北PNI-dip 5, server: 111.45.22.136, port: 9006, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_57, server: 47.94.85.209, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_27, server: 47.252.42.122, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 7, server: 111.45.22.246, port: 9028, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 34 → openitsub.com, server: 116.129.254.184, port: 11917, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-CO-Bogota-FDCservers-dip, server: 116.129.254.184, port: 11922, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_46, server: 155.94.198.8, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 5, server: 111.45.22.246, port: 9045, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 日本→广 港隧道→1.6x, server: 14.18.108.154, port: 11983, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 日本_tg+univstar_17, server: 139.162.119.159, port: 80, type: vmess, uuid: f085e9a1-6af4-4806-992e-161057c0383e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.162.119.159}}, udp: true}
+  - {name: 🇸🇬 vpnpool-Singapore-GCORE 2, server: 116.129.254.184, port: 9038, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国_tg+univstar_47, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
+  - {name: 🇺🇸 圣何塞×0.5, server: mrk.p1.gay, port: 26131, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mrk.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: mrk.p1.gay}}, udp: true}
+  - {name: 🇭🇰 香港-VI|10G|80端口, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 8, server: 111.45.22.136, port: 9001, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip 3, server: 183.232.229.132, port: 9033, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 vpnhat-NL-Meppel-ITL, server: 111.45.22.246, port: 11915, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Islamabad-COMSATS-dip, server: 116.129.254.184, port: 11932, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 6, server: 111.45.22.246, port: 9039, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 狮城2|tg频道:@ripaojiedian, server: 1024hk88.tfzhc.top, port: 443, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1024hk88.tfzhc.top, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 3, server: 111.45.22.246, port: 9008, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_65, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Madrid-FDCservers, server: 183.232.229.132, port: 11926, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 距离下次重置剩余：29 天, server: Tencent.cfd, port: 6666, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Tencent.cfd}}, udp: true}
+  - {name: vpnhat-Bengaluru-DigitalOcean 2, server: 183.232.229.132, port: 11929, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 9, server: 183.232.229.132, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: GLaDOS-Railgun-02, server: 1260eea.td.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n1.glados-remote.com%22%7D"}}, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 10, server: 111.45.22.136, port: 9029, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 2, server: 111.45.22.246, port: 9018, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_24, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us2, headers: {Host: www.189.cn}}, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 4, server: 183.232.229.132, port: 9009, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 中转_tg+univstar_23, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇨🇳 台湾(TG频道:@kxswa), server: 220.130.80.179, port: 443, type: vmess, uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /howdy, headers: {Host: v2ray2.udpgw.com}}, udp: true}
-  - {name: 🇷🇺 vpnpool-Moscow-FDCservers-dip, server: 116.129.254.184, port: 11911, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-Sofia-Neterra-dip, server: 111.45.22.246, port: 11913, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-New York-Nearoute-dip 5, server: 183.232.229.132, port: 9008, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国(TG频道:@kxswa), server: london1.na.invari.na.oonvari.com, port: 443, type: vmess, uuid: 3f3c52f5-0e50-4fcf-8ee2-c8b7e0c8abab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /aaf44db73dfc/, headers: {Host: london1.na.invari.na.oonvari.com}}, udp: true}
-  - {name: vpnhat-Haifa-O.M.C. 2, server: 111.45.22.136, port: 11934, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: vpnhat-San Jose-Nato-dip 9, server: 111.45.22.246, port: 9026, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾01, server: 20.239.142.164, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: tw1.sanfen001.pics, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 vpnhat-Singapore-GCORE 9, server: 183.232.229.132, port: 9040, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 5 → openitsub.com, server: 111.45.22.136, port: 11914, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 3, server: 111.45.22.136, port: 9015, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 5, server: 183.232.229.132, port: 9007, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: 111.45.22.246, port: 11922, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 FR 1 → openitsub.com, server: ca2.v2rayserv.com, port: 80, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: ca2.v2rayserv.com}}, udp: true}
+  - {name: 中转_tg+univstar_63, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 6, server: 111.45.22.136, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港01, server: 20.187.79.78, port: 443, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: hk1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 19 → openitsub.com, server: 116.129.254.184, port: 9025, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: GLaDOS-Railgun-09, server: 1260eea.wz.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: chacha20-poly1305, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: "%7B%22Edge%22:%221260eea.fm.huawei.com:138218%22,%22Host%22:%22n2.glados-remote.com%22%7D"}}, udp: true}
+  - {name: tg+univstar_9, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 4, server: 111.45.22.136, port: 9034, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国01, server: 54.219.146.19, port: 2200, type: trojan, password: 9010950e-8e09-486a-bf96-3b0cf22097b4, sni: us1.sanfen001.pics, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 【越南】峰值150M-NetFlix 解锁, server: yn.xbywwcp.us, port: 25365, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: chacha20-poly1305, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: yn.xbywwcp.us}}, udp: true}
+  - {name: 中转_tg+univstar_25, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}, udp: true}
+  - {name: vpnpool-San Jose-Nato-dip, server: 116.129.254.184, port: 9028, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Amsterdam-DigitalOcean 2, server: 111.45.22.246, port: 11933, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Buenos Aires-FDCservers-dip 2, server: 111.45.22.136, port: 11921, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: HK5, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: tg+univstar_39, server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
+  - {name: 中转_tg+univstar_50, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 11, server: 111.45.22.246, port: 9022, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: HK3, server: 47.242.164.3, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22arm1dj.qiancheng.ml%22%7D"}}, udp: true}
+  - {name: 🇺🇸 美国US|tg频道:@ripaojiedian, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
+  - {name: vpnpool-New York-Nearoute-dip, server: 116.129.254.184, port: 9010, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 7, server: 183.232.229.132, port: 9008, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-台北PNI-dip 3, server: 183.232.229.132, port: 9004, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 15 → openitsub.com, server: 111.45.22.136, port: 9009, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 3, server: s3.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇹 vpnhat-Vienna-FDCservers, server: 111.45.22.246, port: 11927, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US, server: 28492a5.qg.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: intrepid.moss.network}}, udp: true}
+  - {name: 🇦🇹 vpnhat-Vienna-FDCservers 2, server: 111.45.22.136, port: 11927, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-台北PNI-dip 4, server: 183.232.229.132, port: 9005, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡02→直连→0.5x, server: 172.104.163.105, port: 60156, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 4, server: 183.232.229.132, port: 9014, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Phnom Penh-Kaopu-dip, server: 111.45.22.246, port: 11907, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国 江苏|100M|非80端口|停机卡, server: xz-cm1.cloudiplc.com, port: 20999, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: vpnhat-Phnom Penh-Kaopu-dip 2, server: 183.232.229.132, port: 11907, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Kharkiv-ITL, server: 183.232.229.132, port: 11919, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Santiago-CARRASCO-dip, server: 183.232.229.132, port: 11935, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnpool-彰化Hinet-dip 2, server: 116.129.254.184, port: 9019, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港-II|10G|80端口, server: hk-ii.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: vpnhat-Madrid-FDCservers 2, server: 111.45.22.246, port: 11926, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: TG群组:xxmym, server: hk-i.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: vpnpool-San Jose-Nato-dip 2, server: 116.129.254.184, port: 9023, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 4, server: 111.45.22.136, port: 11932, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国 01, server: us1.520748.xyz, port: 10002, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: us1.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 7, server: 111.45.22.136, port: 9045, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 40 → openitsub.com, server: 111.45.22.136, port: 11908, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 6 → openitsub.com, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}, udp: true}
+  - {name: cf 2, server: 8.219.11.122, port: 2053, type: vmess, uuid: 98df8720-fe3d-476a-882c-1b659e3869b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}, udp: true}
+  - {name: vpnpool-Manila-Kaopu-dip, server: 116.129.254.184, port: 11906, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Islamabad-COMSATS-dip, server: 111.45.22.246, port: 11932, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 vpnpool-NL-Meppel-ITL, server: 116.129.254.184, port: 11915, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-San Jose-Nato-dip 3, server: 116.129.254.184, port: 9022, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 12, server: 183.232.229.132, port: 9022, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-CH-Geneva-ITL, server: 183.232.229.132, port: 11918, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Johannesburg-Kaopu-dip, server: 116.129.254.184, port: 11909, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 13, server: 111.45.22.136, port: 9028, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-New York-Nearoute-dip 8, server: 111.45.22.246, port: 9007, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡_tg+univstar_19, server: 51.79.164.146, port: 80, type: vmess, uuid: 2ef64dc8-ca3c-45b8-ad5f-20871452143b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fastssh/putdcbb/63500f2541b87/, headers: {Host: 51.79.164.146}}, udp: true}
+  - {name: vpnhat-Athens-Kaopu-dip, server: 111.45.22.136, port: 11928, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 TG频道:@kxswa|英国 01, server: uk.520748.xyz, port: 10002, type: trojan, password: f027e6f6-7555-4516-bc37-45d5d13f098b, sni: uk.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 5, server: 111.45.22.246, port: 9012, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-Athens-Kaopu-dip 2, server: 183.232.229.132, port: 11928, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 5, server: 111.45.22.246, port: 9036, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_64, server: s2.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本|1000M|80端口, server: jp.pannode.top, port: 80, type: vmess, uuid: 0fbae820-d7da-4404-a1ae-7c3e86cb55c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot-jp?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 6, server: 111.45.22.246, port: 9016, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-San Jose-Nato-dip 14, server: 111.45.22.246, port: 9029, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-CH-Geneva-ITL, server: 116.129.254.184, port: 11918, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-San Jose-Nato-dip 4, server: 116.129.254.184, port: 9029, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 7, server: 111.45.22.246, port: 9013, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 vpnhat-彰化Hinet-dip 8, server: 111.45.22.136, port: 9017, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 8, server: 111.45.22.246, port: 9044, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-Kharkiv-ITL, server: 116.129.254.184, port: 11919, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 中转_tg+univstar_31, server: 223.111.122.199, port: 38080, type: vmess, uuid: 8498bfc8-c030-40df-80e8-69f9e06fe16a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/fr, headers: {Host: i0.hdslb.com}}, udp: true}
+  - {name: HK2, server: 5.44.249.155, port: 3389, type: trojan, password: d02058f4f819dced, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 6, server: 111.45.22.136, port: 9036, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnhat-台北PNI-dip 5, server: 183.232.229.132, port: 9002, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP, server: 28492a5.qh.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: ntt.moss.network}}, udp: true}
+  - {name: vpnhat-Johannesburg-Kaopu-dip, server: 183.232.229.132, port: 11909, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: vpnpool-San Jose-Nato-dip 5, server: 116.129.254.184, port: 9027, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 5, server: s4.mine.com.cn, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP, server: 28492a5.qe.glados-config.net, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/28492a5.fm.apple.com:57003, headers: {Host: ntt.moss.network}}, udp: true}
+  - {name: 🇨🇳 vpnpool-彰化Hinet-dip 3, server: 116.129.254.184, port: 9018, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 狮城|tg频道:@ripaojiedian, server: 1002hk1326.tfzhc.top, port: 443, type: trojan, password: 6064db30-b46e-432d-bbec-f12b947422a2, sni: 1002hk1326.tfzhc.top, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 6, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU-dip 4, server: 111.45.22.136, port: 9030, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: h649960.waihuizhibiaowang.com:11543, server: h649960.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 vpnpool-London-OVH, server: 116.129.254.184, port: 11901, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vpnhat-Singapore-GCORE 9, server: 183.232.229.132, port: 9041, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 8 → openitsub.com, server: 111.45.22.136, port: 9002, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vpnhat-Tokyo-MIKU 7, server: 111.45.22.246, port: 9034, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 7, server: 111.45.22.136, port: 11933, type: vmess, uuid: 454f865f-2660-3acb-a453-7c2382954196, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1546,191 +1634,202 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 日本→广 港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE
-      - vpnhat-Seoul-Scloud-dip
-      - Linode
-      - 🇦🇪 vpnhat-Dubai-Kaopu-dip
-      - 中转_tg+univstar_53
-      - 🇰🇷 【直连】ICN/首尔 - 4
-      - h961359.waihuizhibiaowang.com:11543
-      - 🇨🇳 vpnhat-彰化Hinet-dip
-      - tg+univstar_38
-      - vpnhat-Johannesburg-Kaopu-dip
-      - vpnhat-Amsterdam-DigitalOcean
-      - vpnhat-Johannesburg-Kaopu-dip 2
-      - 🇭🇰 新加坡→广港隧道-1.6x
-      - 🇨🇳 vpnhat-彰化Hinet-dip 2
-      - vpnhat-San Jose-Nato-dip
-      - 🇰🇷 韩国_tg+univstar_45
-      - vpnhat-台北PNI-dip
-      - vpnhat-Frankfurt-DigitalOcean
-      - vpnpool-San Jose-Nato-dip
-      - 🇨🇳 CN 22 → openitsub.com
       - 🇯🇵 vpnhat-Tokyo-MIKU
-      - HK8
-      - 🇨🇳 CN 3 → openitsub.com
-      - vpnhat-San Jose-Nato-dip 2
-      - 🇷🇺 俄罗斯联邦(TG频道:@kxswa)
-      - 🇺🇸 TG频道:@kxswa|美国 02
-      - vpnpool-New York-Nearoute-dip
-      - cf
-      - 🇯🇵 日本|1000M|80端口
-      - HK1
-      - vpnhat-Buenos Aires-FDCservers-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡01
-      - vpnhat-San Jose-Nato-dip 3
-      - vpnpool-New York-Nearoute-dip 2
-      - 🇨🇦 vpnpool-Montreal-OVH
-      - 🇦🇺 vpnhat-North Sydney-OVH
-      - vpnhat-Frankfurt-DigitalOcean 2
-      - vpnhat-San Jose-Nato-dip 4
-      - 🇨🇳 CN 24 → openitsub.com
-      - HK4
-      - 🇩🇪 TG频道:@kxswa|德国 01
-      - 中转_tg+univstar_24
-      - tg+univstar_16
-      - vpnhat-台北PNI-dip 2
-      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
-      - 🇸🇬 TG频道:@kxswa|GLaDOS-F3-SG
-      - 🇦🇹 vpnhat-Vienna-FDCservers
-      - 🇬🇧 vpnhat-London-OVH
-      - vpnpool-CO-Bogota-FDCservers-dip
+      - 🇨🇳 中国(TG频道:@kxswa)
       - 🇧🇷 vpnhat-Sao Paulo-FDCservers-dip
-      - 中转_tg+univstar_35
-      - 🇸🇬 新加坡03→直连→0.5x
-      - vpnpool-San Jose-Nato-dip 2
-      - GLaDOS-Railgun-01
-      - vpnhat-New York-Nearoute-dip
-      - vpnhat-Kharkiv-ITL
-      - vpnhat-San Jose-Nato-dip 5
-      - 🇭🇰 香港_tg+univstar_7
-      - HK2
-      - 🇦🇺 澳大利亚01→直连→0.5x
-      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - vpnhat-Frankfurt-DigitalOcean
+      - ★腾讯云机场→快速|稳定|低价
+      - 🇸🇬 vpnhat-Singapore-GCORE
+      - vpnhat-Amsterdam-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
+      - vpnpool-Athens-Kaopu-dip
       - 🇨🇳 vpnpool-彰化Hinet-dip
-      - vpnpool-台北PNI-dip
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - vpnhat-Prague-ITL
-      - cf 2
-      - 🇭🇰 香港-5|1G|80端口
-      - 🇮🇳 TG频道:@kxswa|印度 01
-      - vpnpool-Kharkiv-ITL
+      - 🇸🇬 vpnhat-Singapore-GCORE 2
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇸🇬 vpnpool-Singapore-GCORE
+      - vpnhat-Istanbul-Hostigger
       - 🇸🇬 vpnhat-Singapore-GCORE 3
       - vpnhat-Dhaka-Kaopu-dip
-      - 🇵🇱 vpnpool-PL-Gdansk-ITL
-      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
-      - 距离下次重置剩余：29 天
-      - 🇨🇦 vpnhat-Montreal-OVH
-      - tg+univstar_40
-      - vpnhat-San Jose-Nato-dip 6
-      - h649960.waihuizhibiaowang.com:11443
-      - HK7
-      - vpnpool-CH-Geneva-ITL
-      - 🇭🇰 香港-IV|10G|80端口
-      - 中转_tg+univstar_30
-      - 中转_tg+univstar_52
-      - vpnhat-Madrid-FDCservers
-      - 🇯🇵 日本(TG频道:@kxswa)
-      - tg+univstar_11
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip
-      - vpnpool-Prague-ITL
-      - 🇵🇱 vpnhat-PL-Gdansk-ITL
-      - 🇨🇳 CN 7 → openitsub.com
-      - vpnhat-台北PNI-dip 3
-      - 🇨🇳 CN 10 → openitsub.com
-      - 🇯🇵 日本二区 | 负载均衡
-      - vpnpool-San Jose-Nato-dip 3
-      - 频道有备用
-      - 🇨🇳 台湾→HiNet→1.2x
-      - vpnhat-台北PNI-dip 4
-      - vpnpool-Manila-Kaopu-dip
-      - tg+univstar_15
-      - vpnpool-台北PNI-dip 2
-      - vpnhat-Santiago-CARRASCO-dip
-      - ★腾讯云机场→快速|稳定|低价
-      - tg+univstar_39
-      - vpnhat-Dhaka-Kaopu-dip 2
-      - tg+univstar_44
-      - vpnhat-San Jose-Nato-dip 7
-      - 🇨🇳 vpnhat-彰化Hinet-dip 3
-      - 🇦🇺 vpnpool-North Sydney-OVH
-      - vpnhat-New York-Nearoute-dip 2
-      - 🇭🇰 香港-VI|10G|80端口
-      - 🇸🇬 新加坡02→直连→0.5x
-      - 🇯🇵 vpnhat-Tokyo-MIKU 2
-      - 🇸🇬 vpnhat-Singapore-GCORE 4
-      - 🇭🇰 香港-测试|1G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
-      - vpnhat-CO-Bogota-FDCservers-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 5
-      - 🇭🇰 日本→海港隧道→1.6x
-      - 🇸🇬 vpnhat-Singapore-GCORE 6
-      - vpnhat-Prague-ITL 2
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 中转_tg+univstar_59
-      - 🇨🇳 vpnhat-彰化Hinet-dip 4
-      - HK9
-      - 🇨🇳 CN 21 → openitsub.com
-      - vpnhat-Riyadh-Kaopu-dip
-      - 🇸🇬 TG频道:@kxswa|新加坡 01
-      - 🇸🇬 更新于10/28/21:15
-      - 中转_tg+univstar_64
-      - cf 3
-      - 🇺🇸 拉斯维加斯×0.5
-      - 🇦🇪 vpnpool-Dubai-Kaopu-dip
-      - vpnhat-CO-Bogota-FDCservers-dip 2
-      - 🇨🇳 vpnhat-彰化Hinet-dip 5
-      - 🇨🇦 vpnhat-Montreal-OVH 2
-      - HK3
-      - h650196.waihuizhibiaowang.com:11743
-      - 🇭🇰 香港-I|10G|80端口
-      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
-      - 🇺🇸 美国_tg+univstar_27
-      - 🇸🇬 vpnhat-Singapore-GCORE 7
-      - (TG频道:@kxswa)
-      - vpnhat-New York-Nearoute-dip 3
-      - 中转_tg+univstar_28
-      - 🇨🇳 vpnhat-彰化Hinet-dip 6
-      - vpnpool-Riyadh-Kaopu-dip
-      - vpnhat-Haifa-O.M.C.
-      - vpnhat-San Jose-Nato-dip 8
-      - GLaDOS-Railgun-09
-      - h745768.waihuizhibiaowang.com:11543
-      - 🇭🇰 香港一区 | 负载均衡
-      - vpnhat-New York-Nearoute-dip 4
-      - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇭🇰 印度→广港隧道→1.6x
-      - 🇧🇷 巴西
-      - vpnhat-Santiago-CARRASCO-dip 2
-      - 🇯🇵 vpnhat-Tokyo-MIKU 3
-      - 🇺🇸 美国01→直连→0.5x
-      - 🇭🇰 美国→海港隧道→1.6x
-      - vpnpool-New York-Nearoute-dip 3
-      - 🇸🇬 vpnpool-Singapore-GCORE
-      - 🇦🇺 vpnhat-North Sydney-OVH 2
-      - 🇺🇸 圣何塞×0.5
-      - vpnhat-Hanoi-Hostingviet-dip
-      - 🇸🇬 vpnhat-Singapore-GCORE 8
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 英国→广港隧道→1.6x
-      - cf 4
-      - 🇯🇵 日本_tg+univstar_34
-      - 🇨🇳 vpnhat-彰化Hinet-dip 7
-      - 🇸🇬 新加坡|1000M|80端口
-      - 🇰🇷 TG频道:@kxswa|韩国02
-      - vpnhat-台北PNI-dip 5
-      - 中转_tg+univstar_23
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇷🇺 vpnpool-Moscow-FDCservers-dip
+      - vpnhat-台北PNI-dip
+      - vpnpool-LV-Riga-ITL
+      - vpnhat-San Jose-Nato-dip
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇨🇳 CN 30 → openitsub.com
+      - 🇭🇰 【直连】HKG/香港 - 2
+      - 🇭🇰 新加坡→海港隧道-1.6x
+      - 🇨🇳 CN 18 → openitsub.com
+      - vpnpool-Madrid-FDCservers
+      - 🇯🇵 vpnpool-Tokyo-MIKU-dip
       - vpnhat-Sofia-Neterra-dip
-      - vpnhat-New York-Nearoute-dip 5
-      - 🇩🇪 德国(TG频道:@kxswa)
-      - vpnhat-Haifa-O.M.C. 2
+      - vpnhat-San Jose-Nato-dip 2
+      - vpnhat-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 4
+      - 🇯🇵 日本_tg+univstar_34
+      - 🇬🇧 英国01→直连→0.5x
+      - vpnpool-Dhaka-Kaopu-dip
+      - vpnpool-Haifa-O.M.C.
+      - vpnpool-Frankfurt-DigitalOcean
+      - tg+univstar_18
+      - 🇵🇱 vpnhat-PL-Gdansk-ITL
+      - 🇦🇺 澳大利亚01→直连→0.5x
+      - vpnhat-台北PNI-dip 2
+      - vpnhat-Buenos Aires-FDCservers-dip
+      - 🇺🇸 美国_tg+univstar_43
+      - vpnpool-台北PNI-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 2
+      - vpnhat-LV-Riga-ITL
+      - 🇨🇳 vpnhat-彰化Hinet-dip
+      - 🇯🇵 vpnhat-Tokyo-MIKU 3
+      - 🇸🇬 新加坡_tg+univstar_5
+      - vpnhat-New York-Nearoute-dip
+      - 🇩🇪 TG频道:@kxswa|德国 01
+      - cf
+      - tg+univstar_15
+      - 中转_tg+univstar_28
+      - vpnhat-Istanbul-Hostigger 2
+      - 🇺🇸 美国_tg+univstar_26
+      - vpnhat-Seoul-Scloud-dip
+      - vpnhat-Seoul-Scloud-dip 2
+      - vpnhat-Bengaluru-DigitalOcean
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 2
+      - vpnhat-Sofia-Neterra-dip 2
+      - 🇨🇦 vpnhat-Montreal-OVH
+      - vpnhat-San Jose-Nato-dip 5
+      - 中转_tg+univstar_60
+      - vpnhat-New York-Nearoute-dip 2
+      - vpnhat-San Jose-Nato-dip 6
+      - 🇺🇸 达拉斯直连| 解锁Nefilx | 负载均衡
+      - 🇨🇳 CN 17 → openitsub.com
+      - 🇺🇸 美国_tg+univstar_2
+      - 🇭🇰 香港一区 | 负载均衡
+      - 🇸🇬 vpnhat-Singapore-GCORE 4
+      - 🇸🇬 新加坡|1000M|80端口
+      - 中转_tg+univstar_57
+      - 🇺🇸 美国_tg+univstar_27
+      - vpnhat-San Jose-Nato-dip 7
+      - 🇨🇳 CN 34 → openitsub.com
+      - vpnpool-CO-Bogota-FDCservers-dip
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇺🇸 美国_tg+univstar_46
+      - 🇸🇬 vpnhat-Singapore-GCORE 5
+      - 🇭🇰 日本→广 港隧道→1.6x
+      - 🇯🇵 日本_tg+univstar_17
+      - 🇸🇬 vpnpool-Singapore-GCORE 2
+      - 🇩🇪 德国_tg+univstar_47
+      - 🇺🇸 圣何塞×0.5
+      - 🇭🇰 香港-VI|10G|80端口
+      - vpnhat-San Jose-Nato-dip 8
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 3
+      - 🇳🇱 vpnhat-NL-Meppel-ITL
+      - vpnpool-Islamabad-COMSATS-dip
+      - 🇸🇬 vpnhat-Singapore-GCORE 6
+      - 🇸🇬 狮城2|tg频道:@ripaojiedian
+      - vpnhat-New York-Nearoute-dip 3
+      - 中转_tg+univstar_65
+      - vpnhat-Madrid-FDCservers
+      - 距离下次重置剩余：29 天
+      - vpnhat-Bengaluru-DigitalOcean 2
       - vpnhat-San Jose-Nato-dip 9
-      - 🇨🇳 TG频道:@kxswa|台湾01
+      - GLaDOS-Railgun-02
+      - vpnhat-San Jose-Nato-dip 10
+      - 🇨🇳 vpnhat-彰化Hinet-dip 2
+      - 中转_tg+univstar_24
+      - vpnhat-New York-Nearoute-dip 4
+      - 中转_tg+univstar_23
+      - 🇨🇳 vpnhat-彰化Hinet-dip 3
+      - vpnhat-New York-Nearoute-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇫🇷 FR 1 → openitsub.com
+      - 中转_tg+univstar_63
+      - vpnhat-New York-Nearoute-dip 6
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 CN 19 → openitsub.com
+      - GLaDOS-Railgun-09
+      - tg+univstar_9
+      - 🇯🇵 vpnhat-Tokyo-MIKU 4
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇻🇳 【越南】峰值150M-NetFlix 解锁
+      - 中转_tg+univstar_25
+      - vpnpool-San Jose-Nato-dip
+      - vpnhat-Amsterdam-DigitalOcean 2
+      - vpnhat-Buenos Aires-FDCservers-dip 2
+      - HK5
+      - tg+univstar_39
+      - 中转_tg+univstar_50
+      - vpnhat-San Jose-Nato-dip 11
+      - HK3
+      - 🇺🇸 美国US|tg频道:@ripaojiedian
+      - vpnpool-New York-Nearoute-dip
+      - vpnhat-New York-Nearoute-dip 7
+      - vpnhat-台北PNI-dip 3
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇦🇹 vpnhat-Vienna-FDCservers
+      - 🇺🇸 TG频道:@kxswa|GLaDOS-F3-US
+      - 🇦🇹 vpnhat-Vienna-FDCservers 2
+      - vpnhat-台北PNI-dip 4
+      - 🇸🇬 新加坡02→直连→0.5x
+      - 🇨🇳 vpnhat-彰化Hinet-dip 4
+      - vpnhat-Phnom Penh-Kaopu-dip
+      - 🇨🇳 中国 江苏|100M|非80端口|停机卡
+      - vpnhat-Phnom Penh-Kaopu-dip 2
+      - vpnhat-Kharkiv-ITL
+      - vpnhat-Santiago-CARRASCO-dip
+      - 🇨🇳 vpnpool-彰化Hinet-dip 2
+      - 🇭🇰 香港-II|10G|80端口
+      - vpnhat-Madrid-FDCservers 2
+      - TG群组:xxmym
+      - vpnpool-San Jose-Nato-dip 2
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇺🇸 TG频道:@kxswa|美国 01
+      - 🇸🇬 vpnhat-Singapore-GCORE 7
+      - 🇨🇳 CN 40 → openitsub.com
+      - 🇨🇳 CN 6 → openitsub.com
+      - cf 2
+      - vpnpool-Manila-Kaopu-dip
+      - vpnhat-Islamabad-COMSATS-dip
+      - 🇳🇱 vpnpool-NL-Meppel-ITL
+      - vpnpool-San Jose-Nato-dip 3
+      - vpnhat-San Jose-Nato-dip 12
+      - vpnhat-CH-Geneva-ITL
+      - vpnpool-Johannesburg-Kaopu-dip
+      - vpnhat-San Jose-Nato-dip 13
+      - vpnhat-New York-Nearoute-dip 8
+      - 🇸🇬 新加坡_tg+univstar_19
+      - vpnhat-Athens-Kaopu-dip
+      - 🇬🇧 TG频道:@kxswa|英国 01
+      - 🇨🇳 vpnhat-彰化Hinet-dip 5
+      - vpnhat-Athens-Kaopu-dip 2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 5
+      - 中转_tg+univstar_64
+      - 🇯🇵 日本|1000M|80端口
+      - 🇨🇳 vpnhat-彰化Hinet-dip 6
+      - vpnhat-San Jose-Nato-dip 14
+      - vpnpool-CH-Geneva-ITL
+      - vpnpool-San Jose-Nato-dip 4
+      - 🇨🇳 vpnhat-彰化Hinet-dip 7
+      - 🇨🇳 vpnhat-彰化Hinet-dip 8
+      - 🇸🇬 vpnhat-Singapore-GCORE 8
+      - vpnpool-Kharkiv-ITL
+      - 中转_tg+univstar_31
+      - HK2
+      - 🇯🇵 vpnhat-Tokyo-MIKU 6
+      - vpnhat-台北PNI-dip 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F3-JP
+      - vpnhat-Johannesburg-Kaopu-dip
+      - vpnpool-San Jose-Nato-dip 5
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 🇯🇵 TG频道:@kxswa|GLaDOS-F2-JP
+      - 🇨🇳 vpnpool-彰化Hinet-dip 3
+      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇯🇵 vpnhat-Tokyo-MIKU-dip 4
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇬🇧 vpnpool-London-OVH
       - 🇸🇬 vpnhat-Singapore-GCORE 9
-      - 🇨🇳 CN 5 → openitsub.com
+      - 🇨🇳 CN 8 → openitsub.com
+      - 🇯🇵 vpnhat-Tokyo-MIKU 7
+      - 🇨🇳 中国(TG频道:@kxswa) 7
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
