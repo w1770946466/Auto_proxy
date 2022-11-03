@@ -5,2485 +5,1037 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台北Hinet-dip, server: 211.72.35.154, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-Linode, server: 116.129.254.47, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247, server: 106.75.154.24, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大 | 负载均衡, server: ca.p1.gay, port: 23134, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: ca.p1.gay, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 2, server: 120.132.21.219, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: HK9, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: "%7B%22Host%22:%22vjp3.0bad.com%22%7D"}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|, server: gzct.daodecloud.com, port: 20516, type: trojan, password: bdd14ede-9012-4516-80ed-88f29bd94c01, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|, server: d80b949.f6.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇰🇷 韩国(TG频道:@kxswa), server: kr02.170203.xyz, port: 35234, type: trojan, password: e16dd794-01bb-47c7-9de6-644deaf59589, sni: kr02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_52, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 3, server: 123.59.50.243, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip, server: 123.59.69.54, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 4, server: 120.132.50.158, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_78, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: b47a4799-b2b5-49da-8a0c-6f38604e3227, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip, server: 116.129.253.227, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HongKong-10, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 国内中转_tg@univstar_89, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: b47a4799-b2b5-49da-8a0c-6f38604e3227, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇨🇳 CN 17 → openitsub.com, server: hnct.zzuu.tk, port: 23127, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇯🇵 日本JP|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 2, server: 116.129.253.187, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 2, server: 60.249.3.125, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_38, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: a018ce51-4b5a-4d6e-9af8-d7cd34e2e194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 2, server: 106.75.48.225, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: f007e457-952a-4f45-9bbb-e4a8e8d179c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 3, server: 60.249.3.226, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_90, server: 111.6.86.32, port: 23141, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: jpmax02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HongKong-14, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 5, server: 120.132.12.54, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 3, server: 123.59.69.54, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_129, server: hnct.daodecloud.com, port: 47775, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax08.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2, server: cu.kapoknode.com, port: 25888, type: vmess, uuid: 25667daa-aef2-4723-8a7d-0ece9a9601ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3, server: fly1.fastestcloud.xyz, port: 30005, type: vmess, uuid: c75c0398-f1fd-456a-b250-6097f0b09231, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇸🇬 新加坡高速接入点-01, server: sg1.sanfen001.pics, port: 443, type: vmess, uuid: 05383022-594a-44ea-a19e-c972f4a15492, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 国内中转_tg@univstar_66, server: gzct.daodecloud.com, port: 20516, type: trojan, password: 949f8904-aaca-49fc-a4a9-07e4fb252b25, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: oss-cn-shanghai.westdatacloud.xyz, port: 20048, type: trojan, password: 30030B00-A596-87B4-965A-511CD7E05351, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 更新于11/02/19:20, server: univstar.51.195.140.208.sslip.io, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wmzmvws, headers: {Host: goodfamily19.site}}, udp: true}
-  - {name: 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|, server: kr02.170203.xyz, port: 35234, type: trojan, password: 9da403b1-8e0e-4bf6-97d8-5af4090ed2f5, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 6, server: 106.75.157.65, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2, server: mpls00.yunpan.dog, port: 38722, type: ss, cipher: chacha20-ietf-poly1305, password: b2875b64-4e08-4529-8550-089827395bd3, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom, server: 5.44.249.53, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 7, server: 106.75.157.65, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: c02db70e-3eca-4e97-946a-bcf12a1b6296, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4, server: 111.6.86.32, port: 23141, type: trojan, password: 02e54387-d58d-4afa-96be-506a64f72e47, sni: jpmax02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5, server: cu.kapoknode.com, port: 25887, type: vmess, uuid: 2c5ae48d-517c-40f6-80ba-47bf494f6cf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 这是教程赠送免费节点, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 3, server: 116.129.253.187, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HongKong-02, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 国内中转_tg@univstar_103, server: gzct.daodecloud.com, port: 49222, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: tw01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6, server: d80b949.j2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7, server: fly2.fastestcloud.xyz, port: 30006, type: vmess, uuid: c02db70e-3eca-4e97-946a-bcf12a1b6296, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 8, server: 120.132.50.158, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_102, server: cu.kapoknode.com, port: 25896, type: vmess, uuid: af011a9b-ee15-458e-9e2d-af9770ffd888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|, server: fly1.fastestcloud.xyz, port: 30080, type: vmess, uuid: c02db70e-3eca-4e97-946a-bcf12a1b6296, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 4, server: 106.75.48.225, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 4, server: 211.72.35.158, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HongKong-03, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰 HongKong-18, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇺🇸 美国_tg@univstar_48, server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8, server: fly1.fastestcloud.xyz, port: 30017, type: vmess, uuid: c02db70e-3eca-4e97-946a-bcf12a1b6296, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4, server: fly1.fastestcloud.xyz, port: 40005, type: vmess, uuid: 9088d235-1000-4011-a713-d4f2c5a0cd51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 国内中转_tg@univstar_147, server: 14.215.162.120, port: 10480, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax05.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom 2, server: 5.44.249.52, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_8, server: hnct.daodecloud.com, port: 25480, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: jpmax04.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_114, server: hnct.daodecloud.com, port: 37983, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: sgmax01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_137, server: hnct.daodecloud.com, port: 45757, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本东京 | 负载均衡, server: jpws.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: jpws.hotfun.buzz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 4, server: 5.44.249.43, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9, server: iplcjp1.bnnodeservice.com, port: 34004, type: trojan, password: 496b5d29-e28e-4d1b-8c78-34d3ce534e5c, skip-cert-verify: false, udp: true}
-  - {name: LAX-Melbikom-dip, server: 116.129.253.177, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 荷兰 | 负载均衡, server: he.p1.gay, port: 23134, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: he.p1.gay, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国(TG频道:@kxswa) 2, server: kr02.170203.xyz, port: 35234, type: trojan, password: abda0d36-881a-4d1d-8ba0-f495c66da6a7, sni: kr02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2, server: d80b949.u1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|, server: b2adf6f.h3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10, server: fly1.fastestcloud.xyz, port: 30006, type: vmess, uuid: e18340d5-157c-4b9b-8b7b-554a9bbcf953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11, server: fly2.fastestcloud.xyz, port: 30006, type: vmess, uuid: f007e457-952a-4f45-9bbb-e4a8e8d179c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|, server: fly4.fastestcloud.xyz, port: 30004, type: vmess, uuid: c02db70e-3eca-4e97-946a-bcf12a1b6296, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly4.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 9, server: 106.75.173.173, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12, server: fly3.fastestcloud.xyz, port: 30005, type: vmess, uuid: e0e312be-c0a7-4ae0-b349-51edf2c60e41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly3.fastestcloud.xyz}}, udp: true}
-  - {name: 🇨🇳 CN 6 → openitsub.com, server: zz2.8faka.tk, port: 35112, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd2.8faka.tk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet, server: 211.72.35.152, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 5, server: 5.44.249.44, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HongKong-15, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 5, server: 116.129.254.29, port: 3383, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 054b48c2-3c93-45a8-b33d-a3838b9b7af9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|, server: iepl02.yunpan.dog, port: 38817, type: ss, cipher: chacha20-ietf-poly1305, password: b2875b64-4e08-4529-8550-089827395bd3, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 6, server: 116.129.253.201, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: Fremont-Nato-dip, server: 116.129.254.29, port: 3381, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2, server: 222.84.250.35, port: 19223, type: trojan, password: 05115a9b-067c-3cfa-9d8a-c696c3fc5660, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet 2, server: 211.72.35.152, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 10, server: 113.31.155.165, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 11, server: 117.50.106.86, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 12, server: 120.132.21.219, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2, server: s400l.cmcuct.org, port: 24488, type: vmess, uuid: 19756785-ae41-353f-90b9-4207634aa915, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: s400l.cmcuct.org}}, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港A, server: 121.14.201.242, port: 23121, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 国内中转_tg@univstar_26, server: fly3.fastestcloud.xyz, port: 30015, type: vmess, uuid: 704468d8-2219-4ecd-806f-90cca715e09d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly3.fastestcloud.xyz}}, udp: true}
-  - {name: Fremont-Nato-dip 2, server: 134.195.101.32, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 8 → openitsub.com, server: zz100.8faka.tk, port: 35101, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd101.8faka.tk, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 6, server: 116.129.254.29, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 7, server: 60.249.3.126, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 7, server: 5.44.249.43, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 8, server: 116.129.253.227, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbicom-dip, server: 5.44.249.156, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 5, server: 106.75.48.225, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-Linode 2, server: 116.129.254.47, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 13, server: 123.59.66.132, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbicom-dip 2, server: 5.44.249.156, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国(TG频道:@kxswa) 3, server: kr02.170203.xyz, port: 35234, type: trojan, password: 8225232a-4dee-459f-822a-3b26017bbae6, sni: kr02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国_tg@univstar_2, server: 66.212.20.3, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 14, server: 120.132.50.158, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港DMIT, server: 116.129.254.29, port: 3384, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 日本D | 海港专线 | 倍率x1, server: hnct.zzuu.tk, port: 23128, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 9, server: 116.129.253.197, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom 3, server: 5.44.249.50, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 10, server: 116.129.253.197, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2, server: b2adf6f.h2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|🇭🇰香港01, server: bauhinia01.abzoones.xyz, port: 36601, type: trojan, password: 2df8c45a-77ec-4c83-8b9b-5f9bcef4331a, sni: hk01.bestnodes.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 6, server: 106.75.128.213, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 11, server: 5.44.249.44, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|, server: 435e40f.s1.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: Fremont-Nato-dip 3, server: 134.195.101.32, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 15, server: 106.75.239.176, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本D, server: 124.225.24.140, port: 23128, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: Fremont-Nato-dip 4, server: 134.195.101.32, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|, server: 222.84.250.35, port: 19215, type: trojan, password: 05115a9b-067c-3cfa-9d8a-c696c3fc5660, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-Linode 3, server: 116.129.253.245, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 7, server: 106.75.240.227, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 16, server: 123.59.50.243, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国_tg@univstar_60, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 8, server: 116.129.253.201, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 302a53ef-9849-404f-9bdf-a1bd9aa515a5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 17, server: 42.240.132.42, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3, server: n25.sdcat.club, port: 50225, type: trojan, password: 7c2ace42-15fe-3e62-886d-beaaabe7dda0, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国(TG频道:@kxswa), server: 152.228.191.232, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wmzmvws, headers: {Host: goodfamily19.site}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 9, server: 211.72.35.153, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 10, server: 60.249.3.228, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4, server: fly1.fastestcloud.xyz, port: 30081, type: vmess, uuid: c09c9c40-98dd-49bc-b636-aa746a68b849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 11, server: 60.249.3.231, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡高速接入点-02, server: sg2.sanfen001.pics, port: 443, type: vmess, uuid: 05383022-594a-44ea-a19e-c972f4a15492, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 12, server: 5.44.249.45, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: HK5, server: ap-northeast.6641634715834932.me, port: 443, type: trojan, password: 5c777277-17f2-4272-ae65-7bd00fa4fbaa, sni: wel-hgc.optage.moe, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01, server: lion01.abzoones.xyz, port: 36201, type: trojan, password: 2df8c45a-77ec-4c83-8b9b-5f9bcef4331a, sni: sg01.bestnodes.xyz, skip-cert-verify: false, udp: true}
-  - {name: 全球直连④, server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 18, server: 123.59.50.243, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5, server: hnct.daodecloud.com, port: 19917, type: trojan, password: 87403acc-63c9-48e1-988c-3ee8627898f7, sni: hkmax05.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 12, server: 60.249.3.229, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_25, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇸🇬 Singapore-Melbicom-dip 3, server: 5.44.249.156, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 13, server: 60.249.3.230, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_140, server: 14.215.162.120, port: 10444, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: sg01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: TW8, server: gzct.zzuu.tk, port: 23126, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇺🇸 美国_tg@univstar_19, server: 20.214.176.55, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 🇨🇳 台北Hinet 3, server: 211.72.35.152, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom 4, server: 5.44.249.51, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港_tg@univstar_155, server: hkmax04.170203.xyz, port: 34345, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax04.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4, server: mpls00.yunpan.dog, port: 38727, type: ss, cipher: chacha20-ietf-poly1305, password: b2875b64-4e08-4529-8550-089827395bd3, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom 5, server: 5.44.249.50, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 8, server: 106.75.240.227, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国(TG频道:@kxswa) 4, server: kr02.170203.xyz, port: 35234, type: trojan, password: 749f5896-5a02-43bd-9ea5-ed0906be6496, sni: kr02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13, server: fly2.fastestcloud.xyz, port: 30005, type: vmess, uuid: e18340d5-157c-4b9b-8b7b-554a9bbcf953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 9, server: 106.75.48.225, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14, server: cu.kapoknode.com, port: 25887, type: vmess, uuid: 054b48c2-3c93-45a8-b33d-a3838b9b7af9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5, server: fly1.fastestcloud.xyz, port: 30081, type: vmess, uuid: 5daea618-d4a8-4b53-b498-37f3da2d7a01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 19, server: 42.240.132.42, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 13, server: 5.44.249.43, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2, server: kr02.170203.xyz, port: 35234, type: trojan, password: 02e54387-d58d-4afa-96be-506a64f72e47, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 20, server: 106.75.233.91, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 21, server: 123.59.66.132, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: ee675a81-61c1-4173-a4cd-431c33c53243, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 14, server: 60.249.3.126, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HongKong-06, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇭🇰 香港D | 比直连还垃圾 | 倍率x1, server: hnct.zzuu.tk, port: 23124, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 国内中转_tg@univstar_93, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 14, server: 116.129.253.197, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5, server: 222.84.250.35, port: 19222, type: trojan, password: 05115a9b-067c-3cfa-9d8a-c696c3fc5660, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_144, server: hnct.daodecloud.com, port: 48915, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: sgmax03.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3, server: 435e40f.u2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: Fremont-Nato-dip 5, server: 134.195.101.32, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 FR 1 → openitsub.com, server: 51.161.152.180, port: 80, type: vmess, uuid: 6174a585-9a14-4a30-81d4-076376325328, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15, server: mpls00.yunpan.dog, port: 38704, type: ss, cipher: chacha20-ietf-poly1305, password: b2875b64-4e08-4529-8550-089827395bd3, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 15, server: 116.129.254.29, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: HK8, server: ussj.iamnotagoodman.com, port: 443, type: trojan, password: e785e5d2-a05e-486c-8b4f-78b205382b4e, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_110, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: 4f3e91fd-e81a-482f-b1f9-ed9d07fe51a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本A, server: 121.14.201.242, port: 23125, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7, server: hnct.daodecloud.com, port: 29748, type: trojan, password: 9da403b1-8e0e-4bf6-97d8-5af4090ed2f5, sni: hkmax17.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_37, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 8c44eb49-f252-4c69-a890-d9f60cee574b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇩🇪 德国G口直连 | 负载均衡, server: de.p1.gay, port: 25914, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: de.p1.gay, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_74, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇺🇸 美国_tg@univstar_69, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 10, server: 106.75.128.213, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 16, server: 5.44.249.44, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_125, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: cd5c3d00-4c95-4778-b56c-075fd0576a44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 22, server: 106.75.233.91, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 23, server: 113.31.155.165, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbicom-dip 4, server: 5.44.249.157, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 24, server: 117.50.98.45, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_81, server: gzct.daodecloud.com, port: 32266, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax07.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国us|tg频道:@ripaojiedian, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, sni: arbettp.freetrade.link, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16, server: fly1.fastestcloud.xyz, port: 30006, type: vmess, uuid: ee675a81-61c1-4173-a4cd-431c33c53243, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17, server: gzct.daodecloud.com, port: 20516, type: trojan, password: 02e54387-d58d-4afa-96be-506a64f72e47, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3, server: 435e40f.h2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 15, server: 211.72.35.156, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 稳定高速可购买付费节点↓, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 17, server: 116.129.254.29, port: 3382, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 25, server: 42.240.132.83, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 26, server: 123.59.66.132, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_21, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4, server: b2adf6f.nx.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: n2.glados-remote.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18, server: fly3.fastestcloud.xyz, port: 30005, type: vmess, uuid: 0621d908-dd6e-4900-9a2b-b1bcbe0e2dd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly3.fastestcloud.xyz}}, udp: true}
-  - {name: 🇭🇰 香港A | 比直连还垃圾 | 倍率x1, server: gzct.zzuu.tk, port: 23121, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5, server: b2adf6f.ts.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: n1.glados-remote.com}}, udp: true}
-  - {name: 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2, server: iepl02.yunpan.dog, port: 38721, type: ss, cipher: chacha20-ietf-poly1305, password: b2875b64-4e08-4529-8550-089827395bd3, udp: true}
-  - {name: 国内中转_tg@univstar_126, server: gzct.daodecloud.com, port: 11938, type: trojan, password: 949f8904-aaca-49fc-a4a9-07e4fb252b25, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 免费节点定期失效, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false, udp: true}
-  - {name: IR 1 → openitsub.com, server: london1.na.invari.na.oonvari.com, port: 443, type: vmess, uuid: 3f3c52f5-0e50-4fcf-8ee2-c8b7e0c8abab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /aaf44db73dfc/, headers: {Host: london1.na.invari.na.oonvari.com}}, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4, server: b2adf6f.f6.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇺🇸 洛杉矶 | 负载均衡, server: mrk.hotfun.buzz, port: 23134, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: mrk.hotfun.buzz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19, server: fly2.fastestcloud.xyz, port: 30006, type: vmess, uuid: 85e4189b-98a6-4513-b096-5213f91e1748, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20, server: hnct.daodecloud.com, port: 23472, type: trojan, password: 87403acc-63c9-48e1-988c-3ee8627898f7, sni: jp03.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 18, server: 5.44.249.45, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6, server: d80b949.td.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: n1.glados-remote.com}}, udp: true}
-  - {name: 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 4f51263f-9ca7-457f-b615-14f180a15e77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21, server: fly1.fastestcloud.xyz, port: 30005, type: vmess, uuid: ee675a81-61c1-4173-a4cd-431c33c53243, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5, server: b2adf6f.f4.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: "网址: hass.win/reg", server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 16, server: 60.249.3.126, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_123, server: cu.kapoknode.com, port: 25887, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 17, server: 60.249.3.228, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8, server: fly2.fastestcloud.xyz, port: 40003, type: vmess, uuid: c09c9c40-98dd-49bc-b636-aa746a68b849, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 27, server: 106.75.173.173, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet 4, server: 211.72.35.155, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_84, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: af011a9b-ee15-458e-9e2d-af9770ffd888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22, server: fly3.fastestcloud.xyz, port: 30005, type: vmess, uuid: f007e457-952a-4f45-9bbb-e4a8e8d179c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly3.fastestcloud.xyz}}, udp: true}
-  - {name: 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2, server: 435e40f.v6.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23, server: cu.kapoknode.com, port: 25887, type: vmess, uuid: 0139216c-f679-4fd3-a3ba-e393574a6d53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 11, server: 123.59.69.54, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 19, server: 116.129.254.29, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6, server: b2adf6f.u3.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 18, server: 211.72.35.156, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7, server: f266a10.tt.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: n1.glados-remote.com}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 19, server: 211.72.35.153, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 28, server: 120.132.21.219, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6, server: 20006.purefast2.com, port: 20006, type: trojan, password: 6f940d00-345f-31b1-858c-f0d7afea45a2, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 20, server: 116.129.253.201, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 狮城|tg频道:@ripaojiedian, server: 154.26.131.141, port: 80, type: vmess, uuid: fc35ff9d-e0ee-4260-8a8a-51028714474e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: sg2-ctb.v2rayserv.com}}, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 21, server: 116.129.254.29, port: 3383, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: TW5, server: pull-cache-lu01.xyx-xylo.com, port: 19701, type: trojan, password: 79745894-044c-3298-a893-bbfcb6b24a2c, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡2|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 22, server: 60.249.3.231, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa), server: roewesu.eu.org, port: 443, type: vmess, uuid: 84e46faf-7d89-43af-8bd9-01b41fc1ddce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /0cc651aee76c7/, headers: {Host: roewesu.eu.org}}, udp: true}
-  - {name: 🇯🇵 日本_tg@univstar_35, server: jp03.170203.xyz, port: 34522, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: rprknb2lcp.eastasia.cloudapp.azure.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7, server: b2adf6f.u2.glados-config.net, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /t, headers: {Host: tls.apple.com}}, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|🇯🇵日本02, server: fujimount02.abzoones.xyz, port: 36106, type: trojan, password: 2df8c45a-77ec-4c83-8b9b-5f9bcef4331a, sni: jp02.bestnodes.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: e18340d5-157c-4b9b-8b7b-554a9bbcf953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇭🇰 HongKong-01, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
-  - {name: 🇺🇸 US 6 → openitsub.com, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}, udp: true}
-  - {name: 国内中转_tg@univstar_43, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 8c44eb49-f252-4c69-a890-d9f60cee574b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom 6, server: 5.44.249.52, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 23, server: 60.249.3.229, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_91, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: a018ce51-4b5a-4d6e-9af8-d7cd34e2e194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
   - {name: 🇯🇵 TG频道:@kxswa|日本C, server: 124.225.24.140, port: 23127, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 20, server: 116.129.254.29, port: 3382, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 24, server: 60.249.3.228, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 15 → openitsub.com, server: zz100.8faka.tk, port: 35100, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd100.8faka.tk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国 01, server: 112.91.138.56, port: 58652, type: ss, cipher: aes-256-gcm, password: 1d69e55c-2064-4e28-9e38-52f1b2666a00, udp: true}
-  - {name: 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3, server: kr02.170203.xyz, port: 35234, type: trojan, password: 97c326f1-c96e-4504-827d-d48dbb5036b4, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3, server: 138.2.67.202, port: 8080, type: vmess, uuid: a365c70c-c090-3e29-ab1f-241e5e39fc58, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 国内中转_tg@univstar_28, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: b47a4799-b2b5-49da-8a0c-6f38604e3227, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: TW2, server: 180.101.193.226, port: 10068, type: ss, cipher: aes-256-cfb, password: RsDk3peCSuo76B68, udp: true}
+  - {name: 国内中转_tg@univstar_86, server: cu.kapoknode.com, port: 25894, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇸🇬 SG 2 → openitsub.com, server: 68.183.228.213, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g12.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 SG 1 → openitsub.com, server: 128.199.112.21, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g11.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_37, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 8c44eb49-f252-4c69-a890-d9f60cee574b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇨🇳 CN 7 → openitsub.com, server: hnct.zzuu.tk, port: 23128, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 🇨🇳 台湾, server: vip21-ws-tls.jsssline.top, port: 43403, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cpyhyfd3, headers: {Host: vip21-ws-tls.jsssline.top}}, udp: true}
+  - {name: 🇯🇵 日本高速接入点-02, server: jp2.sanfen001.pics, port: 443, type: vmess, uuid: 05383022-594a-44ea-a19e-c972f4a15492, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
   - {name: 国内中转_tg@univstar_100, server: cu.kapoknode.com, port: 25896, type: vmess, uuid: e8e92b00-9702-4caa-b336-0b73e53a5faf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7, server: 20003.purefast2.com, port: 20003, type: trojan, password: b850bf16-73af-390f-a245-b120dae7fa2b, sni: purefast1.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 29, server: 42.240.132.42, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_106, server: fly2.fastestcloud.xyz, port: 40005, type: vmess, uuid: 704468d8-2219-4ecd-806f-90cca715e09d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly2.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 30, server: 106.75.187.25, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4, server: ulist.com.my.do3.kitu.xyz, port: 443, type: trojan, password: whyvpn-octanrxv, sni: mm.net.my, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 25, server: 60.249.3.125, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24, server: gzct.daodecloud.com, port: 20516, type: trojan, password: 97c326f1-c96e-4504-827d-d48dbb5036b4, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 21, server: 116.129.253.187, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8, server: 34.80.239.195, port: 31184, type: trojan, password: FCBBGRDe, sni: sggks.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-Linode 4, server: 116.129.253.245, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_136, server: hnct.daodecloud.com, port: 25480, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: jpmax04.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 31, server: 42.240.131.142, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4, server: kr02.170203.xyz, port: 35234, type: trojan, password: 87403acc-63c9-48e1-988c-3ee8627898f7, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-Linode 5, server: 116.129.253.245, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 12, server: 123.59.69.54, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本B, server: 121.14.201.242, port: 23126, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25, server: gzct.daodecloud.com, port: 30664, type: trojan, password: 9da403b1-8e0e-4bf6-97d8-5af4090ed2f5, sni: jpmax02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 32, server: 120.132.21.219, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 22, server: 116.129.254.29, port: 3382, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 13, server: 106.75.240.227, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 26, server: 60.249.3.229, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 14, server: 106.75.48.225, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom-dip 23, server: 116.129.253.191, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 27, server: 60.249.3.230, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 国内中转_tg@univstar_145, server: hnct.daodecloud.com, port: 23472, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: jp03.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbikom 7, server: 5.44.249.50, port: 3389, type: trojan, password: 8b475d9e868e43e0, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10, server: iepl01.yunpan.dog, port: 38702, type: ss, cipher: chacha20-ietf-poly1305, password: b2875b64-4e08-4529-8550-089827395bd3, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26, server: fly1.fastestcloud.xyz, port: 30005, type: vmess, uuid: bb15b0a0-33ab-498e-9ae5-ea22688d43b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-DMIT-dip 15, server: 106.75.128.213, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 Singapore-Melbicom-dip 5, server: 5.44.249.156, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港DMIT 2, server: 116.129.254.29, port: 3384, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x, server: 216.247.108.99.ipssh.net, port: 3389, type: trojan, password: ee4fff2a-540e-4ac7-a16a-935567dfc36b, sni: aidangaiguo3.aiguoxuexi.com, skip-cert-verify: false, udp: true}
+  - {name: dafeivpn.com 5元专线机场, server: tw1.sanfen001.pics, port: 443, type: vmess, uuid: 05383022-594a-44ea-a19e-c972f4a15492, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: tw1.sanfen001.pics}}, udp: true}
+  - {name: 🇭🇰 香港_tg@univstar_10, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, sni: arbettp.freetrade.link, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_1, server: 14.215.162.120, port: 10204, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: tw01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 TG频道:@kxswa|德国, server: vipde.jsssline.top, port: 43802, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cpyhyfd3, headers: {Host: vipde.jsssline.top}}, udp: true}
+  - {name: 🇭🇰 HongKong-08, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: TW8, server: gzct.zzuu.tk, port: 23126, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 国内中转_tg@univstar_129, server: hnct.daodecloud.com, port: 47775, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax08.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国(TG频道:@kxswa), server: 198.244.148.214, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}, udp: true}
+  - {name: 🇭🇰 HongKong-03, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: 45.33.59.100, port: 10002, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g13.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡2, server: vip32-ws-tls.jsssline.top, port: 43305, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_33, server: 111.6.85.197, port: 13178, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: hkmax02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港, server: 0025528823df373d.jijicloud.com, port: 3012, type: ss, cipher: chacha20-ietf-poly1305, password: ac7d3755-cbe1-4664-adb1-19b4f2c6ca39, udp: true}
+  - {name: 🇺🇸 美国_tg@univstar_11, server: hk4.520748.xyz, port: 10001, type: trojan, password: cfed45d3-083a-4680-ad8f-db997aeddaf1, sni: hk4.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_67, server: hnct.daodecloud.com, port: 36800, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: usmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: (TG频道:@kxswa), server: 30.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 30.72img.xyz}}, udp: true}
   - {name: 国内中转_tg@univstar_113, server: hnct.daodecloud.com, port: 22909, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: sg01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 28, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 29, server: 211.72.35.153, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27, server: fly1.fastestcloud.xyz, port: 30006, type: vmess, uuid: 85e4189b-98a6-4513-b096-5213f91e1748, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly1.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 33, server: 123.59.87.29, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 34, server: 120.132.21.219, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台北Hinet-dip 30, server: 211.72.35.156, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Tokyo-M247 35, server: 123.59.72.193, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 3 → openitsub.com, server: 183.245.146.6, port: 21001, type: trojan, password: 6e2a6544-6bd5-4584-9568-9726d3b1cb0f, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_65, server: gzct.daodecloud.com, port: 20045, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: us03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国, server: vipusav2-2.jsssline.top, port: 43602, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cpyhyfd3, headers: {Host: vipusav2-2.jsssline.top}}, udp: true}
+  - {name: 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x, server: 216.247.108.99.ipssh.net, port: 3389, type: trojan, password: ee4fff2a-540e-4ac7-a16a-935567dfc36b, sni: aigongchan1.aiguoxuexi.com, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_89, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: b47a4799-b2b5-49da-8a0c-6f38604e3227, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇯🇵 日本2|tg频道:@ripaojiedian, server: 45.77.183.111, port: 80, type: vmess, uuid: 00a79520-5380-40ac-87e1-499f5a6eb21d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: Vipmahsa}}, udp: true}
+  - {name: 🇺🇸 US 7 → openitsub.com, server: 138.2.52.244, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: 🇭🇰 香港 11丨1x HK, server: www.lanzou.com.lanzoujj.xyz, port: 12032, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: ed0393a1a1b2.microsoft.com}, udp: true}
+  - {name: 国内中转_tg@univstar_34, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: e8e92b00-9702-4caa-b336-0b73e53a5faf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 国内中转_tg@univstar_25, server: cu.kapoknode.com, port: 25886, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B, server: 172.104.166.124, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g10.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 TG频道:@kxswa|英国, server: 0025528823df373d.jijicloud.com, port: 3017, type: ss, cipher: chacha20-ietf-poly1305, password: ac7d3755-cbe1-4664-adb1-19b4f2c6ca39, udp: true}
+  - {name: 🇭🇰 香港高速接入点-04, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: 05383022-594a-44ea-a19e-c972f4a15492, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 国内中转_tg@univstar_42, server: 14.215.162.120, port: 10229, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 更新于11/03/13:20, server: univstar.51.195.140.208.sslip.io, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wmzmvws, headers: {Host: goodfamily19.site}}, udp: true}
+  - {name: 国内中转_tg@univstar_16, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 06丨1x HK, server: www.lanzou.com.lanzoujj.xyz, port: 12027, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: ed0393a1a1b2.microsoft.com}, udp: true}
+  - {name: 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x, server: aiguo-b.aiguoxuexi.com, port: 20802, type: trojan, password: ee4fff2a-540e-4ac7-a16a-935567dfc36b, sni: aigongchan1.aiguoxuexi.com, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_84, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: af011a9b-ee15-458e-9e2d-af9770ffd888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x, server: 199.48.182.229.globalssh.cn, port: 3389, type: trojan, password: ee4fff2a-540e-4ac7-a16a-935567dfc36b, sni: aidangaiguo12.aiguoxuexi.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港专线|tg频道:@ripaojiedian, server: hnct.zzuu.tk, port: 23124, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 国内中转_tg@univstar_92, server: cu.kapoknode.com, port: 25888, type: vmess, uuid: a018ce51-4b5a-4d6e-9af8-d7cd34e2e194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇷🇺 俄罗斯, server: ru.p1.gay, port: 24114, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: ru.p1.gay, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_85, server: cu.kapoknode.com, port: 25895, type: vmess, uuid: 8c44eb49-f252-4c69-a890-d9f60cee574b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa), server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
+  - {name: 🇭🇰 日本A | 广港专线 | 倍率x1, server: gzct.zzuu.tk, port: 23125, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 国内中转_tg@univstar_40, server: fly3.fastestcloud.xyz, port: 30015, type: vmess, uuid: 4f3e91fd-e81a-482f-b1f9-ed9d07fe51a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fly3.fastestcloud.xyz}}, udp: true}
+  - {name: 🇸🇬 新加坡, server: vip31-ws-tls.jsssline.top, port: 43305, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_29, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: af011a9b-ee15-458e-9e2d-af9770ffd888, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: (TG频道:@kxswa) 2, server: 10.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 10.72img.xyz}}, udp: true}
+  - {name: 国内中转_tg@univstar_159, server: 14.215.162.120, port: 10106, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax04.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 TG频道:@kxswa|🇹🇼台湾02, server: sunmoon02.abzoones.xyz, port: 36306, type: trojan, password: 2df8c45a-77ec-4c83-8b9b-5f9bcef4331a, sni: tw02.bestnodes.xyz, skip-cert-verify: false, udp: true}
+  - {name: MO 1 → openitsub.com, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港B | 比直连还垃圾 | 倍率x1, server: gzct.zzuu.tk, port: 23122, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|🇯🇵 日本B, server: 172.104.85.224, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g06.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|日本D, server: 124.225.24.140, port: 23128, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 🇨🇳 CN 6 → openitsub.com, server: 183.245.146.6, port: 21003, type: trojan, password: 6e2a6544-6bd5-4584-9568-9726d3b1cb0f, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港_tg@univstar_152, server: hkmax04.170203.xyz, port: 34345, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: hkmax04.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本4, server: vipjp4-ws-tls.jsssline.top, port: 43105, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港A | 比直连还垃圾 | 倍率x1, server: gzct.zzuu.tk, port: 23121, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 国内中转_tg@univstar_126, server: gzct.daodecloud.com, port: 11938, type: trojan, password: 949f8904-aaca-49fc-a4a9-07e4fb252b25, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_13, server: gzct.daodecloud.com, port: 34661, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: usmax02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 3 TT 1x, server: aiguo-b.aiguoxuexi.com, port: 20802, type: trojan, password: ee4fff2a-540e-4ac7-a16a-935567dfc36b, sni: zhongguomeng3.aiguoxuexi.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D, server: 68.183.228.213, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g12.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HongKong-10, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 国内中转_tg@univstar_30, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 8c44eb49-f252-4c69-a890-d9f60cee574b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 国内中转_tg@univstar_148, server: 14.215.162.120, port: 10229, type: trojan, password: 949f8904-aaca-49fc-a4a9-07e4fb252b25, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|🇯🇵日本03, server: fujimount03.abzoones.xyz, port: 36111, type: trojan, password: 2df8c45a-77ec-4c83-8b9b-5f9bcef4331a, sni: jp03.bestnodes.xyz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_46, server: gzct.daodecloud.com, port: 49136, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: ru02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本_tg@univstar_68, server: jp03.170203.xyz, port: 34522, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: rprknb2lcp.eastasia.cloudapp.azure.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡 | 负载均衡, server: sgws.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: sgws.hotfun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_21, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 国内中转_tg@univstar_75, server: gzct.daodecloud.com, port: 21719, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: us01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_114, server: hnct.daodecloud.com, port: 37983, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: sgmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本防失联×2, server: urgjp.hotfun.buzz, port: 16333, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: urgjp.hotfun.buzz, network: ws, ws-opts: {path: /hootfun, headers: {Host: urgjp.hotfun.buzz}}, udp: true}
+  - {name: 🇺🇸 US 2 → openitsub.com, server: 147.182.228.64, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g16.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C, server: 128.199.112.21, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g11.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 拉斯维加斯×0.5, server: lswjs.p1.gay, port: 15123, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lswjs.p1.gay, network: ws, ws-opts: {path: /hootfun, headers: {Host: lswjs.p1.gay}}, udp: true}
+  - {name: 🇨🇦 加拿大 | 负载均衡, server: ca.p1.gay, port: 23134, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: ca.p1.gay, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_52, server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇺🇸 美国_tg@univstar_48, server: 172.64.148.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
+  - {name: HK8, server: ussj.iamnotagoodman.com, port: 443, type: trojan, password: e785e5d2-a05e-486c-8b4f-78b205382b4e, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A, server: 146.190.234.44, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g23.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HongKong-06, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇰🇷 韩国|tg频道:@ripaojiedian, server: 20.214.176.55, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 国内中转_tg@univstar_144, server: hnct.daodecloud.com, port: 48915, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: sgmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾_tg@univstar_17, server: tw01.170203.xyz, port: 34234, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: tw01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 實驗性C/02 x1.0, server: 183.245.146.6, port: 21002, type: trojan, password: 6e2a6544-6bd5-4584-9568-9726d3b1cb0f, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国_tg@univstar_32, server: kr02.170203.xyz, port: 35234, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: kr02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇭 TG频道:@kxswa|泰国, server: 0025528823df373d.jijicloud.com, port: 3028, type: ss, cipher: chacha20-ietf-poly1305, password: ac7d3755-cbe1-4664-adb1-19b4f2c6ca39, udp: true}
+  - {name: 国内中转_tg@univstar_66, server: gzct.daodecloud.com, port: 20516, type: trojan, password: 949f8904-aaca-49fc-a4a9-07e4fb252b25, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02, server: lion02.abzoones.xyz, port: 36206, type: trojan, password: 2df8c45a-77ec-4c83-8b9b-5f9bcef4331a, sni: sg02.bestnodes.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: 139.162.76.223, port: 80, type: vmess, uuid: 37953153-64df-44c8-a966-1f5008c901d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.162.76.223}}, udp: true}
+  - {name: 🇨🇳 TG频道:@kxswa|台湾, server: vip21-3-ws-tls.jsssline.top, port: 43405, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_103, server: gzct.daodecloud.com, port: 49222, type: trojan, password: 0e8816b4-6962-4711-9f27-b62a645d8edd, sni: tw01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg@univstar_19, server: 20.214.176.55, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 国内中转_tg@univstar_74, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 2a3b0544-816d-4e7b-a624-ebcef557a25d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|🇯🇵 日本A, server: 139.162.89.32, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_157, server: 14.215.162.120, port: 10370, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: hkmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 08丨1x HK, server: www.lanzou.com.lanzoujj.xyz, port: 12029, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: ed0393a1a1b2.microsoft.com}, udp: true}
+  - {name: 🇰🇷 韩国(TG频道:@kxswa), server: kr02.170203.xyz, port: 35234, type: trojan, password: 3cc9edff-c9b1-4188-9779-2c1a3e85bfc5, sni: kr02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_54, server: 14.215.162.120, port: 10367, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: kr001.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 | 负载均衡, server: in.p1.gay, port: 23134, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: in.p1.gay, skip-cert-verify: false, udp: true}
+  - {name: 台灣 A/01 x1.0, server: 183.245.146.6, port: 41001, type: trojan, password: 6e2a6544-6bd5-4584-9568-9726d3b1cb0f, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 日本D | 海港专线 | 倍率x1, server: hnct.zzuu.tk, port: 23128, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 🇭🇰 HongKong-07, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
+  - {name: 🇨🇳 CN 4 → openitsub.com, server: hnct.zzuu.tk, port: 23123, type: ss, cipher: chacha20-ietf-poly1305, password: aad768a4-a8a6-41fc-a067-c9995e671345, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 2, server: 137.184.164.233, port: 80, type: vmess, uuid: 5cee90e3-b915-4f1e-bb8d-efadad0c6feb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 137.184.164.233}}, udp: true}
+  - {name: 国内中转_tg@univstar_111, server: gzct.daodecloud.com, port: 11938, type: trojan, password: 8164986a-ae24-459c-bbd5-eae198f041d8, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 国内中转_tg@univstar_44, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: a018ce51-4b5a-4d6e-9af8-d7cd34e2e194, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇫🇷 TG频道:@kxswa|法国, server: vipfr.jsssline.top, port: 43902, type: vmess, uuid: 67303efa-abde-8004-338e-20d80b03a749, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cpyhyfd3, headers: {Host: vipfr.jsssline.top}}, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡, server: 0025528823df373d.jijicloud.com, port: 3023, type: ss, cipher: chacha20-ietf-poly1305, password: ac7d3755-cbe1-4664-adb1-19b4f2c6ca39, udp: true}
+  - {name: 🇭🇰 香港1|tg频道:@ripaojiedian, server: hk4.520748.xyz, port: 10001, type: trojan, password: cfed45d3-083a-4680-ad8f-db997aeddaf1, sni: hk4.520748.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HongKong-11, server: 193.107.23.250, port: 443, type: ss, cipher: aes-256-gcm, password: b1dc344fd3c3, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2506,311 +1058,130 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 台北Hinet-dip
-      - 🇯🇵 Tokyo-Linode
-      - 🇯🇵 Tokyo-M247
-      - 🇨🇦 加拿大 | 负载均衡
-      - 🇯🇵 Tokyo-M247 2
-      - HK9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102|
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇰🇷 韩国(TG频道:@kxswa)
-      - 国内中转_tg@univstar_52
-      - 🇯🇵 Tokyo-M247 3
-      - 🇯🇵 Tokyo-DMIT-dip
-      - 🇯🇵 Tokyo-M247 4
-      - 国内中转_tg@univstar_78
-      - 🇸🇬 Singapore-Melbikom-dip
-      - 🇭🇰 HongKong-10
-      - 国内中转_tg@univstar_89
-      - 🇨🇳 CN 17 → openitsub.com
-      - 🇯🇵 日本JP|tg频道:@ripaojiedian
-      - 🇸🇬 Singapore-Melbikom-dip 2
-      - 🇨🇳 台北Hinet-dip 2
-      - 国内中转_tg@univstar_38
-      - 🇯🇵 Tokyo-DMIT-dip 2
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 3
-      - 国内中转_tg@univstar_90
-      - 🇭🇰 HongKong-14
-      - 🇯🇵 Tokyo-M247 5
-      - 🇯🇵 Tokyo-DMIT-dip 3
-      - 国内中转_tg@univstar_129
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 3
-      - 🇸🇬 新加坡高速接入点-01
-      - 国内中转_tg@univstar_66
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇸🇬 更新于11/02/19:20
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 6
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 2
-      - 🇸🇬 Singapore-Melbikom
-      - 🇯🇵 Tokyo-M247 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 3
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 5
-      - 这是教程赠送免费节点
-      - 🇸🇬 Singapore-Melbikom-dip 3
-      - 🇭🇰 HongKong-02
-      - 国内中转_tg@univstar_103
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 6
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 8
-      - 国内中转_tg@univstar_102
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-DMIT-dip 4
-      - 🇨🇳 台北Hinet-dip 4
-      - 🇭🇰 HongKong-03
-      - 🇭🇰 HongKong-18
-      - 🇺🇸 美国_tg@univstar_48
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 8
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 4
-      - 国内中转_tg@univstar_147
-      - 🇸🇬 Singapore-Melbikom 2
-      - 国内中转_tg@univstar_8
-      - 国内中转_tg@univstar_114
-      - 国内中转_tg@univstar_137
-      - 🇯🇵 日本东京 | 负载均衡
-      - 🇸🇬 Singapore-Melbikom-dip 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 9
-      - LAX-Melbikom-dip
-      - 🇳🇱 荷兰 | 负载均衡
-      - 🇰🇷 韩国(TG频道:@kxswa) 2
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 11
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-M247 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 12
-      - 🇨🇳 CN 6 → openitsub.com
-      - 🇨🇳 台北Hinet
-      - 🇸🇬 Singapore-Melbikom-dip 5
-      - 🇭🇰 HongKong-15
-      - 🇨🇳 台北Hinet-dip 5
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102|
-      - 🇬🇧 >Relay|🇬🇧 GB|高速|TG@FProxies|1102|
-      - 🇨🇳 台北Hinet-dip 6
-      - Fremont-Nato-dip
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇨🇳 台北Hinet 2
-      - 🇯🇵 Tokyo-M247 10
-      - 🇯🇵 Tokyo-M247 11
-      - 🇯🇵 Tokyo-M247 12
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|香港A
-      - 国内中转_tg@univstar_26
-      - Fremont-Nato-dip 2
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇸🇬 Singapore-Melbikom-dip 6
-      - 🇨🇳 台北Hinet-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 7
-      - 🇸🇬 Singapore-Melbikom-dip 8
-      - 🇸🇬 Singapore-Melbicom-dip
-      - 🇯🇵 Tokyo-DMIT-dip 5
-      - 🇯🇵 Tokyo-Linode 2
-      - 🇯🇵 Tokyo-M247 13
-      - 🇸🇬 Singapore-Melbicom-dip 2
-      - 🇰🇷 韩国(TG频道:@kxswa) 3
-      - 🇺🇸 美国_tg@univstar_2
-      - 🇯🇵 Tokyo-M247 14
-      - 🇭🇰 香港DMIT
-      - 🇭🇰 日本D | 海港专线 | 倍率x1
-      - 🇸🇬 Singapore-Melbikom-dip 9
-      - 🇸🇬 Singapore-Melbikom 3
-      - 🇸🇬 Singapore-Melbikom-dip 10
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 2
-      - 🇭🇰 TG频道:@kxswa|🇭🇰香港01
-      - 🇯🇵 Tokyo-DMIT-dip 6
-      - 🇸🇬 Singapore-Melbikom-dip 11
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102|
-      - Fremont-Nato-dip 3
-      - 🇯🇵 Tokyo-M247 15
-      - 🇯🇵 TG频道:@kxswa|日本D
-      - Fremont-Nato-dip 4
-      - 🇨🇳 >Relay|🇹🇼 TW|高速|TG@FProxies|1102|
-      - 🇯🇵 Tokyo-Linode 3
-      - 🇯🇵 Tokyo-DMIT-dip 7
-      - 🇯🇵 Tokyo-M247 16
-      - 🇺🇸 美国_tg@univstar_60
-      - 🇨🇳 台北Hinet-dip 8
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 3
-      - 🇯🇵 Tokyo-M247 17
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 3
-      - 🇫🇷 法国(TG频道:@kxswa)
-      - 🇨🇳 台北Hinet-dip 9
-      - 🇨🇳 台北Hinet-dip 10
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 11
-      - 🇸🇬 新加坡高速接入点-02
-      - 🇸🇬 Singapore-Melbikom-dip 12
-      - HK5
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡01
-      - 全球直连④
-      - 🇯🇵 Tokyo-M247 18
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 5
-      - 🇨🇳 台北Hinet-dip 12
-      - 国内中转_tg@univstar_25
-      - 🇸🇬 Singapore-Melbicom-dip 3
-      - 🇨🇳 台北Hinet-dip 13
-      - 国内中转_tg@univstar_140
-      - TW8
-      - 🇺🇸 美国_tg@univstar_19
-      - 🇨🇳 台北Hinet 3
-      - 🇸🇬 Singapore-Melbikom 4
-      - 🇭🇰 香港_tg@univstar_155
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇸🇬 Singapore-Melbikom 5
-      - 🇯🇵 Tokyo-DMIT-dip 8
-      - 🇰🇷 韩国(TG频道:@kxswa) 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 13
-      - 🇯🇵 Tokyo-DMIT-dip 9
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 14
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 5
-      - 🇯🇵 Tokyo-M247 19
-      - 🇸🇬 Singapore-Melbikom-dip 13
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 🇯🇵 Tokyo-M247 20
-      - 🇯🇵 Tokyo-M247 21
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 14
-      - 🇭🇰 HongKong-06
-      - 🇭🇰 香港D | 比直连还垃圾 | 倍率x1
-      - 国内中转_tg@univstar_93
-      - 🇸🇬 Singapore-Melbikom-dip 14
-      - 🇸🇬 >Relay|🇸🇬 SG|高速|TG@FProxies|1102| 5
-      - 国内中转_tg@univstar_144
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 3
-      - Fremont-Nato-dip 5
-      - 🇫🇷 FR 1 → openitsub.com
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 15
-      - 🇸🇬 Singapore-Melbikom-dip 15
-      - HK8
-      - 国内中转_tg@univstar_110
-      - 🇯🇵 TG频道:@kxswa|日本A
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 7
-      - 国内中转_tg@univstar_37
-      - 🇩🇪 德国G口直连 | 负载均衡
-      - 国内中转_tg@univstar_74
-      - 🇺🇸 美国_tg@univstar_69
-      - 🇯🇵 Tokyo-DMIT-dip 10
-      - 🇸🇬 Singapore-Melbikom-dip 16
-      - 国内中转_tg@univstar_125
-      - 🇯🇵 Tokyo-M247 22
-      - 🇯🇵 Tokyo-M247 23
-      - 🇸🇬 Singapore-Melbicom-dip 4
-      - 🇯🇵 Tokyo-M247 24
-      - 国内中转_tg@univstar_81
-      - 🇺🇸 美国us|tg频道:@ripaojiedian
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 16
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 17
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 3
-      - 🇨🇳 台北Hinet-dip 15
-      - 稳定高速可购买付费节点↓
-      - 🇸🇬 Singapore-Melbikom-dip 17
-      - 🇯🇵 Tokyo-M247 25
-      - 🇯🇵 Tokyo-M247 26
-      - 国内中转_tg@univstar_21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 4
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 18
-      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 5
-      - 🇰🇷 >Relay|🇰🇷 KR|高速|TG@FProxies|1102| 2
-      - 国内中转_tg@univstar_126
-      - 免费节点定期失效
-      - IR 1 → openitsub.com
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 4
-      - 🇺🇸 洛杉矶 | 负载均衡
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 19
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 20
-      - 🇸🇬 Singapore-Melbikom-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 6
-      - 🇩🇪 >Relay|🇩🇪 DE|高速|TG@FProxies|1102|
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 21
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 5
-      - "网址: hass.win/reg"
-      - 🇨🇳 台北Hinet-dip 16
-      - 国内中转_tg@univstar_123
-      - 🇨🇳 台北Hinet-dip 17
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-M247 27
-      - 🇨🇳 台北Hinet 4
-      - 国内中转_tg@univstar_84
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 22
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 2
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 23
-      - 🇯🇵 Tokyo-DMIT-dip 11
-      - 🇸🇬 Singapore-Melbikom-dip 19
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 18
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 7
-      - 🇨🇳 台北Hinet-dip 19
-      - 🇯🇵 Tokyo-M247 28
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 6
-      - 🇨🇳 台北Hinet-dip 20
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 21
-      - TW5
-      - 🇸🇬 新加坡2|tg频道:@ripaojiedian
-      - 🇨🇳 台北Hinet-dip 22
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇯🇵 日本_tg@univstar_35
-      - 🇺🇸 >🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 TG频道:@kxswa|🇯🇵日本02
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 9
-      - 🇭🇰 HongKong-01
-      - 🇺🇸 US 6 → openitsub.com
-      - 国内中转_tg@univstar_43
-      - 🇸🇬 Singapore-Melbikom 6
-      - 🇨🇳 台北Hinet-dip 23
+      - 国内中转_tg@univstar_91
       - 🇯🇵 TG频道:@kxswa|日本C
-      - 🇸🇬 Singapore-Melbikom-dip 20
-      - 🇨🇳 台北Hinet-dip 24
-      - 🇨🇳 CN 15 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|美国 01
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 3
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 3
+      - 国内中转_tg@univstar_28
+      - TW2
+      - 国内中转_tg@univstar_86
+      - 🇸🇬 SG 2 → openitsub.com
+      - 🇸🇬 SG 1 → openitsub.com
+      - 国内中转_tg@univstar_37
+      - 🇨🇳 CN 7 → openitsub.com
+      - 🇨🇳 台湾
+      - 🇯🇵 日本高速接入点-02
       - 国内中转_tg@univstar_100
-      - 🇺🇸 >Relay|🇺🇸 US|高速|TG@FProxies|1102| 7
-      - 🇯🇵 Tokyo-M247 29
-      - 国内中转_tg@univstar_106
-      - 🇯🇵 Tokyo-M247 30
-      - 🇸🇬 >🇸🇬 SG|高速|TG@FProxies|1102| 4
-      - 🇨🇳 台北Hinet-dip 25
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 24
-      - 🇸🇬 Singapore-Melbikom-dip 21
-      - 🇨🇳 >🇹🇼 TW|高速|TG@FProxies|1102| 8
-      - 🇯🇵 Tokyo-Linode 4
-      - 国内中转_tg@univstar_136
-      - 🇯🇵 Tokyo-M247 31
-      - 🇰🇷 >🇰🇷 KR|高速|TG@FProxies|1102| 4
-      - 🇯🇵 Tokyo-Linode 5
-      - 🇯🇵 Tokyo-DMIT-dip 12
-      - 🇯🇵 TG频道:@kxswa|日本B
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 25
-      - 🇯🇵 Tokyo-M247 32
-      - 🇸🇬 Singapore-Melbikom-dip 22
-      - 🇯🇵 Tokyo-DMIT-dip 13
-      - 🇨🇳 台北Hinet-dip 26
-      - 🇯🇵 Tokyo-DMIT-dip 14
-      - 🇸🇬 Singapore-Melbikom-dip 23
-      - 🇨🇳 台北Hinet-dip 27
-      - 国内中转_tg@univstar_145
-      - 🇸🇬 Singapore-Melbikom 7
-      - 🇭🇰 >Relay|🇭🇰 HK|高速|TG@FProxies|1102| 10
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 26
-      - 🇯🇵 Tokyo-DMIT-dip 15
-      - 🇸🇬 Singapore-Melbicom-dip 5
-      - 🇭🇰 香港DMIT 2
+      - 🇺🇸 US 3 LAX TikTok 🎶🏠 IPLC 1x
+      - dafeivpn.com 5元专线机场
+      - 🇭🇰 香港_tg@univstar_10
+      - 国内中转_tg@univstar_1
+      - 🇩🇪 TG频道:@kxswa|德国
+      - 🇭🇰 HongKong-08
+      - TW8
+      - 国内中转_tg@univstar_129
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇭🇰 HongKong-03
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇸🇬 新加坡2
+      - 国内中转_tg@univstar_33
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇺🇸 美国_tg@univstar_11
+      - 国内中转_tg@univstar_67
+      - (TG频道:@kxswa)
       - 国内中转_tg@univstar_113
-      - 🇨🇳 台北Hinet-dip 28
-      - 🇨🇳 台北Hinet-dip 29
-      - 🇯🇵 >Relay|🇯🇵 JP|高速|TG@FProxies|1102| 27
-      - 🇯🇵 Tokyo-M247 33
-      - 🇯🇵 Tokyo-M247 34
-      - 🇨🇳 台北Hinet-dip 30
-      - 🇯🇵 Tokyo-M247 35
+      - 🇨🇳 CN 3 → openitsub.com
+      - 国内中转_tg@univstar_65
+      - 🇺🇸 TG频道:@kxswa|美国
+      - 🇺🇸 US 1 LAX TikTok 🎶🏠 IPLC 1x
+      - 国内中转_tg@univstar_89
+      - 🇯🇵 日本2|tg频道:@ripaojiedian
+      - 🇺🇸 US 7 → openitsub.com
+      - 🇭🇰 香港 11丨1x HK
+      - 国内中转_tg@univstar_34
+      - 国内中转_tg@univstar_25
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡B
+      - 🇬🇧 TG频道:@kxswa|英国
+      - 🇭🇰 香港高速接入点-04
+      - 国内中转_tg@univstar_42
+      - 🇸🇬 更新于11/03/13:20
+      - 国内中转_tg@univstar_16
+      - 🇭🇰 香港 06丨1x HK
+      - 🇭🇰 US 1 LAX TikTok 🎶🏠 CM-HK 1x
+      - 国内中转_tg@univstar_84
+      - 🇺🇸 US 12 LAX TikTok 🎶🏠 IPLC 1x
+      - 🇭🇰 香港专线|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_92
+      - 🇷🇺 俄罗斯
+      - 国内中转_tg@univstar_85
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 日本A | 广港专线 | 倍率x1
+      - 国内中转_tg@univstar_40
+      - 🇸🇬 新加坡
+      - 国内中转_tg@univstar_29
+      - (TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_159
+      - 🇨🇳 TG频道:@kxswa|🇹🇼台湾02
+      - MO 1 → openitsub.com
+      - 🇭🇰 香港B | 比直连还垃圾 | 倍率x1
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本B
+      - 🇯🇵 TG频道:@kxswa|日本D
+      - 🇨🇳 CN 6 → openitsub.com
+      - 🇭🇰 香港_tg@univstar_152
+      - 🇯🇵 日本4
+      - 🇭🇰 香港A | 比直连还垃圾 | 倍率x1
+      - 国内中转_tg@univstar_126
+      - 国内中转_tg@univstar_13
+      - 🇺🇸 US 3 TT 1x
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡D
+      - 🇭🇰 HongKong-10
+      - 国内中转_tg@univstar_30
+      - 国内中转_tg@univstar_148
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本03
+      - 国内中转_tg@univstar_46
+      - 🇯🇵 日本_tg@univstar_68
+      - 🇸🇬 新加坡 | 负载均衡
+      - 国内中转_tg@univstar_21
+      - 国内中转_tg@univstar_75
+      - 国内中转_tg@univstar_114
+      - 🇯🇵 日本防失联×2
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇸🇬 TG频道:@kxswa|🇸🇬 新加坡C
+      - 🇺🇸 拉斯维加斯×0.5
+      - 🇨🇦 加拿大 | 负载均衡
+      - 国内中转_tg@univstar_52
+      - 🇺🇸 美国_tg@univstar_48
+      - HK8
+      - 🇳🇱 TG频道:@kxswa|🇳🇱 荷兰A
+      - 🇭🇰 HongKong-06
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - 国内中转_tg@univstar_144
+      - 🇨🇳 台湾_tg@univstar_17
+      - 🇭🇰 香港 實驗性C/02 x1.0
+      - 🇰🇷 韩国_tg@univstar_32
+      - 🇹🇭 TG频道:@kxswa|泰国
+      - 国内中转_tg@univstar_66
+      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡02
+      - 🇯🇵 JP 2 → openitsub.com
+      - 🇨🇳 TG频道:@kxswa|台湾
+      - 国内中转_tg@univstar_103
+      - 🇺🇸 美国_tg@univstar_19
+      - 国内中转_tg@univstar_74
+      - 🇯🇵 TG频道:@kxswa|🇯🇵 日本A
+      - 国内中转_tg@univstar_157
+      - 🇭🇰 香港 08丨1x HK
+      - 🇰🇷 韩国(TG频道:@kxswa)
+      - 国内中转_tg@univstar_54
+      - 🇮🇳 印度 | 负载均衡
+      - 台灣 A/01 x1.0
+      - 🇭🇰 日本D | 海港专线 | 倍率x1
+      - 🇭🇰 HongKong-07
+      - 🇨🇳 CN 4 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 国内中转_tg@univstar_111
+      - 国内中转_tg@univstar_44
+      - 🇫🇷 TG频道:@kxswa|法国
+      - 🇸🇬 TG频道:@kxswa|新加坡
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇭🇰 HongKong-11
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
