@@ -135,7 +135,7 @@ def write_document():
         #减少获取的个数
         r = 1
         length = len(end_bas64_A)  # 总长
-        m = 6  # 切分成多少份
+        m = 8  # 切分成多少份
         step = int(length / m) + 1  # 每份的长度
         for i in range(0, length, step):
             zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
