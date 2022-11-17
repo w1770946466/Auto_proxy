@@ -16,7 +16,7 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = ['https://openit.daycat.space/long','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
+e_sub = ['https://openit.daycat.space/long','http://file.52nfw.cn/word/obtain.php?user=111111&id=1','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/v2ray','https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
 
 
 
