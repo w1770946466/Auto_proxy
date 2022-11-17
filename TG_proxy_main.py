@@ -139,6 +139,7 @@ def write_document():
         m = 8  # 切分成多少份
         step = int(length / m) + 1  # 每份的长度
         for i in range(0, length, step):
+            print("起",i,"始",i+step)
             zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
             #将获得的节点变成base64加密，为了长期订阅
             obj = base64.b64encode(zhengli.encode())
