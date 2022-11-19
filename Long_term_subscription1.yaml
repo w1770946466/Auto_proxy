@@ -5,781 +5,909 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 中国(TG频道:@kxswa), server: fly4.fastestcloud.xyz, port: 30014, type: vmess, uuid: 9eb38f47-47d3-46c7-915f-5d7b6ebe6999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: fly4.fastestcloud.xyz}}, udp: true}
-  - {name: 🇯🇵 【I】日本 VIP 7 - Azure, server: nf7.boom.skin, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: "🇨🇳 台湾②{联通|V2ray}", server: cu.awslcn.cc, port: 25232, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
-  - {name: 🇭🇰 香港-tg+univstar-32, server: 8.210.203.189, port: 37309, type: vmess, uuid: 74cdcc28-a0bc-421f-bd15-c6a6e401b523, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa), server: 53.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 53.72img.xyz}}, udp: true}
-  - {name: 🇭🇰 【J】香港 VIP 6 - Netflix, server: nj6.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇷🇺 【E】俄罗斯  VIP 2 - RT, server: s103.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 【I】日本 VIP A - Azure, server: nf10.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 【GAME】香港 VIP 1 - HGC, server: ntemp25.boom.skin, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 【GAME】香港  VIP 3 - HGC, server: n27.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 香港SSR|tg频道:@ripaojiedian, server: n32.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 38285:ePyE6A, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇸🇬 ❗若链接超时请更新订阅, server: 127.0.0.1, port: 1234, type: ss, cipher: chacha20-ietf-poly1305, password: 2d9b2fd2-3be3-49a5-9af0-59b7ae64aa52, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾_台北_1, server: 112.6.212.141, port: 49008, type: trojan, password: a46d0f82-462a-472f-a296-2ea55b36f4b8, sni: tw-a.bbbb.pw, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本29, server: 29.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 29.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 29.72img.xyz}}, udp: true}
-  - {name: 🇺🇸 US 3 → openitsub.com, server: 168.138.94.194, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 168.138.94.194}}, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa), server: hgc.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【K】新加坡 普通 4 - DO, server: nkb.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇦🇺 澳大利亚(TG频道:@kxswa), server: 129.154.57.134, port: 26282, type: vmess, uuid: cabbdf5d-3cca-4605-ba1c-c89a7d5b4c07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa) 2, server: 167.88.61.50, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇸🇬 【K】新加坡 普通 3 - DO, server: nka.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇮🇳 印度✈️15, server: 15.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 15.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 15.72img.xyz}}, udp: true}
-  - {name: "🇭🇰 [BGP-RSV]香港BGP", server: ap-northeast.6641634715834932.me, port: 443, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-hk.optage.moe, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【C】狮城  VIP 6 - 阿里云, server: n48.boom.skin, port: 36000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: diana.cn.iepl.hdsky.org, port: 31039, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
-  - {name: 🇨🇳 CN 4 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 3, server: 113.31.124.147, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: 🇯🇵 【N】日本 普通 4 - Nerocloud, server: jp4.boom.skin, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇺🇸 美国-tg+univstar-37, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: false, udp: true}
+  - {name: tg频道:@sharingnode, server: shanghai.yd.cn.interface.buzz, port: 20632, type: trojan, password: 07bd5bd8-2a2f-4c56-bd10-7616f92a79d0, sni: jpmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 DE 5 → openitsub.com, server: au3-1.vegemitepie.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【M】香港  VIP F - Leaseweb, server: n61.boom.skin, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇯🇵 【N】日本 VIP 5 - Nerocloud, server: jp10.boom.skin, port: 39000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇯🇵 【N】日本 普通 2 - Nerocloud, server: jp2.boom.skin, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: tg频道:@sharingnode 2, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: tg频道:@sharingnode 3, server: 1.1808.cf, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港, server: 112.28.226.244, port: 41687, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hkyp.apirocket.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度-Trojan, server: in01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: in01.awcloud.top, skip-cert-verify: false, udp: true}
+  - {name: 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路, server: catnet-moble.gatknqh.cn, port: 11045, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
+  - {name: 🇬🇧 GB 3 → openitsub.com, server: hk1-2.dimsumyumcha.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false, udp: true}
+  - {name: tg频道:@sharingnode 4, server: 172.64.152.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: 🇭🇰 【N】香港 普通 1 - Nearoute, server: nn8.boom.skin, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇻🇳 越南10, server: 10.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 10.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 10.72img.xyz}}, udp: true}
+  - {name: 🇲🇾 【L】马来西亚  VIP 1 - TMNet, server: s101.boom.skin, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 24 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3605, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: tg频道:@sharingnode 5, server: gzct.daodecloud.com, port: 10694, type: trojan, password: 07bd5bd8-2a2f-4c56-bd10-7616f92a79d0, sni: sgmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国-tg+univstar-19, server: 144.24.150.126, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: "🇺🇸 美国01{优化1|V2ray}", server: us1.awslcn.cc, port: 25239, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
+  - {name: 🇸🇬 【F】新加坡  VIP 1 - Linode, server: n17.boom.skin, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇯🇵 【N】日本 VIP 15 - Nerocloud, server: jp20.boom.skin, port: 38100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: "🇭🇰 香港03{优化1|V2ray}", server: hk1.awslcn.cc, port: 25248, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}, udp: true}
+  - {name: (TG频道:@kxswa), server: mzyglc.xyz, port: 2086, type: vmess, uuid: 2deba385-c19c-4f77-958e-dde0bcdddff5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@heinuhome, headers: {Host: heinuhome-awsus.heinu.cf}}, udp: true}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: pr1.jymzffbquawl.com, port: 3603, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 🇨🇳 CN 34 → openitsub.com, server: bs3.jymzffbquawl.com, port: 5602, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 🇺🇸 美国-tg+univstar-18, server: 155.248.241.52, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 155.248.241.52}}, udp: true}
+  - {name: 🇭🇰 香港x1.6, server: 183.60.211.66, port: 6019, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "🇯🇵 日本04{优化2|V2ray}", server: jp2.awslcn.cc, port: 25220, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}, udp: true}
+  - {name: 🇯🇵 【N】日本 VIP 3 - Nerocloud, server: jp8.boom.skin, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 115 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19021, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa), server: apollo.cn.v4.hdsky.org, port: 39207, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
+  - {name: 🇭🇰 香港x1.6 2, server: 183.60.211.66, port: 6013, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 CN 112 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19025, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 🇭🇰 【J】香港 VIP E - Netflix, server: nje.boom.skin, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇺🇸 US 2 → openitsub.com, server: 168.138.94.194, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 168.138.94.194}}, udp: true}
   - {name: 🇮🇱 TG频道:@kxswa|以色列01, server: guangzhou.yd.cn.interface.buzz, port: 35927, type: ss, cipher: chacha20-ietf-poly1305, password: 83820a2c-3712-4e34-979b-ee449aeba891, udp: true}
-  - {name: 🇭🇰 【N】香港 VIP 9 - Nearoute, server: nn13.boom.skin, port: 52000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 16 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
-  - {name: tg频道:@sharingnode, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 🇺🇸 美国-tg+univstar-56, server: listener.freetrade.link, port: 443, type: trojan, password: Z9TS0AeB8S5ZlpFNRea3aypDaXISOyzY67xCO33lF4gKq38jw2uDEnDYRCCxAc, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|狮城01-中转, server: guangzhou.yd.cn.interface.buzz, port: 10819, type: ss, cipher: chacha20-ietf-poly1305, password: 83820a2c-3712-4e34-979b-ee449aeba891, udp: true}
-  - {name: 🇭🇰 Hong Kong | 01, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20001, type: trojan, password: 5CCA3914-B89F-12C6-0612-219D7A23C9F9, sni: v12.kwaicdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【M】香港 VIP 2 - Netflix, server: nm2.boom.skin, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港, server: 112.28.226.244, port: 14541, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: hka.apirocket.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港x1.6, server: 183.60.211.66, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: "🇭🇰 香港02{优化2|V2ray}", server: hk2.awslcn.cc, port: 25242, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk2.awslcn.cc}}, udp: true}
+  - {name: 🇸🇬 【L】新加坡  VIP1 - Netflix, server: nl1.boom.skin, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇨🇦 加拿大✈️42, server: 42.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 42.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 42.72img.xyz}}, udp: true}
+  - {name: 🇺🇸 【C】美国 VIP 1 - Netflix, server: us5.edge.boom.skin, port: 44001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路, server: catnet-moble.gatknqh.cn, port: 11042, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
+  - {name: 🇭🇰 【O】香港 普通 3 - Leaseweb, server: opt3.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: tg频道:@sharingnode 6, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 3d683981-c68c-43ca-a91b-ae71bfcbf365, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /3d683981, headers: {Host: philip-did-disclaimers-bill.trycloudflare.com}}, udp: true}
+  - {name: tg频道:@sharingnode 7, server: shanghai.yd.cn.interface.buzz, port: 62566, type: trojan, password: 07bd5bd8-2a2f-4c56-bd10-7616f92a79d0, sni: ru02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【B】香港  普通 3 - Nearoute, server: n62.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇸🇬 【F】新加坡  VIP A - Linode, server: n11.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: tg频道:@sharingnode 8, server: guangzhou.yd.cn.interface.buzz, port: 18335, type: trojan, password: 07bd5bd8-2a2f-4c56-bd10-7616f92a79d0, sni: tw002.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: apollo.cn.v4.hdsky.org, port: 28178, type: ss, cipher: chacha20-ietf-poly1305, password: f32f863d-2e3c-4bf3-9f95-049f22e2302d, udp: true}
+  - {name: 🇸🇬 新加坡 非自制剧专用, server: zf.gz.cu.edu.kg, port: 52537, type: ss, cipher: chacha20-ietf-poly1305, password: 6bf8967e-5f0b-454d-ad3d-0109d42b6978, udp: true}
+  - {name: 🇭🇰 香港x1.6 3, server: 183.60.211.66, port: 6020, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇨🇳 CN 132 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19031, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 雨燕云免费到过年, server: 127.0.0.1, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: 83820a2c-3712-4e34-979b-ee449aeba891, udp: true}
+  - {name: 🇭🇰 【O】香港 VIP 5 - Leaseweb, server: opt10.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇭🇰 香港x1.6 4, server: 183.60.211.66, port: 3726, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路, server: catnet-moble.gatknqh.cn, port: 11039, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
+  - {name: 🇸🇬 新加坡-tg+univstar-12, server: 54.251.73.154, port: 14961, type: trojan, password: 2351c608-9c6b-424b-aad1-36a002e57fea, sni: sgmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: "🇺🇸 美国02{优化2|V2ray}", server: us2.awslcn.cc, port: 25239, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.cc}}, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|日本, server: 118.212.143.56, port: 40469, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: jpa.apirocket.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 65 → openitsub.com, server: gz.cm.izhimajiasu.com, port: 45333, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: 🇨🇳 CN 47 → openitsub.com, server: official.tokyometropolis.chernigov.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港3, server: 3.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 3.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 3.72img.xyz}}, udp: true}
+  - {name: 🇨🇳 CN 63 → openitsub.com, server: sh.cm.izhimajiasu.com, port: 45002, type: ss, cipher: chacha20-ietf-poly1305, password: 79a55a5b-4d2a-4143-8484-1cc5b3b471da, udp: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa), server: cdn.chigua.tk, port: 443, type: vmess, uuid: 25c3f31d-f287-4cf4-9271-ec6985cab8e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /25c3f31d, headers: {Host: pendant-de-purposes-alert.trycloudflare.com}}, udp: true}
+  - {name: 🇭🇰 【O】香港 普通 6 - Leaseweb, server: opt16.boom.skin, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇭🇰 【M】香港 VIP X - Leaseweb, server: n115.boom.skin, port: 30000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇦🇺 TG频道:@kxswa|澳大利亚01, server: 60.13.101.187, port: 22234, type: vmess, uuid: 2e224c86-8e0f-45da-aa7c-7adf75aebd23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港x1.8, server: 183.60.211.70, port: 6006, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇭🇰 【A】香港 普通 E - Nearoute, server: ntemp19.boom.skin, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 136 → openitsub.com, server: usstartus2.eucdurl.me, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: 🇨🇳 CN 91 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19053, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 🇭🇰 香港x1.8 2, server: 183.60.211.66, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇯🇵 日本1|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇺 【E】俄罗斯  VIP 3 - RT, server: s104.boom.skin, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 CN 9 → openitsub.com, server: bs1.jymzffbquawl.com, port: 3608, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 🇯🇵 【N】日本 VIP 7 - Nerocloud, server: jp12.boom.skin, port: 39200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇯🇵 日本东京|tg频道:@ripaojiedian, server: 131.186.36.18, port: 17201, type: vmess, uuid: afe81215-240e-494d-fa75-5b7e6c47ba2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tic}, udp: true}
+  - {name: 🇸🇬 【L】新加坡  VIP7 - Netflix, server: nl7.boom.skin, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇸🇬 【K】新加坡 普通 4 - DO, server: nkb.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇯🇵 JP 11 → openitsub.com, server: os2-3.crabyakiniku.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 81 → openitsub.com, server: cminit.debugspace.work, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: 🇯🇵 JP 9 → openitsub.com, server: os2-4.crabyakiniku.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【B】香港 普通 9 - Nearoute, server: ntemp09.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇰🇷 韩国|tg频道:@ripaojiedian, server: ap-northeast.6641634715834932.me, port: 443, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-kr.optage.moe, skip-cert-verify: false, udp: true}
+  - {name: (TG频道:@kxswa) 2, server: ip.skk.moe, port: 2086, type: vmess, uuid: e91c45c9-2c0f-46a9-c56d-21663b9e2c18, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: buyvm.cloudflare.quest}}, udp: true}
   - {name: 🇭🇰 【J】香港 VIP B - Netflix, server: njb.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: (TG频道:@kxswa), server: ip.skk.moe, port: 2082, type: vmess, uuid: a850edb6-bdcb-4533-97fd-8427a604bd41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dosgWyyOCcdBFwMVKuak.6577617.xyz}}, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港01 2, server: hk1.trumpmvp.com, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: d69a3677-9d4f-44bf-a2c7-e7a39c1cf90b, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本02, server: 60.13.101.187, port: 10998, type: vmess, uuid: 2e224c86-8e0f-45da-aa7c-7adf75aebd23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港02 2, server: hk2.trumpmvp.com, port: 31000, type: vmess, uuid: d69a3677-9d4f-44bf-a2c7-e7a39c1cf90b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /adad, headers: {Host: hk2.trumpmvp.com}}, udp: true}
-  - {name: 🇭🇰 香港x1.8, server: 183.60.211.66, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁, server: catnet-moble.gatknqh.cn, port: 11001, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
-  - {name: 🇨🇳 CN 37 → openitsub.com, server: bs3.jymzffbquawl.com, port: 5601, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
-  - {name: 🇺🇸 US 4 → openitsub.com, server: 20.247.111.40, port: 42310, type: trojan, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾(TG频道:@kxswa), server: 211.75.11.74, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 🇩🇪 法兰克福✈️54, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 54.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 54.72img.xyz}}, udp: true}
-  - {name: 🇨🇳 CN 20 → openitsub.com, server: bs3.jymzffbquawl.com, port: 3046, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
-  - {name: 🇺🇸 美国-Trojan, server: us01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: us01.awcloud.top, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 32 → openitsub.com, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: 45353F71-8408-61F3-C466-2DF6FCC90DFF, sni: v12.kwaicdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港x3, server: 183.60.211.69, port: 2112, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇭🇰 香港(TG频道:@kxswa), server: hgc.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, skip-cert-verify: false, udp: true}
+  - {name: tg+univstar-5, server: 198.41.212.145, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}, udp: true}
+  - {name: "🇩🇪 德国02{联通|V2ray}", server: cu.awslcn.cc, port: 25241, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: 🇨🇳 CN 102 → openitsub.com, server: cdn-cn.nekocloud.cn, port: 19054, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 135594:8SRFZ2, obfs-param: 43235135594.wns.windows.com, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 3, server: 125.94.215.64, port: 45535, type: ss, cipher: chacha20-ietf-poly1305, password: 8a4b7ed7-3e24-48d5-93d2-2c58a2e8305d, udp: true}
+  - {name: 🇭🇰 【IEPL】香港 普通 4 - Nearoute, server: nk4.boom.skin, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇯🇵 【N】日本 VIP 8 - Nerocloud, server: jp13.boom.skin, port: 39300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 🇬🇧 GB 4 → openitsub.com, server: hk1-8.dimsumyumcha.com, port: 443, type: trojan, password: drpzqcrmquWSuZKNd7, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港x1.8 3, server: 183.60.211.70, port: 6017, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: plain, protocol-param: 87993:SkSHlj, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 🇭🇰 【M】香港 VIP 6 - Netflix, server: nm6.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: "🇯🇵 日本03{优化1|V2ray}", server: jp1.awslcn.cc, port: 25220, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}, udp: true}
+  - {name: 🇸🇬 新加坡-tg+univstar-16, server: 54.251.73.154, port: 10291, type: trojan, password: bf117f86-45b1-465b-82df-7656c224cb08, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡-Trojan①, server: sg01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: sg01.awcloud.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 【B】香港 普通 2 - Nearoute, server: ntemp02.boom.skin, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: "🇺🇸 美国04{优化1|V2ray}", server: us1.awslcn.cc, port: 25255, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
+  - {name: 🇨🇳 CN 127 → openitsub.com, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口, server: hk-test.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 CN 49 → openitsub.com, server: 14.215.164.183, port: 29516, type: ss, cipher: chacha20-ietf-poly1305, password: 2d9b2fd2-3be3-49a5-9af0-59b7ae64aa52, udp: true}
+  - {name: tg频道:@sharingnode 9, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: false, udp: true}
   - {name: 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路, server: catnet-moble.gatknqh.cn, port: 11046, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
-  - {name: "🇰🇷 韩国01{移动|V2ray}", server: cm.awslcn.cc, port: 25218, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
-  - {name: 🇭🇰 【J】香港 VIP 8 - Netflix, server: nj8.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 【J】香港 VIP 7 - Netflix, server: nj7.boom.skin, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本, server: 118.212.143.56, port: 55294, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: jpc.apirocket.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路, server: catnet-moble.gatknqh.cn, port: 11040, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
-  - {name: 🇭🇰 香港-tg+univstar-7, server: 16.162.223.207, port: 443, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-jp.optage.moe, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【O】香港 普通 7 - Leaseweb, server: opt17.boom.skin, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇨🇦 加拿大-tg+univstar-17, server: 46.102.156.61, port: 48080, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口, server: hk-6.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇯🇵 【I】日本 VIP 5 - Azure, server: nf5.boom.skin, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: "🇸🇬 新加坡02{优化1|V2ray}", server: sg1.awslcn.cc, port: 25243, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.cc}}, udp: true}
-  - {name: tg频道:@sharingnode 2, server: 17.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 17.72img.xyz}}, udp: true}
-  - {name: tg频道:@sharingnode 3, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 3d683981-c68c-43ca-a91b-ae71bfcbf365, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /3d683981, headers: {Host: philip-did-disclaimers-bill.trycloudflare.com}}, udp: true}
-  - {name: 🇬🇧 TG频道:@kxswa|英国01, server: guangzhou.yd.cn.interface.buzz, port: 15197, type: ss, cipher: chacha20-ietf-poly1305, password: 83820a2c-3712-4e34-979b-ee449aeba891, udp: true}
-  - {name: 🇭🇰 【GAME】香港  VIP 6 - HGC, server: n92.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口, server: hk-iv.pannode.top, port: 80, type: vmess, uuid: 20ef9965-3733-44b3-8fe5-b5447c6d9c9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: tg频道:@sharingnode 4, server: ca.xlkjjs.top, port: 16268, type: vmess, uuid: ff40b10a-4f0e-3cba-9123-808c931cbd60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ca.xlkjjs.top}}, udp: true}
-  - {name: 🇭🇰 【GAME】香港 VIP 5 - HGC, server: n100.boom.skin, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: "🇸🇬 新加坡05{优化2|V2ray}", server: sg2.awslcn.cc, port: 25252, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
-  - {name: "🇸🇬 新加坡04{优化2|V2ray}", server: sg2.awslcn.cc, port: 25246, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
-  - {name: 🇳🇱 荷兰-tg+univstar-65, server: 213.183.51.171, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: 🇭🇰 【J】香港 VIP C - Netflix, server: njc.boom.skin, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: tg频道:@sharingnode 5, server: 20.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.72img.xyz}}, udp: true}
-  - {name: "🇭🇰 香港01{优化1|V2ray}", server: hk1.awslcn.cc, port: 25242, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国, server: 36.133.78.152, port: 25029, type: vmess, uuid: b9f7f486-92d2-4cf5-8e4c-f1d602ae419f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /qingzhuanduoyun, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 🇨🇦 加拿大✈️41, server: 41.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 41.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 41.72img.xyz}}, udp: true}
-  - {name: 🇭🇰 【O】香港 VIP 12 - Leaseweb, server: opt22.boom.skin, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇸🇬 新加坡-tg+univstar-10, server: 54.251.73.154, port: 30217, type: trojan, password: e385048a-2f5f-48eb-b810-ea3715638ef3, sni: sgmax02.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【I】日本 VIP 4 - Azure, server: nf4.boom.skin, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇮🇳 印度22, server: 22.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 22.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 22.72img.xyz}}, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本02 2, server: jp2.trumpmvp.com, port: 18521, type: ss, cipher: chacha20-ietf-poly1305, password: d69a3677-9d4f-44bf-a2c7-e7a39c1cf90b, udp: true}
-  - {name: 🇸🇬 新加坡-tg+univstar-48, server: trojan3.udpgw.com, port: 443, type: trojan, password: 8db1b560-019d-11ed-8bdf-1239d0255272, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港03, server: 36.158.206.210, port: 52000, type: vmess, uuid: 2e224c86-8e0f-45da-aa7c-7adf75aebd23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 中国-tg+univstar-23, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁, server: catnet-moble.gatknqh.cn, port: 11002, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa) 3, server: cdn.chigua.tk, port: 443, type: vmess, uuid: bea4a9b4-2ba4-4ed6-8247-7ea68d7f0112, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /bea4a9b4, headers: {Host: reduction-accomplish-entities-surname.trycloudflare.com}}, udp: true}
-  - {name: "🇰🇷 韩国02{联通|V2ray}", server: cu.awslcn.cc, port: 25218, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
-  - {name: 🇭🇰 【O】香港 普通 8 - Leaseweb, server: opt18.boom.skin, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 日本-tg+univstar-40, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode 6, server: 14.215.162.120, port: 10427, type: trojan, password: 07bd5bd8-2a2f-4c56-bd10-7616f92a79d0, sni: jpmax05.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 TG频道:@kxswa|韩国03, server: 36.158.206.210, port: 52003, type: vmess, uuid: 2e224c86-8e0f-45da-aa7c-7adf75aebd23, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -802,98 +930,114 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇨🇳 台湾②{联通|V2ray}
-      - 🇭🇰 香港-tg+univstar-32
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇭🇰 【J】香港 VIP 6 - Netflix
-      - 🇷🇺 【E】俄罗斯  VIP 2 - RT
-      - 🇯🇵 【I】日本 VIP A - Azure
-      - 🇭🇰 【GAME】香港 VIP 1 - HGC
-      - 🇭🇰 【GAME】香港  VIP 3 - HGC
-      - 🇭🇰 香港SSR|tg频道:@ripaojiedian
-      - 🇸🇬 ❗若链接超时请更新订阅
-      - 🇨🇳 TG频道:@kxswa|台湾_台北_1
-      - 🇯🇵 日本29
-      - 🇺🇸 US 3 → openitsub.com
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇸🇬 【K】新加坡 普通 4 - DO
-      - 🇦🇺 澳大利亚(TG频道:@kxswa)
-      - 🇺🇸 美国(TG频道:@kxswa) 2
-      - 🇸🇬 【K】新加坡 普通 3 - DO
-      - 🇮🇳 印度✈️15
-      - 🇭🇰 [BGP-RSV]香港BGP
-      - 🇸🇬 【C】狮城  VIP 6 - 阿里云
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 4 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇮🇱 TG频道:@kxswa|以色列01
-      - 🇭🇰 【N】香港 VIP 9 - Nearoute
-      - 🇨🇳 CN 16 → openitsub.com
+      - 🇯🇵 【N】日本 普通 4 - Nerocloud
+      - 🇺🇸 美国-tg+univstar-37
       - tg频道:@sharingnode
-      - 🇺🇸 美国-tg+univstar-56
-      - 🇸🇬 TG频道:@kxswa|狮城01-中转
-      - 🇭🇰 Hong Kong | 01
-      - 🇭🇰 【M】香港 VIP 2 - Netflix
-      - 🇭🇰 TG频道:@kxswa|香港
-      - 🇭🇰 香港x1.6
-      - 🇭🇰 【J】香港 VIP B - Netflix
-      - (TG频道:@kxswa)
-      - 🇭🇰 TG频道:@kxswa|香港01 2
-      - 🇯🇵 TG频道:@kxswa|日本02
-      - 🇭🇰 TG频道:@kxswa|香港02 2
-      - 🇭🇰 香港x1.8
-      - 🇭🇰 TG频道:@kxswa|香港 01 | IPV6解锁
-      - 🇨🇳 CN 37 → openitsub.com
-      - 🇺🇸 US 4 → openitsub.com
-      - 🇨🇳 台湾(TG频道:@kxswa)
-      - 🇩🇪 法兰克福✈️54
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇺🇸 美国-Trojan
-      - 🇨🇳 CN 32 → openitsub.com
-      - 🇭🇰 香港x3
-      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
-      - 🇰🇷 韩国01{移动|V2ray}
-      - 🇭🇰 【J】香港 VIP 8 - Netflix
-      - 🇭🇰 【J】香港 VIP 7 - Netflix
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇬🇧 TG频道:@kxswa|英国 02 | 标准线路
-      - 🇭🇰 香港-tg+univstar-7
-      - 🇭🇰 【O】香港 普通 7 - Leaseweb
-      - 🇨🇦 加拿大-tg+univstar-17
-      - 🇭🇰 TG频道:@kxswa|香港-6|1G|80端口
-      - 🇯🇵 【I】日本 VIP 5 - Azure
-      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇩🇪 DE 5 → openitsub.com
+      - 🇭🇰 【M】香港  VIP F - Leaseweb
+      - 🇯🇵 【N】日本 VIP 5 - Nerocloud
+      - 🇯🇵 【N】日本 普通 2 - Nerocloud
       - tg频道:@sharingnode 2
       - tg频道:@sharingnode 3
-      - 🇬🇧 TG频道:@kxswa|英国01
-      - 🇭🇰 【GAME】香港  VIP 6 - HGC
-      - 🇭🇰 TG频道:@kxswa|香港-IV|10G|80端口
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇮🇳 印度-Trojan
+      - 🇵🇭 TG频道:@kxswa|菲律宾 01 | 标准线路
+      - 🇬🇧 GB 3 → openitsub.com
       - tg频道:@sharingnode 4
-      - 🇭🇰 【GAME】香港 VIP 5 - HGC
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇳🇱 荷兰-tg+univstar-65
-      - 🇭🇰 【J】香港 VIP C - Netflix
+      - 🇭🇰 【N】香港 普通 1 - Nearoute
+      - 🇻🇳 越南10
+      - 🇲🇾 【L】马来西亚  VIP 1 - TMNet
+      - 🇨🇳 CN 24 → openitsub.com
       - tg频道:@sharingnode 5
-      - 🇭🇰 香港01{优化1|V2ray}
-      - 🇺🇸 TG频道:@kxswa|美国
-      - 🇨🇦 加拿大✈️41
-      - 🇭🇰 【O】香港 VIP 12 - Leaseweb
-      - 🇸🇬 新加坡-tg+univstar-10
-      - 🇯🇵 【I】日本 VIP 4 - Azure
-      - 🇮🇳 印度22
-      - 🇯🇵 TG频道:@kxswa|日本02 2
-      - 🇸🇬 新加坡-tg+univstar-48
-      - 🇭🇰 TG频道:@kxswa|香港03
-      - 中国-tg+univstar-23
-      - 🇭🇰 TG频道:@kxswa|香港 02 | IPV6解锁
-      - 🇺🇸 美国(TG频道:@kxswa) 3
-      - 🇰🇷 韩国02{联通|V2ray}
-      - 🇭🇰 【O】香港 普通 8 - Leaseweb
-      - 🇯🇵 日本-tg+univstar-40
+      - 🇬🇧 英国-tg+univstar-19
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇸🇬 【F】新加坡  VIP 1 - Linode
+      - 🇯🇵 【N】日本 VIP 15 - Nerocloud
+      - 🇭🇰 香港03{优化1|V2ray}
+      - (TG频道:@kxswa)
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇨🇳 CN 34 → openitsub.com
+      - 🇺🇸 美国-tg+univstar-18
+      - 🇭🇰 香港x1.6
+      - 🇯🇵 日本04{优化2|V2ray}
+      - 🇯🇵 【N】日本 VIP 3 - Nerocloud
+      - 🇨🇳 CN 115 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇭🇰 香港x1.6 2
+      - 🇨🇳 CN 112 → openitsub.com
+      - 🇭🇰 【J】香港 VIP E - Netflix
+      - 🇺🇸 US 2 → openitsub.com
+      - 🇮🇱 TG频道:@kxswa|以色列01
+      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇸🇬 【L】新加坡  VIP1 - Netflix
+      - 🇨🇦 加拿大✈️42
+      - 🇺🇸 【C】美国 VIP 1 - Netflix
+      - 🇮🇳 TG频道:@kxswa|印度 02 | 标准线路
+      - 🇭🇰 【O】香港 普通 3 - Leaseweb
       - tg频道:@sharingnode 6
+      - tg频道:@sharingnode 7
+      - 🇭🇰 【B】香港  普通 3 - Nearoute
+      - 🇸🇬 【F】新加坡  VIP A - Linode
+      - tg频道:@sharingnode 8
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇸🇬 新加坡 非自制剧专用
+      - 🇭🇰 香港x1.6 3
+      - 🇨🇳 CN 132 → openitsub.com
+      - 雨燕云免费到过年
+      - 🇭🇰 【O】香港 VIP 5 - Leaseweb
+      - 🇭🇰 香港x1.6 4
+      - 🇬🇧 TG频道:@kxswa|英国 01 | 标准线路
+      - 🇸🇬 新加坡-tg+univstar-12
+      - 🇺🇸 美国02{优化2|V2ray}
+      - 🇯🇵 TG频道:@kxswa|日本
+      - 🇨🇳 CN 65 → openitsub.com
+      - 🇨🇳 CN 47 → openitsub.com
+      - 🇭🇰 香港3
+      - 🇨🇳 CN 63 → openitsub.com
+      - 🇺🇸 美国(TG频道:@kxswa)
+      - 🇭🇰 【O】香港 普通 6 - Leaseweb
+      - 🇭🇰 【M】香港 VIP X - Leaseweb
+      - 🇦🇺 TG频道:@kxswa|澳大利亚01
+      - 🇭🇰 香港x1.8
+      - 🇭🇰 【A】香港 普通 E - Nearoute
+      - 🇨🇳 CN 136 → openitsub.com
+      - 🇨🇳 CN 91 → openitsub.com
+      - 🇭🇰 香港x1.8 2
+      - 🇯🇵 日本1|tg频道:@ripaojiedian
+      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
+      - 🇨🇳 CN 9 → openitsub.com
+      - 🇯🇵 【N】日本 VIP 7 - Nerocloud
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇸🇬 【L】新加坡  VIP7 - Netflix
+      - 🇸🇬 【K】新加坡 普通 4 - DO
+      - 🇯🇵 JP 11 → openitsub.com
+      - 🇨🇳 CN 81 → openitsub.com
+      - 🇯🇵 JP 9 → openitsub.com
+      - 🇭🇰 【B】香港 普通 9 - Nearoute
+      - 🇰🇷 韩国|tg频道:@ripaojiedian
+      - (TG频道:@kxswa) 2
+      - 🇭🇰 【J】香港 VIP B - Netflix
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - tg+univstar-5
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇳 CN 102 → openitsub.com
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇭🇰 【IEPL】香港 普通 4 - Nearoute
+      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
+      - 🇬🇧 GB 4 → openitsub.com
+      - 🇭🇰 香港x1.8 3
+      - 🇭🇰 【M】香港 VIP 6 - Netflix
+      - 🇯🇵 日本03{优化1|V2ray}
+      - 🇸🇬 新加坡-tg+univstar-16
+      - 🇸🇬 新加坡-Trojan①
+      - 🇭🇰 【B】香港 普通 2 - Nearoute
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇨🇳 CN 127 → openitsub.com
+      - 🇭🇰 TG频道:@kxswa|香港-测试|1G|80端口
+      - 🇨🇳 CN 49 → openitsub.com
+      - tg频道:@sharingnode 9
+      - 🇵🇭 TG频道:@kxswa|菲律宾 02 | 标准线路
+      - 🇰🇷 TG频道:@kxswa|韩国03
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
