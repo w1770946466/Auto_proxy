@@ -5,1645 +5,1261 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡 B/02 x1.0, server: 183.255.114.164, port: 61002, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 CA@vpnpool, server: 36.134.172.45, port: 20051, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本_R_22, server: wz.safetelescope.cc, port: 10019, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_28, server: pr1.jymzffbquawl.com, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
-  - {name: 🇯🇵 【N】日本 VIP 10 - Nerocloud, server: jp15.boom.skin, port: 39500, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 JP@vpnhat, server: 14.18.93.168, port: 20034, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 79 → openitsub.com, server: 36.134.172.45, port: 20044, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 法兰克福✈️51, server: 51.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 51.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 51.72img.xyz}}, udp: true}
-  - {name: 🇺🇸 美国|tg频道:@ripaojiedian, server: 121.14.201.41, port: 51580, type: vmess, uuid: d418c9e9-1893-4838-b405-f21f7dbf9e26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /qp4ZdPY0/}, udp: true}
-  - {name: 🇺🇸 US@vpnpool, server: 36.134.172.45, port: 20046, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港@EXM3U, server: 117.149.247.11, port: 20008, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 B/05 x1.0, server: 183.255.114.164, port: 21005, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇪🇸 ES@EXM3U, server: 117.149.247.11, port: 20059, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US@vpnpool 2, server: 36.134.172.45, port: 20047, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 新网址：sockboom.app, server: www.google.com, port: 1, type: ssr, cipher: aes-256-cfb, password: breakwall, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇨🇳 CN 70 → openitsub.com, server: 36.134.172.45, port: 20035, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 GB@EXM3U, server: 117.149.247.11, port: 20052, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: BR@vpnhat, server: 14.18.93.168, port: 20063, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 美国01{优化1|V2ray}", server: us1.awslcn.cc, port: 25239, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
-  - {name: 🇯🇵 【N】日本 VIP 13 - Nerocloud, server: jp18.boom.skin, port: 39800, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: ZA@EXM3U, server: 117.149.247.11, port: 20071, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度22, server: 22.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 22.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 22.72img.xyz}}, udp: true}
-  - {name: 🇺🇸 US@EXM3U, server: 117.149.247.11, port: 20041, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 美国02{优化2|V2ray}", server: us2.awslcn.cc, port: 25239, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.cc}}, udp: true}
-  - {name: 🇻🇳 越南_R_380, server: yc.safetelescope.cc, port: 21738, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: VN@EXM3U, server: 117.149.247.11, port: 20069, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国_R_523, server: sh163.safetelescope.cc, port: 62301, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: BR@EXM3U, server: 117.149.247.11, port: 20063, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港@vpnpool, server: 36.134.172.45, port: 20004, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_3, server: 114.80.32.51, port: 233, type: trojan, password: 89cd0b3e-b9c1-4f76-8a96-0a6c6d1e8f71, sni: wel-kr.optage.moe, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode, server: guangzhou.yd.cn.interface.buzz, port: 18335, type: trojan, password: 07bd5bd8-2a2f-4c56-bd10-7616f92a79d0, sni: tw002.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 NL@vpnhat, server: 14.18.93.168, port: 20057, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 KR@EXM3U, server: 117.149.247.11, port: 20065, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: CL@vpnhat, server: 14.18.93.168, port: 20064, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0, server: 183.245.146.6, port: 12192, type: ss, cipher: aes-256-gcm, password: 93fa3eb3-7355-4989-872c-a0535ee28166, udp: true}
-  - {name: 🇭🇰 【B】香港 普通 1 - Leaseweb, server: n06.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇩🇪 DE@EXM3U, server: 117.149.247.11, port: 20054, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai, server: zhuanfa01.suyun.live, port: 32362, type: trojan, password: 3d634a9c-f7a5-3f79-8947-074e69a2454b, sni: yingguo12.suyun.live, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode 2, server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 🇺🇸 【C】美国 VIP 6 - CC, server: us10.edge.boom.skin, port: 49001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇸🇬 SG@vpnhat, server: 14.18.93.168, port: 20028, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国02|中转, server: 14.215.164.183, port: 29516, type: ss, cipher: chacha20-ietf-poly1305, password: 2d9b2fd2-3be3-49a5-9af0-59b7ae64aa52, udp: true}
-  - {name: 🇸🇬 SG@vpnpool, server: 36.134.172.45, port: 20022, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港_R_316, server: yzyd-01.cctelescope.xyz, port: 11804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇺🇸 US@vpnpool 3, server: 36.134.172.45, port: 20041, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港@vpnhat, server: 14.18.93.168, port: 20003, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: AE@EXM3U, server: 117.149.247.11, port: 20070, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【O】香港 VIP 10 - Leaseweb, server: opt15.boom.skin, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇹🇭 泰国_R_520, server: yc.safetelescope.cc, port: 50402, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_9, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: TR@vpnhat, server: 14.18.93.168, port: 20060, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode 3, server: 51.75.70.34, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
-  - {name: 🇻🇳 越南_R_515, server: wz.safetelescope.cc, port: 28368, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇯🇵 【N】日本 普通 2 - Nerocloud, server: jp2.boom.skin, port: 31000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇸🇰 斯洛伐克_R_546, server: yc.safetelescope.cc, port: 62303, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇭🇰 香港@vpnhat 2, server: 14.18.93.168, port: 20007, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国_R_372, server: yzyd-01.cctelescope.xyz, port: 11853, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: CL@EXM3U, server: 117.149.247.11, port: 20064, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 SG@vpnhat 2, server: 14.18.93.168, port: 20026, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: IL@vpnhat, server: 14.18.93.168, port: 20067, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡 B/01 x1.0, server: 183.255.114.164, port: 61001, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 美国03{优化1|V2ray}", server: us1.awslcn.cc, port: 25238, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
-  - {name: 🇯🇵 日本_R_498, server: yc.safetelescope.cc, port: 21078, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇰🇷 KR@vpnhat, server: 14.18.93.168, port: 20065, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾@vpnhat, server: 14.18.93.168, port: 20015, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾@EXM3U, server: 117.149.247.11, port: 20013, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港@vpnpool 2, server: 36.134.172.45, port: 20005, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_50, server: 54.249.160.162, port: 53900, type: trojan, password: 104935f6-0d37-4707-ae2c-79f9965b884c, sni: jpmax01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode 4, server: 172.64.154.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 🇸🇬 SG@EXM3U, server: 117.149.247.11, port: 20028, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【N】日本 VIP 6 - Nerocloud, server: jp11.boom.skin, port: 39100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: "🇭🇰 香港05{优化1|V2ray}", server: hk1.awslcn.cc, port: 25244, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}, udp: true}
-  - {name: 🇯🇵 【N】日本 VIP 8 - Nerocloud, server: jp13.boom.skin, port: 39300, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 US@vpnhat, server: 14.18.93.168, port: 20045, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode 5, server: 111.45.22.136, port: 16114, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾@vpnpool, server: 36.134.172.45, port: 20014, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【M】香港 VIP 3 - Netflix, server: nm3.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇮🇳 IN@vpnhat, server: 14.18.93.168, port: 20066, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【N】日本 VIP D - Leaseweb, server: nn4.boom.skin, port: 43000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 香港@EXM3U 2, server: 117.149.247.11, port: 20005, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 【A】台湾  VIP 1 - 中华电信, server: n04.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: AE@vpnpool, server: 36.134.172.45, port: 20070, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 SG@EXM3U 2, server: 117.149.247.11, port: 20026, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 香港03{优化1|V2ray}", server: hk1.awslcn.cc, port: 25248, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}, udp: true}
-  - {name: 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai, server: h217022.waihuizhibiaowang.com, port: 15243, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
-  - {name: 🇭🇰 香港 實驗性C/04 x1.0, server: 183.245.146.6, port: 21001, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 SG@vpnhat 3, server: 14.18.93.168, port: 20021, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度✈️19, server: 19.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 19.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 19.72img.xyz}}, udp: true}
-  - {name: 🇬🇧 GB@vpnpool, server: 36.134.172.45, port: 20052, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 AU@vpnhat, server: 14.18.93.168, port: 20061, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 CA@EXM3U, server: 117.149.247.11, port: 20051, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 洛杉矶14, server: 14.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 14.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 14.72img.xyz}}, udp: true}
-  - {name: 🇭🇰 香港@vpnhat 3, server: 14.18.93.168, port: 20006, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度✈️16, server: 16.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 16.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 16.72img.xyz}}, udp: true}
-  - {name: 🇸🇬 SG@vpnpool 2, server: 36.134.172.45, port: 20021, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港@EXM3U 3, server: 117.149.247.11, port: 20003, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇷 土耳其_R_458, server: yc.safetelescope.cc, port: 21565, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies, server: zhuanfa01.suyun.live, port: 23987, type: trojan, password: 3d634a9c-f7a5-3f79-8947-074e69a2454b, sni: kjcvcdyuenan1.suyun.live, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai, server: zhuanfa01.suyun.live, port: 32699, type: trojan, password: 3d634a9c-f7a5-3f79-8947-074e69a2454b, sni: tsedcdcc1.suyun.live, skip-cert-verify: false, udp: true}
-  - {name: BR@vpnhat 2, server: 14.18.93.168, port: 20063, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 55 → openitsub.com, server: 117.149.247.11, port: 20057, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa), server: 183.245.146.6, port: 12193, type: ss, cipher: aes-256-gcm, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, udp: true}
-  - {name: 🇨🇳 CN 71 → openitsub.com, server: 36.134.172.45, port: 20032, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_12, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 DE@vpnpool, server: 36.134.172.45, port: 20055, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 KR@vpnhat 2, server: 14.18.93.168, port: 20065, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 【C】美国 VIP 1 - Netflix, server: us5.edge.boom.skin, port: 44001, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇩🇪 DE@vpnpool 2, server: 36.134.172.45, port: 20054, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 新加坡05{优化2|V2ray}", server: sg2.awslcn.cc, port: 25252, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
-  - {name: 🇸🇬 SG@EXM3U 3, server: 117.149.247.11, port: 20025, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 36 → openitsub.com, server: 117.149.247.11, port: 20008, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0, server: 183.245.146.6, port: 31001, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: IT@vpnpool, server: 36.134.172.45, port: 20058, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_68, server: gzct.daodecloud.com, port: 27975, type: trojan, password: aefc7bbc-947d-42b8-a209-e22744ab2a55, sni: jp03.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁, server: 20.187.79.244, port: 48009, type: vmess, uuid: bdb5b688-680b-390b-aa02-7fd5a28e9ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.187.79.244}}, udp: true}
-  - {name: "🇸🇬 新加坡04{优化2|V2ray}", server: sg2.awslcn.cc, port: 25246, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
-  - {name: "🇯🇵 日本02{优化2|V2ray}", server: jp2.awslcn.cc, port: 25237, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}, udp: true}
-  - {name: 🇰🇷 KR@vpnpool, server: 36.134.172.45, port: 20065, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies, server: official.tokyometropolis.kiev.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0, server: 183.245.146.6, port: 61002, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【I】日本 VIP 7 - Azure, server: nf7.boom.skin, port: 17000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇸🇬 【C】狮城  VIP 7 - DO, server: n47.boom.skin, port: 31100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本, server: 45.64.22.6, port: 443, type: vmess, uuid: 96e83b95-e630-4c63-de90-bed6c763ce3f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cfcdn2, headers: {Host: gccf.hdada.ml}}, udp: true}
-  - {name: 🇯🇵 日本 實驗性C/02 x1.0, server: 183.245.146.6, port: 11002, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US@EXM3U 2, server: 117.149.247.11, port: 20041, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP@vpnpool, server: 36.134.172.45, port: 20031, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP@EXM3U, server: 117.149.247.11, port: 20038, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 台湾①{移动|V2ray}", server: cm.awslcn.cc, port: 25232, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
-  - {name: VN@EXM3U 2, server: 117.149.247.11, port: 20069, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP@vpnpool 2, server: 36.134.172.45, port: 20032, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾联通|tg频道:@ripaojiedian, server: tw1111.tfzhc.top, port: 443, type: trojan, password: bd7b4308-a9b3-40cc-a674-1c35f2684549, sni: tw1111.tfzhc.top, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 27 → openitsub.com, server: 117.149.247.11, port: 20006, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 【K】新加坡 普通 6 - DO, server: nkd.boom.skin, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 JP@vpnhat 2, server: 14.18.93.168, port: 20033, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 54 → openitsub.com, server: 117.149.247.11, port: 20061, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇹🇭 泰国_R_558, server: yzyd-01.cctelescope.xyz, port: 29404, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: 183.245.146.6, port: 12192, type: ss, cipher: aes-256-gcm, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, udp: true}
-  - {name: 🇨🇳 CN 88 → openitsub.com, server: 14.18.93.168, port: 20062, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 SS 香港 01 x1.0, server: 183.245.146.6, port: 12190, type: ss, cipher: aes-256-gcm, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, udp: true}
-  - {name: 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai, server: 14.18.93.168, port: 20005, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP@vpnhat 3, server: 14.18.93.168, port: 20038, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_2, server: pr1.jymzffbquawl.com, port: 3607, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
-  - {name: 🇭🇰 香港@EXM3U 4, server: 117.149.247.11, port: 20007, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US@EXM3U 3, server: 117.149.247.11, port: 20046, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 9 → openitsub.com, server: frontend.yijianlian.app, port: 54460, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, skip-cert-verify: false, udp: true}
-  - {name: IL@vpnhat 2, server: 14.18.93.168, port: 20067, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇳 【I】蒙古 普通 A - MN, server: n170.boom.skin, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇸🇬 SG@EXM3U 4, server: 117.149.247.11, port: 20022, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_11, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 IN@vpnpool, server: 36.134.172.45, port: 20066, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 86 → openitsub.com, server: 36.134.172.45, port: 20065, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 荷兰_tg+univstar_40, server: 213.183.51.171, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: 🇺🇸 US@vpnhat 2, server: 14.18.93.168, port: 20041, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大01|中转, server: 202.110.80.135, port: 48336, type: ss, cipher: chacha20-ietf-poly1305, password: 2d9b2fd2-3be3-49a5-9af0-59b7ae64aa52, udp: true}
-  - {name: 🇨🇳 台湾@vpnpool 2, server: 36.134.172.45, port: 20012, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_74, server: gzct.daodecloud.com, port: 49614, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: sgmax04.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 IEPL/03 x3.0, server: 110.80.3.24, port: 21003, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港01|实验性, server: yyyhk1.ikuncloud.com, port: 18521, type: ss, cipher: chacha20-ietf-poly1305, password: 60a6c4c0-2028-4a05-81b0-852750672581, udp: true}
-  - {name: 🇯🇵 【N】日本 VIP 14 - Nerocloud, server: jp19.boom.skin, port: 39900, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁, server: 20.205.116.253, port: 44300, type: vmess, uuid: bdb5b688-680b-390b-aa02-7fd5a28e9ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.205.116.253}}, udp: true}
-  - {name: 🇨🇳 CN 74 → openitsub.com, server: 36.134.172.45, port: 20037, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 AU@vpnpool, server: 36.134.172.45, port: 20061, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: tg频道:@sharingnode 6, server: 51.75.70.34, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
-  - {name: 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0, server: 183.255.114.164, port: 61006, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇪🇸 ES@vpnhat, server: 14.18.93.168, port: 20059, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾@vpnpool 3, server: 36.134.172.45, port: 20013, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_52, server: 54.249.160.162, port: 61180, type: trojan, password: 1ef2858b-2ffa-4763-9296-edd2c5d8318f, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP@vpnpool 3, server: 36.134.172.45, port: 20035, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 【O】香港 VIP 14 - Leaseweb, server: opt24.boom.skin, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 台湾@vpnpool 4, server: 36.134.172.45, port: 20012, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港✈️38, server: 38.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 38.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 38.72img.xyz}}, udp: true}
-  - {name: 🇭🇰 香港 實驗性C/05 x1.0, server: 183.245.146.6, port: 21001, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本|tg频道:@ripaojiedian, server: 202.110.80.135, port: 27325, type: ss, cipher: chacha20-ietf-poly1305, password: d9b6a69a-69af-42ac-8c90-da6acb6be41b, udp: true}
-  - {name: 🇸🇬 新加坡_R_522, server: wz.safetelescope.cc, port: 46562, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇯🇵 【N】日本 普通 5 - Nerocloud, server: jp5.boom.skin, port: 34000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇬🇧 GB@vpnhat, server: 14.18.93.168, port: 20052, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港@vpnpool 3, server: 36.134.172.45, port: 20007, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 CA@EXM3U 2, server: 117.149.247.11, port: 20051, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 【I】日本 VIP 3 - Azure, server: nf3.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 CN 28 → openitsub.com, server: 117.149.247.11, port: 20004, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 【E】俄罗斯  VIP 3 - RT, server: s104.boom.skin, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 132975:k5EnId, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: 🇳🇱 荷兰_tg+univstar_38, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾@vpnhat 2, server: 14.18.93.168, port: 20018, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国_R_366, server: yc.safetelescope.cc, port: 21261, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: TH@EXM3U, server: 117.149.247.11, port: 20068, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: IT@vpnhat, server: 14.18.93.168, port: 20058, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港_R_450, server: gzyd-01.cctelescope.xyz, port: 41999, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇯🇵 JP@EXM3U 2, server: 117.149.247.11, port: 20032, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 IN@EXM3U, server: 117.149.247.11, port: 20066, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 美国06{优化1|V2ray}", server: us1.awslcn.cc, port: 25257, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
-  - {name: 🇭🇰 香港@vpnhat 4, server: 14.18.93.168, port: 20006, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_55, server: 54.249.160.162, port: 61180, type: trojan, password: aefc7bbc-947d-42b8-a209-e22744ab2a55, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US@vpnhat 3, server: 14.18.93.168, port: 20041, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US@vpnhat 4, server: 14.18.93.168, port: 20043, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
-  - {name: tg+univstar_49, server: 198.41.212.155, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}, udp: true}
-  - {name: 🇭🇰 香港@vpnpool 4, server: 36.134.172.45, port: 20002, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 ❗若链接超时请更新订阅, server: 127.0.0.1, port: 1234, type: ss, cipher: chacha20-ietf-poly1305, password: 668b2e7a-46e8-4bf2-bf2c-9eebd91ac2c0, udp: true}
+  - {name: 🇯🇵 JP@vpnhat, server: 14.18.93.168, port: 20031, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾@vpnpool, server: 36.134.172.45, port: 20015, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0, server: 183.245.146.6, port: 12191, type: ss, cipher: aes-256-gcm, password: 93fa3eb3-7355-4989-872c-a0535ee28166, udp: true}
-  - {name: 🇸🇪 瑞典_R_362, server: yc.safetelescope.cc, port: 21099, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:BE91pUWlY4, obfs-param: ajax.microsoft.com, udp: true}
-  - {name: 🇸🇬 新加坡_tg+univstar_20, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US@EXM3U 4, server: 117.149.247.11, port: 20042, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US@vpnpool, server: 36.134.172.45, port: 20048, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 法兰克福✈️54, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 54.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 54.72img.xyz}}, udp: true}
+  - {name: 🇯🇵 日本_tg+univstar_55, server: 54.249.160.162, port: 61180, type: trojan, password: aefc7bbc-947d-42b8-a209-e22744ab2a55, sni: jp01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港@vpnhat, server: 14.18.93.168, port: 20004, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: TH@EXM3U, server: 117.149.247.11, port: 20068, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies, server: oss-cn-shanghai.westdatacloud.xyz, port: 20036, type: trojan, password: E9AA296B-E900-43A8-8CA6-60BD5FF18C4C, sni: v12.kwaicdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HK 50 Amazon.com TG:@airproxies, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 52356, type: vmess, uuid: d81d5bff-925c-4713-99a4-5a6c40f5bd01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇯🇵 日本05{优化1|V2ray}", server: jp1.awslcn.cc, port: 25219, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}, udp: true}
+  - {name: VN@vpnhat, server: 14.18.93.168, port: 20069, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: CL@vpnhat, server: 14.18.93.168, port: 20064, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: "🇨🇳 台湾01{移动|V2ray}", server: cm.awslcn.cc, port: 25233, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: 🇺🇸 US@vpnhat, server: 14.18.93.168, port: 20041, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾@EXM3U, server: 117.149.247.11, port: 20014, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0, server: 183.245.146.6, port: 31001, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡 IEPL/01 x3.0, server: 110.80.3.24, port: 61001, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大_R_365, server: yc.safetelescope.cc, port: 21164, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: "🇲🇾 马来04{联通|V2ray}", server: cu.awslcn.cc, port: 25258, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}, udp: true}
+  - {name: 🇯🇵 JP@vpnpool, server: 36.134.172.45, port: 20034, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US@EXM3U, server: 117.149.247.11, port: 20041, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁, server: 16.162.21.36, port: 44300, type: vmess, uuid: bdb5b688-680b-390b-aa02-7fd5a28e9ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 16.162.21.36}}, udp: true}
+  - {name: 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies, server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com, port: 52356, type: vmess, uuid: d81d5bff-925c-4713-99a4-5a6c40f5bd01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾@vpnpool 2, server: 36.134.172.45, port: 20017, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国2|tg频道:@ripaojiedian, server: 14.215.164.183, port: 29516, type: ss, cipher: chacha20-ietf-poly1305, password: d9b6a69a-69af-42ac-8c90-da6acb6be41b, udp: true}
+  - {name: 🇭🇰 香港@vpnhat 2, server: 14.18.93.168, port: 20001, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本02|中转, server: 202.110.80.135, port: 27325, type: ss, cipher: chacha20-ietf-poly1305, password: 668b2e7a-46e8-4bf2-bf2c-9eebd91ac2c0, udp: true}
+  - {name: CL@vpnpool, server: 36.134.172.45, port: 20064, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_83, server: gzct.daodecloud.com, port: 11595, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: usmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: CL@EXM3U, server: 117.149.247.11, port: 20064, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_75, server: gzct.daodecloud.com, port: 28124, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: sgmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_1, server: 116.162.120.23, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 38735:LLLLhgujhjh67786gh, obfs-param: "", udp: true}
+  - {name: 🇨🇳 台湾@vpnhat, server: 14.18.93.168, port: 20011, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 荷兰_tg+univstar_38, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0, server: 183.245.146.6, port: 21003, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP@EXM3U, server: 117.149.247.11, port: 20034, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港@vpnhat 3, server: 14.18.93.168, port: 20006, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 西雅图8, server: 8.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 8.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 8.72img.xyz}}, udp: true}
+  - {name: AE@EXM3U, server: 117.149.247.11, port: 20070, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |, server: 20.187.79.244, port: 48011, type: vmess, uuid: bdb5b688-680b-390b-aa02-7fd5a28e9ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.187.79.244}}, udp: true}
+  - {name: 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai, server: sgzf.170203.xyz, port: 30217, type: trojan, password: 3db4bba6-33d5-45d0-9508-4aaf54f3954d, sni: sgmax02.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港@vpnhat 4, server: 14.18.93.168, port: 20001, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US@vpnhat 2, server: 14.18.93.168, port: 20043, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_78, server: gzct.daodecloud.com, port: 24568, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: sg01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国25, server: 25.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 25.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 25.72img.xyz}}, udp: true}
+  - {name: "🇺🇸 美国01{优化1|V2ray}", server: us1.awslcn.cc, port: 25239, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
+  - {name: 🇨🇳 台湾@vpnpool 3, server: 36.134.172.45, port: 20014, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: IL@vpnhat, server: 14.18.93.168, port: 20067, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: TH@EXM3U 2, server: 117.149.247.11, port: 20068, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港@EXM3U, server: 117.149.247.11, port: 20005, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 凤凰城33, server: 33.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 33.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 33.72img.xyz}}, udp: true}
+  - {name: 🇨🇳 台湾_tg+univstar_46, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: false, udp: true}
+  - {name: 泰國 B/01 x1.0, server: 183.255.114.164, port: 61003, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_31, server: bs3.jymzffbquawl.com, port: 3046, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 🇹🇷 土耳其_R_458, server: yc.safetelescope.cc, port: 21565, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇺🇸 US@vpnhat 3, server: 14.18.93.168, port: 20045, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_81, server: gzct.daodecloud.com, port: 27684, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US@vpnpool 2, server: 36.134.172.45, port: 20044, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP@EXM3U 2, server: 117.149.247.11, port: 20038, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: tg+univstar_19, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai, server: 164.90.146.171, port: 10001, type: trojan, password: 496202d8-19c4-4023-ad85-04217a74e790, sni: 164.90.146.171, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 NL@EXM3U, server: 117.149.247.11, port: 20057, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0, server: 183.245.146.6, port: 12193, type: ss, cipher: aes-256-gcm, password: 93fa3eb3-7355-4989-872c-a0535ee28166, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁, server: 20.187.79.244, port: 48002, type: vmess, uuid: bdb5b688-680b-390b-aa02-7fd5a28e9ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.187.79.244}}, udp: true}
+  - {name: 🇸🇬 SG@vpnpool, server: 36.134.172.45, port: 20024, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 IEPL/02 x3.0, server: 110.80.3.24, port: 11002, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_70, server: gzct.daodecloud.com, port: 11595, type: trojan, password: aefc7bbc-947d-42b8-a209-e22744ab2a55, sni: usmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0, server: 183.255.114.164, port: 61004, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 越南 C/02 x1.0, server: 183.245.146.6, port: 61005, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国_tg+univstar_18, server: 170.187.182.212, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 GB@EXM3U, server: 117.149.247.11, port: 20053, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US 6 → openitsub.com, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 CN 20 → openitsub.com, server: h649960.waihuizhibiaowang.com, port: 15443, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
+  - {name: 🇬🇧 英国_R_228, server: wz.safetelescope.cc, port: 10006, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: "🇸🇬 新加坡02{优化1|V2ray}", server: sg1.awslcn.cc, port: 25243, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.cc}}, udp: true}
+  - {name: 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies, server: gzct.daodecloud.com, port: 27684, type: trojan, password: 0fd6c781-1d54-4264-ba3e-06f39499cee3, sni: jpmax03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 SG@EXM3U, server: 117.149.247.11, port: 20024, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 TW 2 → openitsub.com, server: TW.xibai6.top, port: 31006, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度_tg+univstar_39, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾@vpnhat 2, server: 14.18.93.168, port: 20015, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁, server: 20.187.79.244, port: 48001, type: vmess, uuid: bdb5b688-680b-390b-aa02-7fd5a28e9ff3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.187.79.244}}, udp: true}
+  - {name: 🇨🇳 台湾@vpnpool 4, server: 36.134.172.45, port: 20017, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港, server: 104.29.64.17, port: 443, type: vmess, uuid: 3069769e-68d2-4e2c-b1e6-2b55b469c042, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /kuainiao/xg2, headers: {Host: xg2.kuainiao.buzz}}, udp: true}
+  - {name: 🇬🇧 英国01|中转, server: asdmnioqw21dom.nekodafu.xyz, port: 13121, type: ss, cipher: chacha20-ietf-poly1305, password: 668b2e7a-46e8-4bf2-bf2c-9eebd91ac2c0, udp: true}
+  - {name: 🇯🇵 尼日利亚_R_514, server: yc.safetelescope.cc, port: 50354, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇺🇸 US@EXM3U 2, server: 117.149.247.11, port: 20042, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: tg频道:@sharingnode, server: a-cm1.jsmmm.cyou, port: 39911, type: vmess, uuid: 249a809e-b378-399c-81ba-b9eebe0acb0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本_R_510, server: yc.safetelescope.cc, port: 50312, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇬🇧 GB@vpnhat, server: 14.18.93.168, port: 20052, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: AE@vpnhat, server: 14.18.93.168, port: 20070, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP@EXM3U 3, server: 117.149.247.11, port: 20036, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾@vpnpool 5, server: 36.134.172.45, port: 20011, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_72, server: gzct.daodecloud.com, port: 24156, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: ru03.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 DE@EXM3U, server: 117.149.247.11, port: 20054, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: "🇲🇾 马来01{移动|V2ray}", server: cm.awslcn.cc, port: 25228, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: "🇺🇸 美国04{优化1|V2ray}", server: us1.awslcn.cc, port: 25255, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
+  - {name: 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai, server: asdmnioqw21dom.nekodafu.xyz, port: 11670, type: trojan, password: 3db4bba6-33d5-45d0-9508-4aaf54f3954d, sni: hkmax04.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港@vpnpool, server: 36.134.172.45, port: 20007, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies, server: zhuanfa01.suyun.live, port: 23987, type: trojan, password: 3d634a9c-f7a5-3f79-8947-074e69a2454b, sni: kjcvcdyuenan1.suyun.live, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇪 瑞典_R_362, server: yc.safetelescope.cc, port: 21099, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇭🇰 香港@EXM3U 2, server: 117.149.247.11, port: 20002, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度✈️16, server: 16.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 16.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 16.72img.xyz}}, udp: true}
+  - {name: 🇺🇸 US 11 → openitsub.com, server: dsj17.1062cdn.top, port: 443, type: vmess, uuid: caf2e1ff-cf38-11eb-b239-00163cc6d021, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US@vpnpool 3, server: 36.134.172.45, port: 20047, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies, server: frontend.yijianlian.app, port: 54570, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度23, server: 23.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 23.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 23.72img.xyz}}, udp: true}
+  - {name: 🇮🇳 印度-Trojan, server: in01.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: in01.awcloud.top, skip-cert-verify: false, udp: true}
+  - {name: "🇸🇬 新加坡07{优化2|V2ray}", server: sg2.awslcn.cc, port: 25254, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
+  - {name: 🇺🇸 US@EXM3U 3, server: 117.149.247.11, port: 20047, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_61, server: gzct.daodecloud.com, port: 10694, type: trojan, password: aefc7bbc-947d-42b8-a209-e22744ab2a55, sni: sgmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_64, server: gzct.daodecloud.com, port: 26889, type: trojan, password: aefc7bbc-947d-42b8-a209-e22744ab2a55, sni: jpmax05.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP@vpnpool 2, server: 36.134.172.45, port: 20035, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0, server: 183.245.146.6, port: 31001, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: "🇩🇪 德国01{移动|V2ray}", server: cm.awslcn.cc, port: 25241, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa), server: 183.245.146.6, port: 61004, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 KR@vpnhat, server: 14.18.93.168, port: 20065, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP@vpnpool 3, server: 36.134.172.45, port: 20037, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港@EXM3U 3, server: 117.149.247.11, port: 20001, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0, server: 183.255.114.164, port: 11001, type: trojan, password: 93fa3eb3-7355-4989-872c-a0535ee28166, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai, server: 111.2.177.42, port: 54122, type: trojan, password: e8c7b4f7-dd99-458a-a5c5-d40edcbf662e, sni: mgbxl.apirocket.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本_R_22, server: wz.safetelescope.cc, port: 10019, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇨🇳 台湾_tg+univstar_15, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0, server: 183.245.146.6, port: 12190, type: ss, cipher: aes-256-gcm, password: 93fa3eb3-7355-4989-872c-a0535ee28166, udp: true}
+  - {name: "🇸🇬 新加坡03{优化2|V2ray}", server: sg2.awslcn.cc, port: 25221, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
+  - {name: 🇺🇸 US@vpnpool 4, server: 36.134.172.45, port: 20045, type: trojan, password: 5500A74A-BE59-264F-635E-74DBEE561FF3, skip-cert-verify: false, udp: true}
+  - {name: TH@vpnhat, server: 14.18.93.168, port: 20068, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US@vpnhat 4, server: 14.18.93.168, port: 20041, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 法兰克福✈️55, server: 55.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 55.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 55.72img.xyz}}, udp: true}
+  - {name: 🇨🇳 台湾_tg+univstar_44, server: tw-oo-01.click, port: 443, type: trojan, password: q8uTrVmj95aTrFAa, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本_tg+univstar_58, server: 54.249.160.162, port: 53900, type: trojan, password: 68a3a999-0a31-4238-bee9-a0aa98afd5d3, sni: jpmax01.170203.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 A/02 x1.0, server: 183.245.146.6, port: 21002, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP@vpnpool 4, server: 36.134.172.45, port: 20032, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 越南10, server: 10.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 10.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 10.72img.xyz}}, udp: true}
+  - {name: 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai, server: frontend.yijianlian.app, port: 54530, type: trojan, password: ae3d8af4-4e4f-47a8-a4d7-fda41150d71a, skip-cert-verify: false, udp: true}
+  - {name: CL@vpnpool 2, server: 36.134.172.45, port: 20064, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: "🇯🇵 日本05{优化1|V2ray} 2", server: jp1.awslcn.cc, port: 25219, type: vmess, uuid: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}, udp: true}
+  - {name: 🇨🇦 加拿大✈️46, server: 46.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 46.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 46.72img.xyz}}, udp: true}
+  - {name: 🇳🇱 NL@vpnhat, server: 14.18.93.168, port: 20057, type: trojan, password: 40E9C3BA-106D-D9C8-AEAD-8E754EFFD1E4, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_28, server: pr1.jymzffbquawl.com, port: 3604, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: c7ea4198729.microsoft.com}, udp: true}
+  - {name: 🇨🇳 CN 28 → openitsub.com, server: h217022.waihuizhibiaowang.com, port: 15143, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2, udp: true}
+  - {name: 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20011, type: trojan, password: E9AA296B-E900-43A8-8CA6-60BD5FF18C4C, sni: v12.kwaicdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港1, server: 1.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 1.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 1.72img.xyz}}, udp: true}
+  - {name: 🇭🇰 香港_R_316, server: yzyd-01.cctelescope.xyz, port: 11804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: 🇸🇬 SG@vpnpool 2, server: 36.134.172.45, port: 20026, type: trojan, password: 464DC216-06B0-2DA7-E45F-F7C367FE207C, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度21, server: 21.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 21.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 21.72img.xyz}}, udp: true}
+  - {name: 🇨🇦 加拿大01|中转, server: 202.110.80.135, port: 48336, type: ss, cipher: chacha20-ietf-poly1305, password: 668b2e7a-46e8-4bf2-bf2c-9eebd91ac2c0, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: 183.245.146.6, port: 61006, type: trojan, password: 36a6ad11-68f2-4f5d-b5e0-16c7a1f68779, sni: 65-108-102-32.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 洛杉矶11, server: 11.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 11.72img.xyz, network: ws, ws-opts: {path: /, headers: {Host: 11.72img.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1666,206 +1282,158 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡 B/02 x1.0
-      - 🇨🇦 CA@vpnpool
-      - 🇯🇵 日本_R_22
-      - 🇨🇳 中国_tg+univstar_28
-      - 🇯🇵 【N】日本 VIP 10 - Nerocloud
+      - 🇸🇬 ❗若链接超时请更新订阅
       - 🇯🇵 JP@vpnhat
-      - 🇨🇳 CN 79 → openitsub.com
-      - 🇩🇪 法兰克福✈️51
-      - 🇺🇸 美国|tg频道:@ripaojiedian
-      - 🇺🇸 US@vpnpool
-      - 🇭🇰 香港@EXM3U
-      - 🇭🇰 香港 B/05 x1.0
-      - 🇪🇸 ES@EXM3U
-      - 🇺🇸 US@vpnpool 2
-      - 新网址：sockboom.app
-      - 🇨🇳 CN 70 → openitsub.com
-      - 🇬🇧 GB@EXM3U
-      - BR@vpnhat
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 13 - Nerocloud
-      - ZA@EXM3U
-      - 🇮🇳 印度22
-      - 🇺🇸 US@EXM3U
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇻🇳 越南_R_380
-      - VN@EXM3U
-      - 🇩🇪 德国_R_523
-      - BR@EXM3U
-      - 🇭🇰 香港@vpnpool
-      - 🇨🇳 中国_tg+univstar_3
-      - tg频道:@sharingnode
-      - 🇳🇱 NL@vpnhat
-      - 🇰🇷 KR@EXM3U
-      - CL@vpnhat
-      - 🇭🇰 TG频道:@kxswa|SS 香港 03 x1.0
-      - 🇭🇰 【B】香港 普通 1 - Leaseweb
-      - 🇩🇪 DE@EXM3U
-      - 🇬🇧 中转 🇬🇧 GB 9 DigitalOcean  LLC TG:@nodpai
-      - tg频道:@sharingnode 2
-      - 🇺🇸 【C】美国 VIP 6 - CC
-      - 🇸🇬 SG@vpnhat
-      - 🇺🇸 美国02|中转
-      - 🇸🇬 SG@vpnpool
-      - 🇭🇰 香港_R_316
-      - 🇺🇸 US@vpnpool 3
-      - 🇭🇰 香港@vpnhat
-      - AE@EXM3U
-      - 🇭🇰 【O】香港 VIP 10 - Leaseweb
-      - 🇹🇭 泰国_R_520
-      - 🇨🇳 中国_tg+univstar_9
-      - TR@vpnhat
-      - tg频道:@sharingnode 3
-      - 🇻🇳 越南_R_515
-      - 🇯🇵 【N】日本 普通 2 - Nerocloud
-      - 🇸🇰 斯洛伐克_R_546
-      - 🇭🇰 香港@vpnhat 2
-      - 🇫🇷 法国_R_372
-      - CL@EXM3U
-      - 🇸🇬 SG@vpnhat 2
-      - IL@vpnhat
-      - 🇸🇬 新加坡 B/01 x1.0
-      - 🇺🇸 美国03{优化1|V2ray}
-      - 🇯🇵 日本_R_498
-      - 🇰🇷 KR@vpnhat
-      - 🇨🇳 台湾@vpnhat
-      - 🇨🇳 台湾@EXM3U
-      - 🇭🇰 香港@vpnpool 2
-      - 🇯🇵 日本_tg+univstar_50
-      - tg频道:@sharingnode 4
-      - 🇸🇬 SG@EXM3U
-      - 🇯🇵 【N】日本 VIP 6 - Nerocloud
-      - 🇭🇰 香港05{优化1|V2ray}
-      - 🇯🇵 【N】日本 VIP 8 - Nerocloud
-      - 🇺🇸 US@vpnhat
-      - tg频道:@sharingnode 5
       - 🇨🇳 台湾@vpnpool
-      - 🇭🇰 【M】香港 VIP 3 - Netflix
-      - 🇮🇳 IN@vpnhat
-      - 🇯🇵 【N】日本 VIP D - Leaseweb
-      - 🇭🇰 香港@EXM3U 2
-      - 🇨🇳 【A】台湾  VIP 1 - 中华电信
-      - AE@vpnpool
-      - 🇸🇬 SG@EXM3U 2
-      - 🇭🇰 香港03{优化1|V2ray}
-      - 🇺🇸 中转 🇺🇸 US 1 FranTech Solutions TG:@nodpai
-      - 🇭🇰 香港 實驗性C/04 x1.0
-      - 🇸🇬 SG@vpnhat 3
-      - 🇮🇳 印度✈️19
-      - 🇬🇧 GB@vpnpool
-      - 🇦🇺 AU@vpnhat
-      - 🇨🇦 CA@EXM3U
-      - 🇺🇸 洛杉矶14
-      - 🇭🇰 香港@vpnhat 3
-      - 🇮🇳 印度✈️16
-      - 🇸🇬 SG@vpnpool 2
-      - 🇭🇰 香港@EXM3U 3
-      - 🇹🇷 土耳其_R_458
-      - 中转 🇻🇳 VN 2 Scloud Pte Ltd TG:@airproxies
-      - 🇨🇳 中转 🇹🇼 TW 15 Scloud Pte Ltd TG:@nodpai
-      - BR@vpnhat 2
-      - 🇨🇳 CN 55 → openitsub.com
-      - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇯🇵 日本_tg+univstar_12
-      - 🇩🇪 DE@vpnpool
-      - 🇰🇷 KR@vpnhat 2
-      - 🇺🇸 【C】美国 VIP 1 - Netflix
-      - 🇩🇪 DE@vpnpool 2
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 SG@EXM3U 3
-      - 🇨🇳 CN 36 → openitsub.com
-      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
-      - IT@vpnpool
-      - 🇨🇳 中国_tg+univstar_68
-      - 🇯🇵 TG频道:@kxswa|日本03 | 中转 | 2x | 奈飞解锁
-      - 🇸🇬 新加坡04{优化2|V2ray}
-      - 🇯🇵 日本02{优化2|V2ray}
-      - 🇰🇷 KR@vpnpool
-      - 🇯🇵 中转 🇯🇵 JP 56 SAKURA Internet Inc. TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|🇸🇬新加坡 實驗性C/02 x1.0
-      - 🇯🇵 【I】日本 VIP 7 - Azure
-      - 🇸🇬 【C】狮城  VIP 7 - DO
-      - 🇯🇵 TG频道:@kxswa|日本
-      - 🇯🇵 日本 實驗性C/02 x1.0
-      - 🇺🇸 US@EXM3U 2
-      - 🇯🇵 JP@vpnpool
-      - 🇯🇵 JP@EXM3U
-      - 🇨🇳 台湾①{移动|V2ray}
-      - VN@EXM3U 2
-      - 🇯🇵 JP@vpnpool 2
-      - 🇨🇳 台湾联通|tg频道:@ripaojiedian
-      - 🇨🇳 CN 27 → openitsub.com
-      - 🇸🇬 【K】新加坡 普通 6 - DO
-      - 🇯🇵 JP@vpnhat 2
-      - 🇨🇳 CN 54 → openitsub.com
-      - 🇹🇭 泰国_R_558
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - 🇨🇳 CN 88 → openitsub.com
-      - 🇭🇰 SS 香港 01 x1.0
-      - 🇭🇰 中转 🇭🇰 HK 16 Kirino LLC TG:@nodpai
-      - 🇯🇵 JP@vpnhat 3
-      - 🇨🇳 中国_tg+univstar_2
-      - 🇭🇰 香港@EXM3U 4
-      - 🇺🇸 US@EXM3U 3
-      - 🇨🇳 CN 9 → openitsub.com
-      - IL@vpnhat 2
-      - 🇲🇳 【I】蒙古 普通 A - MN
-      - 🇸🇬 SG@EXM3U 4
-      - 🇯🇵 日本_tg+univstar_11
-      - 🇮🇳 IN@vpnpool
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇳🇱 荷兰_tg+univstar_40
-      - 🇺🇸 US@vpnhat 2
-      - 🇨🇦 加拿大01|中转
-      - 🇨🇳 台湾@vpnpool 2
-      - 🇨🇳 中国_tg+univstar_74
-      - 🇭🇰 香港 IEPL/03 x3.0
-      - 🇭🇰 香港01|实验性
-      - 🇯🇵 【N】日本 VIP 14 - Nerocloud
-      - 🇭🇰 TG频道:@kxswa|香港05 | 直连 | 奈飞解锁
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇦🇺 AU@vpnpool
-      - tg频道:@sharingnode 6
-      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/03 x1.0
-      - 🇪🇸 ES@vpnhat
-      - 🇨🇳 台湾@vpnpool 3
-      - 🇯🇵 日本_tg+univstar_52
-      - 🇯🇵 JP@vpnpool 3
-      - 🇭🇰 【O】香港 VIP 14 - Leaseweb
-      - 🇨🇳 台湾@vpnpool 4
-      - 🇭🇰 香港✈️38
-      - 🇭🇰 香港 實驗性C/05 x1.0
-      - 🇯🇵 日本|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡_R_522
-      - 🇯🇵 【N】日本 普通 5 - Nerocloud
-      - 🇬🇧 GB@vpnhat
-      - 🇭🇰 香港@vpnpool 3
-      - 🇨🇦 CA@EXM3U 2
-      - 🇯🇵 【I】日本 VIP 3 - Azure
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇷🇺 【E】俄罗斯  VIP 3 - RT
-      - 🇳🇱 荷兰_tg+univstar_38
-      - 🇨🇳 台湾@vpnhat 2
-      - 🇬🇧 英国_R_366
-      - TH@EXM3U
-      - IT@vpnhat
-      - 🇭🇰 香港_R_450
-      - 🇯🇵 JP@EXM3U 2
-      - 🇮🇳 IN@EXM3U
-      - 🇺🇸 美国06{优化1|V2ray}
-      - 🇭🇰 香港@vpnhat 4
-      - 🇯🇵 日本_tg+univstar_55
-      - 🇺🇸 US@vpnhat 3
-      - 🇺🇸 US@vpnhat 4
-      - tg+univstar_49
-      - 🇭🇰 香港@vpnpool 4
       - 🇭🇰 TG频道:@kxswa|SS 香港 02 x1.0
+      - 🇺🇸 US@vpnpool
+      - 🇩🇪 法兰克福✈️54
+      - 🇯🇵 日本_tg+univstar_55
+      - 🇭🇰 香港@vpnhat
+      - TH@EXM3U
+      - 🇯🇵 中转 🇯🇵 JP 20 Kirino LLC TG:@airproxies
+      - 🇭🇰 HK 50 Amazon.com TG:@airproxies
+      - 🇯🇵 日本05{优化1|V2ray}
+      - VN@vpnhat
+      - CL@vpnhat
+      - 🇨🇳 台湾01{移动|V2ray}
+      - 🇺🇸 US@vpnhat
+      - 🇨🇳 台湾@EXM3U
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/01 x1.0
+      - 🇸🇬 新加坡 IEPL/01 x3.0
+      - 🇨🇦 加拿大_R_365
+      - 🇲🇾 马来04{联通|V2ray}
+      - 🇯🇵 JP@vpnpool
+      - 🇺🇸 US@EXM3U
+      - 🇭🇰 TG频道:@kxswa|香港04 | 直连 | 奈飞解锁
+      - 🇯🇵 JP 52 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 台湾@vpnpool 2
+      - 🇺🇸 美国2|tg频道:@ripaojiedian
+      - 🇭🇰 香港@vpnhat 2
+      - 🇯🇵 日本02|中转
+      - CL@vpnpool
+      - 🇨🇳 中国_tg+univstar_83
+      - CL@EXM3U
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇯🇵 JP 7 Amazon.com  Inc. TG:@airproxies
+      - 🇨🇳 中国_tg+univstar_1
+      - 🇨🇳 台湾@vpnhat
+      - 🇳🇱 荷兰_tg+univstar_38
+      - 🇯🇵 JP 8 Amazon Technologies Inc. TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|🇭🇰香港 A/03 x1.0
+      - 🇯🇵 JP@EXM3U
+      - 🇭🇰 香港@vpnhat 3
+      - 🇺🇸 西雅图8
+      - AE@EXM3U
+      - 🇳🇱 TG频道:@kxswa|荷兰 | 中转 |
+      - 🇸🇬 SG 7 DigitalOcean  LLC TG:@nodpai
+      - 🇭🇰 香港@vpnhat 4
+      - 🇺🇸 US@vpnhat 2
+      - 🇨🇳 中国_tg+univstar_78
+      - 🇰🇷 韩国25
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇨🇳 台湾@vpnpool 3
+      - IL@vpnhat
+      - TH@EXM3U 2
+      - 🇭🇰 香港@EXM3U
+      - 🇺🇸 凤凰城33
+      - 🇨🇳 台湾_tg+univstar_46
+      - 泰國 B/01 x1.0
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇹🇷 土耳其_R_458
+      - 🇺🇸 US@vpnhat 3
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇺🇸 US@vpnpool 2
+      - 🇯🇵 JP@EXM3U 2
+      - tg+univstar_19
+      - 🇺🇸 US 4 DigitalOcean  LLC TG:@nodpai
+      - 🇳🇱 NL@EXM3U
+      - 🇭🇰 TG频道:@kxswa|SS 香港 04 x1.0
+      - 🇯🇵 TG频道:@kxswa|日本01 | 中转 | 2x | 奈飞解锁
+      - 🇸🇬 SG@vpnpool
+      - 🇯🇵 日本 IEPL/02 x3.0
+      - 🇨🇳 中国_tg+univstar_70
+      - 🇻🇳 TG频道:@kxswa|🇻🇳越南 B/01 x1.0
+      - 🇻🇳 越南 C/02 x1.0
+      - 🇺🇸 美国_tg+univstar_18
+      - 🇬🇧 GB@EXM3U
+      - 🇺🇸 US 6 → openitsub.com
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇬🇧 英国_R_228
+      - 🇸🇬 新加坡02{优化1|V2ray}
+      - 🇯🇵 中转 🇯🇵 JP 24 Linode  LLC TG:@airproxies
+      - 🇸🇬 SG@EXM3U
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇮🇳 印度_tg+univstar_39
+      - 🇨🇳 台湾@vpnhat 2
+      - 🇸🇬 TG频道:@kxswa|新加坡 | 中转  | 奈飞解锁
+      - 🇨🇳 台湾@vpnpool 4
+      - 🇭🇰 TG频道:@kxswa|香港
+      - 🇬🇧 英国01|中转
+      - 🇯🇵 尼日利亚_R_514
+      - 🇺🇸 US@EXM3U 2
+      - tg频道:@sharingnode
+      - 🇯🇵 日本_R_510
+      - 🇬🇧 GB@vpnhat
+      - AE@vpnhat
+      - 🇯🇵 JP@EXM3U 3
+      - 🇨🇳 台湾@vpnpool 5
+      - 🇨🇳 中国_tg+univstar_72
+      - 🇩🇪 DE@EXM3U
+      - 🇲🇾 马来01{移动|V2ray}
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 中转 🇭🇰 HK 55 NETVIGATOR TG:@nodpai
+      - 🇭🇰 香港@vpnpool
+      - 中转 🇻🇳 VN 1 Scloud Pte Ltd TG:@airproxies
       - 🇸🇪 瑞典_R_362
-      - 🇸🇬 新加坡_tg+univstar_20
-      - 🇺🇸 US@EXM3U 4
+      - 🇭🇰 香港@EXM3U 2
+      - 🇮🇳 印度✈️16
+      - 🇺🇸 US 11 → openitsub.com
+      - 🇺🇸 US@vpnpool 3
+      - 🇭🇰 中转 🇭🇰 HK 79 Misaka Network TG:@airproxies
+      - 🇮🇳 印度23
+      - 🇮🇳 印度-Trojan
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇺🇸 US@EXM3U 3
+      - 🇨🇳 中国_tg+univstar_61
+      - 🇨🇳 中国_tg+univstar_64
+      - 🇯🇵 JP@vpnpool 2
+      - 🇺🇸 TG频道:@kxswa|🇺🇸美國 A/02 x1.0
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇨🇳 中国(TG频道:@kxswa)
+      - 🇰🇷 KR@vpnhat
+      - 🇯🇵 JP@vpnpool 3
+      - 🇭🇰 香港@EXM3U 3
+      - 🇯🇵 TG频道:@kxswa|🇯🇵日本 B/01 x1.0
+      - 🇺🇸 中转 🇺🇸 US 11 Black Mesa Corporation TG:@nodpai
+      - 🇯🇵 日本_R_22
+      - 🇨🇳 台湾_tg+univstar_15
+      - 🇭🇰 TG频道:@kxswa|SS 香港 01 x1.0
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇺🇸 US@vpnpool 4
+      - TH@vpnhat
+      - 🇺🇸 US@vpnhat 4
+      - 🇩🇪 法兰克福✈️55
+      - 🇨🇳 台湾_tg+univstar_44
+      - 🇯🇵 日本_tg+univstar_58
+      - 🇭🇰 香港 A/02 x1.0
+      - 🇯🇵 JP@vpnpool 4
+      - 🇻🇳 越南10
+      - 🇯🇵 中转 🇯🇵 JP 61 The Constant Company TG:@nodpai
+      - CL@vpnpool 2
+      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇨🇦 加拿大✈️46
+      - 🇳🇱 NL@vpnhat
+      - 🇨🇳 中国_tg+univstar_28
+      - 🇨🇳 CN 28 → openitsub.com
+      - 🇨🇳 中转 🇹🇼 TW 8 Kirino LLC TG:@airproxies
+      - 🇭🇰 香港1
+      - 🇭🇰 香港_R_316
+      - 🇸🇬 SG@vpnpool 2
+      - 🇮🇳 印度21
+      - 🇨🇦 加拿大01|中转
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 洛杉矶11
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
