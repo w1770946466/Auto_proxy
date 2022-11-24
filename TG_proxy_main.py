@@ -4,6 +4,9 @@ import requests
 import re
 import time
 import os
+import threading
+
+
 
 #文件路径
 update_path = "./sub/"
@@ -180,7 +183,9 @@ def get_yaml():
 
 if __name__ == '__main__':
     for url in urls:
-        resp = get_content(get_channel_http(url))
+        thread = threading.Thread(traget=get_content,name=get_channel_http(url))
+        thread.start()
+        #resp = get_content(get_channel_http(url))
         print(url, "获取完毕！！")
     res = write_document()
     clash_sub = get_yaml()
