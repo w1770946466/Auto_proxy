@@ -22,7 +22,8 @@ new_list = []
 e_sub = ['https://openit.daycat.space/long','http://file.52nfw.cn/word/obtain.php?user=111111&id=1','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/base64','https://www.prop.cf/?name=paimon&client=base64','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
 #频道
 urls =["https://t.me/s/masco899","https://t.me/s/wxdy666","https://t.me/s/nice16688","https://t.me/s/airproxies","https://t.me/s/jokerbphome","https://t.me/s/kxswa","https://t.me/s/BaiPiao166","https://t.me/s/beiyiwangdeguodu","https://t.me/s/baipiaoi","https://t.me/s/dingyue_Center","https://t.me/s/fffffx2","https://t.me/s/xuanyizero"]
-
+#线程池
+threads = []
 
 
 #获取群组聊天中的HTTP链接
@@ -191,10 +192,12 @@ if __name__ == '__main__':
         print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
+        threads.append(thread)
         #resp = get_content(get_channel_http(url))
         #print(url, "获取完毕！！")
-    thread.join()
-    time.sleep(10)
+    #等待线程结束
+    for t in threads:
+        t.join()
     print("节点获取完毕准备写入......！！")
     res = write_document()
     clash_sub = get_yaml()
