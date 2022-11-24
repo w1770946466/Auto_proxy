@@ -186,7 +186,7 @@ def get_yaml():
 
 if __name__ == '__main__':
     for url in urls:
-        thread = threading.Thread(target=get_content,name = url)
+        thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
         #resp = get_content(get_channel_http(url))
         print(url, "获取完毕！！")
