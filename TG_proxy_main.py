@@ -96,6 +96,7 @@ def get_content(url):
                 #均不是则非订阅链接
                 except:
                     #print(i, ".非订阅链接")
+                    print("非订阅链接")
         except:
             #print("第", i, "个链接获取失败跳过！")
             print("链接获取失败跳过！")
