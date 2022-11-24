@@ -186,11 +186,14 @@ def get_yaml():
 
 if __name__ == '__main__':
     for url in urls:
+        print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
         #resp = get_content(get_channel_http(url))
-        print(url, "获取完毕！！")
+        #print(url, "获取完毕！！")
     thread.join()
+    time.sleep(2)
+    print("节点获取完毕准备写入......！！")
     res = write_document()
     clash_sub = get_yaml()
-    print("执行完毕！！")
+    print("写入完成任务结束！！")
