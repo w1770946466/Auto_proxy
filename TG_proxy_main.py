@@ -57,7 +57,8 @@ def jiemi_base64(data):  # 解密base64
 
 
 #判读是否为订阅链接
-def get_content(url_lst):
+def get_content(url):
+    url_lst = get_channel_http(url)
     #对链接进行格式化
     for i in url_lst:
         result = i.replace("\\", "").replace('"', "")
@@ -183,7 +184,8 @@ def get_yaml():
 
 if __name__ == '__main__':
     for url in urls:
-        resp = get_content(get_channel_http(url))
+        thread = threading.Thread(target=get_content,name = url)
+        #resp = get_content(get_channel_http(url))
         print(url, "获取完毕！！")
     res = write_document()
     clash_sub = get_yaml()
