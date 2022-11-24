@@ -192,7 +192,7 @@ if __name__ == '__main__':
         #resp = get_content(get_channel_http(url))
         #print(url, "获取完毕！！")
     thread.join()
-    time.sleep(2)
+    time.sleep(10)
     print("节点获取完毕准备写入......！！")
     res = write_document()
     clash_sub = get_yaml()
