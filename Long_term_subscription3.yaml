@@ -5,101 +5,105 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 旧金山二区|负载均衡, server: usws.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: usws.hotfun.buzz, skip-cert-verify: false}
-  - {name: 🇸🇬 |新加坡, server: 14.18.93.168, port: 20028, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
-  - {name: Heroku-4_2, server: 172.104.109.7, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 004jhg.pages.dev}}}
-  - {name: "🇺🇲 美国05{优化2|V2ray}", server: us2.awslcn.cc, port: 25256, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.cc}}}
-  - {name: 🇮🇳 印度✈️15, server: 15.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 15.72img.xyz}}}
-  - {name: 🇨🇳 CN38, server: cos-ap-guangzhou.westdatacloud.top, port: 20021, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 TW2, server: tw.xibai6.top, port: 31008, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, skip-cert-verify: false}
-  - {name: 🇯🇵 JP1Amazon.comInc.:@airproxies, server: 45.64.22.55, port: 443, type: trojan, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS, sni: reooec.freetrade.link, skip-cert-verify: false}
-  - {name: "🇬🇧 英国{联通|V2ray}", server: cu.awslcn.cc, port: 25240, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: 🇧🇷 中转🇧🇷BR1EivusDataCenterETelecom:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡05{优化2|V2ray}", server: sg2.awslcn.cc, port: 25252, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}}
-  - {name: 🇨🇳 中国_tg+univstar_32, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}}
-  - {name: 🇭🇰 |香港03|直连|奈飞解锁, server: 18.167.41.254, port: 44300, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 18.167.41.254}}}
-  - {name: "🇮🇳 印度02{联通|V2ray}", server: cu.awslcn.cc, port: 25216, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: 🇨🇳 CN80, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡08{优化1|V2ray}", server: sg1.awslcn.cc, port: 25245, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.cc}}}
-  - {name: "🇯🇵 日本05{优化1|V2ray}", server: jp1.awslcn.cc, port: 25219, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}}
-  - {name: "🇭🇰 香港02{优化2|V2ray}", server: hk2.awslcn.cc, port: 25242, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk2.awslcn.cc}}}
-  - {name: tg+univstar_102, server: http.download.yunzhongzhuan.com, port: 80, type: vmess, uuid: 0db0a479-8993-4e5b-a002-629e9e0b40e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: o07.tgfaka.com}}}
-  - {name: 🇨🇳 CN45, server: cos-ap-beijing.westdatacloud.top, port: 20059, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_63, server: cm.kapoknode.com, port: 25896, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}}
-  - {name: 🇯🇵 日本03|1x, server: p1.bxy-fun3.com, port: 35127, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇨🇳 CN36, server: cos-ap-guangzhou.westdatacloud.top, port: 20018, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 中转🇺🇸US2KirinoLLC:@nodpai, server: 117.149.247.11, port: 20048, type: trojan, password: 6CF89406-B124-EF62-C121-E1189081F0DF, skip-cert-verify: false}
-  - {name: 🇨🇳 CN25, server: cos-ap-guangzhou.westdatacloud.top, port: 20008, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 中转🇺🇸US12KirinoLLC:@airproxies, server: oss-cn-shanghai.westdatacloud.top, port: 20044, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇸🇬 中转🇸🇬SG18KirinoLLC:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20022, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: "@sharingnode", server: ip125.com, port: 2086, type: vmess, uuid: 078b436e-de58-42d9-cfe9-ffdcf72e1ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aries, headers: {Host: kz.cloudflare.quest}}}
-  - {name: 🇮🇳 印度✈️17, server: 17.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 17.72img.xyz}}}
-  - {name: 🇨🇳 CN10, server: cos-ap-guangzhou.westdatacloud.top, port: 20001, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: "@sharingnode 2", server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 54.72img.xyz}}}
-  - {name: 🇨🇳 CN27, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇩🇪 DE德国003, server: de.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: false}
-  - {name: 🇳🇱 |荷兰, server: nl.520748.xyz, port: 10001, type: trojan, password: e7cf7ac5-913b-4140-9281-67fa8abde2f4, sni: nl.520748.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_17, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t}
-  - {name: "🇯🇵 日本05{优化1|V2ray} 2", server: jp1.awslcn.cc, port: 25219, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}}
-  - {name: 🇨🇳 CN47, server: cos-ap-guangzhou.westdatacloud.top, port: 20028, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: Heroku-3_3, server: 170.187.209.208, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 003kkou.pages.dev}}}
-  - {name: 🇸🇬 新加坡-Trojan①, server: sg01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: sg01.awcloud.top, skip-cert-verify: false}
-  - {name: 🇸🇬 中转🇸🇬SG22DigitalOceanLLC:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20027, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 美国_tg+univstar_94, server: 14.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 14.72img.xyz}}}
-  - {name: "🇬🇧 英国{联通|V2ray} 2", server: cu.awslcn.cc, port: 25240, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: 🇷🇺 |俄罗斯|中转|, server: 104.208.74.249, port: 48017, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
-  - {name: 🇮🇳 印度✈️20, server: 20.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.72img.xyz}}}
-  - {name: 🇨🇳 CN3, server: p1.bxy-fun1.com, port: 44101, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇭🇰 香港3, server: 3.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 3.72img.xyz}}}
-  - {name: 🇸🇬 SG2Amazon.comInc.:@airproxies, server: 45.64.22.55, port: 443, type: trojan, password: ZCRe0IlTyApFDO73qeaSlyDEaXwSOYCZ9B3j6ca3Anxg84CDKF2SxpzuNY58R3, sni: leeihs.freetrade.link, skip-cert-verify: false}
-  - {name: "🇨🇳 台湾01{移动|V2ray}", server: cm.awslcn.cc, port: 25233, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
-  - {name: 🇷🇺 俄罗斯-Trojan, server: ru01.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: ru01.awcloud.top, skip-cert-verify: false}
-  - {name: 中转🇨🇦CA2AptumTechnologies:@nodpai, server: 117.149.247.11, port: 20051, type: trojan, password: 70AC3E1E-59B1-CE5A-39C1-AF9DE01BEF90, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇳🇱 荷兰_tg+univstar_88, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
-  - {name: 🇸🇬 SG8AmazonTechnologiesInc.:@airproxies, server: xin.mooooobai.top, port: 5122, type: vmess, uuid: 9627c468-64f1-31ac-8f88-bd39e1748aa8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /usr, headers: {Host: xin.mooooobai.top}}}
-  - {name: 🇨🇳 中国_tg+univstar_12, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇷🇺 俄罗斯①{移动|V2ray}", server: cm.awslcn.cc, port: 25230, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
-  - {name: 🇬🇧 |英国, server: 14.18.93.168, port: 20052, type: trojan, password: 70AC3E1E-59B1-CE5A-39C1-AF9DE01BEF90, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
-  - {name: Heroku-3_2, server: 167.99.73.50, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 003kkou.pages.dev}}}
-  - {name: 🇨🇳 CN82, server: cos-ap-guangzhou.westdatacloud.top, port: 20068, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_30, server: us2.tdznode.xyz, port: 29003, type: trojan, password: d1c8c54b-af7b-4c8b-85ea-95a43c3e325f, sni: awsus1.tdznode.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN41, server: cos-ap-beijing.westdatacloud.top, port: 20052, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 中转🇺🇸US11KirinoLLC:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20043, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: "🇸🇬 新加坡03{优化2|V2ray}", server: sg2.awslcn.cc, port: 25221, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}}
-  - {name: 🇨🇳 CN23, server: cos-ap-guangzhou.westdatacloud.top, port: 20004, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: "马来02{移动|V2ray}", server: cm.awslcn.cc, port: 25258, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
-  - {name: 🇨🇳 CN84, server: zfd-moblev2.gatknqh.cn, port: 16116, type: vmess, uuid: f1d39fe1-bfa3-34ff-86a2-29250af03183, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇺🇲 [直连0.5x]美国UnitedStates", server: usa.838501.xyz, port: 15001, type: trojan, password: 11c8f73e-5db7-4f72-bfd0-40348f94552a, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_44, server: node.ckcloud.info, port: 25925, type: vmess, uuid: e0614e00-122f-465d-bb62-29b712a5e974, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
-  - {name: 🇷🇺 西伯利亚6, server: 6.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 6.72img.xyz}}}
-  - {name: 🇨🇦 加拿大✈️46, server: 46.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 46.72img.xyz}}}
-  - {name: 🇰🇷 韩国25, server: 25.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 25.72img.xyz}}}
-  - {name: 🇺🇲 US10, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: false}
-  - {name: 🇭🇰 中转🇭🇰HK16G-CoreLabsS.A:@nodpai, server: 20014.purefast2.com, port: 20014, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: purefast1.com, skip-cert-verify: false}
-  - {name: 🇨🇳 CN20, server: p1.bxy-fun2.com, port: 23105, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇸🇬 中转🇸🇬SG19LinodeLLC:@nodpai, server: p1.bxy-fun2.com, port: 24101, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇺🇲 美国_tg+univstar_105, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: false}
-  - {name: CA1OVHSAS:@nodpai, server: ca2.v2rayserv.com, port: 80, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ca2.v2rayserv.com}}}
-  - {name: 🇰🇷 |韩国|中转|, server: 104.208.74.249, port: 48004, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
-  - {name: 🇺🇲 USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港, server: 14.18.93.168, port: 20001, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇨🇳 中转🇹🇼TW26KirinoLLC:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20014, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇨🇳 CN11, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20004, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇬🇧 |英国, server: 14.18.93.168, port: 20052, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇨🇳 CN16, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20016, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_108, server: 47.52.101.237, port: 443, type: trojan, password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S, sni: httah.freetrade.link, skip-cert-verify: false}
+  - {name: 🇯🇵 日本-Trojan, server: jp01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: jp01.awcloud.top, skip-cert-verify: false}
+  - {name: 🇨🇦 |加拿大, server: 117.149.247.11, port: 20051, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇭🇰 香港跨境金融专线02, server: fnhk1000new009.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 47b484a2f3eb}
+  - {name: 🇺🇲 中转🇺🇸US6ColocationAmericaCorporation:@airproxies, server: p1.bxy-fun1.com, port: 23103, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: 🇸🇬 中转🇸🇬SG13LinodeLLC:@nodpai, server: p1.bxy-fun3.com, port: 24105, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
   - {name: Heroku-2_2, server: 167.71.211.148, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 002hngh.pages.dev}}}
+  - {name: 🇯🇵 中转🇯🇵JP30SAKURAInternetInc.:@airproxies, server: official.tokyometropolis.odessa.ua, port: 2053, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: 167.179.82.139, skip-cert-verify: false}
+  - {name: "🇰🇷 韩国02{移动|V2ray}", server: cm.awslcn.cc, port: 25259, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
+  - {name: "🇩🇪 德国01{移动|V2ray}", server: cm.awslcn.cc, port: 25241, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
+  - {name: 🇦🇺 |澳大利亚, server: 14.18.93.168, port: 20061, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇺🇲 US152Amazon.comInc.:@airproxies, server: 167.114.67.25, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 005dgdf.pages.dev}}}
+  - {name: 🇩🇪 中转🇩🇪DE13myVirtualserver:@airproxies, server: 14.18.93.168, port: 20055, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_55, server: 172.66.43.1, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 38.72img.xyz}}}
+  - {name: "@sharingnode", server: bit-moble.gatknqh.cn, port: 12001, type: vmess, uuid: ab37de28-f2b3-4c03-a494-5138cacb32c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 CN53, server: oss-cn-shanghai.westdatacloud.xyz, port: 20065, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国_tg+univstar_70, server: 193.123.251.98, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}}
+  - {name: 🇯🇵 日本东京|负载均衡, server: jpws.hotfun.buzz, port: 26234, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: jpws.hotfun.buzz, skip-cert-verify: false}
+  - {name: 🏳️‍🌈 流量站-美国2, server: mg2.mlcat.ml, port: 80, type: vmess, uuid: e5f388f9-dfc6-4259-8a26-02ca1bcd516e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: 🇭🇰 香港IEPL内网专线02, server: fn600mliness016.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: b82344b3d531}
+  - {name: 🇺🇲 美国_tg+univstar_83, server: 29.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 29.72img.xyz}}}
+  - {name: 🇺🇲 中转🇺🇸US8CloudflareInc.:@nodpai, server: 121.62.19.152, port: 51050, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇬🇧 英国_tg+univstar_92, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: false}
+  - {name: "@sharingnode 2", server: 85.208.108.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇳 CN13, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20014, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇫🇷 |法国, server: 121.62.19.152, port: 15154, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇦🇷 中转🇦🇷AR1SondatechS.A.S.:@airproxies, server: oss-cn-shanghai.westdatacloud.xyz, port: 20062, type: trojan, password: 7F91BF9D-ED54-361E-6504-96A9AED2D750, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港IPLC顶级专线04, server: mktw1glines001.fengchiline.xyz, port: 443, type: ss, cipher: aes-256-gcm, password: 784895a5fc0a}
+  - {name: 全球直连③, server: s3.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: "🇭🇰 香港05{优化1|V2ray}", server: hk1.awslcn.cc, port: 25244, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}}
+  - {name: 🇸🇬 狮城03|1x, server: p1.bxy-fun3.com, port: 24105, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: "马来03{联通|V2ray}", server: cu.awslcn.cc, port: 25228, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
   - {name: "🇯🇵 日本01{优化1|V2ray}", server: jp1.awslcn.cc, port: 25237, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.awslcn.cc}}}
-  - {name: 🇮🇳 |印度, server: in.520748.xyz, port: 10001, type: trojan, password: e7cf7ac5-913b-4140-9281-67fa8abde2f4, sni: in.520748.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 中转🇸🇬SG16KirinoLLC:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20024, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 CN16, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 60431:123456, obfs-param: ""}
-  - {name: 🇭🇰 香港高速|, server: hkb1.sanfen001.pics, port: 443, type: vmess, uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}}
-  - {name: 🇨🇳 CN26, server: cos-ap-guangzhou.westdatacloud.top, port: 20005, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02|1x, server: p1.bxy-fun2.com, port: 24103, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇩🇪 DE2OVHSAS:@nodpai, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
-  - {name: 🇯🇵 日本1|, server: jp3.gamell.top, port: 20960, type: vmess, uuid: 42f2f419-be9f-4fb0-df1f-3fa2120977fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: jp3.gamell.top}}}
-  - {name: "🇸🇬 [直连0.5x]新加坡Singapore", server: sg.838501.xyz, port: 15001, type: trojan, password: 0d02c90f-c08f-436b-a9b0-c1706ff2355a, skip-cert-verify: false}
-  - {name: 🇭🇰 中转🇭🇰HK1HongKongCableTelevisionLimited:@nodpai, server: 182.151.8.150, port: 19201, type: trojan, password: 05115a9b-067c-3cfa-9d8a-c696c3fc5660, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_3, server: moblev2.mipglxi.cn, port: 5607, type: ss, cipher: aes-128-gcm, password: 5bc3be60-e171-4e6d-954c-161d519489d3}
-  - {name: tg+univstar_85, server: 4.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 4.72img.xyz}}}
-  - {name: 网址:hass.win/reg, server: s4.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: 🇨🇳 CN44, server: cos-ap-beijing.westdatacloud.top, port: 20058, type: trojan, password: A15FC102-0EA2-0950-6B6C-593F1CF27294, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: Heroku-5_6, server: 167.179.32.53, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 005dgdf.pages.dev}}}
+  - {name: 🇨🇳 CN78, server: cos-ap-beijing.westdatacloud.top, port: 20055, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_tg+univstar_73, server: 219.76.13.169, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}}
+  - {name: "@sharingnode 3", server: 1.1808.cf, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}}
+  - {name: 🇨🇳 CN57, server: cos-ap-guangzhou.westdatacloud.top, port: 20003, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇪🇸 中转🇪🇸ES2PropelinConsultingS.L.:@nodpai, server: cos-ap-beijing.westdatacloud.top, port: 20059, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 这是教程赠送免费节点, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: "@sharingnode 4", server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇩🇪 _v2ray-4zl-德国01, server: ger01.paopaocloud.cyou, port: 443, type: vmess, uuid: df310bf4-4301-3518-8ac1-a6ddfe019b40, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: ger01.ssru4.fun}}}
+  - {name: 🇦🇺 AU澳大利亚001, server: ap.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: false}
+  - {name: 🇨🇳 CN62, server: cos-ap-beijing.westdatacloud.top, port: 20053, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇯🇵 中转🇯🇵JP17KirinoLLC:@nodpai, server: 117.149.247.11, port: 20031, type: trojan, password: 70AC3E1E-59B1-CE5A-39C1-AF9DE01BEF90, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡-Trojan①, server: sg01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: sg01.awcloud.top, skip-cert-verify: false}
+  - {name: "@sharingnode 5", server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
+  - {name: 🇭🇰 香港_tg+univstar_26, server: 42.3.182.146, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 144-24-150-126.sslip.io}}}
+  - {name: Heroku-2_1, server: 161.35.12.1, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 002hngh.pages.dev}}}
+  - {name: 🇨🇳 CN12, server: p1.bxy-fun2.com, port: 20471, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: 🇩🇪 DE61CloudflareInc.:@airproxies, server: 45.64.22.6, port: 443, type: vmess, uuid: d217db0c-0faa-4270-ea38-e6093d9774e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: h2.800876.xyz}}}
+  - {name: "马来04{联通|V2ray}", server: cu.awslcn.cc, port: 25258, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
+  - {name: 🇦🇺 澳大利亚_tg+univstar_38, server: 129.154.194.163, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}}
+  - {name: 🇨🇦 CA加拿大002, server: ca.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: false}
+  - {name: Heroku-5_4, server: 172.104.101.231, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 005dgdf.pages.dev}}}
+  - {name: "HCM1[TLS]", server: hcm1.nhkvpn.net, port: 443, type: trojan, password: 3d8683b1-5fd4-43dd-b9d5-b23abd4e7506, sni: dl.ops.kgvn.garenanow.com, skip-cert-verify: false}
+  - {name: "🇸🇬 [直连0.5x]新加坡Singapore", server: sg.838501.xyz, port: 15001, type: trojan, password: 11c8f73e-5db7-4f72-bfd0-40348f94552a, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_23, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 日本JP|, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: false}
+  - {name: "🇸🇬 新加坡07{优化2|V2ray}", server: sg2.awslcn.cc, port: 25254, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}}
+  - {name: 🇨🇳 CN23, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇳🇱 中转🇳🇱NL1KirinoLLC:@nodpai, server: 14.18.93.168, port: 20056, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_84, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 31583:SVIPTIZ8, obfs-param: VkZkd1QySldjSFJWVkU1T1ZrVldNVmxzWkhOaGJVNTBUMWh3YVUxc2IzZFVSekZQWkcxS1Vn}
+  - {name: 🇭🇰 香港IPLC顶级专线02, server: mktw1glines002.aodunjiasu.info, port: 995, type: ss, cipher: aes-256-gcm, password: 7f9357a05d52}
+  - {name: "@sharingnode 6", server: h217022.waihuizhibiaowang.com, port: 15143, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2}
+  - {name: 🇯🇵 中转🇯🇵JP54KirinoLLC:@nodpai, server: oss-cn-shanghai.westdatacloud.xyz, port: 20035, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 免费节点定期失效, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: "HCM[LMHT][TLS]", server: hcmlmht.nhkvpn.net, port: 443, type: trojan, password: 3d8683b1-5fd4-43dd-b9d5-b23abd4e7506, sni: dl.ops.kgvn.garenanow.com, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_75, server: cu.kapoknode.com, port: 25931, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}}
+  - {name: 🇨🇳 CN2, server: p1.bxy-fun3.com, port: 35127, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: 🇬🇧 英国01|1x, server: p1.bxy-fun2.com, port: 20471, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: 马来-Trojan, server: my01.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: my01.awcloud.top, skip-cert-verify: false}
+  - {name: 🇨🇳 CN25, server: cos-ap-beijing.westdatacloud.xyz, port: 20056, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: "🇺🇲 美国04{优化1|V2ray}", server: us1.awslcn.cc, port: 25255, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}}
+  - {name: "🇩🇪 德国02{联通|V2ray}", server: cu.awslcn.cc, port: 25241, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
+  - {name: 🇨🇦 加拿大✈️43, server: 43.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 43.72img.xyz}}}
+  - {name: 🇯🇵 中转🇯🇵JP31SAKURAInternetInc.:@airproxies, server: jp07a.roc-taiwan.org.ua, port: 65017, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: 45.32.28.232, skip-cert-verify: false}
+  - {name: 🇭🇰 香港2, server: 2.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 2.72img.xyz}}}
+  - {name: 🇯🇵 中转🇯🇵JP11LinodeLLC:@nodpai, server: p1.bxy-fun3.com, port: 35127, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: "@sharingnode 7", server: 141.101.114.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}}
+  - {name: "@sharingnode 8", server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 54.72img.xyz}}}
+  - {name: "@sharingnode 9", server: 85.208.108.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇸🇬 SG新加坡002, server: sg.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: false}
+  - {name: "🇸🇬 新加坡08{优化1|V2ray}", server: sg1.awslcn.cc, port: 25245, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.cc}}}
+  - {name: 🇨🇳 CN46, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20017, type: trojan, password: 51087AB0-A39F-2863-88D8-DD5B2FF3498F, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 国内-湖北20M, server: hb1.mlcat.ml, port: 80, type: vmess, uuid: e5f388f9-dfc6-4259-8a26-02ca1bcd516e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: a.189.cn}}}
+  - {name: "@sharingnode 10", server: bit-moble.gatknqh.cn, port: 12043, type: vmess, uuid: ab37de28-f2b3-4c03-a494-5138cacb32c4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 |台湾, server: 14.18.93.168, port: 20011, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇸🇬 狮城1|, server: 45.64.22.55, port: 443, type: trojan, password: TaSXwOxORaZ7pD8DlzCE3yNFS5C38eeCuDng03FcA4BSpjK96YaZRIAlx2yqY3, sni: mhkla.freetrade.link, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_105, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: false}
+  - {name: "@sharingnode 11", server: 128.14.140.254, port: 443, type: vmess, uuid: 02ddd27e-cb08-424d-8279-d02bf11b0342, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: zz1.wblogw1.tk}}}
+  - {name: "|捷克2", server: 121.62.19.183, port: 24155, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇳🇱 中转🇳🇱NL3KirinoLLC:@airproxies, server: cos-ap-beijing.westdatacloud.top, port: 20057, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇺🇲 USA美国001, server: usa.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, skip-cert-verify: false}
+  - {name: 🇨🇳 CN100, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20028, type: trojan, password: E1B321E6-C2BB-BB72-4266-73F3E52CF638, skip-cert-verify: false}
+  - {name: "马来03{联通|V2ray} 2", server: cu.awslcn.cc, port: 25228, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -118,303 +122,315 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 旧金山二区|负载均衡
-      - 🇸🇬 |新加坡
-      - Heroku-4_2
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇮🇳 印度✈️15
-      - 🇨🇳 CN38
-      - 🇨🇳 TW2
-      - 🇯🇵 JP1Amazon.comInc.:@airproxies
-      - 🇬🇧 英国{联通|V2ray}
-      - 🇧🇷 中转🇧🇷BR1EivusDataCenterETelecom:@nodpai
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇨🇳 中国_tg+univstar_32
-      - 🇭🇰 |香港03|直连|奈飞解锁
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 CN80
-      - 🇸🇬 新加坡08{优化1|V2ray}
-      - 🇯🇵 日本05{优化1|V2ray}
-      - 🇭🇰 香港02{优化2|V2ray}
-      - tg+univstar_102
-      - 🇨🇳 CN45
-      - 🇨🇳 中国_tg+univstar_63
-      - 🇯🇵 日本03|1x
-      - 🇨🇳 CN36
-      - 🇺🇲 中转🇺🇸US2KirinoLLC:@nodpai
-      - 🇨🇳 CN25
-      - 🇺🇲 中转🇺🇸US12KirinoLLC:@airproxies
-      - 🇸🇬 中转🇸🇬SG18KirinoLLC:@airproxies
-      - "@sharingnode"
-      - 🇮🇳 印度✈️17
-      - 🇨🇳 CN10
-      - "@sharingnode 2"
-      - 🇨🇳 CN27
-      - 🇩🇪 DE德国003
-      - 🇳🇱 |荷兰
-      - 🇨🇳 中国_tg+univstar_17
-      - 🇯🇵 日本05{优化1|V2ray} 2
-      - 🇨🇳 CN47
-      - Heroku-3_3
-      - 🇸🇬 新加坡-Trojan①
-      - 🇸🇬 中转🇸🇬SG22DigitalOceanLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_94
-      - 🇬🇧 英国{联通|V2ray} 2
-      - 🇷🇺 |俄罗斯|中转|
-      - 🇮🇳 印度✈️20
-      - 🇨🇳 CN3
-      - 🇭🇰 香港3
-      - 🇸🇬 SG2Amazon.comInc.:@airproxies
-      - 🇨🇳 台湾01{移动|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 中转🇨🇦CA2AptumTechnologies:@nodpai
-      - 🇳🇱 荷兰_tg+univstar_88
-      - 🇸🇬 SG8AmazonTechnologiesInc.:@airproxies
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇨🇳 CN11
       - 🇬🇧 |英国
-      - Heroku-3_2
-      - 🇨🇳 CN82
-      - 🇨🇳 中国_tg+univstar_30
-      - 🇨🇳 CN41
-      - 🇺🇲 中转🇺🇸US11KirinoLLC:@nodpai
-      - 🇸🇬 新加坡03{优化2|V2ray}
-      - 🇨🇳 CN23
-      - 马来02{移动|V2ray}
-      - 🇨🇳 CN84
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇨🇳 中国_tg+univstar_44
-      - 🇷🇺 西伯利亚6
-      - 🇨🇦 加拿大✈️46
-      - 🇰🇷 韩国25
-      - 🇺🇲 US10
-      - 🇭🇰 中转🇭🇰HK16G-CoreLabsS.A:@nodpai
-      - 🇨🇳 CN20
-      - 🇸🇬 中转🇸🇬SG19LinodeLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_105
-      - CA1OVHSAS:@nodpai
-      - 🇰🇷 |韩国|中转|
-      - 🇺🇲 USA美国001
-      - 🇭🇰 |香港
-      - 🇨🇳 中转🇹🇼TW26KirinoLLC:@airproxies
-      - Heroku-2_2
-      - 🇯🇵 日本01{优化1|V2ray}
-      - 🇮🇳 |印度
-      - 🇸🇬 中转🇸🇬SG16KirinoLLC:@nodpai
       - 🇨🇳 CN16
-      - 🇭🇰 香港高速|
-      - 🇨🇳 CN26
-      - 🇭🇰 香港02|1x
-      - 🇩🇪 DE2OVHSAS:@nodpai
-      - 🇯🇵 日本1|
+      - 🇭🇰 香港_tg+univstar_108
+      - 🇯🇵 日本-Trojan
+      - 🇨🇦 |加拿大
+      - 🇭🇰 香港跨境金融专线02
+      - 🇺🇲 中转🇺🇸US6ColocationAmericaCorporation:@airproxies
+      - 🇸🇬 中转🇸🇬SG13LinodeLLC:@nodpai
+      - Heroku-2_2
+      - 🇯🇵 中转🇯🇵JP30SAKURAInternetInc.:@airproxies
+      - 🇰🇷 韩国02{移动|V2ray}
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇦🇺 |澳大利亚
+      - 🇺🇲 US152Amazon.comInc.:@airproxies
+      - 🇩🇪 中转🇩🇪DE13myVirtualserver:@airproxies
+      - 🇺🇲 美国_tg+univstar_55
+      - "@sharingnode"
+      - 🇨🇳 CN53
+      - 🇰🇷 韩国_tg+univstar_70
+      - 🇯🇵 日本东京|负载均衡
+      - 🏳️‍🌈 流量站-美国2
+      - 🇭🇰 香港IEPL内网专线02
+      - 🇺🇲 美国_tg+univstar_83
+      - 🇺🇲 中转🇺🇸US8CloudflareInc.:@nodpai
+      - 🇬🇧 英国_tg+univstar_92
+      - "@sharingnode 2"
+      - 🇨🇳 CN13
+      - 🇫🇷 |法国
+      - 🇦🇷 中转🇦🇷AR1SondatechS.A.S.:@airproxies
+      - 🇭🇰 香港IPLC顶级专线04
+      - 全球直连③
+      - 🇭🇰 香港05{优化1|V2ray}
+      - 🇸🇬 狮城03|1x
+      - 马来03{联通|V2ray}
+      - 🇯🇵 日本01{优化1|V2ray}
+      - Heroku-5_6
+      - 🇨🇳 CN78
+      - 🇭🇰 香港_tg+univstar_73
+      - "@sharingnode 3"
+      - 🇨🇳 CN57
+      - 🇪🇸 中转🇪🇸ES2PropelinConsultingS.L.:@nodpai
+      - 这是教程赠送免费节点
+      - "@sharingnode 4"
+      - 🇩🇪 _v2ray-4zl-德国01
+      - 🇦🇺 AU澳大利亚001
+      - 🇨🇳 CN62
+      - 🇯🇵 中转🇯🇵JP17KirinoLLC:@nodpai
+      - 🇸🇬 新加坡-Trojan①
+      - "@sharingnode 5"
+      - 🇭🇰 香港_tg+univstar_26
+      - Heroku-2_1
+      - 🇨🇳 CN12
+      - 🇩🇪 DE61CloudflareInc.:@airproxies
+      - 马来04{联通|V2ray}
+      - 🇦🇺 澳大利亚_tg+univstar_38
+      - 🇨🇦 CA加拿大002
+      - Heroku-5_4
+      - HCM1[TLS]
       - 🇸🇬 [直连0.5x]新加坡Singapore
-      - 🇭🇰 中转🇭🇰HK1HongKongCableTelevisionLimited:@nodpai
-      - 🇨🇳 中国_tg+univstar_3
-      - tg+univstar_85
-      - 网址:hass.win/reg
-      - 🇨🇳 CN44
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇯🇵 日本JP|
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇨🇳 CN23
+      - 🇳🇱 中转🇳🇱NL1KirinoLLC:@nodpai
+      - 🇨🇳 中国_tg+univstar_84
+      - 🇭🇰 香港IPLC顶级专线02
+      - "@sharingnode 6"
+      - 🇯🇵 中转🇯🇵JP54KirinoLLC:@nodpai
+      - 免费节点定期失效
+      - HCM[LMHT][TLS]
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇨🇳 CN2
+      - 🇬🇧 英国01|1x
+      - 马来-Trojan
+      - 🇨🇳 CN25
+      - 🇺🇲 美国04{优化1|V2ray}
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇦 加拿大✈️43
+      - 🇯🇵 中转🇯🇵JP31SAKURAInternetInc.:@airproxies
+      - 🇭🇰 香港2
+      - 🇯🇵 中转🇯🇵JP11LinodeLLC:@nodpai
+      - "@sharingnode 7"
+      - "@sharingnode 8"
+      - "@sharingnode 9"
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 新加坡08{优化1|V2ray}
+      - 🇨🇳 CN46
+      - 国内-湖北20M
+      - "@sharingnode 10"
+      - 🇨🇳 |台湾
+      - 🇸🇬 狮城1|
+      - 🇺🇲 美国_tg+univstar_105
+      - "@sharingnode 11"
+      - "|捷克2"
+      - 🇳🇱 中转🇳🇱NL3KirinoLLC:@airproxies
+      - 🇺🇲 USA美国001
+      - 🇨🇳 CN100
+      - 马来03{联通|V2ray} 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 旧金山二区|负载均衡
-      - 🇸🇬 |新加坡
-      - Heroku-4_2
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇮🇳 印度✈️15
-      - 🇨🇳 CN38
-      - 🇨🇳 TW2
-      - 🇯🇵 JP1Amazon.comInc.:@airproxies
-      - 🇬🇧 英国{联通|V2ray}
-      - 🇧🇷 中转🇧🇷BR1EivusDataCenterETelecom:@nodpai
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇨🇳 中国_tg+univstar_32
-      - 🇭🇰 |香港03|直连|奈飞解锁
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 CN80
-      - 🇸🇬 新加坡08{优化1|V2ray}
-      - 🇯🇵 日本05{优化1|V2ray}
-      - 🇭🇰 香港02{优化2|V2ray}
-      - tg+univstar_102
-      - 🇨🇳 CN45
-      - 🇨🇳 中国_tg+univstar_63
-      - 🇯🇵 日本03|1x
-      - 🇨🇳 CN36
-      - 🇺🇲 中转🇺🇸US2KirinoLLC:@nodpai
-      - 🇨🇳 CN25
-      - 🇺🇲 中转🇺🇸US12KirinoLLC:@airproxies
-      - 🇸🇬 中转🇸🇬SG18KirinoLLC:@airproxies
-      - "@sharingnode"
-      - 🇮🇳 印度✈️17
-      - 🇨🇳 CN10
-      - "@sharingnode 2"
-      - 🇨🇳 CN27
-      - 🇩🇪 DE德国003
-      - 🇳🇱 |荷兰
-      - 🇨🇳 中国_tg+univstar_17
-      - 🇯🇵 日本05{优化1|V2ray} 2
-      - 🇨🇳 CN47
-      - Heroku-3_3
-      - 🇸🇬 新加坡-Trojan①
-      - 🇸🇬 中转🇸🇬SG22DigitalOceanLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_94
-      - 🇬🇧 英国{联通|V2ray} 2
-      - 🇷🇺 |俄罗斯|中转|
-      - 🇮🇳 印度✈️20
-      - 🇨🇳 CN3
-      - 🇭🇰 香港3
-      - 🇸🇬 SG2Amazon.comInc.:@airproxies
-      - 🇨🇳 台湾01{移动|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 中转🇨🇦CA2AptumTechnologies:@nodpai
-      - 🇳🇱 荷兰_tg+univstar_88
-      - 🇸🇬 SG8AmazonTechnologiesInc.:@airproxies
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇨🇳 CN11
       - 🇬🇧 |英国
-      - Heroku-3_2
-      - 🇨🇳 CN82
-      - 🇨🇳 中国_tg+univstar_30
-      - 🇨🇳 CN41
-      - 🇺🇲 中转🇺🇸US11KirinoLLC:@nodpai
-      - 🇸🇬 新加坡03{优化2|V2ray}
-      - 🇨🇳 CN23
-      - 马来02{移动|V2ray}
-      - 🇨🇳 CN84
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇨🇳 中国_tg+univstar_44
-      - 🇷🇺 西伯利亚6
-      - 🇨🇦 加拿大✈️46
-      - 🇰🇷 韩国25
-      - 🇺🇲 US10
-      - 🇭🇰 中转🇭🇰HK16G-CoreLabsS.A:@nodpai
-      - 🇨🇳 CN20
-      - 🇸🇬 中转🇸🇬SG19LinodeLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_105
-      - CA1OVHSAS:@nodpai
-      - 🇰🇷 |韩国|中转|
-      - 🇺🇲 USA美国001
-      - 🇭🇰 |香港
-      - 🇨🇳 中转🇹🇼TW26KirinoLLC:@airproxies
-      - Heroku-2_2
-      - 🇯🇵 日本01{优化1|V2ray}
-      - 🇮🇳 |印度
-      - 🇸🇬 中转🇸🇬SG16KirinoLLC:@nodpai
       - 🇨🇳 CN16
-      - 🇭🇰 香港高速|
-      - 🇨🇳 CN26
-      - 🇭🇰 香港02|1x
-      - 🇩🇪 DE2OVHSAS:@nodpai
-      - 🇯🇵 日本1|
+      - 🇭🇰 香港_tg+univstar_108
+      - 🇯🇵 日本-Trojan
+      - 🇨🇦 |加拿大
+      - 🇭🇰 香港跨境金融专线02
+      - 🇺🇲 中转🇺🇸US6ColocationAmericaCorporation:@airproxies
+      - 🇸🇬 中转🇸🇬SG13LinodeLLC:@nodpai
+      - Heroku-2_2
+      - 🇯🇵 中转🇯🇵JP30SAKURAInternetInc.:@airproxies
+      - 🇰🇷 韩国02{移动|V2ray}
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇦🇺 |澳大利亚
+      - 🇺🇲 US152Amazon.comInc.:@airproxies
+      - 🇩🇪 中转🇩🇪DE13myVirtualserver:@airproxies
+      - 🇺🇲 美国_tg+univstar_55
+      - "@sharingnode"
+      - 🇨🇳 CN53
+      - 🇰🇷 韩国_tg+univstar_70
+      - 🇯🇵 日本东京|负载均衡
+      - 🏳️‍🌈 流量站-美国2
+      - 🇭🇰 香港IEPL内网专线02
+      - 🇺🇲 美国_tg+univstar_83
+      - 🇺🇲 中转🇺🇸US8CloudflareInc.:@nodpai
+      - 🇬🇧 英国_tg+univstar_92
+      - "@sharingnode 2"
+      - 🇨🇳 CN13
+      - 🇫🇷 |法国
+      - 🇦🇷 中转🇦🇷AR1SondatechS.A.S.:@airproxies
+      - 🇭🇰 香港IPLC顶级专线04
+      - 全球直连③
+      - 🇭🇰 香港05{优化1|V2ray}
+      - 🇸🇬 狮城03|1x
+      - 马来03{联通|V2ray}
+      - 🇯🇵 日本01{优化1|V2ray}
+      - Heroku-5_6
+      - 🇨🇳 CN78
+      - 🇭🇰 香港_tg+univstar_73
+      - "@sharingnode 3"
+      - 🇨🇳 CN57
+      - 🇪🇸 中转🇪🇸ES2PropelinConsultingS.L.:@nodpai
+      - 这是教程赠送免费节点
+      - "@sharingnode 4"
+      - 🇩🇪 _v2ray-4zl-德国01
+      - 🇦🇺 AU澳大利亚001
+      - 🇨🇳 CN62
+      - 🇯🇵 中转🇯🇵JP17KirinoLLC:@nodpai
+      - 🇸🇬 新加坡-Trojan①
+      - "@sharingnode 5"
+      - 🇭🇰 香港_tg+univstar_26
+      - Heroku-2_1
+      - 🇨🇳 CN12
+      - 🇩🇪 DE61CloudflareInc.:@airproxies
+      - 马来04{联通|V2ray}
+      - 🇦🇺 澳大利亚_tg+univstar_38
+      - 🇨🇦 CA加拿大002
+      - Heroku-5_4
+      - HCM1[TLS]
       - 🇸🇬 [直连0.5x]新加坡Singapore
-      - 🇭🇰 中转🇭🇰HK1HongKongCableTelevisionLimited:@nodpai
-      - 🇨🇳 中国_tg+univstar_3
-      - tg+univstar_85
-      - 网址:hass.win/reg
-      - 🇨🇳 CN44
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇯🇵 日本JP|
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇨🇳 CN23
+      - 🇳🇱 中转🇳🇱NL1KirinoLLC:@nodpai
+      - 🇨🇳 中国_tg+univstar_84
+      - 🇭🇰 香港IPLC顶级专线02
+      - "@sharingnode 6"
+      - 🇯🇵 中转🇯🇵JP54KirinoLLC:@nodpai
+      - 免费节点定期失效
+      - HCM[LMHT][TLS]
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇨🇳 CN2
+      - 🇬🇧 英国01|1x
+      - 马来-Trojan
+      - 🇨🇳 CN25
+      - 🇺🇲 美国04{优化1|V2ray}
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇦 加拿大✈️43
+      - 🇯🇵 中转🇯🇵JP31SAKURAInternetInc.:@airproxies
+      - 🇭🇰 香港2
+      - 🇯🇵 中转🇯🇵JP11LinodeLLC:@nodpai
+      - "@sharingnode 7"
+      - "@sharingnode 8"
+      - "@sharingnode 9"
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 新加坡08{优化1|V2ray}
+      - 🇨🇳 CN46
+      - 国内-湖北20M
+      - "@sharingnode 10"
+      - 🇨🇳 |台湾
+      - 🇸🇬 狮城1|
+      - 🇺🇲 美国_tg+univstar_105
+      - "@sharingnode 11"
+      - "|捷克2"
+      - 🇳🇱 中转🇳🇱NL3KirinoLLC:@airproxies
+      - 🇺🇲 USA美国001
+      - 🇨🇳 CN100
+      - 马来03{联通|V2ray} 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 旧金山二区|负载均衡
-      - 🇸🇬 |新加坡
-      - Heroku-4_2
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇮🇳 印度✈️15
-      - 🇨🇳 CN38
-      - 🇨🇳 TW2
-      - 🇯🇵 JP1Amazon.comInc.:@airproxies
-      - 🇬🇧 英国{联通|V2ray}
-      - 🇧🇷 中转🇧🇷BR1EivusDataCenterETelecom:@nodpai
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇨🇳 中国_tg+univstar_32
-      - 🇭🇰 |香港03|直连|奈飞解锁
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 CN80
-      - 🇸🇬 新加坡08{优化1|V2ray}
-      - 🇯🇵 日本05{优化1|V2ray}
-      - 🇭🇰 香港02{优化2|V2ray}
-      - tg+univstar_102
-      - 🇨🇳 CN45
-      - 🇨🇳 中国_tg+univstar_63
-      - 🇯🇵 日本03|1x
-      - 🇨🇳 CN36
-      - 🇺🇲 中转🇺🇸US2KirinoLLC:@nodpai
-      - 🇨🇳 CN25
-      - 🇺🇲 中转🇺🇸US12KirinoLLC:@airproxies
-      - 🇸🇬 中转🇸🇬SG18KirinoLLC:@airproxies
-      - "@sharingnode"
-      - 🇮🇳 印度✈️17
-      - 🇨🇳 CN10
-      - "@sharingnode 2"
-      - 🇨🇳 CN27
-      - 🇩🇪 DE德国003
-      - 🇳🇱 |荷兰
-      - 🇨🇳 中国_tg+univstar_17
-      - 🇯🇵 日本05{优化1|V2ray} 2
-      - 🇨🇳 CN47
-      - Heroku-3_3
-      - 🇸🇬 新加坡-Trojan①
-      - 🇸🇬 中转🇸🇬SG22DigitalOceanLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_94
-      - 🇬🇧 英国{联通|V2ray} 2
-      - 🇷🇺 |俄罗斯|中转|
-      - 🇮🇳 印度✈️20
-      - 🇨🇳 CN3
-      - 🇭🇰 香港3
-      - 🇸🇬 SG2Amazon.comInc.:@airproxies
-      - 🇨🇳 台湾01{移动|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 中转🇨🇦CA2AptumTechnologies:@nodpai
-      - 🇳🇱 荷兰_tg+univstar_88
-      - 🇸🇬 SG8AmazonTechnologiesInc.:@airproxies
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇨🇳 CN11
       - 🇬🇧 |英国
-      - Heroku-3_2
-      - 🇨🇳 CN82
-      - 🇨🇳 中国_tg+univstar_30
-      - 🇨🇳 CN41
-      - 🇺🇲 中转🇺🇸US11KirinoLLC:@nodpai
-      - 🇸🇬 新加坡03{优化2|V2ray}
-      - 🇨🇳 CN23
-      - 马来02{移动|V2ray}
-      - 🇨🇳 CN84
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇨🇳 中国_tg+univstar_44
-      - 🇷🇺 西伯利亚6
-      - 🇨🇦 加拿大✈️46
-      - 🇰🇷 韩国25
-      - 🇺🇲 US10
-      - 🇭🇰 中转🇭🇰HK16G-CoreLabsS.A:@nodpai
-      - 🇨🇳 CN20
-      - 🇸🇬 中转🇸🇬SG19LinodeLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_105
-      - CA1OVHSAS:@nodpai
-      - 🇰🇷 |韩国|中转|
-      - 🇺🇲 USA美国001
-      - 🇭🇰 |香港
-      - 🇨🇳 中转🇹🇼TW26KirinoLLC:@airproxies
-      - Heroku-2_2
-      - 🇯🇵 日本01{优化1|V2ray}
-      - 🇮🇳 |印度
-      - 🇸🇬 中转🇸🇬SG16KirinoLLC:@nodpai
       - 🇨🇳 CN16
-      - 🇭🇰 香港高速|
-      - 🇨🇳 CN26
-      - 🇭🇰 香港02|1x
-      - 🇩🇪 DE2OVHSAS:@nodpai
-      - 🇯🇵 日本1|
+      - 🇭🇰 香港_tg+univstar_108
+      - 🇯🇵 日本-Trojan
+      - 🇨🇦 |加拿大
+      - 🇭🇰 香港跨境金融专线02
+      - 🇺🇲 中转🇺🇸US6ColocationAmericaCorporation:@airproxies
+      - 🇸🇬 中转🇸🇬SG13LinodeLLC:@nodpai
+      - Heroku-2_2
+      - 🇯🇵 中转🇯🇵JP30SAKURAInternetInc.:@airproxies
+      - 🇰🇷 韩国02{移动|V2ray}
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇦🇺 |澳大利亚
+      - 🇺🇲 US152Amazon.comInc.:@airproxies
+      - 🇩🇪 中转🇩🇪DE13myVirtualserver:@airproxies
+      - 🇺🇲 美国_tg+univstar_55
+      - "@sharingnode"
+      - 🇨🇳 CN53
+      - 🇰🇷 韩国_tg+univstar_70
+      - 🇯🇵 日本东京|负载均衡
+      - 🏳️‍🌈 流量站-美国2
+      - 🇭🇰 香港IEPL内网专线02
+      - 🇺🇲 美国_tg+univstar_83
+      - 🇺🇲 中转🇺🇸US8CloudflareInc.:@nodpai
+      - 🇬🇧 英国_tg+univstar_92
+      - "@sharingnode 2"
+      - 🇨🇳 CN13
+      - 🇫🇷 |法国
+      - 🇦🇷 中转🇦🇷AR1SondatechS.A.S.:@airproxies
+      - 🇭🇰 香港IPLC顶级专线04
+      - 全球直连③
+      - 🇭🇰 香港05{优化1|V2ray}
+      - 🇸🇬 狮城03|1x
+      - 马来03{联通|V2ray}
+      - 🇯🇵 日本01{优化1|V2ray}
+      - Heroku-5_6
+      - 🇨🇳 CN78
+      - 🇭🇰 香港_tg+univstar_73
+      - "@sharingnode 3"
+      - 🇨🇳 CN57
+      - 🇪🇸 中转🇪🇸ES2PropelinConsultingS.L.:@nodpai
+      - 这是教程赠送免费节点
+      - "@sharingnode 4"
+      - 🇩🇪 _v2ray-4zl-德国01
+      - 🇦🇺 AU澳大利亚001
+      - 🇨🇳 CN62
+      - 🇯🇵 中转🇯🇵JP17KirinoLLC:@nodpai
+      - 🇸🇬 新加坡-Trojan①
+      - "@sharingnode 5"
+      - 🇭🇰 香港_tg+univstar_26
+      - Heroku-2_1
+      - 🇨🇳 CN12
+      - 🇩🇪 DE61CloudflareInc.:@airproxies
+      - 马来04{联通|V2ray}
+      - 🇦🇺 澳大利亚_tg+univstar_38
+      - 🇨🇦 CA加拿大002
+      - Heroku-5_4
+      - HCM1[TLS]
       - 🇸🇬 [直连0.5x]新加坡Singapore
-      - 🇭🇰 中转🇭🇰HK1HongKongCableTelevisionLimited:@nodpai
-      - 🇨🇳 中国_tg+univstar_3
-      - tg+univstar_85
-      - 网址:hass.win/reg
-      - 🇨🇳 CN44
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇯🇵 日本JP|
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇨🇳 CN23
+      - 🇳🇱 中转🇳🇱NL1KirinoLLC:@nodpai
+      - 🇨🇳 中国_tg+univstar_84
+      - 🇭🇰 香港IPLC顶级专线02
+      - "@sharingnode 6"
+      - 🇯🇵 中转🇯🇵JP54KirinoLLC:@nodpai
+      - 免费节点定期失效
+      - HCM[LMHT][TLS]
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇨🇳 CN2
+      - 🇬🇧 英国01|1x
+      - 马来-Trojan
+      - 🇨🇳 CN25
+      - 🇺🇲 美国04{优化1|V2ray}
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇦 加拿大✈️43
+      - 🇯🇵 中转🇯🇵JP31SAKURAInternetInc.:@airproxies
+      - 🇭🇰 香港2
+      - 🇯🇵 中转🇯🇵JP11LinodeLLC:@nodpai
+      - "@sharingnode 7"
+      - "@sharingnode 8"
+      - "@sharingnode 9"
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 新加坡08{优化1|V2ray}
+      - 🇨🇳 CN46
+      - 国内-湖北20M
+      - "@sharingnode 10"
+      - 🇨🇳 |台湾
+      - 🇸🇬 狮城1|
+      - 🇺🇲 美国_tg+univstar_105
+      - "@sharingnode 11"
+      - "|捷克2"
+      - 🇳🇱 中转🇳🇱NL3KirinoLLC:@airproxies
+      - 🇺🇲 USA美国001
+      - 🇨🇳 CN100
+      - 马来03{联通|V2ray} 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -422,101 +438,105 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 旧金山二区|负载均衡
-      - 🇸🇬 |新加坡
-      - Heroku-4_2
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇮🇳 印度✈️15
-      - 🇨🇳 CN38
-      - 🇨🇳 TW2
-      - 🇯🇵 JP1Amazon.comInc.:@airproxies
-      - 🇬🇧 英国{联通|V2ray}
-      - 🇧🇷 中转🇧🇷BR1EivusDataCenterETelecom:@nodpai
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇨🇳 中国_tg+univstar_32
-      - 🇭🇰 |香港03|直连|奈飞解锁
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 CN80
-      - 🇸🇬 新加坡08{优化1|V2ray}
-      - 🇯🇵 日本05{优化1|V2ray}
-      - 🇭🇰 香港02{优化2|V2ray}
-      - tg+univstar_102
-      - 🇨🇳 CN45
-      - 🇨🇳 中国_tg+univstar_63
-      - 🇯🇵 日本03|1x
-      - 🇨🇳 CN36
-      - 🇺🇲 中转🇺🇸US2KirinoLLC:@nodpai
-      - 🇨🇳 CN25
-      - 🇺🇲 中转🇺🇸US12KirinoLLC:@airproxies
-      - 🇸🇬 中转🇸🇬SG18KirinoLLC:@airproxies
-      - "@sharingnode"
-      - 🇮🇳 印度✈️17
-      - 🇨🇳 CN10
-      - "@sharingnode 2"
-      - 🇨🇳 CN27
-      - 🇩🇪 DE德国003
-      - 🇳🇱 |荷兰
-      - 🇨🇳 中国_tg+univstar_17
-      - 🇯🇵 日本05{优化1|V2ray} 2
-      - 🇨🇳 CN47
-      - Heroku-3_3
-      - 🇸🇬 新加坡-Trojan①
-      - 🇸🇬 中转🇸🇬SG22DigitalOceanLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_94
-      - 🇬🇧 英国{联通|V2ray} 2
-      - 🇷🇺 |俄罗斯|中转|
-      - 🇮🇳 印度✈️20
-      - 🇨🇳 CN3
-      - 🇭🇰 香港3
-      - 🇸🇬 SG2Amazon.comInc.:@airproxies
-      - 🇨🇳 台湾01{移动|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 中转🇨🇦CA2AptumTechnologies:@nodpai
-      - 🇳🇱 荷兰_tg+univstar_88
-      - 🇸🇬 SG8AmazonTechnologiesInc.:@airproxies
-      - 🇨🇳 中国_tg+univstar_12
-      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇨🇳 CN11
       - 🇬🇧 |英国
-      - Heroku-3_2
-      - 🇨🇳 CN82
-      - 🇨🇳 中国_tg+univstar_30
-      - 🇨🇳 CN41
-      - 🇺🇲 中转🇺🇸US11KirinoLLC:@nodpai
-      - 🇸🇬 新加坡03{优化2|V2ray}
-      - 🇨🇳 CN23
-      - 马来02{移动|V2ray}
-      - 🇨🇳 CN84
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇨🇳 中国_tg+univstar_44
-      - 🇷🇺 西伯利亚6
-      - 🇨🇦 加拿大✈️46
-      - 🇰🇷 韩国25
-      - 🇺🇲 US10
-      - 🇭🇰 中转🇭🇰HK16G-CoreLabsS.A:@nodpai
-      - 🇨🇳 CN20
-      - 🇸🇬 中转🇸🇬SG19LinodeLLC:@nodpai
-      - 🇺🇲 美国_tg+univstar_105
-      - CA1OVHSAS:@nodpai
-      - 🇰🇷 |韩国|中转|
-      - 🇺🇲 USA美国001
-      - 🇭🇰 |香港
-      - 🇨🇳 中转🇹🇼TW26KirinoLLC:@airproxies
-      - Heroku-2_2
-      - 🇯🇵 日本01{优化1|V2ray}
-      - 🇮🇳 |印度
-      - 🇸🇬 中转🇸🇬SG16KirinoLLC:@nodpai
       - 🇨🇳 CN16
-      - 🇭🇰 香港高速|
-      - 🇨🇳 CN26
-      - 🇭🇰 香港02|1x
-      - 🇩🇪 DE2OVHSAS:@nodpai
-      - 🇯🇵 日本1|
+      - 🇭🇰 香港_tg+univstar_108
+      - 🇯🇵 日本-Trojan
+      - 🇨🇦 |加拿大
+      - 🇭🇰 香港跨境金融专线02
+      - 🇺🇲 中转🇺🇸US6ColocationAmericaCorporation:@airproxies
+      - 🇸🇬 中转🇸🇬SG13LinodeLLC:@nodpai
+      - Heroku-2_2
+      - 🇯🇵 中转🇯🇵JP30SAKURAInternetInc.:@airproxies
+      - 🇰🇷 韩国02{移动|V2ray}
+      - 🇩🇪 德国01{移动|V2ray}
+      - 🇦🇺 |澳大利亚
+      - 🇺🇲 US152Amazon.comInc.:@airproxies
+      - 🇩🇪 中转🇩🇪DE13myVirtualserver:@airproxies
+      - 🇺🇲 美国_tg+univstar_55
+      - "@sharingnode"
+      - 🇨🇳 CN53
+      - 🇰🇷 韩国_tg+univstar_70
+      - 🇯🇵 日本东京|负载均衡
+      - 🏳️‍🌈 流量站-美国2
+      - 🇭🇰 香港IEPL内网专线02
+      - 🇺🇲 美国_tg+univstar_83
+      - 🇺🇲 中转🇺🇸US8CloudflareInc.:@nodpai
+      - 🇬🇧 英国_tg+univstar_92
+      - "@sharingnode 2"
+      - 🇨🇳 CN13
+      - 🇫🇷 |法国
+      - 🇦🇷 中转🇦🇷AR1SondatechS.A.S.:@airproxies
+      - 🇭🇰 香港IPLC顶级专线04
+      - 全球直连③
+      - 🇭🇰 香港05{优化1|V2ray}
+      - 🇸🇬 狮城03|1x
+      - 马来03{联通|V2ray}
+      - 🇯🇵 日本01{优化1|V2ray}
+      - Heroku-5_6
+      - 🇨🇳 CN78
+      - 🇭🇰 香港_tg+univstar_73
+      - "@sharingnode 3"
+      - 🇨🇳 CN57
+      - 🇪🇸 中转🇪🇸ES2PropelinConsultingS.L.:@nodpai
+      - 这是教程赠送免费节点
+      - "@sharingnode 4"
+      - 🇩🇪 _v2ray-4zl-德国01
+      - 🇦🇺 AU澳大利亚001
+      - 🇨🇳 CN62
+      - 🇯🇵 中转🇯🇵JP17KirinoLLC:@nodpai
+      - 🇸🇬 新加坡-Trojan①
+      - "@sharingnode 5"
+      - 🇭🇰 香港_tg+univstar_26
+      - Heroku-2_1
+      - 🇨🇳 CN12
+      - 🇩🇪 DE61CloudflareInc.:@airproxies
+      - 马来04{联通|V2ray}
+      - 🇦🇺 澳大利亚_tg+univstar_38
+      - 🇨🇦 CA加拿大002
+      - Heroku-5_4
+      - HCM1[TLS]
       - 🇸🇬 [直连0.5x]新加坡Singapore
-      - 🇭🇰 中转🇭🇰HK1HongKongCableTelevisionLimited:@nodpai
-      - 🇨🇳 中国_tg+univstar_3
-      - tg+univstar_85
-      - 网址:hass.win/reg
-      - 🇨🇳 CN44
+      - 🇨🇳 中国_tg+univstar_23
+      - 🇯🇵 日本JP|
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇨🇳 CN23
+      - 🇳🇱 中转🇳🇱NL1KirinoLLC:@nodpai
+      - 🇨🇳 中国_tg+univstar_84
+      - 🇭🇰 香港IPLC顶级专线02
+      - "@sharingnode 6"
+      - 🇯🇵 中转🇯🇵JP54KirinoLLC:@nodpai
+      - 免费节点定期失效
+      - HCM[LMHT][TLS]
+      - 🇨🇳 中国_tg+univstar_75
+      - 🇨🇳 CN2
+      - 🇬🇧 英国01|1x
+      - 马来-Trojan
+      - 🇨🇳 CN25
+      - 🇺🇲 美国04{优化1|V2ray}
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🇨🇦 加拿大✈️43
+      - 🇯🇵 中转🇯🇵JP31SAKURAInternetInc.:@airproxies
+      - 🇭🇰 香港2
+      - 🇯🇵 中转🇯🇵JP11LinodeLLC:@nodpai
+      - "@sharingnode 7"
+      - "@sharingnode 8"
+      - "@sharingnode 9"
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 新加坡08{优化1|V2ray}
+      - 🇨🇳 CN46
+      - 国内-湖北20M
+      - "@sharingnode 10"
+      - 🇨🇳 |台湾
+      - 🇸🇬 狮城1|
+      - 🇺🇲 美国_tg+univstar_105
+      - "@sharingnode 11"
+      - "|捷克2"
+      - 🇳🇱 中转🇳🇱NL3KirinoLLC:@airproxies
+      - 🇺🇲 USA美国001
+      - 🇨🇳 CN100
+      - 马来03{联通|V2ray} 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -658,7 +678,6 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇭🇰 |香港03|直连|奈飞解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -704,39 +723,43 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 |香港03|直连|奈飞解锁
-      - 🇭🇰 香港02{优化2|V2ray}
-      - 🇭🇰 香港3
-      - 🇭🇰 中转🇭🇰HK16G-CoreLabsS.A:@nodpai
-      - 🇭🇰 |香港
-      - 🇭🇰 香港高速|
-      - 🇭🇰 香港02|1x
-      - 🇭🇰 中转🇭🇰HK1HongKongCableTelevisionLimited:@nodpai
+      - 🇭🇰 香港_tg+univstar_108
+      - 🇭🇰 香港跨境金融专线02
+      - 🇭🇰 香港IEPL内网专线02
+      - 🇭🇰 香港IPLC顶级专线04
+      - 🇭🇰 香港05{优化1|V2ray}
+      - 🇭🇰 香港_tg+univstar_73
+      - 🇭🇰 香港_tg+univstar_26
+      - 🇭🇰 香港IPLC顶级专线02
+      - 🇭🇰 香港2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP1Amazon.comInc.:@airproxies
-      - 🇯🇵 日本05{优化1|V2ray}
-      - 🇯🇵 日本03|1x
-      - 🇯🇵 日本05{优化1|V2ray} 2
+      - 🇯🇵 日本-Trojan
+      - 🇯🇵 中转🇯🇵JP30SAKURAInternetInc.:@airproxies
+      - 🇯🇵 日本东京|负载均衡
       - 🇯🇵 日本01{优化1|V2ray}
-      - 🇯🇵 日本1|
+      - 🇯🇵 中转🇯🇵JP17KirinoLLC:@nodpai
+      - 🇯🇵 日本JP|
+      - 🇯🇵 中转🇯🇵JP54KirinoLLC:@nodpai
+      - 🇯🇵 中转🇯🇵JP31SAKURAInternetInc.:@airproxies
+      - 🇯🇵 中转🇯🇵JP11LinodeLLC:@nodpai
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇺🇲 中转🇺🇸US2KirinoLLC:@nodpai
-      - 🇺🇲 中转🇺🇸US12KirinoLLC:@airproxies
-      - 🇺🇲 美国_tg+univstar_94
-      - 🇺🇲 中转🇺🇸US11KirinoLLC:@nodpai
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇺🇲 US10
+      - 🇺🇲 中转🇺🇸US6ColocationAmericaCorporation:@airproxies
+      - 🇺🇲 US152Amazon.comInc.:@airproxies
+      - 🇺🇲 美国_tg+univstar_55
+      - 🏳️‍🌈 流量站-美国2
+      - 🇺🇲 美国_tg+univstar_83
+      - 🇺🇲 中转🇺🇸US8CloudflareInc.:@nodpai
+      - 🇺🇲 美国04{优化1|V2ray}
       - 🇺🇲 美国_tg+univstar_105
       - 🇺🇲 USA美国001
   - name: 🇨🇳 台湾节点
@@ -745,39 +768,33 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 TW2
-      - 🇨🇳 台湾01{移动|V2ray}
-      - 🇨🇳 中转🇹🇼TW26KirinoLLC:@airproxies
+      - 🇨🇳 |台湾
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 |新加坡
-      - 🇸🇬 新加坡05{优化2|V2ray}
-      - 🇸🇬 新加坡08{优化1|V2ray}
-      - 🇸🇬 中转🇸🇬SG18KirinoLLC:@airproxies
+      - 🇸🇬 中转🇸🇬SG13LinodeLLC:@nodpai
+      - 🇸🇬 狮城03|1x
       - 🇸🇬 新加坡-Trojan①
-      - 🇸🇬 中转🇸🇬SG22DigitalOceanLLC:@nodpai
-      - 🇸🇬 SG2Amazon.comInc.:@airproxies
-      - 🇸🇬 SG8AmazonTechnologiesInc.:@airproxies
-      - 🇸🇬 新加坡03{优化2|V2ray}
-      - 🇸🇬 中转🇸🇬SG19LinodeLLC:@nodpai
-      - 🇸🇬 中转🇸🇬SG16KirinoLLC:@nodpai
       - 🇸🇬 [直连0.5x]新加坡Singapore
+      - 🇸🇬 新加坡07{优化2|V2ray}
+      - 🇸🇬 SG新加坡002
+      - 🇸🇬 新加坡08{优化1|V2ray}
+      - 🇸🇬 狮城1|
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 韩国25
-      - 🇰🇷 |韩国|中转|
+      - 🇰🇷 韩国02{移动|V2ray}
+      - 🇰🇷 韩国_tg+univstar_70
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇭🇰 |香港03|直连|奈飞解锁
+      - DIRECT
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
