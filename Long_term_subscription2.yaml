@@ -5,170 +5,208 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇫🇷 |法国1, server: gy.linghun3.xyz, port: 40073, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇰🇷 |韩国1, server: 139.227.182.203, port: 44001, type: ss, cipher: chacha20-ietf-poly1305, password: 3a06a53d-9969-4490-b34b-9d6c56a1b3e2}
-  - {name: 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/us1, headers: {Host: i0.hdslb.com}}}
-  - {name: 🇭🇰 HK01|香港|SS|x1.0, server: clientss.asucaeva.net, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2}
-  - {name: 🇫🇷 |法国01, server: dl-eu1.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-fr.efpan.one, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港01|流媒体解锁|高速, server: hk1.czs1000.com, port: 8884, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKIX-1号线路|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/hkix?ed=2048", headers: {Host: hkix.guolicheng.cyou}}}
-  - {name: 🇻🇳 |越南, server: 124.225.24.154, port: 25017, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: 哥伦比亚BOG020.6x, server: ll-iepl.244312.xyz, port: 54809, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇨🇳 CN73→openitsub.com, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40199, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇨🇳 CN117→openitsub.com, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40369, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇺🇲 |美国02|中转|, server: 104.208.74.249, port: 48006, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
+  - {name: 🇫🇷 FR1OVHSAS:@nodpai, server: 176.31.83.90, port: 443, type: trojan, password: origin, skip-cert-verify: false}
+  - {name: 🇫🇷 法国MRS021.3x, server: ll-iepl.244312.xyz, port: 54122, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇩🇪 德国G口直连|负载均衡, server: de.p1.gay, port: 25914, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: de.p1.gay, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国|中转|, server: 104.208.74.249, port: 48004, type: vmess, uuid: 7cff6b46-dcd8-3151-8065-a7dbff67b8a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
+  - {name: 🇨🇳 台北Hinet-dip, server: 60.249.3.226, port: 3389, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: false}
+  - {name: 🇩🇪 法兰克福✈️55, server: 55.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 55.72img.xyz}}}
+  - {name: 🇯🇵 日本3|, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: false}
+  - {name: 🇨🇳 CN149→openitsub.com, server: jkxc1.cdn.node.a.ddns-ounk.com, port: 40198, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}}}
   - {name: 🇺🇲 美国_R_21, server: sh163.safetelescope.cc, port: 62306, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: "🇺🇲 [直连0.5x]美国UnitedStates", server: usa.838501.xyz, port: 15001, type: trojan, password: 43b01aa0-a7b6-49b8-9e97-699503eafd1a, skip-cert-verify: false}
-  - {name: 🇫🇷 |法国, server: 121.62.19.152, port: 15154, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
-  - {name: 🇰🇷 |韩国|中转|, server: 104.208.74.249, port: 48004, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
-  - {name: 🇬🇧 |英国, server: 124.225.25.33, port: 45324, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: 🇸🇬 |新加坡3, server: sg3.linghun3.xyz, port: 40011, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇸🇪 美国SEA020.6x, server: ll-iepl.244312.xyz, port: 54801, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇸🇬 新加坡_R_434, server: hn-01.cctelescope.xyz, port: 11600, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇹🇭 泰国BKK020.6x, server: ll-iepl.244312.xyz, port: 54107, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇨🇳 中国_tg+univstar_67, server: cm.kapoknode.com, port: 25896, type: vmess, uuid: 577eaf34-a26a-4faf-9ef0-c4dd21c9860c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}}
-  - {name: 🇯🇵 日本TOK010.6x, server: cc-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: "🇩🇪 [直连0.5x]德国Germany", server: de.838501.xyz, port: 15001, type: trojan, password: f9728721-a58b-4c19-a1ea-1e46081c92c7, skip-cert-verify: false}
-  - {name: 🇦🇺 |澳大利亚, server: 14.18.93.168, port: 20061, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇹🇭 |泰国3, server: 139.227.182.203, port: 43003, type: ss, cipher: chacha20-ietf-poly1305, password: 3a06a53d-9969-4490-b34b-9d6c56a1b3e2}
-  - {name: 🇸🇬 新加坡_R_522, server: wz.safetelescope.cc, port: 46562, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇨🇦 加拿大_R_339, server: wz.safetelescope.cc, port: 62302, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇺🇲 美国(), server: 128.14.140.254, port: 443, type: vmess, uuid: 02ddd27e-cb08-424d-8279-d02bf11b0342, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: zz1.wblogw1.tk}}}
-  - {name: 🇰🇷 |韩国04|高速|分流2, server: kr2.czs1000.com, port: 6687, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 新西兰AKL010.6x, server: cc-iepl.244312.xyz, port: 54811, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇨🇳 中国_tg+univstar_32, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}}
-  - {name: 🇩🇪 |德国, server: 14.18.93.168, port: 20055, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾流媒体解锁_2, server: zf.gz.cu.edu.kg, port: 12281, type: vmess, uuid: 6bf8967e-5f0b-454d-ad3d-0109d42b6978, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "@sharingnode", server: 29.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 29.72img.xyz}}}
-  - {name: 🇳🇱 |荷兰01, server: dl-eu1.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-nl.efpan.one, skip-cert-verify: false}
-  - {name: tg+univstar_56, server: 46.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 46.72img.xyz}}}
-  - {name: 🇸🇬 新加坡_tg+univstar_34, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 |香港04|直连|奈飞解锁, server: 16.162.21.36, port: 44300, type: vmess, uuid: 7cff6b46-dcd8-3151-8065-a7dbff67b8a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 16.162.21.36}}}
-  - {name: "🇮🇳 印度01{移动|V2ray}", server: cm.awslcn.cc, port: 25216, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
-  - {name: 🇸🇬 |新加坡, server: 14.18.93.168, port: 20028, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇸🇦 |沙特阿拉伯|中转|, server: 104.208.74.249, port: 48015, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
-  - {name: 🇲🇾 |马来西亚1, server: gy.linghun3.xyz, port: 40066, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇨🇳 不限速千兆-tw254, server: fndx600mtwline010tr.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: d0760c7c21f8, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndx600mtwline010tr.fnline.xyz, path: "", tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇯🇵 |日本, server: 124.225.25.33, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: 🇺🇲 凤凰城36, server: 36.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 36.72img.xyz}}}
-  - {name: 以色列TLV020.6x, server: ll-iepl.244312.xyz, port: 54142, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇳🇱 菲律宾MNL010.6x, server: cc-iepl.244312.xyz, port: 54113, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇨🇳 台湾TAI030.6x, server: ll-iepl.244312.xyz, port: 54100, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇷🇺 俄罗斯30, server: 30.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 30.72img.xyz}}}
-  - {name: 🇸🇬 【共享奈飞】新加坡020.6x, server: ll-iepl.244312.xyz, port: 54509, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇩🇪 德国-Trojan, server: de01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: de01.awcloud.top, skip-cert-verify: false}
-  - {name: 🇨🇳 不限速千兆-tw2819, server: fn600mlines022.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a57a10279872, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines022.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 卢森堡STE010.6x, server: cc-iepl.244312.xyz, port: 54132, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇭🇰 香港_R_446, server: yc.safetelescope.cc, port: 50804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇰🇷 KR01|韩国|SS|x1.0, server: clientss.asucaeva.net, port: 44001, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2}
-  - {name: 🇯🇵 中转🇯🇵JP8KirinoLLC:@nodpai, server: oss-cn-shanghai.westdatacloud.top, port: 20032, type: trojan, password: 1EAAED1E-5F20-F839-4981-754DD42E76DF, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 哥伦比亚BOG010.6x, server: cc-iepl.244312.xyz, port: 54809, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇷🇺 西伯利亚6, server: 6.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 6.72img.xyz}}}
-  - {name: "🇺🇲 US01[TLS]", server: us01.nhkvpn.net, port: 443, type: trojan, password: 3d8683b1-5fd4-43dd-b9d5-b23abd4e7506, sni: dl.ops.kgvn.garenanow.com, skip-cert-verify: false}
-  - {name: 🇭🇰 中转🇭🇰HK4KirinoLLC:@nodpai, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: F5AFF76C-8C28-878F-3A1A-241A467736F5, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 US01|美国|x1.0, server: client.asucaeva.net, port: 31001, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇭🇰 HK6, server: 14.18.93.168, port: 20011, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇨🇳 不限速千兆-tw2611, server: fn600mlines020.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5dac918f6134, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines020.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
-  - {name: 🇺🇲 美国() 2, server: 138.2.122.225, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: 🇸🇬 |新加坡 2, server: 124.225.25.33, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: 🇮🇳 印度_R_361, server: yc.safetelescope.cc, port: 21637, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 香港HKG060.6x, server: ll-iepl.244312.xyz, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇺🇲 亚美尼亚EVN020.6x, server: ll-iepl.244312.xyz, port: 54149, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: Heroku-3_1, server: 167.99.73.48, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 003kkou.pages.dev}}}
-  - {name: 🇺🇲 |美国06|高速|分流2, server: us4.czs1000.com, port: 6687, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇹🇭 |泰国, server: 124.225.24.154, port: 25001, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: Heroku-5_1, server: 170.187.226.75, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 005dgdf.pages.dev}}}
-  - {name: 🇯🇵 |日本 2, server: 117.149.247.11, port: 20031, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇬🇧 |英国 2, server: 14.18.93.168, port: 20052, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇮🇹 意大利MIL020.6x, server: ll-iepl.244312.xyz, port: 54128, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇫🇷 法国|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/fr?ed=2048", headers: {Host: fr.guolicheng.cyou}}}
-  - {name: 🇸🇬 狮城1|, server: 45.64.22.55, port: 443, type: trojan, password: TaSXwOxORaZ7pD8DlzCE3yNFS5C38eeCuDng03FcA4BSpjK96YaZRIAlx2yqY3, sni: mhkla.freetrade.link, skip-cert-verify: false}
-  - {name: Heroku-2_6, server: 167.71.218.212, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 002hngh.pages.dev}}}
-  - {name: 🇺🇲 美国c|, server: 45.12.131.243, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/321113221131, headers: {Host: www.29703788.xyz}}}
-  - {name: IN1→openitsub.com, server: 167.179.32.53, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 005dgdf.pages.dev}}}
-  - {name: Heroku-5_5, server: 167.114.67.25, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 005dgdf.pages.dev}}}
-  - {name: "🇺🇲 美国05{优化2|V2ray}", server: us2.awslcn.cc, port: 25256, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.cc}}}
-  - {name: 🇷🇺 俄罗斯-Trojan, server: ru01.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: ru01.awcloud.top, skip-cert-verify: false}
-  - {name: 🇫🇷 |v2-法国2, server: 121.62.19.183, port: 11811, type: vmess, uuid: 7318b536-367d-4b52-9ae5-6ee1807efcb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Apple.com}}}
-  - {name: 🇨🇦 加拿大TOR020.6x, server: ll-iepl.244312.xyz, port: 54804, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇸🇬 新加坡CN2|电信优化, server: adpostlookxa1xd-12.n1.gay, port: 32239, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: adpostlookxa1xd-12.n1.gay, skip-cert-verify: false}
-  - {name: 🇯🇵 |日本01|流媒体解锁|高速分流, server: jptr.bfyun.top, port: 4488, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇩🇪 德国_R_523, server: sh163.safetelescope.cc, port: 62301, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇻🇳 越南_R_515, server: wz.safetelescope.cc, port: 28368, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇺🇲 US4→openitsub.com, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: false}
-  - {name: https://t.me/daluoboji, server: 114514, port: 8654, type: ss, cipher: none, password: wwe}
-  - {name: 🇩🇪 |德国 2, server: 14.18.93.168, port: 20055, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇮🇳 印度✈️20, server: 20.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 20.72img.xyz}}}
-  - {name: 🇮🇩 印尼JAK010.6x, server: cc-iepl.244312.xyz, port: 54117, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇺🇲 美国圣何塞-江移-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/us2, headers: {Host: i0.hdslb.com}}}
-  - {name: 🇭🇰 中转🇭🇰HK15HGCGlobalCommunicationsLimited:@airproxies, server: h745768.waihuizhibiaowang.com, port: 15543, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2}
-  - {name: 🇺🇲 美国_R_335, server: yc.safetelescope.cc, port: 21632, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇯🇵 |日本 3, server: 117.149.247.11, port: 20031, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇨🇳 CN60→openitsub.com, server: pg57.cdn.node.a.ddns-ounk.com, port: 40120, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇨🇳 CN32→openitsub.com, server: bf98.cdn.node.a.ddns-ounk.com, port: 40110, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇺🇲 US7, server: 117.149.247.11, port: 20048, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇩🇪 |德国, server: 14.18.93.168, port: 20055, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbikom, server: 116.129.253.191, port: 3389, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: false}
+  - {name: 🇧🇷 RR01|巴西|x1.0, server: client.asucaeva.net, port: 31008, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
+  - {name: 🇯🇵 日本TOK021.3x, server: ll-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇨🇳 |台湾TWx1🔓, server: 183.245.147.53, port: 55049, type: vmess, uuid: e86425cd-bf24-45e3-91d4-17b286f72526, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇹🇷 土耳其_R_458, server: yc.safetelescope.cc, port: 21565, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 香港2, server: 20.187.70.46, port: 80, type: vmess, uuid: 7496964f-b535-4266-903e-85c986a1584a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本GC|负载均衡, server: gjcp.p1.gay, port: 26234, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: gjcp.p1.gay, skip-cert-verify: false}
   - {name: 🇹🇭 泰国_R_557, server: hn-01.cctelescope.xyz, port: 11799, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇺🇲 |美国, server: 117.149.247.11, port: 20048, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国 2, server: 117.149.247.11, port: 20048, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇩🇪 德国FRA010.6x, server: cc-iepl.244312.xyz, port: 54120, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇭🇰 香港_R_316, server: hn-01.cctelescope.xyz, port: 11804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇩🇪 DE1OVHSAS:@nodpai, server: 51.77.71.134, port: 443, type: trojan, password: origin, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡_R_441, server: yc.safetelescope.cc, port: 50306, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇨🇳 中国_tg+univstar_27, server: z2.810823.xyz, port: 13081, type: ss, cipher: chacha20-ietf-poly1305, password: 55ffb07a-b0cc-4f14-8fc3-68fe0524cbbb}
-  - {name: 🇨🇳 不限速千兆-tw11, server: fn600mliness011.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 2d59efdde6c9, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness011.fnline.vip, path: "", tls: true, mux: true, skip-cert-verify: false}}
-  - {name: "马来03{联通|V2ray}", server: cu.awslcn.cc, port: 25228, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: 🇨🇳 |台湾, server: 14.18.93.168, port: 20011, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
-  - {name: 瑞典_R_362, server: yc.safetelescope.cc, port: 21099, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇬🇧 |英国1, server: uk1.linghun3.xyz, port: 40062, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇮🇹 意大利MIL010.6x, server: cc-iepl.244312.xyz, port: 54128, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇩🇪 法兰克福✈️53, server: 53.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 53.72img.xyz}}}
-  - {name: 🇯🇵 JP02|日本|x1.0, server: client.asucaeva.net, port: 32002, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: GB3→openitsub.com, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: false}
-  - {name: "@sharingnode 2", server: uk.xlkjjs.top, port: 443, type: vmess, uuid: 6ea22ab5-2923-3feb-827c-79e4b8cd3f38, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk.xlkjjs.top}}}
-  - {name: "|拉脱维亚", server: 121.62.19.183, port: 21127, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
-  - {name: 🇧🇪 德国BER020.6x, server: ll-iepl.244312.xyz, port: 54147, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇭🇰 香港HGC-江移|解锁流媒体, server: 223.111.202.148, port: 30060, type: trojan, password: 8d0bbf13-e1ef-419d-b054-20815774233b, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
-  - {name: "🇮🇳 印度02{联通|V2ray}", server: cu.awslcn.cc, port: 25216, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: "🇨🇳 台湾①{移动|V2ray}", server: cm.awslcn.cc, port: 25232, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
-  - {name: 澳洲ADL010.6x, server: cc-iepl.244312.xyz, port: 54118, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: "@sharingnode 3", server: 22.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 22.72img.xyz}}}
-  - {name: 🇺🇲 |美国1, server: us1.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
-  - {name: 🇨🇳 中国_tg+univstar_9, server: node.ckcloud.info, port: 25926, type: vmess, uuid: 829b32f6-0083-4057-affe-14b061dc8954, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
-  - {name: "@sharingnode 4", server: 45.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 45.72img.xyz}}}
-  - {name: 🇨🇳 中国_tg+univstar_21, server: node.ckcloud.info, port: 25926, type: vmess, uuid: e0614e00-122f-465d-bb62-29b712a5e974, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
-  - {name: 🇨🇦 CA01|加拿大|SS|x1.0, server: clientss.asucaeva.net, port: 41005, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2}
-  - {name: 🇺🇲 US03|美国|x1.0, server: client.asucaeva.net, port: 31003, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 巴基斯坦KHI010.6x, server: cc-iepl.244312.xyz, port: 54807, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇭🇰 香港3, server: 20.205.12.98, port: 80, type: vmess, uuid: 7496964f-b535-4266-903e-85c986a1584a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: Heroku-1_3, server: 167.71.210.59, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 001frg.pages.dev}}}
-  - {name: 🇫🇷 FR1→openitsub.com, server: 51.77.71.134, port: 443, type: trojan, password: origin, skip-cert-verify: false}
-  - {name: "🇺🇲 美国02{优化2|V2ray}", server: us2.awslcn.cc, port: 25239, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.cc}}}
-  - {name: 🇯🇵 |日本03|高速, server: jp3.czs1000.com, port: 8885, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇳🇱 NL01|荷兰|x1.0, server: client.asucaeva.net, port: 35002, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_7, server: node.ckcloud.info, port: 25926, type: vmess, uuid: 7933bf7a-6dfb-40b4-b4c2-53e4775affa2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
-  - {name: 🇭🇰 |香港04, server: dl-hk4.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-hk.efpan.one, skip-cert-verify: false}
-  - {name: "🇭🇰 香港02{优化2|V2ray}", server: hk2.awslcn.cc, port: 25242, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk2.awslcn.cc}}}
-  - {name: 🇭🇰 香港CN2|优质线路, server: adpostlookxa1xd-12.n1.gay, port: 10024, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: adpostlookxa1xd-12.n1.gay, skip-cert-verify: false}
-  - {name: 🇨🇳 CN1→openitsub.com, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 60431:123456, obfs-param: ""}
-  - {name: 🏳️‍🌈 流量站-香港4-分流-广东, server: hk4.mlcat.ml, port: 80, type: vmess, uuid: e5f388f9-dfc6-4259-8a26-02ca1bcd516e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: a.189.cn}}}
-  - {name: 🇹🇭 TH01|泰国|x1.0, server: client.asucaeva.net, port: 33003, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
-  - {name: "🇯🇵 日本02{优化2|V2ray}", server: jp2.awslcn.cc, port: 25237, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}}
-  - {name: 🇺🇲 US9, server: 117.149.247.11, port: 20048, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇺🇲 US5→openitsub.com, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: false}
-  - {name: 🇬🇧 |英国 3, server: 14.18.93.168, port: 20052, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇲🇴 澳门(), server: 45.64.22.6, port: 443, type: vmess, uuid: d217db0c-0faa-4270-ea38-e6093d9774e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: h2.800876.xyz}}}
-  - {name: 🇨🇳 |台湾1, server: 139.227.182.203, port: 48101, type: ss, cipher: chacha20-ietf-poly1305, password: 3a06a53d-9969-4490-b34b-9d6c56a1b3e2}
-  - {name: GB2→openitsub.com, server: jgwcc1.gaox.ml, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: false}
-  - {name: 🇺🇲 亚美尼亚EVN010.6x, server: cc-iepl.244312.xyz, port: 54149, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: Sing, server: sing.aqvpn.me, port: 443, type: trojan, password: f4248904-b71a-4ef8-a601-342df3197b73, sni: dl.kgvn.garenanow.com, skip-cert-verify: false}
-  - {name: 🇰🇷 |韩国, server: 124.225.25.33, port: 25010, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: 🇸🇬 |新加坡06|高速|分流2, server: sg4.czs1000.com, port: 6687, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 全球直连②, server: s2.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国_tg+univstar_29, server: node.ckcloud.info, port: 25925, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
-  - {name: 🇮🇳 印度_R_325, server: hn-01.cctelescope.xyz, port: 62301, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇭🇰 |香港, server: 124.225.24.154, port: 25020, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
-  - {name: 🇭🇰 香港HGC-江移-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/hkhgc, headers: {Host: i0.hdslb.com}}}
-  - {name: 🇸🇬 中转🇸🇬SG17KirinoLLC:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20023, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇺🇲 美国_tg+univstar_107, server: 138.2.113.84, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, skip-cert-verify: false}
+  - {name: 🇳🇱 |荷兰, server: 14.18.93.168, port: 20056, type: trojan, password: 055015A0-50FF-205F-15AE-ADFCFF397712, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇺🇲 美国02|1x, server: p1.bxy-fun2.com, port: 26107, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: 乌克兰IEV021.3x, server: ll-iepl.244312.xyz, port: 54139, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇺🇲 |美国, server: 117.149.247.11, port: 20048, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇺🇲 US4→openitsub.com, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡01, server: dl-sg1.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-sg.efpan.one, skip-cert-verify: false}
+  - {name: 🇨🇳 CN193→openitsub.com, server: mhfv46.cdn.node.a.ddns-ounk.com, port: 40268, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /05664702-ab4f-4f7e-8a09-2cf41f1cdc67.j.live004.m3u8, headers: {Host: mhfv46.cdn.node.a.ddns-ounk.com}}}
+  - {name: "🇯🇵 日本02{优化2|V2ray}", server: jp2.awslcn.cc, port: 25237, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}}
+  - {name: 🇨🇳 CN82→openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40048, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇨🇳 CN96→openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40361, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇦🇺 中转🇦🇺AU1OracleCorporation:@nodpai, server: 14.18.93.168, port: 20061, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇯🇵 |日本03|中转|2x|奈飞解锁, server: 104.208.74.249, port: 48009, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
+  - {name: "🇯🇵 日本02{优化2|V2ray} 2", server: jp2.awslcn.cc, port: 25237, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}}
+  - {name: 埃及CAI021.3x, server: ll-iepl.244312.xyz, port: 54153, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇨🇳 中国_tg+univstar_98, server: official.taipeicitygovernment.net.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_81, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: e0614e00-122f-465d-bb62-29b712a5e974, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}}
+  - {name: 🇲🇾 MY01|马来西亚|SS|x1.0, server: clientss.asucaeva.net, port: 49001, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2}
+  - {name: 🇭🇰 中转🇭🇰HK21KirinoLLC:@airproxies, server: 14.18.93.168, port: 20001, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: "🇸🇬 新加坡01{优化2|V2ray}", server: sg2.awslcn.cc, port: 25245, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}}
+  - {name: 🇸🇬 新加坡(), server: usa.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: usa.liangyuandian.top, skip-cert-verify: false}
+  - {name: 🇻🇳 VN01|越南|x1.0, server: client.asucaeva.net, port: 33004, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
+  - {name: 🇸🇬 SG7Amazon.comInc.:@airproxies, server: 47.52.101.237, port: 443, type: trojan, password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S, sni: httah.freetrade.link, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港01, server: dl-hk1.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-hk.efpan.one, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港03|高速|分流, server: hk3.czs1000.com, port: 8811, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇨🇳 中转🇹🇼TW10KirinoLLC:@airproxies, server: cos-ap-guangzhou.westdatacloud.top, port: 20011, type: trojan, password: D31DC7C5-0A07-8500-53FB-48C73AADC6BF, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇬🇧 英国_tg+univstar_92, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: false}
+  - {name: 🇨🇳 CN106→openitsub.com, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40356, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}}
+  - {name: "🇩🇪 德国02{联通|V2ray}", server: cu.awslcn.cc, port: 25241, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
+  - {name: 🏳️‍🌈 流量站-日本2, server: jp2.mlcat.ml, port: 80, type: vmess, uuid: e5f388f9-dfc6-4259-8a26-02ca1bcd516e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: 🇻🇳 越南_R_448, server: yc.safetelescope.cc, port: 50899, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
+  - {name: 🇭🇰 |香港03, server: dl-hk3.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-hk.efpan.one, skip-cert-verify: false}
+  - {name: 🇮🇳 印度流媒体解锁_l, server: zf.gz.cu.edu.kg, port: 36839, type: ss, cipher: chacha20-ietf-poly1305, password: 6bf8967e-5f0b-454d-ad3d-0109d42b6978}
+  - {name: 🇨🇳 CN12→openitsub.com, server: 7a6rs.cdn.node.a.ddns-ounk.com, port: 40076, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇯🇵 |日本, server: jp2.520748.xyz, port: 10003, type: trojan, password: e7cf7ac5-913b-4140-9281-67fa8abde2f4, sni: jp2.520748.xyz, skip-cert-verify: false}
   - {name: "🇸🇬 SG01[TLS]", server: sg01.nhkvpn.net, port: 443, type: trojan, password: 3d8683b1-5fd4-43dd-b9d5-b23abd4e7506, sni: dl.ops.kgvn.garenanow.com, skip-cert-verify: false}
-  - {name: 🇺🇲 |美国 3, server: 117.149.247.11, port: 20048, type: trojan, password: 753F996F-265C-F246-2730-A14DC159A832, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡_R_251, server: hn-01.cctelescope.xyz, port: 62302, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
-  - {name: 🇪🇸 中转🇪🇸ES1PropelinConsultingS.L.:@nodpai, server: cos-ap-beijing.westdatacloud.top, port: 20059, type: trojan, password: 542E1301-2A19-FDFB-794F-E8322E6F91E7, sni: v12.kwaicdn.com, skip-cert-verify: false}
-  - {name: 🇺🇲 美国SJC031x, server: 116.129.254.51, port: 51002, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
-  - {name: 🇭🇰 |香港05, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-hk.efpan.one, skip-cert-verify: false}
+  - {name: 🇸🇬 SG01|新加坡|x2.0, server: client.asucaeva.net, port: 33001, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
+  - {name: "🇭🇰 香港01{优化1|V2ray}", server: hk1.awslcn.cc, port: 25242, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.cc}}}
+  - {name: 🇨🇳 中国_tg+univstar_29, server: node.ckcloud.info, port: 25925, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
+  - {name: 🇭🇰 香港CN2|优质线路, server: adpostlookxa1xd-12.n1.gay, port: 10024, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: adpostlookxa1xd-12.n1.gay, skip-cert-verify: false}
+  - {name: 🇯🇵 日本5, server: zf.gz.cu.edu.kg, port: 28971, type: ss, cipher: aes-128-gcm, password: 7496964f-b535-4266-903e-85c986a1584a}
+  - {name: "|捷克1", server: 121.62.19.31, port: 55085, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇯🇵 中转🇯🇵JP12FDCservers.net:@airproxies, server: h745768.waihuizhibiaowang.com, port: 15443, type: ss, cipher: chacha20-ietf-poly1305, password: 3dbdf038-ef96-4b51-834e-ac7e5ce94fe2}
+  - {name: 🇸🇬 中转🇸🇬SG34LinodeLLC:@airproxies, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40173, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9e66ba-7635-451c-ae7e-457b17.j.live.m3u8, headers: {Host: gg15d.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇨🇳 旧金山|解锁Nefilx|负载均衡, server: us.hotfun.buzz, port: 10325, type: trojan, password: e1f80416-5394-4fcd-af80-12ef9799a92c, sni: us.hotfun.buzz, skip-cert-verify: false}
+  - {name: 🇲🇴 澳门(), server: 45.64.22.6, port: 443, type: vmess, uuid: d217db0c-0faa-4270-ea38-e6093d9774e3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: h2.800876.xyz}}}
+  - {name: 🇨🇳 CN116→openitsub.com, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40296, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇯🇵 JP3, server: 14.18.93.168, port: 20061, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇭🇰 中转🇭🇰HK25HongKongBroadbandNetworkLtd:@nodpai, server: gtnjzy.cdn.node.a.ddns-ounk.com, port: 40290, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8, headers: {Host: gtnjzy.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇨🇳 台湾|, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 60431:123456, obfs-param: ""}
+  - {name: 🇨🇳 台湾Hinet-江移|解锁流媒体, server: 223.111.202.148, port: 30050, type: trojan, password: 8d0bbf13-e1ef-419d-b054-20815774233b, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇨🇳 中转🇹🇼TW50ChunghwaTelecomCo.Ltd.:@airproxies, server: official.taipeicitygovernment.net.ua, port: 8443, type: trojan, password: 96983eb4-c8f1-316e-ab00-500014ed3d8b, sni: 207.148.98.48, skip-cert-verify: false}
+  - {name: 🇨🇳 CN18→openitsub.com, server: bf98.cdn.node.a.ddns-ounk.com, port: 40170, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇻🇳 越南HCM011.3x, server: cc-iepl.244312.xyz, port: 54111, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 这是教程赠送免费节点, server: s1.hass.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: static.dingtalk.com, skip-cert-verify: false}
+  - {name: 🇺🇲 中转🇺🇸US1DataRoomInc:@nodpai, server: 14.18.124.91, port: 45884, type: vmess, uuid: 1b23d9af-48f3-45e5-97e4-2f82c9f75ad0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇪 美国--SEA【流媒体】--CF源节点, server: us-sea.world-in-cdn.top, port: 2083, type: vmess, uuid: 49b6740e-2f48-4ea5-9485-ad3e0a70f615, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: us-sea.world-in-cdn.top}}}
+  - {name: 🇦🇺 |澳大利亚, server: 14.18.93.168, port: 20061, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇨🇳 |台湾, server: 124.225.24.154, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
+  - {name: 🇺🇲 US01|美国|SS|x1.0, server: clientss.asucaeva.net, port: 41001, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2}
+  - {name: "🇸🇬 新加坡05{优化2|V2ray}", server: sg2.awslcn.cc, port: 25252, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}}
+  - {name: 🇯🇵 JP4AmazonTechnologiesInc.:@airproxies, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: false}
+  - {name: 🇬🇧 英国GLA011.3x, server: cc-iepl.244312.xyz, port: 54121, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇨🇳 CN110→openitsub.com, server: blg768.cdn.node.a.ddns-ounk.com, port: 40336, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: blg768.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇨🇦 加拿大_tg+univstar_93, server: 168.138.94.194, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇳 CN162→openitsub.com, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40105, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8, headers: {Host: 6q59.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇭🇰 香港HGC-江移|解锁流媒体, server: 223.111.202.148, port: 30060, type: trojan, password: 8d0bbf13-e1ef-419d-b054-20815774233b, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇨🇳 CN4→openitsub.com, server: 17w69r.cdn.node.a.ddns-ounk.com, port: 40234, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇰🇷 韩国|, server: kr1.sanfen001.pics, port: 443, type: vmess, uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}}
+  - {name: 🇨🇳 中国_tg+univstar_24, server: node.ckcloud.info, port: 25926, type: vmess, uuid: 29b3c445-ff6d-4c50-b584-b82daf5ccda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
+  - {name: 🇧🇷 |巴西|中转|, server: 104.208.74.249, port: 48013, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
+  - {name: 🇨🇳 中国_tg+univstar_80, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
+  - {name: 🇸🇬 |新加坡, server: 124.225.25.33, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
+  - {name: 🇰🇷 亚洲|韩国B, server: a-ct1.jsmmm.cyou, port: 39521, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 US05|美国|x1.0, server: client.asucaeva.net, port: 31009, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
+  - {name: 🇭🇰 不限速千兆-hk521, server: fndxshk1000mline006.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: db83a372671f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline006.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: tg+univstar_87, server: 141.101.115.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
+  - {name: 🇨🇳 CN127→openitsub.com, server: 7a6rs.cdn.node.a.ddns-ounk.com, port: 40077, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: 7a6rs.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇭🇰 香港, server: gdcm1.fengtucloud.com, port: 54103, type: ss, cipher: aes-256-gcm, password: f6dd0e0e-1175-4d4a-8b43-7780ed219941}
+  - {name: 🇯🇵 |日本2, server: jp2.linghun3.xyz, port: 40012, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇯🇵 |日本01|流媒体解锁|高速, server: jptr.bfyun.top, port: 3359, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇸🇬 【共享P站】新加坡011.3x, server: cc-iepl.244312.xyz, port: 54510, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇮🇳 印度✈️17, server: 17.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 17.72img.xyz}}}
+  - {name: 🇺🇲 US02|美国|SS|x1.0, server: clientss.asucaeva.net, port: 41002, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2}
+  - {name: 🇺🇲 中转🇺🇸US24BaxetGroupInc.:@nodpai, server: dt6r.cdn.node.a.ddns-ounk.com, port: 40215, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8, headers: {Host: dt6r.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇰🇷 KR2OracleCorporation:@nodpai, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: false}
+  - {name: 🇿🇦 南非JNB011.3x, server: cc-iepl.244312.xyz, port: 54808, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇯🇵 亚洲|日本B, server: a-cm1.jsmmm.cyou, port: 39312, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 |香港01|直连|奈飞解锁, server: 20.239.134.124, port: 44300, type: vmess, uuid: 7cff6b46-dcd8-3151-8065-a7dbff67b8a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 20.239.134.124}}}
+  - {name: 试用节点#限速100K, server: freebxy.freeddns.org, port: 443, type: trojan, password: d7bee830-09aa-43b2-8945-3b341b8787db, sni: freebxy.freeddns.org, skip-cert-verify: false}
+  - {name: 🇰🇷 |韩国1, server: kr1.linghun3.xyz, port: 40058, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇭🇰 香港HGC-江移-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/hkhgc, headers: {Host: i0.hdslb.com}}}
+  - {name: "|乌克兰1", server: gy.linghun3.xyz, port: 40076, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇯🇵 日本03|1x, server: p1.bxy-fun3.com, port: 35127, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
+  - {name: 🇭🇰 亚洲|香港C, server: a-ct1.jsmmm.cyou, port: 39121, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 香港✈️38, server: 38.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 38.72img.xyz}}}
+  - {name: 🇺🇲 |美国3, server: us3.linghun3.xyz, port: 40006, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇸🇬 |新加坡02|高速, server: sg1.czs1000.com, port: 2251, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 不丹PBH011.3x, server: cc-iepl.244312.xyz, port: 54108, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇨🇳 CN152→openitsub.com, server: jkxc1.cdn.node.a.ddns-ounk.com, port: 40021, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇬🇧 |英国, server: 14.18.93.168, port: 20052, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇨🇦 加拿大TOR011.3x, server: cc-iepl.244312.xyz, port: 54804, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 中转🇨🇦CA3DigitalOceanLLC:@airproxies, server: apollo.cn.v4.hdsky.org, port: 12531, type: ss, cipher: chacha20-ietf-poly1305, password: de00f033-0c57-4827-aea3-9393c388a40a}
+  - {name: 🇳🇱 |荷兰1, server: gy.linghun3.xyz, port: 40072, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇭🇰 香港HKG081x, server: 120.232.179.166, port: 51001, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 中转🇬🇧GB5DanielJackson:@airproxies, server: cos-ap-beijing.westdatacloud.xyz, port: 20052, type: trojan, password: 7C16A130-952C-4351-3C26-BF18FBA14C56, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇷🇺 |俄罗斯, server: 124.225.25.33, port: 25015, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
+  - {name: 🇸🇬 新加坡() 2, server: uk.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: uk.liangyuandian.top, skip-cert-verify: false}
+  - {name: 🇸🇬 隧道NF新加坡06, server: kqs-moble.gatknqh.cn, port: 42114, type: ss, cipher: aes-256-gcm, password: 717e4533-dc2f-4978-848b-cab323a4da86}
+  - {name: 🇨🇳 台北Hinet-dip 2, server: 211.72.35.158, port: 3389, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: false}
+  - {name: 🇧🇷 |巴西1, server: gy.linghun3.xyz, port: 40077, type: ss, cipher: aes-128-gcm, password: 3e760ffd-df47-4cf2-b753-248262970b8e}
+  - {name: 🇨🇦 加拿大TOR021.3x, server: ll-iepl.244312.xyz, port: 54804, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇫🇷 法国-江移|解锁流媒体, server: 223.111.202.148, port: 30080, type: trojan, password: 8d0bbf13-e1ef-419d-b054-20815774233b, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_31, server: 14.152.92.77, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: ""}
+  - {name: 🇸🇬 中转🇸🇬SG47LinodeLLC:@nodpai, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40368, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}}
+  - {name: Heroku-3_3, server: 170.187.209.208, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 003kkou.pages.dev}}}
+  - {name: 🇩🇪 德国-Trojan, server: de01.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: de01.awcloud.top, skip-cert-verify: false}
+  - {name: 🇸🇬 中转🇸🇬SG22LinodeLLC:@airproxies, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40047, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇫🇷 |法国02, server: dl-eu2.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-fr.efpan.one, skip-cert-verify: false}
+  - {name: 🇺🇲 US04|美国|x1.0, server: client.asucaeva.net, port: 31006, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false}
+  - {name: 🇩🇪 中转🇩🇪DE2myVirtualserver:@nodpai, server: 14.18.93.168, port: 20055, type: trojan, password: 88AFD362-4506-8FFA-3ED2-E766566EC27F, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇸🇬 中转🇸🇬SG35LinodeLLC:@airproxies, server: b9v6w.cdn.node.a.ddns-ounk.com, port: 40370, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇭🇰 |香港06, server: dl-hkcmi2.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-hk.efpan.one, skip-cert-verify: false}
+  - {name: 🇹🇷 |土耳其02, server: dl-eu2.efpan.one, port: 443, type: trojan, password: 9385a486-e1fa-4e00-9805-7e687a53bd37, sni: data-tr.efpan.one, skip-cert-verify: false}
+  - {name: 🇨🇳 CN76→openitsub.com, server: wdda438.cdn.node.a.ddns-ounk.com, port: 40201, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇦🇺 |澳大利亚 2, server: 14.18.93.168, port: 20061, type: trojan, password: 70AC3E1E-59B1-CE5A-39C1-AF9DE01BEF90, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇯🇵 _v2ray-4zl-日本03, server: ssru.v2.jp03.2yun.win, port: 13306, type: vmess, uuid: df310bf4-4301-3518-8ac1-a6ddfe019b40, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: ssru.v2.jp03.2yun.win}}}
+  - {name: 🇨🇳 中国_tg+univstar_21, server: node.ckcloud.info, port: 25926, type: vmess, uuid: e0614e00-122f-465d-bb62-29b712a5e974, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
+  - {name: 🇸🇬 新加坡_R_441, server: yc.safetelescope.cc, port: 50306, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
+  - {name: tg+univstar_102, server: http.download.yunzhongzhuan.com, port: 80, type: vmess, uuid: 0db0a479-8993-4e5b-a002-629e9e0b40e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: o07.tgfaka.com}}}
+  - {name: 🇯🇵 日本TOK011.3x, server: cc-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 冰岛RKV011.3x, server: cc-iepl.244312.xyz, port: 54150, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇩🇪 |德国 2, server: 14.18.93.168, port: 20055, type: trojan, password: 70AC3E1E-59B1-CE5A-39C1-AF9DE01BEF90, sni: cos-ap-beijing.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国SEO021.3x, server: ll-iepl.244312.xyz, port: 54106, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇨🇳 中国_tg+univstar_44, server: node.ckcloud.info, port: 25925, type: vmess, uuid: e0614e00-122f-465d-bb62-29b712a5e974, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
+  - {name: Heroku-2_1, server: 161.35.12.1, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 002hngh.pages.dev}}}
+  - {name: 🇸🇪 美国SEA011.3x, server: cc-iepl.244312.xyz, port: 54801, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇵🇭 菲律宾_R_196, server: yc.safetelescope.cc, port: 21293, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 152271:AqSP38n1LX, obfs-param: ajax.microsoft.com}
+  - {name: 🇺🇲 |①美国USx1.0🔓, server: 183.245.147.53, port: 55085, type: vmess, uuid: e86425cd-bf24-45e3-91d4-17b286f72526, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: Heroku-1_1, server: 172.64.150.170, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 001frg.pages.dev}}}
+  - {name: 🇨🇳 CN5→openitsub.com, server: bf98.cdn.node.a.ddns-ounk.com, port: 40088, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: "🇷🇺 俄罗斯①{移动|V2ray}", server: cm.awslcn.cc, port: 25230, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}}
+  - {name: 🇷🇺 |俄罗斯2, server: 121.62.19.152, port: 63582, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇸🇬 中转🇸🇬SG21LinodeLLC:@airproxies, server: 6q59.cdn.node.a.ddns-ounk.com, port: 40261, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /d1af668b-cff6-464a-9415-a7782ead72d5.j.live003.m3u8, headers: {Host: 6q59.cdn.node.a.ddns-ounk.com}}}
+  - {name: 优质线路（jp3）33, server: fn50mxwjpline002.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4138ea5f87df, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn50mxwjpline002.fnline.info, path: "", tls: true, mux: true, skip-cert-verify: false}}
+  - {name: 乌兹别克斯坦TAS021.3x, server: ll-iepl.244312.xyz, port: 54136, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: Heroku-1_2, server: 167.71.211.148, port: 443, type: vmess, uuid: 65218fe8-d9c2-4e07-95bb-cb6e379a440b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /65218fe8-d9c2-4e07-95bb-cb6e379a440b-vm, headers: {Host: 001frg.pages.dev}}}
+  - {name: 🇷🇴 |罗马尼亚, server: 121.62.19.152, port: 17624, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇨🇳 CN36→openitsub.com, server: aj8sd.cdn.node.a.ddns-ounk.com, port: 40278, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇲🇾 马来西亚KUL021.3x, server: ll-iepl.244312.xyz, port: 54112, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe}
+  - {name: 🇦🇺 |澳大利亚 3, server: aus.520748.xyz, port: 10001, type: trojan, password: e7cf7ac5-913b-4140-9281-67fa8abde2f4, sni: aus.520748.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 中转🇯🇵JP10KirinoLLC:@nodpai, server: oss-cn-shanghai.westdatacloud.xyz, port: 20032, type: trojan, password: 0348F3CF-9DB8-B324-F84B-7AAB2678938D, sni: v12.kwaicdn.com, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-Melbikom-dip, server: 5.44.249.42, port: 3389, type: trojan, password: 4bacb8f1a089763b, skip-cert-verify: false}
+  - {name: "|西班牙", server: 121.62.19.183, port: 39925, type: ss, cipher: chacha20-ietf-poly1305, password: 7318b536-367d-4b52-9ae5-6ee1807efcb2}
+  - {name: 🇸🇬 |新加坡 2, server: 14.18.93.168, port: 20028, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_77, server: node.ckcloud.info, port: 25923, type: vmess, uuid: e62434af-20cd-4653-af9c-8140d934213f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
+  - {name: 🏳️‍🌈 流量站-美国3(解锁奈飞), server: mg3.mlcat.ml, port: 80, type: vmess, uuid: e5f388f9-dfc6-4259-8a26-02ca1bcd516e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: 🇨🇳 CN171→openitsub.com, server: av69.cdn.node.a.ddns-ounk.com, port: 40081, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /05664702-ab4f-4f7e-8a09-2cf41f1cdc67.j.live004.m3u8, headers: {Host: av69.cdn.node.a.ddns-ounk.com}}}
+  - {name: "@sharingnode", server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}}
+  - {name: 🇺🇲 洛杉矶14, server: 14.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 14.72img.xyz}}}
+  - {name: "🇺🇲 美国06{优化1|V2ray}", server: us1.awslcn.cc, port: 25257, type: vmess, uuid: b88a1a71-5250-4ddc-8337-3a28594b6192, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}}
+  - {name: 🇸🇬 |新加坡 3, server: 14.18.93.168, port: 20028, type: trojan, password: 4978366C-043F-8515-044B-80C1BFF12CCC, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇺🇲 中转🇺🇸US27BaxetGroupInc:@nodpai, server: dt6r.cdn.node.a.ddns-ounk.com, port: 40214, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: dt6r.cdn.node.a.ddns-ounk.com}}}
+  - {name: "HN[LMHT][TLS]", server: lmht.nhkvpn.net, port: 443, type: trojan, password: 3d8683b1-5fd4-43dd-b9d5-b23abd4e7506, sni: dl.ops.kgvn.garenanow.com, skip-cert-verify: false}
+  - {name: 🇨🇳 |台湾 2, server: 124.225.25.33, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 8f57bd58-4701-4fa0-9e63-5330ad5fc5b2}
+  - {name: 🇫🇷 法国-江移-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: 8d0bbf13-e1ef-419d-b054-20815774233b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/fr, headers: {Host: i0.hdslb.com}}}
+  - {name: 🇨🇳 CN81→openitsub.com, server: w69tr.cdn.node.a.ddns-ounk.com, port: 40044, type: ssr, cipher: chacha20-ietf, password: jL76UJd, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 79632:d2k078clxfa, obfs-param: ""}
+  - {name: 🇸🇬 |新加坡01|中转|奈飞解锁, server: 104.208.74.249, port: 48001, type: vmess, uuid: e051a4ff-08a3-3e6e-9c80-db927b62296e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ny, headers: {Host: 104.208.74.249}}}
+  - {name: 🇨🇳 CN196→openitsub.com, server: gg15d.cdn.node.a.ddns-ounk.com, port: 40137, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9e66ba-7635-451c-ae7e-457b17.j.live.m3u8, headers: {Host: gg15d.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇨🇳 中转🇹🇼TW29ChunghwaTelecomCo.Ltd.:@nodpai, server: bf98.cdn.node.a.ddns-ounk.com, port: 40079, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /05664702-ab4f-4f7e-8a09-2cf41f1cdc67.j.live004.m3u8, headers: {Host: bf98.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇭🇰 HK8, server: 14.18.93.168, port: 20028, type: trojan, password: C803D247-D37F-B441-0643-5996ED1F066F, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡_tg+univstar_34, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: tg+univstar_104, server: 141.101.115.2, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}}
+  - {name: 🇸🇬 隧道NF新加坡02, server: kqs-moble.gatknqh.cn, port: 24400, type: ss, cipher: aes-256-gcm, password: 717e4533-dc2f-4978-848b-cab323a4da86}
+  - {name: 🇨🇳 CN167→openitsub.com, server: pg57.cdn.node.a.ddns-ounk.com, port: 40333, type: vmess, uuid: e3e0d326-86fb-3e26-9a13-01d5deb3a7a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9e66ba-7635-451c-ae7e-457b17.j.live.m3u8, headers: {Host: pg57.cdn.node.a.ddns-ounk.com}}}
+  - {name: 🇺🇲 美国us|, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: 129.146.242.130, skip-cert-verify: false}
+  - {name: "@sharingnode 2", server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: false}
+  - {name: 🇨🇳 中国_tg+univstar_9, server: node.ckcloud.info, port: 25926, type: vmess, uuid: 829b32f6-0083-4057-affe-14b061dc8954, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -187,510 +225,624 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇫🇷 |法国1
-      - 🇰🇷 |韩国1
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
-      - 🇭🇰 HK01|香港|SS|x1.0
-      - 🇫🇷 |法国01
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇻🇳 |越南
-      - 哥伦比亚BOG020.6x
-      - 🇺🇲 美国_R_21
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇫🇷 |法国
+      - 🇨🇳 CN73→openitsub.com
+      - 🇨🇳 CN117→openitsub.com
+      - 🇺🇲 |美国02|中转|
+      - 🇫🇷 FR1OVHSAS:@nodpai
+      - 🇫🇷 法国MRS021.3x
+      - 🇩🇪 德国G口直连|负载均衡
       - 🇰🇷 |韩国|中转|
-      - 🇬🇧 |英国
-      - 🇸🇬 |新加坡3
-      - 🇸🇪 美国SEA020.6x
-      - 🇸🇬 新加坡_R_434
-      - 🇹🇭 泰国BKK020.6x
-      - 🇨🇳 中国_tg+univstar_67
-      - 🇯🇵 日本TOK010.6x
-      - 🇩🇪 [直连0.5x]德国Germany
-      - 🇦🇺 |澳大利亚
-      - 🇹🇭 |泰国3
-      - 🇸🇬 新加坡_R_522
-      - 🇨🇦 加拿大_R_339
-      - 🇺🇲 美国()
-      - 🇰🇷 |韩国04|高速|分流2
-      - 新西兰AKL010.6x
-      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 台北Hinet-dip
+      - 🇩🇪 法兰克福✈️55
+      - 🇯🇵 日本3|
+      - 🇨🇳 CN149→openitsub.com
+      - 🇺🇲 美国_R_21
+      - 🇨🇳 CN60→openitsub.com
+      - 🇨🇳 CN32→openitsub.com
+      - 🇺🇲 US7
       - 🇩🇪 |德国
-      - 🇨🇳 台湾流媒体解锁_2
-      - "@sharingnode"
-      - 🇳🇱 |荷兰01
-      - tg+univstar_56
-      - 🇸🇬 新加坡_tg+univstar_34
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇸🇬 |新加坡
-      - 🇸🇦 |沙特阿拉伯|中转|
-      - 🇲🇾 |马来西亚1
-      - 🇨🇳 不限速千兆-tw254
-      - 🇯🇵 |日本
-      - 🇺🇲 凤凰城36
-      - 以色列TLV020.6x
-      - 🇳🇱 菲律宾MNL010.6x
-      - 🇨🇳 台湾TAI030.6x
-      - 🇷🇺 俄罗斯30
-      - 🇸🇬 【共享奈飞】新加坡020.6x
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 不限速千兆-tw2819
-      - 卢森堡STE010.6x
-      - 🇭🇰 香港_R_446
-      - 🇰🇷 KR01|韩国|SS|x1.0
-      - 🇯🇵 中转🇯🇵JP8KirinoLLC:@nodpai
-      - 哥伦比亚BOG010.6x
-      - 🇷🇺 西伯利亚6
-      - 🇺🇲 US01[TLS]
-      - 🇭🇰 中转🇭🇰HK4KirinoLLC:@nodpai
-      - 🇺🇲 US01|美国|x1.0
-      - 🇭🇰 HK6
-      - 🇨🇳 不限速千兆-tw2611
-      - 🇺🇲 美国() 2
-      - 🇸🇬 |新加坡 2
-      - 🇮🇳 印度_R_361
-      - 🇭🇰 香港HKG060.6x
-      - 🇺🇲 亚美尼亚EVN020.6x
-      - Heroku-3_1
-      - 🇺🇲 |美国06|高速|分流2
-      - 🇹🇭 |泰国
-      - Heroku-5_1
-      - 🇯🇵 |日本 2
-      - 🇬🇧 |英国 2
-      - 🇮🇹 意大利MIL020.6x
-      - 🇫🇷 法国|解锁流媒体
-      - 🇸🇬 狮城1|
-      - Heroku-2_6
-      - 🇺🇲 美国c|
-      - IN1→openitsub.com
-      - Heroku-5_5
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 🇫🇷 |v2-法国2
-      - 🇨🇦 加拿大TOR020.6x
-      - 🇸🇬 新加坡CN2|电信优化
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇩🇪 德国_R_523
-      - 🇻🇳 越南_R_515
-      - 🇺🇲 US4→openitsub.com
-      - https://t.me/daluoboji
-      - 🇩🇪 |德国 2
-      - 🇮🇳 印度✈️20
-      - 🇮🇩 印尼JAK010.6x
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
-      - 🇭🇰 中转🇭🇰HK15HGCGlobalCommunicationsLimited:@airproxies
-      - 🇺🇲 美国_R_335
-      - 🇯🇵 |日本 3
+      - 🇸🇬 Singapore-Melbikom
+      - 🇧🇷 RR01|巴西|x1.0
+      - 🇯🇵 日本TOK021.3x
+      - 🇨🇳 |台湾TWx1🔓
+      - 🇹🇷 土耳其_R_458
+      - 🇭🇰 香港2
+      - 🇯🇵 日本GC|负载均衡
       - 🇹🇭 泰国_R_557
+      - 🇺🇲 美国_tg+univstar_107
+      - 🇳🇱 |荷兰
+      - 🇺🇲 美国02|1x
+      - 乌克兰IEV021.3x
       - 🇺🇲 |美国
-      - 🇺🇲 |美国 2
-      - 🇩🇪 德国FRA010.6x
-      - 🇭🇰 香港_R_316
-      - 🇩🇪 DE1OVHSAS:@nodpai
-      - 🇸🇬 新加坡_R_441
-      - 🇨🇳 中国_tg+univstar_27
-      - 🇨🇳 不限速千兆-tw11
-      - 马来03{联通|V2ray}
-      - 🇨🇳 |台湾
-      - 瑞典_R_362
-      - 🇬🇧 |英国1
-      - 🇮🇹 意大利MIL010.6x
-      - 🇩🇪 法兰克福✈️53
-      - 🇯🇵 JP02|日本|x1.0
-      - GB3→openitsub.com
-      - "@sharingnode 2"
-      - "|拉脱维亚"
-      - 🇧🇪 德国BER020.6x
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 澳洲ADL010.6x
-      - "@sharingnode 3"
-      - 🇺🇲 |美国1
-      - 🇨🇳 中国_tg+univstar_9
-      - "@sharingnode 4"
-      - 🇨🇳 中国_tg+univstar_21
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇺🇲 US03|美国|x1.0
-      - 巴基斯坦KHI010.6x
-      - 🇭🇰 香港3
-      - Heroku-1_3
-      - 🇫🇷 FR1→openitsub.com
-      - 🇺🇲 美国02{优化2|V2ray}
-      - 🇯🇵 |日本03|高速
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇨🇳 中国_tg+univstar_7
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港02{优化2|V2ray}
-      - 🇭🇰 香港CN2|优质线路
-      - 🇨🇳 CN1→openitsub.com
-      - 🏳️‍🌈 流量站-香港4-分流-广东
-      - 🇹🇭 TH01|泰国|x1.0
+      - 🇺🇲 US4→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇨🇳 CN193→openitsub.com
       - 🇯🇵 日本02{优化2|V2ray}
-      - 🇺🇲 US9
-      - 🇺🇲 US5→openitsub.com
-      - 🇬🇧 |英国 3
-      - 🇲🇴 澳门()
-      - 🇨🇳 |台湾1
-      - GB2→openitsub.com
-      - 🇺🇲 亚美尼亚EVN010.6x
-      - Sing
-      - 🇰🇷 |韩国
-      - 🇸🇬 |新加坡06|高速|分流2
-      - 全球直连②
-      - 🇨🇳 中国_tg+univstar_29
-      - 🇮🇳 印度_R_325
-      - 🇭🇰 |香港
-      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
-      - 🇸🇬 中转🇸🇬SG17KirinoLLC:@airproxies
+      - 🇨🇳 CN82→openitsub.com
+      - 🇨🇳 CN96→openitsub.com
+      - 🇦🇺 中转🇦🇺AU1OracleCorporation:@nodpai
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇯🇵 日本02{优化2|V2ray} 2
+      - 埃及CAI021.3x
+      - 🇨🇳 中国_tg+univstar_98
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇲🇾 MY01|马来西亚|SS|x1.0
+      - 🇭🇰 中转🇭🇰HK21KirinoLLC:@airproxies
+      - 🇸🇬 新加坡01{优化2|V2ray}
+      - 🇸🇬 新加坡()
+      - 🇻🇳 VN01|越南|x1.0
+      - 🇸🇬 SG7Amazon.comInc.:@airproxies
+      - 🇭🇰 |香港01
+      - 🇭🇰 |香港03|高速|分流
+      - 🇨🇳 中转🇹🇼TW10KirinoLLC:@airproxies
+      - 🇬🇧 英国_tg+univstar_92
+      - 🇨🇳 CN106→openitsub.com
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🏳️‍🌈 流量站-日本2
+      - 🇻🇳 越南_R_448
+      - 🇭🇰 |香港03
+      - 🇮🇳 印度流媒体解锁_l
+      - 🇨🇳 CN12→openitsub.com
+      - 🇯🇵 |日本
       - 🇸🇬 SG01[TLS]
-      - 🇺🇲 |美国 3
-      - 🇸🇬 新加坡_R_251
-      - 🇪🇸 中转🇪🇸ES1PropelinConsultingS.L.:@nodpai
-      - 🇺🇲 美国SJC031x
-      - 🇭🇰 |香港05
+      - 🇸🇬 SG01|新加坡|x2.0
+      - 🇭🇰 香港01{优化1|V2ray}
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港CN2|优质线路
+      - 🇯🇵 日本5
+      - "|捷克1"
+      - 🇯🇵 中转🇯🇵JP12FDCservers.net:@airproxies
+      - 🇸🇬 中转🇸🇬SG34LinodeLLC:@airproxies
+      - 🇨🇳 旧金山|解锁Nefilx|负载均衡
+      - 🇲🇴 澳门()
+      - 🇨🇳 CN116→openitsub.com
+      - 🇯🇵 JP3
+      - 🇭🇰 中转🇭🇰HK25HongKongBroadbandNetworkLtd:@nodpai
+      - 🇨🇳 台湾|
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
+      - 🇨🇳 中转🇹🇼TW50ChunghwaTelecomCo.Ltd.:@airproxies
+      - 🇨🇳 CN18→openitsub.com
+      - 🇻🇳 越南HCM011.3x
+      - 这是教程赠送免费节点
+      - 🇺🇲 中转🇺🇸US1DataRoomInc:@nodpai
+      - 🇸🇪 美国--SEA【流媒体】--CF源节点
+      - 🇦🇺 |澳大利亚
+      - 🇨🇳 |台湾
+      - 🇺🇲 US01|美国|SS|x1.0
+      - 🇸🇬 新加坡05{优化2|V2ray}
+      - 🇯🇵 JP4AmazonTechnologiesInc.:@airproxies
+      - 🇬🇧 英国GLA011.3x
+      - 🇨🇳 CN110→openitsub.com
+      - 🇨🇦 加拿大_tg+univstar_93
+      - 🇨🇳 CN162→openitsub.com
+      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇨🇳 CN4→openitsub.com
+      - 🇰🇷 韩国|
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇧🇷 |巴西|中转|
+      - 🇨🇳 中国_tg+univstar_80
+      - 🇸🇬 |新加坡
+      - 🇰🇷 亚洲|韩国B
+      - 🇺🇲 US05|美国|x1.0
+      - 🇭🇰 不限速千兆-hk521
+      - tg+univstar_87
+      - 🇨🇳 CN127→openitsub.com
+      - 🇭🇰 香港
+      - 🇯🇵 |日本2
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇸🇬 【共享P站】新加坡011.3x
+      - 🇮🇳 印度✈️17
+      - 🇺🇲 US02|美国|SS|x1.0
+      - 🇺🇲 中转🇺🇸US24BaxetGroupInc.:@nodpai
+      - 🇰🇷 KR2OracleCorporation:@nodpai
+      - 🇿🇦 南非JNB011.3x
+      - 🇯🇵 亚洲|日本B
+      - 🇭🇰 |香港01|直连|奈飞解锁
+      - 试用节点#限速100K
+      - 🇰🇷 |韩国1
+      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
+      - "|乌克兰1"
+      - 🇯🇵 日本03|1x
+      - 🇭🇰 亚洲|香港C
+      - 🇭🇰 香港✈️38
+      - 🇺🇲 |美国3
+      - 🇸🇬 |新加坡02|高速
+      - 不丹PBH011.3x
+      - 🇨🇳 CN152→openitsub.com
+      - 🇬🇧 |英国
+      - 🇨🇦 加拿大TOR011.3x
+      - 中转🇨🇦CA3DigitalOceanLLC:@airproxies
+      - 🇳🇱 |荷兰1
+      - 🇭🇰 香港HKG081x
+      - 中转🇬🇧GB5DanielJackson:@airproxies
+      - 🇷🇺 |俄罗斯
+      - 🇸🇬 新加坡() 2
+      - 🇸🇬 隧道NF新加坡06
+      - 🇨🇳 台北Hinet-dip 2
+      - 🇧🇷 |巴西1
+      - 🇨🇦 加拿大TOR021.3x
+      - 🇫🇷 法国-江移|解锁流媒体
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇸🇬 中转🇸🇬SG47LinodeLLC:@nodpai
+      - Heroku-3_3
+      - 🇩🇪 德国-Trojan
+      - 🇸🇬 中转🇸🇬SG22LinodeLLC:@airproxies
+      - 🇫🇷 |法国02
+      - 🇺🇲 US04|美国|x1.0
+      - 🇩🇪 中转🇩🇪DE2myVirtualserver:@nodpai
+      - 🇸🇬 中转🇸🇬SG35LinodeLLC:@airproxies
+      - 🇭🇰 |香港06
+      - 🇹🇷 |土耳其02
+      - 🇨🇳 CN76→openitsub.com
+      - 🇦🇺 |澳大利亚 2
+      - 🇯🇵 _v2ray-4zl-日本03
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_R_441
+      - tg+univstar_102
+      - 🇯🇵 日本TOK011.3x
+      - 冰岛RKV011.3x
+      - 🇩🇪 |德国 2
+      - 🇰🇷 韩国SEO021.3x
+      - 🇨🇳 中国_tg+univstar_44
+      - Heroku-2_1
+      - 🇸🇪 美国SEA011.3x
+      - 🇵🇭 菲律宾_R_196
+      - 🇺🇲 |①美国USx1.0🔓
+      - Heroku-1_1
+      - 🇨🇳 CN5→openitsub.com
+      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇷🇺 |俄罗斯2
+      - 🇸🇬 中转🇸🇬SG21LinodeLLC:@airproxies
+      - 优质线路（jp3）33
+      - 乌兹别克斯坦TAS021.3x
+      - Heroku-1_2
+      - 🇷🇴 |罗马尼亚
+      - 🇨🇳 CN36→openitsub.com
+      - 🇲🇾 马来西亚KUL021.3x
+      - 🇦🇺 |澳大利亚 3
+      - 🇯🇵 中转🇯🇵JP10KirinoLLC:@nodpai
+      - 🇸🇬 Singapore-Melbikom-dip
+      - "|西班牙"
+      - 🇸🇬 |新加坡 2
+      - 🇨🇳 中国_tg+univstar_77
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇨🇳 CN171→openitsub.com
+      - "@sharingnode"
+      - 🇺🇲 洛杉矶14
+      - 🇺🇲 美国06{优化1|V2ray}
+      - 🇸🇬 |新加坡 3
+      - 🇺🇲 中转🇺🇸US27BaxetGroupInc:@nodpai
+      - HN[LMHT][TLS]
+      - 🇨🇳 |台湾 2
+      - 🇫🇷 法国-江移-ws|解锁流媒体
+      - 🇨🇳 CN81→openitsub.com
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
+      - 🇨🇳 CN196→openitsub.com
+      - 🇨🇳 中转🇹🇼TW29ChunghwaTelecomCo.Ltd.:@nodpai
+      - 🇭🇰 HK8
+      - 🇸🇬 新加坡_tg+univstar_34
+      - tg+univstar_104
+      - 🇸🇬 隧道NF新加坡02
+      - 🇨🇳 CN167→openitsub.com
+      - 🇺🇲 美国us|
+      - "@sharingnode 2"
+      - 🇨🇳 中国_tg+univstar_9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷 |法国1
-      - 🇰🇷 |韩国1
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
-      - 🇭🇰 HK01|香港|SS|x1.0
-      - 🇫🇷 |法国01
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇻🇳 |越南
-      - 哥伦比亚BOG020.6x
-      - 🇺🇲 美国_R_21
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇫🇷 |法国
+      - 🇨🇳 CN73→openitsub.com
+      - 🇨🇳 CN117→openitsub.com
+      - 🇺🇲 |美国02|中转|
+      - 🇫🇷 FR1OVHSAS:@nodpai
+      - 🇫🇷 法国MRS021.3x
+      - 🇩🇪 德国G口直连|负载均衡
       - 🇰🇷 |韩国|中转|
-      - 🇬🇧 |英国
-      - 🇸🇬 |新加坡3
-      - 🇸🇪 美国SEA020.6x
-      - 🇸🇬 新加坡_R_434
-      - 🇹🇭 泰国BKK020.6x
-      - 🇨🇳 中国_tg+univstar_67
-      - 🇯🇵 日本TOK010.6x
-      - 🇩🇪 [直连0.5x]德国Germany
-      - 🇦🇺 |澳大利亚
-      - 🇹🇭 |泰国3
-      - 🇸🇬 新加坡_R_522
-      - 🇨🇦 加拿大_R_339
-      - 🇺🇲 美国()
-      - 🇰🇷 |韩国04|高速|分流2
-      - 新西兰AKL010.6x
-      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 台北Hinet-dip
+      - 🇩🇪 法兰克福✈️55
+      - 🇯🇵 日本3|
+      - 🇨🇳 CN149→openitsub.com
+      - 🇺🇲 美国_R_21
+      - 🇨🇳 CN60→openitsub.com
+      - 🇨🇳 CN32→openitsub.com
+      - 🇺🇲 US7
       - 🇩🇪 |德国
-      - 🇨🇳 台湾流媒体解锁_2
-      - "@sharingnode"
-      - 🇳🇱 |荷兰01
-      - tg+univstar_56
-      - 🇸🇬 新加坡_tg+univstar_34
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇸🇬 |新加坡
-      - 🇸🇦 |沙特阿拉伯|中转|
-      - 🇲🇾 |马来西亚1
-      - 🇨🇳 不限速千兆-tw254
-      - 🇯🇵 |日本
-      - 🇺🇲 凤凰城36
-      - 以色列TLV020.6x
-      - 🇳🇱 菲律宾MNL010.6x
-      - 🇨🇳 台湾TAI030.6x
-      - 🇷🇺 俄罗斯30
-      - 🇸🇬 【共享奈飞】新加坡020.6x
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 不限速千兆-tw2819
-      - 卢森堡STE010.6x
-      - 🇭🇰 香港_R_446
-      - 🇰🇷 KR01|韩国|SS|x1.0
-      - 🇯🇵 中转🇯🇵JP8KirinoLLC:@nodpai
-      - 哥伦比亚BOG010.6x
-      - 🇷🇺 西伯利亚6
-      - 🇺🇲 US01[TLS]
-      - 🇭🇰 中转🇭🇰HK4KirinoLLC:@nodpai
-      - 🇺🇲 US01|美国|x1.0
-      - 🇭🇰 HK6
-      - 🇨🇳 不限速千兆-tw2611
-      - 🇺🇲 美国() 2
-      - 🇸🇬 |新加坡 2
-      - 🇮🇳 印度_R_361
-      - 🇭🇰 香港HKG060.6x
-      - 🇺🇲 亚美尼亚EVN020.6x
-      - Heroku-3_1
-      - 🇺🇲 |美国06|高速|分流2
-      - 🇹🇭 |泰国
-      - Heroku-5_1
-      - 🇯🇵 |日本 2
-      - 🇬🇧 |英国 2
-      - 🇮🇹 意大利MIL020.6x
-      - 🇫🇷 法国|解锁流媒体
-      - 🇸🇬 狮城1|
-      - Heroku-2_6
-      - 🇺🇲 美国c|
-      - IN1→openitsub.com
-      - Heroku-5_5
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 🇫🇷 |v2-法国2
-      - 🇨🇦 加拿大TOR020.6x
-      - 🇸🇬 新加坡CN2|电信优化
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇩🇪 德国_R_523
-      - 🇻🇳 越南_R_515
-      - 🇺🇲 US4→openitsub.com
-      - https://t.me/daluoboji
-      - 🇩🇪 |德国 2
-      - 🇮🇳 印度✈️20
-      - 🇮🇩 印尼JAK010.6x
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
-      - 🇭🇰 中转🇭🇰HK15HGCGlobalCommunicationsLimited:@airproxies
-      - 🇺🇲 美国_R_335
-      - 🇯🇵 |日本 3
+      - 🇸🇬 Singapore-Melbikom
+      - 🇧🇷 RR01|巴西|x1.0
+      - 🇯🇵 日本TOK021.3x
+      - 🇨🇳 |台湾TWx1🔓
+      - 🇹🇷 土耳其_R_458
+      - 🇭🇰 香港2
+      - 🇯🇵 日本GC|负载均衡
       - 🇹🇭 泰国_R_557
+      - 🇺🇲 美国_tg+univstar_107
+      - 🇳🇱 |荷兰
+      - 🇺🇲 美国02|1x
+      - 乌克兰IEV021.3x
       - 🇺🇲 |美国
-      - 🇺🇲 |美国 2
-      - 🇩🇪 德国FRA010.6x
-      - 🇭🇰 香港_R_316
-      - 🇩🇪 DE1OVHSAS:@nodpai
-      - 🇸🇬 新加坡_R_441
-      - 🇨🇳 中国_tg+univstar_27
-      - 🇨🇳 不限速千兆-tw11
-      - 马来03{联通|V2ray}
-      - 🇨🇳 |台湾
-      - 瑞典_R_362
-      - 🇬🇧 |英国1
-      - 🇮🇹 意大利MIL010.6x
-      - 🇩🇪 法兰克福✈️53
-      - 🇯🇵 JP02|日本|x1.0
-      - GB3→openitsub.com
-      - "@sharingnode 2"
-      - "|拉脱维亚"
-      - 🇧🇪 德国BER020.6x
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 澳洲ADL010.6x
-      - "@sharingnode 3"
-      - 🇺🇲 |美国1
-      - 🇨🇳 中国_tg+univstar_9
-      - "@sharingnode 4"
-      - 🇨🇳 中国_tg+univstar_21
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇺🇲 US03|美国|x1.0
-      - 巴基斯坦KHI010.6x
-      - 🇭🇰 香港3
-      - Heroku-1_3
-      - 🇫🇷 FR1→openitsub.com
-      - 🇺🇲 美国02{优化2|V2ray}
-      - 🇯🇵 |日本03|高速
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇨🇳 中国_tg+univstar_7
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港02{优化2|V2ray}
-      - 🇭🇰 香港CN2|优质线路
-      - 🇨🇳 CN1→openitsub.com
-      - 🏳️‍🌈 流量站-香港4-分流-广东
-      - 🇹🇭 TH01|泰国|x1.0
+      - 🇺🇲 US4→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇨🇳 CN193→openitsub.com
       - 🇯🇵 日本02{优化2|V2ray}
-      - 🇺🇲 US9
-      - 🇺🇲 US5→openitsub.com
-      - 🇬🇧 |英国 3
-      - 🇲🇴 澳门()
-      - 🇨🇳 |台湾1
-      - GB2→openitsub.com
-      - 🇺🇲 亚美尼亚EVN010.6x
-      - Sing
-      - 🇰🇷 |韩国
-      - 🇸🇬 |新加坡06|高速|分流2
-      - 全球直连②
-      - 🇨🇳 中国_tg+univstar_29
-      - 🇮🇳 印度_R_325
-      - 🇭🇰 |香港
-      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
-      - 🇸🇬 中转🇸🇬SG17KirinoLLC:@airproxies
+      - 🇨🇳 CN82→openitsub.com
+      - 🇨🇳 CN96→openitsub.com
+      - 🇦🇺 中转🇦🇺AU1OracleCorporation:@nodpai
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇯🇵 日本02{优化2|V2ray} 2
+      - 埃及CAI021.3x
+      - 🇨🇳 中国_tg+univstar_98
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇲🇾 MY01|马来西亚|SS|x1.0
+      - 🇭🇰 中转🇭🇰HK21KirinoLLC:@airproxies
+      - 🇸🇬 新加坡01{优化2|V2ray}
+      - 🇸🇬 新加坡()
+      - 🇻🇳 VN01|越南|x1.0
+      - 🇸🇬 SG7Amazon.comInc.:@airproxies
+      - 🇭🇰 |香港01
+      - 🇭🇰 |香港03|高速|分流
+      - 🇨🇳 中转🇹🇼TW10KirinoLLC:@airproxies
+      - 🇬🇧 英国_tg+univstar_92
+      - 🇨🇳 CN106→openitsub.com
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🏳️‍🌈 流量站-日本2
+      - 🇻🇳 越南_R_448
+      - 🇭🇰 |香港03
+      - 🇮🇳 印度流媒体解锁_l
+      - 🇨🇳 CN12→openitsub.com
+      - 🇯🇵 |日本
       - 🇸🇬 SG01[TLS]
-      - 🇺🇲 |美国 3
-      - 🇸🇬 新加坡_R_251
-      - 🇪🇸 中转🇪🇸ES1PropelinConsultingS.L.:@nodpai
-      - 🇺🇲 美国SJC031x
-      - 🇭🇰 |香港05
+      - 🇸🇬 SG01|新加坡|x2.0
+      - 🇭🇰 香港01{优化1|V2ray}
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港CN2|优质线路
+      - 🇯🇵 日本5
+      - "|捷克1"
+      - 🇯🇵 中转🇯🇵JP12FDCservers.net:@airproxies
+      - 🇸🇬 中转🇸🇬SG34LinodeLLC:@airproxies
+      - 🇨🇳 旧金山|解锁Nefilx|负载均衡
+      - 🇲🇴 澳门()
+      - 🇨🇳 CN116→openitsub.com
+      - 🇯🇵 JP3
+      - 🇭🇰 中转🇭🇰HK25HongKongBroadbandNetworkLtd:@nodpai
+      - 🇨🇳 台湾|
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
+      - 🇨🇳 中转🇹🇼TW50ChunghwaTelecomCo.Ltd.:@airproxies
+      - 🇨🇳 CN18→openitsub.com
+      - 🇻🇳 越南HCM011.3x
+      - 这是教程赠送免费节点
+      - 🇺🇲 中转🇺🇸US1DataRoomInc:@nodpai
+      - 🇸🇪 美国--SEA【流媒体】--CF源节点
+      - 🇦🇺 |澳大利亚
+      - 🇨🇳 |台湾
+      - 🇺🇲 US01|美国|SS|x1.0
+      - 🇸🇬 新加坡05{优化2|V2ray}
+      - 🇯🇵 JP4AmazonTechnologiesInc.:@airproxies
+      - 🇬🇧 英国GLA011.3x
+      - 🇨🇳 CN110→openitsub.com
+      - 🇨🇦 加拿大_tg+univstar_93
+      - 🇨🇳 CN162→openitsub.com
+      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇨🇳 CN4→openitsub.com
+      - 🇰🇷 韩国|
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇧🇷 |巴西|中转|
+      - 🇨🇳 中国_tg+univstar_80
+      - 🇸🇬 |新加坡
+      - 🇰🇷 亚洲|韩国B
+      - 🇺🇲 US05|美国|x1.0
+      - 🇭🇰 不限速千兆-hk521
+      - tg+univstar_87
+      - 🇨🇳 CN127→openitsub.com
+      - 🇭🇰 香港
+      - 🇯🇵 |日本2
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇸🇬 【共享P站】新加坡011.3x
+      - 🇮🇳 印度✈️17
+      - 🇺🇲 US02|美国|SS|x1.0
+      - 🇺🇲 中转🇺🇸US24BaxetGroupInc.:@nodpai
+      - 🇰🇷 KR2OracleCorporation:@nodpai
+      - 🇿🇦 南非JNB011.3x
+      - 🇯🇵 亚洲|日本B
+      - 🇭🇰 |香港01|直连|奈飞解锁
+      - 试用节点#限速100K
+      - 🇰🇷 |韩国1
+      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
+      - "|乌克兰1"
+      - 🇯🇵 日本03|1x
+      - 🇭🇰 亚洲|香港C
+      - 🇭🇰 香港✈️38
+      - 🇺🇲 |美国3
+      - 🇸🇬 |新加坡02|高速
+      - 不丹PBH011.3x
+      - 🇨🇳 CN152→openitsub.com
+      - 🇬🇧 |英国
+      - 🇨🇦 加拿大TOR011.3x
+      - 中转🇨🇦CA3DigitalOceanLLC:@airproxies
+      - 🇳🇱 |荷兰1
+      - 🇭🇰 香港HKG081x
+      - 中转🇬🇧GB5DanielJackson:@airproxies
+      - 🇷🇺 |俄罗斯
+      - 🇸🇬 新加坡() 2
+      - 🇸🇬 隧道NF新加坡06
+      - 🇨🇳 台北Hinet-dip 2
+      - 🇧🇷 |巴西1
+      - 🇨🇦 加拿大TOR021.3x
+      - 🇫🇷 法国-江移|解锁流媒体
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇸🇬 中转🇸🇬SG47LinodeLLC:@nodpai
+      - Heroku-3_3
+      - 🇩🇪 德国-Trojan
+      - 🇸🇬 中转🇸🇬SG22LinodeLLC:@airproxies
+      - 🇫🇷 |法国02
+      - 🇺🇲 US04|美国|x1.0
+      - 🇩🇪 中转🇩🇪DE2myVirtualserver:@nodpai
+      - 🇸🇬 中转🇸🇬SG35LinodeLLC:@airproxies
+      - 🇭🇰 |香港06
+      - 🇹🇷 |土耳其02
+      - 🇨🇳 CN76→openitsub.com
+      - 🇦🇺 |澳大利亚 2
+      - 🇯🇵 _v2ray-4zl-日本03
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_R_441
+      - tg+univstar_102
+      - 🇯🇵 日本TOK011.3x
+      - 冰岛RKV011.3x
+      - 🇩🇪 |德国 2
+      - 🇰🇷 韩国SEO021.3x
+      - 🇨🇳 中国_tg+univstar_44
+      - Heroku-2_1
+      - 🇸🇪 美国SEA011.3x
+      - 🇵🇭 菲律宾_R_196
+      - 🇺🇲 |①美国USx1.0🔓
+      - Heroku-1_1
+      - 🇨🇳 CN5→openitsub.com
+      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇷🇺 |俄罗斯2
+      - 🇸🇬 中转🇸🇬SG21LinodeLLC:@airproxies
+      - 优质线路（jp3）33
+      - 乌兹别克斯坦TAS021.3x
+      - Heroku-1_2
+      - 🇷🇴 |罗马尼亚
+      - 🇨🇳 CN36→openitsub.com
+      - 🇲🇾 马来西亚KUL021.3x
+      - 🇦🇺 |澳大利亚 3
+      - 🇯🇵 中转🇯🇵JP10KirinoLLC:@nodpai
+      - 🇸🇬 Singapore-Melbikom-dip
+      - "|西班牙"
+      - 🇸🇬 |新加坡 2
+      - 🇨🇳 中国_tg+univstar_77
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇨🇳 CN171→openitsub.com
+      - "@sharingnode"
+      - 🇺🇲 洛杉矶14
+      - 🇺🇲 美国06{优化1|V2ray}
+      - 🇸🇬 |新加坡 3
+      - 🇺🇲 中转🇺🇸US27BaxetGroupInc:@nodpai
+      - HN[LMHT][TLS]
+      - 🇨🇳 |台湾 2
+      - 🇫🇷 法国-江移-ws|解锁流媒体
+      - 🇨🇳 CN81→openitsub.com
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
+      - 🇨🇳 CN196→openitsub.com
+      - 🇨🇳 中转🇹🇼TW29ChunghwaTelecomCo.Ltd.:@nodpai
+      - 🇭🇰 HK8
+      - 🇸🇬 新加坡_tg+univstar_34
+      - tg+univstar_104
+      - 🇸🇬 隧道NF新加坡02
+      - 🇨🇳 CN167→openitsub.com
+      - 🇺🇲 美国us|
+      - "@sharingnode 2"
+      - 🇨🇳 中国_tg+univstar_9
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷 |法国1
-      - 🇰🇷 |韩国1
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
-      - 🇭🇰 HK01|香港|SS|x1.0
-      - 🇫🇷 |法国01
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇻🇳 |越南
-      - 哥伦比亚BOG020.6x
-      - 🇺🇲 美国_R_21
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇫🇷 |法国
+      - 🇨🇳 CN73→openitsub.com
+      - 🇨🇳 CN117→openitsub.com
+      - 🇺🇲 |美国02|中转|
+      - 🇫🇷 FR1OVHSAS:@nodpai
+      - 🇫🇷 法国MRS021.3x
+      - 🇩🇪 德国G口直连|负载均衡
       - 🇰🇷 |韩国|中转|
-      - 🇬🇧 |英国
-      - 🇸🇬 |新加坡3
-      - 🇸🇪 美国SEA020.6x
-      - 🇸🇬 新加坡_R_434
-      - 🇹🇭 泰国BKK020.6x
-      - 🇨🇳 中国_tg+univstar_67
-      - 🇯🇵 日本TOK010.6x
-      - 🇩🇪 [直连0.5x]德国Germany
-      - 🇦🇺 |澳大利亚
-      - 🇹🇭 |泰国3
-      - 🇸🇬 新加坡_R_522
-      - 🇨🇦 加拿大_R_339
-      - 🇺🇲 美国()
-      - 🇰🇷 |韩国04|高速|分流2
-      - 新西兰AKL010.6x
-      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 台北Hinet-dip
+      - 🇩🇪 法兰克福✈️55
+      - 🇯🇵 日本3|
+      - 🇨🇳 CN149→openitsub.com
+      - 🇺🇲 美国_R_21
+      - 🇨🇳 CN60→openitsub.com
+      - 🇨🇳 CN32→openitsub.com
+      - 🇺🇲 US7
       - 🇩🇪 |德国
-      - 🇨🇳 台湾流媒体解锁_2
-      - "@sharingnode"
-      - 🇳🇱 |荷兰01
-      - tg+univstar_56
-      - 🇸🇬 新加坡_tg+univstar_34
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇸🇬 |新加坡
-      - 🇸🇦 |沙特阿拉伯|中转|
-      - 🇲🇾 |马来西亚1
-      - 🇨🇳 不限速千兆-tw254
-      - 🇯🇵 |日本
-      - 🇺🇲 凤凰城36
-      - 以色列TLV020.6x
-      - 🇳🇱 菲律宾MNL010.6x
-      - 🇨🇳 台湾TAI030.6x
-      - 🇷🇺 俄罗斯30
-      - 🇸🇬 【共享奈飞】新加坡020.6x
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 不限速千兆-tw2819
-      - 卢森堡STE010.6x
-      - 🇭🇰 香港_R_446
-      - 🇰🇷 KR01|韩国|SS|x1.0
-      - 🇯🇵 中转🇯🇵JP8KirinoLLC:@nodpai
-      - 哥伦比亚BOG010.6x
-      - 🇷🇺 西伯利亚6
-      - 🇺🇲 US01[TLS]
-      - 🇭🇰 中转🇭🇰HK4KirinoLLC:@nodpai
-      - 🇺🇲 US01|美国|x1.0
-      - 🇭🇰 HK6
-      - 🇨🇳 不限速千兆-tw2611
-      - 🇺🇲 美国() 2
-      - 🇸🇬 |新加坡 2
-      - 🇮🇳 印度_R_361
-      - 🇭🇰 香港HKG060.6x
-      - 🇺🇲 亚美尼亚EVN020.6x
-      - Heroku-3_1
-      - 🇺🇲 |美国06|高速|分流2
-      - 🇹🇭 |泰国
-      - Heroku-5_1
-      - 🇯🇵 |日本 2
-      - 🇬🇧 |英国 2
-      - 🇮🇹 意大利MIL020.6x
-      - 🇫🇷 法国|解锁流媒体
-      - 🇸🇬 狮城1|
-      - Heroku-2_6
-      - 🇺🇲 美国c|
-      - IN1→openitsub.com
-      - Heroku-5_5
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 🇫🇷 |v2-法国2
-      - 🇨🇦 加拿大TOR020.6x
-      - 🇸🇬 新加坡CN2|电信优化
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇩🇪 德国_R_523
-      - 🇻🇳 越南_R_515
-      - 🇺🇲 US4→openitsub.com
-      - https://t.me/daluoboji
-      - 🇩🇪 |德国 2
-      - 🇮🇳 印度✈️20
-      - 🇮🇩 印尼JAK010.6x
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
-      - 🇭🇰 中转🇭🇰HK15HGCGlobalCommunicationsLimited:@airproxies
-      - 🇺🇲 美国_R_335
-      - 🇯🇵 |日本 3
+      - 🇸🇬 Singapore-Melbikom
+      - 🇧🇷 RR01|巴西|x1.0
+      - 🇯🇵 日本TOK021.3x
+      - 🇨🇳 |台湾TWx1🔓
+      - 🇹🇷 土耳其_R_458
+      - 🇭🇰 香港2
+      - 🇯🇵 日本GC|负载均衡
       - 🇹🇭 泰国_R_557
+      - 🇺🇲 美国_tg+univstar_107
+      - 🇳🇱 |荷兰
+      - 🇺🇲 美国02|1x
+      - 乌克兰IEV021.3x
       - 🇺🇲 |美国
-      - 🇺🇲 |美国 2
-      - 🇩🇪 德国FRA010.6x
-      - 🇭🇰 香港_R_316
-      - 🇩🇪 DE1OVHSAS:@nodpai
-      - 🇸🇬 新加坡_R_441
-      - 🇨🇳 中国_tg+univstar_27
-      - 🇨🇳 不限速千兆-tw11
-      - 马来03{联通|V2ray}
-      - 🇨🇳 |台湾
-      - 瑞典_R_362
-      - 🇬🇧 |英国1
-      - 🇮🇹 意大利MIL010.6x
-      - 🇩🇪 法兰克福✈️53
-      - 🇯🇵 JP02|日本|x1.0
-      - GB3→openitsub.com
-      - "@sharingnode 2"
-      - "|拉脱维亚"
-      - 🇧🇪 德国BER020.6x
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 澳洲ADL010.6x
-      - "@sharingnode 3"
-      - 🇺🇲 |美国1
-      - 🇨🇳 中国_tg+univstar_9
-      - "@sharingnode 4"
-      - 🇨🇳 中国_tg+univstar_21
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇺🇲 US03|美国|x1.0
-      - 巴基斯坦KHI010.6x
-      - 🇭🇰 香港3
-      - Heroku-1_3
-      - 🇫🇷 FR1→openitsub.com
-      - 🇺🇲 美国02{优化2|V2ray}
-      - 🇯🇵 |日本03|高速
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇨🇳 中国_tg+univstar_7
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港02{优化2|V2ray}
-      - 🇭🇰 香港CN2|优质线路
-      - 🇨🇳 CN1→openitsub.com
-      - 🏳️‍🌈 流量站-香港4-分流-广东
-      - 🇹🇭 TH01|泰国|x1.0
+      - 🇺🇲 US4→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇨🇳 CN193→openitsub.com
       - 🇯🇵 日本02{优化2|V2ray}
-      - 🇺🇲 US9
-      - 🇺🇲 US5→openitsub.com
-      - 🇬🇧 |英国 3
-      - 🇲🇴 澳门()
-      - 🇨🇳 |台湾1
-      - GB2→openitsub.com
-      - 🇺🇲 亚美尼亚EVN010.6x
-      - Sing
-      - 🇰🇷 |韩国
-      - 🇸🇬 |新加坡06|高速|分流2
-      - 全球直连②
-      - 🇨🇳 中国_tg+univstar_29
-      - 🇮🇳 印度_R_325
-      - 🇭🇰 |香港
-      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
-      - 🇸🇬 中转🇸🇬SG17KirinoLLC:@airproxies
+      - 🇨🇳 CN82→openitsub.com
+      - 🇨🇳 CN96→openitsub.com
+      - 🇦🇺 中转🇦🇺AU1OracleCorporation:@nodpai
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇯🇵 日本02{优化2|V2ray} 2
+      - 埃及CAI021.3x
+      - 🇨🇳 中国_tg+univstar_98
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇲🇾 MY01|马来西亚|SS|x1.0
+      - 🇭🇰 中转🇭🇰HK21KirinoLLC:@airproxies
+      - 🇸🇬 新加坡01{优化2|V2ray}
+      - 🇸🇬 新加坡()
+      - 🇻🇳 VN01|越南|x1.0
+      - 🇸🇬 SG7Amazon.comInc.:@airproxies
+      - 🇭🇰 |香港01
+      - 🇭🇰 |香港03|高速|分流
+      - 🇨🇳 中转🇹🇼TW10KirinoLLC:@airproxies
+      - 🇬🇧 英国_tg+univstar_92
+      - 🇨🇳 CN106→openitsub.com
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🏳️‍🌈 流量站-日本2
+      - 🇻🇳 越南_R_448
+      - 🇭🇰 |香港03
+      - 🇮🇳 印度流媒体解锁_l
+      - 🇨🇳 CN12→openitsub.com
+      - 🇯🇵 |日本
       - 🇸🇬 SG01[TLS]
-      - 🇺🇲 |美国 3
-      - 🇸🇬 新加坡_R_251
-      - 🇪🇸 中转🇪🇸ES1PropelinConsultingS.L.:@nodpai
-      - 🇺🇲 美国SJC031x
-      - 🇭🇰 |香港05
+      - 🇸🇬 SG01|新加坡|x2.0
+      - 🇭🇰 香港01{优化1|V2ray}
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港CN2|优质线路
+      - 🇯🇵 日本5
+      - "|捷克1"
+      - 🇯🇵 中转🇯🇵JP12FDCservers.net:@airproxies
+      - 🇸🇬 中转🇸🇬SG34LinodeLLC:@airproxies
+      - 🇨🇳 旧金山|解锁Nefilx|负载均衡
+      - 🇲🇴 澳门()
+      - 🇨🇳 CN116→openitsub.com
+      - 🇯🇵 JP3
+      - 🇭🇰 中转🇭🇰HK25HongKongBroadbandNetworkLtd:@nodpai
+      - 🇨🇳 台湾|
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
+      - 🇨🇳 中转🇹🇼TW50ChunghwaTelecomCo.Ltd.:@airproxies
+      - 🇨🇳 CN18→openitsub.com
+      - 🇻🇳 越南HCM011.3x
+      - 这是教程赠送免费节点
+      - 🇺🇲 中转🇺🇸US1DataRoomInc:@nodpai
+      - 🇸🇪 美国--SEA【流媒体】--CF源节点
+      - 🇦🇺 |澳大利亚
+      - 🇨🇳 |台湾
+      - 🇺🇲 US01|美国|SS|x1.0
+      - 🇸🇬 新加坡05{优化2|V2ray}
+      - 🇯🇵 JP4AmazonTechnologiesInc.:@airproxies
+      - 🇬🇧 英国GLA011.3x
+      - 🇨🇳 CN110→openitsub.com
+      - 🇨🇦 加拿大_tg+univstar_93
+      - 🇨🇳 CN162→openitsub.com
+      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇨🇳 CN4→openitsub.com
+      - 🇰🇷 韩国|
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇧🇷 |巴西|中转|
+      - 🇨🇳 中国_tg+univstar_80
+      - 🇸🇬 |新加坡
+      - 🇰🇷 亚洲|韩国B
+      - 🇺🇲 US05|美国|x1.0
+      - 🇭🇰 不限速千兆-hk521
+      - tg+univstar_87
+      - 🇨🇳 CN127→openitsub.com
+      - 🇭🇰 香港
+      - 🇯🇵 |日本2
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇸🇬 【共享P站】新加坡011.3x
+      - 🇮🇳 印度✈️17
+      - 🇺🇲 US02|美国|SS|x1.0
+      - 🇺🇲 中转🇺🇸US24BaxetGroupInc.:@nodpai
+      - 🇰🇷 KR2OracleCorporation:@nodpai
+      - 🇿🇦 南非JNB011.3x
+      - 🇯🇵 亚洲|日本B
+      - 🇭🇰 |香港01|直连|奈飞解锁
+      - 试用节点#限速100K
+      - 🇰🇷 |韩国1
+      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
+      - "|乌克兰1"
+      - 🇯🇵 日本03|1x
+      - 🇭🇰 亚洲|香港C
+      - 🇭🇰 香港✈️38
+      - 🇺🇲 |美国3
+      - 🇸🇬 |新加坡02|高速
+      - 不丹PBH011.3x
+      - 🇨🇳 CN152→openitsub.com
+      - 🇬🇧 |英国
+      - 🇨🇦 加拿大TOR011.3x
+      - 中转🇨🇦CA3DigitalOceanLLC:@airproxies
+      - 🇳🇱 |荷兰1
+      - 🇭🇰 香港HKG081x
+      - 中转🇬🇧GB5DanielJackson:@airproxies
+      - 🇷🇺 |俄罗斯
+      - 🇸🇬 新加坡() 2
+      - 🇸🇬 隧道NF新加坡06
+      - 🇨🇳 台北Hinet-dip 2
+      - 🇧🇷 |巴西1
+      - 🇨🇦 加拿大TOR021.3x
+      - 🇫🇷 法国-江移|解锁流媒体
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇸🇬 中转🇸🇬SG47LinodeLLC:@nodpai
+      - Heroku-3_3
+      - 🇩🇪 德国-Trojan
+      - 🇸🇬 中转🇸🇬SG22LinodeLLC:@airproxies
+      - 🇫🇷 |法国02
+      - 🇺🇲 US04|美国|x1.0
+      - 🇩🇪 中转🇩🇪DE2myVirtualserver:@nodpai
+      - 🇸🇬 中转🇸🇬SG35LinodeLLC:@airproxies
+      - 🇭🇰 |香港06
+      - 🇹🇷 |土耳其02
+      - 🇨🇳 CN76→openitsub.com
+      - 🇦🇺 |澳大利亚 2
+      - 🇯🇵 _v2ray-4zl-日本03
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_R_441
+      - tg+univstar_102
+      - 🇯🇵 日本TOK011.3x
+      - 冰岛RKV011.3x
+      - 🇩🇪 |德国 2
+      - 🇰🇷 韩国SEO021.3x
+      - 🇨🇳 中国_tg+univstar_44
+      - Heroku-2_1
+      - 🇸🇪 美国SEA011.3x
+      - 🇵🇭 菲律宾_R_196
+      - 🇺🇲 |①美国USx1.0🔓
+      - Heroku-1_1
+      - 🇨🇳 CN5→openitsub.com
+      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇷🇺 |俄罗斯2
+      - 🇸🇬 中转🇸🇬SG21LinodeLLC:@airproxies
+      - 优质线路（jp3）33
+      - 乌兹别克斯坦TAS021.3x
+      - Heroku-1_2
+      - 🇷🇴 |罗马尼亚
+      - 🇨🇳 CN36→openitsub.com
+      - 🇲🇾 马来西亚KUL021.3x
+      - 🇦🇺 |澳大利亚 3
+      - 🇯🇵 中转🇯🇵JP10KirinoLLC:@nodpai
+      - 🇸🇬 Singapore-Melbikom-dip
+      - "|西班牙"
+      - 🇸🇬 |新加坡 2
+      - 🇨🇳 中国_tg+univstar_77
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇨🇳 CN171→openitsub.com
+      - "@sharingnode"
+      - 🇺🇲 洛杉矶14
+      - 🇺🇲 美国06{优化1|V2ray}
+      - 🇸🇬 |新加坡 3
+      - 🇺🇲 中转🇺🇸US27BaxetGroupInc:@nodpai
+      - HN[LMHT][TLS]
+      - 🇨🇳 |台湾 2
+      - 🇫🇷 法国-江移-ws|解锁流媒体
+      - 🇨🇳 CN81→openitsub.com
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
+      - 🇨🇳 CN196→openitsub.com
+      - 🇨🇳 中转🇹🇼TW29ChunghwaTelecomCo.Ltd.:@nodpai
+      - 🇭🇰 HK8
+      - 🇸🇬 新加坡_tg+univstar_34
+      - tg+univstar_104
+      - 🇸🇬 隧道NF新加坡02
+      - 🇨🇳 CN167→openitsub.com
+      - 🇺🇲 美国us|
+      - "@sharingnode 2"
+      - 🇨🇳 中国_tg+univstar_9
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -698,170 +850,208 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇫🇷 |法国1
-      - 🇰🇷 |韩国1
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
-      - 🇭🇰 HK01|香港|SS|x1.0
-      - 🇫🇷 |法国01
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇻🇳 |越南
-      - 哥伦比亚BOG020.6x
-      - 🇺🇲 美国_R_21
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇫🇷 |法国
+      - 🇨🇳 CN73→openitsub.com
+      - 🇨🇳 CN117→openitsub.com
+      - 🇺🇲 |美国02|中转|
+      - 🇫🇷 FR1OVHSAS:@nodpai
+      - 🇫🇷 法国MRS021.3x
+      - 🇩🇪 德国G口直连|负载均衡
       - 🇰🇷 |韩国|中转|
-      - 🇬🇧 |英国
-      - 🇸🇬 |新加坡3
-      - 🇸🇪 美国SEA020.6x
-      - 🇸🇬 新加坡_R_434
-      - 🇹🇭 泰国BKK020.6x
-      - 🇨🇳 中国_tg+univstar_67
-      - 🇯🇵 日本TOK010.6x
-      - 🇩🇪 [直连0.5x]德国Germany
-      - 🇦🇺 |澳大利亚
-      - 🇹🇭 |泰国3
-      - 🇸🇬 新加坡_R_522
-      - 🇨🇦 加拿大_R_339
-      - 🇺🇲 美国()
-      - 🇰🇷 |韩国04|高速|分流2
-      - 新西兰AKL010.6x
-      - 🇨🇳 中国_tg+univstar_32
+      - 🇨🇳 台北Hinet-dip
+      - 🇩🇪 法兰克福✈️55
+      - 🇯🇵 日本3|
+      - 🇨🇳 CN149→openitsub.com
+      - 🇺🇲 美国_R_21
+      - 🇨🇳 CN60→openitsub.com
+      - 🇨🇳 CN32→openitsub.com
+      - 🇺🇲 US7
       - 🇩🇪 |德国
-      - 🇨🇳 台湾流媒体解锁_2
-      - "@sharingnode"
-      - 🇳🇱 |荷兰01
-      - tg+univstar_56
-      - 🇸🇬 新加坡_tg+univstar_34
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇸🇬 |新加坡
-      - 🇸🇦 |沙特阿拉伯|中转|
-      - 🇲🇾 |马来西亚1
-      - 🇨🇳 不限速千兆-tw254
-      - 🇯🇵 |日本
-      - 🇺🇲 凤凰城36
-      - 以色列TLV020.6x
-      - 🇳🇱 菲律宾MNL010.6x
-      - 🇨🇳 台湾TAI030.6x
-      - 🇷🇺 俄罗斯30
-      - 🇸🇬 【共享奈飞】新加坡020.6x
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 不限速千兆-tw2819
-      - 卢森堡STE010.6x
-      - 🇭🇰 香港_R_446
-      - 🇰🇷 KR01|韩国|SS|x1.0
-      - 🇯🇵 中转🇯🇵JP8KirinoLLC:@nodpai
-      - 哥伦比亚BOG010.6x
-      - 🇷🇺 西伯利亚6
-      - 🇺🇲 US01[TLS]
-      - 🇭🇰 中转🇭🇰HK4KirinoLLC:@nodpai
-      - 🇺🇲 US01|美国|x1.0
-      - 🇭🇰 HK6
-      - 🇨🇳 不限速千兆-tw2611
-      - 🇺🇲 美国() 2
-      - 🇸🇬 |新加坡 2
-      - 🇮🇳 印度_R_361
-      - 🇭🇰 香港HKG060.6x
-      - 🇺🇲 亚美尼亚EVN020.6x
-      - Heroku-3_1
-      - 🇺🇲 |美国06|高速|分流2
-      - 🇹🇭 |泰国
-      - Heroku-5_1
-      - 🇯🇵 |日本 2
-      - 🇬🇧 |英国 2
-      - 🇮🇹 意大利MIL020.6x
-      - 🇫🇷 法国|解锁流媒体
-      - 🇸🇬 狮城1|
-      - Heroku-2_6
-      - 🇺🇲 美国c|
-      - IN1→openitsub.com
-      - Heroku-5_5
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇷🇺 俄罗斯-Trojan
-      - 🇫🇷 |v2-法国2
-      - 🇨🇦 加拿大TOR020.6x
-      - 🇸🇬 新加坡CN2|电信优化
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇩🇪 德国_R_523
-      - 🇻🇳 越南_R_515
-      - 🇺🇲 US4→openitsub.com
-      - https://t.me/daluoboji
-      - 🇩🇪 |德国 2
-      - 🇮🇳 印度✈️20
-      - 🇮🇩 印尼JAK010.6x
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
-      - 🇭🇰 中转🇭🇰HK15HGCGlobalCommunicationsLimited:@airproxies
-      - 🇺🇲 美国_R_335
-      - 🇯🇵 |日本 3
+      - 🇸🇬 Singapore-Melbikom
+      - 🇧🇷 RR01|巴西|x1.0
+      - 🇯🇵 日本TOK021.3x
+      - 🇨🇳 |台湾TWx1🔓
+      - 🇹🇷 土耳其_R_458
+      - 🇭🇰 香港2
+      - 🇯🇵 日本GC|负载均衡
       - 🇹🇭 泰国_R_557
+      - 🇺🇲 美国_tg+univstar_107
+      - 🇳🇱 |荷兰
+      - 🇺🇲 美国02|1x
+      - 乌克兰IEV021.3x
       - 🇺🇲 |美国
-      - 🇺🇲 |美国 2
-      - 🇩🇪 德国FRA010.6x
-      - 🇭🇰 香港_R_316
-      - 🇩🇪 DE1OVHSAS:@nodpai
-      - 🇸🇬 新加坡_R_441
-      - 🇨🇳 中国_tg+univstar_27
-      - 🇨🇳 不限速千兆-tw11
-      - 马来03{联通|V2ray}
-      - 🇨🇳 |台湾
-      - 瑞典_R_362
-      - 🇬🇧 |英国1
-      - 🇮🇹 意大利MIL010.6x
-      - 🇩🇪 法兰克福✈️53
-      - 🇯🇵 JP02|日本|x1.0
-      - GB3→openitsub.com
-      - "@sharingnode 2"
-      - "|拉脱维亚"
-      - 🇧🇪 德国BER020.6x
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇮🇳 印度02{联通|V2ray}
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 澳洲ADL010.6x
-      - "@sharingnode 3"
-      - 🇺🇲 |美国1
-      - 🇨🇳 中国_tg+univstar_9
-      - "@sharingnode 4"
-      - 🇨🇳 中国_tg+univstar_21
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇺🇲 US03|美国|x1.0
-      - 巴基斯坦KHI010.6x
-      - 🇭🇰 香港3
-      - Heroku-1_3
-      - 🇫🇷 FR1→openitsub.com
-      - 🇺🇲 美国02{优化2|V2ray}
-      - 🇯🇵 |日本03|高速
-      - 🇳🇱 NL01|荷兰|x1.0
-      - 🇨🇳 中国_tg+univstar_7
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港02{优化2|V2ray}
-      - 🇭🇰 香港CN2|优质线路
-      - 🇨🇳 CN1→openitsub.com
-      - 🏳️‍🌈 流量站-香港4-分流-广东
-      - 🇹🇭 TH01|泰国|x1.0
+      - 🇺🇲 US4→openitsub.com
+      - 🇸🇬 |新加坡01
+      - 🇨🇳 CN193→openitsub.com
       - 🇯🇵 日本02{优化2|V2ray}
-      - 🇺🇲 US9
-      - 🇺🇲 US5→openitsub.com
-      - 🇬🇧 |英国 3
-      - 🇲🇴 澳门()
-      - 🇨🇳 |台湾1
-      - GB2→openitsub.com
-      - 🇺🇲 亚美尼亚EVN010.6x
-      - Sing
-      - 🇰🇷 |韩国
-      - 🇸🇬 |新加坡06|高速|分流2
-      - 全球直连②
-      - 🇨🇳 中国_tg+univstar_29
-      - 🇮🇳 印度_R_325
-      - 🇭🇰 |香港
-      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
-      - 🇸🇬 中转🇸🇬SG17KirinoLLC:@airproxies
+      - 🇨🇳 CN82→openitsub.com
+      - 🇨🇳 CN96→openitsub.com
+      - 🇦🇺 中转🇦🇺AU1OracleCorporation:@nodpai
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇯🇵 日本02{优化2|V2ray} 2
+      - 埃及CAI021.3x
+      - 🇨🇳 中国_tg+univstar_98
+      - 🇨🇳 中国_tg+univstar_81
+      - 🇲🇾 MY01|马来西亚|SS|x1.0
+      - 🇭🇰 中转🇭🇰HK21KirinoLLC:@airproxies
+      - 🇸🇬 新加坡01{优化2|V2ray}
+      - 🇸🇬 新加坡()
+      - 🇻🇳 VN01|越南|x1.0
+      - 🇸🇬 SG7Amazon.comInc.:@airproxies
+      - 🇭🇰 |香港01
+      - 🇭🇰 |香港03|高速|分流
+      - 🇨🇳 中转🇹🇼TW10KirinoLLC:@airproxies
+      - 🇬🇧 英国_tg+univstar_92
+      - 🇨🇳 CN106→openitsub.com
+      - 🇩🇪 德国02{联通|V2ray}
+      - 🏳️‍🌈 流量站-日本2
+      - 🇻🇳 越南_R_448
+      - 🇭🇰 |香港03
+      - 🇮🇳 印度流媒体解锁_l
+      - 🇨🇳 CN12→openitsub.com
+      - 🇯🇵 |日本
       - 🇸🇬 SG01[TLS]
-      - 🇺🇲 |美国 3
-      - 🇸🇬 新加坡_R_251
-      - 🇪🇸 中转🇪🇸ES1PropelinConsultingS.L.:@nodpai
-      - 🇺🇲 美国SJC031x
-      - 🇭🇰 |香港05
+      - 🇸🇬 SG01|新加坡|x2.0
+      - 🇭🇰 香港01{优化1|V2ray}
+      - 🇨🇳 中国_tg+univstar_29
+      - 🇭🇰 香港CN2|优质线路
+      - 🇯🇵 日本5
+      - "|捷克1"
+      - 🇯🇵 中转🇯🇵JP12FDCservers.net:@airproxies
+      - 🇸🇬 中转🇸🇬SG34LinodeLLC:@airproxies
+      - 🇨🇳 旧金山|解锁Nefilx|负载均衡
+      - 🇲🇴 澳门()
+      - 🇨🇳 CN116→openitsub.com
+      - 🇯🇵 JP3
+      - 🇭🇰 中转🇭🇰HK25HongKongBroadbandNetworkLtd:@nodpai
+      - 🇨🇳 台湾|
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
+      - 🇨🇳 中转🇹🇼TW50ChunghwaTelecomCo.Ltd.:@airproxies
+      - 🇨🇳 CN18→openitsub.com
+      - 🇻🇳 越南HCM011.3x
+      - 这是教程赠送免费节点
+      - 🇺🇲 中转🇺🇸US1DataRoomInc:@nodpai
+      - 🇸🇪 美国--SEA【流媒体】--CF源节点
+      - 🇦🇺 |澳大利亚
+      - 🇨🇳 |台湾
+      - 🇺🇲 US01|美国|SS|x1.0
+      - 🇸🇬 新加坡05{优化2|V2ray}
+      - 🇯🇵 JP4AmazonTechnologiesInc.:@airproxies
+      - 🇬🇧 英国GLA011.3x
+      - 🇨🇳 CN110→openitsub.com
+      - 🇨🇦 加拿大_tg+univstar_93
+      - 🇨🇳 CN162→openitsub.com
+      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇨🇳 CN4→openitsub.com
+      - 🇰🇷 韩国|
+      - 🇨🇳 中国_tg+univstar_24
+      - 🇧🇷 |巴西|中转|
+      - 🇨🇳 中国_tg+univstar_80
+      - 🇸🇬 |新加坡
+      - 🇰🇷 亚洲|韩国B
+      - 🇺🇲 US05|美国|x1.0
+      - 🇭🇰 不限速千兆-hk521
+      - tg+univstar_87
+      - 🇨🇳 CN127→openitsub.com
+      - 🇭🇰 香港
+      - 🇯🇵 |日本2
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇸🇬 【共享P站】新加坡011.3x
+      - 🇮🇳 印度✈️17
+      - 🇺🇲 US02|美国|SS|x1.0
+      - 🇺🇲 中转🇺🇸US24BaxetGroupInc.:@nodpai
+      - 🇰🇷 KR2OracleCorporation:@nodpai
+      - 🇿🇦 南非JNB011.3x
+      - 🇯🇵 亚洲|日本B
+      - 🇭🇰 |香港01|直连|奈飞解锁
+      - 试用节点#限速100K
+      - 🇰🇷 |韩国1
+      - 🇭🇰 香港HGC-江移-ws|解锁流媒体
+      - "|乌克兰1"
+      - 🇯🇵 日本03|1x
+      - 🇭🇰 亚洲|香港C
+      - 🇭🇰 香港✈️38
+      - 🇺🇲 |美国3
+      - 🇸🇬 |新加坡02|高速
+      - 不丹PBH011.3x
+      - 🇨🇳 CN152→openitsub.com
+      - 🇬🇧 |英国
+      - 🇨🇦 加拿大TOR011.3x
+      - 中转🇨🇦CA3DigitalOceanLLC:@airproxies
+      - 🇳🇱 |荷兰1
+      - 🇭🇰 香港HKG081x
+      - 中转🇬🇧GB5DanielJackson:@airproxies
+      - 🇷🇺 |俄罗斯
+      - 🇸🇬 新加坡() 2
+      - 🇸🇬 隧道NF新加坡06
+      - 🇨🇳 台北Hinet-dip 2
+      - 🇧🇷 |巴西1
+      - 🇨🇦 加拿大TOR021.3x
+      - 🇫🇷 法国-江移|解锁流媒体
+      - 🇨🇳 中国_tg+univstar_31
+      - 🇸🇬 中转🇸🇬SG47LinodeLLC:@nodpai
+      - Heroku-3_3
+      - 🇩🇪 德国-Trojan
+      - 🇸🇬 中转🇸🇬SG22LinodeLLC:@airproxies
+      - 🇫🇷 |法国02
+      - 🇺🇲 US04|美国|x1.0
+      - 🇩🇪 中转🇩🇪DE2myVirtualserver:@nodpai
+      - 🇸🇬 中转🇸🇬SG35LinodeLLC:@airproxies
+      - 🇭🇰 |香港06
+      - 🇹🇷 |土耳其02
+      - 🇨🇳 CN76→openitsub.com
+      - 🇦🇺 |澳大利亚 2
+      - 🇯🇵 _v2ray-4zl-日本03
+      - 🇨🇳 中国_tg+univstar_21
+      - 🇸🇬 新加坡_R_441
+      - tg+univstar_102
+      - 🇯🇵 日本TOK011.3x
+      - 冰岛RKV011.3x
+      - 🇩🇪 |德国 2
+      - 🇰🇷 韩国SEO021.3x
+      - 🇨🇳 中国_tg+univstar_44
+      - Heroku-2_1
+      - 🇸🇪 美国SEA011.3x
+      - 🇵🇭 菲律宾_R_196
+      - 🇺🇲 |①美国USx1.0🔓
+      - Heroku-1_1
+      - 🇨🇳 CN5→openitsub.com
+      - 🇷🇺 俄罗斯①{移动|V2ray}
+      - 🇷🇺 |俄罗斯2
+      - 🇸🇬 中转🇸🇬SG21LinodeLLC:@airproxies
+      - 优质线路（jp3）33
+      - 乌兹别克斯坦TAS021.3x
+      - Heroku-1_2
+      - 🇷🇴 |罗马尼亚
+      - 🇨🇳 CN36→openitsub.com
+      - 🇲🇾 马来西亚KUL021.3x
+      - 🇦🇺 |澳大利亚 3
+      - 🇯🇵 中转🇯🇵JP10KirinoLLC:@nodpai
+      - 🇸🇬 Singapore-Melbikom-dip
+      - "|西班牙"
+      - 🇸🇬 |新加坡 2
+      - 🇨🇳 中国_tg+univstar_77
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇨🇳 CN171→openitsub.com
+      - "@sharingnode"
+      - 🇺🇲 洛杉矶14
+      - 🇺🇲 美国06{优化1|V2ray}
+      - 🇸🇬 |新加坡 3
+      - 🇺🇲 中转🇺🇸US27BaxetGroupInc:@nodpai
+      - HN[LMHT][TLS]
+      - 🇨🇳 |台湾 2
+      - 🇫🇷 法国-江移-ws|解锁流媒体
+      - 🇨🇳 CN81→openitsub.com
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
+      - 🇨🇳 CN196→openitsub.com
+      - 🇨🇳 中转🇹🇼TW29ChunghwaTelecomCo.Ltd.:@nodpai
+      - 🇭🇰 HK8
+      - 🇸🇬 新加坡_tg+univstar_34
+      - tg+univstar_104
+      - 🇸🇬 隧道NF新加坡02
+      - 🇨🇳 CN167→openitsub.com
+      - 🇺🇲 美国us|
+      - "@sharingnode 2"
+      - 🇨🇳 中国_tg+univstar_9
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1003,16 +1193,18 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇨🇳 台湾流媒体解锁_2
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇫🇷 法国|解锁流媒体
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇮🇳 印度流媒体解锁_l
+      - 🇨🇳 旧金山|解锁Nefilx|负载均衡
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
       - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇭🇰 |香港01|直连|奈飞解锁
       - 🇭🇰 香港HGC-江移-ws|解锁流媒体
+      - 🇫🇷 法国-江移|解锁流媒体
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇫🇷 法国-江移-ws|解锁流媒体
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1058,128 +1250,152 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 HK01|香港|SS|x1.0
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇭🇰 香港_R_446
-      - 🇭🇰 中转🇭🇰HK4KirinoLLC:@nodpai
-      - 🇭🇰 HK6
-      - 🇭🇰 香港HKG060.6x
-      - 🇭🇰 中转🇭🇰HK15HGCGlobalCommunicationsLimited:@airproxies
-      - 🇭🇰 香港_R_316
-      - 🇭🇰 香港HGC-江移|解锁流媒体
-      - 🇭🇰 香港3
-      - 🇭🇰 |香港04
-      - 🇭🇰 香港02{优化2|V2ray}
+      - 🇭🇰 香港2
+      - 🇭🇰 中转🇭🇰HK21KirinoLLC:@airproxies
+      - 🇭🇰 |香港01
+      - 🇭🇰 |香港03|高速|分流
+      - 🇭🇰 |香港03
+      - 🇭🇰 香港01{优化1|V2ray}
       - 🇭🇰 香港CN2|优质线路
-      - 🏳️‍🌈 流量站-香港4-分流-广东
-      - 🇭🇰 |香港
+      - 🇭🇰 中转🇭🇰HK25HongKongBroadbandNetworkLtd:@nodpai
+      - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇭🇰 香港
+      - 🇭🇰 |香港01|直连|奈飞解锁
       - 🇭🇰 香港HGC-江移-ws|解锁流媒体
-      - 🇭🇰 |香港05
+      - 🇭🇰 亚洲|香港C
+      - 🇭🇰 香港✈️38
+      - 🇭🇰 香港HKG081x
+      - 🇭🇰 |香港06
+      - 🇭🇰 HK8
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本TOK010.6x
-      - 🇯🇵 |日本
-      - 🇯🇵 中转🇯🇵JP8KirinoLLC:@nodpai
-      - 🇯🇵 |日本 2
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇯🇵 |日本 3
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇯🇵 |日本03|高速
+      - 🇯🇵 日本3|
+      - 🇯🇵 日本TOK021.3x
+      - 🇯🇵 日本GC|负载均衡
       - 🇯🇵 日本02{优化2|V2ray}
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇯🇵 日本02{优化2|V2ray} 2
+      - 🏳️‍🌈 流量站-日本2
+      - 🇯🇵 |日本
+      - 🇯🇵 日本5
+      - 🇯🇵 中转🇯🇵JP12FDCservers.net:@airproxies
+      - 🇯🇵 JP3
+      - 🇯🇵 JP4AmazonTechnologiesInc.:@airproxies
+      - 🇯🇵 |日本2
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇯🇵 亚洲|日本B
+      - 🇯🇵 日本03|1x
+      - 🇯🇵 _v2ray-4zl-日本03
+      - 🇯🇵 日本TOK011.3x
+      - 🇯🇵 中转🇯🇵JP10KirinoLLC:@nodpai
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
+      - 🇺🇲 |美国02|中转|
       - 🇺🇲 美国_R_21
-      - 🇺🇲 [直连0.5x]美国UnitedStates
-      - 🇸🇪 美国SEA020.6x
-      - 🇺🇲 美国()
-      - 🇺🇲 凤凰城36
-      - 🇺🇲 US01[TLS]
-      - 🇺🇲 US01|美国|x1.0
-      - 🇺🇲 美国() 2
-      - 🇺🇲 亚美尼亚EVN020.6x
-      - 🇺🇲 |美国06|高速|分流2
-      - 🇺🇲 美国c|
-      - 🇺🇲 美国05{优化2|V2ray}
-      - 🇺🇲 US4→openitsub.com
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
-      - 🇺🇲 美国_R_335
+      - 🇺🇲 US7
+      - 🇺🇲 美国_tg+univstar_107
+      - 🇺🇲 美国02|1x
       - 🇺🇲 |美国
-      - 🇺🇲 |美国 2
-      - 🇺🇲 |美国1
-      - 🇺🇲 US03|美国|x1.0
-      - 🇺🇲 美国02{优化2|V2ray}
-      - 🇺🇲 US9
-      - 🇺🇲 US5→openitsub.com
-      - 🇺🇲 亚美尼亚EVN010.6x
-      - 🇺🇲 |美国 3
-      - 🇺🇲 美国SJC031x
+      - 🇺🇲 US4→openitsub.com
+      - 🇺🇲 中转🇺🇸US1DataRoomInc:@nodpai
+      - 🇸🇪 美国--SEA【流媒体】--CF源节点
+      - 🇺🇲 US01|美国|SS|x1.0
+      - 🇺🇲 US05|美国|x1.0
+      - 🇺🇲 US02|美国|SS|x1.0
+      - 🇺🇲 中转🇺🇸US24BaxetGroupInc.:@nodpai
+      - 🇺🇲 |美国3
+      - 🇺🇲 US04|美国|x1.0
+      - 🇸🇪 美国SEA011.3x
+      - 🇺🇲 |①美国USx1.0🔓
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇺🇲 洛杉矶14
+      - 🇺🇲 美国06{优化1|V2ray}
+      - 🇺🇲 中转🇺🇸US27BaxetGroupInc:@nodpai
+      - 🇺🇲 美国us|
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾流媒体解锁_2
-      - 🇨🇳 台湾TAI030.6x
+      - 🇨🇳 台北Hinet-dip
+      - 🇨🇳 |台湾TWx1🔓
+      - 🇨🇳 中转🇹🇼TW10KirinoLLC:@airproxies
+      - 🇨🇳 台湾|
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
+      - 🇨🇳 中转🇹🇼TW50ChunghwaTelecomCo.Ltd.:@airproxies
       - 🇨🇳 |台湾
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 🇨🇳 |台湾1
+      - 🇨🇳 台北Hinet-dip 2
+      - 🇨🇳 |台湾 2
+      - 🇨🇳 中转🇹🇼TW29ChunghwaTelecomCo.Ltd.:@nodpai
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 |新加坡3
-      - 🇸🇬 新加坡_R_434
-      - 🇸🇬 新加坡_R_522
-      - 🇸🇬 新加坡_tg+univstar_34
-      - 🇸🇬 |新加坡
-      - 🇸🇬 【共享奈飞】新加坡020.6x
-      - 🇸🇬 |新加坡 2
-      - 🇸🇬 狮城1|
-      - 🇸🇬 新加坡CN2|电信优化
-      - 🇸🇬 新加坡_R_441
-      - 🇸🇬 |新加坡06|高速|分流2
-      - 🇸🇬 中转🇸🇬SG17KirinoLLC:@airproxies
+      - 🇸🇬 Singapore-Melbikom
+      - 🇸🇬 |新加坡01
+      - 🇸🇬 新加坡01{优化2|V2ray}
+      - 🇸🇬 新加坡()
+      - 🇸🇬 SG7Amazon.comInc.:@airproxies
       - 🇸🇬 SG01[TLS]
-      - 🇸🇬 新加坡_R_251
+      - 🇸🇬 SG01|新加坡|x2.0
+      - 🇸🇬 中转🇸🇬SG34LinodeLLC:@airproxies
+      - 🇸🇬 新加坡05{优化2|V2ray}
+      - 🇸🇬 |新加坡
+      - 🇸🇬 【共享P站】新加坡011.3x
+      - 🇸🇬 |新加坡02|高速
+      - 🇸🇬 新加坡() 2
+      - 🇸🇬 隧道NF新加坡06
+      - 🇸🇬 中转🇸🇬SG47LinodeLLC:@nodpai
+      - 🇸🇬 中转🇸🇬SG22LinodeLLC:@airproxies
+      - 🇸🇬 中转🇸🇬SG35LinodeLLC:@airproxies
+      - 🇸🇬 新加坡_R_441
+      - 🇸🇬 中转🇸🇬SG21LinodeLLC:@airproxies
+      - 🇸🇬 Singapore-Melbikom-dip
+      - 🇸🇬 |新加坡 2
+      - 🇸🇬 |新加坡 3
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
+      - 🇸🇬 新加坡_tg+univstar_34
+      - 🇸🇬 隧道NF新加坡02
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 |韩国1
       - 🇰🇷 |韩国|中转|
-      - 🇰🇷 |韩国04|高速|分流2
-      - 🇰🇷 KR01|韩国|SS|x1.0
-      - 🇰🇷 |韩国
+      - 🇰🇷 韩国|
+      - 🇰🇷 亚洲|韩国B
+      - 🇰🇷 KR2OracleCorporation:@nodpai
+      - 🇰🇷 |韩国1
+      - 🇰🇷 韩国SEO021.3x
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇺🇲 美国洛杉矶-江移-ws|解锁流媒体
-      - 🇭🇰 |香港01|流媒体解锁|高速
-      - 🇭🇰 香港HKIX-1号线路|解锁流媒体
-      - 🇨🇳 台湾流媒体解锁_2
-      - 🇭🇰 |香港04|直连|奈飞解锁
-      - 🇸🇬 【共享奈飞】新加坡020.6x
-      - 🇫🇷 法国|解锁流媒体
-      - 🇯🇵 |日本01|流媒体解锁|高速分流
-      - 🇺🇲 美国圣何塞-江移-ws|解锁流媒体
+      - 🇯🇵 |日本03|中转|2x|奈飞解锁
+      - 🇮🇳 印度流媒体解锁_l
+      - 🇨🇳 旧金山|解锁Nefilx|负载均衡
+      - 🇨🇳 台湾Hinet-江移|解锁流媒体
       - 🇭🇰 香港HGC-江移|解锁流媒体
+      - 🇯🇵 |日本01|流媒体解锁|高速
+      - 🇭🇰 |香港01|直连|奈飞解锁
       - 🇭🇰 香港HGC-江移-ws|解锁流媒体
+      - 🇸🇬 隧道NF新加坡06
+      - 🇫🇷 法国-江移|解锁流媒体
+      - 🏳️‍🌈 流量站-美国3(解锁奈飞)
+      - 🇫🇷 法国-江移-ws|解锁流媒体
+      - 🇸🇬 |新加坡01|中转|奈飞解锁
+      - 🇸🇬 隧道NF新加坡02
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
