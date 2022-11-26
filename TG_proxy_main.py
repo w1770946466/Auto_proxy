@@ -5,7 +5,7 @@ import re
 import time
 import os
 import threading
-
+from tqdm import tqdm
 
 
 #文件路径
@@ -188,8 +188,9 @@ def get_yaml():
 
 
 if __name__ == '__main__':
-    for url in urls:
-        print(url, "开始获取......")
+    print("开始获取订阅链接......")
+    for url in tqdm(urls):
+        #print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
         threads.append(thread)
