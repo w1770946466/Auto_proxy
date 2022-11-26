@@ -76,7 +76,7 @@ def get_content(url):
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     #print("共获得", len(new_list_down), "条链接")
-    for o in new_list_down:
+    for o in tqdm(new_list_down):
         try:
             res = requests.get(o)
             #判断是否为clash
@@ -188,9 +188,9 @@ def get_yaml():
 
 
 if __name__ == '__main__':
-    print("开始获取订阅链接......")
-    for url in tqdm(urls):
-        #print(url, "开始获取......")
+    #print("开始获取订阅链接......")
+    for url in urls:
+        print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
         threads.append(thread)
