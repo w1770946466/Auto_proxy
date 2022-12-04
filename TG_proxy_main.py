@@ -166,7 +166,7 @@ def write_document():
         with open("README.md", 'r', encoding='utf-8') as f:
             lines = f.readlines()
             f.close()
-	for index in range(len(lines)):
+        for index in range(len(lines)):
             if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`':
 		lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
