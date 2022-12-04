@@ -162,6 +162,38 @@ def write_document():
         plaintext_result = obj.decode()
         file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
         file_L.write(plaintext_result)
+        #写入README
+        with open("README.md", 'r', encoding='utf-8') as f:
+	        lines = f.readlines()
+		    f.close()
+		for index in range(len(lines)):
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`':
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+			if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`': # 目标行内容
+				lines.pop(index+1)
+				lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+		with open(self.readme_file, 'w', encoding='utf-8') as f:
+			data = ''.join(lines)
+			f.write(data)
         print("订阅写入完成✅")
         try:
             numbers =sum(1 for _ in open(txt_dir))
@@ -185,7 +217,6 @@ def get_yaml():
         file_L.close()
         n += 1
     print("clash订阅获取完成！")
-
 
 if __name__ == '__main__':
     print("开始获取订阅链接......")
