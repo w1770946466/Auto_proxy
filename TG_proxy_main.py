@@ -167,6 +167,9 @@ def write_document():
             lines = f.readlines()
             f.close()
         for index in range(len(lines)):
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
+                lines.pop(index+1)
+                lines.insert(index+1, f'`节点总数: {length}`\n')
             if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
                 lines.pop(index+1)
                 lines.insert(index+1, f'`合并节点总数: {step-1}`\n')
