@@ -191,7 +191,7 @@ def write_document():
             if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-        with open(self.readme_file, 'w', encoding='utf-8') as f:
+        with open("README.md", 'w', encoding='utf-8') as f:
             data = ''.join(lines)
             f.write(data)
         print("订阅写入完成✅")
