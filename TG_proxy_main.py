@@ -167,30 +167,31 @@ def write_document():
             lines = f.readlines()
             f.close()
         for index in range(len(lines)):
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`':
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`':
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
-            if lines[index] == '- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`': # 目标行内容
+            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'合并节点总数: `{step-1}`\n')
+                print("第八个写入完成✅")
         with open("README.md", 'w', encoding='utf-8') as f:
             data = ''.join(lines)
             f.write(data)
