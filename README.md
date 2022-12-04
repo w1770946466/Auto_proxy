@@ -14,6 +14,10 @@
 ps：增至8个订阅链接，每个大约150个左右（不确定）避免太多节点造成软件卡顿，最近节点质量都很高，欢迎使用，有好的意见也可以反馈一下谢谢！！
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
+`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
+`合并节点总数: 161`
+
+- [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
 `合并节点总数: 161`
 
