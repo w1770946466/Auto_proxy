@@ -6,6 +6,8 @@ import time
 import os
 import threading
 from tqdm import tqdm
+import random, string
+import datetime
 
 
 #文件路径
@@ -222,7 +224,48 @@ def get_yaml():
         n += 1
     print("clash订阅获取完成！")
 
+#获取机场试用订阅
+def get_sub_url():
+    V2B_REG_REL_URL = '/api/v1/passport/auth/register'
+    # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
+    USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    home_urls = (
+        'https://user.bafang.vip',
+        'https://cloud.hhygj.xyz',
+        'https://mitu.lol',
+        'https://xingbayun.top',
+        'https://console.ly520.me'
+    )
+    times = 2
+    proxies = {
+        'http': 'http://127.0.0.1:7890',
+        'https': 'http://127.0.0.1:7890'
+    }
+    for current_url in home_urls:
+        i = 0
+        while i < times:
+            form_data = {'email': ''.join(random.choice(string.ascii_letters+string.digits) for _ in range(12))+'@gmail.com',
+                         'password': 'autosub_v2b',
+                         'invite_code': '',
+                         'email_code': ''}
+            try:
+                response = requests.post(current_url+V2B_REG_REL_URL, json=form_data)
+            except:
+                continue
+            try:
+                subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
+                e_sub.append(subscription_url)
+            except:
+                print(f'Invalid response: {response.text.encode("utf-8")}')
+                sleep(3)
+            else:
+                i += 1
+                print(f'Number succeeded: {i}\t{subscription_url}')
+        
+    
 if __name__ == '__main__':
+    print("开始获取机场订阅链接......")
+    get_sub_url()
     print("开始获取订阅链接......")
     for url in tqdm(urls):
         #print(url, "开始获取......")
