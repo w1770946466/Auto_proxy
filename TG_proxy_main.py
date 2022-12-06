@@ -257,7 +257,7 @@ def get_sub_url():
             }
             print(form_data)
             try:
-                response = requests.post(current_url+V2B_REG_REL_URL, json=form_data,headers=header)
+                response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
                 print(response.text)
                 try:
                     print(response.json()["data"]["token"])
