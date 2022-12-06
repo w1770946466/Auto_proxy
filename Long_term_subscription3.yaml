@@ -5,54 +5,69 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇬🇧 UK-01|2.5X, server: uk-01.lynet.works, port: 8080, type: vmess, uuid: fe6424c5-b4be-42c0-8097-a5411fd0c617, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk-01.lynet.works}}}
-  - {name: 🇬🇧 频道|UK英国002, server: uk.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡09|高速, server: sg9.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4104, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg9.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
-  - {name: IN-01|1.5X, server: in-01.lynet.works, port: 8080, type: vmess, uuid: a5112550-6c30-40e4-b6d1-d4b2f0384a4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: in-01.lynet.works}}}
-  - {name: "🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12324, type: trojan, password: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, sni: huwkaihsdwal.vzwzasc.cn, skip-cert-verify: false}
-  - {name: 🇯🇵 日本21, server: jp21.czs1000.com, port: 443, type: trojan, password: 8f699f8c-2ec8-4caa-b1df-c2e227665b7c, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: "🇰🇷 [Lv3·1.0x]韩国03|IP均衡优化|混合负载|800Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33332, type: vmess, uuid: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-kr3, headers: {Host: baidu.com}}}
-  - {name: "🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12334, type: trojan, password: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, sni: sdwaigjkguywsxx.vzwzasc.cn, skip-cert-verify: false}
-  - {name: 🇯🇵 V5-日本9, server: jp09-vm5.entry.hsrtd.club, port: 462, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-02-09.entry-0.chinasnow.net}}}
-  - {name: 【V3】东京·1Gbps|7, server: jp7.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp7.hgwc.xyz}}}
-  - {name: 🇸🇬 建议使用前更新一次订阅, server: tntv2.cyou, port: 10086, type: trojan, password: PU1pa5, skip-cert-verify: false}
-  - {name: 🇮🇳 印度01|狮城, server: 110.80.3.34, port: 43105, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇩🇪 频道|DE德国001, server: de.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false}
-  - {name: 🇨🇳 IP均衡优化节点均解锁奈飞, server: tntv2.cyou, port: 10086, type: trojan, password: PU1pa5, skip-cert-verify: false}
-  - {name: 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân, server: hn1.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
-  - {name: 🇭🇰 |香港06, server: in.hk.xfltd.top, port: 17106, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90}
-  - {name: 🇯🇵 日本17, server: jp17.czs1000.com, port: 4443, type: vmess, uuid: 8f699f8c-2ec8-4caa-b1df-c2e227665b7c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp17.czs1000.com}
-  - {name: 🇨🇦 频道|CA加拿大002, server: ca.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false}
-  - {name: 🇹🇷 V5-土耳其无可用性保障, server: tr01-vm5.entry.hsrtd.club, port: 468, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-08-01.entry-0.chinasnow.net}}}
-  - {name: 🇭🇰 香港10, server: hk10.czs1000.com, port: 8011, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk10.czs1000.com}
-  - {name: 🇨🇳 台湾03, server: tw3.czs1000.com, port: 1001, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw3.czs1000.com}
-  - {name: 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân, server: hn3.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
-  - {name: 🇬🇧 UK-01|2.5X 2, server: uk-01.lynet.works, port: 8080, type: vmess, uuid: a5112550-6c30-40e4-b6d1-d4b2f0384a4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk-01.lynet.works}}}
-  - {name: 🇭🇰 V5-香港1, server: hk01-vm5.entry.hsrtd.club, port: 450, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-01-01.entry-0.chinasnow.net}}}
-  - {name: "🇯🇵 [Lv3·1.0x]日本05|大阪|混合负载|800Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 43382, type: vmess, uuid: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 🇯🇵 JP-03|1X, server: jp-03.lynet.works, port: 45678, type: vmess, uuid: a5112550-6c30-40e4-b6d1-d4b2f0384a4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp-03.lynet.works}}}
-  - {name: 🇺🇲 US-02|2X, server: us-02.lynet.works, port: 45678, type: vmess, uuid: a5112550-6c30-40e4-b6d1-d4b2f0384a4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-02.lynet.works}}}
-  - {name: 🇺🇲 美国02|高速|流媒体解锁, server: us2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4108, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: us2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
-  - {name: 🇯🇵 日本18, server: jp18.czs1000.com, port: 4443, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp18.czs1000.com}
-  - {name: 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân, server: 128.199.86.221, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
-  - {name: 🇸🇬 新加坡12|高速, server: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4104, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
-  - {name: "🇰🇷 [Lv3·1.0x]韩国02|IP均衡优化|混合负载|800Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33332, type: vmess, uuid: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-kr2, headers: {Host: baidu.com}}}
-  - {name: 🇸🇬 |新加坡04, server: in.sg.xfltd.top, port: 38404, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90}
-  - {name: 🇰🇷 |韩国03, server: in.kr.xfltd.top, port: 17403, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90}
-  - {name: 【V3】东京·1Gbps|2, server: jp2.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.hgwc.xyz}}}
-  - {name: "🇯🇵 [Lv3·1.0x]日本004|混合负载|1000Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12348, type: trojan, password: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, sni: ugaoijxawdfx.vzwzasc.cn, skip-cert-verify: false}
-  - {name: 🇸🇬 【V3】新加坡·1Gbps|10, server: sg10.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg10.hgwc.xyz}}}
-  - {name: 🇭🇰 频道|HongKong01🇭🇰-NềnLiênQuân, server: hk1.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 日本12, server: jp12.tejiewm.com, port: 4443, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp12.tejiewm.com}
+  - {name: 频道|巴基斯坦KHI021.3x, server: ll-iepl.244312.xyz, port: 54807, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇯🇵 日本01|高速, server: jp1.czs1000.com, port: 4104, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp1.czs1000.com}
+  - {name: 🇺🇲 V5-美国2, server: us02-vm5.entry.hsrtd.club, port: 17873, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-12.entry-0.chinasnow.net}}}
+  - {name: 🇯🇵 日本12 2, server: jp12.tejiewm.com, port: 4443, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp12.tejiewm.com}
+  - {name: 🇸🇬 频道|TLS-VIPSingapore02🇸🇬-NềnTikTok, server: sg2.safepn.net, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.safepn.net}}}
+  - {name: 🇯🇵 V5-日本10, server: jp10-vm5.entry.hsrtd.club, port: 463, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bgp-02-10.entry-0.chinasnow.net}}}
   - {name: 🇵🇭 频道|VIPHaNoi04🇻🇳-NềnLiênQuân, server: hn4.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
-  - {name: 🇭🇰 香港03|流媒体|新加坡, server: hk3.czs1000.com, port: 3885, type: vmess, uuid: 128f9c7b-5abd-40f2-b290-2615791f273d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk3.czs1000.com}
-  - {name: "🇯🇵 [Lv3·1.0x]日本06|大阪|混合负载|800Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 43382, type: vmess, uuid: 17fbb3dc-5e6f-32fe-ba24-4e68659484bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
-  - {name: 🇺🇲 US-02|2X 2, server: us-02.lynet.works, port: 45678, type: vmess, uuid: fe6424c5-b4be-42c0-8097-a5411fd0c617, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-02.lynet.works}}}
-  - {name: 🇯🇵 日本23, server: jp23.czs1000.com, port: 443, type: trojan, password: 8f699f8c-2ec8-4caa-b1df-c2e227665b7c, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港01|Netflix, server: 110.80.3.34, port: 56321, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾07, server: tw7.czs1000.com, port: 1001, type: vmess, uuid: 8f699f8c-2ec8-4caa-b1df-c2e227665b7c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw7.czs1000.com}
-  - {name: 🇸🇬 新加坡12|高速 2, server: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4104, type: vmess, uuid: 8f699f8c-2ec8-4caa-b1df-c2e227665b7c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
-  - {name: 🇯🇵 |日本01, server: in.jp.xfltd.top, port: 17301, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90}
-  - {name: 🇯🇵 V5-京日1, server: jp01-vm5.entry.hsrtd.club, port: 448, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-02-01.entry-0.chinasnow.net}}}
+  - {name: 🇯🇵 JP-02|1X, server: jp-02.lynet.works, port: 45679, type: vmess, uuid: e9c83c1e-d47b-4843-a720-7793f44ecd8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp-02.lynet.works}}}
+  - {name: 🇭🇰 频道|TLS-HongKong01🇭🇰-NềnTiktok, server: hk1.safepn.net, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.safepn.net}}}
+  - {name: 🇰🇷 韩国05|高速, server: kr5.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4101, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr5.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
+  - {name: 🇲🇾 频道|马来西亚-优化3, server: t.cccao.cyou, port: 26623, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}}
+  - {name: 频道|文莱BWN011.3x, server: cc-iepl.244312.xyz, port: 54110, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇨🇦 频道|CA加拿大003, server: ca.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false}
+  - {name: 🇭🇰 频道|TLS-HK01🇭🇰-NềnTikTok, server: 38.54.85.185, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 38.54.85.185}}}
+  - {name: 🇭🇰 小日本01|海港, server: 110.80.3.34, port: 42771, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 频道|台湾, server: twipv4.useipv6now.com, port: 6617, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: twipv4.useipv6now.com}}}
+  - {name: 🇸🇬 新加坡专线v2, server: 139.162.121.56, port: 10020, type: vmess, uuid: 3574b424-e1cf-4e22-a346-d798b18fb6db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: cctv13/hdd.m3u8, headers: {Host: 54.179.97.191:49}}}
+  - {name: 🇺🇲 US-03|0.25X, server: us-03.lynet.works, port: 45678, type: vmess, uuid: e9c83c1e-d47b-4843-a720-7793f44ecd8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-03.lynet.works}}}
+  - {name: 🇦🇺 频道|AU澳大利亚003, server: ap.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false}
+  - {name: 🇺🇲 美国公益节点|限速, server: usgy1.czs1000.com, port: 4108, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: usgy1.czs1000.com}
+  - {name: 🇳🇱 频道|菲律宾MNL011.3x, server: cc-iepl.244312.xyz, port: 54113, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇭🇰 频道|TLS-HongKong02🇭🇰-NềnTiktok, server: hk2.safepn.net, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk2.safepn.net}}}
+  - {name: 🇲🇴 频道|澳门MFM011.3x, server: cc-iepl.244312.xyz, port: 54103, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇧🇷 频道|巴西SAO021.3x, server: ll-iepl.244312.xyz, port: 54803, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân, server: hn3.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
+  - {name: 🇯🇵 日本11, server: jp11.tejiewm.com, port: 4443, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp11.tejiewm.com}
+  - {name: 🇭🇰 频道|香港HKT-优化3, server: t.cccao.cyou, port: 16620, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}}
+  - {name: 🇯🇵 频道|JP日本003, server: jp.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false}
+  - {name: 🇸🇬 频道|VIPSingapore02🇸🇬-NềnTikTok, server: sg2.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.tiktok.com}}}
+  - {name: 🇨🇳 频道|台湾TAI011.3x, server: cc-iepl.244312.xyz, port: 54100, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 频道|柬埔寨KH-T, server: kh.mjt001.com, port: 443, type: trojan, password: 5a035db3-34ea-48ca-9aa2-72c8229e1532, sni: kh.mjt001.com, skip-cert-verify: false}
+  - {name: 🇨🇦 频道|加拿大TOR011.3x, server: cc-iepl.244312.xyz, port: 54804, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 频道|乌克兰-优化2, server: m.lwvzmdu.cn, port: 16637, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}}
+  - {name: 🇺🇲 US-03|0.25X 2, server: us-03.lynet.works, port: 45678, type: vmess, uuid: 285b24f5-1180-4884-8c65-d834f0521428, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-03.lynet.works}}}
+  - {name: 🇨🇳 频道|台湾|倍率x1, server: dnssdall.agentlink.cc, port: 21023, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: link.koiuqmdc.com, skip-cert-verify: false}
+  - {name: 🇯🇵 V5-日本8, server: jp08-vm5.entry.hsrtd.club, port: 461, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-02-08.entry-0.chinasnow.net}}}
+  - {name: 🇮🇳 【V3】印度·1Gbps|2, server: in2.622888.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: in2.622888.xyz}}}
+  - {name: 🇸🇬 【V3】新加坡·1Gbps|4, server: sg4.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg4.hgwc.xyz}}}
+  - {name: 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân, server: 128.199.86.221, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
+  - {name: 🇺🇲 频道|美国MIA011.3x, server: cc-iepl.244312.xyz, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇯🇵 日本19, server: jp19.czs1000.com, port: 6633, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp19.czs1000.com}
+  - {name: 🇩🇪 频道|德国FRA021.3x, server: ll-iepl.244312.xyz, port: 54120, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇦🇷 频道|阿根廷BUA021.3x, server: ll-iepl.244312.xyz, port: 54810, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇯🇵 日本03, server: jp3.czs1000.com, port: 8886, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp3.czs1000.com}
+  - {name: 🇸🇪 频道|美国SEA011.3x, server: cc-iepl.244312.xyz, port: 54801, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇰🇷 【V3】首尔·1Gbps|2, server: kr2.622888.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: kr2.622888.xyz}}}
+  - {name: 🇺🇲 美国04, server: us4.czs1000.com, port: 4108, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: us4.czs1000.com}
+  - {name: 频道|冰岛RKV021.3x, server: ll-iepl.244312.xyz, port: 54150, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇯🇵 漂亮国02|京日, server: hkdx.pangupy.com, port: 32592, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân, server: hn1.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}}
+  - {name: 🇨🇳 凌云网络www.ly520.me, server: 11.4.5.14, port: 19266, type: vmess, uuid: e9c83c1e-d47b-4843-a720-7793f44ecd8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾06, server: tw6.czs1000.com, port: 1001, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw6.czs1000.com}
+  - {name: 🇯🇵 日本07, server: jp7.tejiewm.com, port: 4103, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp7.tejiewm.com}
+  - {name: 🇺🇲 频道|亚美尼亚EVN011.3x, server: cc-iepl.244312.xyz, port: 54149, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce}
+  - {name: 🇰🇷 韩国04, server: kr4.czs1000.com, port: 6687, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr4.czs1000.com}
+  - {name: 🇸🇬 新加坡09|高速, server: sg9.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4104, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg9.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
+  - {name: 🇭🇰 频道|HK01🇭🇰-NềnTikTok, server: 38.54.85.185, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.tiktok.com}}}
+  - {name: 🇫🇷 频道|法国-优化, server: yes.iamagoodman.net, port: 16645, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}}
+  - {name: 🇭🇰 频道|香港|倍率x1, server: dnslineall.agentlink.cc, port: 21001, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: link.koiuqmdc.com, skip-cert-verify: false}
+  - {name: 🇯🇵 免费-日本2, server: jp02-vm0.entry.srthdw.art, port: 449, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.srthdw.art}}}
+  - {name: 🇸🇬 频道|VIPSGP01🇸🇬-NềnTikTok, server: 159.223.42.38, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.tiktok.com}}}
+  - {name: 🇭🇰 频道|香港|倍率x1 2, server: dnssdall.agentlink.cc, port: 21003, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: link.koiuqmdc.com, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -71,162 +86,207 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇬🇧 UK-01|2.5X
-      - 🇬🇧 频道|UK英国002
-      - 🇸🇬 新加坡09|高速
-      - IN-01|1.5X
-      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
-      - 🇯🇵 日本21
-      - 🇰🇷 [Lv3·1.0x]韩国03|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇯🇵 V5-日本9
-      - 【V3】东京·1Gbps|7
-      - 🇸🇬 建议使用前更新一次订阅
-      - 🇮🇳 印度01|狮城
-      - 🇩🇪 频道|DE德国001
-      - 🇨🇳 IP均衡优化节点均解锁奈飞
-      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
-      - 🇭🇰 |香港06
-      - 🇯🇵 日本17
-      - 🇨🇦 频道|CA加拿大002
-      - 🇹🇷 V5-土耳其无可用性保障
-      - 🇭🇰 香港10
-      - 🇨🇳 台湾03
-      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
-      - 🇬🇧 UK-01|2.5X 2
-      - 🇭🇰 V5-香港1
-      - 🇯🇵 [Lv3·1.0x]日本05|大阪|混合负载|800Mbps共享
-      - 🇯🇵 JP-03|1X
-      - 🇺🇲 US-02|2X
-      - 🇺🇲 美国02|高速|流媒体解锁
-      - 🇯🇵 日本18
-      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
-      - 🇸🇬 新加坡12|高速
-      - 🇰🇷 [Lv3·1.0x]韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 |新加坡04
-      - 🇰🇷 |韩国03
-      - 【V3】东京·1Gbps|2
-      - 🇯🇵 [Lv3·1.0x]日本004|混合负载|1000Mbps共享
-      - 🇸🇬 【V3】新加坡·1Gbps|10
-      - 🇭🇰 频道|HongKong01🇭🇰-NềnLiênQuân
+      - 🇯🇵 日本12
+      - 频道|巴基斯坦KHI021.3x
+      - 🇯🇵 日本01|高速
+      - 🇺🇲 V5-美国2
+      - 🇯🇵 日本12 2
+      - 🇸🇬 频道|TLS-VIPSingapore02🇸🇬-NềnTikTok
+      - 🇯🇵 V5-日本10
       - 🇵🇭 频道|VIPHaNoi04🇻🇳-NềnLiênQuân
-      - 🇭🇰 香港03|流媒体|新加坡
-      - 🇯🇵 [Lv3·1.0x]日本06|大阪|混合负载|800Mbps共享
-      - 🇺🇲 US-02|2X 2
-      - 🇯🇵 日本23
-      - 🇭🇰 香港01|Netflix
-      - 🇨🇳 台湾07
-      - 🇸🇬 新加坡12|高速 2
-      - 🇯🇵 |日本01
-      - 🇯🇵 V5-京日1
+      - 🇯🇵 JP-02|1X
+      - 🇭🇰 频道|TLS-HongKong01🇭🇰-NềnTiktok
+      - 🇰🇷 韩国05|高速
+      - 🇲🇾 频道|马来西亚-优化3
+      - 频道|文莱BWN011.3x
+      - 🇨🇦 频道|CA加拿大003
+      - 🇭🇰 频道|TLS-HK01🇭🇰-NềnTikTok
+      - 🇭🇰 小日本01|海港
+      - 🇨🇳 频道|台湾
+      - 🇸🇬 新加坡专线v2
+      - 🇺🇲 US-03|0.25X
+      - 🇦🇺 频道|AU澳大利亚003
+      - 🇺🇲 美国公益节点|限速
+      - 🇳🇱 频道|菲律宾MNL011.3x
+      - 🇭🇰 频道|TLS-HongKong02🇭🇰-NềnTiktok
+      - 🇲🇴 频道|澳门MFM011.3x
+      - 🇧🇷 频道|巴西SAO021.3x
+      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
+      - 🇯🇵 日本11
+      - 🇭🇰 频道|香港HKT-优化3
+      - 🇯🇵 频道|JP日本003
+      - 🇸🇬 频道|VIPSingapore02🇸🇬-NềnTikTok
+      - 🇨🇳 频道|台湾TAI011.3x
+      - 频道|柬埔寨KH-T
+      - 🇨🇦 频道|加拿大TOR011.3x
+      - 频道|乌克兰-优化2
+      - 🇺🇲 US-03|0.25X 2
+      - 🇨🇳 频道|台湾|倍率x1
+      - 🇯🇵 V5-日本8
+      - 🇮🇳 【V3】印度·1Gbps|2
+      - 🇸🇬 【V3】新加坡·1Gbps|4
+      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
+      - 🇺🇲 频道|美国MIA011.3x
+      - 🇯🇵 日本19
+      - 🇩🇪 频道|德国FRA021.3x
+      - 🇦🇷 频道|阿根廷BUA021.3x
+      - 🇯🇵 日本03
+      - 🇸🇪 频道|美国SEA011.3x
+      - 🇰🇷 【V3】首尔·1Gbps|2
+      - 🇺🇲 美国04
+      - 频道|冰岛RKV021.3x
+      - 🇯🇵 漂亮国02|京日
+      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
+      - 🇨🇳 凌云网络www.ly520.me
+      - 🇨🇳 台湾06
+      - 🇯🇵 日本07
+      - 🇺🇲 频道|亚美尼亚EVN011.3x
+      - 🇰🇷 韩国04
+      - 🇸🇬 新加坡09|高速
+      - 🇭🇰 频道|HK01🇭🇰-NềnTikTok
+      - 🇫🇷 频道|法国-优化
+      - 🇭🇰 频道|香港|倍率x1
+      - 🇯🇵 免费-日本2
+      - 🇸🇬 频道|VIPSGP01🇸🇬-NềnTikTok
+      - 🇭🇰 频道|香港|倍率x1 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 UK-01|2.5X
-      - 🇬🇧 频道|UK英国002
-      - 🇸🇬 新加坡09|高速
-      - IN-01|1.5X
-      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
-      - 🇯🇵 日本21
-      - 🇰🇷 [Lv3·1.0x]韩国03|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇯🇵 V5-日本9
-      - 【V3】东京·1Gbps|7
-      - 🇸🇬 建议使用前更新一次订阅
-      - 🇮🇳 印度01|狮城
-      - 🇩🇪 频道|DE德国001
-      - 🇨🇳 IP均衡优化节点均解锁奈飞
-      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
-      - 🇭🇰 |香港06
-      - 🇯🇵 日本17
-      - 🇨🇦 频道|CA加拿大002
-      - 🇹🇷 V5-土耳其无可用性保障
-      - 🇭🇰 香港10
-      - 🇨🇳 台湾03
-      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
-      - 🇬🇧 UK-01|2.5X 2
-      - 🇭🇰 V5-香港1
-      - 🇯🇵 [Lv3·1.0x]日本05|大阪|混合负载|800Mbps共享
-      - 🇯🇵 JP-03|1X
-      - 🇺🇲 US-02|2X
-      - 🇺🇲 美国02|高速|流媒体解锁
-      - 🇯🇵 日本18
-      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
-      - 🇸🇬 新加坡12|高速
-      - 🇰🇷 [Lv3·1.0x]韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 |新加坡04
-      - 🇰🇷 |韩国03
-      - 【V3】东京·1Gbps|2
-      - 🇯🇵 [Lv3·1.0x]日本004|混合负载|1000Mbps共享
-      - 🇸🇬 【V3】新加坡·1Gbps|10
-      - 🇭🇰 频道|HongKong01🇭🇰-NềnLiênQuân
+      - 🇯🇵 日本12
+      - 频道|巴基斯坦KHI021.3x
+      - 🇯🇵 日本01|高速
+      - 🇺🇲 V5-美国2
+      - 🇯🇵 日本12 2
+      - 🇸🇬 频道|TLS-VIPSingapore02🇸🇬-NềnTikTok
+      - 🇯🇵 V5-日本10
       - 🇵🇭 频道|VIPHaNoi04🇻🇳-NềnLiênQuân
-      - 🇭🇰 香港03|流媒体|新加坡
-      - 🇯🇵 [Lv3·1.0x]日本06|大阪|混合负载|800Mbps共享
-      - 🇺🇲 US-02|2X 2
-      - 🇯🇵 日本23
-      - 🇭🇰 香港01|Netflix
-      - 🇨🇳 台湾07
-      - 🇸🇬 新加坡12|高速 2
-      - 🇯🇵 |日本01
-      - 🇯🇵 V5-京日1
+      - 🇯🇵 JP-02|1X
+      - 🇭🇰 频道|TLS-HongKong01🇭🇰-NềnTiktok
+      - 🇰🇷 韩国05|高速
+      - 🇲🇾 频道|马来西亚-优化3
+      - 频道|文莱BWN011.3x
+      - 🇨🇦 频道|CA加拿大003
+      - 🇭🇰 频道|TLS-HK01🇭🇰-NềnTikTok
+      - 🇭🇰 小日本01|海港
+      - 🇨🇳 频道|台湾
+      - 🇸🇬 新加坡专线v2
+      - 🇺🇲 US-03|0.25X
+      - 🇦🇺 频道|AU澳大利亚003
+      - 🇺🇲 美国公益节点|限速
+      - 🇳🇱 频道|菲律宾MNL011.3x
+      - 🇭🇰 频道|TLS-HongKong02🇭🇰-NềnTiktok
+      - 🇲🇴 频道|澳门MFM011.3x
+      - 🇧🇷 频道|巴西SAO021.3x
+      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
+      - 🇯🇵 日本11
+      - 🇭🇰 频道|香港HKT-优化3
+      - 🇯🇵 频道|JP日本003
+      - 🇸🇬 频道|VIPSingapore02🇸🇬-NềnTikTok
+      - 🇨🇳 频道|台湾TAI011.3x
+      - 频道|柬埔寨KH-T
+      - 🇨🇦 频道|加拿大TOR011.3x
+      - 频道|乌克兰-优化2
+      - 🇺🇲 US-03|0.25X 2
+      - 🇨🇳 频道|台湾|倍率x1
+      - 🇯🇵 V5-日本8
+      - 🇮🇳 【V3】印度·1Gbps|2
+      - 🇸🇬 【V3】新加坡·1Gbps|4
+      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
+      - 🇺🇲 频道|美国MIA011.3x
+      - 🇯🇵 日本19
+      - 🇩🇪 频道|德国FRA021.3x
+      - 🇦🇷 频道|阿根廷BUA021.3x
+      - 🇯🇵 日本03
+      - 🇸🇪 频道|美国SEA011.3x
+      - 🇰🇷 【V3】首尔·1Gbps|2
+      - 🇺🇲 美国04
+      - 频道|冰岛RKV021.3x
+      - 🇯🇵 漂亮国02|京日
+      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
+      - 🇨🇳 凌云网络www.ly520.me
+      - 🇨🇳 台湾06
+      - 🇯🇵 日本07
+      - 🇺🇲 频道|亚美尼亚EVN011.3x
+      - 🇰🇷 韩国04
+      - 🇸🇬 新加坡09|高速
+      - 🇭🇰 频道|HK01🇭🇰-NềnTikTok
+      - 🇫🇷 频道|法国-优化
+      - 🇭🇰 频道|香港|倍率x1
+      - 🇯🇵 免费-日本2
+      - 🇸🇬 频道|VIPSGP01🇸🇬-NềnTikTok
+      - 🇭🇰 频道|香港|倍率x1 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 UK-01|2.5X
-      - 🇬🇧 频道|UK英国002
-      - 🇸🇬 新加坡09|高速
-      - IN-01|1.5X
-      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
-      - 🇯🇵 日本21
-      - 🇰🇷 [Lv3·1.0x]韩国03|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇯🇵 V5-日本9
-      - 【V3】东京·1Gbps|7
-      - 🇸🇬 建议使用前更新一次订阅
-      - 🇮🇳 印度01|狮城
-      - 🇩🇪 频道|DE德国001
-      - 🇨🇳 IP均衡优化节点均解锁奈飞
-      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
-      - 🇭🇰 |香港06
-      - 🇯🇵 日本17
-      - 🇨🇦 频道|CA加拿大002
-      - 🇹🇷 V5-土耳其无可用性保障
-      - 🇭🇰 香港10
-      - 🇨🇳 台湾03
-      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
-      - 🇬🇧 UK-01|2.5X 2
-      - 🇭🇰 V5-香港1
-      - 🇯🇵 [Lv3·1.0x]日本05|大阪|混合负载|800Mbps共享
-      - 🇯🇵 JP-03|1X
-      - 🇺🇲 US-02|2X
-      - 🇺🇲 美国02|高速|流媒体解锁
-      - 🇯🇵 日本18
-      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
-      - 🇸🇬 新加坡12|高速
-      - 🇰🇷 [Lv3·1.0x]韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 |新加坡04
-      - 🇰🇷 |韩国03
-      - 【V3】东京·1Gbps|2
-      - 🇯🇵 [Lv3·1.0x]日本004|混合负载|1000Mbps共享
-      - 🇸🇬 【V3】新加坡·1Gbps|10
-      - 🇭🇰 频道|HongKong01🇭🇰-NềnLiênQuân
+      - 🇯🇵 日本12
+      - 频道|巴基斯坦KHI021.3x
+      - 🇯🇵 日本01|高速
+      - 🇺🇲 V5-美国2
+      - 🇯🇵 日本12 2
+      - 🇸🇬 频道|TLS-VIPSingapore02🇸🇬-NềnTikTok
+      - 🇯🇵 V5-日本10
       - 🇵🇭 频道|VIPHaNoi04🇻🇳-NềnLiênQuân
-      - 🇭🇰 香港03|流媒体|新加坡
-      - 🇯🇵 [Lv3·1.0x]日本06|大阪|混合负载|800Mbps共享
-      - 🇺🇲 US-02|2X 2
-      - 🇯🇵 日本23
-      - 🇭🇰 香港01|Netflix
-      - 🇨🇳 台湾07
-      - 🇸🇬 新加坡12|高速 2
-      - 🇯🇵 |日本01
-      - 🇯🇵 V5-京日1
+      - 🇯🇵 JP-02|1X
+      - 🇭🇰 频道|TLS-HongKong01🇭🇰-NềnTiktok
+      - 🇰🇷 韩国05|高速
+      - 🇲🇾 频道|马来西亚-优化3
+      - 频道|文莱BWN011.3x
+      - 🇨🇦 频道|CA加拿大003
+      - 🇭🇰 频道|TLS-HK01🇭🇰-NềnTikTok
+      - 🇭🇰 小日本01|海港
+      - 🇨🇳 频道|台湾
+      - 🇸🇬 新加坡专线v2
+      - 🇺🇲 US-03|0.25X
+      - 🇦🇺 频道|AU澳大利亚003
+      - 🇺🇲 美国公益节点|限速
+      - 🇳🇱 频道|菲律宾MNL011.3x
+      - 🇭🇰 频道|TLS-HongKong02🇭🇰-NềnTiktok
+      - 🇲🇴 频道|澳门MFM011.3x
+      - 🇧🇷 频道|巴西SAO021.3x
+      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
+      - 🇯🇵 日本11
+      - 🇭🇰 频道|香港HKT-优化3
+      - 🇯🇵 频道|JP日本003
+      - 🇸🇬 频道|VIPSingapore02🇸🇬-NềnTikTok
+      - 🇨🇳 频道|台湾TAI011.3x
+      - 频道|柬埔寨KH-T
+      - 🇨🇦 频道|加拿大TOR011.3x
+      - 频道|乌克兰-优化2
+      - 🇺🇲 US-03|0.25X 2
+      - 🇨🇳 频道|台湾|倍率x1
+      - 🇯🇵 V5-日本8
+      - 🇮🇳 【V3】印度·1Gbps|2
+      - 🇸🇬 【V3】新加坡·1Gbps|4
+      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
+      - 🇺🇲 频道|美国MIA011.3x
+      - 🇯🇵 日本19
+      - 🇩🇪 频道|德国FRA021.3x
+      - 🇦🇷 频道|阿根廷BUA021.3x
+      - 🇯🇵 日本03
+      - 🇸🇪 频道|美国SEA011.3x
+      - 🇰🇷 【V3】首尔·1Gbps|2
+      - 🇺🇲 美国04
+      - 频道|冰岛RKV021.3x
+      - 🇯🇵 漂亮国02|京日
+      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
+      - 🇨🇳 凌云网络www.ly520.me
+      - 🇨🇳 台湾06
+      - 🇯🇵 日本07
+      - 🇺🇲 频道|亚美尼亚EVN011.3x
+      - 🇰🇷 韩国04
+      - 🇸🇬 新加坡09|高速
+      - 🇭🇰 频道|HK01🇭🇰-NềnTikTok
+      - 🇫🇷 频道|法国-优化
+      - 🇭🇰 频道|香港|倍率x1
+      - 🇯🇵 免费-日本2
+      - 🇸🇬 频道|VIPSGP01🇸🇬-NềnTikTok
+      - 🇭🇰 频道|香港|倍率x1 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -234,54 +294,69 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 UK-01|2.5X
-      - 🇬🇧 频道|UK英国002
-      - 🇸🇬 新加坡09|高速
-      - IN-01|1.5X
-      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
-      - 🇯🇵 日本21
-      - 🇰🇷 [Lv3·1.0x]韩国03|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇯🇵 V5-日本9
-      - 【V3】东京·1Gbps|7
-      - 🇸🇬 建议使用前更新一次订阅
-      - 🇮🇳 印度01|狮城
-      - 🇩🇪 频道|DE德国001
-      - 🇨🇳 IP均衡优化节点均解锁奈飞
-      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
-      - 🇭🇰 |香港06
-      - 🇯🇵 日本17
-      - 🇨🇦 频道|CA加拿大002
-      - 🇹🇷 V5-土耳其无可用性保障
-      - 🇭🇰 香港10
-      - 🇨🇳 台湾03
-      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
-      - 🇬🇧 UK-01|2.5X 2
-      - 🇭🇰 V5-香港1
-      - 🇯🇵 [Lv3·1.0x]日本05|大阪|混合负载|800Mbps共享
-      - 🇯🇵 JP-03|1X
-      - 🇺🇲 US-02|2X
-      - 🇺🇲 美国02|高速|流媒体解锁
-      - 🇯🇵 日本18
-      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
-      - 🇸🇬 新加坡12|高速
-      - 🇰🇷 [Lv3·1.0x]韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇸🇬 |新加坡04
-      - 🇰🇷 |韩国03
-      - 【V3】东京·1Gbps|2
-      - 🇯🇵 [Lv3·1.0x]日本004|混合负载|1000Mbps共享
-      - 🇸🇬 【V3】新加坡·1Gbps|10
-      - 🇭🇰 频道|HongKong01🇭🇰-NềnLiênQuân
+      - 🇯🇵 日本12
+      - 频道|巴基斯坦KHI021.3x
+      - 🇯🇵 日本01|高速
+      - 🇺🇲 V5-美国2
+      - 🇯🇵 日本12 2
+      - 🇸🇬 频道|TLS-VIPSingapore02🇸🇬-NềnTikTok
+      - 🇯🇵 V5-日本10
       - 🇵🇭 频道|VIPHaNoi04🇻🇳-NềnLiênQuân
-      - 🇭🇰 香港03|流媒体|新加坡
-      - 🇯🇵 [Lv3·1.0x]日本06|大阪|混合负载|800Mbps共享
-      - 🇺🇲 US-02|2X 2
-      - 🇯🇵 日本23
-      - 🇭🇰 香港01|Netflix
-      - 🇨🇳 台湾07
-      - 🇸🇬 新加坡12|高速 2
-      - 🇯🇵 |日本01
-      - 🇯🇵 V5-京日1
+      - 🇯🇵 JP-02|1X
+      - 🇭🇰 频道|TLS-HongKong01🇭🇰-NềnTiktok
+      - 🇰🇷 韩国05|高速
+      - 🇲🇾 频道|马来西亚-优化3
+      - 频道|文莱BWN011.3x
+      - 🇨🇦 频道|CA加拿大003
+      - 🇭🇰 频道|TLS-HK01🇭🇰-NềnTikTok
+      - 🇭🇰 小日本01|海港
+      - 🇨🇳 频道|台湾
+      - 🇸🇬 新加坡专线v2
+      - 🇺🇲 US-03|0.25X
+      - 🇦🇺 频道|AU澳大利亚003
+      - 🇺🇲 美国公益节点|限速
+      - 🇳🇱 频道|菲律宾MNL011.3x
+      - 🇭🇰 频道|TLS-HongKong02🇭🇰-NềnTiktok
+      - 🇲🇴 频道|澳门MFM011.3x
+      - 🇧🇷 频道|巴西SAO021.3x
+      - 🇵🇭 频道|VIPHaNoi03🇻🇳-NềnLiênQuân
+      - 🇯🇵 日本11
+      - 🇭🇰 频道|香港HKT-优化3
+      - 🇯🇵 频道|JP日本003
+      - 🇸🇬 频道|VIPSingapore02🇸🇬-NềnTikTok
+      - 🇨🇳 频道|台湾TAI011.3x
+      - 频道|柬埔寨KH-T
+      - 🇨🇦 频道|加拿大TOR011.3x
+      - 频道|乌克兰-优化2
+      - 🇺🇲 US-03|0.25X 2
+      - 🇨🇳 频道|台湾|倍率x1
+      - 🇯🇵 V5-日本8
+      - 🇮🇳 【V3】印度·1Gbps|2
+      - 🇸🇬 【V3】新加坡·1Gbps|4
+      - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
+      - 🇺🇲 频道|美国MIA011.3x
+      - 🇯🇵 日本19
+      - 🇩🇪 频道|德国FRA021.3x
+      - 🇦🇷 频道|阿根廷BUA021.3x
+      - 🇯🇵 日本03
+      - 🇸🇪 频道|美国SEA011.3x
+      - 🇰🇷 【V3】首尔·1Gbps|2
+      - 🇺🇲 美国04
+      - 频道|冰岛RKV021.3x
+      - 🇯🇵 漂亮国02|京日
+      - 频道|HaNoi01🇻🇳(GAMING)-NềnLiênQuân
+      - 🇨🇳 凌云网络www.ly520.me
+      - 🇨🇳 台湾06
+      - 🇯🇵 日本07
+      - 🇺🇲 频道|亚美尼亚EVN011.3x
+      - 🇰🇷 韩国04
+      - 🇸🇬 新加坡09|高速
+      - 🇭🇰 频道|HK01🇭🇰-NềnTikTok
+      - 🇫🇷 频道|法国-优化
+      - 🇭🇰 频道|香港|倍率x1
+      - 🇯🇵 免费-日本2
+      - 🇸🇬 频道|VIPSGP01🇸🇬-NềnTikTok
+      - 🇭🇰 频道|香港|倍率x1 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -423,9 +498,6 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇨🇳 IP均衡优化节点均解锁奈飞
-      - 🇺🇲 美国02|高速|流媒体解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -471,79 +543,82 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
-      - 🇭🇰 |香港06
-      - 🇭🇰 香港10
-      - 🇭🇰 V5-香港1
-      - 🇭🇰 香港03|流媒体|新加坡
-      - 🇭🇰 香港01|Netflix
+      - 🇭🇰 频道|TLS-HK01🇭🇰-NềnTikTok
+      - 🇭🇰 小日本01|海港
+      - 🇭🇰 频道|香港HKT-优化3
+      - 🇭🇰 频道|HK01🇭🇰-NềnTikTok
+      - 🇭🇰 频道|香港|倍率x1
+      - 🇭🇰 频道|香港|倍率x1 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本21
-      - 🇯🇵 V5-日本9
-      - 【V3】东京·1Gbps|7
-      - 🇯🇵 日本17
-      - 🇯🇵 [Lv3·1.0x]日本05|大阪|混合负载|800Mbps共享
-      - 🇯🇵 JP-03|1X
-      - 🇯🇵 日本18
-      - 【V3】东京·1Gbps|2
-      - 🇯🇵 [Lv3·1.0x]日本004|混合负载|1000Mbps共享
-      - 🇯🇵 [Lv3·1.0x]日本06|大阪|混合负载|800Mbps共享
-      - 🇯🇵 日本23
-      - 🇯🇵 |日本01
-      - 🇯🇵 V5-京日1
+      - 🇯🇵 日本12
+      - 🇯🇵 日本01|高速
+      - 🇯🇵 日本12 2
+      - 🇯🇵 V5-日本10
+      - 🇯🇵 JP-02|1X
+      - 🇭🇰 小日本01|海港
+      - 🇯🇵 日本11
+      - 🇯🇵 频道|JP日本003
+      - 🇯🇵 V5-日本8
+      - 🇯🇵 日本19
+      - 🇯🇵 日本03
+      - 🇯🇵 漂亮国02|京日
+      - 🇯🇵 日本07
+      - 🇯🇵 免费-日本2
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 US-02|2X
-      - 🇺🇲 美国02|高速|流媒体解锁
-      - 🇺🇲 US-02|2X 2
+      - 🇺🇲 V5-美国2
+      - 🇺🇲 US-03|0.25X
+      - 🇺🇲 美国公益节点|限速
+      - 🇺🇲 US-03|0.25X 2
+      - 🇺🇲 频道|美国MIA011.3x
+      - 🇸🇪 频道|美国SEA011.3x
+      - 🇺🇲 美国04
+      - 🇺🇲 频道|亚美尼亚EVN011.3x
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾03
-      - 🇨🇳 台湾07
+      - 🇨🇳 频道|台湾
+      - 🇨🇳 频道|台湾TAI011.3x
+      - 🇨🇳 频道|台湾|倍率x1
+      - 🇨🇳 台湾06
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡09|高速
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇮🇳 印度01|狮城
+      - 🇸🇬 频道|TLS-VIPSingapore02🇸🇬-NềnTikTok
+      - 🇸🇬 新加坡专线v2
+      - 🇸🇬 频道|VIPSingapore02🇸🇬-NềnTikTok
+      - 🇸🇬 【V3】新加坡·1Gbps|4
       - 🇸🇬 频道|VIPSGP02🇸🇬-NềnLiênQuân
-      - 🇸🇬 新加坡12|高速
-      - 🇸🇬 |新加坡04
-      - 🇸🇬 【V3】新加坡·1Gbps|10
-      - 🇭🇰 香港03|流媒体|新加坡
-      - 🇸🇬 新加坡12|高速 2
+      - 🇸🇬 新加坡09|高速
+      - 🇸🇬 频道|VIPSGP01🇸🇬-NềnTikTok
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 [Lv3·1.0x]韩国03|IP均衡优化|混合负载|800Mbps共享
-      - 🇰🇷 [Lv3·1.0x]韩国02|IP均衡优化|混合负载|800Mbps共享
-      - 🇰🇷 |韩国03
+      - 🇰🇷 韩国05|高速
+      - 🇰🇷 【V3】首尔·1Gbps|2
+      - 🇰🇷 韩国04
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇸🇬 [Lv3·1.0x]新加坡02|IP均衡优化|混合负载|奈飞解锁
-      - 🇨🇳 IP均衡优化节点均解锁奈飞
-      - 🇺🇲 美国02|高速|流媒体解锁
-      - 🇭🇰 香港01|Netflix
+      - DIRECT
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
