@@ -242,7 +242,8 @@ def get_sub_url():
         'https://config.51mdss.com',
         'https://ssrr.xyz',
         'https://www.funkyun.xyz',
-        'https://feisu.buzz'
+        'https://feisu.buzz',
+        'https://weoworks.ml/#/register'
     )
     times = 2
     for current_url in home_urls:
