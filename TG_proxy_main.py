@@ -249,10 +249,11 @@ def get_sub_url():
     for current_url in home_urls:
         i = 0
         while i < times:
-            form_data = {'email': '1770987654@gmail.com',
-                         'password': 'autosub_v2b',
-                         'invite_code': '',
-                         'email_code': ''
+            form_data = {
+                'email': '1770987654@gmail.com',
+                'password': 'autosub_v2b',
+                'invite_code': '',
+                'email_code': ''
             }
             print(form_data)
             try:
