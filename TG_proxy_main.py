@@ -239,7 +239,7 @@ def get_sub_url():
         'https://console.ly520.me',
         'https://user.litewindy.top',
         'https://www.yifei999.com',
-        'https://kuaimiao.cloud'
+        'https://www.71f.co'
     )
     times = 2
     for current_url in home_urls:
