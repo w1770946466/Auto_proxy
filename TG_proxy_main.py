@@ -237,7 +237,7 @@ def get_sub_url():
         'https://mitu.lol',
         'https://xingbayun.top',
         'https://console.ly520.me',
-        'https://www.jedi.ink',
+        'https://sakuras.cloud',
         'https://www.yifei999.com',
         'https://www.778778.ga',
         'https://www.9666199.xyz',
