@@ -242,7 +242,7 @@ def get_sub_url():
         'https://www.778778.ga',
         'https://www.9666199.xyz',
         'https://www.funkyun.xyz',
-        'https://破烂小屋.co'
+        'https://feisu.buzz'
     )
     times = 2
     for current_url in home_urls:
