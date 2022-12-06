@@ -252,11 +252,14 @@ def get_sub_url():
             form_data = {'email': ''.join(random.choice(string.ascii_letters+string.digits) for _ in range(12))+'@gmail.com',
                          'password': 'autosub_v2b',
                          'invite_code': '',
-                         'email_code': ''}
+                         'email_code': ''
+            }
+            print(form_data)
             try:
                 response = requests.post(current_url+V2B_REG_REL_URL, json=form_data,headers=headers)
+                print(response.text)
             except:
-                continue
+                print("获取失败")
             try:
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                 e_sub.append(subscription_url)
