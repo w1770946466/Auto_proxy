@@ -229,13 +229,17 @@ def get_yaml():
 def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
-    USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+    headers = {
+        'Referer': 'https://user.bafang.vip/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+        'Content-Type': 'application/x-www-form-urlencoded',
+    }
     home_urls = (
         'https://user.bafang.vip',
-        'https://cloud.hhygj.xyz',
-        'https://mitu.lol',
-        'https://xingbayun.top',
-        'https://console.ly520.me'
+        #'https://cloud.hhygj.xyz',
+        #'https://mitu.lol',
+        #'https://xingbayun.top',
+        #'https://console.ly520.me'
     )
     times = 2
     proxies = {
@@ -250,7 +254,7 @@ def get_sub_url():
                          'invite_code': '',
                          'email_code': ''}
             try:
-                response = requests.post(current_url+V2B_REG_REL_URL, json=form_data)
+                response = requests.post(current_url+V2B_REG_REL_URL, json=form_data,headers=headers)
             except:
                 continue
             try:
