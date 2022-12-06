@@ -229,9 +229,9 @@ def get_yaml():
 def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
-    headers = {
+    header = {
         'Referer': 'https://user.bafang.vip/',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
         'Content-Type': 'application/x-www-form-urlencoded',
     }
     home_urls = (
@@ -256,16 +256,21 @@ def get_sub_url():
             }
             print(form_data)
             try:
-                response = requests.post(current_url+V2B_REG_REL_URL, json=form_data,headers=headers)
+                response = requests.post(current_url+V2B_REG_REL_URL, json=form_data,headers=header)
                 print(response.text)
+                try:
+                    print(response.json()["data"]["token"])
+                    subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
+                    e_sub.append(subscription_url)
+                except:
+                    print("获取订阅失败")
             except:
-                print("获取失败")
-            try:
-                subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
-                e_sub.append(subscription_url)
-            except:
-                print(f'Invalid response: {response.text.encode("utf-8")}')
-                sleep(3)
+                print("获取token失败")
+            
+                
+                
+            
+                
             else:
                 i += 1
                 print(f'Number succeeded: {i}\t{subscription_url}')
