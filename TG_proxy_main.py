@@ -243,7 +243,7 @@ def get_sub_url():
         'https://ssrr.xyz',
         'https://www.funkyun.xyz',
         'https://feisu.buzz',
-        'https://weoworks.ml/#/register'
+        'https://weoworks.ml'
     )
     times = 2
     for current_url in home_urls:
