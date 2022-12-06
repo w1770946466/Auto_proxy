@@ -240,7 +240,8 @@ def get_sub_url():
         'https://www.jedi.ink',
         'https://www.yifei999.com',
         'https://www.778778.ga',
-        'https://www.9666199.xyz'
+        'https://www.9666199.xyz',
+        'https://www.funkyun.xyz'
     )
     times = 2
     for current_url in home_urls:
