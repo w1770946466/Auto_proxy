@@ -239,7 +239,7 @@ def get_sub_url():
         'https://console.ly520.me',
         'https://www.jedi.ink',
         'https://www.yifei999.com',
-        'https://galaxysurf.xyz'
+        'https://www.778778.ga'
     )
     times = 2
     for current_url in home_urls:
