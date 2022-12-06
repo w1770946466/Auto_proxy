@@ -231,16 +231,12 @@ def get_sub_url():
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
     home_urls = (
         'https://user.bafang.vip',
-        #'https://cloud.hhygj.xyz',
-        #'https://mitu.lol',
-        #'https://xingbayun.top',
-        #'https://console.ly520.me'
+        'https://cloud.hhygj.xyz',
+        'https://mitu.lol',
+        'https://xingbayun.top',
+        'https://console.ly520.me'
     )
     times = 2
-    proxies = {
-        'http': 'http://127.0.0.1:7890',
-        'https': 'http://127.0.0.1:7890'
-    }
     for current_url in home_urls:
         i = 0
         while i < times:
@@ -255,13 +251,13 @@ def get_sub_url():
                 'invite_code': '',
                 'email_code': ''
             }
-            print(form_data)
             try:
                 response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
                 try:
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                     e_sub.append(subscription_url)
-                    print(subscription_url)
+                    #print(subscription_url)
+                    print("添加订阅成功！！")
                 except:
                     print("获取订阅失败")
             except:
