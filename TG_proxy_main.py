@@ -27,6 +27,8 @@ e_sub = ['https://openit.uitsrt.top/long','https://raw.githubusercontent.com/fre
 urls =["https://t.me/s/masco899","https://t.me/s/wxdy666","https://t.me/s/nice16688","https://t.me/s/airproxies","https://t.me/s/jokerbphome","https://t.me/s/kxswa","https://t.me/s/BaiPiao166","https://t.me/s/beiyiwangdeguodu","https://t.me/s/baipiaoi","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/fffffx2","https://t.me/s/xuanyizero"]
 #线程池
 threads = []
+#机场链接
+plane_sub = []
 
 
 #获取群组聊天中的HTTP链接
@@ -257,7 +259,7 @@ def get_sub_url():
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                     e_sub.append(subscription_url)
                     #print(subscription_url)
-                    print("添加订阅成功！！")
+                    print("add:"+subscription_url)
                 except:
                     print("获取订阅失败")
             except:
@@ -271,7 +273,6 @@ def get_sub_url():
 if __name__ == '__main__':
     print("开始获取机场订阅链接......")
     get_sub_url()
-    '''
     print("开始获取订阅链接......")
     for url in tqdm(urls):
         #print(url, "开始获取......")
@@ -287,4 +288,3 @@ if __name__ == '__main__':
     res = write_document()
     clash_sub = get_yaml()
     print("写入完成任务结束！！")
-'''
