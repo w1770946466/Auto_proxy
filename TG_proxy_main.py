@@ -238,7 +238,8 @@ def get_sub_url():
         'https://xingbayun.top',
         'https://console.ly520.me',
         'https://user.litewindy.top',
-        'https://www.yifei999.com'
+        'https://www.yifei999.com',
+        'https://nicecloud.me'
     )
     times = 2
     for current_url in home_urls:
@@ -275,6 +276,7 @@ def get_sub_url():
 if __name__ == '__main__':
     print("开始获取机场订阅链接......")
     get_sub_url()
+    '''
     print("开始获取订阅链接......")
     for url in tqdm(urls):
         #print(url, "开始获取......")
@@ -290,3 +292,4 @@ if __name__ == '__main__':
     res = write_document()
     clash_sub = get_yaml()
     print("写入完成任务结束！！")
+'''
