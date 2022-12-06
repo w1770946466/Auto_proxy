@@ -8,6 +8,7 @@ import threading
 from tqdm import tqdm
 import random, string
 import datetime
+from time import sleep
 
 
 #文件路径
