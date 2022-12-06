@@ -249,7 +249,7 @@ def get_sub_url():
     for current_url in home_urls:
         i = 0
         while i < times:
-            form_data = {'email': ''.join(random.choice(string.ascii_letters+string.digits) for _ in range(12))+'@gmail.com',
+            form_data = {'email': '1770987654@gmail.com',
                          'password': 'autosub_v2b',
                          'invite_code': '',
                          'email_code': ''
@@ -266,14 +266,10 @@ def get_sub_url():
                     print("获取订阅失败")
             except:
                 print("获取token失败")
-            
+            i += 1
+            #print(f'Number succeeded: {i}\t{subscription_url}')
                 
                 
-            
-                
-            else:
-                i += 1
-                print(f'Number succeeded: {i}\t{subscription_url}')
         
     
 if __name__ == '__main__':
