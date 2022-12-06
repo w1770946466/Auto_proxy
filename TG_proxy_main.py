@@ -239,7 +239,7 @@ def get_sub_url():
         'https://console.ly520.me',
         'https://sakuras.cloud',
         'https://www.yifei999.com',
-        'https://v2b.nanke.eu.org',
+        'https://config.51mdss.com',
         'https://ssrr.xyz',
         'https://www.funkyun.xyz',
         'https://feisu.buzz'
