@@ -239,7 +239,8 @@ def get_sub_url():
         'https://console.ly520.me',
         'https://www.jedi.ink',
         'https://www.yifei999.com',
-        'https://www.778778.ga'
+        'https://www.778778.ga',
+        'https://www.9666199.xyz'
     )
     times = 2
     for current_url in home_urls:
