@@ -235,16 +235,11 @@ def get_sub_url():
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
         'https://mitu.lol',
-        'https://xingbayun.top',
         'https://console.ly520.me',
         'https://sakuras.cloud',
         'https://www.yifei999.com',
-        'https://config.51mdss.com',
         'https://ssrr.xyz',
-        'https://www.funkyun.xyz',
-        'https://feisu.buzz',
-        'https://weoworks.ml',
-        'https://gongyiyun.cf'
+        'https://www.funkyun.xyz'
     )
     times = 2
     for current_url in home_urls:
