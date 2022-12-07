@@ -203,7 +203,7 @@ def write_document():
             if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                 num = 2
                 for TrySub in try_sub:
-                    lines.insert(index+num, f'`- [clash订阅]({TrySub}) {TrySub}`\n')
+                    lines.insert(index+num, f'- [clash订阅]({TrySub})` {TrySub}`\n')
                     num += 1
                 
         with open("README.md", 'w', encoding='utf-8') as f:
