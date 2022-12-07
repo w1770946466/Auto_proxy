@@ -15,39 +15,39 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`节点总数: 963`
+`节点总数: 1028`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`
-`合并节点总数: 121`
+`合并节点总数: 129`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`合并节点总数: 116`
+`合并节点总数: 125`
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
@@ -55,6 +55,22 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`
 
+`- [clash订阅](https://user.bafang.vip/api/v1/client/subscribe?token=7eef268a8210d0e051fb084467d4f220) https://user.bafang.vip/api/v1/client/subscribe?token=7eef268a8210d0e051fb084467d4f220`
+`- [clash订阅](https://user.bafang.vip/api/v1/client/subscribe?token=e081016a7a1d7167db724a5cb6c8af5b) https://user.bafang.vip/api/v1/client/subscribe?token=e081016a7a1d7167db724a5cb6c8af5b`
+`- [clash订阅](https://cloud.hhygj.xyz/api/v1/client/subscribe?token=c2062d63fb5950dc687707f2236d7ea1) https://cloud.hhygj.xyz/api/v1/client/subscribe?token=c2062d63fb5950dc687707f2236d7ea1`
+`- [clash订阅](https://cloud.hhygj.xyz/api/v1/client/subscribe?token=bc45ac3ffd9b06dcdece11792daec1dc) https://cloud.hhygj.xyz/api/v1/client/subscribe?token=bc45ac3ffd9b06dcdece11792daec1dc`
+`- [clash订阅](https://mitu.lol/api/v1/client/subscribe?token=7114d7f6e2e9095cf17aac42ea36bc40) https://mitu.lol/api/v1/client/subscribe?token=7114d7f6e2e9095cf17aac42ea36bc40`
+`- [clash订阅](https://mitu.lol/api/v1/client/subscribe?token=28107af4de02850e8bb561745837994c) https://mitu.lol/api/v1/client/subscribe?token=28107af4de02850e8bb561745837994c`
+`- [clash订阅](https://console.ly520.me/api/v1/client/subscribe?token=732fbf84bc9b572bcdf25eb654987a3e) https://console.ly520.me/api/v1/client/subscribe?token=732fbf84bc9b572bcdf25eb654987a3e`
+`- [clash订阅](https://console.ly520.me/api/v1/client/subscribe?token=92a8f70c7cdf3a5a7be28c13d0c946a4) https://console.ly520.me/api/v1/client/subscribe?token=92a8f70c7cdf3a5a7be28c13d0c946a4`
+`- [clash订阅](https://sakuras.cloud/api/v1/client/subscribe?token=6c6d446bedba174e0b49c2957c7e6207) https://sakuras.cloud/api/v1/client/subscribe?token=6c6d446bedba174e0b49c2957c7e6207`
+`- [clash订阅](https://sakuras.cloud/api/v1/client/subscribe?token=04e356580033547d99218248a0afd096) https://sakuras.cloud/api/v1/client/subscribe?token=04e356580033547d99218248a0afd096`
+`- [clash订阅](https://www.yifei999.com/api/v1/client/subscribe?token=3031be5c0fa46a73def43cd269e9a97e) https://www.yifei999.com/api/v1/client/subscribe?token=3031be5c0fa46a73def43cd269e9a97e`
+`- [clash订阅](https://www.yifei999.com/api/v1/client/subscribe?token=1a9aaeb44736ef48002c5f576968d190) https://www.yifei999.com/api/v1/client/subscribe?token=1a9aaeb44736ef48002c5f576968d190`
+`- [clash订阅](https://ssrr.xyz/api/v1/client/subscribe?token=555045d92dae3a69d6353fa43554a990) https://ssrr.xyz/api/v1/client/subscribe?token=555045d92dae3a69d6353fa43554a990`
+`- [clash订阅](https://ssrr.xyz/api/v1/client/subscribe?token=5f6f07f1e7d9e4062db0a7212077e8dd) https://ssrr.xyz/api/v1/client/subscribe?token=5f6f07f1e7d9e4062db0a7212077e8dd`
+`- [clash订阅](https://www.funkyun.xyz/api/v1/client/subscribe?token=a1376d772702655edc926b1d4a4caa69) https://www.funkyun.xyz/api/v1/client/subscribe?token=a1376d772702655edc926b1d4a4caa69`
+`- [clash订阅](https://www.funkyun.xyz/api/v1/client/subscribe?token=f778b004ec9dfddbe8a228d527a1cea4) https://www.funkyun.xyz/api/v1/client/subscribe?token=f778b004ec9dfddbe8a228d527a1cea4`
 
 
 
