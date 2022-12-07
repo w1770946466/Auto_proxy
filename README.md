@@ -55,8 +55,9 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`
 
-- [试用订阅]
-(https://user.bafang.vip/api/v1/client/subscribe?token=bfaf5642c5699d4496aa5411a5a5549e)`https://user.bafang.vip/api/v1/client/subscribe?token=bfaf5642c5699d4496aa5411a5a5549e`
+>试用订阅
+`https://user.bafang.vip/api/v1/client/subscribe?token=bfaf5642c5699d4496aa5411a5a5549e`
+
 - [clash订阅](https://user.bafang.vip/api/v1/client/subscribe?token=087ec90647d7dd57773ca04bec677f44)`https://user.bafang.vip/api/v1/client/subscribe?token=087ec90647d7dd57773ca04bec677f44`
 
 - [试用订阅](https://user.bafang.vip/api/v1/client/subscribe?token=33c5b890151d56110a271b4c008281e4)`https://user.bafang.vip/api/v1/client/subscribe?token=33c5b890151d56110a271b4c008281e4`
