@@ -211,7 +211,7 @@ def write_document():
                     for TrySub in try_sub:
                         #lines.insert(index+n-1, f'\n>')
                         lines.insert(index-n, f'\n>试用订阅：\n`{TrySub}`')
-                        n += 4
+                        n += 2
             except:
                 print("写入READ出错")
         
