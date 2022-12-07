@@ -208,8 +208,8 @@ def write_document():
                 n = 1
                 for TrySub in try_sub:
                     #lines.insert(index+n-1, f'\n>\n')
-                    lines.insert(index+n, f'>试用订阅：\n`{TrySub}`')
-                    n += 3
+                    lines.insert(index+n, f'\n>试用订阅：\n`{TrySub}`')
+                    n += 4
             
         
         with open("README.md", 'w', encoding='utf-8') as f:
