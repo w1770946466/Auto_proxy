@@ -209,7 +209,7 @@ def write_document():
                     num += 2
                 n = 1
                 for TrySub in try_sub:
-                    lines.insert(index+n, f'\n- [clash订阅]({TrySub})`{TrySub}`\n')
+                    lines.insert(index+n, f'\n- [试用订阅]({TrySub})`{TrySub}`\n')
                     n += 2
                 
         with open("README.md", 'w', encoding='utf-8') as f:
