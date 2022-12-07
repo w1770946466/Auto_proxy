@@ -207,7 +207,7 @@ def write_document():
                 n = 1
                 for TrySub in try_sub:
                     lines.insert(index+n, f'>试用订阅：\n`{TrySub}`')
-                    n += 2
+                    n += 3
                 
         with open("README.md", 'w', encoding='utf-8') as f:
             data = ''.join(lines)
