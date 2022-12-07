@@ -208,7 +208,7 @@ def write_document():
                 n = 1
                 for TrySub in try_sub:
                     lines.insert(index+n-1, f'\n>\n')
-                    lines.insert(index+n, f'\n>试用订阅：\n`{TrySub}`')
+                    lines.insert(index+n, f'>试用订阅：\n`{TrySub}`')
                     n += 2
             
         
