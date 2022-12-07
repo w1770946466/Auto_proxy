@@ -209,8 +209,8 @@ def write_document():
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                     n = 4
                     for TrySub in try_sub:
-                        #lines.insert(index+n-1, f'\n>\n')
-                        lines.insert(index+n, f'>试用订阅：\n`{TrySub}`')
+                        #lines.insert(index+n-1, f'\n>')
+                        lines.insert(index+n, f'\n>试用订阅：\n`{TrySub}`')
                         n += 2
             except:
                 print("写入READ出错")
