@@ -173,44 +173,46 @@ def write_document():
             lines = f.readlines()
             f.close()
         for index in range(len(lines)):
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
-                lines.pop(index+1)
-                lines.insert(index+1, f'`节点总数: {length}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {step}`\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
-                lines.pop(index+1)
-                lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
-            if lines[index] == '>试用订阅：\n': # 目标行内容
-                lines.pop(index)
-                lines.pop(index+1)
-                lines.insert(index+1, f'\n\n')
-            if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
-                n = 4
-                for TrySub in try_sub:
-                    lines.insert(index+n-1, f'\n>\n')
-                    lines.insert(index+n, f'>试用订阅：\n`{TrySub}`')
-                    n += 2
-            
+            try:
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`节点总数: {length}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
+                if lines[index] == '>试用订阅：\n': # 目标行内容
+                    lines.pop(index)
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'\n\n')
+                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
+                    n = 4
+                    for TrySub in try_sub:
+                        lines.insert(index+n-1, f'\n>\n')
+                        lines.insert(index+n, f'>试用订阅：\n`{TrySub}`')
+                        n += 2
+            except:
+                print("写入READ出错")
         
         with open("README.md", 'w', encoding='utf-8') as f:
             data = ''.join(lines)
