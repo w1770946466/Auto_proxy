@@ -22,13 +22,13 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = []
+e_sub = ['https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub']
 #频道
 urls =["https://t.me/s/masco899","https://t.me/s/wxdy666","https://t.me/s/nice16688","https://t.me/s/airproxies","https://t.me/s/jokerbphome","https://t.me/s/kxswa","https://t.me/s/BaiPiao166","https://t.me/s/beiyiwangdeguodu","https://t.me/s/baipiaoi","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/fffffx2","https://t.me/s/xuanyizero"]
 #线程池
 threads = []
 #机场链接
-plane_sub = ['https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/kxswa/k/k/base64','https://www.prop.cf/?name=paimon&client=base64','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
+plane_sub = ['https://raw.githubusercontent.com/kxswa/k/k/base64','https://www.prop.cf/?name=paimon&client=base64','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
 
 
 #获取群组聊天中的HTTP链接
@@ -77,7 +77,7 @@ def get_content(url):
     #获取单个订阅链接进行判断
     i = 1
     try:
-        new_list_down = new_list[-30::]
+        new_list_down = new_list[-10::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     #print("共获得", len(new_list_down), "条链接")
