@@ -202,6 +202,7 @@ def write_document():
                 lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
             if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                 num = 2
+                lines.pop(index+1,106)
                 for TrySub in try_sub:
                     lines.insert(index+num, f'\n- [clash订阅]({TrySub})`{TrySub}`\n')
                     num += 2
