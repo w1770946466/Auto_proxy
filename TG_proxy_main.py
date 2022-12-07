@@ -29,7 +29,8 @@ urls =["https://t.me/s/masco899","https://t.me/s/wxdy666","https://t.me/s/nice16
 threads = []
 #机场链接
 plane_sub = ['https://raw.githubusercontent.com/kxswa/k/k/base64','https://www.prop.cf/?name=paimon&client=base64','https://gitlab.com/univstar1/v2ray/-/raw/main/data/v2ray/general.txt']
-
+#机场试用链接
+try_sub = []
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
@@ -199,6 +200,10 @@ def write_document():
             if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
                 lines.pop(index+1)
                 lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
+                num = 2
+                for TrySub in try_sub:
+                    lines.insert(index+num, f'`试用订阅: {TrySub}`\n')
+                    num += 2
                 
         with open("README.md", 'w', encoding='utf-8') as f:
             data = ''.join(lines)
@@ -261,6 +266,7 @@ def get_sub_url():
                 try:
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                     e_sub.append(subscription_url)
+                    try_sub.append(subscription_url)
                     #print(subscription_url)
                     print("add:"+subscription_url)
                 except:
