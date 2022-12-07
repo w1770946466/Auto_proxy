@@ -58,7 +58,6 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`
 
->
 
 >
 >试用订阅：
@@ -102,190 +101,32 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 >
 >试用订阅：
 `https://www.funkyun.xyz/api/v1/client/subscribe?token=0fdbe9554a83835259ea78c2bef91422`
-`https://user.bafang.vip/api/v1/client/subscribe?token=5d2c6044db803c09477fbceabebc0a7e`
 
 
 
-`https://user.bafang.vip/api/v1/client/subscribe?token=2a77a9f9c80fc5491e9016a2044b09fa`
 
 
 
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=a98434c015639ea33474ca3bf80fd88d`
 
 
 
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=71c0959301a1820a9df2eaa5d9586417`
 
 
 
-`https://mitu.lol/api/v1/client/subscribe?token=6205306cf17f9a349adbc489b0e61a4b`
 
 
 
-`https://mitu.lol/api/v1/client/subscribe?token=d1bb074761c9e8099976ed39f16cda3d`
 
 
 
-`https://console.ly520.me/api/v1/client/subscribe?token=92f7fef59663393d7372c07dd77b9327`
 
 
 
-`https://console.ly520.me/api/v1/client/subscribe?token=f381dbcebbdf48aab17bd8bd89fb8c97`
 
 
-`https://www.yifei999.com/api/v1/client/subscribe?token=572b37ed07e0789ce7e914c534e7f113`
 
 
-`https://www.yifei999.com/api/v1/client/subscribe?token=5d13fb6a41a5dd1aaa8b86ca33694b66`
 
-
-`https://ssrr.xyz/api/v1/client/subscribe?token=494df2d65b26ae74cf81b3c24826f8b4`
-
-
-
-`https://ssrr.xyz/api/v1/client/subscribe?token=24223c30aaefb5e47df1b844ac821b6a`
-
-
-
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=604da824b14f0b3078017d6126a3b193`
-
-
-
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=d96406c816334300193a34be99359631`
-
-
-
-`https://user.bafang.vip/api/v1/client/subscribe?token=5d2c6044db803c09477fbceabebc0a7e`
-
-
-
-`https://user.bafang.vip/api/v1/client/subscribe?token=2a77a9f9c80fc5491e9016a2044b09fa`
-
-
-
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=a98434c015639ea33474ca3bf80fd88d`
-
-
-
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=71c0959301a1820a9df2eaa5d9586417`
-
-
-
-`https://mitu.lol/api/v1/client/subscribe?token=6205306cf17f9a349adbc489b0e61a4b`
-
-
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=a98434c015639ea33474ca3bf80fd88d`
->
-
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=71c0959301a1820a9df2eaa5d9586417`
-
-
-
-`https://mitu.lol/api/v1/client/subscribe?token=6205306cf17f9a349adbc489b0e61a4b`
-
-
-
-`https://mitu.lol/api/v1/client/subscribe?token=d1bb074761c9e8099976ed39f16cda3d`
-
-
-
-`https://console.ly520.me/api/v1/client/subscribe?token=92f7fef59663393d7372c07dd77b9327`
-
-
-
-`https://console.ly520.me/api/v1/client/subscribe?token=f381dbcebbdf48aab17bd8bd89fb8c97`
-
-
-
-`https://www.yifei999.com/api/v1/client/subscribe?token=572b37ed07e0789ce7e914c534e7f113`
-
-
-
-`https://www.yifei999.com/api/v1/client/subscribe?token=5d13fb6a41a5dd1aaa8b86ca33694b66`
-
-
-
-`https://ssrr.xyz/api/v1/client/subscribe?token=494df2d65b26ae74cf81b3c24826f8b4`
-
-
-
-`https://ssrr.xyz/api/v1/client/subscribe?token=24223c30aaefb5e47df1b844ac821b6a`
-
-
-
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=604da824b14f0b3078017d6126a3b193`
-
-
-
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=d96406c816334300193a34be99359631`
-
-
-`https://user.bafang.vip/api/v1/client/subscribe?token=670e972f6244a37e0aa9a329e0b7e42e`
-
-
-
-
-`https://user.bafang.vip/api/v1/client/subscribe?token=c5d554b40ad8dfab0341d7c6a66e1ddf`
-
-
-
-
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=bbc40cf87b6dcb49bc1d5059219ff36a`
-
-
-
-
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=64d9037fb1421c53255d3a9ad43a4386`
-
-
-
-
-`https://mitu.lol/api/v1/client/subscribe?token=8f6096b2a1c4079feeef076171b145af`
-
-
-
-
-`https://mitu.lol/api/v1/client/subscribe?token=63e9d0b78e7cb03217e13533bf6580cb`
-
-
-
-
-`https://console.ly520.me/api/v1/client/subscribe?token=706e88a6c44d8158a866d7d68a4da43e`
-
-
-
-
-`https://console.ly520.me/api/v1/client/subscribe?token=055d8ea747c621fefc6320e823d8ccf2`
-
-
-
-
-`https://www.yifei999.com/api/v1/client/subscribe?token=ba0e87770d196e52286600d7536ac002`
-
-
-
-
-`https://www.yifei999.com/api/v1/client/subscribe?token=3fd508a9f8e519baff47007aa7004f05`
-
-
-
-
-`https://ssrr.xyz/api/v1/client/subscribe?token=3c1ef77100fb70710a6cab3926ef76f8`
-
-
-
-
-`https://ssrr.xyz/api/v1/client/subscribe?token=045a42b61d5e698307a9a5a2e087ae22`
-
-
-
-
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=9ff19fcc1fa0b7e4741d61a829a59d20`
-
-
-
-
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=cdebe185a9c7fa3a819f3f3917d7054a`
 
 
 
