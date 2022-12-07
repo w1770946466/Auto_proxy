@@ -35,39 +35,29 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`
-
->试用订阅：
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=41f9fba1e9e13096d1baec7782873bd5``合并节点总数: 121`
+`合并节点总数: 121`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`
-
->试用订阅：
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=ef1b465c02a8d017186383ead291b55b``合并节点总数: 121`
+`合并节点总数: 121`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`
-
->试用订阅：
-`https://ssrr.xyz/api/v1/client/subscribe?token=e481d8ff1b930612362536d899f91b59``合并节点总数: 121`
+`合并节点总数: 121`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-
->试用订阅：
-`https://ssrr.xyz/api/v1/client/subscribe?token=5945e0e81b3075868b133f5fd2be01d5``合并节点总数: 118`
+`合并节点总数: 118`
 
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
 
->试用订阅：
-`https://www.yifei999.com/api/v1/client/subscribe?token=497fbcdd4f1a289790352403a4db3b30`
+
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml`
 
 
->试用订阅：
-`https://www.yifei999.com/api/v1/client/subscribe?token=cbb8f35d16a983bcb2c4c498c00ee3c3`- [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml)
+- [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`
 
 
@@ -116,6 +106,45 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 >试用订阅：
 `https://user.bafang.vip/api/v1/client/subscribe?token=acbb52ebe8320918c706a39a2c4d61b1`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
