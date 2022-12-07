@@ -204,6 +204,7 @@ def write_document():
                 if lines[index] == '>试用订阅：\n': # 目标行内容
                     lines.pop(index)
                     lines.pop(index+1)
+                    lines.pop(index+2)
                     lines.insert(index+1, f'\n\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                     n = 4
