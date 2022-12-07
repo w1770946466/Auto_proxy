@@ -106,10 +106,21 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 >自用在线订阅转换网址：[sub-web-modify](https://sub.v1.mk/)
 ## ✨星标统计
->试用订阅：
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=b774a347800b559782c406ec982aed7d`[![Star History Chart](https://api.star-history.com/svg?repos=w1770946466/Auto_proxy&type=Date)](https://star-history.com/#w1770946466/Auto_proxy&Date)
-
->试用订阅：
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=785d12654313ecf6e60123a526241ba9`
+`[![Star History Chart](https://api.star-history.com/svg?repos=w1770946466/Auto_proxy&type=Date)](https://star-history.com/#w1770946466/Auto_proxy&Date)
