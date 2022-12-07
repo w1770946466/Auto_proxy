@@ -54,35 +54,8 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml`
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`
->试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=dd22f9d1949f140a688212f98989f15a`
->试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=bf480e3aa30cc819286d5b146807367c`
->试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=b0c18c1fff2e9843e5ff832008950d9a`
->试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=27fd6904c5b2ffd1d3a8244a53a68592`- [试用订阅](https://www.funkyun.xyz/api/v1/client/subscribe?token=20f94565c5b6e3210420601e3513d67a)`https://www.funkyun.xyz/api/v1/client/subscribe?token=20f94565c5b6e3210420601e3513d67a`
->试用订阅：
-`https://mitu.lol/api/v1/client/subscribe?token=27627c28e645bc942fadecf3709b136f`- [clash订阅](https://console.ly520.me/api/v1/client/subscribe?token=3de61900bedca0e992317cafbaf76b92)`https://console.ly520.me/api/v1/client/subscribe?token=3de61900bedca0e992317cafbaf76b92`
->试用订阅：
-`https://mitu.lol/api/v1/client/subscribe?token=9280ef1d0fc2e97d4a068f4c710cc5c8`
->试用订阅：
-`https://console.ly520.me/api/v1/client/subscribe?token=3cd6ae4258fbd821a39f759c1f388188`- [试用订阅](https://www.funkyun.xyz/api/v1/client/subscribe?token=e958e58cc8ba3f1797ae5212033d4036)`https://www.funkyun.xyz/api/v1/client/subscribe?token=e958e58cc8ba3f1797ae5212033d4036`
->试用订阅：
-`https://console.ly520.me/api/v1/client/subscribe?token=c7abb9f4412b58720fa7bd6fe8bcfeda`
->试用订阅：
-`https://www.yifei999.com/api/v1/client/subscribe?token=ee3af0831eefe3cb2e30d28f32c06c3c`- [clash订阅](https://console.ly520.me/api/v1/client/subscribe?token=29ad1f7f998d128858d928cf5581bbee)`https://console.ly520.me/api/v1/client/subscribe?token=29ad1f7f998d128858d928cf5581bbee`
->试用订阅：
-`https://www.yifei999.com/api/v1/client/subscribe?token=cae3ba3ed73aeb7da3a0e7161ba421f1`- [clash订阅](https://cloud.hhygj.xyz/api/v1/client/subscribe?token=14b56f778b7b898c8d35c68ae7c7a82a)`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=14b56f778b7b898c8d35c68ae7c7a82a`
->试用订阅：
-`https://ssrr.xyz/api/v1/client/subscribe?token=a9348bb74b5dfb6b833e47d2bc77bc8c`- [clash订阅](https://www.yifei999.com/api/v1/client/subscribe?token=fb42430475b0d7534e7b185be1e7e30a)`https://www.yifei999.com/api/v1/client/subscribe?token=fb42430475b0d7534e7b185be1e7e30a`
->试用订阅：
-`https://ssrr.xyz/api/v1/client/subscribe?token=faa2def124774973dfcc7b80fb73232f`
->试用订阅：
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=6c8bbfbbd41a8f644427aad46f5a379a`- [clash订阅](https://www.yifei999.com/api/v1/client/subscribe?token=0b1abf9ca059e2eae9e1d587bec97a7d)`https://www.yifei999.com/api/v1/client/subscribe?token=0b1abf9ca059e2eae9e1d587bec97a7d`
->试用订阅：
-`https://www.funkyun.xyz/api/v1/client/subscribe?token=8dda206fb84269e69959b8887f10481a`- [clash订阅](https://mitu.lol/api/v1/client/subscribe?token=b35f64c0646e40a1ce44e86b92ac8cad)`https://mitu.lol/api/v1/client/subscribe?token=b35f64c0646e40a1ce44e86b92ac8cad`
-- [clash订阅](https://ssrr.xyz/api/v1/client/subscribe?token=be12af77e7a37422e935450fb482f2ff)`https://ssrr.xyz/api/v1/client/subscribe?token=be12af77e7a37422e935450fb482f2ff`
+
+
 
 
 
