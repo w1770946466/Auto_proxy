@@ -260,9 +260,7 @@ def get_sub_url():
         'https://cloud.hhygj.xyz',
         'https://mitu.lol',
         'https://console.ly520.me',
-        'https://sakuras.cloud',
         'https://www.yifei999.com',
-        'https://ssrr.xyz',
         'https://www.funkyun.xyz'
     )
     times = 2
