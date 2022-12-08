@@ -13,7 +13,7 @@
 将以下订阅链接导入相应客户端即可。链接中大部分为 SS 协议节点，少量 Vmess, Trojan ,SSR 协议节点，建议选择协议支持完整的客户端。
 ps：增至8个订阅链接，每个大约150个左右（不确定）避免太多节点造成软件卡顿，最近节点质量都很高，欢迎使用，有好的意见也可以反馈一下谢谢！！
 
-# 永久高速订阅数量: `8`
+### 永久高速订阅数量: `8`
 
 <details>
   <summary>展开复制订阅链接</summary>
@@ -69,89 +69,15 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 </details>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 试用高速订阅数量: `12`
+
+<details>
+  <summary>展开复制订阅链接</summary>
+
+  
+  
+  
+  
 >试用订阅：
 `https://www.funkyun.xyz/api/v1/client/subscribe?token=92b3006765d1f9b2bb13cb2e90995f82`
 
@@ -224,6 +150,6 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
-
+</details>
 ## ✨星标统计
 `[![Star History Chart](https://api.star-history.com/svg?repos=w1770946466/Auto_proxy&type=Date)](https://star-history.com/#w1770946466/Auto_proxy&Date)
