@@ -203,9 +203,9 @@ def write_document():
                     lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
                 
                 if lines[index] == '>试用订阅：\n': # 目标行内容
-                    lines.pop(index-1)
-                    lines.pop(index)
-                    #lines.pop(index+1)
+                    #lines.pop(index-1)
+                    #lines.pop(index)
+                    lines.pop(index+1)
                     #lines.pop(index+2)
                     #lines.insert(index+1, f'\n')
                     print("删除试用成功")
