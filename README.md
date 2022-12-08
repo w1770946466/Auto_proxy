@@ -15,7 +15,7 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`节点总数: 540`
+`节点总数: 542`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
@@ -47,7 +47,7 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`合并节点总数: 64`
+`合并节点总数: 66`
 
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -97,38 +97,74 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
+>试用订阅：
+`https://www.funkyun.xyz/api/v1/client/subscribe?token=23b7193d85a4b284a82697e2cdc781f7`
 
 
 
 
+>试用订阅：
+`https://www.funkyun.xyz/api/v1/client/subscribe?token=2456af0fb754e0929e545974ed998717`
 
 
 
 
+>试用订阅：
+`https://www.yifei999.com/api/v1/client/subscribe?token=4a704e118d3a7eee4930626695be8a74`
 
 
 
 
+>试用订阅：
+`https://www.yifei999.com/api/v1/client/subscribe?token=40c026b661cb57ecb9e8f512e1cf28a5`
 
 
 
 
+>试用订阅：
+`https://console.ly520.me/api/v1/client/subscribe?token=67bb781bc82ed5a2ca07d7f1f26fd98c`
 
 
 
 
+>试用订阅：
+`https://console.ly520.me/api/v1/client/subscribe?token=78f2f115447a6408b6d80607428c733f`
 
 
 
 
+>试用订阅：
+`https://mitu.lol/api/v1/client/subscribe?token=1a9783f9ed500d89e346bcd25a7a0b51`
 
 
 
 
+>试用订阅：
+`https://mitu.lol/api/v1/client/subscribe?token=054d56d75a0347ef4345d1da07b76f47`
 
 
 
 
+>试用订阅：
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=6daaced8c10041ed22d13b811ad23433`
+
+
+
+
+>试用订阅：
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=4c559ed3061329a20ca81892987f789f`
+
+
+
+
+>试用订阅：
+`https://user.bafang.vip/api/v1/client/subscribe?token=c54cd9090dc97076715b92b306b035b7`
+
+
+
+
+>试用订阅：
+`https://user.bafang.vip/api/v1/client/subscribe?token=db1f4a1b930391217eb98d801dc45fb1`
 
 
 
