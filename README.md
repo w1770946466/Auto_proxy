@@ -21,39 +21,39 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
   
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`节点总数: 984`
+`节点总数: 882`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`
-`合并节点总数: 124`
+`合并节点总数: 111`
 
 - [多协议Base64编码](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`合并节点总数: 116`
+`合并节点总数: 105`
 
 - [clash订阅](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -69,7 +69,7 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 </details>
 
 ### 试用高速订阅数量: `14`
-更新时间：`2022-12-08 22:16:25`
+更新时间：`2022-12-08 22:36:05`
 
 
 
@@ -152,78 +152,78 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
->试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=7e50f222d5ed66a66e22670eeb40e312`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 >试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=4d8dccd4dacdd4f8ad2b0e7d12ce2d71`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=13ed2808fe0b668483417a824e23a154`
 
 
 
 
 >试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=ee669379c263d1670fbd26594b8f520a`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=d534448dc2f86a0ee2b542c6c9ae8061`
 
 
 
 
 >试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=ed6eb36dc274f7a5d45770ed064cd931`
+`https://user.bafang.vip/api/v1/client/subscribe?token=d34f71fe7a448d15d489416ca10435bf`
 
 
 
 
 >试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=bbaf6d76f8d4761408fd0f40b78d2413`
+`https://user.bafang.vip/api/v1/client/subscribe?token=355c203f623131308eb65f6975546224`
 
 
 
 
 >试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=b95064c9fdbb8cb15e9fc1b90030503c`
+`https://www.bfyun.top/api/v1/client/subscribe?token=8e3c709ff9279ac47ec2fcaa110d0690`
 
 
 
 
 >试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=7ea24faed1292a6af830bc54a0bd241d`
+`https://www.bfyun.top/api/v1/client/subscribe?token=8daebb088a4b72fd436173b2d4bffcf7`
 
 
 
 
 >试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=550b81bafaa2f749d0ddb788dc4d4c41`
+`https://www.dgycom.com/api/v1/client/subscribe?token=fe98524684c119d03a9b18abb5a0c905`
 
 
 
 
 >试用订阅：
-`https://www.bfyun.top/api/v1/client/subscribe?token=b236343f45c6e9c56a3ec42f8b794671`
-
-
-
-
->试用订阅：
-`https://www.bfyun.top/api/v1/client/subscribe?token=b9852b6ccbe17e4207b68806cdab6c33`
-
-
-
-
->试用订阅：
-`https://www.bfyun.top/api/v1/client/subscribe?token=70ea2fb9848d7e85ce89981e84c6168c`
-
-
-
-
->试用订阅：
-`https://www.bfyun.top/api/v1/client/subscribe?token=7c8f578a8daa18f2f3afef9868eec0ed`
+`https://www.dgycom.com/api/v1/client/subscribe?token=3a492e32e9aab4c0b131e95f42bb916e`
 
 
 
 </details>
 
 ## ✨星标统计
-`[![Star History Chart](https://api.star-history.com/svg?repos=w1770946466/Auto_proxy&type=Date)](https://star-history.com/#w1770946466/Auto_proxy&Date)
+更新时间：`2022-12-08 22:36:05`
