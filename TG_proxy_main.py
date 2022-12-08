@@ -208,12 +208,14 @@ def write_document():
                     lines.pop(index+2)
                     #lines.insert(index+1, f'\n')
                     print("删除试用成功")
+                """
                 if lines[index] == '## ✨星标统计\n': # 目标行内容
                     n = 5
                     for TrySub in try_sub:
                         #lines.insert(index+n-1, f'\n>')
                         lines.insert(index-n, f'\n>试用订阅：\n`{TrySub}`\n')
                         n += 3
+                """
             except:
                 print("写入READ出错")
         
