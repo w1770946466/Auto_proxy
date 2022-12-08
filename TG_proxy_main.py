@@ -214,7 +214,7 @@ def write_document():
                 """
             except:
                 print("写入READ出错")
-        #"""
+        #写入试用订阅
         for index in range(len(lines)):
             try:
                 if lines[index] == '## ✨星标统计\n': # 目标行内容
