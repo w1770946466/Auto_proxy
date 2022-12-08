@@ -266,11 +266,15 @@ def get_sub_url():
         #'https://console.ly520.me',
         #'https://www.yifei999.com',
         #'https://www.funkyun.xyz'
+        'https://awcloud.icu',
+        'https://www.dgycom.com',
+        'http://tg.cyy200.xyz'
+        'https://meal.leftright.buzz',
         'https://www.bfyun.top',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
     )
-    times = 4
+    times = 2
     for current_url in home_urls:
         i = 0
         while i < times:
