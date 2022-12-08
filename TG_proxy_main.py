@@ -208,7 +208,7 @@ def write_document():
                     lines.pop(index+1)
                     #lines.pop(index+2)
                     #lines.insert(index+1, f'\n')
-                    print("删除试用成功")
+                    print(index,"删除试用成功")
                 """
                 if lines[index] == '## ✨星标统计\n': # 目标行内容
                     n = 5
