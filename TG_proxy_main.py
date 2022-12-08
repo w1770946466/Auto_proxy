@@ -266,9 +266,9 @@ def get_sub_url():
         #'https://console.ly520.me',
         #'https://www.yifei999.com',
         #'https://www.funkyun.xyz'
-        'https://awcloud.icu',
+        'https://console.ly520.me',
         'https://www.dgycom.com',
-        'http://tg.cyy200.xyz'
+        #'http://tg.cyy200.xyz'
         'https://meal.leftright.buzz',
         'https://www.bfyun.top',
         'https://user.bafang.vip',
