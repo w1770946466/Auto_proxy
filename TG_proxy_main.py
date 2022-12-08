@@ -172,6 +172,8 @@ def write_document():
         with open("README.md", 'r', encoding='utf-8') as f:
             lines = f.readlines()
             f.close()
+        now_time = datetime.datetime.now()
+        TimeDate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         for index in range(len(lines)):
             try:
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
@@ -201,7 +203,9 @@ def write_document():
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
-                
+                if lines[index] == '### 试用高速订阅数量: `12`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`更新时间：{TimeDate}\n')
                 if lines[index] == '>试用订阅：\n': # 目标行内容
                     lines.pop(index)
                     lines.pop(index)
