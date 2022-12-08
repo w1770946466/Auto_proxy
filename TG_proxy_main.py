@@ -205,7 +205,7 @@ def write_document():
                     lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
                 if lines[index] == '### 试用高速订阅数量: `12`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`更新时间：{TimeDate}\n')
+                    lines.insert(index+1, f'更新时间：`{TimeDate}`\n')
                 if lines[index] == '>试用订阅：\n': # 目标行内容
                     lines.pop(index)
                     lines.pop(index)
