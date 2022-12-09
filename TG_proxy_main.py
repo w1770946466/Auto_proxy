@@ -298,7 +298,7 @@ def get_sub_url():
                 fan_header = {
                     'Host': 'meal.leftright.buzz',
                     'Origin': 'https://meal.leftright.buzz',
-                    'Authorization': auth_data,
+                    'Authorization': ''.join(auth_data),
                     'Content-Type': 'application/x-www-form-urlencoded',
                     'Connection': 'keep-alive',
                     'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
@@ -308,7 +308,7 @@ def get_sub_url():
                     'period': 'month_price',
                     'plan_id': '1',
                 }
-                fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data,headers=fan_header)
+                fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/user/order/save', headers=fan_header, data=fan_data)
                 print(fan_res_n)
                 fan_n = fan_res_n['data']
                 print(fan_n)
@@ -316,7 +316,7 @@ def get_sub_url():
                     'trade_no':fan_n,
                     'method': '1',
                 }
-                fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data_n,headers=fan_header)
+                fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/user/order/checkout', data=fan_data_n,headers=fan_header)
                 print(fan_res_pay['data'])
                 #if fan_res_pay['data'] == true:
                     #print("获取饭小溪订阅成功。。。")
