@@ -271,7 +271,7 @@ def get_sub_url():
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
     )
-    times = 2
+    times = 1
     for current_url in home_urls:
         i = 0
         while i < times:
