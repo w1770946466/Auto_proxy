@@ -287,7 +287,9 @@ def get_sub_url():
                 'email_code': ''
             }
             try:
+                #print(current_url)
                 if current_url == 'https://meal.leftright.buzz':
+                    print(current_url)
                     fan_res = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=form_data,headers=header)
                     
                     auth_data = fan_res.json()["data"]["auth_data"]
