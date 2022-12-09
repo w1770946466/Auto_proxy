@@ -305,6 +305,7 @@ def get_sub_url():
                     fan_data_n = {
                         'trade_no':fan_n,
                         'method': 1,
+                    }
                     fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data_n,headers=fan_header)
                     if fan_res_pay['data'] == true:
                         print("获取饭小溪订阅成功。。。")
