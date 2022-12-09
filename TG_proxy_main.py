@@ -266,12 +266,13 @@ def get_sub_url():
         #'https://www.funkyun.xyz'
         #'https://console.ly520.me',
         #'https://mitu.lol',
-        'https://meal.leftright.buzz',
+        
         #'https://www.bfyun.top',
-        #'https://user.bafang.vip',
-        #'https://cloud.hhygj.xyz',
+        'https://user.bafang.vip',
+        'https://cloud.hhygj.xyz',
+        'https://meal.leftright.buzz',
     )
-    times = 1
+    times = 2
     for current_url in home_urls:
         i = 0
         while i < times:
@@ -315,9 +316,7 @@ def get_sub_url():
                     'method': '1',
                 }
                 fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/user/order/checkout', data=fan_data_n,headers=fan_header)
-                print(fan_res_pay.json()["data"])
-                #if fan_res_pay['data'] == true:
-                    #print("获取饭小溪订阅成功。。。")
+                print("获取饭小溪订阅成功。。。")
                 
             #except Exception as result:
                 #print(result)    
