@@ -290,19 +290,20 @@ def get_sub_url():
                 #print(current_url)
             response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
             if current_url == 'https://meal.leftright.buzz':
-                print(current_url)
+                #print(current_url)
                 fan_res = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=form_data,headers=header)
-                print(fan_res.text)
+                #print(fan_res.text)
                 auth_data = fan_res.json()["data"]["auth_data"]
-                print(auth_data)
+                #print(auth_data)
                 fan_header = {
                     'Authorization': auth_data,
+                    'Content-Type': 'application/x-www-form-urlencoded',
                     'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
                     'Referer': 'https://meal.leftright.buzz/',
                 }
                 fan_data = {
-                    'period' : 'month_price',
-                    'plan_id' : '1',
+                    'period': 'month_price',
+                    'plan_id': '1',
                 }
                 fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data,headers=fan_header)
                 print(fan_res_n)
