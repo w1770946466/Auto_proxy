@@ -305,6 +305,7 @@ def get_sub_url():
                     'plan_id' : 1,
                 }
                 fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data,headers=fan_header)
+                print(fan_res_n)
                 fan_n = fan_res_n['data']
                 print(fan_n)
                 fan_data_n = {
