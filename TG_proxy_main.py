@@ -287,7 +287,6 @@ def get_sub_url():
                 'email_code': ''
             }
             try:
-                
                 if curent_url == 'https://meal.leftright.buzz':
                     fan_res = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=form_data,headers=header)
                     auth_data = fan_res.json()["data"]["auth_data"]
@@ -309,18 +308,17 @@ def get_sub_url():
                     fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data_n,headers=fan_header)
                     if fan_res_pay['data'] == true:
                         print("获取饭小溪订阅成功。。。")
-                    response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)    
-                        
-                try:
-                    subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
-                    e_sub.append(subscription_url)
-                    try_sub.append(subscription_url)
-                    #print(subscription_url)
-                    print("add:"+subscription_url)
-                except:
-                    print("获取订阅失败")
+                response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)    
+            except Exception as result:
+                print(result)    
+            try:
+                subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
+                e_sub.append(subscription_url)
+                try_sub.append(subscription_url)
+                #print(subscription_url)
+                print("add:"+subscription_url)
             except:
-                print("获取token失败,")
+                print("获取订阅失败")
             i += 1
             #print(f'Number succeeded: {i}\t{subscription_url}')
                 
