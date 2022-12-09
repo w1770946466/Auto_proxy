@@ -69,7 +69,7 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 </details>
 
 ### 试用高速订阅数量: `8`
-更新时间：`2022-12-09 16:07:50`
+更新时间：`2022-12-09 16:14:13`
 
 
 
@@ -282,44 +282,51 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
->试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=d04de6b83703297f6c28ab1dc75ffece`
 
 
 
-
->试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=e4f702437ca6c67e23387d746db58b94`
 
 
 
 
 >试用订阅：
-`https://www.bfyun.top/api/v1/client/subscribe?token=1ce434f2de45aa1e696d2a5778d2aba1`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=5e8a971c8356faee4d78f44d7f1f2999`
 
 
 
 
 >试用订阅：
-`https://meal.leftright.buzz/api/v1/client/subscribe?token=e4753da5fe5501fcbabab5ff518c82b9`
+`https://user.bafang.vip/api/v1/client/subscribe?token=726caf0627489ccfb01b3aed8c6f5a84`
 
 
 
 
 >试用订阅：
-`https://mitu.lol/api/v1/client/subscribe?token=e4753da5fe5501fcbabab5ff518c82b9`
+`https://www.bfyun.top/api/v1/client/subscribe?token=1577255d19ad1ed0293bc2e30badef39`
 
 
 
 
 >试用订阅：
-`https://www.funkyun.xyzhttps://console.ly520.me/api/v1/client/subscribe?token=c722a239fd94f31309176e21241777eb`
+`https://meal.leftright.buzz/api/v1/client/subscribe?token=c30470a864fadffca36fef3424cc0745`
 
 
 
 
 >试用订阅：
-`https://www.yifei999.com/api/v1/client/subscribe?token=c722a239fd94f31309176e21241777eb`
+`https://mitu.lol/api/v1/client/subscribe?token=c30470a864fadffca36fef3424cc0745`
+
+
+
+
+>试用订阅：
+`https://www.funkyun.xyzhttps://console.ly520.me/api/v1/client/subscribe?token=cc8cadde4f1f8d8645e1851db64be074`
+
+
+
+
+>试用订阅：
+`https://www.yifei999.com/api/v1/client/subscribe?token=cc8cadde4f1f8d8645e1851db64be074`
 
 
 
