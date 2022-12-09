@@ -289,7 +289,9 @@ def get_sub_url():
             try:
                 if current_url == 'https://meal.leftright.buzz':
                     fan_res = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=form_data,headers=header)
+                    
                     auth_data = fan_res.json()["data"]["auth_data"]
+                    print(auth_data)
                     fan_header = {
                         'Authorization': auth_data,
                         'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
@@ -301,13 +303,15 @@ def get_sub_url():
                     }
                     fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data,headers=fan_header)
                     fan_n = fan_res_n['data']
+                    print(fan_n)
                     fan_data_n = {
                         'trade_no':fan_n,
                         'method': 1,
                     }
                     fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data_n,headers=fan_header)
-                    if fan_res_pay['data'] == true:
-                        print("获取饭小溪订阅成功。。。")
+                    print(fan_res_pay['data'])
+                    #if fan_res_pay['data'] == true:
+                        #print("获取饭小溪订阅成功。。。")
                 response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)    
             except Exception as result:
                 print(result)    
