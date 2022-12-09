@@ -296,7 +296,7 @@ def get_sub_url():
                 auth_data = fan_res.json()["data"]["auth_data"]
                 print(auth_data)
                 fan_header = {
-                    'Authorization': auth_data,
+                    'Authorization': ''.join(auth_data),
                     'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
                     'Referer': 'https://meal.leftright.buzz/',
                 }
