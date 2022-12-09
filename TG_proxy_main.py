@@ -290,21 +290,21 @@ def get_sub_url():
                 
                 if curent_url == 'https://meal.leftright.buzz':
                     fan_res = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=form_data,headers=header)
-                    #auth_data = fan_res.json()["data"]["auth_data"]
+                    auth_data = fan_res.json()["data"]["auth_data"]
                     fan_header = {
-                        'Authorization': fan_res.json()["data"]["auth_data"]
-                        'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1'
-                        'Referer': 'https://meal.leftright.buzz/'
+                        'Authorization': auth_data,
+                        'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
+                        'Referer': 'https://meal.leftright.buzz/',
                     }
                     fan_data = {
                         'period' : 'month_price',
-                        'plan_id' : 1
+                        'plan_id' : 1,
                     }
                     fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data,headers=fan_header)
-                    #fan_n = fan_res_n['data']
+                    fan_n = fan_res_n['data']
                     fan_data_n = {
-                        'trade_no':fan_res_n['data'],
-                        'method': 1
+                        'trade_no':fan_n,
+                        'method': 1,
                     fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data_n,headers=fan_header)
                     if fan_res_pay['data'] == true:
                         print("获取饭小溪订阅成功。。。")
