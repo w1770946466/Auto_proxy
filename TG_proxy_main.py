@@ -296,13 +296,13 @@ def get_sub_url():
                 auth_data = fan_res.json()["data"]["auth_data"]
                 print(auth_data)
                 fan_header = {
-                    'Authorization': ''.join(auth_data),
+                    'Authorization': auth_data,
                     'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Mobile/15E148 Safari/604.1',
                     'Referer': 'https://meal.leftright.buzz/',
                 }
                 fan_data = {
                     'period' : 'month_price',
-                    'plan_id' : 1,
+                    'plan_id' : '1',
                 }
                 fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data,headers=fan_header)
                 print(fan_res_n)
@@ -310,7 +310,7 @@ def get_sub_url():
                 print(fan_n)
                 fan_data_n = {
                     'trade_no':fan_n,
-                    'method': 1,
+                    'method': '1',
                 }
                 fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=fan_data_n,headers=fan_header)
                 print(fan_res_pay['data'])
