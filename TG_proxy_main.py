@@ -306,7 +306,7 @@ def get_sub_url():
                     'Referer': 'https://meal.leftright.buzz/',
                 }
                 fan_data = {
-                    'period': 'month_price',
+                    'period': 'quarter_price',
                     'plan_id': '1',
                 }
                 fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/user/order/save', headers=fan_header, data=fan_data)
