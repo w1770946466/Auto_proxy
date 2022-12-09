@@ -309,15 +309,13 @@ def get_sub_url():
                     'plan_id': '1',
                 }
                 fan_res_n = requests.post('https://meal.leftright.buzz/api/v1/user/order/save', headers=fan_header, data=fan_data)
-                print(fan_res_n)
-                fan_n = fan_res_n['data']
-                print(fan_n)
+                print(fan_res_n.json()["data"])
                 fan_data_n = {
-                    'trade_no':fan_n,
+                    'trade_no':fan_res_n.json()["data"],
                     'method': '1',
                 }
                 fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/user/order/checkout', data=fan_data_n,headers=fan_header)
-                print(fan_res_pay['data'])
+                print(fan_res_pay.json()["data"])
                 #if fan_res_pay['data'] == true:
                     #print("获取饭小溪订阅成功。。。")
                 
