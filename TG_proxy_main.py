@@ -262,17 +262,14 @@ def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
     home_urls = (
-        #'https://console.ly520.me',
-        #'https://www.yifei999.com',
-        #'https://www.funkyun.xyz'
+        'https://www.yifei999.com',
+        'https://www.funkyun.xyz'
         'https://console.ly520.me',
-        #'http://tg.cyy200.xyz'
         'https://mitu.lol',
         'https://meal.leftright.buzz',
         'https://www.bfyun.top',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
-        #'https://www.dgycom.com',
     )
     times = 2
     for current_url in home_urls:
