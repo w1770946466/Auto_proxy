@@ -323,7 +323,7 @@ def get_sub_url():
                 
             except Exception as result:
                 print(result)
-                break
+                #break
             try:
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                 e_sub.append(subscription_url)
