@@ -204,8 +204,10 @@ def write_document():
                     lines.pop(index+1)
                     lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
-                    lines.pop(index+5)
+                    lines.pop(index+4)
+                    lines.pop(index+4)
                     lines.insert(index+5, f'更新时间：`{TimeDate}`\n')
+                    lines.insert(index+4, f'### 试用高速订阅数量: `{len(try_sub)}`\n')
                 if lines[index] == '>试用订阅：\n': # 目标行内容
                     lines.pop(index)
                     lines.pop(index)
