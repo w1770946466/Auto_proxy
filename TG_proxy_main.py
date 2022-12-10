@@ -321,9 +321,9 @@ def get_sub_url():
                     fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/user/order/checkout', data=fan_data_n,headers=fan_header)
                     print("获取饭小溪订阅成功。。。",fan_res_pay.text)
                 
-            except Exception as result:
-                print(result)
-                #break
+                except Exception as result:
+                    print(result)
+                    break
             try:
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                 e_sub.append(subscription_url)
