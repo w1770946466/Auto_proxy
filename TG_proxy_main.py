@@ -266,7 +266,7 @@ def get_sub_url():
         #'https://www.funkyun.xyz'
         #'https://console.ly520.me',
         #'https://mitu.lol',
-        'https://xingbayun.top
+        #'https://xingbayun.top
         #'https://www.bfyun.top',
         #'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
