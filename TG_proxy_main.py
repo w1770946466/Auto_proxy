@@ -272,7 +272,7 @@ def get_sub_url():
         #'https://www.bfyun.top',
         #'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
-        #'https://meal.leftright.buzz',
+        'https://meal.leftright.buzz',
     )
     times = 4
     for current_url in home_urls:
