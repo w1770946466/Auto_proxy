@@ -318,7 +318,7 @@ def get_sub_url():
                     'method': '1',
                 }
                 fan_res_pay = requests.post('https://meal.leftright.buzz/api/v1/user/order/checkout', data=fan_data_n,headers=fan_header)
-                print("获取饭小溪订阅成功。。。")
+                print("获取饭小溪订阅成功。。。",fan_res_pay.text)
                 
             #except Exception as result:
                 #print(result)    
