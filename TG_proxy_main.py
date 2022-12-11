@@ -296,7 +296,8 @@ def get_sub_url():
                 try:
                     #print(current_url)
                     fan_res = requests.post('https://meal.leftright.buzz/api/v1/passport/auth/login', data=form_data,headers=header)
-                    #print(fan_res.text)
+                    print(fan_res.text)
+                    sleep(3)
                     auth_data = fan_res.json()["data"]["auth_data"]
                     print(auth_data)
                     fan_header = {
