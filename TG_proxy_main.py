@@ -329,7 +329,7 @@ def get_sub_url():
             '''
             try:
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
-                e_sub.append(subscription_url)
+                #e_sub.append(subscription_url)
                 try_sub.append(subscription_url)
                 #print(subscription_url)
                 print("add:"+subscription_url)
