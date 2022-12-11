@@ -68,8 +68,8 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
   
 </details>
 
-### 试用高速订阅数量: `8`
-更新时间：`2022-12-11 10:31:08`
+### 试用高速订阅数量: `10`
+更新时间：`2022-12-11 10:40:14`
 
 
 <details>
@@ -387,50 +387,64 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
->试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=02f24cc4e2f5e08249a1c5b9f14fae96`
-
-
 
 
 >试用订阅：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=f53e43d05d0b7554d1bb124d9a4507f8`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=e1e3c58a82a20cda025980bd10b7b970`
 
 
 
 
 >试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=d1b9469ca8428c8223d66d7b60188f48`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=fce008fa600274995817c5310c513eeb`
 
 
 
 
 >试用订阅：
-`https://user.bafang.vip/api/v1/client/subscribe?token=d269e3cff11b62585afd6e1e57c31da2`
+`https://user.bafang.vip/api/v1/client/subscribe?token=7eeb15ccb60101a6cebf982a3442402d`
 
 
 
 
 >试用订阅：
-`https://xingbayun.top/api/v1/client/subscribe?token=db6a8e20a42ca647b79d4c0830cb774a`
+`https://user.bafang.vip/api/v1/client/subscribe?token=f91e60ea782a3c4e074d0534e70fc36a`
 
 
 
 
 >试用订阅：
-`https://xingbayun.top/api/v1/client/subscribe?token=ab6ccd8b96fb833dcc0adf818b01edda`
+`https://jkcloud.icu/api/v1/client/subscribe?token=125d251a75299f90f50e6f86d6935c6d`
 
 
 
 
 >试用订阅：
-`https://mitu.lol/api/v1/client/subscribe?token=1b3569db03c92335c3f8df74bde9f35e`
+`https://jkcloud.icu/api/v1/client/subscribe?token=f99c4c8b23e3dd40a8e04276061106b0`
 
 
 
 
 >试用订阅：
-`https://mitu.lol/api/v1/client/subscribe?token=6361bcc0b70bddbacfee4c969a8f3988`
+`https://xingbayun.top/api/v1/client/subscribe?token=a5f0949e2a666663756d3125b65216d6`
+
+
+
+
+>试用订阅：
+`https://xingbayun.top/api/v1/client/subscribe?token=eeb08436c5bff65847156708290e9776`
+
+
+
+
+>试用订阅：
+`https://mitu.lol/api/v1/client/subscribe?token=62e41b633070c84784278fab5767a7ac`
+
+
+
+
+>试用订阅：
+`https://mitu.lol/api/v1/client/subscribe?token=bfae91f97fcbd9cb1c796a7e95ed2d72`
 
 
 
