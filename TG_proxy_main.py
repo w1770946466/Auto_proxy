@@ -269,7 +269,7 @@ def get_sub_url():
         #'https://console.ly520.me',
         'https://mitu.lol',
         'https://xingbayun.top',
-        #'https://www.bfyun.top',
+        'https://jkcloud.icu',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
         #'https://meal.leftright.buzz',
