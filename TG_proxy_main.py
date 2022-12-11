@@ -267,14 +267,14 @@ def get_sub_url():
         #'https://www.yifei999.com',
         #'https://www.funkyun.xyz'
         #'https://console.ly520.me',
-        #'https://mitu.lol',
-        #'https://xingbayun.top
+        'https://mitu.lol',
+        'https://xingbayun.top',
         #'https://www.bfyun.top',
-        #'https://user.bafang.vip',
+        'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
-        'https://meal.leftright.buzz',
+        #'https://meal.leftright.buzz',
     )
-    times = 4
+    times = 2
     for current_url in home_urls:
         i = 0
         while i < times:
@@ -292,6 +292,7 @@ def get_sub_url():
             #try:
                 #print(current_url)
             response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
+            '''
             if current_url == 'https://meal.leftright.buzz':
                 try:
                     #print(current_url)
@@ -325,6 +326,7 @@ def get_sub_url():
                 except Exception as result:
                     print(result)
                     break
+            '''
             try:
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                 e_sub.append(subscription_url)
