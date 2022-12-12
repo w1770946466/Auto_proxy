@@ -5,605 +5,813 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇩🇪 德国FRA02 0.6x, server: ll-iepl.244312.xyz, port: 54120, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇮🇹 意大利MIL01 0.6x, server: cc-iepl.244312.xyz, port: 54128, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇰🇷 韩国高速接入点-01, server: kr1.sanfen001.pics, port: 443, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr1.sanfen001.pics, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 🇬🇧 英国(TG频道@kxswa), server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7, server: cacerts.digicert.com, port: 443, type: vmess, uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: us.awsbest.com, network: ws, ws-opts: {path: /, headers: {Host: us.awsbest.com}}, udp: true}
-  - {name: 投稿2, server: 10.yun.tips, port: 38610, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 3074:yWovEI, obfs-param: 7af673074.microsoft.com, udp: true}
-  - {name: HN 09 10GBPS🚀(Tiktok), server: hn09.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tt.4ghatde.com, headers: {Host: frontier-i18n.tiktokv.com}}, udp: true}
-  - {name: VN VINAPHONE 04, server: vdc.vina04.4ghatde.com, port: 888, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vdc.vina04.4ghatde.com, headers: {Host: static.vnpt.vn}}, udp: true}
-  - {name: HCM GAME📱🖥(Tiktok), server: hcmgame.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tt.4ghatde.com, headers: {Host: m.tiktok.com}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道@kxswa), server: cu.kapoknode.com, port: 25883, type: vmess, uuid: 6dc93faa-8b6c-4236-8011-e44266afb9d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇭🇰 香港HGC-1号 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/hkhgc?ed=2048", headers: {Host: hkhgc.guolicheng.cyou}}, udp: true}
-  - {name: 🇭🇰 TG频道@kxswa|香港13-Debug, server: pf.okzdns.com, port: 13235, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false, udp: true}
-  - {name: HCM 02 10GBPS🚀(LQ), server: hcm02.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4ghatde.com, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: 🇯🇵 日本 01, server: 185.160.24.45, port: 80, type: vmess, uuid: 5fa048c7-2fd2-411e-9f24-0bd642981152, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: 🇭🇰 香港M|tg频道:@ripaojiedian, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/download, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 「🇭🇰」天书「直连⦻10」, server: 104.208.73.101, port: 8443, type: vmess, uuid: 4836fdd1-f25c-45d2-8c07-ea0c7c73c617, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: "", network: grpc, grpc-opts: {grpc-service-name: tjyyds}, udp: true}
-  - {name: 🇰🇷 TG频道@kxswa|韩国3, server: pf.okzdns.com, port: 22000, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡OVH | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/sgovh?ed=2048", headers: {Host: sgovh.guolicheng.cyou}}, udp: true}
-  - {name: 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vau1.0bad.com}}, udp: true}
-  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24, server: 172.67.199.34, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
-  - {name: 🇭🇰 香港AZ | 解锁流媒体-推荐, server: 20.247.125.175, port: 443, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.windowsupdate1.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29, server: news.microsoft.com, port: 443, type: vmess, uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ca2.v2rayserv.com}}, udp: true}
-  - {name: 🇦🇺 TG频道@kxswa|澳洲1, server: gy.linghun3.xyz, port: 40069, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c, udp: true}
-  - {name: 🇭🇰 TG频道@kxswa|香港, server: 20.205.11.71, port: 443, type: vmess, uuid: 8964ea79-1422-460e-b6e2-a16e83a22aab, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: 🇦🇺 澳洲ADL01 0.6x, server: cc-iepl.244312.xyz, port: 54118, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇨🇳 TG频道@kxswa|台湾1, server: tw1.linghun3.xyz, port: 40004, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c, udp: true}
-  - {name: SPEEPTEST (LQ), server: 103.170.123.207, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4ghatde.com, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
-  - {name: 格陵兰GOH01 0.6x, server: cc-iepl.244312.xyz, port: 54154, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT, server: asia.miaocn.cyou, port: 10916, type: ss, cipher: aes-128-gcm, password: cfdd41ef-69aa-474f-b2f7-c846c5eb07b2, udp: true}
-  - {name: 🇭🇰 香港HKG03 0.6x, server: cc-iepl.244312.xyz, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: SPEEPTEST (Tiktok), server: 103.170.123.207, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /4ghatde.com, headers: {Host: frontier-i18n.tiktokv.com}}, udp: true}
-  - {name: 🇦🇺 澳大利亚, server: 172.105.171.41, port: 80, type: vmess, uuid: 5fa048c7-2fd2-411e-9f24-0bd642981152, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3, server: jp2.sanfen001.pics, port: 2001, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.microsoft.com}}, udp: true}
-  - {name: TG频道@kxswa|急速02-全解锁, server: cn-hk-az-v2-1.okzdns.com, port: 40006, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇹 意大利MIL02 0.6x, server: ll-iepl.244312.xyz, port: 54128, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇨🇳 中国(TG频道@kxswa) 2, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: a22794bc-7b46-437a-9fa7-364a2641b884, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇸🇬 TG频道@kxswa|新加坡6, server: pf.okzdns.com, port: 55148, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false, udp: true}
+  - {name: HN 08 10GBPS🚀(Tiktok), server: hn08.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tt.4ghatde.com, headers: {Host: frontier-i18n.tiktokv.com}}, udp: true}
+  - {name: TG频道@kxswa|急速11-全解锁, server: jp-tk-az-v2-11.okzdns.com, port: 40003, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA, server: zxkbwgd2oy.bilibilii.live, port: 13200, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: TG频道@kxswa|毛里求斯丨2x MU, server: www.lanzou.com.lanzoujj.xyz, port: 13118, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇸🇬 新加坡高速接入点-02, server: sg2.sanfen001.pics, port: 2001, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg1.sanfen001.pics, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 🇯🇵 TG频道@kxswa|日本 12丨1x JP, server: zxkbwgd2oy.bilibilii.live, port: 13021, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇬🇷 希腊ATH01 0.6x, server: cc-iepl.244312.xyz, port: 54810, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
   - {name: 🇺🇸 亚美尼亚EVN02 0.6x, server: ll-iepl.244312.xyz, port: 54149, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇯🇵 TG频道@kxswa|日本1, server: jp1.linghun3.xyz, port: 40010, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c, udp: true}
-  - {name: 🇵🇱 波兰WAW01 0.6x, server: cc-iepl.244312.xyz, port: 54124, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: TG频道@kxswa|急速12, server: jp-tk-aws-v2-12.okzdns.com, port: 50001, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
-  - {name: 🇩🇪 德国-江移 | 解锁流媒体, server: 223.111.202.209, port: 30070, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.hruqoaw.cn, skip-cert-verify: false, udp: true}
+  - {name: undefined(TG频道@kxswa), server: 162.159.160.104, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v6nt.gongyiyun.cf}}, udp: true}
+  - {name: 🇺🇸 美国2 10Gbps, server: 104.19.30.243, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}}, udp: true}
+  - {name: 🇭🇰 香港 09 | BGP, server: cn1.cdn.zeroteam.top, port: 41968, type: ss, cipher: aes-128-gcm, password: a3452ece-ae39-46c8-a3e1-5f3e42296197, udp: true}
+  - {name: 🇯🇵 Japan 02 (LQ), server: japan02.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tt.4ghatde.com, headers: {Host: m.tiktok.com}}, udp: true}
+  - {name: 🇸🇬 新加坡AZ | 解锁流媒体-推荐, server: 20.212.63.120, port: 443, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.windowsupdate1.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 github.com/freefq - 香港电信 3, server: lqoo.xyz, port: 60006, type: trojan, password: QkxJPTkWg3, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国1 1Gbps 联通优化, server: cu.gongyiyun.cf, port: 8880, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: c8w6stpcephkomzy.gongyiyun.cf}}, udp: true}
+  - {name: 🇭🇰 TG频道@kxswa|香港 06丨1x HK, server: www.lanzou.com.lanzoujj.xyz, port: 12027, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: TG频道@kxswa|委内瑞拉丨3x VE, server: zxkbwgd2oy.bilibilii.live, port: 12720, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇫🇷 法国-江移 | 解锁流媒体, server: 223.111.202.209, port: 30080, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.hruqoaw.cn, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 TG频道@kxswa|台湾 01丨1x TW, server: www.lanzou.com.lanzoujj.xyz, port: 12304, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇭🇰 香港HKG05 0.6x, server: cc-iepl.244312.xyz, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇩🇪 德国FRA02 0.6x, server: ll-iepl.244312.xyz, port: 54120, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇰🇷 韩国SEO01 0.6x, server: cc-iepl.244312.xyz, port: 54106, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇧🇬 TG频道@kxswa|保加利亚丨1x BG, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12634, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 TG频道@kxswa|美国1, server: pf.okzdns.com, port: 58058, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道@kxswa), server: cu.kapoknode.com, port: 25885, type: vmess, uuid: a22794bc-7b46-437a-9fa7-364a2641b884, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇨🇳 TG频道@kxswa|台湾 10丨1x TW, server: www.lanzou.com.lanzoujj.xyz, port: 12413, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1, server: hkbn03.tizi1.net, port: 443, type: vmess, uuid: 0565f51e-f7e9-4962-ab9c-61407ef581c8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /clientarea, headers: {Host: hkbn03.tizi1.net}}, udp: true}
+  - {name: 🇭🇰 TG频道@kxswa|香港 03丨1x HK, server: www.lanzou.com.lanzoujj.xyz, port: 12024, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
   - {name: 🇸🇬 【共享P站】新加坡02 0.6x, server: ll-iepl.244312.xyz, port: 54510, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 「🇸🇬」神书「解锁⦻10」, server: zf.tjvpn.top, port: 34596, type: trojan, password: 4836fdd1-f25c-45d2-8c07-ea0c7c73c617, sni: tt4.tjvpn.top, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 20, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
-  - {name: 🇭🇰 TG频道@kxswa|香港7-奈非专用, server: pf.okzdns.com, port: 16545, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国SJC02 0.6x, server: ll-iepl.244312.xyz, port: 54800, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇸🇪 瑞典STO02 0.6x, server: ll-iepl.244312.xyz, port: 54125, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇲🇳 TG频道@kxswa|IEPL|蒙古, server: asia.miaocn.cyou, port: 10918, type: ss, cipher: aes-128-gcm, password: cfdd41ef-69aa-474f-b2f7-c846c5eb07b2, udp: true}
-  - {name: 文莱BWN02 0.6x, server: ll-iepl.244312.xyz, port: 54110, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org, server: www.v2rayfree.eu.org, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3, udp: true}
-  - {name: 🇭🇰 香港-80端口(自行修改host), server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/download, headers: {Host: a.189.cn}}, udp: true}
-  - {name: 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix, server: cn-hk-az-5.okzdns.com, port: 40003, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/hinet, headers: {Host: i0.hdslb.com}}, udp: true}
-  - {name: 🇺🇸 美国洛杉矶 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/us1?ed=2048", headers: {Host: us1.guolicheng.cyou}}, udp: true}
-  - {name: 🇿🇦 南非JNB02 0.6x, server: ll-iepl.244312.xyz, port: 54808, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/sgovh?ed=2048", headers: {Host: sgovh.guolicheng.cyou}}, udp: true}
-  - {name: 🇰🇷 Korea 04 (Tiktok), server: korea04.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tt.4ghatde.com, headers: {Host: frontier-i18n.tiktokv.com}}, udp: true}
-  - {name: 🇮🇸 冰岛RKV01 0.6x, server: cc-iepl.244312.xyz, port: 54150, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 三分机场.xyz 站内返利65%, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk1.sanfen001.pics, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 🇭🇰 香港 01 | BGP, server: zf.hn.cu.edu.kg, port: 34346, type: ss, cipher: aes-128-gcm, password: a3452ece-ae39-46c8-a3e1-5f3e42296197, udp: true}
+  - {name: HN 02 10GBPS🚀(LQ), server: hn02.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hn02.4ghatde.com, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇲🇰 TG频道@kxswa|北马其顿丨2x MK, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12645, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14, server: 172.67.199.34, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-lb.sshkit.org}}, udp: true}
+  - {name: 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR, server: zxkbwgd2oy.bilibilii.live, port: 13216, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR, server: zxkbwgd2oy.bilibilii.live, port: 13217, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US, server: zxkbwgd2oy.bilibilii.live, port: 13111, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: TG频道@kxswa|厄瓜多尔丨5x EC, server: zxkbwgd2oy.bilibilii.live, port: 13106, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇸🇬 TG频道@kxswa|新加坡-21, server: pf.okzdns.com, port: 61355, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港高级接入点-01, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk1.sanfen001.pics, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 🇲🇴 澳门MFM01 0.6x, server: cc-iepl.244312.xyz, port: 54103, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇺🇸 美国2 10Gbps 移动优化, server: 104.17.191.85, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}}, udp: true}
+  - {name: 🇸🇬 新加坡(TG频道@kxswa), server: sg03.170203.xyz, port: 43543, type: vmess, uuid: a484643a-af75-48d9-b230-539c61455a09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg03.170203.xyz}}, udp: true}
+  - {name: 🇹🇭 TG频道@kxswa|泰国 02丨2x TH, server: www.lanzou.com.lanzoujj.xyz, port: 12314, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇨🇳 TG频道@kxswa|台湾 17丨1x TW, server: www.lanzou.com.lanzoujj.xyz, port: 13121, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 USA 01 (LQ), server: us01.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /lq.4ghatde.com, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
+  - {name: 乌兹别克斯坦TAS01 0.6x, server: cc-iepl.244312.xyz, port: 54136, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇸🇬 新加坡 04 | BGP, server: cn1.cdn.zeroteam.top, port: 13280, type: ss, cipher: aes-128-gcm, password: a3452ece-ae39-46c8-a3e1-5f3e42296197, udp: true}
+  - {name: 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN, server: www.lanzou.com.lanzoujj.xyz, port: 13107, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR, server: zxkbwgd2oy.bilibilii.live, port: 13211, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇲🇾 马来西亚KUL02 0.6x, server: ll-iepl.244312.xyz, port: 54112, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇦🇺 澳洲SYD01 0.6x, server: cc-iepl.244312.xyz, port: 54119, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR, server: zxkbwgd2oy.bilibilii.live, port: 13013, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15, server: japan2.4gsinhvien.me, port: 80, type: vmess, uuid: a1a25b82-2859-490b-97ff-e0ceef4e9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇯🇵 TG频道@kxswa|日本2, server: jp2.linghun3.xyz, port: 40012, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c, udp: true}
+  - {name: 🇯🇵 日本NTT-江移 | 解锁流媒体, server: 223.111.202.209, port: 30120, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.windowsupdate1.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港HGC-1号 | 解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/hkhgc?ed=2048", headers: {Host: hkhgc.guolicheng.cyou}}, udp: true}
   - {name: 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/fr, headers: {Host: i0.hdslb.com}}, udp: true}
-  - {name: 🇹🇷 土耳其IST01 0.6x, server: cc-iepl.244312.xyz, port: 54129, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
-  - {name: 🇭🇰 香港 02 | BGP, server: zf.hn.cu.edu.kg, port: 25309, type: ss, cipher: aes-128-gcm, password: a3452ece-ae39-46c8-a3e1-5f3e42296197, udp: true}
-  - {name: 🇻🇳 越南-4号, server: 103.173.255.234, port: 443, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.hruqoaw.cn, skip-cert-verify: false, udp: true}
-  - {name: VN VINAPHONE 06, server: vdc.vina06.4ghatde.com, port: 111, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vdc.vina05.4ghatde.com, headers: {Host: vdc.vina06.4ghatde.com}}, udp: true}
-  - {name: 🇺🇸 USA 02 (Tiktok), server: us02.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tt.4ghatde.com, headers: {Host: m.tiktok.com}}, udp: true}
-  - {name: 投稿3, server: 07.yun.tips, port: 38607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 3074:yWovEI, obfs-param: 7af673074.microsoft.com, udp: true}
-  - {name: 🇸🇬 狮城|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: ZDAAFTxBNu5j9pl3Re834a3xSXwOZYeIlE30Dp86qc7yYgKaDCaROCSSnz2FCy, sni: csharp.protocolbuffer.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: 🇲🇾 马来西亚KUL01 0.6x, server: cc-iepl.244312.xyz, port: 54112, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇵🇰 巴基斯坦KHI01 0.6x, server: cc-iepl.244312.xyz, port: 54807, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: ĐN 02 TLS♻️(TikTok), server: 103.176.23.133, port: 443, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: "", network: grpc, grpc-opts: {grpc-service-name: 443.tt.4ghatde.com}, udp: true}
+  - {name: 🇫🇷 法国MRS01 0.6x, server: cc-iepl.244312.xyz, port: 54122, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA, server: zxkbwgd2oy.bilibilii.live, port: 13001, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 亚美尼亚EVN01 0.6x, server: cc-iepl.244312.xyz, port: 54149, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇨🇳 TG频道@kxswa|台湾 08丨1x TW, server: www.lanzou.com.lanzoujj.xyz, port: 12311, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 美国高速接入点-02, server: us2.sanfen001.pics, port: 2001, type: vmess, uuid: 09de52a4-b1d3-4716-a589-c9cc7d91317d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: us1.sanfen001.pics, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 🇸🇬 新加坡SNG03 0.6x, server: ll-iepl.244312.xyz, port: 54102, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇫🇷 法国MRS02 0.6x, server: ll-iepl.244312.xyz, port: 54122, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇯🇵 日本TOK01 0.6x, server: cc-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇯🇵 TG频道@kxswa|日本 17丨3x JP, server: zxkbwgd2oy.bilibilii.live, port: 13020, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇨🇭 TG频道@kxswa|瑞士丨2x CH, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12630, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 美国洛杉矶-江移 | 解锁流媒体, server: 223.111.202.209, port: 30010, type: trojan, password: ce2db3f6-be5e-48f5-b2f8-96f0e7f57798, sni: mzy.hruqoaw.cn, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本(TG频道@kxswa), server: jp02.170203.xyz, port: 23245, type: vmess, uuid: a484643a-af75-48d9-b230-539c61455a09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}, udp: true}
+  - {name: 🇸🇬 【共享奈飞】新加坡02 0.6x, server: ll-iepl.244312.xyz, port: 54509, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4, server: 20.187.71.25, port: 48009, type: vmess, uuid: 819d5842-d802-31c1-aaee-df6ab350ef7d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK, server: www.lanzou.com.lanzoujj.xyz, port: 12605, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12651, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 美国MIA02 0.6x, server: cc-iepl.244312.xyz, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 乌克兰IEV02 0.6x, server: ll-iepl.244312.xyz, port: 54139, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇩🇰 TG频道@kxswa|丹麦丨1x DK, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12608, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇭🇰 TG频道@kxswa|香港12, server: pf.okzdns.com, port: 13235, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false, udp: true}
+  - {name: 🇪🇸 西班牙MAD02 0.6x, server: ll-iepl.244312.xyz, port: 54126, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG, server: www.lanzou.com.lanzoujj.xyz, port: 12728, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 26, server: 172.67.199.34, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: 🇩🇰 丹麦CPH02 0.6x, server: ll-iepl.244312.xyz, port: 54135, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
+  - {name: 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us1, headers: {Host: www.189.cn}}, udp: true}
+  - {name: 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG, server: www.lanzou.com.lanzoujj.xyz, port: 12000, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇰🇷 TG频道@kxswa|韩国1, server: kr1.linghun3.xyz, port: 40058, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c, udp: true}
+  - {name: 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG, server: www.lanzou.com.lanzoujj.xyz, port: 12001, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12647, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vau1.0bad.com}}, udp: true}
+  - {name: 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA, server: 7ufo9x9pcm.kuaiisou.xyz, port: 12643, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2, server: hinet1261.gfwisbest.xyz, port: 224, type: vmess, uuid: 2285133e-b9ba-3fb5-a246-9c7ddcc2cd7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA, server: zxkbwgd2oy.bilibilii.live, port: 13117, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU, server: www.lanzou.com.lanzoujj.xyz, port: 12324, type: ss, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: {mode: http, host: 9afdb5f6c5c5.microsoft.com}, udp: true}
+  - {name: 不丹PBH02 0.6x, server: ll-iepl.244312.xyz, port: 54108, type: ss, cipher: aes-128-gcm, password: b76fac50-1966-4699-8420-e44b0f465463, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -626,76 +834,102 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 德国FRA02 0.6x
-      - 🇮🇹 意大利MIL01 0.6x
-      - 🇰🇷 韩国高速接入点-01
-      - 🇬🇧 英国(TG频道@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 7
-      - 投稿2
-      - HN 09 10GBPS🚀(Tiktok)
-      - VN VINAPHONE 04
-      - HCM GAME📱🖥(Tiktok)
-      - 🇨🇳 中国(TG频道@kxswa)
-      - 🇭🇰 香港HGC-1号 | 解锁流媒体
-      - 🇭🇰 TG频道@kxswa|香港13-Debug
-      - HCM 02 10GBPS🚀(LQ)
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
-      - 🇯🇵 日本 01
-      - 🇭🇰 香港M|tg频道:@ripaojiedian
-      - 「🇭🇰」天书「直连⦻10」
-      - 🇰🇷 TG频道@kxswa|韩国3
-      - 🇸🇬 新加坡OVH | 解锁流媒体
-      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 24
-      - 🇭🇰 香港AZ | 解锁流媒体-推荐
-      - 🇺🇸 v2rayfree.eu.org - 美国RF Engineering 29
-      - 🇦🇺 TG频道@kxswa|澳洲1
-      - 🇭🇰 TG频道@kxswa|香港
-      - 🇦🇺 澳洲ADL01 0.6x
-      - 🇨🇳 TG频道@kxswa|台湾1
-      - SPEEPTEST (LQ)
-      - 格陵兰GOH01 0.6x
-      - 🇻🇳 TG频道@kxswa|IEPL|越南 | FPT
-      - 🇭🇰 香港HKG03 0.6x
-      - SPEEPTEST (Tiktok)
-      - 🇦🇺 澳大利亚
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 3
-      - TG频道@kxswa|急速02-全解锁
-      - 🇮🇹 意大利MIL02 0.6x
-      - 🇨🇳 中国(TG频道@kxswa) 2
-      - 🇸🇬 TG频道@kxswa|新加坡6
+      - HN 08 10GBPS🚀(Tiktok)
+      - TG频道@kxswa|急速11-全解锁
+      - 🇨🇦 TG频道@kxswa|加拿大-蒙特利尔丨1x CA
+      - TG频道@kxswa|毛里求斯丨2x MU
+      - 🇸🇬 新加坡高速接入点-02
+      - 🇯🇵 TG频道@kxswa|日本 12丨1x JP
+      - 🇬🇷 希腊ATH01 0.6x
       - 🇺🇸 亚美尼亚EVN02 0.6x
-      - 🇯🇵 TG频道@kxswa|日本1
-      - 🇵🇱 波兰WAW01 0.6x
-      - TG频道@kxswa|急速12
-      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
-      - 🇩🇪 德国-江移 | 解锁流媒体
+      - undefined(TG频道@kxswa)
+      - 🇺🇸 美国2 10Gbps
+      - 🇭🇰 香港 09 | BGP
+      - 🇯🇵 Japan 02 (LQ)
+      - 🇸🇬 新加坡AZ | 解锁流媒体-推荐
+      - 🇭🇰 github.com/freefq - 香港电信 3
+      - 🇺🇸 美国1 1Gbps 联通优化
+      - 🇭🇰 TG频道@kxswa|香港 06丨1x HK
+      - TG频道@kxswa|委内瑞拉丨3x VE
+      - 🇫🇷 法国-江移 | 解锁流媒体
+      - 🇨🇳 TG频道@kxswa|台湾 01丨1x TW
+      - 🇭🇰 香港HKG05 0.6x
+      - 🇩🇪 德国FRA02 0.6x
+      - 🇰🇷 韩国SEO01 0.6x
+      - 🇧🇬 TG频道@kxswa|保加利亚丨1x BG
+      - 🇺🇸 TG频道@kxswa|美国1
+      - 🇨🇳 中国(TG频道@kxswa)
+      - 🇨🇳 TG频道@kxswa|台湾 10丨1x TW
+      - 🇭🇰 github.com/freefq - 香港城市电讯有限公司 1
+      - 🇭🇰 TG频道@kxswa|香港 03丨1x HK
       - 🇸🇬 【共享P站】新加坡02 0.6x
-      - 「🇸🇬」神书「解锁⦻10」
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 20
-      - 🇭🇰 TG频道@kxswa|香港7-奈非专用
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇸🇪 瑞典STO02 0.6x
-      - 🇲🇳 TG频道@kxswa|IEPL|蒙古
-      - 文莱BWN02 0.6x
-      - 更多免费高速v2ray、clash节点:www.v2rayfree.eu.org
-      - 🇭🇰 香港-80端口(自行修改host)
-      - 🇸🇬 TG频道@kxswa|急速06-新加坡Netflix
-      - 🇨🇳 台湾Hinet-江苏移动-ws | 解锁流媒体
-      - 🇺🇸 美国洛杉矶 | 解锁流媒体
-      - 🇿🇦 南非JNB02 0.6x
-      - 🇸🇬 TG频道@kxswa|新加坡OVH | 解锁流媒体
-      - 🇰🇷 Korea 04 (Tiktok)
-      - 🇮🇸 冰岛RKV01 0.6x
-      - 三分机场.xyz 站内返利65%
+      - 🇭🇰 香港 01 | BGP
+      - HN 02 10GBPS🚀(LQ)
+      - 🇲🇰 TG频道@kxswa|北马其顿丨2x MK
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 14
+      - 🇰🇷 TG频道@kxswa|韩国 SKT 5G丨10x KR
+      - 🇧🇷 TG频道@kxswa|巴西-萨尔瓦多丨1x BR
+      - 🇺🇸 TG频道@kxswa|美国-西雅图丨1x US
+      - TG频道@kxswa|厄瓜多尔丨5x EC
+      - 🇸🇬 TG频道@kxswa|新加坡-21
+      - 🇭🇰 香港高级接入点-01
+      - 🇲🇴 澳门MFM01 0.6x
+      - 🇺🇸 美国2 10Gbps 移动优化
+      - 🇸🇬 新加坡(TG频道@kxswa)
+      - 🇹🇭 TG频道@kxswa|泰国 02丨2x TH
+      - 🇨🇳 TG频道@kxswa|台湾 17丨1x TW
+      - 🇺🇸 USA 01 (LQ)
+      - 乌兹别克斯坦TAS01 0.6x
+      - 🇸🇬 新加坡 04 | BGP
+      - 🇮🇳 TG频道@kxswa|印度-班加罗尔丨1x IN
+      - 🇦🇷 TG频道@kxswa|阿根廷 02丨5x AR
+      - 🇲🇾 马来西亚KUL02 0.6x
+      - 🇦🇺 澳洲SYD01 0.6x
+      - 🇧🇷 TG频道@kxswa|巴西-里约热内卢丨1x BR
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 15
+      - 🇯🇵 TG频道@kxswa|日本2
+      - 🇯🇵 日本NTT-江移 | 解锁流媒体
+      - 🇭🇰 香港HGC-1号 | 解锁流媒体
       - 🇫🇷 TG频道@kxswa|法国-江移-ws | 解锁流媒体
-      - 🇹🇷 土耳其IST01 0.6x
-      - 🇭🇰 香港 02 | BGP
-      - 🇻🇳 越南-4号
-      - VN VINAPHONE 06
-      - 🇺🇸 USA 02 (Tiktok)
-      - 投稿3
-      - 🇸🇬 狮城|tg频道:@ripaojiedian
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare节点 3
+      - 🇲🇾 马来西亚KUL01 0.6x
+      - 🇵🇰 巴基斯坦KHI01 0.6x
+      - ĐN 02 TLS♻️(TikTok)
+      - 🇫🇷 法国MRS01 0.6x
+      - 🇨🇦 TG频道@kxswa|加拿大-温哥华丨2x CA
+      - 🇺🇸 亚美尼亚EVN01 0.6x
+      - 🇨🇳 TG频道@kxswa|台湾 08丨1x TW
+      - 🇺🇸 美国高速接入点-02
+      - 🇸🇬 新加坡SNG03 0.6x
+      - 🇫🇷 法国MRS02 0.6x
+      - 🇯🇵 日本TOK01 0.6x
+      - 🇯🇵 TG频道@kxswa|日本 17丨3x JP
+      - 🇨🇭 TG频道@kxswa|瑞士丨2x CH
+      - 🇺🇸 美国洛杉矶-江移 | 解锁流媒体
+      - 🇯🇵 日本(TG频道@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 0.6x
+      - 🇭🇰 github.com/freefq - 香港Microsoft数据中心 4
+      - 🇵🇰 TG频道@kxswa|巴基斯坦 02丨5x PK
+      - 🇲🇩 TG频道@kxswa|摩尔多瓦丨2x MD
+      - 🇺🇸 美国MIA02 0.6x
+      - 乌克兰IEV02 0.6x
+      - 🇩🇰 TG频道@kxswa|丹麦丨1x DK
+      - 🇭🇰 TG频道@kxswa|香港12
+      - 🇪🇸 西班牙MAD02 0.6x
+      - 🇸🇬 TG频道@kxswa|新加坡 13丨1x SG
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
+      - 🇩🇰 丹麦CPH02 0.6x
+      - 🇺🇸 TG频道@kxswa|美国洛杉矶-江移-ws | 解锁流媒体
+      - 🇸🇬 TG频道@kxswa|新加坡 01丨1x SG
+      - 🇰🇷 TG频道@kxswa|韩国1
+      - 🇸🇬 TG频道@kxswa|新加坡 02丨1x SG
+      - 🇷🇸 TG频道@kxswa|塞尔维亚丨2x RS
+      - 🇯🇵 v2rayfree.eu.org - 日本东京Linode数据中心 26
+      - 🇧🇦 TG频道@kxswa|波黑共和国丨2x BA
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 2
+      - 🇨🇦 TG频道@kxswa|加拿大家宽丨3x CA
+      - 🇦🇺 TG频道@kxswa|澳大利亚-悉尼丨2x AU
+      - 不丹PBH02 0.6x
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
