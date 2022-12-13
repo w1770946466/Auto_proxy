@@ -273,6 +273,7 @@ def get_sub_url():
         'https://www.ckcloud.xyz',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
+        'https://hello4g.pw',
         'https://fastestcloud.xyz',
         'https://www.dgycom.com',
     )
