@@ -270,6 +270,7 @@ def get_sub_url():
         #'https://mitu.lol',
         #'https://xingbayun.top',
         #'https://ieplcloud.xyz',
+        'https://fastestcloud.xyz',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
         'https://www.dgycom.com',
