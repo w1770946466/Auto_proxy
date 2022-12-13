@@ -5,74 +5,73 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: Linode, server: sg.securevpn.cc, port: 1020, type: ss, cipher: aes-128-gcm, password: !<str> 202212000000000000000020, plugin: obfs, plugin-opts: {mode: http, host: securevpn.sb}}
-  - {name: 🇳🇱 频道|荷兰10G|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/nl1?ed=2048", headers: {Host: nl1.guolicheng.cyou}}}
-  - {name: 🇨🇦 频道|加拿大, server: pf.okzdns.com, port: 35388, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇯🇵 白嫖日本1, server: 13.231.242.136, port: 23232, type: vmess, uuid: 54131760-d142-471f-becc-6b1949fa73f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 13.231.242.136}}}
-  - {name: 🇻🇳 越南-4号, server: 103.173.255.234, port: 443, type: trojan, password: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
-  - {name: 🇭🇰 频道|香港1, server: hk1.linghun3.xyz, port: 40000, type: ss, cipher: aes-256-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
-  - {name: 🇸🇬 连接出现问题请更新订阅或工单反馈, server: ru.jjyun.ml, port: 80, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jjyun, headers: {Host: rucf.jjyun.ml}}}
-  - {name: 🇺🇲 频道|IEPL|美国|LA, server: iepl.miaocn.cyou, port: 36504, type: ss, cipher: aes-128-gcm, password: cfdd41ef-69aa-474f-b2f7-c846c5eb07b2}
-  - {name: 🇷🇺 【CF优化】俄罗斯【免流-限时0.1x】, server: ru.jjyun.ml, port: 80, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jjyun, headers: {Host: rucf.jjyun.ml}}}
-  - {name: 🇨🇳 中国(频道), server: catnet-moble.gatknqh.cn, port: 11045, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
-  - {name: 🇺🇲 美国|, server: 104.19.48.92, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
-  - {name: 🇺🇲 美国a|, server: king6.workingoogle.ga, port: 8880, type: vmess, uuid: 050624ec-ba6a-49c3-e8d9-c46e5c167be0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fh454hg4fthfh, headers: {Host: king6.workingoogle.ga}}}
-  - {name: 频道|急速12, server: jp-tk-aws-v2-12.okzdns.com, port: 50001, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 香港33, server: hk2.linkeden.co, port: 443, type: vmess, uuid: d7de0112-5c40-4c42-90fe-45b96bd2667c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /hk2/getInfo, headers: {Host: hk2.linkeden.co}}}
-  - {name: "🇸🇬 新加坡01{优化2|V2ray}", server: sg1.awslcn.cc, port: 25245, type: vmess, uuid: cd41b9d7-df15-46ad-a778-257b0851525a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.cc}}}
-  - {name: 🇰🇷 频道|IEPL|韩国, server: asia.miaocn.cyou, port: 10915, type: ss, cipher: aes-128-gcm, password: cfdd41ef-69aa-474f-b2f7-c846c5eb07b2}
-  - {name: 投稿3, server: 07.yun.tips, port: 38607, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 3074:yWovEI, obfs-param: 7af673074.microsoft.com}
-  - {name: 🇯🇵 频道|日本2, server: jp2.linghun3.xyz, port: 40012, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
-  - {name: 客服：@jjy_admin_bot, server: hktzz.jjyun.ml, port: 51239, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾Hinet-江移|解锁流媒体, server: 223.111.202.209, port: 30050, type: trojan, password: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
-  - {name: 🇮🇹 意大利(频道), server: 158.58.173.240, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点8, server: 104.17.208.18, port: 2082, type: vmess, uuid: 36fa45db-2d4a-4295-a1fe-223836989878, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /pineapple, headers: {Host: PineApple.CLOUDFLARE.QUEST}}}
-  - {name: 🇭🇰 香港11, server: hk4.verichains.co, port: 443, type: vmess, uuid: a8031f66-528d-4576-8654-a89f7eb7134d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /hk4/getData, headers: {Host: hk4.verichains.co}}}
-  - {name: 🇭🇰 HK3, server: hk3.verichains.co, port: 443, type: vmess, uuid: 8817636c-ad30-46ef-a40c-96394f09f482, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /hk3/getData, headers: {Host: "%7B%22Host%22:%22hk3.verichains.co%22%7D"}}}
-  - {name: 投稿6, server: 09.yun.tips, port: 38609, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 3074:yWovEI, obfs-param: 7af673074.microsoft.com}
-  - {name: 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}}
-  - {name: 🇨🇳 中国(频道) 2, server: catnet-moble.gatknqh.cn, port: 11006, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
-  - {name: 频道|波兰1, server: gy.linghun3.xyz, port: 40074, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
-  - {name: 🇩🇪 德国-Trojan, server: de01.trojanyyds.xyz, port: 443, type: trojan, password: cd41b9d7-df15-46ad-a778-257b0851525a, sni: de01.trojanyyds.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /meizhiyuan/hinet, headers: {Host: i0.hdslb.com}}}
-  - {name: 🇸🇬 频道|急速06-新加坡Netflix, server: cn-hk-az-5.okzdns.com, port: 40003, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】, server: dls.jjyun.ml, port: 28882, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇸🇬 【普速】新加坡【TCP-免流-1x】, server: sg.jjyun.ml, port: 88, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇲 美国圣何塞|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5623be5f-c9da-4511-81a9-b4b39b16edae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/us2?ed=2048", headers: {Host: us2.guolicheng.cyou}}}
-  - {name: 🇨🇳 中国(频道) 3, server: hkt-detour-05.wallthefool.org, port: 15105, type: vmess, uuid: 82e1bd96-731a-446e-a859-a036cd2cbab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇫🇷 频道|法国|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/fr?ed=2048", headers: {Host: fr.guolicheng.cyou}}}
-  - {name: 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+, server: ct.okzdns.com, port: 53359, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: ct.okzdns.com, skip-cert-verify: false}
-  - {name: 🇳🇱 github.com/freefq-荷兰7, server: 142.93.238.178, port: 80, type: vmess, uuid: 941e0ba2-01b6-4bfe-81a4-6be93702cae3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 「🇩🇪」小书「直连⦻1」, server: tv4.tjvpn.top, port: 443, type: vmess, uuid: 4836fdd1-f25c-45d2-8c07-ea0c7c73c617, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tv4.tjvpn.top, network: ws, ws-opts: {path: /, headers: {Host: tv4.tjvpn.top}}}
-  - {name: 🇭🇰 香港Amazon, server: to.crushs.cc, port: 37215, type: trojan, password: d3a6a0d9-4955-482c-858b-2a25db718b44, sni: awshk2-1.crushs.cc, skip-cert-verify: false}
-  - {name: 🇫🇷 法国1, server: gy.linghun3.xyz, port: 40073, type: ss, cipher: aes-128-gcm, password: 0afbb72c-9145-41ca-a819-b0b031e7b2aa}
-  - {name: 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】, server: tr.jjyun.ml, port: 31299, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇰🇷 频道|韩国/0.1x, server: cdn.gmpora.me, port: 80, type: vmess, uuid: 7496964f-b535-4266-903e-85c986a1584a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: kr.gmpora.me}}}
-  - {name: 频道|IEPL|柬埔寨, server: asia.miaocn.cyou, port: 36503, type: ss, cipher: aes-128-gcm, password: cfdd41ef-69aa-474f-b2f7-c846c5eb07b2}
-  - {name: 🇺🇲 v2rayfree.eu.org-美国CloudFlare节点14, server: 172.67.199.34, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-lb.sshkit.org}}}
-  - {name: 🇺🇲 频道|美国1/0.1x, server: cdn.gmpora.me, port: 80, type: vmess, uuid: 7496964f-b535-4266-903e-85c986a1584a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.gmpora.me}}}
-  - {name: 🇸🇬 频道|新加坡1, server: pf.okzdns.com, port: 63166, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
-  - {name: 🇺🇲 github.com/freefq-美国CloudFlare节点3, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇭🇰 频道|香港3, server: hk3.linghun3.xyz, port: 40003, type: ss, cipher: aes-256-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
-  - {name: "🇨🇳 台湾①{移动|V2ray}", server: cm1.awslcn.cc, port: 25232, type: vmess, uuid: cd41b9d7-df15-46ad-a778-257b0851525a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.cc}}}
-  - {name: 🇲🇾 频道|马来西亚1, server: gy.linghun3.xyz, port: 40066, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
-  - {name: 🇨🇳 中国(频道) 4, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: a1537ff4-ae88-4410-95a8-ae8942e2e09f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}}
-  - {name: 🇸🇬 隧道|NF|新加坡01, server: yzdx.relay01.fast001.buzz, port: 19229, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇨🇳 台湾02{联通|V2ray}", server: cu.awslcn.cc, port: 25233, type: vmess, uuid: cd41b9d7-df15-46ad-a778-257b0851525a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: 🇺🇲 美国11Gbps联通优化, server: cu.gongyiyun.cf, port: 8880, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: c8w6stpcephkomzy.gongyiyun.cf}}}
-  - {name: 🇰🇷 频道|韩国3, server: pf.okzdns.com, port: 22000, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
-  - {name: 🇰🇷 频道|韩国1, server: pf.okzdns.com, port: 38211, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
   - {name: 🇭🇰 香港HGC-1号线路|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5623be5f-c9da-4511-81a9-b4b39b16edae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/hkhgc?ed=2048", headers: {Host: hkhgc.guolicheng.cyou}}}
-  - {name: 🇹🇷 土耳其1, server: gy.linghun3.xyz, port: 40065, type: ss, cipher: aes-128-gcm, password: 0afbb72c-9145-41ca-a819-b0b031e7b2aa}
-  - {name: 🇨🇳 中国(频道) 5, server: cm.kapoknode.com, port: 25950, type: vmess, uuid: 03f3d1f3-1f8b-41a1-94ab-10f4594fc2d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}}
-  - {name: "🇰🇷 韩国04{联通|V2ray}", server: cu.awslcn.cc, port: 25259, type: vmess, uuid: cd41b9d7-df15-46ad-a778-257b0851525a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.awslcn.cc}}}
-  - {name: 🇯🇵 频道|日本9-東京, server: jp-advin-51.okzdns.com, port: 40001, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇸🇬 频道|新加坡-22, server: pf.okzdns.com, port: 24543, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 隧道|NF|日本02, server: yzdx.relay01.fast001.buzz, port: 19239, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国|, server: 43.201.110.14, port: 58364, type: vmess, uuid: d4fc1031-b45e-40e2-960d-c0993a95c0ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 频道|韩国6, server: pf.okzdns.com, port: 23782, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
+  - {name: 🇨🇳 频道|台湾1-全解锁-原生, server: pf.okzdns.com, port: 22202, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇯🇵 日本2|, server: vfly3.win, port: 443, type: vmess, uuid: f4ef14c4-d811-455c-a4c3-c63dfeffb0a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly3.win}}}
+  - {name: 🇸🇬 频道|新加坡1/0.1x, server: cdn.gmpora.me, port: 80, type: vmess, uuid: 7496964f-b535-4266-903e-85c986a1584a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.gmpora.me}}}
+  - {name: 🇺🇲 隧道|NF|美国02, server: yzdx.relay01.fast001.buzz, port: 19245, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】, server: tr.jjyun.ml, port: 31299, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇭🇰 频道|香港6-奈非专用, server: pf.okzdns.com, port: 16545, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡3, server: sg3.linghun3.xyz, port: 40011, type: ss, cipher: aes-128-gcm, password: 0afbb72c-9145-41ca-a819-b0b031e7b2aa}
-  - {name: 🇰🇷 韩国AZ|解锁流媒体-推荐, server: 20.196.200.168, port: 443, type: trojan, password: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, sni: mzy.windowsupdate1.com, skip-cert-verify: false}
-  - {name: 🇵🇭 频道|菲律宾1, server: gy.linghun3.xyz, port: 40075, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
-  - {name: 🇸🇬 频道|新加坡-31, server: pf.okzdns.com, port: 18948, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇨🇳 中国(频道) 6, server: catnet-tw.gatknqh.cn, port: 11029, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
-  - {name: 🇨🇳 中国(频道) 7, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: iplc.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 投稿9, server: 06.yun.tips, port: 38606, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 3074:yWovEI, obfs-param: 7af673074.microsoft.com}
+  - {name: 🇺🇲 频道|美国1/0.1x, server: cdn.gmpora.me, port: 80, type: vmess, uuid: 7496964f-b535-4266-903e-85c986a1584a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.gmpora.me}}}
+  - {name: 🇸🇬 频道|新加坡1, server: sg1.linghun3.xyz, port: 40008, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
+  - {name: 🇭🇰 香港AZ|解锁流媒体-推荐, server: 20.247.125.175, port: 443, type: trojan, password: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, sni: mzy.windowsupdate1.com, skip-cert-verify: false}
+  - {name: 🇨🇳 中国(频道), server: hnm.xiaohouzi.club, port: 19358, type: trojan, password: 6a5cb4b7-8dad-3077-b21c-6f47e8dfb9af, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡OVH|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5623be5f-c9da-4511-81a9-b4b39b16edae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/sgovh?ed=2048", headers: {Host: sgovh.guolicheng.cyou}}}
+  - {name: "🇸🇬 新加坡03{优化2|V2ray}", server: sg1.awslcn.cc, port: 25221, type: vmess, uuid: cd41b9d7-df15-46ad-a778-257b0851525a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.cc}}}
+  - {name: 🇨🇦 频道|加拿大, server: pf.okzdns.com, port: 35388, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇦🇹 奥地利(频道), server: 94.177.8.87, port: 38761, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: v2rayfree.eu.org-亚太地区9, server: 103.167.196.52, port: 80, type: vmess, uuid: 56716a96-a265-448c-8969-03e626889580, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: 🇸🇬 频道|新加坡5, server: pf.okzdns.com, port: 57751, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇭🇰 HK|, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
+  - {name: 🇺🇲 美国2|, server: 51fly11.win, port: 443, type: vmess, uuid: 95e1bf19-3267-4869-caee-51c383eebe2e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /myblog, headers: {Host: 51fly11.win}}}
+  - {name: 🇨🇳 频道|台湾2-全解锁-原生, server: pf.okzdns.com, port: 22202, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇰🇷 频道|韩国1, server: pf.okzdns.com, port: 38211, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 高速体验可购买付费套餐, server: 13.231.242.136, port: 56263, type: vmess, uuid: 54131760-d142-471f-becc-6b1949fa73f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 13.231.242.136}}}
+  - {name: 🇭🇰 香港专|, server: pr1.jymzffbquawl.com, port: 3503, type: ssr, cipher: chacha20-ietf, password: renzhecloud, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 179210:fx0fY9, obfs-param: 5bfaf179210.microsoft.com}
+  - {name: 🇯🇵 日本AZ|解锁流媒体-推荐, server: 20.210.237.81, port: 443, type: trojan, password: 5623be5f-c9da-4511-81a9-b4b39b16edae, sni: glc.windowsupdate1.com, skip-cert-verify: false}
+  - {name: 🇨🇳 频道|急速04-全解锁, server: cn-hk-az-v2-3.okzdns.com, port: 40007, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇺🇲 频道|美國5-全解锁-原生, server: pf.okzdns.com, port: 13789, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
+  - {name: 曹老板分享社, server: hkb1.sanfen001.pics, port: 443, type: vmess, uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}}
+  - {name: 🇨🇳 中国(频道) 2, server: catnet-moble.gatknqh.cn, port: 11042, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
+  - {name: 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+, server: pf.okzdns.com, port: 53359, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
+  - {name: 🇩🇪 德国(频道), server: 172.105.74.134, port: 37867, type: vmess, uuid: 4623f949-e0e4-4d40-d177-049ca6fd7518, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 172.105.74.134}}}
+  - {name: 🇭🇰 频道|香港1, server: hk1.linghun3.xyz, port: 40000, type: ss, cipher: aes-256-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
+  - {name: 🇺🇲 v2rayfree.eu.org-美国RFEngineering21, server: news.microsoft.com, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v2ray.wefuckgfw.ga}}}
+  - {name: 波兰1, server: gy.linghun3.xyz, port: 40074, type: ss, cipher: aes-128-gcm, password: 0afbb72c-9145-41ca-a819-b0b031e7b2aa}
+  - {name: 🇩🇪 德国-Trojan, server: de01.trojanyyds.xyz, port: 443, type: trojan, password: cd41b9d7-df15-46ad-a778-257b0851525a, sni: de01.trojanyyds.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 频道|香港13-Debug, server: pf.okzdns.com, port: 13235, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
+  - {name: 频道|墨西哥1, server: gy.linghun3.xyz, port: 40071, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
+  - {name: 🇳🇱 荷兰(频道), server: kp.ourkian.cf, port: 8443, type: vmess, uuid: a00400ef-1cb1-990e-8170-38c0128d5749, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: kp.ourkian.cf}}}
+  - {name: 「🇩🇪」小书「直连⦻1」, server: tv4.tjvpn.top, port: 443, type: vmess, uuid: 4836fdd1-f25c-45d2-8c07-ea0c7c73c617, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tv4.tjvpn.top, network: ws, ws-opts: {path: /, headers: {Host: tv4.tjvpn.top}}}
+  - {name: 🇨🇳 隧道|NF|台湾01, server: hndx.relay01.fast001.buzz, port: 19221, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇻🇳 VN4_ViettelSSL, server: vn2.hello4g.pw, port: 443, type: vmess, uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cn.e.pic.ak.mangatoon.akamaized.net}}}
+  - {name: 🇺🇲 美国洛杉矶|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5623be5f-c9da-4511-81a9-b4b39b16edae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/us1?ed=2048", headers: {Host: us1.guolicheng.cyou}}}
+  - {name: 通知都在群, server: ru.jjyun.ml, port: 80, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jjyun, headers: {Host: rucf.jjyun.ml}}}
+  - {name: 🇨🇳 中国(频道) 3, server: catnet-unicom.gatknqh.cn, port: 11024, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
+  - {name: 🇯🇵 频道|日本1-专线, server: jp-tk-az-v2-11.okzdns.com, port: 40003, type: vmess, uuid: 102dd07b-c2ac-4af7-a084-a571ca54f423, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 🇲🇾 频道|马来西亚1, server: gy.linghun3.xyz, port: 40066, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
+  - {name: 🇨🇳 台湾Hinet-1号|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/meizhiyuan/hinet?ed=2048", headers: {Host: hinet.guolicheng.cyou}}}
+  - {name: 🇬🇧 频道|英国2, server: pf.okzdns.com, port: 57953, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
+  - {name: 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点(shopify)2, server: 23.227.38.39, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
+  - {name: 🇨🇳 中国(频道) 4, server: catnet-unicom.gatknqh.cn, port: 11014, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
+  - {name: 投稿1, server: 14.yun.tips, port: 38614, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 3074:yWovEI, obfs-param: 7af673074.microsoft.com}
+  - {name: 🇹🇷 频道|土耳其1, server: gy.linghun3.xyz, port: 40065, type: ss, cipher: aes-128-gcm, password: 0d870fcf-a5e8-4171-8396-045a89d41e4c}
+  - {name: 🇸🇬 请至少一周更新一次订阅获取新节点, server: ru.jjyun.ml, port: 80, type: vmess, uuid: 7f563e64-4aa2-4ab5-8101-f88d0f360d4f, alterId: 10, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jjyun, headers: {Host: rucf.jjyun.ml}}}
+  - {name: 🇯🇵 频道|日本4, server: pf.okzdns.com, port: 40848, type: trojan, password: 102dd07b-c2ac-4af7-a084-a571ca54f423, sni: pf.okzdns.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HGC-dip5, server: 222.84.250.35, port: 19201, type: trojan, password: 089c4166-e466-35cf-ba65-7ebcdfb71ee5, skip-cert-verify: false}
+  - {name: 🇨🇳 隧道|NF|台湾02, server: yzdx.relay01.fast001.buzz, port: 19222, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇻🇳 越南-1号, server: 103.173.255.21, port: 443, type: trojan, password: f679299a-e38a-4a93-ab2d-ac34bbeffdd1, sni: mzy.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇭🇰 香港2, server: hk2.linghun3.xyz, port: 40001, type: ss, cipher: aes-256-gcm, password: 0afbb72c-9145-41ca-a819-b0b031e7b2aa}
+  - {name: 🇺🇲 美国210Gbps移动优化, server: 104.17.191.85, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}}}
+  - {name: 🇨🇳 中国(频道) 5, server: catnet-moble.gatknqh.cn, port: 11037, type: ss, cipher: aes-128-gcm, password: 20b9cf2a-fcba-461a-a59b-96a58afdce0b}
+  - {name: 🇫🇷 频道|法国|解锁流媒体, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/guolicheng/fr?ed=2048", headers: {Host: fr.guolicheng.cyou}}}
+  - {name: 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体, server: 223.111.202.148, port: 38080, type: vmess, uuid: cd7f5ee4-be14-4f0c-9f60-271d50afdfe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /guolicheng/us3, headers: {Host: www.189.cn}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -91,222 +90,219 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - Linode
-      - 🇳🇱 频道|荷兰10G|解锁流媒体
-      - 🇨🇦 频道|加拿大
-      - 🇯🇵 白嫖日本1
-      - 🇻🇳 越南-4号
-      - 🇭🇰 频道|香港1
-      - 🇸🇬 连接出现问题请更新订阅或工单反馈
-      - 🇺🇲 频道|IEPL|美国|LA
-      - 🇷🇺 【CF优化】俄罗斯【免流-限时0.1x】
-      - 🇨🇳 中国(频道)
-      - 🇺🇲 美国|
-      - 🇺🇲 美国a|
-      - 频道|急速12
-      - 🇭🇰 香港33
-      - 🇸🇬 新加坡01{优化2|V2ray}
-      - 🇰🇷 频道|IEPL|韩国
-      - 投稿3
-      - 🇯🇵 频道|日本2
-      - 客服：@jjy_admin_bot
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇮🇹 意大利(频道)
-      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点8
-      - 🇭🇰 香港11
-      - 🇭🇰 HK3
-      - 投稿6
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 中国(频道) 2
-      - 频道|波兰1
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇸🇬 频道|急速06-新加坡Netflix
-      - 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】
-      - 🇸🇬 【普速】新加坡【TCP-免流-1x】
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇨🇳 中国(频道) 3
-      - 🇫🇷 频道|法国|解锁流媒体
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
-      - 🇳🇱 github.com/freefq-荷兰7
-      - 「🇩🇪」小书「直连⦻1」
-      - 🇭🇰 香港Amazon
-      - 🇫🇷 法国1
+      - 🇭🇰 香港HGC-1号线路|解锁流媒体
+      - 🇸🇬 频道|新加坡-22
+      - 🇯🇵 隧道|NF|日本02
+      - 🇰🇷 韩国|
+      - 🇰🇷 频道|韩国6
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇯🇵 日本2|
+      - 🇸🇬 频道|新加坡1/0.1x
+      - 🇺🇲 隧道|NF|美国02
       - 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】
-      - 🇰🇷 频道|韩国/0.1x
-      - 频道|IEPL|柬埔寨
-      - 🇺🇲 v2rayfree.eu.org-美国CloudFlare节点14
+      - 🇭🇰 频道|香港6-奈非专用
+      - 🇸🇬 新加坡3
+      - 投稿9
       - 🇺🇲 频道|美国1/0.1x
       - 🇸🇬 频道|新加坡1
-      - 🇺🇲 github.com/freefq-美国CloudFlare节点3
-      - 🇭🇰 频道|香港3
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 🇲🇾 频道|马来西亚1
-      - 🇨🇳 中国(频道) 4
-      - 🇸🇬 隧道|NF|新加坡01
-      - 🇨🇳 台湾02{联通|V2ray}
-      - 🇺🇲 美国11Gbps联通优化
-      - 🇰🇷 频道|韩国3
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇨🇳 中国(频道)
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇨🇦 频道|加拿大
+      - 🇦🇹 奥地利(频道)
+      - v2rayfree.eu.org-亚太地区9
+      - 🇸🇬 频道|新加坡5
+      - 🇭🇰 HK|
+      - 🇺🇲 美国2|
+      - 🇨🇳 频道|台湾2-全解锁-原生
       - 🇰🇷 频道|韩国1
-      - 🇭🇰 香港HGC-1号线路|解锁流媒体
-      - 🇹🇷 土耳其1
+      - 高速体验可购买付费套餐
+      - 🇭🇰 香港专|
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|急速04-全解锁
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 曹老板分享社
+      - 🇨🇳 中国(频道) 2
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇩🇪 德国(频道)
+      - 🇭🇰 频道|香港1
+      - 🇺🇲 v2rayfree.eu.org-美国RFEngineering21
+      - 波兰1
+      - 🇩🇪 德国-Trojan
+      - 🇭🇰 频道|香港13-Debug
+      - 频道|墨西哥1
+      - 🇳🇱 荷兰(频道)
+      - 「🇩🇪」小书「直连⦻1」
+      - 🇨🇳 隧道|NF|台湾01
+      - 🇻🇳 VN4_ViettelSSL
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 通知都在群
+      - 🇨🇳 中国(频道) 3
+      - 🇯🇵 频道|日本1-专线
+      - 🇲🇾 频道|马来西亚1
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇬🇧 频道|英国2
+      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点(shopify)2
+      - 🇨🇳 中国(频道) 4
+      - 投稿1
+      - 🇹🇷 频道|土耳其1
+      - 🇸🇬 请至少一周更新一次订阅获取新节点
+      - 🇯🇵 频道|日本4
+      - 🇭🇰 香港HGC-dip5
+      - 🇨🇳 隧道|NF|台湾02
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港2
+      - 🇺🇲 美国210Gbps移动优化
       - 🇨🇳 中国(频道) 5
-      - 🇰🇷 韩国04{联通|V2ray}
-      - 🇯🇵 频道|日本9-東京
-      - 🇸🇬 新加坡3
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
-      - 🇵🇭 频道|菲律宾1
-      - 🇸🇬 频道|新加坡-31
-      - 🇨🇳 中国(频道) 6
-      - 🇨🇳 中国(频道) 7
+      - 🇫🇷 频道|法国|解锁流媒体
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Linode
-      - 🇳🇱 频道|荷兰10G|解锁流媒体
-      - 🇨🇦 频道|加拿大
-      - 🇯🇵 白嫖日本1
-      - 🇻🇳 越南-4号
-      - 🇭🇰 频道|香港1
-      - 🇸🇬 连接出现问题请更新订阅或工单反馈
-      - 🇺🇲 频道|IEPL|美国|LA
-      - 🇷🇺 【CF优化】俄罗斯【免流-限时0.1x】
-      - 🇨🇳 中国(频道)
-      - 🇺🇲 美国|
-      - 🇺🇲 美国a|
-      - 频道|急速12
-      - 🇭🇰 香港33
-      - 🇸🇬 新加坡01{优化2|V2ray}
-      - 🇰🇷 频道|IEPL|韩国
-      - 投稿3
-      - 🇯🇵 频道|日本2
-      - 客服：@jjy_admin_bot
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇮🇹 意大利(频道)
-      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点8
-      - 🇭🇰 香港11
-      - 🇭🇰 HK3
-      - 投稿6
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 中国(频道) 2
-      - 频道|波兰1
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇸🇬 频道|急速06-新加坡Netflix
-      - 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】
-      - 🇸🇬 【普速】新加坡【TCP-免流-1x】
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇨🇳 中国(频道) 3
-      - 🇫🇷 频道|法国|解锁流媒体
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
-      - 🇳🇱 github.com/freefq-荷兰7
-      - 「🇩🇪」小书「直连⦻1」
-      - 🇭🇰 香港Amazon
-      - 🇫🇷 法国1
+      - 🇭🇰 香港HGC-1号线路|解锁流媒体
+      - 🇸🇬 频道|新加坡-22
+      - 🇯🇵 隧道|NF|日本02
+      - 🇰🇷 韩国|
+      - 🇰🇷 频道|韩国6
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇯🇵 日本2|
+      - 🇸🇬 频道|新加坡1/0.1x
+      - 🇺🇲 隧道|NF|美国02
       - 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】
-      - 🇰🇷 频道|韩国/0.1x
-      - 频道|IEPL|柬埔寨
-      - 🇺🇲 v2rayfree.eu.org-美国CloudFlare节点14
+      - 🇭🇰 频道|香港6-奈非专用
+      - 🇸🇬 新加坡3
+      - 投稿9
       - 🇺🇲 频道|美国1/0.1x
       - 🇸🇬 频道|新加坡1
-      - 🇺🇲 github.com/freefq-美国CloudFlare节点3
-      - 🇭🇰 频道|香港3
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 🇲🇾 频道|马来西亚1
-      - 🇨🇳 中国(频道) 4
-      - 🇸🇬 隧道|NF|新加坡01
-      - 🇨🇳 台湾02{联通|V2ray}
-      - 🇺🇲 美国11Gbps联通优化
-      - 🇰🇷 频道|韩国3
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇨🇳 中国(频道)
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇨🇦 频道|加拿大
+      - 🇦🇹 奥地利(频道)
+      - v2rayfree.eu.org-亚太地区9
+      - 🇸🇬 频道|新加坡5
+      - 🇭🇰 HK|
+      - 🇺🇲 美国2|
+      - 🇨🇳 频道|台湾2-全解锁-原生
       - 🇰🇷 频道|韩国1
-      - 🇭🇰 香港HGC-1号线路|解锁流媒体
-      - 🇹🇷 土耳其1
+      - 高速体验可购买付费套餐
+      - 🇭🇰 香港专|
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|急速04-全解锁
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 曹老板分享社
+      - 🇨🇳 中国(频道) 2
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇩🇪 德国(频道)
+      - 🇭🇰 频道|香港1
+      - 🇺🇲 v2rayfree.eu.org-美国RFEngineering21
+      - 波兰1
+      - 🇩🇪 德国-Trojan
+      - 🇭🇰 频道|香港13-Debug
+      - 频道|墨西哥1
+      - 🇳🇱 荷兰(频道)
+      - 「🇩🇪」小书「直连⦻1」
+      - 🇨🇳 隧道|NF|台湾01
+      - 🇻🇳 VN4_ViettelSSL
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 通知都在群
+      - 🇨🇳 中国(频道) 3
+      - 🇯🇵 频道|日本1-专线
+      - 🇲🇾 频道|马来西亚1
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇬🇧 频道|英国2
+      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点(shopify)2
+      - 🇨🇳 中国(频道) 4
+      - 投稿1
+      - 🇹🇷 频道|土耳其1
+      - 🇸🇬 请至少一周更新一次订阅获取新节点
+      - 🇯🇵 频道|日本4
+      - 🇭🇰 香港HGC-dip5
+      - 🇨🇳 隧道|NF|台湾02
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港2
+      - 🇺🇲 美国210Gbps移动优化
       - 🇨🇳 中国(频道) 5
-      - 🇰🇷 韩国04{联通|V2ray}
-      - 🇯🇵 频道|日本9-東京
-      - 🇸🇬 新加坡3
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
-      - 🇵🇭 频道|菲律宾1
-      - 🇸🇬 频道|新加坡-31
-      - 🇨🇳 中国(频道) 6
-      - 🇨🇳 中国(频道) 7
+      - 🇫🇷 频道|法国|解锁流媒体
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - Linode
-      - 🇳🇱 频道|荷兰10G|解锁流媒体
-      - 🇨🇦 频道|加拿大
-      - 🇯🇵 白嫖日本1
-      - 🇻🇳 越南-4号
-      - 🇭🇰 频道|香港1
-      - 🇸🇬 连接出现问题请更新订阅或工单反馈
-      - 🇺🇲 频道|IEPL|美国|LA
-      - 🇷🇺 【CF优化】俄罗斯【免流-限时0.1x】
-      - 🇨🇳 中国(频道)
-      - 🇺🇲 美国|
-      - 🇺🇲 美国a|
-      - 频道|急速12
-      - 🇭🇰 香港33
-      - 🇸🇬 新加坡01{优化2|V2ray}
-      - 🇰🇷 频道|IEPL|韩国
-      - 投稿3
-      - 🇯🇵 频道|日本2
-      - 客服：@jjy_admin_bot
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇮🇹 意大利(频道)
-      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点8
-      - 🇭🇰 香港11
-      - 🇭🇰 HK3
-      - 投稿6
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 中国(频道) 2
-      - 频道|波兰1
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇸🇬 频道|急速06-新加坡Netflix
-      - 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】
-      - 🇸🇬 【普速】新加坡【TCP-免流-1x】
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇨🇳 中国(频道) 3
-      - 🇫🇷 频道|法国|解锁流媒体
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
-      - 🇳🇱 github.com/freefq-荷兰7
-      - 「🇩🇪」小书「直连⦻1」
-      - 🇭🇰 香港Amazon
-      - 🇫🇷 法国1
+      - 🇭🇰 香港HGC-1号线路|解锁流媒体
+      - 🇸🇬 频道|新加坡-22
+      - 🇯🇵 隧道|NF|日本02
+      - 🇰🇷 韩国|
+      - 🇰🇷 频道|韩国6
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇯🇵 日本2|
+      - 🇸🇬 频道|新加坡1/0.1x
+      - 🇺🇲 隧道|NF|美国02
       - 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】
-      - 🇰🇷 频道|韩国/0.1x
-      - 频道|IEPL|柬埔寨
-      - 🇺🇲 v2rayfree.eu.org-美国CloudFlare节点14
+      - 🇭🇰 频道|香港6-奈非专用
+      - 🇸🇬 新加坡3
+      - 投稿9
       - 🇺🇲 频道|美国1/0.1x
       - 🇸🇬 频道|新加坡1
-      - 🇺🇲 github.com/freefq-美国CloudFlare节点3
-      - 🇭🇰 频道|香港3
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 🇲🇾 频道|马来西亚1
-      - 🇨🇳 中国(频道) 4
-      - 🇸🇬 隧道|NF|新加坡01
-      - 🇨🇳 台湾02{联通|V2ray}
-      - 🇺🇲 美国11Gbps联通优化
-      - 🇰🇷 频道|韩国3
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇨🇳 中国(频道)
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇨🇦 频道|加拿大
+      - 🇦🇹 奥地利(频道)
+      - v2rayfree.eu.org-亚太地区9
+      - 🇸🇬 频道|新加坡5
+      - 🇭🇰 HK|
+      - 🇺🇲 美国2|
+      - 🇨🇳 频道|台湾2-全解锁-原生
       - 🇰🇷 频道|韩国1
-      - 🇭🇰 香港HGC-1号线路|解锁流媒体
-      - 🇹🇷 土耳其1
+      - 高速体验可购买付费套餐
+      - 🇭🇰 香港专|
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|急速04-全解锁
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 曹老板分享社
+      - 🇨🇳 中国(频道) 2
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇩🇪 德国(频道)
+      - 🇭🇰 频道|香港1
+      - 🇺🇲 v2rayfree.eu.org-美国RFEngineering21
+      - 波兰1
+      - 🇩🇪 德国-Trojan
+      - 🇭🇰 频道|香港13-Debug
+      - 频道|墨西哥1
+      - 🇳🇱 荷兰(频道)
+      - 「🇩🇪」小书「直连⦻1」
+      - 🇨🇳 隧道|NF|台湾01
+      - 🇻🇳 VN4_ViettelSSL
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 通知都在群
+      - 🇨🇳 中国(频道) 3
+      - 🇯🇵 频道|日本1-专线
+      - 🇲🇾 频道|马来西亚1
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇬🇧 频道|英国2
+      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点(shopify)2
+      - 🇨🇳 中国(频道) 4
+      - 投稿1
+      - 🇹🇷 频道|土耳其1
+      - 🇸🇬 请至少一周更新一次订阅获取新节点
+      - 🇯🇵 频道|日本4
+      - 🇭🇰 香港HGC-dip5
+      - 🇨🇳 隧道|NF|台湾02
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港2
+      - 🇺🇲 美国210Gbps移动优化
       - 🇨🇳 中国(频道) 5
-      - 🇰🇷 韩国04{联通|V2ray}
-      - 🇯🇵 频道|日本9-東京
-      - 🇸🇬 新加坡3
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
-      - 🇵🇭 频道|菲律宾1
-      - 🇸🇬 频道|新加坡-31
-      - 🇨🇳 中国(频道) 6
-      - 🇨🇳 中国(频道) 7
+      - 🇫🇷 频道|法国|解锁流媒体
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -314,74 +310,73 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - Linode
-      - 🇳🇱 频道|荷兰10G|解锁流媒体
-      - 🇨🇦 频道|加拿大
-      - 🇯🇵 白嫖日本1
-      - 🇻🇳 越南-4号
-      - 🇭🇰 频道|香港1
-      - 🇸🇬 连接出现问题请更新订阅或工单反馈
-      - 🇺🇲 频道|IEPL|美国|LA
-      - 🇷🇺 【CF优化】俄罗斯【免流-限时0.1x】
-      - 🇨🇳 中国(频道)
-      - 🇺🇲 美国|
-      - 🇺🇲 美国a|
-      - 频道|急速12
-      - 🇭🇰 香港33
-      - 🇸🇬 新加坡01{优化2|V2ray}
-      - 🇰🇷 频道|IEPL|韩国
-      - 投稿3
-      - 🇯🇵 频道|日本2
-      - 客服：@jjy_admin_bot
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇮🇹 意大利(频道)
-      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点8
-      - 🇭🇰 香港11
-      - 🇭🇰 HK3
-      - 投稿6
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 中国(频道) 2
-      - 频道|波兰1
-      - 🇩🇪 德国-Trojan
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇸🇬 频道|急速06-新加坡Netflix
-      - 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】
-      - 🇸🇬 【普速】新加坡【TCP-免流-1x】
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇨🇳 中国(频道) 3
-      - 🇫🇷 频道|法国|解锁流媒体
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
-      - 🇳🇱 github.com/freefq-荷兰7
-      - 「🇩🇪」小书「直连⦻1」
-      - 🇭🇰 香港Amazon
-      - 🇫🇷 法国1
+      - 🇭🇰 香港HGC-1号线路|解锁流媒体
+      - 🇸🇬 频道|新加坡-22
+      - 🇯🇵 隧道|NF|日本02
+      - 🇰🇷 韩国|
+      - 🇰🇷 频道|韩国6
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇯🇵 日本2|
+      - 🇸🇬 频道|新加坡1/0.1x
+      - 🇺🇲 隧道|NF|美国02
       - 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】
-      - 🇰🇷 频道|韩国/0.1x
-      - 频道|IEPL|柬埔寨
-      - 🇺🇲 v2rayfree.eu.org-美国CloudFlare节点14
+      - 🇭🇰 频道|香港6-奈非专用
+      - 🇸🇬 新加坡3
+      - 投稿9
       - 🇺🇲 频道|美国1/0.1x
       - 🇸🇬 频道|新加坡1
-      - 🇺🇲 github.com/freefq-美国CloudFlare节点3
-      - 🇭🇰 频道|香港3
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 🇲🇾 频道|马来西亚1
-      - 🇨🇳 中国(频道) 4
-      - 🇸🇬 隧道|NF|新加坡01
-      - 🇨🇳 台湾02{联通|V2ray}
-      - 🇺🇲 美国11Gbps联通优化
-      - 🇰🇷 频道|韩国3
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇨🇳 中国(频道)
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇨🇦 频道|加拿大
+      - 🇦🇹 奥地利(频道)
+      - v2rayfree.eu.org-亚太地区9
+      - 🇸🇬 频道|新加坡5
+      - 🇭🇰 HK|
+      - 🇺🇲 美国2|
+      - 🇨🇳 频道|台湾2-全解锁-原生
       - 🇰🇷 频道|韩国1
-      - 🇭🇰 香港HGC-1号线路|解锁流媒体
-      - 🇹🇷 土耳其1
+      - 高速体验可购买付费套餐
+      - 🇭🇰 香港专|
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|急速04-全解锁
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 曹老板分享社
+      - 🇨🇳 中国(频道) 2
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇩🇪 德国(频道)
+      - 🇭🇰 频道|香港1
+      - 🇺🇲 v2rayfree.eu.org-美国RFEngineering21
+      - 波兰1
+      - 🇩🇪 德国-Trojan
+      - 🇭🇰 频道|香港13-Debug
+      - 频道|墨西哥1
+      - 🇳🇱 荷兰(频道)
+      - 「🇩🇪」小书「直连⦻1」
+      - 🇨🇳 隧道|NF|台湾01
+      - 🇻🇳 VN4_ViettelSSL
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 通知都在群
+      - 🇨🇳 中国(频道) 3
+      - 🇯🇵 频道|日本1-专线
+      - 🇲🇾 频道|马来西亚1
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇬🇧 频道|英国2
+      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点(shopify)2
+      - 🇨🇳 中国(频道) 4
+      - 投稿1
+      - 🇹🇷 频道|土耳其1
+      - 🇸🇬 请至少一周更新一次订阅获取新节点
+      - 🇯🇵 频道|日本4
+      - 🇭🇰 香港HGC-dip5
+      - 🇨🇳 隧道|NF|台湾02
+      - 🇻🇳 越南-1号
+      - 🇭🇰 香港2
+      - 🇺🇲 美国210Gbps移动优化
       - 🇨🇳 中国(频道) 5
-      - 🇰🇷 韩国04{联通|V2ray}
-      - 🇯🇵 频道|日本9-東京
-      - 🇸🇬 新加坡3
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
-      - 🇵🇭 频道|菲律宾1
-      - 🇸🇬 频道|新加坡-31
-      - 🇨🇳 中国(频道) 6
-      - 🇨🇳 中国(频道) 7
+      - 🇫🇷 频道|法国|解锁流媒体
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
   - name: 📲 电报消息
     type: select
     proxies:
@@ -523,15 +518,19 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇳🇱 频道|荷兰10G|解锁流媒体
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇫🇷 频道|法国|解锁流媒体
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
       - 🇭🇰 香港HGC-1号线路|解锁流媒体
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇨🇳 频道|台湾2-全解锁-原生
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|急速04-全解锁
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇫🇷 频道|法国|解锁流媒体
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -577,91 +576,96 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 频道|香港1
-      - 🇭🇰 香港33
-      - 🇭🇰 香港11
-      - 🇭🇰 HK3
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
-      - 🇭🇰 香港Amazon
-      - 🇭🇰 频道|香港3
       - 🇭🇰 香港HGC-1号线路|解锁流媒体
+      - 🇭🇰 频道|香港6-奈非专用
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇭🇰 HK|
+      - 🇭🇰 香港专|
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇭🇰 频道|香港1
+      - 🇭🇰 频道|香港13-Debug
+      - 🇭🇰 香港HGC-dip5
+      - 🇭🇰 香港2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 白嫖日本1
-      - 🇯🇵 频道|日本2
-      - 🇯🇵 频道|日本9-東京
+      - 🇯🇵 隧道|NF|日本02
+      - 🇯🇵 日本2|
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇯🇵 频道|日本1-专线
+      - 🇯🇵 频道|日本4
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇲 频道|IEPL|美国|LA
-      - 🇺🇲 美国|
-      - 🇺🇲 美国a|
-      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点8
-      - 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇺🇲 v2rayfree.eu.org-美国CloudFlare节点14
+      - 🇺🇲 隧道|NF|美国02
       - 🇺🇲 频道|美国1/0.1x
-      - 🇺🇲 github.com/freefq-美国CloudFlare节点3
-      - 🇺🇲 美国11Gbps联通优化
+      - 🇺🇲 美国2|
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 🇺🇲 v2rayfree.eu.org-美国RFEngineering21
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 🇺🇲 github.com/freefq-美国CloudFlare公司CDN节点(shopify)2
+      - 🇺🇲 美国210Gbps移动优化
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇨🇳 台湾①{移动|V2ray}
-      - 🇨🇳 台湾02{联通|V2ray}
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇨🇳 频道|台湾2-全解锁-原生
+      - 🇨🇳 隧道|NF|台湾01
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇨🇳 隧道|NF|台湾02
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡01{优化2|V2ray}
-      - 🇸🇬 频道|急速06-新加坡Netflix
-      - 🇸🇬 【普速】新加坡【TCP-免流-1x】
-      - 🇸🇬 频道|新加坡1
-      - 🇸🇬 隧道|NF|新加坡01
+      - 🇸🇬 频道|新加坡-22
+      - 🇸🇬 频道|新加坡1/0.1x
       - 🇸🇬 新加坡3
-      - 🇸🇬 频道|新加坡-31
+      - 🇸🇬 频道|新加坡1
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 频道|新加坡5
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 频道|IEPL|韩国
-      - 🇰🇷 频道|韩国/0.1x
-      - 🇰🇷 频道|韩国3
+      - 🇰🇷 韩国|
+      - 🇰🇷 频道|韩国6
       - 🇰🇷 频道|韩国1
-      - 🇰🇷 韩国04{联通|V2ray}
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇳🇱 频道|荷兰10G|解锁流媒体
-      - 🇨🇳 台湾Hinet-江移|解锁流媒体
-      - 🇨🇳 频道|台湾Hinet-1号线路|解锁流媒体
-      - 🇨🇳 台湾Hinet-江苏移动-ws|解锁流媒体
-      - 🇸🇬 频道|急速06-新加坡Netflix
-      - 🇺🇲 【普速】美西纽约【TCP-NF-0.6x】
-      - 🇺🇲 美国圣何塞|解锁流媒体
-      - 🇫🇷 频道|法国|解锁流媒体
-      - 🇭🇰 频道|推荐3-香港-全解锁-迪士尼+
-      - 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】
-      - 🇸🇬 隧道|NF|新加坡01
       - 🇭🇰 香港HGC-1号线路|解锁流媒体
-      - 🇰🇷 韩国AZ|解锁流媒体-推荐
+      - 🇯🇵 隧道|NF|日本02
+      - 🇨🇳 频道|台湾1-全解锁-原生
+      - 🇺🇲 隧道|NF|美国02
+      - 🇹🇷 【普速】土耳其【原生-Netflix-Disney-0.5x】
+      - 🇭🇰 香港AZ|解锁流媒体-推荐
+      - 🇸🇬 新加坡OVH|解锁流媒体
+      - 🇨🇳 频道|台湾2-全解锁-原生
+      - 🇯🇵 日本AZ|解锁流媒体-推荐
+      - 🇨🇳 频道|急速04-全解锁
+      - 🇺🇲 频道|美國5-全解锁-原生
+      - 🇭🇰 频道|推荐5-香港-全解锁-迪士尼+
+      - 🇨🇳 隧道|NF|台湾01
+      - 🇺🇲 美国洛杉矶|解锁流媒体
+      - 🇨🇳 台湾Hinet-1号|解锁流媒体
+      - 🇨🇳 隧道|NF|台湾02
+      - 🇫🇷 频道|法国|解锁流媒体
+      - 🇺🇲 频道|美国西雅图-江移-ws|解锁流媒体
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
