@@ -79,7 +79,7 @@ def get_content(url):
     #获取单个订阅链接进行判断
     i = 1
     try:
-        new_list_down = new_list[-20::]
+        new_list_down = new_list[-10::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     #print("共获得", len(new_list_down), "条链接")
@@ -268,7 +268,33 @@ def get_sub_url():
         #'https://www.yifei999.com',
         #'https://www.funkyun.xyz'
         #'https://console.ly520.me',
-        'https://shan-cloud.xyz/',
+        'https://www.ckcloud.xyz',
+        'https://v2board.co',
+        'https://www.fkfirewall.top',
+        'https://shan-cloud.xyz',
+        'https://ustinianofu.com',
+        'https://w6w.fun',
+        'https://kaxinzx.cc',
+        'https://xiaolingdang.xyz',
+        'https://www.802039.xyz',
+        'https://waiqi.xyz',
+        'https://fastestcloud.xyz',
+        'https://feiniaoyun.xyz',
+        'https://www.ckcloud.xyz',
+        'https://v2board.co',
+        'https://www.fkfirewall.top',
+        'https://shan-cloud.xyz',
+        'https://ustinianofu.com',
+        'https://w6w.fun',
+        'https://kaxinzx.cc',
+        'https://52laoba.xyz',
+        'https://xiaolingdang.xyz',
+        'https://www.802039.xyz',
+        'https://waiqi.xyz',
+        'https://fastestcloud.xyz',
+        'https://feiniaoyun.xyz',
+        'https://v2ray.mom',
+        'https://shan-cloud.xyz',
         'http://hneko.xyz',
         'https://www.ckcloud.xyz',
         'https://user.bafang.vip',
@@ -277,7 +303,7 @@ def get_sub_url():
         'https://fastestcloud.xyz',
         'https://www.dgycom.com',
     )
-    times = 2
+    times = 1
     for current_url in home_urls:
         i = 0
         while i < times:
