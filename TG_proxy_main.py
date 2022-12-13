@@ -269,7 +269,7 @@ def get_sub_url():
         #'https://console.ly520.me',
         #'https://mitu.lol',
         #'https://xingbayun.top',
-        #'https://ieplcloud.xyz',
+        'https://sub-gfwairport.download',
         'https://www.ckcloud.xyz',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
