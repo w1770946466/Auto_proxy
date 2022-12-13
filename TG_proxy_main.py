@@ -267,12 +267,12 @@ def get_sub_url():
         #'https://www.yifei999.com',
         #'https://www.funkyun.xyz'
         #'https://console.ly520.me',
-        'https://mitu.lol',
-        'https://xingbayun.top',
-        'https://ieplcloud.xyz',
+        #'https://mitu.lol',
+        #'https://xingbayun.top',
+        #'https://ieplcloud.xyz',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
-        #'https://meal.leftright.buzz',
+        'https://www.dgycom.com',
     )
     times = 2
     for current_url in home_urls:
