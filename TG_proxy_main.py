@@ -294,6 +294,7 @@ def get_sub_url():
         'https://fastestcloud.xyz',
         'https://feiniaoyun.xyz',
         'https://v2ray.mom',
+        
         'https://shan-cloud.xyz',
         'http://hneko.xyz',
         'https://www.ckcloud.xyz',
@@ -320,7 +321,9 @@ def get_sub_url():
             }
             #try:
                 #print(current_url)
-            response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
+                #response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
+            #except:
+                #print("获取订阅失败")
             '''
             if current_url == 'https://meal.leftright.buzz':
                 try:
@@ -357,6 +360,7 @@ def get_sub_url():
                     break
             '''
             try:
+                response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                 e_sub.append(subscription_url)
                 try_sub.append(subscription_url)
