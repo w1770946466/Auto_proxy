@@ -248,8 +248,7 @@ def write_document():
 #获取clash订阅
 def get_yaml():
     print("开始获取clsah订阅")
-    urls = ["https://suo.yt/AmwsC4c",
-            "https://v1.mk/y5kPoHm", "https://v1.mk/6mm8aPR"]
+    urls = ["https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1&insert=false&config=https://raw.githubusercontent.com/rxsweet/fetchProxy/main/config/provider/rxconfig.ini&emoji=true","https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2&insert=false&config=https://raw.githubusercontent.com/rxsweet/fetchProxy/main/config/provider/rxconfig.ini&emoji=true", "https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3&insert=false&config=https://raw.githubusercontent.com/rxsweet/fetchProxy/main/config/provider/rxconfig.ini&emoji=true"]
     n = 1
     for i in urls:
         response = requests.get(i)
