@@ -346,13 +346,26 @@ def get_sub_url():
                 print("获取订阅失败")
             i += 1
             #print(f'Number succeeded: {i}\t{subscription_url}')
-                
-                
+
+            
+  def get_kkzui():
+    # ========== 抓取 kkzui.com 的节点 ==========
+    try:
+        headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get("https://kkzui.com/jd?orderby=modified",headers=headers)
+        article_url = re.search(r'<h2 class="item-heading"><a href="(https://kkzui.com/(.*?)\.html)">20(.*?)号(.*?)个高速免费节点(.*?)免费代理</a></h2>',res.text).groups()[0]
+        res = requests.get(article_url,headers=headers)
+        sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]
+        e_sub.append(sub_url)
+    except:
+        print("获取kkzui.com失败！")
         
     
 if __name__ == '__main__':
     print("开始获取机场订阅链接......")
     get_sub_url()
+    print("开始获取kkzui.com订阅链接......")
+    get_kkzui()
     print("开始获取订阅链接......")
     for url in tqdm(urls):
         #print(url, "开始获取......")
