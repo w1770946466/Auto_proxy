@@ -348,7 +348,8 @@ def get_sub_url():
             #print(f'Number succeeded: {i}\t{subscription_url}')
 
             
-  def get_kkzui():
+  
+def get_kkzui():
     # ========== 抓取 kkzui.com 的节点 ==========
     try:
         headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
