@@ -76,7 +76,8 @@ def get_content(url):
         result = i.replace("\\", "").replace('"', "")
         if result not in new_list:
             if "t" not in result[8]:
-                new_list.append(result)
+                if "p" not in result[-2]:
+                    new_list.append(result)
     #print(new_list)
     #print("共获得", len(new_list), "条链接")
     #获取单个订阅链接进行判断
