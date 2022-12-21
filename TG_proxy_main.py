@@ -49,8 +49,8 @@ def get_channel_http(url):
     #print(response.text)
     pattren = re.compile(r'"https+:[^\s]*"')
     url_lst = pattren.findall(response.text)
-    print('获取到',len(url_lst),'个网址')
-    print(url_lst)
+    #print('获取到',len(url_lst),'个网址')
+    #print(url_lst)
     return url_lst
 
 
@@ -81,7 +81,7 @@ def get_content(url):
     #获取单个订阅链接进行判断
     i = 1
     try:
-        new_list_down = new_list[-20::]
+        new_list_down = new_list[-10::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     #print("共获得", len(new_list_down), "条链接")
