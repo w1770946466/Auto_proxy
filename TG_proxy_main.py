@@ -78,8 +78,8 @@ def get_content(url):
             if "t" not in result[8]:
                 if "p" not in result[-2]:
                     new_list.append(result)
-    print(new_list)
-    print("共获得", len(new_list), "条链接")
+    #print(new_list)
+    #print("共获得", len(new_list), "条链接")
     #获取单个订阅链接进行判断
     i = 1
     try:
