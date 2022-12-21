@@ -49,6 +49,8 @@ def get_channel_http(url):
     #print(response.text)
     pattren = re.compile(r'(http|https)://[\w.-]+')
     url_lst = pattren.findall(response.text)
+    print('获取到',len(url_lst),'个网址')
+    print(url_lst)
     return url_lst
 
 
