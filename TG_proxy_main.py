@@ -47,7 +47,7 @@ def get_channel_http(url):
     response = requests.post(
         url, headers=headers)
     #print(response.text)
-    pattren = re.compile(r'"https+:[^\s]*"')
+    pattren = re.compile(r'(http|https)://[\w.-]+')
     url_lst = pattren.findall(response.text)
     return url_lst
 
