@@ -369,6 +369,18 @@ def get_kkzui():
         e_sub.append(sub_url)
     except:
         print("获取kkzui.com失败！")
+    try:
+        headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get("https://www.cfmem.com/search/label/free",headers=headers)
+        article_url = re.search(r'<a href="https://www.cfmem.com/(.*?).html"',res.text).groups()[0]
+        print(article_url)
+        '''
+        res = requests.get(article_url,headers=headers)
+        sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]
+        e_sub.append(sub_url)
+        '''
+    except:
+        print("获取cfmem.com失败！")
         
     
 if __name__ == '__main__':
