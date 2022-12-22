@@ -32,6 +32,8 @@ threads = []
 plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 #机场试用链接
 try_sub = []
+#获取频道订阅的个数
+sub_n = -5
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
@@ -83,7 +85,7 @@ def get_content(url):
     #获取单个订阅链接进行判断
     i = 1
     try:
-        new_list_down = new_list[-10::]
+        new_list_down = new_list[sub_n::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
     #print("共获得", len(new_list_down), "条链接")
