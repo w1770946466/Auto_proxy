@@ -375,7 +375,7 @@ def get_kkzui():
         article_url = re.search(r"https?://www\.cfmem\.com/\d{4}/\d{2}/\S+v2rayclash-vpn.html",res.text).group()
         #print(article_url)
         res = requests.get(article_url,headers=headers)
-        sub_url = re.search(r'v2ray订阅链接：(.*?)',res.text)
+        sub_url = re.search(r'<span style="font-size: 15px;">(.*?)</span></span></div>',res.text).groups()[0]
         print(sub_url)
         #e_sub.append(sub_url)
     except Exception as e:
