@@ -226,7 +226,8 @@ def write_document():
                         n += 3
                 """
             except:
-                print("写入READ出错")
+                #print("写入READ出错")
+                pass
         #写入试用订阅
         for index in range(len(lines)):
             try:
