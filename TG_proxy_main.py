@@ -376,8 +376,8 @@ def get_kkzui():
         #print(article_url)
         res = requests.get(article_url,headers=headers)
         sub_url = re.search(r'<span style="font-size: 15px;">(.*?)</span></span></div>',res.text).groups()[0]
-        print(sub_url)
-        #e_sub.append(sub_url)
+        #print(sub_url)
+        e_sub.append(sub_url)
     except Exception as e:
         print(e)
         
