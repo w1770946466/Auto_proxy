@@ -372,7 +372,7 @@ def get_kkzui():
     try:
         headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
         res = requests.get("https://www.cfmem.com/search/label/free",headers=headers)
-        article_url = re.search(r"https?://www\.cfmem\.com/\d{4}/\d{2}/\S+v2rayclash-vpn.html",res.text).groups()[0]
+        article_url = re.search(r"https?://www\.cfmem\.com/\d{4}/\d{2}/\S+v2rayclash-vpn.html",res.text).groups()
         print(article_url)
         '''
         res = requests.get(article_url,headers=headers)
