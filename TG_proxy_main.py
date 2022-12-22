@@ -70,7 +70,7 @@ def jiemi_base64(data):  # 解密base64
 
 #判读是否为订阅链接
 def get_content(url):
-    print('【获取频道',url,'】')
+    #print('【获取频道',url,'】')
     url_lst = get_channel_http(url)
     #print(url_lst)
     #对链接进行格式化
@@ -88,8 +88,8 @@ def get_content(url):
         new_list_down = new_list[sub_n::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
-    print("共获得", len(new_list_down), "条链接")
-    print('【判断链接是否为订阅链接】')
+    #print("共获得", len(new_list_down), "条链接")
+    #print('【判断链接是否为订阅链接】')
     for o in new_list_down:
         try:
             res = requests.get(o)
@@ -97,23 +97,23 @@ def get_content(url):
             try:
                 skuid = re.findall('proxies:', res.text)[0]
                 if skuid == "proxies:":
-                    print(i, ".这是个clash订阅", o)
+                    #print(i, ".这是个clash订阅", o)
                     end_list_clash.append(o)
             except:
                 #判断是否为v2
                 try:
                     #解密base64
                     peoxy = jiemi_base64(res.text)
-                    print(i, ".这是个v2ray订阅", o)
+                    #print(i, ".这是个v2ray订阅", o)
                     end_list_v2ray.append(o)
                     end_bas64.extend(peoxy.splitlines())
                     
                 #均不是则非订阅链接
                 except:
-                    print(i, ".非订阅链接")
+                    #print(i, ".非订阅链接")
                     pass
         except:
-            print("第", i, "个链接获取失败跳过！")
+            #print("第", i, "个链接获取失败跳过！")
             pass
         i += 1
     return end_bas64
