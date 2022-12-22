@@ -370,12 +370,12 @@ def get_kkzui():
         
     
 if __name__ == '__main__':
-    print("开始获取机场订阅链接......")
+    print("========== 开始获取机场订阅链接 ==========")
     get_sub_url()
-    print("开始获取kkzui.com订阅链接......")
+    print("========== 开始获取kkzui.com订阅链接 ==========")
     get_kkzui()
-    print("开始获取订阅链接......")
-    for url in tqdm(urls):
+    print("========== 开始获取频道订阅链接 ==========")
+    for url in urls:
         #print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
@@ -383,9 +383,9 @@ if __name__ == '__main__':
         #resp = get_content(get_channel_http(url))
         #print(url, "获取完毕！！")
     #等待线程结束
-    for t in threads:
+    for t in tqdm(threads):
         t.join()
-    print("节点获取完毕准备写入......！！")
+    print("========== 准备写入订阅 ==========")
     res = write_document()
     clash_sub = get_yaml()
-    print("写入完成任务结束！！")
+    print("========== 写入完成任务结束 ==========")
