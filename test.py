@@ -2,12 +2,12 @@ import requests
 import yaml
 
 # 获取 v2ray 订阅链接的内容
-response = requests.get("https://your-v2ray-subscription-link.com")
+response = requests.get("https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1")
 v2ray_configs = response.text
 
 # 使用 pyyaml 库将内容解析成 Python 对象
 v2ray_configs = yaml.safe_load(v2ray_configs)
-
+print(v2ray_configs)
 # 创建一个空的 clash 订阅列表
 clash_configs = []
 
@@ -33,7 +33,7 @@ for config in v2ray_configs:
 
 # 将 clash 配置列表转换为 YAML 格式的字符串
 clash_configs_yaml = yaml.dump(clash_configs)
-
+print(clash_configs_yaml)
 # 将字符串写入文件
-with open("clash_configs.yml", "w") as f:
-    f.write(clash_configs_yaml)
+#with open("clash_configs.yml", "w") as f:
+    #f.write(clash_configs_yaml)
