@@ -1,9 +1,26 @@
 import requests
 import yaml
+import base64
 
+# base64 编码的 v2ray 配置文件
 # 获取 v2ray 订阅链接的内容
 response = requests.get("https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/sub/2212/221224.txt")
-v2ray_configs = response.text
+encoded_v2ray_config = response.text
+#encoded_v2ray_config = "eyJ2MiI6IHsiYWRkcmVzcyI6ICIxMjcuMC4wLjEiLCAicG9ydCI6IDQ0MywgInB1YmxpY0tleSI6ICI5NzE5NjJmMTYyNzM0ZTA5YjJlMzY5YTgxNzE1MmM5N2NhYjZkN2ZmMmQ2N2JjZTcyMmJkNzBhYjI4YzZjOWM1YjkiLCAidHlwZSI6ICJub25lIn19"
+
+# 将 base64 编码的 v2ray 配置文件解码为原始字节
+decoded_bytes = base64.b64decode(encoded_v2ray_config)
+
+# 将原始字节转换为字符串
+decoded_str = decoded_bytes.decode()
+
+# 使用字符串格式化将 v2ray 配置转换为 clash 配置
+clash_config = """
+proxy-providers:
+  - {name: "v2ray", type: vmess, server: "vmess://{}"}
+""".format(decoded_str)
+
+print(clash_config)
 
 # 使用 pyyaml 库将内容解析成 Python 对象
 v2ray_configs = yaml.safe_load(v2ray_configs)
