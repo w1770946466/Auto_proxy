@@ -216,14 +216,14 @@ def v2ray_to_clash(arr):
         for key in list(obj.keys()):
             if obj.get(key) is None:
                 del obj[key]
-        '''
+        #'''
         if obj.get('alterId') is not None:
             try:
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
             except:
                 print('id获取失败')
-         '''
+         #'''
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
@@ -236,24 +236,24 @@ def ss_to_clash(arr):
         'proxy_names': []
     }
     for item in arr:
+        obj = {
+            'name': item.get('name').strip() if item.get('name') else None,
+            'type': 'ss',
+            'server': item.get('server'),
+            'port': int(item.get('port')),
+            'cipher': item.get('method'),
+            'password': item.get('password'),
+            'plugin': 'obfs' if item.get('plugin') and item.get('plugin').startswith('obfs') else None,
+            'plugin-opts': {} if item.get('plugin') else None
+        }
+        if item.get('obfs'):
+            obj['plugin-opts']['mode'] = item.get('obfs')
+        if item.get('obfs-host'):
+            obj['plugin-opts']['host'] = item.get('obfs-host')
+        for key in list(obj.keys()):
+            if obj.get(key) is None:
+                del obj[key]
         try:
-            obj = {
-                'name': item.get('name').strip() if item.get('name') else None,
-                'type': 'ss',
-                'server': item.get('server'),
-                'port': int(item.get('port')),
-                'cipher': item.get('method'),
-                'password': item.get('password'),
-                'plugin': 'obfs' if item.get('plugin') and item.get('plugin').startswith('obfs') else None,
-                'plugin-opts': {} if item.get('plugin') else None
-            }
-            if item.get('obfs'):
-                obj['plugin-opts']['mode'] = item.get('obfs')
-            if item.get('obfs-host'):
-                obj['plugin-opts']['host'] = item.get('obfs-host')
-            for key in list(obj.keys()):
-                if obj.get(key) is None:
-                    del obj[key]
             proxies['proxy_list'].append(obj)
             proxies['proxy_names'].append(obj['name'])
         except:
