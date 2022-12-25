@@ -5,6 +5,9 @@ import requests, yaml
 import urllib.parse
 
 
+#命名数字
+num = 1
+
 def log(msg):
     time = datetime.datetime.now()
     print('[' + time.strftime('%Y.%m.%d-%H:%M:%S') + '] ' + msg)
@@ -194,7 +197,7 @@ def v2ray_to_clash(arr):
             continue
         obj = {
             #'name': item.get('ps').strip() if item.get('ps') else None,
-            'name': f"Auto_proxy{num+1}",
+            'name': f"Auto_proxy{num}",
             'type': 'vmess',
             'server': item.get('add'),
             'port': int(item.get('port')),
@@ -336,7 +339,6 @@ def save_config(path, data):
 
 # 程序入口
 if __name__ == '__main__':
-    num = 0
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
     sub_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4'
