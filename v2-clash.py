@@ -198,8 +198,8 @@ def v2ray_to_clash(arr):
                 and item.get('id') is None and item.get('aid') is None:
             continue
         obj = {
-            #'name': item.get('ps').strip() if item.get('ps') else None,
-            'name': f"Auto_proxy{num}",
+            'name': item.get('ps').strip() if item.get('ps') else None,
+            #'name': f"Auto_proxy{num}",
             'type': 'vmess',
             'server': item.get('add'),
             'port': int(item.get('port')),
