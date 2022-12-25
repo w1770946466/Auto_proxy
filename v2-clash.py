@@ -38,6 +38,7 @@ def decode_v2ray_node(nodes):
         proxy_str = base64.b64decode(decode_proxy).decode('utf-8')
         proxy_dict = json.loads(proxy_str)
         proxy_list.append(proxy_dict)
+    print(proxy_list)
     return proxy_list
 
 
@@ -225,6 +226,7 @@ def v2ray_to_clash(arr):
             except:
                 print('id获取失败')
          #'''
+    print(proxies)
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
@@ -261,6 +263,7 @@ def ss_to_clash(arr):
             print("ss转换失败！！")
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
+    print(proxies)
     return proxies
 
 
