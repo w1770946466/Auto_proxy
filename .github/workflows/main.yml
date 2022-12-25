@@ -34,7 +34,7 @@ jobs:
     - name: 执行任务
       run: |
 
-        python ./TG_proxy_main.py
+        python ./test.py
       
     - name: 提交更改
       run: |                 
@@ -55,6 +55,7 @@ jobs:
         git add ./Long_term_subscription2.yaml
         git add ./Long_term_subscription3.yaml
         git add ./README.md
+        git add ./output.yaml
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S')合并节点"
     - name: 推送更改
       uses:  ad-m/github-push-action@master
