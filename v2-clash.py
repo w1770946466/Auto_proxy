@@ -211,8 +211,11 @@ def v2ray_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         if obj.get('alterId') is not None:
-            proxies['proxy_list'].append(obj)
-            proxies['proxy_names'].append(obj['name'])
+            try:
+                proxies['proxy_list'].append(obj)
+                proxies['proxy_names'].append(obj['name'])
+            except:
+                print('id获取失败')
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
