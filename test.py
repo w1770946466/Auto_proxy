@@ -336,7 +336,7 @@ if __name__ == '__main__':
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
-    config_url = 'https://github.com/w1770946466/Auto_proxy/blob/main/config.yaml'
+    config_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/config.yaml'
     config_path = './config.yaml'
 
     if sub_url is None or sub_url == '':
