@@ -250,6 +250,7 @@ def ss_to_clash(arr):
             proxies['proxy_names'].append(obj['name'])
         except:
             print("ss转换失败！！")
+            pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
