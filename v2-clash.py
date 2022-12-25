@@ -191,8 +191,9 @@ def v2ray_to_clash(arr):
         'proxy_list': [],
         'proxy_names': []
     }
-    num = 1
+    num = 0
     for item in arr:
+        num += 1
         if item.get('ps') is None and item.get('add') is None and item.get('port') is None \
                 and item.get('id') is None and item.get('aid') is None:
             continue
@@ -221,7 +222,7 @@ def v2ray_to_clash(arr):
                 proxies['proxy_names'].append(obj['name'])
             except:
                 print('id获取失败')
-        num += 1
+        
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
