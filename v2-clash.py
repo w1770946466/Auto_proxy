@@ -3,7 +3,7 @@
 import os, re, sys, json, base64, datetime
 import requests, yaml
 import urllib.parse
-
+import pyclash
 
 #命名数字
 
@@ -46,44 +46,7 @@ def decode_ss_node(nodes):
     proxy_list = []
     for node in nodes:
         decode_proxy = node.decode('utf-8')[5:]
-        if not decode_proxy or decode_proxy.isspace():
-            log('ss节点信息为空，跳过该节点')
-            continue
-        info = dict()
-        param = decode_proxy
-        if param.find('#') > -1:
-            remark = urllib.parse.unquote(param[param.find('#') + 1:])
-            info['name'] = remark
-            param = param[:param.find('#')]
-        if param.find('/?') > -1:
-            plugin = urllib.parse.unquote(param[param.find('/?') + 2:])
-            param = param[:param.find('/?')]
-            for p in plugin.split(';'):
-                key_value = p.split('=')
-                info[key_value[0]] = key_value[1]
-        if param.find('@') > -1:
-            matcher = re.match(r'(.*?)@(.*):(.*)', param)
-            if matcher:
-                param = matcher.group(1)
-                info['server'] = matcher.group(2)
-                info['port'] = matcher.group(3)
-            else:
-                continue
-            matcher = re.match(r'(.*?):(.*)', safe_decode(param).decode('utf-8'))
-            if matcher:
-                info['method'] = matcher.group(1)
-                info['password'] = matcher.group(2)
-            else:
-                continue
-        else:
-            matcher = re.match(r'(.*?):(.*)@(.*):(.*)', safe_decode(param).decode('utf-8'))
-            if matcher:
-                info['method'] = matcher.group(1)
-                info['password'] = matcher.group(2)
-                info['server'] = matcher.group(3)
-                info['port'] = matcher.group(4)
-            else:
-                continue
+        info = pyclash.convert(decode_proxy)
         proxy_list.append(info)
     return proxy_list
 
