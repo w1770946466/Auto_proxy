@@ -6,7 +6,7 @@ import urllib.parse
 
 
 #命名数字
-num = 1
+
 
 def log(msg):
     time = datetime.datetime.now()
@@ -191,6 +191,7 @@ def v2ray_to_clash(arr):
         'proxy_list': [],
         'proxy_names': []
     }
+    num = 1
     for item in arr:
         if item.get('ps') is None and item.get('add') is None and item.get('port') is None \
                 and item.get('id') is None and item.get('aid') is None:
