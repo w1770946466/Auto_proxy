@@ -193,7 +193,8 @@ def v2ray_to_clash(arr):
                 and item.get('id') is None and item.get('aid') is None:
             continue
         obj = {
-            'name': item.get('ps').strip() if item.get('ps') else None,
+            #'name': item.get('ps').strip() if item.get('ps') else None,
+            'name': f"Auto_proxy{num+1}",
             'type': 'vmess',
             'server': item.get('add'),
             'port': int(item.get('port')),
@@ -216,6 +217,7 @@ def v2ray_to_clash(arr):
                 proxies['proxy_names'].append(obj['name'])
             except:
                 print('id获取失败')
+        num += 1
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
@@ -334,6 +336,7 @@ def save_config(path, data):
 
 # 程序入口
 if __name__ == '__main__':
+    num = 0
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
     sub_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4'
