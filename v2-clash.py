@@ -183,6 +183,7 @@ def get_proxies(urls):
             proxy_list['proxy_list'].extend(clash_node['proxy_list'])
             proxy_list['proxy_names'].extend(clash_node['proxy_names'])
     log('共发现:{}个节点'.format(len(proxy_list['proxy_names'])))
+    print(proxy_list)
     return proxy_list
 
 
@@ -226,7 +227,7 @@ def v2ray_to_clash(arr):
             except:
                 print('id获取失败')
          #'''
-    print(proxies)
+    #print(proxies)
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
@@ -263,7 +264,7 @@ def ss_to_clash(arr):
             print("ss转换失败！！")
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
-    print(proxies)
+    #print(proxies)
     return proxies
 
 
