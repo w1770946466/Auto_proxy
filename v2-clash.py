@@ -331,7 +331,7 @@ def get_default_config(url, path):
 # 将代理添加到配置文件
 def add_proxies_to_model(data, model):
     
-    print(data['proxy_list'])
+    #print(data['proxy_list'])
     #print(model)
     if data is None or model is None:
         raise ValueError('Invalid input: data and model cannot be None')
@@ -350,6 +350,7 @@ def add_proxies_to_model(data, model):
     try:
         #data['proxy_names'] = list(set(data['proxy_names']))
         data['proxy_list'] = [d for d in data['proxy_list'] if 'name' in d]
+        print(data['proxy_list'])
         names = []
         for item in data['proxy_list']:
             try:
@@ -360,9 +361,7 @@ def add_proxies_to_model(data, model):
             except KeyError:
                 # 处理字典中没有 name 字段的情况
                 print("Error: dictionary does not have a 'name' field")
-        #print(data['proxy_list'])
-        #names = list(set(names))
-        #names = remove_duplicates(names)
+        print(names)
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
                 #group['proxies'] = data.get('proxy_names')
