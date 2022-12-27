@@ -293,13 +293,16 @@ def ssr_to_clash(arr):
             'protocol-param': item.get('protoparam'),
             'udp': True
         }
-        for key in list(obj.keys()):
-            if obj.get(key) is None:
-                del obj[key]
-        if obj.get('name'):
-            if not obj['name'].startswith('剩余流量') and not obj['name'].startswith('过期时间'):
-                proxies['proxy_list'].append(obj)
-                proxies['proxy_names'].append(obj['name'])
+        try:
+            for key in list(obj.keys()):
+                if obj.get(key) is None:
+                    del obj[key]
+            if obj.get('name'):
+                if not obj['name'].startswith('剩余流量') and not obj['name'].startswith('过期时间'):
+                    proxies['proxy_list'].append(obj)
+                    proxies['proxy_names'].append(obj['name'])
+        except Exception as e:
+            print(e)
     log('可用ssr节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
