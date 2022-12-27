@@ -330,11 +330,9 @@ def add_proxies_to_model(data, model):
         raise ValueError('Invalid input: data and model cannot be None')
     if 'proxy_list' not in data or 'proxy_names' not in data:
         raise ValueError('Invalid input: data should contain "proxy_list" and "proxy_names" keys')
-    for key, values in model.items():
-        values = [v for v in values if v not in values[:i]]
-        model[key] = values
-    print("去重完毕")
+    
     try:
+        model = remove_duplicates(model)
         if model.get('proxies') is None:
             model['proxies'] = data.get('proxy_list')
         else:
@@ -350,6 +348,16 @@ def add_proxies_to_model(data, model):
                 group['proxies'].extend(data.get('proxy_names'))
     except Exception as e:
         print(f'Error adding proxy names to groups: {e}')
+
+    return model
+
+def remove_duplicates(model):
+
+    model['proxies'] = [proxy for i, proxy in enumerate(model['proxies']) if proxy not in model['proxies'][:i]]
+
+    for group in model['proxy-groups']:
+
+        group['proxies'] = [proxy for i, proxy in enumerate(group['proxies']) if proxy not in group['proxies'][:i]]
 
     return model
 
