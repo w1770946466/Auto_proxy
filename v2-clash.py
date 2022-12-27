@@ -332,7 +332,6 @@ def add_proxies_to_model(data, model):
         raise ValueError('Invalid input: data should contain "proxy_list" and "proxy_names" keys')
     
     try:
-        model = remove_duplicates(model)
         if model.get('proxies') is None:
             model['proxies'] = data.get('proxy_list')
         else:
@@ -351,15 +350,7 @@ def add_proxies_to_model(data, model):
 
     return model
 
-def remove_duplicates(model):
 
-    model['proxies'] = [proxy for i, proxy in enumerate(model['proxies']) if proxy not in model['proxies'][:i]]
-
-    for group in model['proxy-groups']:
-
-        group['proxies'] = [proxy for i, proxy in enumerate(group['proxies']) if proxy not in group['proxies'][:i]]
-
-    return model
 
 
 
