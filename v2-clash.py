@@ -362,7 +362,7 @@ def add_proxies_to_model(data, model):
                 print("Error: dictionary does not have a 'name' field")
         #print(data['proxy_list'])
         #names = list(set(names))
-        names = remove_duplicates(names)
+        #names = remove_duplicates(names)
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
                 #group['proxies'] = data.get('proxy_names')
@@ -378,11 +378,11 @@ def add_proxies_to_model(data, model):
 
 def remove_duplicates(lst):
     result = []
-    names = []
+    names_l = []
     for item in lst:
-        if 'name' in item and item['name'] not in names:
+        if 'name' in item and item['name'] not in names_l:
             result.append(item)
-            names.append(item['name'])
+            names_l.append(item['name'])
     return result
 
 
