@@ -169,19 +169,23 @@ def get_proxies(urls):
         nodes_list = raw.splitlines()
         clash_node = []
         for node in nodes_list:
-            if node.startswith(b'vmess://'):
-                decode_proxy = decode_v2ray_node([node])
-                clash_node = v2ray_to_clash(decode_proxy)
-            elif node.startswith(b'ss://'):
-                decode_proxy = decode_ss_node([node])
-                clash_node = ss_to_clash(decode_proxy)
-            elif node.startswith(b'ssr://'):
-                decode_proxy = decode_ssr_node([node])
-                clash_node = ssr_to_clash(decode_proxy)
-            else:
-                pass
-            proxy_list['proxy_list'].extend(clash_node['proxy_list'])
-            proxy_list['proxy_names'].extend(clash_node['proxy_names'])
+            try:
+                if node.startswith(b'vmess://'):
+                    decode_proxy = decode_v2ray_node([node])
+                    clash_node = v2ray_to_clash(decode_proxy)
+                elif node.startswith(b'ss://'):
+                    decode_proxy = decode_ss_node([node])
+                    clash_node = ss_to_clash(decode_proxy)
+                elif node.startswith(b'ssr://'):
+                    decode_proxy = decode_ssr_node([node])
+                    clash_node = ssr_to_clash(decode_proxy)
+                else:
+                    pass
+                proxy_list['proxy_list'].extend(clash_node['proxy_list'])
+                proxy_list['proxy_names'].extend(clash_node['proxy_names'])
+            except Exception as e:
+                print(f'出错{e}')
+                
     log('共发现:{}个节点'.format(len(proxy_list['proxy_names'])))
     print(proxy_list)
     return proxy_list
