@@ -382,7 +382,7 @@ def remove_duplicates(lst):
         if 'name' in item :
             item['name'] = f'Auto{i}'
             result.append(item)
-            i += 1
+        i += 1
     return result
 
 
