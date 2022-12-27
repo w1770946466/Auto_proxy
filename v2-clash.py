@@ -330,7 +330,10 @@ def add_proxies_to_model(data, model):
         raise ValueError('Invalid input: data and model cannot be None')
     if 'proxy_list' not in data or 'proxy_names' not in data:
         raise ValueError('Invalid input: data should contain "proxy_list" and "proxy_names" keys')
-
+    for key, values in model.items():
+        values = [v for v in values if v not in values[:i]]
+        model[key] = values
+    print("去重完毕")
     try:
         if model.get('proxies') is None:
             model['proxies'] = data.get('proxy_list')
