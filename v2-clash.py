@@ -347,15 +347,27 @@ def add_proxies_to_model(data, model):
         print(f'Error adding proxies to model: {e}')
 
     try:
-        data['proxy_names'] = list(set(data['proxy_names']))
+        #data['proxy_names'] = list(set(data['proxy_names']))
         data['proxy_list'] = [d for d in data['proxy_list'] if 'name' in d]
-        print(data['proxy_list'])
+        names = []
+        for item in data['proxy_list']:
+            try:
+                names.append(item['name'])
+            except TypeError:
+                # 处理 item 不是字典的情况
+                print("Error: item is not a dictionary")
+            except KeyError:
+                # 处理字典中没有 name 字段的情况
+                print("Error: dictionary does not have a 'name' field")
+        #print(data['proxy_list'])
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
-                group['proxies'] = data.get('proxy_names')
+                #group['proxies'] = data.get('proxy_names')
+                group['proxies'] = names
             else:
-                group['proxies'].extend(data.get('proxy_names'))
-    except Exception as e:
+                #group['proxies'].extend(data.get('proxy_names'))
+                group['proxies'].extend(names)
+    except Exception as e:s
         print(f'Error adding proxy names to groups: {e}')
 
     return model
