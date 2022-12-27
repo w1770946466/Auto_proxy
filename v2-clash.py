@@ -176,11 +176,11 @@ def get_proxies(urls):
                 elif node.startswith(b'ss://'):
                     decode_proxy = decode_ss_node([node])
                     clash_node = ss_to_clash(decode_proxy)
-                '''
-                elif node.startswith(b'ssr://'):
-                    decode_proxy = decode_ssr_node([node])
-                    clash_node = ssr_to_clash(decode_proxy)
-                '''
+               
+                #elif node.startswith(b'ssr://'):
+                    #decode_proxy = decode_ssr_node([node])
+                    #clash_node = ssr_to_clash(decode_proxy)
+                
                 else:
                     pass
                 proxy_list['proxy_list'].extend(clash_node['proxy_list'])
