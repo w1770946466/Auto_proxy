@@ -176,9 +176,11 @@ def get_proxies(urls):
                 elif node.startswith(b'ss://'):
                     decode_proxy = decode_ss_node([node])
                     clash_node = ss_to_clash(decode_proxy)
+                '''
                 elif node.startswith(b'ssr://'):
                     decode_proxy = decode_ssr_node([node])
                     clash_node = ssr_to_clash(decode_proxy)
+                '''
                 else:
                     pass
                 proxy_list['proxy_list'].extend(clash_node['proxy_list'])
@@ -383,9 +385,9 @@ def remove_duplicates(lst):
     namesl = []
     i = 1
     for item in lst:
-        if 'name' in item and item['name'] not in namesl:
-            namesl.append(item['name'])
-            #item['name'] = f'Auto{i}'
+        if 'name' in item:
+           
+            item['name'] = f'Auto{i}'
             result.append(item)
             i += 1
     return result
