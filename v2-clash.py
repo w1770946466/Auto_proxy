@@ -355,7 +355,7 @@ def add_proxies_to_model(data, model):
     try:
         #data['proxy_names'] = list(set(data['proxy_names']))
         data['proxy_list'] = [d for d in data['proxy_list'] if 'name' in d]
-        print(data['proxy_list'])
+        #print(data['proxy_list'])
         names = []
         for item in data['proxy_list']:
             try:
@@ -382,7 +382,7 @@ def add_proxies_to_model(data, model):
 
 def remove_duplicates(lst):
     result = []
-    namesl = []
+    #namesl = []
     i = 1
     for item in lst:
         if 'name' in item:
