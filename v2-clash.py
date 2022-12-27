@@ -379,10 +379,10 @@ def remove_duplicates(lst):
     result = []
     i = 1
     for item in lst:
-        if 'name' in item :
+        if 'name' in item and item not in result:
             item['name'] = f'Auto{i}'
             result.append(item)
-        i += 1
+            i += 1
     return result
 
 
