@@ -339,6 +339,7 @@ def add_proxies_to_model(data, model):
         raise ValueError('Invalid input: data should contain "proxy_list" and "proxy_names" keys')
     
     try:
+        data['proxy_list'] = remove_duplicates(data['proxy_list'])
         if model.get('proxies') is None:
             model['proxies'] = data.get('proxy_list')
         else:
