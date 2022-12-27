@@ -367,7 +367,7 @@ def add_proxies_to_model(data, model):
             else:
                 #group['proxies'].extend(data.get('proxy_names'))
                 group['proxies'].extend(names)
-    except Exception as e:s
+    except Exception as e:
         print(f'Error adding proxy names to groups: {e}')
 
     return model
