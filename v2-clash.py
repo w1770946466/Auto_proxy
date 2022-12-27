@@ -360,6 +360,7 @@ def add_proxies_to_model(data, model):
                 # 处理字典中没有 name 字段的情况
                 print("Error: dictionary does not have a 'name' field")
         #print(data['proxy_list'])
+        names = = list(set(names))
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
                 #group['proxies'] = data.get('proxy_names')
