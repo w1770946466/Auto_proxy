@@ -28,7 +28,8 @@ proxies:
   ws-path: /fast4g.net
   ws-headers:
     Host: dl.kgvn.garenanow.com
-- name: Auto3
+- &id001
+  name: Auto4
   type: vmess
   server: hainan.sfjsq001.info
   port: 33205
@@ -38,7 +39,8 @@ proxies:
   udp: true
   network: tcp
   ws-path: ''
-- name: Auto4
+- *id001
+- name: Auto5
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13012
@@ -47,7 +49,8 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto5
+- &id002
+  name: Auto7
   type: vmess
   server: m.lwvzmdu.cn
   port: 16637
@@ -59,7 +62,9 @@ proxies:
   ws-path: /
   ws-headers:
     Host: m.lwvzmdu.cn
-- name: Auto6
+- *id002
+- &id003
+  name: Auto9
   type: vmess
   server: 172.67.199.34
   port: 443
@@ -72,7 +77,8 @@ proxies:
   ws-path: /sshocean
   ws-headers:
     Host: sgovh1.v2rayserv.com
-- name: Auto7
+- *id003
+- name: Auto10
   type: vmess
   server: 172.67.199.34
   port: 2096
@@ -85,7 +91,7 @@ proxies:
   ws-path: /ezN9pvil/
   ws-headers:
     Host: v2ray.wefuckgfw.tk
-- name: Auto8
+- name: Auto11
   type: vmess
   server: gdct.pfgo.xn--kiv15t.cn
   port: 19065
@@ -95,7 +101,8 @@ proxies:
   udp: true
   network: ws
   ws-path: /fly
-- name: Auto9
+- &id004
+  name: Auto13
   type: vmess
   server: m.lwvzmdu.cn
   port: 16617
@@ -107,7 +114,8 @@ proxies:
   ws-path: /
   ws-headers:
     Host: m.lwvzmdu.cn
-- name: Auto10
+- *id004
+- name: Auto14
   type: vmess
   server: 51.77.158.169
   port: 2096
@@ -119,7 +127,7 @@ proxies:
   ws-path: /
   ws-headers:
     Host: 51.77.158.169
-- name: Auto11
+- name: Auto15
   type: vmess
   server: m.lwvzmdu.cn
   port: 16618
@@ -131,7 +139,8 @@ proxies:
   ws-path: /
   ws-headers:
     Host: m.lwvzmdu.cn
-- name: Auto12
+- &id005
+  name: Auto18
   type: vmess
   server: r001.baipiaoxd.com
   port: 11451
@@ -141,7 +150,10 @@ proxies:
   udp: true
   network: ws
   ws-path: /ws
-- name: Auto13
+- *id005
+- *id005
+- &id006
+  name: Auto20
   type: vmess
   server: sg10.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
   port: 80
@@ -153,7 +165,8 @@ proxies:
   ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
   ws-headers:
     Host: tlu.dl.delivery.mp.microsoft.com
-- name: Auto14
+- *id006
+- name: Auto21
   type: vmess
   server: gcorepl.sylu.cyou
   port: 443
@@ -166,23 +179,13 @@ proxies:
   ws-path: /Falling42gcoreplnode
   ws-headers:
     Host: gcorepl.sylu.cyou
-- name: Auto15
-  type: vmess
-  server: gdct.pfgo.xn--kiv15t.cn
-  port: 19065
-  uuid: c68570c9-4b3b-4448-8370-18da25e010d0
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /fly
-- name: Auto16
+- name: Auto22
   type: ss
   server: z1.810823.xyz
   port: 13065
   cipher: chacha20-ietf-poly1305
   password: fdc30da3-3f21-452d-8833-860abf03cff8
-- name: Auto17
+- name: Auto23
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13104
@@ -191,7 +194,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto18
+- name: Auto24
   type: ss
   server: 7ufo9x9pcm.kuaiisou.xyz
   port: 12653
@@ -200,7 +203,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto19
+- name: Auto25
   type: vmess
   server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.nbvpn.org
   port: 7301
@@ -209,7 +212,7 @@ proxies:
   cipher: auto
   udp: true
   network: tcp
-- name: Auto20
+- name: Auto26
   type: vmess
   server: jp12.tejiewm.com
   port: 4443
@@ -220,7 +223,7 @@ proxies:
   network: tcp
   tls: true
   ws-path: ''
-- name: Auto21
+- name: Auto27
   type: vmess
   server: 172.67.199.34
   port: 443
@@ -233,7 +236,8 @@ proxies:
   ws-path: /sshkit/fdfadsfa/63848bfe228fd/
   ws-headers:
     Host: us-lb.sshkit.org
-- name: Auto22
+- &id007
+  name: Auto30
   type: vmess
   server: bjct.pfgo.xn--kiv15t.cn
   port: 30413
@@ -243,7 +247,9 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto23
+- *id007
+- *id007
+- name: Auto31
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13112
@@ -252,7 +258,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto24
+- name: Auto32
   type: vmess
   server: cu.kapoknode.com
   port: 25955
@@ -262,7 +268,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto25
+- name: Auto33
   type: vmess
   server: 172.67.196.0
   port: 80
@@ -274,7 +280,7 @@ proxies:
   ws-path: /ws
   ws-headers:
     Host: gheychi.betterthanunix.ml
-- name: Auto26
+- name: Auto34
   type: vmess
   server: cm.kapoknode.com
   port: 25957
@@ -284,7 +290,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto27
+- name: Auto35
   type: vmess
   server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com
   port: 30009
@@ -296,7 +302,7 @@ proxies:
   ws-path: /aceamedv
   ws-headers:
     Host: sh01.fastcloud.club
-- name: Auto28
+- name: Auto36
   type: vmess
   server: gdct.pfgo.xn--kiv15t.cn
   port: 17477
@@ -306,7 +312,7 @@ proxies:
   udp: true
   network: ws
   ws-path: /fly
-- name: Auto29
+- name: Auto37
   type: vmess
   server: zjdx.xiaoxinyun.ink
   port: 11218
@@ -316,7 +322,7 @@ proxies:
   udp: true
   network: tcp
   ws-path: ''
-- name: Auto30
+- name: Auto38
   type: vmess
   server: az.mvzaixian3.com
   port: 443
@@ -329,7 +335,7 @@ proxies:
   ws-path: /das2
   ws-headers:
     Host: az.mvzaixian3.com
-- name: Auto31
+- name: Auto39
   type: vmess
   server: tt4.mybestjj.com
   port: 443
@@ -342,13 +348,14 @@ proxies:
   ws-path: /1654431
   ws-headers:
     Host: us1.mybestjj.com
-- name: Auto32
+- name: Auto40
   type: ss
   server: 85.208.108.60
   port: 3389
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: Auto33
+- &id008
+  name: Auto42
   type: vmess
   server: 172.67.199.34
   port: 443
@@ -361,7 +368,8 @@ proxies:
   ws-path: /v47-unlimitndxd
   ws-headers:
     Host: v47.toddns.tk
-- name: Auto34
+- *id008
+- name: Auto43
   type: vmess
   server: 172.67.199.34
   port: 443
@@ -374,19 +382,19 @@ proxies:
   ws-path: /Falling42gcssgnode
   ws-headers:
     Host: gcssg.sylu.cyou
-- name: Auto35
+- name: Auto44
   type: ss
   server: 666.666.666.666
   port: 66666
   cipher: aes-128-gcm
   password: 0a6c9b63-3a98-4a80-b956-db4a227910d4
-- name: Auto36
+- name: Auto45
   type: ss
   server: 04.123445566.xyz
   port: 15414
   cipher: chacha20-ietf-poly1305
   password: 0fdf984e-0ffd-4bf7-bf6f-0f37d94a4f55
-- name: Auto37
+- name: Auto46
   type: vmess
   server: 51.77.158.169
   port: 2096
@@ -398,7 +406,7 @@ proxies:
   ws-path: /
   ws-headers:
     Host: 51.77.158.169
-- name: Auto38
+- name: Auto47
   type: vmess
   server: 71.132.3.70
   port: 20299
@@ -411,7 +419,8 @@ proxies:
   ws-path: /rd41
   ws-headers:
     Host: oul.bwh088.xyz
-- name: Auto39
+- &id009
+  name: Auto49
   type: vmess
   server: dxbeijing01.baipiaozf.com
   port: 27480
@@ -421,13 +430,14 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto40
+- *id009
+- name: Auto50
   type: ss
   server: iepl.sdm.lol
   port: 25376
   cipher: chacha20-ietf-poly1305
   password: c1dff835-567d-4c7a-992e-318b2b143044
-- name: Auto41
+- name: Auto51
   type: ssr
   server: 45.89.228.102
   port: 32282
@@ -436,7 +446,8 @@ proxies:
   obfs: plain
   protocol: origin
   udp: true
-- name: Auto42
+- &id010
+  name: Auto53
   type: vmess
   server: jp1.czs1000.com
   port: 4144
@@ -447,7 +458,8 @@ proxies:
   network: tcp
   tls: true
   ws-path: ''
-- name: Auto43
+- *id010
+- name: Auto54
   type: vmess
   server: 159.203.18.119
   port: 80
@@ -457,7 +469,7 @@ proxies:
   udp: true
   network: ws
   ws-path: /vmess
-- name: Auto44
+- name: Auto55
   type: ss
   server: 7ufo9x9pcm.kuaiisou.xyz
   port: 12619
@@ -466,7 +478,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto45
+- name: Auto56
   type: vmess
   server: jp-01.legeth.tk
   port: 80
@@ -476,7 +488,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto46
+- name: Auto57
   type: vmess
   server: 172.67.199.34
   port: 443
@@ -489,7 +501,7 @@ proxies:
   ws-path: /
   ws-headers:
     Host: ca2.v2rayserv.com
-- name: Auto47
+- name: Auto58
   type: vmess
   server: ip2.xn--9kqr64b73lh3i5nk.ml
   port: 443
@@ -502,7 +514,8 @@ proxies:
   ws-path: /
   ws-headers:
     Host: us2.xn--94q352ahyl.xyz
-- name: Auto48
+- &id011
+  name: Auto60
   type: ss
   server: 7ufo9x9pcm.kuaiisou.xyz
   port: 12745
@@ -511,7 +524,8 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto49
+- *id011
+- name: Auto61
   type: vmess
   server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com
   port: 30021
@@ -523,7 +537,7 @@ proxies:
   ws-path: /aceamedv
   ws-headers:
     Host: sh01.fastcloud.club
-- name: Auto50
+- name: Auto62
   type: vmess
   server: 190.93.244.2
   port: 443
@@ -536,7 +550,7 @@ proxies:
   ws-path: /ECTCJ0DF
   ws-headers:
     Host: lg1.trump2023.us
-- name: Auto51
+- name: Auto63
   type: vmess
   server: hainan.sfjsq001.info
   port: 33206
@@ -546,7 +560,7 @@ proxies:
   udp: true
   network: tcp
   ws-path: ''
-- name: Auto52
+- name: Auto64
   type: vmess
   server: 1.1.1.1
   port: 80
@@ -556,7 +570,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto53
+- name: Auto65
   type: vmess
   server: yes.iamagoodman.net
   port: 16626
@@ -568,7 +582,7 @@ proxies:
   ws-path: /
   ws-headers:
     Host: yes.iamagoodman.net
-- name: Auto54
+- name: Auto66
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13015
@@ -577,7 +591,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto55
+- name: Auto67
   type: vmess
   server: 172.67.199.34
   port: 2096
@@ -590,7 +604,7 @@ proxies:
   ws-path: /ezN9pvil/
   ws-headers:
     Host: v2ray.wefuckgfw.tk
-- name: Auto56
+- name: Auto68
   type: vmess
   server: hz.tunnls.top
   port: 34125
@@ -603,7 +617,7 @@ proxies:
   ws-path: /chianokokpas
   ws-headers:
     Host: hk.01.qingyun.in
-- name: Auto57
+- name: Auto69
   type: vmess
   server: m.lwvzmdu.cn
   port: 16638
@@ -615,7 +629,7 @@ proxies:
   ws-path: /mjp
   ws-headers:
     Host: pull.free.video.10010.com
-- name: Auto58
+- name: Auto70
   type: vmess
   server: tt4.mybestjj.com
   port: 443
@@ -628,7 +642,7 @@ proxies:
   ws-path: /1654431
   ws-headers:
     Host: us2.mybestjj.com
-- name: Auto59
+- name: Auto71
   type: vmess
   server: 172.67.204.23
   port: 80
@@ -640,7 +654,7 @@ proxies:
   ws-path: /ccpp
   ws-headers:
     Host: ccpp.91pan.one
-- name: Auto60
+- name: Auto72
   type: vmess
   server: cf-lt.sharecentre.online
   port: 443
@@ -653,7 +667,7 @@ proxies:
   ws-path: /shirker
   ws-headers:
     Host: lvryzenkvm1gb.sharecentre.online
-- name: Auto61
+- name: Auto73
   type: ss
   server: 7ufo9x9pcm.kuaiisou.xyz
   port: 12603
@@ -662,7 +676,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto62
+- name: Auto74
   type: ss
   server: 7ufo9x9pcm.kuaiisou.xyz
   port: 12470
@@ -671,7 +685,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto63
+- name: Auto75
   type: vmess
   server: sinash02.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com
   port: 30048
@@ -683,7 +697,7 @@ proxies:
   ws-path: /aceamedv
   ws-headers:
     Host: sh02.fastcloud.club
-- name: Auto64
+- name: Auto76
   type: ss
   server: www.lanzou.com.lanzoujj.xyz
   port: 12413
@@ -692,13 +706,15 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto65
+- &id012
+  name: Auto78
   type: ss
   server: jp1.lianpi.xyz
   port: 52422
   cipher: chacha20-ietf-poly1305
   password: e6fa8efb-9651-4be9-a694-e95b46ef8f4a
-- name: Auto66
+- *id012
+- name: Auto79
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13111
@@ -707,7 +723,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto67
+- name: Auto80
   type: vmess
   server: vjp1.0bad.com
   port: 443
@@ -718,7 +734,7 @@ proxies:
   network: ws
   tls: true
   ws-path: /chat
-- name: Auto68
+- name: Auto81
   type: ss
   server: 7ufo9x9pcm.kuaiisou.xyz
   port: 12617
@@ -727,13 +743,13 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto69
+- name: Auto82
   type: ss
   server: 85.208.108.60
   port: 5004
   cipher: aes-256-gcm
   password: g5MeD6Ft3CWlJId
-- name: Auto70
+- name: Auto83
   type: vmess
   server: A002.baipiaoxd.com
   port: 23297
@@ -743,29 +759,7 @@ proxies:
   udp: true
   network: ws
   ws-path: /fly
-- name: Auto71
-  type: vmess
-  server: v12a.toddns.tk
-  port: 80
-  uuid: a25881f3-967f-3265-bc7f-9e66857b016b
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /nl-unlimitxxx
-  ws-headers:
-    Host: v12a.toddns.tk
-- name: Auto72
-  type: vmess
-  server: A002.baipiaoxd.com
-  port: 23297
-  uuid: c68570c9-4b3b-4448-8370-18da25e010d0
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /fly
-- name: Auto73
+- name: Auto84
   type: vmess
   server: hk80-2.sanfen001.pics
   port: 80
@@ -777,7 +771,7 @@ proxies:
   ws-path: /zh-cn/download
   ws-headers:
     Host: a.189.cn
-- name: Auto74
+- name: Auto85
   type: ss
   server: www.lanzou.com.lanzoujj.xyz
   port: 12326
@@ -786,7 +780,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto75
+- name: Auto86
   type: vmess
   server: gdct.pfgo.xn--kiv15t.cn
   port: 25298
@@ -799,7 +793,7 @@ proxies:
   ws-path: /mfie595
   ws-headers:
     Host: ntyo.bwh088.xyz
-- name: Auto76
+- name: Auto87
   type: vmess
   server: 128.199.71.90
   port: 8080
@@ -810,7 +804,7 @@ proxies:
   network: tcp
   tls: true
   ws-path: ''
-- name: Auto77
+- name: Auto88
   type: ss
   server: www.lanzou.com.lanzoujj.xyz
   port: 13130
@@ -819,16 +813,8 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto78
-  type: ssr
-  server: 14.29.124.168
-  port: 24008
-  cipher: aes-128-cfb
-  password: QazEdcTgb159@$*
-  obfs: plain
-  protocol: origin
-  udp: true
-- name: Auto79
+- &id013
+  name: Auto90
   type: vmess
   server: bjct.pfgo.xn--kiv15t.cn
   port: 29521
@@ -838,7 +824,9 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto80
+- *id013
+- &id014
+  name: Auto92
   type: vmess
   server: cf-lt.sharecentre.online
   port: 443
@@ -851,7 +839,9 @@ proxies:
   ws-path: /shirker
   ws-headers:
     Host: opc-jp.sharecentre.online
-- name: Auto81
+- *id014
+- &id015
+  name: Auto94
   type: vmess
   server: 43.198.73.251
   port: 80
@@ -863,7 +853,8 @@ proxies:
   ws-path: /
   ws-headers:
     Host: 43.198.73.251
-- name: Auto82
+- *id015
+- name: Auto95
   type: vmess
   server: tw7.czs1000.com
   port: 1001
@@ -874,7 +865,7 @@ proxies:
   network: tcp
   tls: true
   ws-path: ''
-- name: Auto83
+- name: Auto96
   type: vmess
   server: v-aws-sel-4.heima-bot.tech
   port: 7772
@@ -884,7 +875,7 @@ proxies:
   udp: true
   network: ws
   ws-path: /m3
-- name: Auto84
+- name: Auto97
   type: vmess
   server: sg001.170203.xyz
   port: 43543
@@ -894,7 +885,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto85
+- name: Auto98
   type: vmess
   server: gdct.pfgo.xn--kiv15t.cn
   port: 31929
@@ -904,19 +895,8 @@ proxies:
   udp: true
   network: ws
   ws-path: /fly
-- name: Auto86
-  type: vmess
-  server: www.digitalocean.com
-  port: 80
-  uuid: 59502b4c-6a17-4f65-a1cc-682f0179cec1
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /api/v3/download.getFile
-  ws-headers:
-    Host: ssrsub.v03.asuka.buzz
-- name: Auto87
+- &id016
+  name: Auto100
   type: vmess
   server: t.cccao.cyou
   port: 23309
@@ -928,7 +908,8 @@ proxies:
   ws-path: /
   ws-headers:
     Host: t.cccao.cyou
-- name: Auto88
+- *id016
+- name: Auto101
   type: vmess
   server: hz.tunnls.top
   port: 53084
@@ -941,7 +922,7 @@ proxies:
   ws-path: /chianokokpas
   ws-headers:
     Host: us.02.qingyun.in
-- name: Auto89
+- name: Auto102
   type: vmess
   server: gdct.pfgo.xn--kiv15t.cn
   port: 49490
@@ -951,7 +932,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto90
+- name: Auto103
   type: vmess
   server: 45.136.244.181
   port: 80
@@ -963,7 +944,7 @@ proxies:
   ws-path: /fr-unlimitxxx
   ws-headers:
     Host: 45.136.244.181
-- name: Auto91
+- name: Auto104
   type: vmess
   server: az.mvzaixian3.com
   port: 443
@@ -976,7 +957,7 @@ proxies:
   ws-path: /das2
   ws-headers:
     Host: az.mvzaixian3.com
-- name: Auto92
+- name: Auto105
   type: vmess
   server: gdct.pfgo.xn--kiv15t.cn
   port: 10212
@@ -986,7 +967,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto93
+- name: Auto106
   type: vmess
   server: tt2.mybestjj.com
   port: 443
@@ -999,7 +980,8 @@ proxies:
   ws-path: /1654431
   ws-headers:
     Host: us2.mybestjj.com
-- name: Auto94
+- &id017
+  name: Auto108
   type: vmess
   server: gcssg.sylu.cyou
   port: 443
@@ -1012,13 +994,14 @@ proxies:
   ws-path: /Falling42gcssgnode
   ws-headers:
     Host: gcssg.sylu.cyou
-- name: Auto95
+- *id017
+- name: Auto109
   type: ss
   server: 13.215.178.204
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: Auto96
+- name: Auto110
   type: vmess
   server: A002.baipiaoxd.com
   port: 51118
@@ -1028,7 +1011,7 @@ proxies:
   udp: true
   network: ws
   ws-path: /fly
-- name: Auto97
+- name: Auto111
   type: vmess
   server: sg9.czs1000.com
   port: 80
@@ -1040,7 +1023,8 @@ proxies:
   ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
   ws-headers:
     Host: tlu.dl.delivery.mp.microsoft.com
-- name: Auto98
+- &id018
+  name: Auto113
   type: vmess
   server: v-aws-tk-1.heima-bot.tech
   port: 7771
@@ -1050,7 +1034,9 @@ proxies:
   udp: true
   network: ws
   ws-path: /m1
-- name: Auto99
+- *id018
+- &id019
+  name: Auto118
   type: ss
   server: www.lanzou.com.lanzoujj.xyz
   port: 12310
@@ -1059,7 +1045,11 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto100
+- *id019
+- *id019
+- *id019
+- *id019
+- name: Auto119
   type: vmess
   server: free.say-her-name.xyz
   port: 443
@@ -1072,23 +1062,13 @@ proxies:
   ws-path: /graphql
   ws-headers:
     Host: free.say-her-name.xyz
-- name: Auto101
+- name: Auto120
   type: ss
   server: ssgz.sdm.lol
   port: 41513
   cipher: chacha20-ietf-poly1305
   password: c1dff835-567d-4c7a-992e-318b2b143044
-- name: Auto102
-  type: vmess
-  server: bjct.pfgo.xn--kiv15t.cn
-  port: 30413
-  uuid: c49bc3ed-4913-48d0-89bb-035f9944bb6a
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: ''
-- name: Auto103
+- name: Auto121
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13000
@@ -1097,7 +1077,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto104
+- name: Auto122
   type: vmess
   server: 34.145.145.76
   port: 443
@@ -1110,13 +1090,13 @@ proxies:
   ws-path: /dongtaiwang.com
   ws-headers:
     Host: clash6.ssr-free.xyz
-- name: Auto105
+- name: Auto123
   type: ss
   server: 85.208.108.60
   port: 6379
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
-- name: Auto106
+- name: Auto124
   type: vmess
   server: zfc.windowsupdate1.com
   port: 443
@@ -1129,32 +1109,22 @@ proxies:
   ws-path: /guolicheng/de?ed=2048
   ws-headers:
     Host: de.guolicheng.cyou
-- name: Auto107
+- &id020
+  name: Auto127
   type: ss
   server: 85.208.108.60
   port: 8090
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
-- name: Auto108
+- *id020
+- *id020
+- name: Auto128
   type: ss
   server: r001.baipiaoxd.com
   port: 19198
   cipher: aes-256-gcm
   password: gKXJa5qK6l
-- name: Auto109
-  type: vmess
-  server: cm.sylu.cyou
-  port: 443
-  uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /Falling42gcorehknode
-  ws-headers:
-    Host: gcorehk.sylu.cyou
-- name: Auto110
+- name: Auto129
   type: vmess
   server: sg-01.legeth.tk
   port: 80
@@ -1164,7 +1134,7 @@ proxies:
   udp: true
   network: ws
   ws-path: ''
-- name: Auto111
+- name: Auto130
   type: ss
   server: www.lanzou.com.lanzoujj.xyz
   port: 12404
@@ -1173,13 +1143,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto112
-  type: ss
-  server: iepl.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.suijiceshi.xyz
-  port: 42839
-  cipher: aes-128-gcm
-  password: eb7ea58d-8d5f-4927-be1a-b1914f6a3100
-- name: Auto113
+- name: Auto131
   type: vmess
   server: 37.143.129.238
   port: 6616
@@ -1191,7 +1155,7 @@ proxies:
   ws-path: /
   ws-headers:
     Host: 37.143.129.238
-- name: Auto114
+- name: Auto132
   type: ss
   server: zxkbwgd2oy.bilibilii.live
   port: 13018
@@ -1200,7 +1164,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto115
+- name: Auto133
   type: vmess
   server: 114389053.skyjsq.space
   port: 8697
@@ -1213,7 +1177,7 @@ proxies:
   ws-path: /ray
   ws-headers:
     Host: 114389053.skyjsq.space
-- name: Auto116
+- name: Auto134
   type: vmess
   server: 88.210.37.46
   port: 19696
@@ -1225,7 +1189,7 @@ proxies:
   tls: true
   ws-headers:
     Host: node.napsternetv.com
-- name: Auto117
+- name: Auto135
   type: vmess
   server: m.lwvzmdu.cn
   port: 16616
@@ -1237,7 +1201,7 @@ proxies:
   ws-path: /
   ws-headers:
     Host: m.lwvzmdu.cn
-- name: Auto118
+- name: Auto136
   type: vmess
   server: 146.190.39.123
   port: 8080
@@ -1248,17 +1212,7 @@ proxies:
   network: tcp
   tls: true
   ws-path: ''
-- name: Auto119
-  type: vmess
-  server: 51.77.158.169
-  port: 2096
-  uuid: c92fd902-b5d3-4208-bb48-630b1c7babea
-  alterId: '0'
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /
-- name: Auto120
+- name: Auto137
   type: ss
   server: www.lanzou.com.lanzoujj.xyz
   port: 12306
@@ -1267,7 +1221,7 @@ proxies:
   plugin-opts:
     mode: http
     host: df04351c809f.microsoft.com
-- name: Auto121
+- name: Auto138
   type: vmess
   server: sinash02.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com
   port: 30008
@@ -1279,7 +1233,7 @@ proxies:
   ws-path: /aceamedv
   ws-headers:
     Host: sh02.fastcloud.club
-- name: Auto122
+- name: Auto139
   type: vmess
   server: 51.77.158.169
   port: 2096
@@ -1297,23 +1251,23 @@ proxy-groups:
   proxies:
   - Auto1
   - Auto2
-  - Auto3
+  - Auto4
   - Auto4
   - Auto5
-  - Auto6
   - Auto7
-  - Auto8
+  - Auto7
+  - Auto9
   - Auto9
   - Auto10
   - Auto11
-  - Auto12
+  - Auto13
   - Auto13
   - Auto14
   - Auto15
-  - Auto16
-  - Auto17
   - Auto18
-  - Auto19
+  - Auto18
+  - Auto18
+  - Auto20
   - Auto20
   - Auto21
   - Auto22
@@ -1322,8 +1276,8 @@ proxy-groups:
   - Auto25
   - Auto26
   - Auto27
-  - Auto28
-  - Auto29
+  - Auto30
+  - Auto30
   - Auto30
   - Auto31
   - Auto32
@@ -1335,25 +1289,25 @@ proxy-groups:
   - Auto38
   - Auto39
   - Auto40
-  - Auto41
+  - Auto42
   - Auto42
   - Auto43
   - Auto44
   - Auto45
   - Auto46
   - Auto47
-  - Auto48
+  - Auto49
   - Auto49
   - Auto50
   - Auto51
-  - Auto52
+  - Auto53
   - Auto53
   - Auto54
   - Auto55
   - Auto56
   - Auto57
   - Auto58
-  - Auto59
+  - Auto60
   - Auto60
   - Auto61
   - Auto62
@@ -1371,7 +1325,7 @@ proxy-groups:
   - Auto74
   - Auto75
   - Auto76
-  - Auto77
+  - Auto78
   - Auto78
   - Auto79
   - Auto80
@@ -1383,17 +1337,17 @@ proxy-groups:
   - Auto86
   - Auto87
   - Auto88
-  - Auto89
   - Auto90
-  - Auto91
+  - Auto90
   - Auto92
-  - Auto93
+  - Auto92
+  - Auto94
   - Auto94
   - Auto95
   - Auto96
   - Auto97
   - Auto98
-  - Auto99
+  - Auto100
   - Auto100
   - Auto101
   - Auto102
@@ -1401,22 +1355,39 @@ proxy-groups:
   - Auto104
   - Auto105
   - Auto106
-  - Auto107
+  - Auto108
   - Auto108
   - Auto109
   - Auto110
   - Auto111
-  - Auto112
   - Auto113
-  - Auto114
-  - Auto115
-  - Auto116
-  - Auto117
+  - Auto113
+  - Auto118
+  - Auto118
+  - Auto118
+  - Auto118
   - Auto118
   - Auto119
   - Auto120
   - Auto121
   - Auto122
+  - Auto123
+  - Auto124
+  - Auto127
+  - Auto127
+  - Auto127
+  - Auto128
+  - Auto129
+  - Auto130
+  - Auto131
+  - Auto132
+  - Auto133
+  - Auto134
+  - Auto135
+  - Auto136
+  - Auto137
+  - Auto138
+  - Auto139
 - name: Domestic
   type: select
   proxies:
@@ -1424,23 +1395,23 @@ proxy-groups:
   - Proxy
   - Auto1
   - Auto2
-  - Auto3
+  - Auto4
   - Auto4
   - Auto5
-  - Auto6
   - Auto7
-  - Auto8
+  - Auto7
+  - Auto9
   - Auto9
   - Auto10
   - Auto11
-  - Auto12
+  - Auto13
   - Auto13
   - Auto14
   - Auto15
-  - Auto16
-  - Auto17
   - Auto18
-  - Auto19
+  - Auto18
+  - Auto18
+  - Auto20
   - Auto20
   - Auto21
   - Auto22
@@ -1449,8 +1420,8 @@ proxy-groups:
   - Auto25
   - Auto26
   - Auto27
-  - Auto28
-  - Auto29
+  - Auto30
+  - Auto30
   - Auto30
   - Auto31
   - Auto32
@@ -1462,25 +1433,25 @@ proxy-groups:
   - Auto38
   - Auto39
   - Auto40
-  - Auto41
+  - Auto42
   - Auto42
   - Auto43
   - Auto44
   - Auto45
   - Auto46
   - Auto47
-  - Auto48
+  - Auto49
   - Auto49
   - Auto50
   - Auto51
-  - Auto52
+  - Auto53
   - Auto53
   - Auto54
   - Auto55
   - Auto56
   - Auto57
   - Auto58
-  - Auto59
+  - Auto60
   - Auto60
   - Auto61
   - Auto62
@@ -1498,7 +1469,7 @@ proxy-groups:
   - Auto74
   - Auto75
   - Auto76
-  - Auto77
+  - Auto78
   - Auto78
   - Auto79
   - Auto80
@@ -1510,17 +1481,17 @@ proxy-groups:
   - Auto86
   - Auto87
   - Auto88
-  - Auto89
   - Auto90
-  - Auto91
+  - Auto90
   - Auto92
-  - Auto93
+  - Auto92
+  - Auto94
   - Auto94
   - Auto95
   - Auto96
   - Auto97
   - Auto98
-  - Auto99
+  - Auto100
   - Auto100
   - Auto101
   - Auto102
@@ -1528,22 +1499,39 @@ proxy-groups:
   - Auto104
   - Auto105
   - Auto106
-  - Auto107
+  - Auto108
   - Auto108
   - Auto109
   - Auto110
   - Auto111
-  - Auto112
   - Auto113
-  - Auto114
-  - Auto115
-  - Auto116
-  - Auto117
+  - Auto113
+  - Auto118
+  - Auto118
+  - Auto118
+  - Auto118
   - Auto118
   - Auto119
   - Auto120
   - Auto121
   - Auto122
+  - Auto123
+  - Auto124
+  - Auto127
+  - Auto127
+  - Auto127
+  - Auto128
+  - Auto129
+  - Auto130
+  - Auto131
+  - Auto132
+  - Auto133
+  - Auto134
+  - Auto135
+  - Auto136
+  - Auto137
+  - Auto138
+  - Auto139
 - name: AsianTV
   type: select
   proxies:
@@ -1551,23 +1539,23 @@ proxy-groups:
   - Proxy
   - Auto1
   - Auto2
-  - Auto3
+  - Auto4
   - Auto4
   - Auto5
-  - Auto6
   - Auto7
-  - Auto8
+  - Auto7
+  - Auto9
   - Auto9
   - Auto10
   - Auto11
-  - Auto12
+  - Auto13
   - Auto13
   - Auto14
   - Auto15
-  - Auto16
-  - Auto17
   - Auto18
-  - Auto19
+  - Auto18
+  - Auto18
+  - Auto20
   - Auto20
   - Auto21
   - Auto22
@@ -1576,8 +1564,8 @@ proxy-groups:
   - Auto25
   - Auto26
   - Auto27
-  - Auto28
-  - Auto29
+  - Auto30
+  - Auto30
   - Auto30
   - Auto31
   - Auto32
@@ -1589,25 +1577,25 @@ proxy-groups:
   - Auto38
   - Auto39
   - Auto40
-  - Auto41
+  - Auto42
   - Auto42
   - Auto43
   - Auto44
   - Auto45
   - Auto46
   - Auto47
-  - Auto48
+  - Auto49
   - Auto49
   - Auto50
   - Auto51
-  - Auto52
+  - Auto53
   - Auto53
   - Auto54
   - Auto55
   - Auto56
   - Auto57
   - Auto58
-  - Auto59
+  - Auto60
   - Auto60
   - Auto61
   - Auto62
@@ -1625,7 +1613,7 @@ proxy-groups:
   - Auto74
   - Auto75
   - Auto76
-  - Auto77
+  - Auto78
   - Auto78
   - Auto79
   - Auto80
@@ -1637,17 +1625,17 @@ proxy-groups:
   - Auto86
   - Auto87
   - Auto88
-  - Auto89
   - Auto90
-  - Auto91
+  - Auto90
   - Auto92
-  - Auto93
+  - Auto92
+  - Auto94
   - Auto94
   - Auto95
   - Auto96
   - Auto97
   - Auto98
-  - Auto99
+  - Auto100
   - Auto100
   - Auto101
   - Auto102
@@ -1655,45 +1643,62 @@ proxy-groups:
   - Auto104
   - Auto105
   - Auto106
-  - Auto107
+  - Auto108
   - Auto108
   - Auto109
   - Auto110
   - Auto111
-  - Auto112
   - Auto113
-  - Auto114
-  - Auto115
-  - Auto116
-  - Auto117
+  - Auto113
+  - Auto118
+  - Auto118
+  - Auto118
+  - Auto118
   - Auto118
   - Auto119
   - Auto120
   - Auto121
   - Auto122
+  - Auto123
+  - Auto124
+  - Auto127
+  - Auto127
+  - Auto127
+  - Auto128
+  - Auto129
+  - Auto130
+  - Auto131
+  - Auto132
+  - Auto133
+  - Auto134
+  - Auto135
+  - Auto136
+  - Auto137
+  - Auto138
+  - Auto139
 - name: GlobalTV
   type: select
   proxies:
   - Proxy
   - Auto1
   - Auto2
-  - Auto3
+  - Auto4
   - Auto4
   - Auto5
-  - Auto6
   - Auto7
-  - Auto8
+  - Auto7
+  - Auto9
   - Auto9
   - Auto10
   - Auto11
-  - Auto12
+  - Auto13
   - Auto13
   - Auto14
   - Auto15
-  - Auto16
-  - Auto17
   - Auto18
-  - Auto19
+  - Auto18
+  - Auto18
+  - Auto20
   - Auto20
   - Auto21
   - Auto22
@@ -1702,8 +1707,8 @@ proxy-groups:
   - Auto25
   - Auto26
   - Auto27
-  - Auto28
-  - Auto29
+  - Auto30
+  - Auto30
   - Auto30
   - Auto31
   - Auto32
@@ -1715,25 +1720,25 @@ proxy-groups:
   - Auto38
   - Auto39
   - Auto40
-  - Auto41
+  - Auto42
   - Auto42
   - Auto43
   - Auto44
   - Auto45
   - Auto46
   - Auto47
-  - Auto48
+  - Auto49
   - Auto49
   - Auto50
   - Auto51
-  - Auto52
+  - Auto53
   - Auto53
   - Auto54
   - Auto55
   - Auto56
   - Auto57
   - Auto58
-  - Auto59
+  - Auto60
   - Auto60
   - Auto61
   - Auto62
@@ -1751,7 +1756,7 @@ proxy-groups:
   - Auto74
   - Auto75
   - Auto76
-  - Auto77
+  - Auto78
   - Auto78
   - Auto79
   - Auto80
@@ -1763,17 +1768,17 @@ proxy-groups:
   - Auto86
   - Auto87
   - Auto88
-  - Auto89
   - Auto90
-  - Auto91
+  - Auto90
   - Auto92
-  - Auto93
+  - Auto92
+  - Auto94
   - Auto94
   - Auto95
   - Auto96
   - Auto97
   - Auto98
-  - Auto99
+  - Auto100
   - Auto100
   - Auto101
   - Auto102
@@ -1781,22 +1786,39 @@ proxy-groups:
   - Auto104
   - Auto105
   - Auto106
-  - Auto107
+  - Auto108
   - Auto108
   - Auto109
   - Auto110
   - Auto111
-  - Auto112
   - Auto113
-  - Auto114
-  - Auto115
-  - Auto116
-  - Auto117
+  - Auto113
+  - Auto118
+  - Auto118
+  - Auto118
+  - Auto118
   - Auto118
   - Auto119
   - Auto120
   - Auto121
   - Auto122
+  - Auto123
+  - Auto124
+  - Auto127
+  - Auto127
+  - Auto127
+  - Auto128
+  - Auto129
+  - Auto130
+  - Auto131
+  - Auto132
+  - Auto133
+  - Auto134
+  - Auto135
+  - Auto136
+  - Auto137
+  - Auto138
+  - Auto139
 - name: Others
   type: select
   proxies:
@@ -1804,23 +1826,23 @@ proxy-groups:
   - DIRECT
   - Auto1
   - Auto2
-  - Auto3
+  - Auto4
   - Auto4
   - Auto5
-  - Auto6
   - Auto7
-  - Auto8
+  - Auto7
+  - Auto9
   - Auto9
   - Auto10
   - Auto11
-  - Auto12
+  - Auto13
   - Auto13
   - Auto14
   - Auto15
-  - Auto16
-  - Auto17
   - Auto18
-  - Auto19
+  - Auto18
+  - Auto18
+  - Auto20
   - Auto20
   - Auto21
   - Auto22
@@ -1829,8 +1851,8 @@ proxy-groups:
   - Auto25
   - Auto26
   - Auto27
-  - Auto28
-  - Auto29
+  - Auto30
+  - Auto30
   - Auto30
   - Auto31
   - Auto32
@@ -1842,25 +1864,25 @@ proxy-groups:
   - Auto38
   - Auto39
   - Auto40
-  - Auto41
+  - Auto42
   - Auto42
   - Auto43
   - Auto44
   - Auto45
   - Auto46
   - Auto47
-  - Auto48
+  - Auto49
   - Auto49
   - Auto50
   - Auto51
-  - Auto52
+  - Auto53
   - Auto53
   - Auto54
   - Auto55
   - Auto56
   - Auto57
   - Auto58
-  - Auto59
+  - Auto60
   - Auto60
   - Auto61
   - Auto62
@@ -1878,7 +1900,7 @@ proxy-groups:
   - Auto74
   - Auto75
   - Auto76
-  - Auto77
+  - Auto78
   - Auto78
   - Auto79
   - Auto80
@@ -1890,17 +1912,17 @@ proxy-groups:
   - Auto86
   - Auto87
   - Auto88
-  - Auto89
   - Auto90
-  - Auto91
+  - Auto90
   - Auto92
-  - Auto93
+  - Auto92
+  - Auto94
   - Auto94
   - Auto95
   - Auto96
   - Auto97
   - Auto98
-  - Auto99
+  - Auto100
   - Auto100
   - Auto101
   - Auto102
@@ -1908,22 +1930,39 @@ proxy-groups:
   - Auto104
   - Auto105
   - Auto106
-  - Auto107
+  - Auto108
   - Auto108
   - Auto109
   - Auto110
   - Auto111
-  - Auto112
   - Auto113
-  - Auto114
-  - Auto115
-  - Auto116
-  - Auto117
+  - Auto113
+  - Auto118
+  - Auto118
+  - Auto118
+  - Auto118
   - Auto118
   - Auto119
   - Auto120
   - Auto121
   - Auto122
+  - Auto123
+  - Auto124
+  - Auto127
+  - Auto127
+  - Auto127
+  - Auto128
+  - Auto129
+  - Auto130
+  - Auto131
+  - Auto132
+  - Auto133
+  - Auto134
+  - Auto135
+  - Auto136
+  - Auto137
+  - Auto138
+  - Auto139
 rules:
 - DOMAIN-SUFFIX,edgedatg.com,GlobalTV
 - DOMAIN-SUFFIX,go.com,GlobalTV
