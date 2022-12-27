@@ -379,10 +379,14 @@ def add_proxies_to_model(data, model):
 def remove_duplicates(lst):
     result = []
     names_l = []
+    i = 1
     for item in lst:
         if 'name' in item and item['name'] not in names_l:
-            result.append(item)
+
             names_l.append(item['name'])
+            item['name'] = f'Auto{i}'
+            result.append(item)
+            i += 1
     return result
 
 
