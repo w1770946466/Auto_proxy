@@ -326,16 +326,30 @@ def get_default_config(url, path):
 
 # 将代理添加到配置文件
 def add_proxies_to_model(data, model):
-    if model.get('proxies') is None:
-        model['proxies'] = data.get('proxy_list')
-    else:
-        model['proxies'].extend(data.get('proxy_list'))
-    for group in model.get('proxy-groups'):
-        if group.get('proxies') is None:
-            group['proxies'] = data.get('proxy_names')
+    if data is None or model is None:
+        raise ValueError('Invalid input: data and model cannot be None')
+    if 'proxy_list' not in data or 'proxy_names' not in data:
+        raise ValueError('Invalid input: data should contain "proxy_list" and "proxy_names" keys')
+
+    try:
+        if model.get('proxies') is None:
+            model['proxies'] = data.get('proxy_list')
         else:
-            group['proxies'].extend(data.get('proxy_names'))
+            model['proxies'].extend(data.get('proxy_list'))
+    except Exception as e:
+        print(f'Error adding proxies to model: {e}')
+
+    try:
+        for group in model.get('proxy-groups'):
+            if group.get('proxies') is None:
+                group['proxies'] = data.get('proxy_names')
+            else:
+                group['proxies'].extend(data.get('proxy_names'))
+    except Exception as e:
+        print(f'Error adding proxy names to groups: {e}')
+
     return model
+
 
 
 # 保存配置文件
