@@ -331,7 +331,7 @@ def get_default_config(url, path):
 # 将代理添加到配置文件
 def add_proxies_to_model(data, model):
     
-    print(data['proxy_list'])
+    #print(data['proxy_list'])
     #print(model)
     if data is None or model is None:
         raise ValueError('Invalid input: data and model cannot be None')
