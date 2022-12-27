@@ -38,7 +38,7 @@ def decode_v2ray_node(nodes):
         proxy_str = base64.b64decode(decode_proxy).decode('utf-8')
         proxy_dict = json.loads(proxy_str)
         proxy_list.append(proxy_dict)
-    print(proxy_list)
+    #print(proxy_list)
     return proxy_list
 
 
@@ -86,7 +86,7 @@ def decode_ss_node(nodes):
             else:
                 continue
         proxy_list.append(info)
-    print(proxy_list)
+    #print(proxy_list)
     return proxy_list
 
 
@@ -187,7 +187,7 @@ def get_proxies(urls):
                 print(f'出错{e}')
                 
     log('共发现:{}个节点'.format(len(proxy_list['proxy_names'])))
-    print(proxy_list)
+    #print(proxy_list)
     return proxy_list
 
 
