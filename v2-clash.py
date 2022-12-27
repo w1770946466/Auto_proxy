@@ -380,7 +380,7 @@ def remove_duplicates(lst):
     result = []
     for item in lst:
         if item not in result:
-            if 'name' in item.keys():
+            if 'name' in item:
                 result.append(item)
 
     return result
