@@ -230,8 +230,8 @@ def v2ray_to_clash(arr):
             try:
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
-            except:
-                print('id获取失败')
+            except Exception as e:
+                log(f'出错{e}')
          #'''
     #print(proxies)
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
@@ -266,8 +266,8 @@ def ss_to_clash(arr):
         try:
             proxies['proxy_list'].append(obj)
             proxies['proxy_names'].append(obj['name'])
-        except:
-            print("ss转换失败！！")
+        except Exception as e:
+            log(f'出错{e})
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
     #print(proxies)
@@ -304,7 +304,7 @@ def ssr_to_clash(arr):
                     proxies['proxy_list'].append(obj)
                     proxies['proxy_names'].append(obj['name'])
         except Exception as e:
-            print(e)
+            log(f'出错{e}')
     log('可用ssr节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
@@ -350,7 +350,7 @@ def add_proxies_to_model(data, model):
         else:
             model['proxies'].extend(data.get('proxy_list'))
     except Exception as e:
-        print(f'Error adding proxies to model: {e}')
+        log(f'Error adding proxies to model: {e}')
 
     try:
         #data['proxy_names'] = list(set(data['proxy_names']))
@@ -362,11 +362,11 @@ def add_proxies_to_model(data, model):
                 names.append(item['name'])
             except TypeError:
                 # 处理 item 不是字典的情况
-                print("Error: item is not a dictionary")
+                log("Error: item is not a dictionary")
             except KeyError:
                 # 处理字典中没有 name 字段的情况
-                print("Error: dictionary does not have a 'name' field")
-        print(names)
+                log("Error: dictionary does not have a 'name' field")
+        #print(names)
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
                 #group['proxies'] = data.get('proxy_names')
@@ -375,7 +375,7 @@ def add_proxies_to_model(data, model):
                 #group['proxies'].extend(data.get('proxy_names'))
                 group['proxies'].extend(names)
     except Exception as e:
-        print(f'Error adding proxy names to groups: {e}')
+        log(f'Error adding proxy names to groups: {e}')
 
     return model
 
