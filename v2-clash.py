@@ -267,7 +267,7 @@ def ss_to_clash(arr):
             proxies['proxy_list'].append(obj)
             proxies['proxy_names'].append(obj['name'])
         except Exception as e:
-            log(f'出错{e})
+            log(f'出错{e}')
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
     #print(proxies)
