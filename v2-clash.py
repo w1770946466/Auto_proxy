@@ -306,7 +306,7 @@ def ss_to_clash(arr):
             log(f'出错{e}')
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
-    #print(proxies)
+    print(proxies)
     return proxies
 
 
