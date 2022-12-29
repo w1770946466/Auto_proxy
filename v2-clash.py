@@ -125,7 +125,7 @@ def decode_trojan_node(nodes):
     for node in nodes:
         info = dict()
         try:
-            parsed_url = urllib.parse.urlparse(node)
+            parsed_url = urllib.parse.urlparse(node.decode())
             #print(parsed_url)
             password = parsed_url.netloc.split("@")[0]
             server = parsed_url.netloc.split("@")[-1].split(":")[0]
