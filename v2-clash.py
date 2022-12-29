@@ -122,28 +122,35 @@ def decode_ssr_node(nodes):
 #解析Trojan节点
 def decode_trojan_node(nodes):
     proxy_list = []
+    info = {}
     for node in nodes:
         info = dict()
         try:
-            node = urllib.parse.unquote(node)
-            parsed_url = urllib.parse.urlparse(node)
-            #print(parsed_url)
-            password = parsed_url.netloc.split("@")[0]
-            server = parsed_url.netloc.split("@")[-1].split(":")[0]
-            prot = parsed_url.netloc.split("@")[-1].split(":")[-1]
-            sni = parsed_url.query.split('&')[-1][4:]
-            name = parsed_url.fragment
-            # netloc='18844%40zxcvbn@os-tr-2.cats22.net:443'
-            #print(f"trojan://{password}@{server}:{prot}?{sni}#{name}")
-            #print(prot)
-            info = {
-                'name': name,
-                'server': server,
-                'prot': int(prot),
-                'type': 'trojan',
-                'password': password,
-                'sni': sni
-            }
+            parsed_url = node.replace('trojan://', '')
+            part_list = re.split('#', parsed_url, maxsplit=1)
+            info.setdefault('name', urllib.parse.unquote(part_list[1]))
+            server_part = part_list[0].replace('trojan://', '')
+            server_part_list = re.split(':|@|\?|&', server_part)
+            info.setdefault('server', server_part_list[1])
+            info.setdefault('port', server_part_list[2])
+            info.setdefault('type', 'trojan')
+            info.setdefault('password', server_part_list[0])
+            server_part_list = server_part_list[3:]
+            for config in server_part_list:
+                if 'sni=' in config:
+                    info.setdefault('sni', config[4:])
+                elif 'allowInsecure=' in config or 'tls=' in config:
+                    if config[-1] == 0:
+                        info.setdefault('tls', False)
+                elif 'type=' in config:
+                    if config[5:] != 'tcp':
+                        info.setdefault('network', config[5:])
+                elif 'path=' in config:
+                    info.setdefault('ws-path', config[5:])
+                elif 'security=' in config:
+                    if config[9:] != 'tls':
+                        info.setdefault('tls', False)
+            info.setdefault('skip-cert-verify', True)
             proxy_list.append(info)
         except Exception as e:
             print(f"解析trojan出错{e}")
@@ -262,7 +269,7 @@ def v2ray_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         #'''
-        if obj.get('alterId') and obj.get('prot'):
+        if obj.get('alterId') is not None:
             try:
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
@@ -272,7 +279,6 @@ def v2ray_to_clash(arr):
     #print(proxies)
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
-
 
 # ss转换成Clash节点
 def ss_to_clash(arr):
@@ -300,18 +306,14 @@ def ss_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         try:
-            if obj.get('prot'):
-                proxies['proxy_list'].append(obj)
-                proxies['proxy_names'].append(obj['name'])
-            else:
-                print("端口出错")
+            proxies['proxy_list'].append(obj)
+            proxies['proxy_names'].append(obj['name'])
         except Exception as e:
             log(f'出错{e}')
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
-    #print(proxies)
+    print(proxies)
     return proxies
-
 
 # ssr转换成Clash节点
 def ssr_to_clash(arr):
@@ -340,12 +342,9 @@ def ssr_to_clash(arr):
                     del obj[key]
             if obj.get('name'):
                 if not obj['name'].startswith('剩余流量') and not obj['name'].startswith('过期时间'):
-                    if obj['cipher'] == 'aes-128-gcm' | obj['cipher'] == 'aes-192-gcm' | obj['cipher'] == 'aes-256-gcm' | obj['cipher'] == 'aes-128-cfb'| obj['cipher'] == 'aes-192-cfb' | obj['cipher'] == 'aes-256-cfb' | obj['cipher'] == 'aes-128-ctr' | obj['cipher'] == 'aes-192-ctr' | obj['cipher'] == 'aes-256-ctr'| obj['cipher'] == 'rc4-md5' | obj['cipher'] == 'chacha20'| obj['cipher'] == 'chacha20-ietf' | obj['cipher'] == 'xchacha20' | obj['cipher'] == 'chacha20-ietf-poly1305' | obj['cipher'] == 'xchacha20-ietf-poly1305' | obj['cipher'] == 'plain'| obj['cipher'] == 'http_simple' | obj['cipher'] == 'auth_sha1_v4' | obj['cipher'] == 'auth_aes128_md5' | obj['cipher'] == 'auth_aes128_sha1'| obj['cipher'] == 'auth_chain_a auth_chain_b':
-                        if obj.get('prot'):
-                            proxies['proxy_list'].append(obj)
-                            proxies['proxy_names'].append(obj['name'])
-                        else:
-                            print("端口出错")
+                    if obj['cipher'] == 'aes-128-gcm' | obj['cipher'] == 'aes-192-gcm' | obj['cipher'] == 'aes-256-gcm' | obj['cipher'] == 'aes-128-cfb' | obj['cipher'] == 'aes-192-cfb' | obj['cipher'] == 'aes-256-cfb' | obj['cipher'] == 'aes-128-ctr' | obj['cipher'] == 'aes-192-ctr' | obj['cipher'] == 'aes-256-ctr' | obj['cipher'] == 'rc4-md5' | obj['cipher'] == 'chacha20' | obj['cipher'] == 'chacha20-ietf' | obj['cipher'] == 'xchacha20' | obj['cipher'] == 'chacha20-ietf-poly1305' | obj['cipher'] == 'xchacha20-ietf-poly1305' | obj['cipher'] == 'plain' | obj['cipher'] == 'http_simple' | obj['cipher'] == 'auth_sha1_v4' | obj['cipher'] == 'auth_aes128_md5' | obj['cipher'] == 'auth_aes128_sha1' | obj['cipher'] == 'auth_chain_a auth_chain_b':
+                        proxies['proxy_list'].append(obj)
+                        proxies['proxy_names'].append(obj['name'])
                     else:
                         log("不支持的ssr协议")
         except Exception as e:
@@ -362,11 +361,8 @@ def trojan_to_clash(arr):
     }
     for item in arr:
         try:
-            if item.get('prot'):
-                proxies['proxy_list'].append(item)
-                proxies['proxy_names'].append(item['name'])
-            else:
-                print("端口出错")
+            proxies['proxy_list'].append(item)
+            proxies['proxy_names'].append(item['name'])
         except Exception as e:
             print(f'出错{e}')
             pass
