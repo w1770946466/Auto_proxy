@@ -126,9 +126,10 @@ def decode_trojan_node(nodes):
     for node in nodes:
         info = dict()
         try:
+            node = urllib.parse.unquote(node)
             parsed_url = node.replace('trojan://', '')
             part_list = re.split('#', parsed_url, maxsplit=1)
-            info.setdefault('name', urllib.parse.unquote(part_list[1]))
+            info.setdefault('name', part_list[1])
             server_part = part_list[0].replace('trojan://', '')
             server_part_list = re.split(':|@|\?|&', server_part)
             info.setdefault('server', server_part_list[1])
