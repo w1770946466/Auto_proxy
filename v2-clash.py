@@ -30,15 +30,55 @@ def safe_decode(s):
 # 解析vmess节点
 def decode_v2ray_node(nodes):
     proxy_list = []
-    for node in nodes:
-        decode_proxy = node.decode('utf-8')[8:]
-        if not decode_proxy or decode_proxy.isspace():
-            log('vmess节点信息为空，跳过该节点')
-            continue
-        proxy_str = base64.b64decode(decode_proxy).decode('utf-8')
-        proxy_dict = json.loads(proxy_str)
-        proxy_list.append(proxy_dict)
-    #print(proxy_list)
+    for line in nodes:
+        try:
+            vmess_json_config = json.loads(base64.b64decode(line.replace('vmess://', '')))
+            vmess_default_config = {
+                'v': 'Vmess Node', 'ps': 'Vmess Node', 'add': '0.0.0.0', 'port': 0, 'id': '',
+                'aid': 0, 'scy': 'auto', 'net': '', 'type': '', 'host': '', 'path': '/', 'tls': ''
+            }
+            vmess_default_config.update(vmess_json_config)
+            vmess_config = vmess_default_config
+            info = {}
+            #yaml_config_str = ['name', 'server', 'port', 'type', 'uuid', 'alterId', 'cipher', 'tls', 'skip-cert-verify', 'network', 'ws-path', 'ws-headers']
+            #vmess_config_str = ['ps', 'add', 'port', 'id', 'aid', 'scy', 'tls', 'net', 'host', 'path']
+            # 生成 yaml 节点字典
+            if vmess_config['id'] == '' or vmess_config['id'] is None:
+                print('节点格式错误')
+            else:
+                info.setdefault('name', urllib.parse.unquote(str(vmess_config['ps'])))
+                info.setdefault('server', vmess_config['add'])
+                info.setdefault('port', int(vmess_config['port']))
+                info.setdefault('type', 'vmess')
+                info.setdefault('uuid', vmess_config['id'])
+                info.setdefault('alterId', int(vmess_config['aid']))
+                info.setdefault('cipher', vmess_config['scy'])
+                info.setdefault('skip-cert-verify', True)
+                if vmess_config['net'] == '' or vmess_config['net'] is False or vmess_config['net'] is None:
+                    info.setdefault('network', 'tcp')
+                else:
+                    info.setdefault('network', vmess_config['net'])
+                if vmess_config['tls'] == 'tls' or vmess_config['net'] == 'h2' or vmess_config['net'] == 'grpc':
+                    info.setdefault('tls', True)
+
+                info.setdefault('ws-opts', {})
+                if vmess_config['path'] == '' or vmess_config['path'] is False or vmess_config['path'] is None:
+                    # yaml_url['ws-opts'].setdefault('path', '/')
+                    pass
+                else:
+                    info['ws-opts'].setdefault(
+                        'path', vmess_config['path'])
+                if vmess_config['host'] == '':
+                    pass
+                    # yaml_url['ws-opts'].setdefault(
+                    #     'headers', {'Host': vmess_config['add']})
+                else:
+                    info['ws-opts'].setdefault(
+                        'headers', {'Host': vmess_config['host']})
+            proxy_list.append(info)
+        except Exception as err:
+            print(f'yaml_encode 解析 vmess 节点发生错误: {err}')
+            pass
     return proxy_list
 
 
@@ -355,9 +395,9 @@ def trojan_to_clash(arr):
             proxies['proxy_list'].append(item)
             proxies['proxy_names'].append(item['name'])
         except Exception as e:
-            print(f'出错{e}')
+            log(f'出错{e}')
             pass
-    print('可用trojan节点{}个'.format(len(proxies['proxy_names'])))
+    log('可用trojan节点{}个'.format(len(proxies['proxy_names'])))
     #print(proxies)
     return proxies
 
