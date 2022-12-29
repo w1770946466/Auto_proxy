@@ -314,7 +314,7 @@ def ss_to_clash(arr):
             log(f'出错{e}')
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
-    print(proxies)
+    #print(proxies)
     return proxies
 
 # ssr转换成Clash节点
@@ -356,13 +356,13 @@ def ssr_to_clash(arr):
 
 #将Trojan节点转clash
 def trojan_to_clash(arr):
-    print('trojan节点转换中...')
+    log('trojan节点转换中...')
     proxies = {
         'proxy_list': [],
         'proxy_names': []
     }
     for item in arr:
-        try:
+        try:log
             proxies['proxy_list'].append(item)
             proxies['proxy_names'].append(item['name'])
         except Exception as e:
