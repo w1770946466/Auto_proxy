@@ -137,7 +137,7 @@ def decode_trojan_node(nodes):
             info = {
                 'name': name,
                 'server': server,
-                'prot': prot,
+                'prot': int(prot),
                 'type': 'trojan',
                 'password': password,
                 'sni': sni
