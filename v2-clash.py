@@ -119,6 +119,32 @@ def decode_ssr_node(nodes):
         proxy_list.append(info)
     return proxy_list
 
+#解析Trojan节点
+def decode_trojan_node(nodes):
+    proxy_list = []
+    for node in nodes:
+        info = dict()
+        try:
+            parsed_url = urllib.parse.urlparse(node)
+            #print(parsed_url)
+            password = parsed_url.netloc.split("@")[0]
+            server = parsed_url.netloc.split("@")[-1].split(":")[0]
+            prot = parsed_url.netloc.split("@")[-1].split(":")[-1]
+            sni = parsed_url.query.split('&')[-1][4:]
+            name = parsed_url.fragment
+            # netloc='18844%40zxcvbn@os-tr-2.cats22.net:443'
+            #print(f"trojan://{password}@{server}:{prot}?{sni}#{name}")
+            info['name'] = name
+            info['server'] = server
+            info['prot'] = prot
+            info['type'] = 'trojan'
+            info['password'] = password
+            info['sni'] = sni
+            proxy_list.append(info)
+        except Exception as e:
+            print(f"解析trojan出错{e}")
+    #print(proxy_list)
+    return proxy_list
 
 # 获取订阅地址数据:
 def get_proxies(urls):
@@ -173,6 +199,7 @@ def get_proxies(urls):
                 if node.startswith(b'vmess://'):
                     decode_proxy = decode_v2ray_node([node])
                     clash_node = v2ray_to_clash(decode_proxy)
+                    
                 elif node.startswith(b'ss://'):
                     decode_proxy = decode_ss_node([node])
                     clash_node = ss_to_clash(decode_proxy)
@@ -181,8 +208,13 @@ def get_proxies(urls):
                     decode_proxy = decode_ssr_node([node])
                     clash_node = ssr_to_clash(decode_proxy)
                 
+                elif node.startswith(b'trojan://'):
+                    decode_proxy = decode_trojan_node([node])
+                    clash_node = trojan_to_clash(decode_proxy)
+                    
                 else:
                     pass
+                
                 proxy_list['proxy_list'].extend(clash_node['proxy_list'])
                 proxy_list['proxy_names'].extend(clash_node['proxy_names'])
             except Exception as e:
@@ -311,6 +343,23 @@ def ssr_to_clash(arr):
     log('可用ssr节点{}个'.format(len(proxies['proxy_names'])))
     return proxies
 
+#将Trojan节点转clash
+def trojan_to_clash(arr):
+    print('trojan节点转换中...')
+    proxies = {
+        'proxy_list': [],
+        'proxy_names': []
+    }
+    for item in arr:
+        try:
+            proxies['proxy_list'].append(item)
+            proxies['proxy_names'].append(item['name'])
+        except Exception as e:
+            print(f'出错{e}')
+            pass
+    print('可用trojan节点{}个'.format(len(proxies['proxy_names'])))
+    print(proxies)
+    return proxies
 
 # 获取本地规则策略的配置文件
 def load_local_config(path):
