@@ -305,7 +305,7 @@ def v2ray_to_clash(arr):
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
             except Exception as e:
-                log(f'出错{e}')
+                log(f'V2ray出错{e}')
          #'''
     #print(proxies)
     log('可用v2ray节点{}个'.format(len(proxies['proxy_names'])))
