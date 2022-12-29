@@ -44,50 +44,38 @@ def decode_v2ray_node(nodes):
 
 # 解析ss节点
 def decode_ss_node(nodes):
-    proxy_list = []
-    for node in nodes:
-        decode_proxy = node.decode('utf-8')[5:]
-        if not decode_proxy or decode_proxy.isspace():
-            log('ss节点信息为空，跳过该节点')
-            continue
-        info = dict()
-        param = decode_proxy
-        if param.find('#') > -1:
-            remark = urllib.parse.unquote(param[param.find('#') + 1:])
-            info['name'] = remark
-            param = param[:param.find('#')]
-        if param.find('/?') > -1:
-            plugin = urllib.parse.unquote(param[param.find('/?') + 2:])
-            param = param[:param.find('/?')]
-            for p in plugin.split(';'):
-                key_value = p.split('=')
-                info[key_value[0]] = key_value[1]
-        if param.find('@') > -1:
-            matcher = re.match(r'(.*?)@(.*):(.*)', param)
-            if matcher:
-                param = matcher.group(1)
-                info['server'] = matcher.group(2)
-                info['port'] = matcher.group(3)
-            else:
-                continue
-            matcher = re.match(r'(.*?):(.*)', safe_decode(param).decode('utf-8'))
-            if matcher:
-                info['method'] = matcher.group(1)
-                info['password'] = matcher.group(2)
-            else:
-                continue
-        else:
-            matcher = re.match(r'(.*?):(.*)@(.*):(.*)', safe_decode(param).decode('utf-8'))
-            if matcher:
-                info['method'] = matcher.group(1)
-                info['password'] = matcher.group(2)
-                info['server'] = matcher.group(3)
-                info['port'] = matcher.group(4)
-            else:
-                continue
-        proxy_list.append(info)
-    #print(proxy_list)
-    return proxy_list
+	proxy_list = []
+	for line in nodes:
+		info = dict()
+		if '#' not in line:
+			line = line + '#SS%20Node'
+		try:
+			ss_content = line.replace('ss://', '')
+			 # https://www.runoob.com/python/att-string-split.html
+			part_list = ss_content.split('#', 1)
+			info.setdefault('name', urllib.parse.unquote(part_list[1]))
+			if '@' in part_list[0]:
+				mix_part = part_list[0].split('@', 1)
+				method_part = base64.b64decode(mix_part[0]).decode('utf-8')
+				server_part = f'{method_part}@{mix_part[1]}'
+			else:
+				server_part = base64.b64decode(part_list[0])
+			server_part_list = server_part.split(':', 1)
+			method_part = server_part_list[0]
+			server_part_list = server_part_list[1].rsplit('@', 1)
+			password_part = server_part_list[0]
+			server_part_list = server_part_list[1].split(':', 1)
+			info.setdefault('server', server_part_list[0])
+			info.setdefault('port', server_part_list[1])
+			info.setdefault('type', 'ss')
+			info.setdefault('cipher', method_part)
+			info.setdefault('password', password_part)
+			proxy_list.append(info)
+		except Exception as err:
+			print(f'解析 ss 节点发生错误: {err}')
+			pass
+	#print(proxy_list)
+	return proxy_list
 
 
 # 解析ssr节点
