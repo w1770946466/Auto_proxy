@@ -134,12 +134,12 @@ def decode_trojan_node(nodes):
             name = parsed_url.fragment
             # netloc='18844%40zxcvbn@os-tr-2.cats22.net:443'
             #print(f"trojan://{password}@{server}:{prot}?{sni}#{name}")
-            info['name'] = name
-            info['server'] = server
-            info['prot'] = prot
-            info['type'] = 'trojan'
-            info['password'] = password
-            info['sni'] = sni
+            info['name'] = name.encode(encoding='utf_8', errors='strict')
+            info['server'] = server.encode(encoding='utf_8', errors='strict')
+            info['prot'] = prot.encode(encoding='utf_8', errors='strict')
+            info['type'] = 'trojan'.encode(encoding='utf_8', errors='strict')
+            info['password'] = password.encode(encoding='utf_8', errors='strict')
+            info['sni'] = sni.encode(encoding='utf_8', errors='strict')
             proxy_list.append(info)
         except Exception as e:
             print(f"解析trojan出错{e}")
