@@ -135,6 +135,7 @@ def decode_trojan_node(nodes):
             name = parsed_url.fragment
             # netloc='18844%40zxcvbn@os-tr-2.cats22.net:443'
             #print(f"trojan://{password}@{server}:{prot}?{sni}#{name}")
+            print(prot)
             info = {
                 'name': name,
                 'server': server,
@@ -146,7 +147,7 @@ def decode_trojan_node(nodes):
             proxy_list.append(info)
         except Exception as e:
             print(f"解析trojan出错{e}")
-    #print(proxy_list)
+    print(proxy_list)
     return proxy_list
 
 # 获取订阅地址数据:
