@@ -261,7 +261,7 @@ def v2ray_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         #'''
-        if obj.get('alterId') is not None and obj.get('prot') is not None:
+        if obj.get('alterId') and obj.get('prot'):
             try:
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
@@ -299,7 +299,7 @@ def ss_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         try:
-            if obj.get('prot') is not None:
+            if obj.get('prot'):
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
             else:
@@ -340,7 +340,7 @@ def ssr_to_clash(arr):
             if obj.get('name'):
                 if not obj['name'].startswith('剩余流量') and not obj['name'].startswith('过期时间'):
                     if obj['cipher'] == 'aes-128-gcm' | obj['cipher'] == 'aes-192-gcm' | obj['cipher'] == 'aes-256-gcm' | obj['cipher'] == 'aes-128-cfb'| obj['cipher'] == 'aes-192-cfb' | obj['cipher'] == 'aes-256-cfb' | obj['cipher'] == 'aes-128-ctr' | obj['cipher'] == 'aes-192-ctr' | obj['cipher'] == 'aes-256-ctr'| obj['cipher'] == 'rc4-md5' | obj['cipher'] == 'chacha20'| obj['cipher'] == 'chacha20-ietf' | obj['cipher'] == 'xchacha20' | obj['cipher'] == 'chacha20-ietf-poly1305' | obj['cipher'] == 'xchacha20-ietf-poly1305' | obj['cipher'] == 'plain'| obj['cipher'] == 'http_simple' | obj['cipher'] == 'auth_sha1_v4' | obj['cipher'] == 'auth_aes128_md5' | obj['cipher'] == 'auth_aes128_sha1'| obj['cipher'] == 'auth_chain_a auth_chain_b':
-                        if obj.get('prot') is not None:
+                        if obj.get('prot'):
                             proxies['proxy_list'].append(obj)
                             proxies['proxy_names'].append(obj['name'])
                         else:
@@ -361,7 +361,7 @@ def trojan_to_clash(arr):
     }
     for item in arr:
         try:
-            if item.get('prot') is not None:
+            if item.get('prot'):
                 proxies['proxy_list'].append(item)
                 proxies['proxy_names'].append(item['name'])
             else:
