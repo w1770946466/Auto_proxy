@@ -362,7 +362,7 @@ def trojan_to_clash(arr):
         'proxy_names': []
     }
     for item in arr:
-        try:log
+        try:
             proxies['proxy_list'].append(item)
             proxies['proxy_names'].append(item['name'])
         except Exception as e:
