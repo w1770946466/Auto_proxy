@@ -37,7 +37,7 @@ def decode_v2ray_node(nodes):
             continue
         proxy_str = base64.b64decode(decode_proxy).decode('utf-8')
         proxy_dict = json.loads(proxy_str)
-       
+        proxy_list.append(proxy_dict)
     #print(proxy_list)
     return proxy_list
 
@@ -85,7 +85,7 @@ def decode_ss_node(nodes):
                 info['port'] = matcher.group(4)
             else:
                 continue
-        
+        proxy_list.append(info)
     #print(proxy_list)
     return proxy_list
 
@@ -116,6 +116,7 @@ def decode_ssr_node(nodes):
         for p in params:
             key_value = p.split('=')
             info[key_value[0]] = safe_decode(key_value[1]).decode('utf-8')
+        proxy_list.append(info)
     return proxy_list
 
 #解析Trojan节点
@@ -143,7 +144,7 @@ def decode_trojan_node(nodes):
                 'password': password,
                 'sni': sni
             }
-            
+            proxy_list.append(info)
         except Exception as e:
             print(f"解析trojan出错{e}")
     #print(proxy_list)
