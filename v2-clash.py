@@ -216,9 +216,9 @@ def get_proxies(urls):
                     decode_proxy = decode_ssr_node([node])
                     clash_node = ssr_to_clash(decode_proxy)
                 
-                elif node.startswith(b'trojan://'):
-                    decode_proxy = decode_trojan_node([node])
-                    clash_node = trojan_to_clash(decode_proxy)
+                #elif node.startswith(b'trojan://'):
+                    #decode_proxy = decode_trojan_node([node])
+                    #clash_node = trojan_to_clash(decode_proxy)
                     
                 else:
                     pass
