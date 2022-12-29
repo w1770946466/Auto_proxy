@@ -151,7 +151,7 @@ def decode_trojan_node(nodes):
             
         except Exception as e:
             print(f"解析trojan出错{e}")
-    print(proxy_list)
+    #print(proxy_list)
     return proxy_list
 
 # 获取订阅地址数据:
@@ -310,7 +310,7 @@ def ss_to_clash(arr):
             log(f'出错{e}')
             pass
     log('可用ss节点{}个'.format(len(proxies['proxy_names'])))
-    print(proxies)
+    #print(proxies)
     return proxies
 
 
