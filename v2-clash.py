@@ -30,92 +30,63 @@ def safe_decode(s):
 # 解析vmess节点
 def decode_v2ray_node(nodes):
     proxy_list = []
-    for line in nodes:
-        try:
-            vmess_json_config = json.loads(base64.b64decode(line.replace('vmess://', '')))
-            vmess_default_config = {
-                'v': 'Vmess Node', 'ps': 'Vmess Node', 'add': '0.0.0.0', 'port': 0, 'id': '',
-                'aid': 0, 'scy': 'auto', 'net': '', 'type': '', 'host': '', 'path': '/', 'tls': ''
-            }
-            vmess_default_config.update(vmess_json_config)
-            vmess_config = vmess_default_config
-            info = {}
-            #yaml_config_str = ['name', 'server', 'port', 'type', 'uuid', 'alterId', 'cipher', 'tls', 'skip-cert-verify', 'network', 'ws-path', 'ws-headers']
-            #vmess_config_str = ['ps', 'add', 'port', 'id', 'aid', 'scy', 'tls', 'net', 'host', 'path']
-            # 生成 yaml 节点字典
-            if vmess_config['id'] == '' or vmess_config['id'] is None:
-                print('节点格式错误')
-            else:
-                info.setdefault('name', urllib.parse.unquote(str(vmess_config['ps'])))
-                info.setdefault('server', vmess_config['add'])
-                info.setdefault('port', int(vmess_config['port']))
-                info.setdefault('type', 'vmess')
-                info.setdefault('uuid', vmess_config['id'])
-                info.setdefault('alterId', int(vmess_config['aid']))
-                info.setdefault('cipher', vmess_config['scy'])
-                info.setdefault('skip-cert-verify', True)
-                if vmess_config['net'] == '' or vmess_config['net'] is False or vmess_config['net'] is None:
-                    info.setdefault('network', 'tcp')
-                else:
-                    info.setdefault('network', vmess_config['net'])
-                if vmess_config['tls'] == 'tls' or vmess_config['net'] == 'h2' or vmess_config['net'] == 'grpc':
-                    info.setdefault('tls', True)
-
-                info.setdefault('ws-opts', {})
-                if vmess_config['path'] == '' or vmess_config['path'] is False or vmess_config['path'] is None:
-                    # yaml_url['ws-opts'].setdefault('path', '/')
-                    pass
-                else:
-                    info['ws-opts'].setdefault(
-                        'path', vmess_config['path'])
-                if vmess_config['host'] == '':
-                    pass
-                    # yaml_url['ws-opts'].setdefault(
-                    #     'headers', {'Host': vmess_config['add']})
-                else:
-                    info['ws-opts'].setdefault(
-                        'headers', {'Host': vmess_config['host']})
-            proxy_list.append(info)
-        except Exception as err:
-            print(f'yaml_encode 解析 vmess 节点发生错误: {err}')
-            pass
+    for node in nodes:
+        decode_proxy = node.decode('utf-8')[8:]
+        if not decode_proxy or decode_proxy.isspace():
+            log('vmess节点信息为空，跳过该节点')
+            continue
+        proxy_str = base64.b64decode(decode_proxy).decode('utf-8')
+        proxy_dict = json.loads(proxy_str)
+        proxy_list.append(proxy_dict)
+    #print(proxy_list)
     return proxy_list
-
 
 # 解析ss节点
 def decode_ss_node(nodes):
     proxy_list = []
-    i = 1
-    for line in nodes:
+    for node in nodes:
+        decode_proxy = node.decode('utf-8')[5:]
+        if not decode_proxy or decode_proxy.isspace():
+            log('ss节点信息为空，跳过该节点')
+            continue
         info = dict()
-        if '#' not in line:
-            line = line + f'#SS%20Node{i}'
-            i += 1
-        try:
-            ss_content = line.replace('ss://', '')
-            # https://www.runoob.com/python/att-string-split.html
-            part_list = ss_content.split('#', 1)
-            info.setdefault('name', urllib.parse.unquote(part_list[1]))
-            if '@' in part_list[0]:
-                mix_part = part_list[0].split('@', 1)
-                method_part = base64.b64decode(mix_part[0]).decode('utf-8')
-                server_part = f'{method_part}@{mix_part[1]}'
+        param = decode_proxy
+        if param.find('#') > -1:
+            remark = urllib.parse.unquote(param[param.find('#') + 1:])
+            info['name'] = remark
+            param = param[:param.find('#')]
+        if param.find('/?') > -1:
+            plugin = urllib.parse.unquote(param[param.find('/?') + 2:])
+            param = param[:param.find('/?')]
+            for p in plugin.split(';'):
+                key_value = p.split('=')
+                info[key_value[0]] = key_value[1]
+        if param.find('@') > -1:
+            matcher = re.match(r'(.*?)@(.*):(.*)', param)
+            if matcher:
+                param = matcher.group(1)
+                info['server'] = matcher.group(2)
+                info['port'] = matcher.group(3)
             else:
-                server_part = base64.b64decode(part_list[0])
-                server_part_list = server_part.split(':', 1)
-            method_part = server_part_list[0]
-            server_part_list = server_part_list[1].rsplit('@', 1)
-            password_part = server_part_list[0]
-            server_part_list = server_part_list[1].split(':', 1)
-            info.setdefault('server', server_part_list[0])
-            info.setdefault('port', server_part_list[1])
-            info.setdefault('type', 'ss')
-            info.setdefault('cipher', method_part)
-            info.setdefault('password', password_part)
-            proxy_list.append(info)
-        except Exception as err:
-            print(f'解析 ss 节点发生错误: {err}')
-            pass
+                continue
+            matcher = re.match(
+                r'(.*?):(.*)', safe_decode(param).decode('utf-8'))
+            if matcher:
+                info['method'] = matcher.group(1)
+                info['password'] = matcher.group(2)
+            else:
+                continue
+        else:
+            matcher = re.match(r'(.*?):(.*)@(.*):(.*)',
+                               safe_decode(param).decode('utf-8'))
+            if matcher:
+                info['method'] = matcher.group(1)
+                info['password'] = matcher.group(2)
+                info['server'] = matcher.group(3)
+                info['port'] = matcher.group(4)
+            else:
+                continue
+        proxy_list.append(info)
     #print(proxy_list)
     return proxy_list
 
