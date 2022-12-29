@@ -360,7 +360,7 @@ def trojan_to_clash(arr):
             print(f'出错{e}')
             pass
     print('可用trojan节点{}个'.format(len(proxies['proxy_names'])))
-    print(proxies)
+    #print(proxies)
     return proxies
 
 # 获取本地规则策略的配置文件
