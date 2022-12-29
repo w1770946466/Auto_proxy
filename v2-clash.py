@@ -44,38 +44,40 @@ def decode_v2ray_node(nodes):
 
 # 解析ss节点
 def decode_ss_node(nodes):
-	proxy_list = []
-	for line in nodes:
-		info = dict()
-		if '#' not in line:
-			line = line + '#SS%20Node'
-		try:
-			ss_content = line.replace('ss://', '')
-			 # https://www.runoob.com/python/att-string-split.html
-			part_list = ss_content.split('#', 1)
-			info.setdefault('name', urllib.parse.unquote(part_list[1]))
-			if '@' in part_list[0]:
-				mix_part = part_list[0].split('@', 1)
-				method_part = base64.b64decode(mix_part[0]).decode('utf-8')
-				server_part = f'{method_part}@{mix_part[1]}'
-			else:
-				server_part = base64.b64decode(part_list[0])
-			server_part_list = server_part.split(':', 1)
-			method_part = server_part_list[0]
-			server_part_list = server_part_list[1].rsplit('@', 1)
-			password_part = server_part_list[0]
-			server_part_list = server_part_list[1].split(':', 1)
-			info.setdefault('server', server_part_list[0])
-			info.setdefault('port', server_part_list[1])
-			info.setdefault('type', 'ss')
-			info.setdefault('cipher', method_part)
-			info.setdefault('password', password_part)
-			proxy_list.append(info)
-		except Exception as err:
-			print(f'解析 ss 节点发生错误: {err}')
-			pass
-	#print(proxy_list)
-	return proxy_list
+    proxy_list = []
+    i = 1
+    for line in nodes:
+        info = dict()
+        if '#' not in line:
+            line = line + '#SS%20Node{i}'
+	    i += 1
+        try:
+            ss_content = line.replace('ss://', '')
+            # https://www.runoob.com/python/att-string-split.html
+            part_list = ss_content.split('#', 1)
+            info.setdefault('name', urllib.parse.unquote(part_list[1]))
+            if '@' in part_list[0]:
+                mix_part = part_list[0].split('@', 1)
+                method_part = base64.b64decode(mix_part[0]).decode('utf-8')
+                server_part = f'{method_part}@{mix_part[1]}'
+            else:
+                server_part = base64.b64decode(part_list[0])
+                server_part_list = server_part.split(':', 1)
+            method_part = server_part_list[0]
+            server_part_list = server_part_list[1].rsplit('@', 1)
+            password_part = server_part_list[0]
+            server_part_list = server_part_list[1].split(':', 1)
+            info.setdefault('server', server_part_list[0])
+            info.setdefault('port', server_part_list[1])
+            info.setdefault('type', 'ss')
+            info.setdefault('cipher', method_part)
+            info.setdefault('password', password_part)
+            proxy_list.append(info)
+        except Exception as err:
+            print(f'解析 ss 节点发生错误: {err}')
+            pass
+    #print(proxy_list)
+    return proxy_list
 
 
 # 解析ssr节点
