@@ -133,7 +133,7 @@ def decode_trojan_node(nodes):
             server_part = part_list[0].replace('trojan://', '')
             server_part_list = re.split(':|@|\?|&', server_part)
             info.setdefault('server', server_part_list[1])
-            info.setdefault('port', server_part_list[2])
+            info.setdefault('port', int(server_part_list[2]))
             info.setdefault('type', 'trojan')
             info.setdefault('password', server_part_list[0])
             server_part_list = server_part_list[3:]
