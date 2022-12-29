@@ -50,7 +50,7 @@ def decode_ss_node(nodes):
         info = dict()
         if '#' not in line:
             line = line + f'#SS%20Node{i}'
-	    i += 1
+            i += 1
         try:
             ss_content = line.replace('ss://', '')
             # https://www.runoob.com/python/att-string-split.html
