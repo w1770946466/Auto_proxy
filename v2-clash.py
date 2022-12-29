@@ -37,10 +37,6 @@ def decode_v2ray_node(nodes):
             continue
         proxy_str = base64.b64decode(decode_proxy).decode('utf-8')
         proxy_dict = json.loads(proxy_str)
-        if type(proxy_dict['prot']) in int:
-            proxy_list.append(info)
-        else:
-            print("缺少端口prot")
        
     #print(proxy_list)
     return proxy_list
@@ -89,10 +85,6 @@ def decode_ss_node(nodes):
                 info['port'] = matcher.group(4)
             else:
                 continue
-        if type(info['prot']) in int:
-            proxy_list.append(info)
-        else:
-            print("缺少端口prot")
         
     #print(proxy_list)
     return proxy_list
@@ -124,10 +116,6 @@ def decode_ssr_node(nodes):
         for p in params:
             key_value = p.split('=')
             info[key_value[0]] = safe_decode(key_value[1]).decode('utf-8')
-        if type(info['prot']) in int:
-            proxy_list.append(info)
-        else:
-            print("缺少端口prot")
     return proxy_list
 
 #解析Trojan节点
@@ -155,10 +143,6 @@ def decode_trojan_node(nodes):
                 'password': password,
                 'sni': sni
             }
-            if type(prot) in int:
-                proxy_list.append(info)
-            else:
-                print("缺少端口prot")
             
         except Exception as e:
             print(f"解析trojan出错{e}")
@@ -277,7 +261,7 @@ def v2ray_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         #'''
-        if obj.get('alterId') is not None:
+        if obj.get('alterId') is not None and obj.get('prot') in int:
             try:
                 proxies['proxy_list'].append(obj)
                 proxies['proxy_names'].append(obj['name'])
@@ -315,8 +299,11 @@ def ss_to_clash(arr):
             if obj.get(key) is None:
                 del obj[key]
         try:
-            proxies['proxy_list'].append(obj)
-            proxies['proxy_names'].append(obj['name'])
+            if type(obj.get('prot')) in int:
+                proxies['proxy_list'].append(obj)
+                proxies['proxy_names'].append(obj['name'])
+            else:
+                print("端口出错")
         except Exception as e:
             log(f'出错{e}')
             pass
@@ -353,8 +340,11 @@ def ssr_to_clash(arr):
             if obj.get('name'):
                 if not obj['name'].startswith('剩余流量') and not obj['name'].startswith('过期时间'):
                     if obj['cipher'] == 'aes-128-gcm' | obj['cipher'] == 'aes-192-gcm' | obj['cipher'] == 'aes-256-gcm' | obj['cipher'] == 'aes-128-cfb'| obj['cipher'] == 'aes-192-cfb' | obj['cipher'] == 'aes-256-cfb' | obj['cipher'] == 'aes-128-ctr' | obj['cipher'] == 'aes-192-ctr' | obj['cipher'] == 'aes-256-ctr'| obj['cipher'] == 'rc4-md5' | obj['cipher'] == 'chacha20'| obj['cipher'] == 'chacha20-ietf' | obj['cipher'] == 'xchacha20' | obj['cipher'] == 'chacha20-ietf-poly1305' | obj['cipher'] == 'xchacha20-ietf-poly1305' | obj['cipher'] == 'plain'| obj['cipher'] == 'http_simple' | obj['cipher'] == 'auth_sha1_v4' | obj['cipher'] == 'auth_aes128_md5' | obj['cipher'] == 'auth_aes128_sha1'| obj['cipher'] == 'auth_chain_a auth_chain_b':
-                        proxies['proxy_list'].append(obj)
-                        proxies['proxy_names'].append(obj['name'])
+                        if type(obj.get('prot')) in int:
+                            proxies['proxy_list'].append(obj)
+                            proxies['proxy_names'].append(obj['name'])
+                        else:
+                            print("端口出错")
                     else:
                         log("不支持的ssr协议")
         except Exception as e:
@@ -371,8 +361,11 @@ def trojan_to_clash(arr):
     }
     for item in arr:
         try:
-            proxies['proxy_list'].append(item)
-            proxies['proxy_names'].append(item['name'])
+            if type(item.get('prot')) in int:
+                proxies['proxy_list'].append(item)
+                proxies['proxy_names'].append(item['name'])
+            else:
+                print("端口出错")
         except Exception as e:
             print(f'出错{e}')
             pass
