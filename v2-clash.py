@@ -144,7 +144,7 @@ def decode_trojan_node(nodes):
                 'password': password,
                 'sni': sni
             }
-            if prot is None:
+            if prot is None and server is None and password is None and sni is None:
                 print("解析trojan节点出错")
             elase:
                 proxy_list.append(info)
