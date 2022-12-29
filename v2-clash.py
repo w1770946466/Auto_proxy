@@ -216,9 +216,9 @@ def get_proxies(urls):
                     decode_proxy = decode_ssr_node([node])
                     clash_node = ssr_to_clash(decode_proxy)
                 
-                #elif node.startswith(b'trojan://'):
-                    #decode_proxy = decode_trojan_node([node])
-                    #clash_node = trojan_to_clash(decode_proxy)
+                elif node.startswith(b'trojan://'):
+                    decode_proxy = decode_trojan_node([node])
+                    clash_node = trojan_to_clash(decode_proxy)
                     
                 else:
                     pass
@@ -468,7 +468,7 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2'
+    sub_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
