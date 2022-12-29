@@ -49,7 +49,7 @@ def decode_ss_node(nodes):
     for line in nodes:
         info = dict()
         if '#' not in line:
-            line = line + '#SS%20Node{i}'
+            line = line + f'#SS%20Node{i}'
 	    i += 1
         try:
             ss_content = line.replace('ss://', '')
