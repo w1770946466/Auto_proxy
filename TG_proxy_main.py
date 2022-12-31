@@ -186,36 +186,36 @@ def write_document():
             try:
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`节点总数: {length}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {length}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {step}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
                     lines.pop(index+1)
-                    lines.insert(index+1, f'`合并节点总数: {length-step*7}`\n')
+                    lines.insert(index+1, f'`Total number of merge nodes: {length-step*7}`\n')
                 if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                     lines.pop(index+4)
                     lines.pop(index+4)
-                    lines.insert(index+4, f'更新时间：`{TimeDate}`\n')
-                    lines.insert(index+4, f'### 试用高速订阅数量: `{len(try_sub)}`\n')
+                    lines.insert(index+4, f'Updata：`{TimeDate}`\n')
+                    lines.insert(index+4, f'### Try the number of high-speed subscriptions: `{len(try_sub)}`\n')
                 if lines[index] == '>Trial subscription：\n': # 目标行内容
                     lines.pop(index)
                     lines.pop(index)
@@ -223,7 +223,7 @@ def write_document():
                 if lines[index] == '## ✨Star count\n': # 目标行内容
                     n = 5
                     for TrySub in try_sub:
-                        lines.insert(index-n, f'\n>试用订阅：\n`{TrySub}`\n')
+                        lines.insert(index-n, f'\n>Trial subscription：\n`{TrySub}`\n')
                         n += 3
                 """
             except:
@@ -236,7 +236,7 @@ def write_document():
                     n = 5
                     for TrySub in try_sub:
                         #lines.insert(index+n-1, f'\n>')
-                        lines.insert(index-n, f'\n>试用订阅：\n`{TrySub}`\n')
+                        lines.insert(index-n, f'\n>Trial subscription：\n`{TrySub}`\n')
                         n += 3
             except:
                 print("写入试用出错")
