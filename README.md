@@ -77,73 +77,73 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 
->试用订阅：
+>Trial subscription：
 `https://www.dgycom.com/api/v1/client/subscribe?token=e41268937a6658fc2fb262939234ecb6`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://fastestcloud.xyz/api/v1/client/subscribe?token=e4c85f26192eeac37bdd65309eef5978`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://feiniaoyun.top/api/v1/client/subscribe?token=ff8131adb69f4e673bef6a96978c758d`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://cloud.hhygj.xyz/api/v1/client/subscribe?token=8bf636667dc4cb95848e85ad49031e2d`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://user.bafang.vip/api/v1/client/subscribe?token=e1c97a5dac7804f6fa3afe09493d5b27`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://www.ckcloud.xyz/api/v1/client/subscribe?token=2ebaf78e5d94ce884ad3be37b0b52825`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `http://hneko.xyz/api/v1/client/subscribe?token=4b04d68ddcf139b4cc99c47a3931c759`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://shan-cloud.xyz/api/v1/client/subscribe?token=a0807921047f96c6f6d89e4edb33e099`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://fastestcloud.xyz/api/v1/client/subscribe?token=ecbc04e9a8d7da1f1e1ada4a44835a18`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://www.ckcloud.xyz/api/v1/client/subscribe?token=99eafef4be964bae74528b9ad6be59d2`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://fastestcloud.xyz/api/v1/client/subscribe?token=b7a10d9abd15a42b96e46615b0c5dd5b`
 
 
 
 
->试用订阅：
+>Trial subscription：
 `https://www.ckcloud.xyz/api/v1/client/subscribe?token=6930de6319fadd4b3075c3c74edba862`
 
 
