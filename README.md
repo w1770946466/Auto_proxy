@@ -5,13 +5,12 @@
 [Repository intraduction](https://github.com/w1770946466/Auto_proxy#Repositoryintraduction) | [Usage](https://github.com/w1770946466/Auto_proxy#Usage) | [Proxy information](https://github.com/w1770946466/Auto_proxy#Proxyinformation) | [Repository statement](https://github.com/w1770946466/Auto_proxy#Repositorystatement)
 
 ## ✈️Repository intraduction
-本仓库自动化功能全部基于 `GitHub Actions` 实现，
-
-对网络上TG频道分享的节点进行提取（未筛选）节点，再导入到仓库中进行分享记录。
+The automation functions of this repository are all based on 'GitHub Actions',
+Extract (unfiltered) the nodes shared by TG channels on the network, and then import them into the repository for sharing records.
 
 ## ⏩Usage
-将以下订阅链接导入相应客户端即可。链接中大部分为 SS 协议节点，少量 Vmess, Trojan ,SSR 协议节点，建议选择协议支持完整的客户端。
-ps：增至8个订阅链接，每个大约150个左右（不确定）避免太多节点造成软件卡顿，最近节点质量都很高，欢迎使用，有好的意见也可以反馈一下谢谢！！
+Simply import the following subscription link to the appropriate client. Most of the links are SS protocol nodes, a few Vmess, Trojan, SSR protocol nodes, it is recommended to choose a protocol that supports a full client.
+ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too many nodes caused by software lag, recent nodes are of high quality, welcome to use, have good opinions can also feedback thank you!!
 
 ### 永久高速订阅数量: `8`
 
@@ -73,7 +72,7 @@ ps：增至8个订阅链接，每个大约150个左右（不确定）避免太�
 
 
 <details>
-  <summary>展开复制订阅链接</summary>  
+  <summary>Expand the Copy subscription link</summary>  
 
 
 
