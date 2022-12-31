@@ -5,7 +5,7 @@
 [Repository intraduction](https://github.com/w1770946466/Auto_proxy#Repositoryintraduction) | [Usage](https://github.com/w1770946466/Auto_proxy#Usage) | [Proxy information](https://github.com/w1770946466/Auto_proxy#Proxyinformation) | [Repository statement](https://github.com/w1770946466/Auto_proxy#Repositorystatement)
 
 ## ✈️Repository intraduction
-The automation functions of this repository are all based on 'GitHub Actions',
+The automation functions of this repository are all based on `GitHub Actions`,
 Extract (unfiltered) the nodes shared by TG channels on the network, and then import them into the repository for sharing records.
 
 ## ⏩Usage
