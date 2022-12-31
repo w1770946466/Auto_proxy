@@ -216,7 +216,7 @@ def write_document():
                     lines.pop(index+4)
                     lines.insert(index+4, f'更新时间：`{TimeDate}`\n')
                     lines.insert(index+4, f'### 试用高速订阅数量: `{len(try_sub)}`\n')
-                if lines[index] == '>试用订阅：\n': # 目标行内容
+                if lines[index] == '>Trial subscription：\n': # 目标行内容
                     lines.pop(index)
                     lines.pop(index)
                 """
