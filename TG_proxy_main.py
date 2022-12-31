@@ -220,7 +220,7 @@ def write_document():
                     lines.pop(index)
                     lines.pop(index)
                 """
-                if lines[index] == '## ✨星标统计\n': # 目标行内容
+                if lines[index] == '## ✨Star count\n': # 目标行内容
                     n = 5
                     for TrySub in try_sub:
                         lines.insert(index-n, f'\n>试用订阅：\n`{TrySub}`\n')
@@ -232,7 +232,7 @@ def write_document():
         #写入试用订阅
         for index in range(len(lines)):
             try:
-                if lines[index] == '## ✨星标统计\n': # 目标行内容
+                if lines[index] == '## ✨Star count\n': # 目标行内容
                     n = 5
                     for TrySub in try_sub:
                         #lines.insert(index+n-1, f'\n>')
