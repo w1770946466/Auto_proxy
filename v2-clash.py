@@ -251,6 +251,7 @@ def v2ray_to_clash(arr):
         if item.get('ps') is None and item.get('add') is None and item.get('port') is None \
                 and item.get('id') is None and item.get('aid') is None:
             continue
+        print(type(int(item.get('port'))))
         print(int(item.get('port')))
         obj = {
             'name': item.get('ps').strip() if item.get('ps') else None,
