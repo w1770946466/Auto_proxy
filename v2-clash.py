@@ -199,6 +199,9 @@ def get_proxies(urls):
                     node['obfs-param'] = node['obfsparam']
                     del node['obfsparam']
                 node['udp'] = True
+                node['port'] = int(node['port'])
+                print(node['port'])
+                print(type(node['port']))
                 nodes_list.append(node)
             node_names = [node.get('name') for node in nodes_list]
             log('可用clash节点{}个'.format(len(node_names)))
@@ -251,8 +254,6 @@ def v2ray_to_clash(arr):
         if item.get('ps') is None and item.get('add') is None and item.get('port') is None \
                 and item.get('id') is None and item.get('aid') is None:
             continue
-        print(type(int(item.get('port'))))
-        print(int(item.get('port')))
         obj = {
             'name': item.get('ps').strip() if item.get('ps') else None,
             #'name': f"Auto_proxy{num}",
