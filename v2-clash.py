@@ -343,7 +343,7 @@ def ssr_to_clash(arr):
                 if obj.get(key) is None:
                     del obj[key]
             if obj.get('name'):
-                print(obj['cipher'])
+                #print(obj['cipher'])
                 if not obj['name'].startswith('剩余流量') and not obj['name'].startswith('过期时间'):
                     if obj['cipher'] == 'aes-128-gcm' or obj['cipher'] == 'aes-192-gcm' or obj['cipher'] == 'aes-256-gcm' or obj['cipher'] == 'aes-128-cfb' or obj['cipher'] == 'aes-192-cfb' or obj['cipher'] == 'aes-256-cfb' or obj['cipher'] == 'aes-128-ctr' or obj['cipher'] == 'aes-192-ctr' or obj['cipher'] == 'aes-256-ctr' or obj['cipher'] == 'rc4-md5' or obj['cipher'] == 'chacha20' or obj['cipher'] == 'chacha20-ietf' or obj['cipher'] == 'xchacha20' or obj['cipher'] == 'chacha20-ietf-poly1305' or obj['cipher'] == 'xchacha20-ietf-poly1305' or obj['cipher'] == 'plain' or obj['cipher'] == 'http_simple' or obj['cipher'] == 'auth_sha1_v4' or obj['cipher'] == 'auth_aes128_md5' or obj['cipher'] == 'auth_aes128_sha1' or obj['cipher'] == 'auth_chain_a auth_chain_b':
                         proxies['proxy_list'].append(obj)
@@ -472,7 +472,7 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://u.sylu.cyou/afbFyi;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5'
+    sub_url = 'https://u.sylu.cyou/afbFyi;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
