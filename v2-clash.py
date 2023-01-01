@@ -200,8 +200,8 @@ def get_proxies(urls):
                     del node['obfsparam']
                 node['udp'] = True
                 node['port'] = int(node['port'])
-                print(node['port'])
-                print(type(node['port']))
+                #print(node['port'])
+                #print(type(node['port']))
                 nodes_list.append(node)
             node_names = [node.get('name') for node in nodes_list]
             log('可用clash节点{}个'.format(len(node_names)))
@@ -209,7 +209,7 @@ def get_proxies(urls):
             proxy_list['proxy_names'].extend(node_names)
             continue
         nodes_list = raw.splitlines()
-        nodes_list.append(vmess)
+        nodes_list.extend(vmess)
         #print(nodes_list)
         clash_node = []
         for node in nodes_list:
