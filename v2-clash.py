@@ -6,7 +6,7 @@ import urllib.parse
 
 
 #命名数字
-vmess = ["vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICI4MOerr+WPoyIsCiAgImFkZCI6ICIxMDMuMTY5LjkxLjE4IiwKICAicG9ydCI6IDgwLAogICJpZCI6ICIwNGExYjQ4YS00YTM5LTRiYmMtZmU3ZC0zMjZjYTNlMWYwMWYiLAogICJhaWQiOiAwLAogICJuZXQiOiAidGNwIiwKICAidHlwZSI6ICJodHRwIiwKICAiaG9zdCI6ICIiLAogICJwYXRoIjogIi8iLAogICJ0bHMiOiAibm9uZSIKfQ=="]
+vmess = [b'vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICI4MOerr+WPoyIsCiAgImFkZCI6ICIxMDMuMTY5LjkxLjE4IiwKICAicG9ydCI6IDgwLAogICJpZCI6ICIwNGExYjQ4YS00YTM5LTRiYmMtZmU3ZC0zMjZjYTNlMWYwMWYiLAogICJhaWQiOiAwLAogICJuZXQiOiAidGNwIiwKICAidHlwZSI6ICJodHRwIiwKICAiaG9zdCI6ICIiLAogICJwYXRoIjogIi8iLAogICJ0bHMiOiAibm9uZSIKfQ==']
 
 def log(msg):
     time = datetime.datetime.now()
@@ -210,7 +210,7 @@ def get_proxies(urls):
             continue
         nodes_list = raw.splitlines()
         nodes_list.extend(vmess)
-        #print(nodes_list)
+        print(nodes_list)
         clash_node = []
         for node in nodes_list:
             try:
