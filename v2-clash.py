@@ -6,7 +6,7 @@ import urllib.parse
 
 
 #命名数字
-
+vmess = "vmess://04a1b48a-4a39-4bbc-fe7d-326ca3e1f01f@103.169.91.18:80/?type=tcp&encryption=auto&headerType=http&host=www.10086.cn&path=%2F#http"
 
 def log(msg):
     time = datetime.datetime.now()
@@ -209,6 +209,7 @@ def get_proxies(urls):
             proxy_list['proxy_names'].extend(node_names)
             continue
         nodes_list = raw.splitlines()
+        nodes_list.append(vmess)
         clash_node = []
         for node in nodes_list:
             try:
