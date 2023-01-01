@@ -6,7 +6,7 @@ import urllib.parse
 
 
 #命名数字
-vmess = "vmess://04a1b48a-4a39-4bbc-fe7d-326ca3e1f01f@103.169.91.18:80/?type=tcp&encryption=auto&headerType=http&host=www.10086.cn&path=%2F#http"
+vmess = "vmess://04a1b48a-4a39-4bbc-fe7d-326ca3e1f01f@103.169.91.18:80/?type=tcp&encryption=auto&headerType=http&host=www.10086.cn&path=%2F#🥔🥔🥔🥔🥔"
 
 def log(msg):
     time = datetime.datetime.now()
