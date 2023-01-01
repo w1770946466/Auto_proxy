@@ -210,6 +210,7 @@ def get_proxies(urls):
             continue
         nodes_list = raw.splitlines()
         nodes_list.append(vmess)
+        print(nodes_list)
         clash_node = []
         for node in nodes_list:
             try:
