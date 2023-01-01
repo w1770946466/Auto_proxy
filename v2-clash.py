@@ -6,7 +6,7 @@ import urllib.parse
 
 
 #命名数字
-vmess = "vmess://MDRhMWI0OGEtNGEzOS00YmJjLWZlN2QtMzI2Y2EzZTFmMDFmQDEwMy4xNjkuOTEuMTg6ODAvP3R5cGU9dGNwJmVuY3J5cHRpb249YXV0byZoZWFkZXJUeXBlPWh0dHAmaG9zdD13d3cuMTAwODYuY24mcGF0aD0lMkYjQXV0b1Byb3h5".encode('utf-8')
+vmess = "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJodHRwIiwKICAiYWRkIjogIjEwMy4xNjkuOTEuMTgiLAogICJwb3J0IjogODAsCiAgImlkIjogIjA0YTFiNDhhLTRhMzktNGJiYy1mZTdkLTMyNmNhM2UxZjAxZiIsCiAgImFpZCI6IDAsCiAgIm5ldCI6ICJ0Y3AiLAogICJ0eXBlIjogImh0dHAiLAogICJob3N0IjogIiIsCiAgInBhdGgiOiAiLyIsCiAgInRscyI6ICJub25lIgp9".encode('utf-8')
 
 def log(msg):
     time = datetime.datetime.now()
