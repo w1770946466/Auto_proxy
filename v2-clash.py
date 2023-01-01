@@ -6,7 +6,7 @@ import urllib.parse
 
 
 #命名数字
-vmess = "vmess://04a1b48a-4a39-4bbc-fe7d-326ca3e1f01f@103.169.91.18:80/?type=tcp&encryption=auto&headerType=http&host=www.10086.cn&path=%2F#AutoProxy".encode('utf-8')
+vmess = "vmess://MDRhMWI0OGEtNGEzOS00YmJjLWZlN2QtMzI2Y2EzZTFmMDFmQDEwMy4xNjkuOTEuMTg6ODAvP3R5cGU9dGNwJmVuY3J5cHRpb249YXV0byZoZWFkZXJUeXBlPWh0dHAmaG9zdD13d3cuMTAwODYuY24mcGF0aD0lMkYjQXV0b1Byb3h5".encode('utf-8')
 
 def log(msg):
     time = datetime.datetime.now()
