@@ -456,7 +456,8 @@ def remove_duplicates(lst):
     for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
-            item['name'] = f'Auto{i}'
+            pattern = '[^\u4e00-\u9fa5\d]+'
+            item['name'] = re.sub(pattern, '', item['name'])
             result.append(item)
             i += 1
     print(namesl)
