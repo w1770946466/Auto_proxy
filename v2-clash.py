@@ -243,7 +243,7 @@ def get_proxies(urls):
     return proxy_list
 
 
-# v2ray转换成Clash节点
+# Vmess转换成Clash节点
 def v2ray_to_clash(arr):
     log('v2ray节点转换中...')
     proxies = {
@@ -263,7 +263,7 @@ def v2ray_to_clash(arr):
             'server': item.get('add'),
             'port': int(item.get('port')),
             'uuid': item.get('id'),
-            'alterId': item.get('aid'),
+            'alterId': int(item.get('aid')),
             'cipher': 'auto',
             'udp': True,
             # 'network': item['net'] if item['net'] and item['net'] != 'tcp' else None,
