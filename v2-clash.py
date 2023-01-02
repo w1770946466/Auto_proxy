@@ -456,9 +456,11 @@ def remove_duplicates(lst):
     for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
-            #item['name'] = f'Auto{i}'
+            item['name'] = f'Auto{i}'
             result.append(item)
             i += 1
+    print(namesl)
+    print(result)
     return result
 
 
