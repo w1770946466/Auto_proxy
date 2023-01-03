@@ -1,7 +1,8 @@
 # 说明 : 本脚本提供解析v2ray/ss/ssr/clashR/clashX订阅链接为Clash配置文件,仅供学习交流使用.
 # https://github.com/Celeter/convert2clash
 import os, re, sys, json, base64, datetime
-import requests, yaml
+import requests
+import yaml
 import urllib.parse
 
 
