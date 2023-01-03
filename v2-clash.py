@@ -460,7 +460,7 @@ def remove_duplicates(lst):
             pattern = '[^\u4e00-\u9fa5\d]+'
             item['name'] = re.sub(pattern, '', item['name'])
             item['name'] = re.sub(r'\d', '', item['name'])
-            #item['name'] = f'AutoProxy{i}'
+            item['name'] = item['name'][:2]
             item['name'] += str(i)
             result.append(item)
             i += 1
