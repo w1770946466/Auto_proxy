@@ -1,8 +1,7 @@
 # 说明 : 本脚本提供解析v2ray/ss/ssr/clashR/clashX订阅链接为Clash配置文件,仅供学习交流使用.
 # https://github.com/Celeter/convert2clash
 import os, re, sys, json, base64, datetime
-import requests
-import yaml
+import requests, yaml
 import urllib.parse
 
 
@@ -457,11 +456,9 @@ def remove_duplicates(lst):
     for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
-            pattern = '[^\u4e00-\u9fa5\d]+'
-            item['name'] = re.sub(pattern, '', item['name'])
-            item['name'] = re.sub(r'\d', '', item['name'])
-            item['name'] = item['name'][:2]
-            item['name'] += str(i)
+            #pattern = '[^\u4e00-\u9fa5\d]+'
+            #item['name'] = re.sub(pattern, '', item['name'])
+            item['name'] = f'AutoProxy{i}'
             result.append(item)
             i += 1
     print(namesl)
@@ -484,7 +481,7 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5'
+    sub_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5;https://sub.sharecentre.online/sub'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
