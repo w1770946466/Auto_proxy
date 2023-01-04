@@ -462,12 +462,16 @@ def remove_duplicates(lst):
             #item['name'] = item['name'][:2]
             #item['name'] += str(i)
             domain = item['server']
-            if any(domain.isalpha()  for domain in 'ff'):
-                ip = get_ip(domain)
-            else:
-                ip = domain
-                #print(ip)
-            location = query_location(ip)
+            try:
+                if any(domain.isalpha()  for domain in 'ff'):
+                    ip = get_ip(domain)
+                else:
+                    ip = domain
+                    #print(ip)
+                location = query_location(ip)
+            except Exception as e:
+                print(f"改名出错{e}使用默认名字")
+                location = "Node"
             item['name'] = location + str(i)
             result.append(item)
             i += 1
