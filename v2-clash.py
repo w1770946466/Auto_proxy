@@ -462,12 +462,12 @@ def remove_duplicates(lst):
             #item['name'] = item['name'][:2]
             #item['name'] += str(i)
             domain = item['server']
-            try:
+            if any(domain.isalpha()  for domain in 'ff'):
                 ip = get_ip(domain)
-                location = query_location(ip)
-            except:
+            else:
                 ip = domain
-                location = query_location(ip)
+                #print(ip)
+            location = query_location(ip)
             item['name'] = location + str(i)
             result.append(item)
             i += 1
@@ -479,10 +479,10 @@ def query_location(ip):
     # 使用第三方 IP 地址库查询 IP 归属地
     # 这里使用的是 ipapi，它是一个免费的 IP 地址库，可以查询 IP 归属地和相关信息
     # 你可以在 https://ipapi.co/api/ 找到更多文档
-    api_url = f"https://ipapi.co/{ip}/json/"
+    api_url = f"http://whois.pconline.com.cn/ipJson.jsp?ip={ip}&json=true"
     response = requests.get(api_url)
     data = response.json()
-    return data["country_name"]
+    return data["addr"]
 
 def get_ip(domain):
     return socket.gethostbyname(domain)
