@@ -464,9 +464,10 @@ def remove_duplicates(lst):
             domain = item['server']
             try:
                 ip = get_ip(domain)
+                location = query_location(ip)
             except:
                 ip = domain
-            location = query_location(ip)
+                location = query_location(ip)
             item['name'] = location + str(i)
             result.append(item)
             i += 1
