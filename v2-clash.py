@@ -3,7 +3,7 @@
 import os, re, sys, json, base64, datetime
 import requests, yaml
 import urllib.parse
-
+import socket
 
 #命名数字
 vmess = [b'vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICI4MOerr+WPoyIsCiAgImFkZCI6ICIxMDMuMTY5LjkxLjE4IiwKICAicG9ydCI6IDgwLAogICJpZCI6ICIwNGExYjQ4YS00YTM5LTRiYmMtZmU3ZC0zMjZjYTNlMWYwMWYiLAogICJhaWQiOiAwLAogICJuZXQiOiAidGNwIiwKICAidHlwZSI6ICJodHRwIiwKICAiaG9zdCI6ICIiLAogICJwYXRoIjogIi8iLAogICJ0bHMiOiAibm9uZSIKfQ==']
@@ -456,24 +456,35 @@ def remove_duplicates(lst):
     for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
-            pattern = '[^\u4e00-\u9fa5\d]+'
-            item['name'] = re.sub(pattern, '', item['name'])
-            item['name'] = re.sub(r'\d', '', item['name'])
+            #pattern = '[^\u4e00-\u9fa5\d]+'
+            #item['name'] = re.sub(pattern, '', item['name'])
+            #item['name'] = re.sub(r'\d', '', item['name'])
+            #item['name'] = item['name'][:2]
+            #item['name'] += str(i)
+            domain = item['server']
             try:
-                item['name'] = item['name'][:2]
+                ip = get_ip(domain)
             except:
-                prin('名字不足两个')
-                pass
-            item['name'] += str(i)
+                ip = domain
+            location = query_location(ip)
+            item['name'] = location + str(i)
             result.append(item)
             i += 1
     print(namesl)
     print(result)
     return result
 
+def query_location(ip):
+    # 使用第三方 IP 地址库查询 IP 归属地
+    # 这里使用的是 ipapi，它是一个免费的 IP 地址库，可以查询 IP 归属地和相关信息
+    # 你可以在 https://ipapi.co/api/ 找到更多文档
+    api_url = f"https://ipapi.co/{ip}/json/"
+    response = requests.get(api_url)
+    data = response.json()
+    return data["country_name"]
 
-
-
+def get_ip(domain):
+    return socket.gethostbyname(domain)
 
 
 # 保存配置文件
