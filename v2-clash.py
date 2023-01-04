@@ -456,11 +456,7 @@ def remove_duplicates(lst):
     for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
-            #pattern = '[^\u4e00-\u9fa5\d]+'
-            #item['name'] = re.sub(pattern, '', item['name'])
-            #item['name'] = re.sub(r'\d', '', item['name'])
-            #item['name'] = item['name'][:2]
-            #item['name'] += str(i)
+            
             domain = item['server']
             try:
                 if any(domain.isalpha()  for domain in 'ff'):
@@ -471,7 +467,12 @@ def remove_duplicates(lst):
                 location = query_location(ip)
             except Exception as e:
                 print(f"改名出错{e}使用默认名字")
-                location = "Node"
+                pattern = '[^\u4e00-\u9fa5\d]+'
+                item['name'] = re.sub(pattern, '', item['name'])
+                item['name'] = re.sub(r'\d', '', item['name'])
+                location = item['name'][:2]
+                #item['name'] += str(i)
+                #location = "Node"
             item['name'] = location + str(i)
             result.append(item)
             i += 1
