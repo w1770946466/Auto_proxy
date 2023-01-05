@@ -404,9 +404,6 @@ def get_default_config(url, path):
 
 # 将代理添加到配置文件
 def add_proxies_to_model(data, model):
-    
-    #print(data['proxy_list'])
-    #print(model)
     if data is None or model is None:
         raise ValueError('Invalid input: data and model cannot be None')
     if 'proxy_list' not in data or 'proxy_names' not in data:
@@ -435,7 +432,7 @@ def add_proxies_to_model(data, model):
             except KeyError:
                 # 处理字典中没有 name 字段的情况
                 log("Error: dictionary does not have a 'name' field")
-        #print(names)
+        print(names)
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
                 #group['proxies'] = data.get('proxy_names')
@@ -448,7 +445,7 @@ def add_proxies_to_model(data, model):
 
     return model
 
-
+#去重
 def remove_duplicates(lst):
     result = []
     namesl = []
@@ -480,6 +477,7 @@ def remove_duplicates(lst):
     #print(result)
     return result
 
+#查询ip归属地
 def query_location(ip):
     # 使用第三方 IP 地址库查询 IP 归属地
     # 这里使用的是 ipapi，它是一个免费的 IP 地址库，可以查询 IP 归属地和相关信息
@@ -489,6 +487,7 @@ def query_location(ip):
     data = response.json()
     return data["addr"]
 
+#查询网址ip
 def get_ip(domain):
     return socket.gethostbyname(domain)
 
