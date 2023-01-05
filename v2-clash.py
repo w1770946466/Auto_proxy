@@ -214,18 +214,19 @@ def get_proxies(urls):
         clash_node = []
         for node in nodes_list:
             try:
+                """
                 if node.startswith(b'vmess://'):
                     decode_proxy = decode_v2ray_node([node])
                     clash_node = v2ray_to_clash(decode_proxy)
-                    
-                elif node.startswith(b'ss://'):
+                """    
+                if node.startswith(b'ss://'):
                     decode_proxy = decode_ss_node([node])
                     clash_node = ss_to_clash(decode_proxy)
-               
+               """
                 elif node.startswith(b'ssr://'):
                     decode_proxy = decode_ssr_node([node])
                     clash_node = ssr_to_clash(decode_proxy)
-                
+                """
                 elif node.startswith(b'trojan://'):
                     decode_proxy = decode_trojan_node([node])
                     clash_node = trojan_to_clash(decode_proxy)
@@ -503,7 +504,7 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://pastebin.com/raw/fpeEqGTn;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5'
+    sub_url = 'https://pastebin.com/raw/fpeEqGTn;https://freefq.neocities.org/free.txt'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
