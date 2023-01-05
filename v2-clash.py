@@ -464,7 +464,7 @@ def remove_duplicates(lst):
                 else:
                     ip = domain
                     #print(ip)
-                location = query_location(ip)
+                location = query_location(ip)[:3]
             except Exception as e:
                 print(f"改名出错{e}使用默认名字")
                 pattern = '[^\u4e00-\u9fa5\d]+'
@@ -476,8 +476,8 @@ def remove_duplicates(lst):
             item['name'] = location + str(i)
             result.append(item)
             i += 1
-    print(namesl)
-    print(result)
+    #print(namesl)
+    #print(result)
     return result
 
 def query_location(ip):
