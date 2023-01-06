@@ -453,7 +453,6 @@ def remove_duplicates(lst):
     for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
-            
             domain = item['server']
             try:
                 if any(domain.isalpha()  for domain in 'ff'):
@@ -472,7 +471,7 @@ def remove_duplicates(lst):
                 #location = "Node"
             item['name'] = location + '_' +str(i)
             result.append(item)
-            i += 1
+        i += 1
     #print(namesl)
     #print(result)
     return result
