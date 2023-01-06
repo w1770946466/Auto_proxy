@@ -467,10 +467,11 @@ def remove_duplicates(lst):
                 item['name'] = re.sub(pattern, '', item['name'])
                 item['name'] = re.sub(r'\d', '', item['name'])
                 location = item['name'][:3]
-                print(location)
+                #print(location)
                 #item['name'] += str(i)
                 #location = "Node"
             item['name'] = location + '_' +str(i)
+            print(item)
             result.append(item)
         i += 1
     #print(namesl)
