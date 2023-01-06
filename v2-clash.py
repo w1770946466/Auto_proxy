@@ -419,20 +419,12 @@ def add_proxies_to_model(data, model):
         log(f'Error adding proxies to model: {e}')
 
     try:
-        #data['proxy_names'] = list(set(data['proxy_names']))
         data['proxy_list'] = [d for d in data['proxy_list'] if 'name' in d]
-        #print(data['proxy_list'])
         names = []
         for item in data['proxy_list']:
-            try:
+            if item['name'] not in names:
                 names.append(item['name'])
-            except TypeError:
-                # 处理 item 不是字典的情况
-                log("Error: item is not a dictionary")
-            except KeyError:
-                # 处理字典中没有 name 字段的情况
-                log("Error: dictionary does not have a 'name' field")
-        print(names)
+                print(item['name'])
         for group in model.get('proxy-groups'):
             if group.get('proxies') is None:
                 #group['proxies'] = data.get('proxy_names')
@@ -471,7 +463,7 @@ def remove_duplicates(lst):
                 #item['name'] += str(i)
                 #location = "Node"
             item['name'] = location + '_' +str(i)
-            print(item)
+            #print(item)
             result.append(item)
         i += 1
     #print(namesl)
