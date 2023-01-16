@@ -20,39 +20,39 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 969`
+`Total number of merge nodes: 952`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`
-`Total number of merge nodes: 122`
+`Total number of merge nodes: 120`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 115`
+`Total number of merge nodes: 112`
 
 - [Clash subscription](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `12`
-Updata：`2023-01-16 20:18:08`
+Updata：`2023-01-16 23:09:56`
 
 
 <details>
@@ -1445,74 +1445,86 @@ Updata：`2023-01-16 20:18:08`
 
 
 
->Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=c4417ad891688c4193cf492716530c13`
+
+
+
+
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=bb46c34d71ba01c76ef55eb877470e25`
+`https://www.dgycom.com/api/v1/client/subscribe?token=715bb8b250adcf9bfc85194673e39c38`
 
 
 
 
 >Trial subscription：
-`https://feiniaoyun.top/api/v1/client/subscribe?token=4f67e7d27a7a72d9f6db38efec03fd54`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=134b8853860f8be514c448887f5567d6`
 
 
 
 
 >Trial subscription：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=bc4b01e2c6350fd82524483192e13833`
+`https://feiniaoyun.top/api/v1/client/subscribe?token=2d2766a32b489b5d396676ceb5ffe8a8`
 
 
 
 
 >Trial subscription：
-`https://user.bafang.vip/api/v1/client/subscribe?token=77a529476aac99867d0eb0c595cc29d0`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=184f5ce9a43c52ee65b1bdbcc7dfc680`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=11211d2d026bee6b7171444a18eac757`
+`https://user.bafang.vip/api/v1/client/subscribe?token=0847e491fe1f51252877d5b7173f6eb2`
 
 
 
 
 >Trial subscription：
-`http://hneko.xyz/api/v1/client/subscribe?token=52fdb3cea2a8682b5b1527f4bffe6dbd`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=1f4aaf2e37e5382efcc5826ad670b331`
 
 
 
 
 >Trial subscription：
-`https://shan-cloud.xyz/api/v1/client/subscribe?token=d9b5b09b3072757531d7d8ce7a0f724d`
+`http://hneko.xyz/api/v1/client/subscribe?token=effe451ff3089c9fe3f2d9ea21ef23b9`
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=945ae42ce296be2e6589de3ca64e7367`
+`https://shan-cloud.xyz/api/v1/client/subscribe?token=f5892f1472ceaae51e2ec5fdf54772f9`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=ff7d7c09bb9a13d4d27aecc9dc1d2c7b`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=7ee322fbe0a6104ea316db3ad4daf3ff`
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=c2c605a1b3f6c5685eb78ccc4cbefb6b`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=52c5db531fa290b2445329950a889a68`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=3fd721f3da532fd79bc9283cc087afe7`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=9d3e77d7981f7619c9ea5522b73f6b1b`
+
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=9990aafbcd6fa058e5470c126146bc5d`
 
 
 
