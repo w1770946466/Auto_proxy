@@ -277,15 +277,15 @@ def get_sub_url():
         #'https://console.ly520.me',
         'https://www.ckcloud.xyz',
         'https://fastestcloud.xyz',
-        'https://www.ckcloud.xyz',
-        'https://fastestcloud.xyz',
         'https://shan-cloud.xyz',
         'http://hneko.xyz',
         'https://www.ckcloud.xyz',
         'https://user.bafang.vip',
         'https://cloud.hhygj.xyz',
         'https://feiniaoyun.top',
-        'https://fastestcloud.xyz',
+        'https://www.dgycom.com',
+        'https://www.dgycom.com',
+        'https://www.dgycom.com',
         'https://www.dgycom.com',
     )
     times = 1
