@@ -69,6 +69,7 @@ def jiemi_base64(data):  # 解密base64
 
 
 #判读是否为订阅链接
+'''
 def get_content(url):
     #print('【获取频道',url,'】')
     url_lst = get_channel_http(url)
@@ -116,6 +117,35 @@ def get_content(url):
             #print("第", i, "个链接获取失败跳过！")
             pass
         i += 1
+    return end_bas64
+'''
+def get_content(url):
+    url_lst = get_channel_http(url)
+    new_list = []
+    for i in url_lst:
+        result = i.replace("\\", "").replace('"', "")
+        if result not in new_list:
+            if "t" not in result[8] and "p" not in result[-2]:
+                new_list.append(result)
+    new_list_down = new_list[len(new_list) * 2 // 3:]
+    end_list_clash = []
+    end_list_v2ray = []
+    end_bas64 = []
+    for o in new_list_down:
+        try:
+            res = requests.get(o)
+            try:
+                if re.findall('proxies:', res.text)[0] == "proxies:":
+                    end_list_clash.append(o)
+            except:
+                try:
+                    peoxy = jiemi_base64(res.text)
+                    end_list_v2ray.append(o)
+                    end_bas64.extend(peoxy.splitlines())
+                except:
+                    pass
+        except:
+            pass
     return end_bas64
 
 
