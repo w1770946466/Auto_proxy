@@ -69,7 +69,7 @@ def jiemi_base64(data):  # 解密base64
 
 
 #判读是否为订阅链接
-'''
+
 def get_content(url):
     #print('【获取频道',url,'】')
     url_lst = get_channel_http(url)
@@ -147,7 +147,7 @@ def get_content(url):
         except:
             pass
     return end_bas64
-
+'''
 
 def write_document():
     if end_list_v2ray == [] or end_list_clash == []:
