@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `10`
-Updata：`2023-02-20 11:18:11`
+### Try the number of high-speed subscriptions: `8`
+Updata：`2023-02-20 14:15:06`
 
 
 <details>
@@ -4118,62 +4118,66 @@ Updata：`2023-02-20 11:18:11`
 
 
 
->Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=692f4df7f269d9591f09d93c5c352de4`
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=35cf51203e44e2b902149d913836ec35`
+`https://www.dgycom.com/api/v1/client/subscribe?token=37c095e981a39772dac79dada0ae43fd`
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=e6de065945532b847b9b5ac9292b8a87`
+`https://www.dgycom.com/api/v1/client/subscribe?token=74554a13a6bcfa8a12a841c7481ccd97`
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=86b1090cf8d6c0ddf676b4bc007a28c6`
+`https://www.dgycom.com/api/v1/client/subscribe?token=c50b3daad60b7a34b6e2b0879d3e3830`
 
 
 
 
 >Trial subscription：
-`https://feiniaoyun.top/api/v1/client/subscribe?token=172f9d77468ea5aafcc168805e914b32`
+`https://www.dgycom.com/api/v1/client/subscribe?token=7e9bb6c9303eda7f198afc5d523ddadb`
 
 
 
 
 >Trial subscription：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=b1559bc7a75887919895c126019a2f28`
+`https://feiniaoyun.top/api/v1/client/subscribe?token=57fa2f8f7425db7e9cb320640d24ddf1`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=19f4ed79dae6d6651d89290f30f215d2`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=37bc338ddfd4c41ce748a395908b853f`
 
 
 
 
 >Trial subscription：
-`http://hneko.xyz/api/v1/client/subscribe?token=fa3693b10e0bbcc19c452eafa93f9c9c`
+`http://hneko.xyz/api/v1/client/subscribe?token=42ae59ab84b3e3697104ae4c19c432e9`
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=139b49401d0f9b6db2ce7fd357f64c6a`
-
-
-
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=d2c34485a4c70e61f4e3988121ba1afa`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=1261a8568386a9702e419deada2ab638`
 
 
 
