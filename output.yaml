@@ -7,370 +7,57 @@ log-level: info
 external-controller: 127.0.0.1:9090
 secret: ''
 proxies:
-- name: 香港内_1
+- name: 台湾_1
+  type: vmess
+  server: shct.xn--dlq110j6ul.cc
+  port: 48640
+  uuid: f7adbb48-c7b3-454d-aad9-010b0c5fef4b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: ''
+- name: 香港流_2
   type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14102
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: 加拿大_2
-  type: ss
-  server: 51.161.118.38
-  port: 808
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: 电报群_3
-  server: gzdx0.170203.xyz
-  port: 14515
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: ru04.170203.xyz
-  skip-cert-verify: true
-- name: 更新获_4
-  type: ss
-  server: v2sg3.hiccupa.xyz
-  port: 25227
+  server: v2hk.hiccupa.xyz
+  port: 12710
   cipher: aes-256-gcm
   password: bf70476f-b3a6-438a-91b0-842ddd953215
-- name: 新加坡_5
-  type: vmess
-  server: 178.128.63.167
-  port: 443
-  uuid: 68297f4c-8448-34b2-99ff-b28246754526
-  alterId: 1
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /oragrx
-  ws-headers:
-    Host: ot.aogcc.buzz
-- name: 新加坡_6
-  type: vmess
-  server: 6ofj69.scvps.my.id
-  port: 443
-  uuid: f664d429-84f6-47b9-aaa8-39bde191c897
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /vmessws
-- name: 美国阿_7
-  type: vmess
-  server: jpjoq.ftvpn.xyz
-  port: 80
-  uuid: b9f6ef01-a4a6-4a95-8c22-59666be14599
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /vmess
-  ws-headers:
-    Host: jpjoq.ftvpn.xyz
-- name: 联通韩_8
-  server: v01.gutingting.com
-  port: 30056
-  type: trojan
-  password: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  sni: v1kr01.fuqiangren.com
-  skip-cert-verify: true
-- name: 新加坡_9
-  server: v01.gutingting.com
-  port: 30050
-  type: trojan
-  password: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  sni: v2sg02.fuqiangren.com
-  skip-cert-verify: true
-- name: 中国_10
-  type: vmess
-  server: 36.134.16.171
-  port: 11023
-  uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 英国线_11
-  type: vmess
-  server: v02.gutingting.com
-  port: 30025
-  uuid: b201aa7d-503e-4723-80ba-1c8654a94dda
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /aceamedv
-  ws-headers:
-    Host: sh01.fastcloud.club
-- name: 美国节_12
-  type: vmess
-  server: lg1.trump2023.us
-  port: 443
-  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /ECTCJ0DF
-  ws-headers:
-    Host: lg1.trump2023.us
-- name: 频道_13
-  type: vmess
-  server: 152.70.109.16
-  port: 443
-  uuid: b5a503a9-a3ad-42d9-af00-86f959d3454b
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /
-- name: 日本东_14
-  type: vmess
-  server: 172.67.193.205
-  port: 443
-  uuid: 68297f4c-8448-34b2-99ff-b28246754526
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: grpc
-  tls: true
-  ws-path: 83acc76ab3
-  ws-headers:
-    Host: sakut.apee.buzz
-- name: 频道_15
-  type: vmess
-  server: 203.24.108.8
-  port: 443
-  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /ECTCJ0DF
-  ws-headers:
-    Host: lg1.trump2023.us
-- name: 隧道日_16
+- name: 隧道日_3
   type: vmess
   server: fs-cm.alhttdw.cn
-  port: 20014
-  uuid: 4d6d0fb1-aa98-4116-be88-01b3bdc102ac
+  port: 20016
+  uuid: f9b9476e-d697-4739-adf9-bb3202f48db9
   alterId: 0
   cipher: auto
   udp: true
   network: tcp
   ws-path: ''
-- name: _17
-  type: vmess
-  server: r.wyhkaa0.cf
-  port: 8443
-  uuid: 6ac4456b-9376-49f9-b7a5-7d368800fbc4
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /TG@hkaa0
-  ws-headers:
-    Host: r.wyhkaa0.cf
-- name: 频道_18
-  type: vmess
-  server: 185.162.228.230
-  port: 443
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /A2DJOPFT
-  ws-headers:
-    Host: lg10.cfcdn1.xyz
-- name: 台湾内_19
-  type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14109
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: 频道_20
-  type: vmess
-  server: 36.156.102.164
-  port: 10003
-  uuid: cb7001c7-e495-41ac-b942-f25f60523414
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-- name: 德国_22
-  type: vmess
-  server: gddxd.fosi.hk
-  port: 63389
-  uuid: 3e838818-8f00-4895-98c5-36a146312901
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: ''
-- name: 新加坡_23
-  type: ss
-  server: ieplsg.hiccupa.xyz
-  port: 22257
-  cipher: aes-256-gcm
-  password: 60dcc785-93de-451a-a40b-1c5b3094524e
-- name: 香港内_24
-  type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14101
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: 江苏省_25
-  type: vmess
-  server: 223.111.202.139
-  port: 63086
-  uuid: 9a5dc02b-8adc-3529-9163-ab690f38fbb6
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /mugua
-  ws-headers:
-    Host: jp-balancer.myn1des.com
-- name: 日本线_26
-  server: v02.gutingting.com
-  port: 30055
+- name: 新加坡_4
+  server: gzdx0.170203.xyz
+  port: 59532
   type: trojan
-  password: b201aa7d-503e-4723-80ba-1c8654a94dda
-  sni: v1jp02.fuqiangren.com
+  password: 2de3c045-cffb-427f-a525-b3bad361b826
+  sni: sgmax05.170203.xyz
   skip-cert-verify: true
-- name: _27
-  type: vmess
-  server: hk80.sanfen001.pics
-  port: 80
-  uuid: 737e51b4-99e1-4ac0-8fe0-bfda250b6102
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /zh-cn/
-  ws-headers:
-    Host: www.baidu.com
-- name: 新加坡_28
-  type: vmess
-  server: sg5.microsoftjs.top
-  port: 443
-  uuid: fe2d5a68-165d-44a6-b9d5-ab3175b621ee
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b
-  ws-headers:
-    Host: tlu.dl.delivery.mp.microsoft.com
-- name: 美国弗_30
-  type: vmess
-  server: 51.81.202.62
-  port: 80
-  uuid: a25881f3-967f-3265-bc7f-9e66857b016b
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /v47-2023unlimitndxd
-  ws-headers:
-    Host: 51.81.202.62
-- name: 印度流_31
+- name: 剩余流_5
   type: vmess
   server: gzdx.jcnode.top
-  port: 49000
-  uuid: 27ee8745-5b38-4db4-83e1-69d28d12a5af
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /fly
-- name: 新加坡_32
-  type: vmess
-  server: sg003.170203.xyz
-  port: 34333
-  uuid: 3d121b63-2798-456e-a31b-4c730eebef99
+  port: 20001
+  uuid: f7adbb48-c7b3-454d-aad9-010b0c5fef4b
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   ws-path: ''
-- name: 英国流_33
-  type: vmess
-  server: gzdx.jcnode.top
-  port: 49001
-  uuid: 27ee8745-5b38-4db4-83e1-69d28d12a5af
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /fly
-- name: 日本内_34
-  type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14111
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: 英国线_35
-  server: v02.gutingting.com
-  port: 20227
+- name: 移动香_6
+  server: v01.gutingting.com
+  port: 30017
   type: trojan
-  password: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  sni: v2uk01.fuqiangren.com
+  password: 84277956-2627-4670-b319-fafe7f19aaea
+  sni: v2hgc01.fuqiangren.com
   skip-cert-verify: true
-- name: 新加坡_36
-  server: v02.gutingting.com
-  port: 30049
-  type: trojan
-  password: b201aa7d-503e-4723-80ba-1c8654a94dda
-  sni: v2sg02.fuqiangren.com
-  skip-cert-verify: true
-- name: 香港阿_37
-  type: vmess
-  server: 15.123417.xyz
-  port: 80
-  uuid: f3ab6886-4a4c-4394-c68c-eb8bcadcde03
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /ray12345
-  ws-headers:
-    Host: 15.123417.xyz
-- name: 英国流_38
-  type: ss
-  server: v2uk.hiccupa.xyz
-  port: 25336
-  cipher: aes-256-gcm
-  password: 60dcc785-93de-451a-a40b-1c5b3094524e
-- name: 频道_39
-  type: vmess
-  server: 29.wgong1.top
-  port: 52229
-  uuid: ec3722e2-10d5-304b-949e-7e6fd02c6156
-  alterId: 2
-  cipher: auto
-  udp: true
-  network: tcp
-  ws-path: /
-- name: 印度线_41
-  type: vmess
-  server: v02.gutingting.com
-  port: 30028
-  uuid: bef5465b-cb1f-4c3c-b554-89cc4e150c69
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /aceamedv
-  ws-headers:
-    Host: sh01.fastcloud.club
-- name: 美国_42
+- name: 美国_7
   type: vmess
   server: oplg1.zhujicn2.com
   port: 443
@@ -383,103 +70,43 @@ proxies:
   ws-path: /5QNROSRV
   ws-headers:
     Host: oplg1.zhujicn2.com
-- name: 新加坡_43
-  type: vmess
-  server: 13.212.37.13
-  port: 443
-  uuid: 68297f4c-8448-34b2-99ff-b28246754526
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: grpc
-  tls: true
-  ws-path: ssacafoxaa
-  ws-headers:
-    Host: sony.saog.buzz
-- name: 洛杉矶_44
-  type: vmess
-  server: 159.223.204.227
-  port: 443
-  uuid: 68297f4c-8448-34b2-99ff-b28246754526
-  alterId: 1
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /chaogg
-  ws-headers:
-    Host: srtweb.samrta.website
-- name: _45
+- name: _8
   type: ss
   server: edge-hncm.themars.top
-  port: 50012
+  port: 50003
   cipher: chacha20-ietf-poly1305
   password: b5f71964-76b7-419d-bb9a-712d0e324211
-- name: 中国来_46
-  type: ss
-  server: 14.29.124.168
-  port: 25271
-  cipher: aes-128-cfb
-  password: QazEdcTgb159@$*
-- name: 频道_47
+- name: 隧道印_9
   type: vmess
-  server: v20.emovpn.xyz
-  port: 8443
-  uuid: 4bac51b0-13d4-4086-8263-b0b97e5c3c74
+  server: fs-cm.alhttdw.cn
+  port: 20017
+  uuid: 4d6d0fb1-aa98-4116-be88-01b3bdc102ac
   alterId: 0
   cipher: auto
   udp: true
-  network: ws
-  tls: true
-  ws-path: /
-  ws-headers:
-    Host: v20.emovpn.xyz
-- name: 美国节_49
-  type: vmess
-  server: cf-lt.sharecentre.online
-  port: 80
-  uuid: 6c46e17d-4f90-4fda-8484-98f192524bc7
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /api/v3/download.getFile
-  ws-headers:
-    Host: ssrsub.v10.asuka.buzz
-- name: 希腊_50
-  server: 2.hg.kr.cat77.cloud
-  port: 8443
-  type: trojan
-  password: cd27884b-c5af-34ec-b75f-8248077818fe
-  skip-cert-verify: true
-- name: 邀请返_51
-  type: ss
-  server: 00-01-01.123445566.xyz
-  port: 16928
-  cipher: chacha20-ietf-poly1305
-  password: 6174b1f8-824a-4e2c-843c-48402bd68bb1
-- name: 日本隧_52
-  server: gzdx0.170203.xyz
-  port: 43578
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: jp01.170203.xyz
-  skip-cert-verify: true
-- name: 土耳其_53
-  type: vmess
-  server: hncub.donghui.tech
-  port: 63838
-  uuid: 3e838818-8f00-4895-98c5-36a146312901
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
+  network: tcp
   ws-path: ''
-- name: 联通日_54
+- name: 美国_10
+  server: sg06.170203.xyz
+  port: 443
+  type: trojan
+  password: 9aaea08e-3e22-4999-9121-0264984f1904
+  skip-cert-verify: true
+- name: 隧道香_11
   type: vmess
-  server: ns02.gutingting.com
-  port: 30045
-  uuid: 961a2801-c083-4db9-b1d7-6b47a5847da6
+  server: fs-cm.alhttdw.cn
+  port: 20013
+  uuid: f9b9476e-d697-4739-adf9-bb3202f48db9
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  ws-path: ''
+- name: 香港原_12
+  type: vmess
+  server: v01.gutingting.com
+  port: 30007
+  uuid: 8dd8ea07-5489-4193-951a-e47a5c0acc9d
   alterId: 0
   cipher: auto
   udp: true
@@ -487,148 +114,55 @@ proxies:
   ws-path: /aceamedv
   ws-headers:
     Host: sh02.fastcloud.club
-- name: 荷兰_55
-  type: ss
-  server: 51.124.217.177
-  port: 62048
-  cipher: chacha20-ietf-poly1305
-  password: TRoGQKepg1AsWO2kTnfPnb
-- name: 台湾隧_56
-  server: gzdx0.170203.xyz
-  port: 10290
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: tw01.170203.xyz
-  skip-cert-verify: true
-- name: 加拿大_59
+- name: 美国_13
   type: vmess
-  server: 132.145.99.228
-  port: 13724
-  uuid: 52768552-c2b2-4460-89f1-e740cc145b99
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /ws-path
-- name: 新加坡_60
-  type: vmess
-  server: v01.gutingting.com
-  port: 30035
-  uuid: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /aceamedv
-  ws-headers:
-    Host: sh01.fastcloud.club
-- name: 韩国内_61
-  type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14113
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: 剩余流_62
-  type: vmess
-  server: ns01.gutingting.com
-  port: 30009
-  uuid: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /aceamedv
-  ws-headers:
-    Host: sh01.fastcloud.club
-- name: 台湾_63
-  type: vmess
-  server: cscu.xn--dlq110j6ul.cc
-  port: 33346
-  uuid: 3e838818-8f00-4895-98c5-36a146312901
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: ''
-- name: 新加坡_64
-  type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14114
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: 美国_65
-  type: vmess
-  server: gyiepl.1aba.cn
-  port: 17834
-  uuid: c91c3476-5a16-4d6a-a4a1-07539157dda0
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: ''
-- name: 美国_66
-  type: vmess
-  server: 141.193.213.20
+  server: news.microsoft.com
   port: 443
-  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   tls: true
-  ws-path: /5QNROSRV
+  ws-path: /ECTCJ0DF
   ws-headers:
-    Host: oplg1.zhujicn2.com
-- name: 联通香_67
+    Host: lg1.trump2023.us
+- name: 美国隧_15
   type: vmess
-  server: v02.gutingting.com
-  port: 30024
-  uuid: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /aceamedv
-  ws-headers:
-    Host: gz.fastcloud.club
-- name: 套餐到_68
-  type: vmess
-  server: gzdx.jcnode.top
-  port: 20001
-  uuid: 3e838818-8f00-4895-98c5-36a146312901
+  server: cscu.xn--dlq110j6ul.cc
+  port: 33460
+  uuid: 2de3c045-cffb-427f-a525-b3bad361b826
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   ws-path: ''
-- name: 香港隧_69
-  server: gzdx0.170203.xyz
-  port: 19744
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: hkmax07.170203.xyz
-  skip-cert-verify: true
-- name: 直连日_70
-  server: zzjp01.gutingting.com
-  port: 20220
-  type: trojan
-  password: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  sni: zzjp01.gutingting.com
-  skip-cert-verify: true
-- name: 套餐到_71
+- name: 中国_16
+  type: vmess
+  server: 106.55.234.95
+  port: 31372
+  uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 香港直_17
+  type: vmess
+  server: 15.123417.xyz
+  port: 80
+  uuid: f3ab6886-4a4c-4394-c68c-eb8bcadcde03
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /ray12345
+- name: 新加坡_18
   type: ss
-  server: 00-01-01.123445566.xyz
-  port: 16928
+  server: shct.xn--dlq110j6ul.cc
+  port: 42716
   cipher: chacha20-ietf-poly1305
-  password: 6174b1f8-824a-4e2c-843c-48402bd68bb1
-- name: 台湾内_73
-  type: ss
-  server: cdn.alibaba-kunlun.com
-  port: 14108
-  cipher: aes-128-gcm
-  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- &id001
-  name: 美国公_75
+  password: 2168a93d-d4b4-43ef-b274-e3f1ec1c3a10
+- name: 美国节_19
   type: vmess
   server: new6.hucloud-dns.xyz
   port: 443
@@ -641,15 +175,523 @@ proxies:
   ws-path: /
   ws-headers:
     Host: new6.hucloud-dns.xyz
-- *id001
-- name: 英国线_76
+- name: 日本内_20
+  type: ss
+  server: cdn.alibaba-kunlun.com
+  port: 14111
+  cipher: aes-128-gcm
+  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
+- name: 印度_21
+  type: vmess
+  server: gddxd.fosi.hk
+  port: 63211
+  uuid: 159ecf1e-602e-4a59-af52-34455789865d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: ''
+- name: 印度线_22
+  type: vmess
+  server: v01.gutingting.com
+  port: 30027
+  uuid: 84277956-2627-4670-b319-fafe7f19aaea
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /aceamedv
+  ws-headers:
+    Host: sh01.fastcloud.club
+- name: 香港内_23
+  type: ss
+  server: cdn.alibaba-kunlun.com
+  port: 14106
+  cipher: aes-128-gcm
+  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
+- name: 美国_24
+  type: vmess
+  server: 158.101.7.73
+  port: 11176
+  uuid: 52768552-c2b2-4460-89f1-e740cc145b99
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /ws-path
+  ws-headers:
+    Host: 158.101.7.73
+- name: 韩国直_25
+  server: kr02.170203.xyz
+  port: 443
+  type: trojan
+  password: 2de3c045-cffb-427f-a525-b3bad361b826
+  sni: kr02.170203.xyz
+  skip-cert-verify: true
+- name: _26
+  type: ss
+  server: edge-hncm.themars.top
+  port: 50001
+  cipher: chacha20-ietf-poly1305
+  password: b5f71964-76b7-419d-bb9a-712d0e324211
+- name: 直连日_27
+  server: zzjp01.gutingting.com
+  port: 20220
+  type: trojan
+  password: 63ef3aa1-d2e5-4d81-816b-7110b7233e96
+  sni: zzjp01.gutingting.com
+  skip-cert-verify: true
+- name: 联通香_28
+  type: vmess
+  server: v01.gutingting.com
+  port: 30023
+  uuid: 63ef3aa1-d2e5-4d81-816b-7110b7233e96
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /aceamedv
+  ws-headers:
+    Host: gz.fastcloud.club
+- name: 美国加_29
+  type: vmess
+  server: 23.224.191.6
+  port: 443
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /path/220128071100
+- name: 美国公_30
+  type: vmess
+  server: i5.arsalanv3.sbs
+  port: 80
+  uuid: d24fcb56-274c-489f-bdad-7a18eb9d59ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /
+  ws-headers:
+    Host: i5.arsalanv3.sbs
+- name: 直连美_31
+  server: zzus01.gutingting.com
+  port: 20220
+  type: trojan
+  password: 8dd8ea07-5489-4193-951a-e47a5c0acc9d
+  sni: zzus01.gutingting.com
+  skip-cert-verify: true
+- name: 美国新_32
+  type: vmess
+  server: cf-yd-dns.sharecentre.online
+  port: 443
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /shirker
+  ws-headers:
+    Host: sg-1.sharecentre.online
+- name: 台湾原_33
+  server: v01.gutingting.com
+  port: 30002
+  type: trojan
+  password: fdf41897-292a-4bf4-9a5b-0e779ef541f7
+  sni: v2tw01.fuqiangren.com
+  skip-cert-verify: true
+- name: 英国流_34
+  type: ss
+  server: v2uk.hiccupa.xyz
+  port: 25336
+  cipher: aes-256-gcm
+  password: bf70476f-b3a6-438a-91b0-842ddd953215
+- name: 隧道新_35
+  type: vmess
+  server: fs-cm.alhttdw.cn
+  port: 20015
+  uuid: 4d6d0fb1-aa98-4116-be88-01b3bdc102ac
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  ws-path: ''
+- name: 联通日_36
+  type: vmess
+  server: ns02.gutingting.com
+  port: 30021
+  uuid: fdf41897-292a-4bf4-9a5b-0e779ef541f7
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /aceamedv
+  ws-headers:
+    Host: sh01.fastcloud.club
+- name: 新加坡_37
+  type: vmess
+  server: gzdx.jcnode.top
+  port: 23001
+  uuid: f7adbb48-c7b3-454d-aad9-010b0c5fef4b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: ''
+- name: 日本线_38
+  server: v01.gutingting.com
+  port: 20221
+  type: trojan
+  password: 84277956-2627-4670-b319-fafe7f19aaea
+  sni: v2jp01.fuqiangren.com
+  skip-cert-verify: true
+- name: 台湾隧_39
+  server: gzdx0.170203.xyz
+  port: 10290
+  type: trojan
+  password: 2de3c045-cffb-427f-a525-b3bad361b826
+  sni: tw01.170203.xyz
+  skip-cert-verify: true
+- name: 加拿大_40
+  type: ss
+  server: ak1617.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+  port: 802
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 香港_41
+  type: vmess
+  server: 8.218.95.163
+  port: 26227
+  uuid: d6d954bd-dca3-4e53-9574-d2e81c4d14be
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: http
+- name: 频道_42
+  type: vmess
+  server: news.microsoft.com
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /5QNROSRV
+  ws-headers:
+    Host: oplg1.zhujicn2.com
+- name: 英国线_43
   server: v01.gutingting.com
   port: 20226
   type: trojan
-  password: bef5465b-cb1f-4c3c-b554-89cc4e150c69
+  password: 63ef3aa1-d2e5-4d81-816b-7110b7233e96
   sni: v2uk01.fuqiangren.com
   skip-cert-verify: true
-- name: 美国_77
+- name: 美国亚_44
+  type: vmess
+  server: 158.101.7.73
+  port: 11176
+  uuid: 52768552-c2b2-4460-89f1-e740cc145b99
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /ws-path
+  ws-headers:
+    Host: 158.101.7.73
+- name: 台湾原_45
+  server: v02.gutingting.com
+  port: 30003
+  type: trojan
+  password: 84277956-2627-4670-b319-fafe7f19aaea
+  sni: v2tw01.fuqiangren.com
+  skip-cert-verify: true
+- name: 香港线_46
+  type: vmess
+  server: 172.67.171.236
+  port: 443
+  uuid: 68297f4c-8448-34b2-99ff-b28246754526
+  alterId: 1
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /oracle
+  ws-headers:
+    Host: ee.aara.bar
+- name: 德国_47
+  type: vmess
+  server: hncu.donghui.tech
+  port: 33956
+  uuid: f7adbb48-c7b3-454d-aad9-010b0c5fef4b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: ''
+- name: 香港内_49
+  type: ss
+  server: cdn.alibaba-kunlun.com
+  port: 14103
+  cipher: aes-128-gcm
+  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
+- name: 美国_50
+  type: vmess
+  server: xn--5buw85e.xn--ghqw6jkw0a.live
+  port: 443
+  uuid: 9ca4e1fc-d564-413c-fa15-f1821099970b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: ''
+- name: 加拿大_52
+  type: ss
+  server: 51.161.118.38
+  port: 808
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: _53
+  type: ss
+  server: edge-hncm.themars.top
+  port: 50000
+  cipher: chacha20-ietf-poly1305
+  password: b5f71964-76b7-419d-bb9a-712d0e324211
+- name: 美国内_54
+  type: ss
+  server: cdn.alibaba-kunlun.com
+  port: 14112
+  cipher: aes-128-gcm
+  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
+- name: 香港奈_55
+  server: gzdx1.170203.xyz
+  port: 62594
+  type: trojan
+  password: 2de3c045-cffb-427f-a525-b3bad361b826
+  sni: hkmax06.170203.xyz
+  skip-cert-verify: true
+- name: 印度线_56
+  type: vmess
+  server: v02.gutingting.com
+  port: 30028
+  uuid: fdf41897-292a-4bf4-9a5b-0e779ef541f7
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /aceamedv
+  ws-headers:
+    Host: sh01.fastcloud.club
+- name: 美国_57
+  type: vmess
+  server: 13.50.113.242
+  port: 11111
+  uuid: 7cb72883-9635-46eb-8531-8d697927ff04
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+  ws-path: ''
+- &id001
+  name: 中国来_59
+  type: vmess
+  server: 36.134.16.190
+  port: 11023
+  uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- *id001
+- name: 印度流_60
+  type: ss
+  server: v2in.hiccupa.xyz
+  port: 39056
+  cipher: aes-256-gcm
+  password: bf70476f-b3a6-438a-91b0-842ddd953215
+- name: 联通日_62
+  type: vmess
+  server: ns01.gutingting.com
+  port: 30044
+  uuid: 8dd8ea07-5489-4193-951a-e47a5c0acc9d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /aceamedv
+  ws-headers:
+    Host: sh01.fastcloud.club
+- name: 日本直_64
+  type: vmess
+  server: jp04.170203.xyz
+  port: 23245
+  uuid: 2de3c045-cffb-427f-a525-b3bad361b826
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: ''
+- name: 新加坡_65
+  server: v02.gutingting.com
+  port: 20223
+  type: trojan
+  password: 63ef3aa1-d2e5-4d81-816b-7110b7233e96
+  sni: v2sg01.fuqiangren.com
+  skip-cert-verify: true
+- name: 新加坡_67
+  type: vmess
+  server: v01.gutingting.com
+  port: 30035
+  uuid: fdf41897-292a-4bf4-9a5b-0e779ef541f7
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /aceamedv
+  ws-headers:
+    Host: sh01.fastcloud.club
+- name: 希腊_68
+  server: 2.hg.kr.cat77.cloud
+  port: 8443
+  type: trojan
+  password: cd27884b-c5af-34ec-b75f-8248077818fe
+  skip-cert-verify: true
+- name: 日本流_69
+  type: ss
+  server: v2jp2.hiccupa.xyz
+  port: 23545
+  cipher: aes-256-gcm
+  password: bf70476f-b3a6-438a-91b0-842ddd953215
+- name: 台湾流_70
+  type: ss
+  server: v2tw2.hiccupa.xyz
+  port: 32068
+  cipher: aes-256-gcm
+  password: 60dcc785-93de-451a-a40b-1c5b3094524e
+- name: _71
+  type: ss
+  server: edge-earth.themars.top
+  port: 50002
+  cipher: chacha20-ietf-poly1305
+  password: b5f71964-76b7-419d-bb9a-712d0e324211
+- name: _72
+  server: 120.226.39.25
+  port: 19248
+  type: trojan
+  password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
+  skip-cert-verify: true
+- name: 联通韩_73
+  server: v01.gutingting.com
+  port: 30056
+  type: trojan
+  password: 84277956-2627-4670-b319-fafe7f19aaea
+  sni: v1kr01.fuqiangren.com
+  skip-cert-verify: true
+- name: 台湾联_74
+  type: vmess
+  server: shct.xn--dlq110j6ul.cc
+  port: 24201
+  uuid: 43046606-d98c-44d9-8694-3f8ad46c2c9b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /fly
+- name: 加拿大_75
+  type: ss
+  server: 51.161.118.38
+  port: 801
+  cipher: chacha20-ietf-poly1305
+  password: G!yBwPWH3Vao
+- name: 英国_76
+  type: vmess
+  server: gddx.fosi.hk
+  port: 55538
+  uuid: f7adbb48-c7b3-454d-aad9-010b0c5fef4b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: ''
+- name: 日本东_77
+  type: vmess
+  server: 188.114.96.9
+  port: 443
+  uuid: 68297f4c-8448-34b2-99ff-b28246754526
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: grpc
+  tls: true
+  ws-path: 83acc76ab3
+  ws-headers:
+    Host: sakut.apee.buzz
+- name: 韩国中_78
+  type: vmess
+  server: 152.67.204.109
+  port: 8080
+  uuid: 683dc244-ce32-4d71-faa5-7a680770ed88
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /
+- name: 频道_79
+  server: hnm.xiaohouzi.club
+  port: 47651
+  type: trojan
+  password: 21e10785-99c6-316e-a184-a03384ee06e5
+  sni: $$taiguo.xiaohouzi.club
+  skip-cert-verify: true
+- name: 美国公_80
+  type: vmess
+  server: cvywfavasdc.cymlr.xyz
+  port: 443
+  uuid: 23f4bc80-3b0a-4aa3-cbe5-b8be4e8c32fc
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /ksebupo
+  ws-headers:
+    Host: cvywfavasdc.cymlr.xyz
+- name: _81
+  type: ss
+  server: edge-earth.themars.top
+  port: 50009
+  cipher: chacha20-ietf-poly1305
+  password: b5f71964-76b7-419d-bb9a-712d0e324211
+- name: 韩国频_84
+  type: vmess
+  server: 152.67.218.216
+  port: 17992
+  uuid: 52768552-c2b2-4460-89f1-e740cc145b99
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /ws-path
+  ws-headers:
+    Host: 152.67.218.216
+- name: 韩国线_85
+  type: vmess
+  server: samsung.apee.buzz
+  port: 443
+  uuid: 68297f4c-8448-34b2-99ff-b28246754526
+  alterId: 1
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /sag
+  ws-headers:
+    Host: samsung.apee.buzz
+- name: 美国_86
   type: vmess
   server: eu1.hax.yuji2022.gq
   port: 80
@@ -661,94 +703,27 @@ proxies:
   ws-path: /8kH8qnepjkprbsidLrLkmX
   ws-headers:
     Host: eu1.hax.yuji2022.gq
-- name: 隧道日_78
+- name: 香港_87
   type: vmess
-  server: fs-cm.alhttdw.cn
-  port: 20016
-  uuid: f9b9476e-d697-4739-adf9-bb3202f48db9
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-  ws-path: ''
-- name: 美国隧_79
-  type: vmess
-  server: cscu.xn--dlq110j6ul.cc
-  port: 33460
-  uuid: 3d121b63-2798-456e-a31b-4c730eebef99
+  server: ydsichuan01.bpzhuanfa.com
+  port: 12716
+  uuid: f7adbb48-c7b3-454d-aad9-010b0c5fef4b
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   ws-path: ''
-- name: 移动香_80
-  server: v01.gutingting.com
-  port: 30017
-  type: trojan
-  password: bef5465b-cb1f-4c3c-b554-89cc4e150c69
-  sni: v2hgc01.fuqiangren.com
-  skip-cert-verify: true
-- name: 英国_81
-  type: vmess
-  server: gddxd.fosi.hk
-  port: 44120
-  uuid: c91c3476-5a16-4d6a-a4a1-07539157dda0
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: ''
-- name: 香港线_82
-  type: vmess
-  server: 104.21.88.12
-  port: 443
-  uuid: 68297f4c-8448-34b2-99ff-b28246754526
-  alterId: 1
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /oracle
-  ws-headers:
-    Host: ee.aara.bar
-- name: 香港原_84
-  type: vmess
-  server: v01.gutingting.com
-  port: 30007
-  uuid: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /aceamedv
-  ws-headers:
-    Host: sh02.fastcloud.club
-- name: 直连日_86
-  server: zzjp01.gutingting.com
-  port: 20221
-  type: trojan
-  password: b201aa7d-503e-4723-80ba-1c8654a94dda
-  sni: zzjp01.gutingting.com
-  skip-cert-verify: true
-- name: 日本隧_87
-  server: gzdx0.170203.xyz
-  port: 47475
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: jpmax04.170203.xyz
-  skip-cert-verify: true
-- name: 日本隧_88
-  server: gzdx0.170203.xyz
-  port: 18289
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: jpmax03.170203.xyz
-  skip-cert-verify: true
-- name: 联通日_89
+- name: _88
+  type: ss
+  server: edge-hncm.themars.top
+  port: 50008
+  cipher: chacha20-ietf-poly1305
+  password: b5f71964-76b7-419d-bb9a-712d0e324211
+- name: 距离下_89
   type: vmess
   server: ns01.gutingting.com
-  port: 30044
-  uuid: 3e6de531-c6a7-4381-9f8a-0dd40b229cbd
+  port: 30009
+  uuid: 84277956-2627-4670-b319-fafe7f19aaea
   alterId: 0
   cipher: auto
   udp: true
@@ -756,23 +731,107 @@ proxies:
   ws-path: /aceamedv
   ws-headers:
     Host: sh01.fastcloud.club
-- name: 香港隧_91
-  server: gzdx0.170203.xyz
-  port: 27825
-  type: trojan
-  password: 3d121b63-2798-456e-a31b-4c730eebef99
-  sni: hkmax03.170203.xyz
-  skip-cert-verify: true
-- name: 日本_92
-  server: osav101.jd0001.top
-  port: 44301
-  type: trojan
-  password: 6abfad5a-24be-3657-85da-ceac782b7e19
-  sni: $osav101.jd0001.top
-  skip-cert-verify: true
-- name: 香港微_93
+- name: 中国_91
   type: vmess
-  server: app-sep.sku.hair
+  server: 36.133.171.209
+  port: 11023
+  uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: tcp
+- name: 美国_92
+  type: vmess
+  server: 141.193.213.20
+  port: 443
+  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /5QNROSRV
+  ws-headers:
+    Host: oplg1.zhujicn2.com
+- name: 美国隧_94
+  server: gzdx1.170203.xyz
+  port: 11376
+  type: trojan
+  password: 2de3c045-cffb-427f-a525-b3bad361b826
+  sni: us03.170203.xyz
+  skip-cert-verify: true
+- name: 日本线_95
+  server: v01.gutingting.com
+  port: 20220
+  type: trojan
+  password: 84277956-2627-4670-b319-fafe7f19aaea
+  sni: v2jp01.fuqiangren.com
+  skip-cert-verify: true
+- name: _96
+  server: 120.226.39.25
+  port: 19245
+  type: trojan
+  password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
+  skip-cert-verify: true
+- name: 日本_98
+  type: vmess
+  server: www.wyca.ga
+  port: 443
+  uuid: d394b3e5-abc2-444f-8f2c-74eb8e4dc6ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /giuivws
+  ws-headers:
+    Host: www.wyca.ga
+- name: 俄罗斯_99
+  server: gzdx0.170203.xyz
+  port: 28309
+  type: trojan
+  password: 2de3c045-cffb-427f-a525-b3bad361b826
+  sni: ru03.170203.xyz
+  skip-cert-verify: true
+- &id002
+  name: 日本线_101
+  server: v02.gutingting.com
+  port: 30055
+  type: trojan
+  password: 8dd8ea07-5489-4193-951a-e47a5c0acc9d
+  sni: v1jp02.fuqiangren.com
+  skip-cert-verify: true
+- *id002
+- name: 美国_102
+  type: vmess
+  server: 172.67.203.162
+  port: 443
+  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  tls: true
+  ws-path: /AUIKN8AU
+  ws-headers:
+    Host: oplg1.cfcdn2.xyz
+- name: 香港内_103
+  type: ss
+  server: cdn.alibaba-kunlun.com
+  port: 14101
+  cipher: aes-128-gcm
+  password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
+- name: 台湾_104
+  server: tw3.microsoftjs.top
+  port: 443
+  type: trojan
+  password: fe2d5a68-165d-44a6-b9d5-ab3175b621ee
+  sni: tls.microsoftjs.top
+  skip-cert-verify: true
+- &id003
+  name: 美国公_106
+  type: vmess
+  server: 137.184.245.68
   port: 443
   uuid: 68297f4c-8448-34b2-99ff-b28246754526
   alterId: 1
@@ -780,127 +839,46 @@ proxies:
   udp: true
   network: ws
   tls: true
-  ws-path: /asuo
+  ws-path: /chcara
   ws-headers:
-    Host: cdi.ctia.buzz
-- name: 美国_95
-  type: vmess
-  server: 152.69.197.74
-  port: 12345
-  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /bb
-- name: 日本内_96
+    Host: v2fly.samrta.website
+- *id003
+- name: 美国内_107
   type: ss
   server: cdn.alibaba-kunlun.com
-  port: 14111
+  port: 14112
   cipher: aes-128-gcm
   password: e1af570e-b7e2-402d-a60e-a363ffdfee7e
-- name: _97
-  type: ss
-  server: edge-earth.themars.top
-  port: 50007
-  cipher: chacha20-ietf-poly1305
-  password: b5f71964-76b7-419d-bb9a-712d0e324211
-- name: 日本东_98
+- name: _108
+  server: 120.226.39.25
+  port: 19242
+  type: trojan
+  password: 0b2d98a4-25bc-3d9f-9694-9d1e929de8dd
+  skip-cert-verify: true
+- name: 频道_109
   type: vmess
-  server: 104.24.66.218
+  server: 138.2.35.81
+  port: 80
+  uuid: a0733fc9-457e-498d-c363-9ec774a74948
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-path: /jun
+- name: 香港轻_110
+  type: vmess
+  server: brand.aohi.buzz
   port: 443
   uuid: 68297f4c-8448-34b2-99ff-b28246754526
-  alterId: 0
+  alterId: 1
   cipher: auto
   udp: true
-  network: grpc
+  network: ws
   tls: true
-  ws-path: 83acc76ab3
+  ws-path: /msi
   ws-headers:
-    Host: sakut.apee.buzz
-- name: 隧道英_99
-  type: vmess
-  server: js-cm.alhttdw.cn
-  port: 20019
-  uuid: f9b9476e-d697-4739-adf9-bb3202f48db9
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: tcp
-  ws-path: ''
-- name: 韩国中_100
-  type: vmess
-  server: 152.67.204.109
-  port: 8080
-  uuid: 683dc244-ce32-4d71-faa5-7a680770ed88
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: /
-- name: 新加坡_101
-  type: ss
-  server: 13.215.191.190
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 美国加_104
-  type: vmess
-  server: 23.224.191.6
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /path/220128071100
-- name: 香港_105
-  type: vmess
-  server: gzdx.jcnode.top
-  port: 20001
-  uuid: 3e838818-8f00-4895-98c5-36a146312901
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-path: ''
-- name: 美国公_107
-  type: vmess
-  server: uk-7.youngns.ml
-  port: 443
-  uuid: 0618e97a-9067-4514-8ebc-5c2963325bbd
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  tls: true
-  ws-path: /
-- name: 俄罗斯_108
-  server: ssl.aeccg.cn
-  port: 443
-  type: trojan
-  password: '2531454360'
-  skip-cert-verify: true
-- name: _109
-  type: ss
-  server: edge-mars.themars.top
-  port: 50000
-  cipher: chacha20-ietf-poly1305
-  password: b5f71964-76b7-419d-bb9a-712d0e324211
-- name: _110
-  type: ss
-  server: edge-hncm.themars.top
-  port: 50001
-  cipher: chacha20-ietf-poly1305
-  password: b5f71964-76b7-419d-bb9a-712d0e324211
-- name: 香港流_111
-  type: ss
-  server: v2hk2.hiccupa.xyz
-  port: 12720
-  cipher: aes-256-gcm
-  password: 60dcc785-93de-451a-a40b-1c5b3094524e
-- name: 端口_112
+    Host: msc.aohi.buzz
+- name: 端口_111
   type: vmess
   server: 103.169.91.18
   port: 80
@@ -917,215 +895,215 @@ proxy-groups:
   - 🎯 负载均衡
   - ♻ 自动选择
   - 🔰 延迟最低
-  - 香港内_1
-  - 加拿大_2
-  - 电报群_3
-  - 更新获_4
-  - 新加坡_5
-  - 新加坡_6
-  - 美国阿_7
-  - 联通韩_8
-  - 新加坡_9
-  - 中国_10
-  - 英国线_11
-  - 美国节_12
-  - 频道_13
-  - 日本东_14
-  - 频道_15
-  - 隧道日_16
-  - _17
-  - 频道_18
-  - 台湾内_19
-  - 频道_20
-  - 德国_22
-  - 新加坡_23
-  - 香港内_24
-  - 江苏省_25
-  - 日本线_26
-  - _27
-  - 新加坡_28
-  - 美国弗_30
-  - 印度流_31
-  - 新加坡_32
-  - 英国流_33
-  - 日本内_34
-  - 英国线_35
-  - 新加坡_36
-  - 香港阿_37
-  - 英国流_38
-  - 频道_39
-  - 印度线_41
-  - 美国_42
-  - 新加坡_43
-  - 洛杉矶_44
-  - _45
-  - 中国来_46
-  - 频道_47
-  - 美国节_49
-  - 希腊_50
-  - 邀请返_51
-  - 日本隧_52
-  - 土耳其_53
-  - 联通日_54
-  - 荷兰_55
-  - 台湾隧_56
-  - 加拿大_59
-  - 新加坡_60
-  - 韩国内_61
-  - 剩余流_62
-  - 台湾_63
-  - 新加坡_64
-  - 美国_65
-  - 美国_66
-  - 联通香_67
-  - 套餐到_68
-  - 香港隧_69
-  - 直连日_70
-  - 套餐到_71
-  - 台湾内_73
-  - 美国公_75
-  - 英国线_76
-  - 美国_77
-  - 隧道日_78
-  - 美国隧_79
-  - 移动香_80
-  - 英国_81
-  - 香港线_82
-  - 香港原_84
-  - 直连日_86
-  - 日本隧_87
-  - 日本隧_88
-  - 联通日_89
-  - 香港隧_91
-  - 日本_92
-  - 香港微_93
-  - 美国_95
-  - 日本内_96
-  - _97
-  - 日本东_98
-  - 隧道英_99
-  - 韩国中_100
-  - 新加坡_101
-  - 美国加_104
-  - 香港_105
-  - 美国公_107
-  - 俄罗斯_108
-  - _109
-  - _110
-  - 香港流_111
-  - 端口_112
+  - 台湾_1
+  - 香港流_2
+  - 隧道日_3
+  - 新加坡_4
+  - 剩余流_5
+  - 移动香_6
+  - 美国_7
+  - _8
+  - 隧道印_9
+  - 美国_10
+  - 隧道香_11
+  - 香港原_12
+  - 美国_13
+  - 美国隧_15
+  - 中国_16
+  - 香港直_17
+  - 新加坡_18
+  - 美国节_19
+  - 日本内_20
+  - 印度_21
+  - 印度线_22
+  - 香港内_23
+  - 美国_24
+  - 韩国直_25
+  - _26
+  - 直连日_27
+  - 联通香_28
+  - 美国加_29
+  - 美国公_30
+  - 直连美_31
+  - 美国新_32
+  - 台湾原_33
+  - 英国流_34
+  - 隧道新_35
+  - 联通日_36
+  - 新加坡_37
+  - 日本线_38
+  - 台湾隧_39
+  - 加拿大_40
+  - 香港_41
+  - 频道_42
+  - 英国线_43
+  - 美国亚_44
+  - 台湾原_45
+  - 香港线_46
+  - 德国_47
+  - 香港内_49
+  - 美国_50
+  - 加拿大_52
+  - _53
+  - 美国内_54
+  - 香港奈_55
+  - 印度线_56
+  - 美国_57
+  - 中国来_59
+  - 印度流_60
+  - 联通日_62
+  - 日本直_64
+  - 新加坡_65
+  - 新加坡_67
+  - 希腊_68
+  - 日本流_69
+  - 台湾流_70
+  - _71
+  - _72
+  - 联通韩_73
+  - 台湾联_74
+  - 加拿大_75
+  - 英国_76
+  - 日本东_77
+  - 韩国中_78
+  - 频道_79
+  - 美国公_80
+  - _81
+  - 韩国频_84
+  - 韩国线_85
+  - 美国_86
+  - 香港_87
+  - _88
+  - 距离下_89
+  - 中国_91
+  - 美国_92
+  - 美国隧_94
+  - 日本线_95
+  - _96
+  - 日本_98
+  - 俄罗斯_99
+  - 日本线_101
+  - 美国_102
+  - 香港内_103
+  - 台湾_104
+  - 美国公_106
+  - 美国内_107
+  - _108
+  - 频道_109
+  - 香港轻_110
+  - 端口_111
 - name: 🎯 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
-  proxies: &id002
-  - 香港内_1
-  - 加拿大_2
-  - 电报群_3
-  - 更新获_4
-  - 新加坡_5
-  - 新加坡_6
-  - 美国阿_7
-  - 联通韩_8
-  - 新加坡_9
-  - 中国_10
-  - 英国线_11
-  - 美国节_12
-  - 频道_13
-  - 日本东_14
-  - 频道_15
-  - 隧道日_16
-  - _17
-  - 频道_18
-  - 台湾内_19
-  - 频道_20
-  - 德国_22
-  - 新加坡_23
-  - 香港内_24
-  - 江苏省_25
-  - 日本线_26
-  - _27
-  - 新加坡_28
-  - 美国弗_30
-  - 印度流_31
-  - 新加坡_32
-  - 英国流_33
-  - 日本内_34
-  - 英国线_35
-  - 新加坡_36
-  - 香港阿_37
-  - 英国流_38
-  - 频道_39
-  - 印度线_41
-  - 美国_42
-  - 新加坡_43
-  - 洛杉矶_44
-  - _45
-  - 中国来_46
-  - 频道_47
-  - 美国节_49
-  - 希腊_50
-  - 邀请返_51
-  - 日本隧_52
-  - 土耳其_53
-  - 联通日_54
-  - 荷兰_55
-  - 台湾隧_56
-  - 加拿大_59
-  - 新加坡_60
-  - 韩国内_61
-  - 剩余流_62
-  - 台湾_63
-  - 新加坡_64
-  - 美国_65
-  - 美国_66
-  - 联通香_67
-  - 套餐到_68
-  - 香港隧_69
-  - 直连日_70
-  - 套餐到_71
-  - 台湾内_73
-  - 美国公_75
-  - 英国线_76
-  - 美国_77
-  - 隧道日_78
-  - 美国隧_79
-  - 移动香_80
-  - 英国_81
-  - 香港线_82
-  - 香港原_84
-  - 直连日_86
-  - 日本隧_87
-  - 日本隧_88
-  - 联通日_89
-  - 香港隧_91
-  - 日本_92
-  - 香港微_93
-  - 美国_95
-  - 日本内_96
-  - _97
-  - 日本东_98
-  - 隧道英_99
-  - 韩国中_100
-  - 新加坡_101
-  - 美国加_104
-  - 香港_105
-  - 美国公_107
-  - 俄罗斯_108
-  - _109
-  - _110
-  - 香港流_111
-  - 端口_112
+  proxies: &id004
+  - 台湾_1
+  - 香港流_2
+  - 隧道日_3
+  - 新加坡_4
+  - 剩余流_5
+  - 移动香_6
+  - 美国_7
+  - _8
+  - 隧道印_9
+  - 美国_10
+  - 隧道香_11
+  - 香港原_12
+  - 美国_13
+  - 美国隧_15
+  - 中国_16
+  - 香港直_17
+  - 新加坡_18
+  - 美国节_19
+  - 日本内_20
+  - 印度_21
+  - 印度线_22
+  - 香港内_23
+  - 美国_24
+  - 韩国直_25
+  - _26
+  - 直连日_27
+  - 联通香_28
+  - 美国加_29
+  - 美国公_30
+  - 直连美_31
+  - 美国新_32
+  - 台湾原_33
+  - 英国流_34
+  - 隧道新_35
+  - 联通日_36
+  - 新加坡_37
+  - 日本线_38
+  - 台湾隧_39
+  - 加拿大_40
+  - 香港_41
+  - 频道_42
+  - 英国线_43
+  - 美国亚_44
+  - 台湾原_45
+  - 香港线_46
+  - 德国_47
+  - 香港内_49
+  - 美国_50
+  - 加拿大_52
+  - _53
+  - 美国内_54
+  - 香港奈_55
+  - 印度线_56
+  - 美国_57
+  - 中国来_59
+  - 印度流_60
+  - 联通日_62
+  - 日本直_64
+  - 新加坡_65
+  - 新加坡_67
+  - 希腊_68
+  - 日本流_69
+  - 台湾流_70
+  - _71
+  - _72
+  - 联通韩_73
+  - 台湾联_74
+  - 加拿大_75
+  - 英国_76
+  - 日本东_77
+  - 韩国中_78
+  - 频道_79
+  - 美国公_80
+  - _81
+  - 韩国频_84
+  - 韩国线_85
+  - 美国_86
+  - 香港_87
+  - _88
+  - 距离下_89
+  - 中国_91
+  - 美国_92
+  - 美国隧_94
+  - 日本线_95
+  - _96
+  - 日本_98
+  - 俄罗斯_99
+  - 日本线_101
+  - 美国_102
+  - 香港内_103
+  - 台湾_104
+  - 美国公_106
+  - 美国内_107
+  - _108
+  - 频道_109
+  - 香港轻_110
+  - 端口_111
 - name: ♻ 自动选择
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
-  proxies: *id002
+  proxies: *id004
 - name: 🔰 延迟最低
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
-  proxies: *id002
+  proxies: *id004
 rules:
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
