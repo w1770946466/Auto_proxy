@@ -5,84 +5,89 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾一, server: ddns.kunlunlancloud.com, port: 29888, type: ss, cipher: chacha20-ietf-poly1305, password: 62bad9b7-cfb2-4989-b0b9-6cc9de4bb5c3}
-  - {name: 🇸🇬 Relay 🇸🇬 Singapore(ChatGPT) 12 TG:@nodpai, server: s.hkspeedup.com, port: 4031, type: ss, cipher: aes-256-gcm, password: d1dc6c3l6k}
-  - {name: 🇮🇩 Relay 🇮🇩 Indonesia(ChatGPT) 02 TG:@nodpai, server: cs.ttkcloud.xyz, port: 51012, type: trojan, password: 729481c6-4bf0-430e-afd8-750b62bab1e5, sni: 74.120.175.243, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
+  - {name: 🇬🇧 vip1 英国-03, server: bbjcu.donghui.tech, port: 15586, type: trojan, password: 0dde7f65-5eb3-4341-8db9-96fdb671a09b, sni: uk01.ckcloud.info, skip-cert-verify: true}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2", server: v02.gutingting.com, port: 30038, type: trojan, password: a38b7e82-fec9-45d6-97c3-9a5712c79f32, sni: v2hgc02.fuqiangren.com, skip-cert-verify: true}
   - {name: 🇨🇳 台湾|tg频道:@ripaojiedian, server: aiatw3.conectinnode.info, port: 1203, type: ssr, cipher: chacha20-ietf, password: mtbv8n, protocol: auth_aes128_md5, obfs: plain, protocol-param: 99610:Ss5tcJuseWa, obfs-param: 28f8799610.wns.windows.com}
-  - {name: 🇸🇬 新加坡二, server: ddns.kunlunlancloud.com, port: 17908, type: ss, cipher: aes-128-gcm, password: 62bad9b7-cfb2-4989-b0b9-6cc9de4bb5c3}
+  - {name: 🇱🇺 Luxembourg(ChatGPT) 01 TG:@nodpai, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}}
+  - {name: "🇭🇰 [ v1 ] 香港原生 · 02 · 线路2", server: v02.gutingting.com, port: 30008, type: vmess, uuid: d2465518-69ba-49bf-976b-470ef0d5e6d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
+  - {name: 🇯🇵 JCBB_日本02【vip1】, server: cscu.xn--dlq110j6ul.cc, port: 31730, type: trojan, password: 79583272-ffe8-4cf9-a020-7500d3c3fb78, sni: jp03.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇨🇳 _CN_中国_2, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 _HK_香港_9, server: 8.218.79.213, port: 34569, type: vmess, uuid: d91d9883-c37b-41f7-a2ca-ea5a2a05247c, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: tg频道:@sharingnode, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}}
-  - {name: 🇰🇷 韩国|01|直连, server: kr01.170203.xyz, port: 443, type: trojan, password: 4edae211-86bf-4da7-908e-e80eb43cb127, sni: kr01.170203.xyz, skip-cert-verify: true}
-  - {name: "🇨🇳 _CN_中国_来源：kkzui.com（快嘴科技）\r", server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: tg频道:@sharingnode 2, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}}
+  - {name: 🇯🇵 日本东京|tg频道:@ripaojiedian, server: free.314156.xyz, port: 44458, type: ss, cipher: aes-128-gcm, password: 406950e5-22a5-4ba6-9168-73531338c479}
+  - {name: "🇭🇰 [ 联通 ] 香港 · F1 · 01 · 线路2", server: v02.gutingting.com, port: 30015, type: vmess, uuid: 819d8299-09cd-4964-9ec8-e28832616b51, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}}
+  - {name: 🇭🇰 vip1 香港-09, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 0dde7f65-5eb3-4341-8db9-96fdb671a09b}
+  - {name: 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 10 TG:@nodpai, server: lv2.ttkcloud.xyz, port: 12336, type: trojan, password: 729481c6-4bf0-430e-afd8-750b62bab1e5, sni: 74.120.175.243, skip-cert-verify: false}
   - {name: 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai, server: cs.ttkcloud.xyz, port: 51005, type: trojan, password: 729481c6-4bf0-430e-afd8-750b62bab1e5, sni: 74.120.175.243, skip-cert-verify: false}
-  - {name: tg频道:@sharingnode 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de-2.sharecentre.online}}}
-  - {name: 🇮🇩 Indonesia(ChatGPT) 01 TG:@nodpai, server: asia1.oceis.net, port: 443, type: trojan, password: 94660920-baaa-11ed-b236-205c6d5f5d78, skip-cert-verify: true}
-  - {name: 🇨🇦 _CA_加拿大_1, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /UMW36262, headers: {Host: frgt1.ssr-free2.xyz}}}
-  - {name: 🇭🇰 vip1 香港-05, server: gzdx.jcnode.top, port: 40001, type: trojan, password: 37429819-4fe9-4b99-99a9-20def513f449, sni: hk02.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇭🇰 Hong Kong(ChatGPT) 27 TG:@nodpai, server: hk3.microsoftjs.top, port: 443, type: trojan, password: 18343dd6-e481-4cd3-a579-345750fa9907, sni: tls.microsoftjs.top, skip-cert-verify: false}
-  - {name: tg频道:@sharingnode 3, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: 🇨🇳 台湾 | 专线 | 2x, server: iepltw.hiccupa.xyz, port: 30227, type: ss, cipher: aes-256-gcm, password: 60dcc785-93de-451a-a40b-1c5b3094524e}
-  - {name: tg频道:@sharingnode 4, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74948, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /jun, headers: {Host: 138.2.35.81}}}
-  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1", server: v01.gutingting.com, port: 30017, type: trojan, password: 79fecc3a-974f-4440-898b-c93be0ec2462, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国|03|直连, server: kr03.170203.xyz, port: 443, type: trojan, password: 4edae211-86bf-4da7-908e-e80eb43cb127, sni: kr03.170203.xyz, skip-cert-verify: true}
-  - {name: 距离下次重置剩余：1 天, server: ns01.gutingting.com, port: 30044, type: vmess, uuid: a7b102d0-dfd8-45b4-9793-1f13521aab7c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}}
-  - {name: 🇸🇬 新加坡|02|奈飞chatGPT, server: gzdx0.170203.xyz, port: 48669, type: trojan, password: 4edae211-86bf-4da7-908e-e80eb43cb127, sni: sgmax02.170203.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡|05|奈飞隧道, server: gzdx0.170203.xyz, port: 59532, type: trojan, password: 4edae211-86bf-4da7-908e-e80eb43cb127, sni: sgmax05.170203.xyz, skip-cert-verify: true}
-  - {name: "🇯🇵 [ 联通 ] 日本 · F1 · 04 · 线路2", server: ns02.gutingting.com, port: 30045, type: vmess, uuid: 79fecc3a-974f-4440-898b-c93be0ec2462, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
-  - {name: "🇬🇧 _GB_英国\r_1", server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇷🇺 俄罗斯|03隧道, server: gzdx0.170203.xyz, port: 28309, type: trojan, password: 4edae211-86bf-4da7-908e-e80eb43cb127, sni: ru03.170203.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡五<流媒体>, server: ddns.kunlunlancloud.com, port: 55544, type: ss, cipher: chacha20-ietf-poly1305, password: 62bad9b7-cfb2-4989-b0b9-6cc9de4bb5c3}
-  - {name: "🇸🇬 [ v1 ] 新加坡 · 01 · 线路1", server: v01.gutingting.com, port: 30035, type: vmess, uuid: 79fecc3a-974f-4440-898b-c93be0ec2462, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: v01.gutingting.com}}}
-  - {name: "🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1", server: ns01.gutingting.com, port: 30009, type: vmess, uuid: 983840d4-7b9d-42fd-bef9-18207ae416ff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}}
-  - {name: "🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02", server: zzus01.gutingting.com, port: 20220, type: trojan, password: 027e3d86-dc53-4fa8-b1c0-77c25c531270, sni: zzus01.gutingting.com, skip-cert-verify: true}
-  - {name: tg频道:@sharingnode 5, server: 152.70.109.16, port: 443, type: vmess, uuid: b5a503a9-a3ad-42d9-af00-86f959d3454b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 22 TG:@nodpai, server: s.hkspeedup.com, port: 4005, type: ss, cipher: aes-256-gcm, password: d1dc6c3l6k}
-  - {name: 🇮🇳 JCBB_印度02【vip1】, server: zj.xueshao.top, port: 46625, type: vmess, uuid: 21f1f07a-728f-46cf-9345-f80b02ad5774, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: zj.xueshao.top}}}
-  - {name: 🇸🇬 亚洲 | 新加坡A, server: a-cm1.jsmmm.cyou, port: 39411, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01", server: zzus01.gutingting.com, port: 20220, type: trojan, password: 79fecc3a-974f-4440-898b-c93be0ec2462, sni: zzus01.gutingting.com, skip-cert-verify: true}
-  - {name: "🇯🇵 [ T1 ] 日本 · 02 · 线路1", server: v01.gutingting.com, port: 20221, type: trojan, password: 79fecc3a-974f-4440-898b-c93be0ec2462, sni: v2jp01.fuqiangren.com, skip-cert-verify: true}
-  - {name: "🇸🇬 [ v1 ] 新加坡 · 03 · 线路2", server: v02.gutingting.com, port: 30049, type: trojan, password: 79fecc3a-974f-4440-898b-c93be0ec2462, sni: v2sg02.fuqiangren.com, skip-cert-verify: true}
-  - {name: tg频道:@sharingnode 6, server: 65.109.182.241, port: 80, type: vmess, uuid: df2862e4-9630-436b-91a4-a263576fa0dc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 65.109.182.241}}}
-  - {name: 🇭🇰 JCBB_香港 01【vip1】, server: gzdx.jcnode.top, port: 20002, type: trojan, password: 21f1f07a-728f-46cf-9345-f80b02ad5774, sni: hk01.ckcloud.info, skip-cert-verify: true}
-  - {name: tg频道:@sharingnode 7, server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-01-2-稳定, server: hk01.shenzhouplus.cf, port: 10003, type: trojan, password: 6b0333aab4d046ebacc35e04f426cb82}
-  - {name: tg频道:@sharingnode 8, server: ovh-3.555530.xyz, port: 80, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /happy, headers: {Host: ovh-3.555530.xyz}}}
-  - {name: 🇺🇸 美国-01-4-稳定, server: us01.shenzhouplus.cf, port: 10007, type: trojan, password: 6b0333aab4d046ebacc35e04f426cb82}
-  - {name: 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai, server: v02.gutingting.com, port: 30057, type: trojan, password: 4b7f2577-e69d-420a-a7ce-1063728dd896, sni: v1kr02.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, server: finland1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: finland1.yj2022.ga}}}
-  - {name: tg频道:@sharingnode 9, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$nh-hinet06.xiaohouzi.club, skip-cert-verify: true}
-  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1 2", server: v01.gutingting.com, port: 30017, type: trojan, password: 983840d4-7b9d-42fd-bef9-18207ae416ff, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true}
-  - {name: tg频道:@sharingnode 10, server: 172.67.199.34, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lu.sharecentre.online}}}
-  - {name: tg频道:@sharingnode 11, server: 500.sayitfree.website, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3307ba30-a638-490a-9910-672c4049a722}
+  - {name: 🇭🇰 _HK_香港_7, server: 8.218.183.217, port: 64098, type: vmess, uuid: 7243a003-b59a-4686-b460-950fdf61819b, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: "🇯🇵 [ T1 ] 日本 · 01 · 线路1", server: v01.gutingting.com, port: 20220, type: trojan, password: d2465518-69ba-49bf-976b-470ef0d5e6d3, sni: v2jp01.fuqiangren.com, skip-cert-verify: true}
+  - {name: tg频道:@sharingnode 3, server: v20.emovpn.xyz, port: 8443, type: vmess, uuid: 4bac51b0-13d4-4086-8263-b0b97e5c3c74, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: v20.emovpn.xyz}}}
+  - {name: "🇺🇸 [ v1 ] 美国 · 02 · 线路1", server: v01.gutingting.com, port: 30048, type: vmess, uuid: 819d8299-09cd-4964-9ec8-e28832616b51, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
+  - {name: 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai, server: lv2.ttkcloud.xyz, port: 59021, type: trojan, password: 729481c6-4bf0-430e-afd8-750b62bab1e5, sni: 74.120.175.243, skip-cert-verify: false}
+  - {name: 🇭🇰 _HK_香港_1, server: 8.218.178.58, port: 53207, type: vmess, uuid: 9930e472-959f-4649-aa19-09354073fabc, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai, server: s.hkspeedup.com, port: 4003, type: ss, cipher: aes-256-gcm, password: d1dc6c3l6k}
-  - {name: "🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2", server: v02.gutingting.com, port: 30053, type: trojan, password: a7b102d0-dfd8-45b4-9793-1f13521aab7c, sni: v2phl01.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇲🇾 亚洲 | 马来西亚, server: a-cm1.jsmmm.cyou, port: 39814, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡|05直连, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: 4edae211-86bf-4da7-908e-e80eb43cb127, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}}
-  - {name: "🇬🇧 [ T1 ] 英国 · 01 · 线路1", server: v01.gutingting.com, port: 20226, type: trojan, password: 983840d4-7b9d-42fd-bef9-18207ae416ff, sni: v2uk01.fuqiangren.com, skip-cert-verify: false}
-  - {name: 43.154.148.54:24685, server: 43.154.148.54, port: 24685, type: vmess, uuid: b74f0019-b839-421f-add8-ffaf94fc3139, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /hk7/getData, headers: {Host: "%7B%22Host%22:%22hk7.verichains.co%22%7D"}}}
-  - {name: 🇸🇬 新加坡-01-2-稳定, server: sg01.shenzhouplus.cf, port: 10003, type: trojan, password: 6b0333aab4d046ebacc35e04f426cb82}
-  - {name: 🇸🇬 新加坡A|tg频道:@ripaojiedian, server: yz.tunnls.top, port: 31209, type: ss, cipher: chacha20-ietf-poly1305, password: 9d19c2cb-1f46-44e9-9aa9-a0c62e1b3d0f}
-  - {name: 🇯🇵 JCBB_日本02【vip1】, server: cscu.xn--dlq110j6ul.cc, port: 31730, type: trojan, password: 6ed3248e-7af1-4d7f-849c-a0128a160b1d, sni: jp03.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 美国|02|直连, server: us02.170203.xyz, port: 43543, type: vmess, uuid: 4edae211-86bf-4da7-908e-e80eb43cb127, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us02.170203.xyz}}}
-  - {name: 🇺🇸 vip1 美国-04, server: gzdx.jcnode.top, port: 48000, type: trojan, password: 37429819-4fe9-4b99-99a9-20def513f449, sni: us2.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡|01|直连2, server: sg01.170203.xyz, port: 443, type: trojan, password: 4edae211-86bf-4da7-908e-e80eb43cb127, sni: sg01.170203.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 _CN_中国->🇸🇬_SG_新加坡, server: 112.49.47.61, port: 8080, type: vmess, uuid: 85b3a81d-d8bb-41e9-be33-09d1d4e4f24a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/xvod/#wr&1v0vbdubjd305w&s^#&6kwck13ox7/s0da21/media_6893.ts", headers: {Host: 1.81yn.com}}}
-  - {name: "🇺🇸 [ v1 ] 美国 · 02 · 线路1", server: v01.gutingting.com, port: 30048, type: vmess, uuid: 027e3d86-dc53-4fa8-b1c0-77c25c531270, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
-  - {name: 🇯🇵 日本|02|直连2, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: 4edae211-86bf-4da7-908e-e80eb43cb127, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}}
-  - {name: "🇯🇵 [2x] CN 隧道 日本 NO1", server: js-cm.alhttdw.cn, port: 20014, type: vmess, uuid: f9b9476e-d697-4739-adf9-bb3202f48db9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 _HK_香港_2, server: 8.218.184.30, port: 25800, type: vmess, uuid: af6d7eb3-c0e5-4bd8-b650-5ffd299be97c, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国_25, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
-  - {name: 🇨🇳 _CN_中国_6, server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02", server: zzjp01.gutingting.com, port: 20221, type: trojan, password: a7b102d0-dfd8-45b4-9793-1f13521aab7c, sni: zzjp01.gutingting.com, skip-cert-verify: true}
-  - {name: 🇭🇰 亚洲 | 香港A, server: a-cm1.jsmmm.cyou, port: 39111, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02 2", server: zzus01.gutingting.com, port: 20220, type: trojan, password: a7b102d0-dfd8-45b4-9793-1f13521aab7c, sni: zzus01.gutingting.com, skip-cert-verify: true}
-  - {name: tg频道:@sharingnode 12, server: 203.30.188.190, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: "🇺🇸 [ v1 ] 美国 · 02 · 线路1 2", server: v01.gutingting.com, port: 30048, type: vmess, uuid: 983840d4-7b9d-42fd-bef9-18207ae416ff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
-  - {name: "🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02 2", server: zzjp01.gutingting.com, port: 20221, type: trojan, password: 983840d4-7b9d-42fd-bef9-18207ae416ff, sni: zzjp01.gutingting.com, skip-cert-verify: true}
-  - {name: "🇸🇬 [ v1 ] 新加坡 · 03 · 线路2 2", server: v02.gutingting.com, port: 30049, type: trojan, password: 983840d4-7b9d-42fd-bef9-18207ae416ff, sni: v2sg02.fuqiangren.com, skip-cert-verify: true}
-  - {name: "🇸🇬 [ T1 ] 新加坡 · 01 · 线路1", server: v01.gutingting.com, port: 20222, type: trojan, password: 027e3d86-dc53-4fa8-b1c0-77c25c531270, sni: v2sg01.fuqiangren.com, skip-cert-verify: true}
-  - {name: "🇺🇸 [ T1 ] 美国 · 02 · 线路2", server: v02.gutingting.com, port: 20225, type: trojan, password: 983840d4-7b9d-42fd-bef9-18207ae416ff, sni: v2usa01.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇨🇳 Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai, server: hncub.donghui.tech, port: 16188, type: vmess, uuid: 45606872-198f-4b4d-8c9d-98ff0fa905d0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: hncub.donghui.tech}}}
-  - {name: 🇭🇰 香港2|tg频道:@ripaojiedian, server: 47.243.174.8, port: 26234, type: vmess, uuid: 2f0e176d-c1a4-4672-90cb-e81a80c7e684, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 vip1 新加坡-02, server: gzdx.jcnode.top, port: 43000, type: vmess, uuid: 0dde7f65-5eb3-4341-8db9-96fdb671a09b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇺🇸 美国-01-3-稳定, server: us01.shenzhouplus.cf, port: 10005, type: trojan, password: 6b0333aab4d046ebacc35e04f426cb82}
+  - {name: 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快, server: gzdx0.170203.xyz, port: 53523, type: trojan, password: 24232c12-9ed4-42f0-aeb2-d205e6819dd9, sni: ru03.170203.xyz, skip-cert-verify: true}
+  - {name: 🇭🇰 香港主力节点, server: ddns.kunlunlancloud.com, port: 32156, type: ss, cipher: chacha20-ietf-poly1305, password: 62bad9b7-cfb2-4989-b0b9-6cc9de4bb5c3}
+  - {name: 🇺🇸 美国02 | 流媒体 | 1x, server: v2us2.hiccupa.xyz, port: 31671, type: ss, cipher: aes-256-gcm, password: 60dcc785-93de-451a-a40b-1c5b3094524e}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1", server: v01.gutingting.com, port: 30005, type: trojan, password: d2465518-69ba-49bf-976b-470ef0d5e6d3, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港|安卓用clash, server: gzdata1.akihuacloud.xyz, port: 10001, type: ss, cipher: aes-128-gcm, password: Sj10bnYDe7w6V29E, plugin: obfs, plugin-opts: {mode: http, host: b814ac15d2.douyincdn.com}}
+  - {name: 🇦🇷 美洲 | 阿根廷, server: a-cm1.jsmmm.cyou, port: 39711, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 [ T1 ] 日本 · 02 · 线路1", server: v01.gutingting.com, port: 20221, type: trojan, password: 819d8299-09cd-4964-9ec8-e28832616b51, sni: v2jp01.fuqiangren.com, skip-cert-verify: true}
+  - {name: "🇯🇵 [ T1 ] 日本 · 01 · 线路1 2", server: v01.gutingting.com, port: 20220, type: trojan, password: 819d8299-09cd-4964-9ec8-e28832616b51, sni: v2jp01.fuqiangren.com, skip-cert-verify: true}
+  - {name: tg频道:@sharingnode 4, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-1.sharecentre.online}}}
+  - {name: tg频道:@sharingnode 5, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}}
+  - {name: 🇯🇵 日本clash|tg频道:@ripaojiedian, server: 54.255.227.184, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: tg频道:@sharingnode 6, server: 172.67.77.95, port: 443, type: vmess, uuid: 1bff15f1-a71d-4f07-b8bf-9471708eff8b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /fthe4gsefgtdu, headers: {Host: nat.998808.xyz}}}
+  - {name: tg频道:@sharingnode 7, server: 103.178.234.201, port: 41785, type: vmess, uuid: ce6e804e-3258-4cc1-a922-1c87a3886611, alterId: 0, cipher: auto, tls: false}
+  - {name: tg频道:@sharingnode 8, server: gb.woiden.yuji2022.gq, port: 80, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: gb.woiden.yuji2022.gq}}}
+  - {name: 🇸🇬 新加坡-01-1-稳定, server: sg01.shenzhouplus.cf, port: 10001, type: trojan, password: 6b0333aab4d046ebacc35e04f426cb82}
+  - {name: 🇭🇰 vip1 香港-05, server: gzdx.jcnode.top, port: 40001, type: trojan, password: 0dde7f65-5eb3-4341-8db9-96fdb671a09b, sni: hk02.ckcloud.info, skip-cert-verify: true}
+  - {name: "", server: 36.133.171.209, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 2", server: v01.gutingting.com, port: 30005, type: trojan, password: a38b7e82-fec9-45d6-97c3-9a5712c79f32, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇳🇱 Netherlands(ChatGPT) 01 TG:@nodpai, server: 185.212.200.76, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  12, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 3855b736-bf24-461f-b5b9-1d3f04484b37, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/yfjc/nl2?ed=2048", headers: {Host: nl2.yfjc.sbs}}}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 4559186168.xhtk.cc, port: 443, type: vmess, uuid: e1da11a9-6ab7-e0c3-3ca0-92ad364db204, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /lklcvws, headers: {Host: 4559186168.xhtk.cc}}}
+  - {name: "🇺🇸 [ v1 ] 美国 · 02 · 线路1 2", server: v01.gutingting.com, port: 30048, type: vmess, uuid: ff9b4cd6-6491-48a3-979f-e107b6f3cea0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
+  - {name: tg频道:@sharingnode 9, server: mncc.cf, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: mncc.cf}}}
+  - {name: "🇮🇳 [2x] CN 隧道 印度 NO1", server: js-cm.alhttdw.cn, port: 20017, type: vmess, uuid: f9b9476e-d697-4739-adf9-bb3202f48db9, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇳🇱 [2x] CN 隧道 荷兰 NO1", server: js-cm.alhttdw.cn, port: 20012, type: vmess, uuid: f9b9476e-d697-4739-adf9-bb3202f48db9, alterId: 0, cipher: auto, tls: false}
+  - {name: tg频道:@sharingnode 10, server: 43.154.208.92, port: 53613, type: vmess, uuid: 4b89f5bf-5ef2-4047-bc64-6cd9bc7d6829, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /hk10/getData, headers: {Host: hk10.linkeden.co}}}
+  - {name: tg频道:@sharingnode 11, server: zhuyong.hucloud-dns.xyz, port: 443, type: vmess, uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /huhublog, headers: {Host: zhuyong.hucloud-dns.xyz}}}
+  - {name: 🇮🇳 vip1 印度-03, server: gzdx.jcnode.top, port: 49000, type: vmess, uuid: 0dde7f65-5eb3-4341-8db9-96fdb671a09b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: tg频道:@sharingnode 12, server: 50.116.10.96, port: 80, type: vmess, uuid: b53d410f-d53c-4531-9986-83725911ae30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 50.116.10.96}}}
+  - {name: 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai, server: gyiepl.1aba.cn, port: 17834, type: vmess, uuid: 4db8cffb-f356-43d4-b5cf-6376b08d4049, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gyiepl.1aba.cn}}}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2", server: v02.gutingting.com, port: 30006, type: trojan, password: ff9b4cd6-6491-48a3-979f-e107b6f3cea0, sni: v2hgc02.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港|06奈飞隧道1, server: gzdx0.170203.xyz, port: 13301, type: trojan, password: 24232c12-9ed4-42f0-aeb2-d205e6819dd9, sni: hkmax06.170203.xyz, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡|03|直连, server: sg003.170203.xyz, port: 34333, type: vmess, uuid: 24232c12-9ed4-42f0-aeb2-d205e6819dd9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg003.170203.xyz}}}
+  - {name: 🏳️‍🌈 注:等级过期后无法订阅, server: zzfjfgjytjyrtehrt54gsgsdfggedrh5re4364352536234yddd56gsffdsherhbresgsdfdsfssdxxww.us, port: 443, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
+  - {name: tg频道:@sharingnode 13, server: 172.67.199.34, port: 443, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}}
+  - {name: 🇸🇬 Singapore(ChatGPT) 16 TG:@nodpai, server: sg6.microsoftjs.top, port: 443, type: vmess, uuid: 18343dd6-e481-4cd3-a579-345750fa9907, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: "🇬🇧 [2x] CN 隧道 英国 NO1", server: js-cm.alhttdw.cn, port: 20019, type: vmess, uuid: f9b9476e-d697-4739-adf9-bb3202f48db9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 亚洲 | 印度, server: a-cm1.jsmmm.cyou, port: 39813, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 [ v1 ] 日本 · 06 · 线路2", server: v02.gutingting.com, port: 30055, type: trojan, password: ff9b4cd6-6491-48a3-979f-e107b6f3cea0, sni: v1jp02.fuqiangren.com, skip-cert-verify: true}
+  - {name: "🇯🇵 [ T1 ] 日本 · 01 · 线路1 3", server: v01.gutingting.com, port: 20220, type: trojan, password: ff9b4cd6-6491-48a3-979f-e107b6f3cea0, sni: v2jp01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 距离下次重置剩余：1 天, server: ns01.gutingting.com, port: 30044, type: vmess, uuid: a38b7e82-fec9-45d6-97c3-9a5712c79f32, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}}
+  - {name: "🇬🇧 [ T1 ] 英国 · 01 · 线路1", server: v01.gutingting.com, port: 20226, type: trojan, password: d2465518-69ba-49bf-976b-470ef0d5e6d3, sni: v2uk01.fuqiangren.com, skip-cert-verify: false}
+  - {name: " 2", server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国-01-2-稳定, server: us01.shenzhouplus.cf, port: 10003, type: trojan, password: 6b0333aab4d046ebacc35e04f426cb82}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 3", server: v01.gutingting.com, port: 30005, type: trojan, password: ff9b4cd6-6491-48a3-979f-e107b6f3cea0, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇬🇧 JCBB_ 英国03【vip1】, server: shcm.donghui.tech, port: 54692, type: trojan, password: 633f0aa8-fb44-4741-b875-eb55fb1dbb96, sni: uk01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇰🇷 亚洲 | 韩国A, server: a-cm1.jsmmm.cyou, port: 39511, type: vmess, uuid: 10c90644-3d34-3a39-9747-4e0c7265cf48, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 JCBB_ 新加坡 03【vip1】, server: gzdx.jcnode.top, port: 23002, type: vmess, uuid: 79583272-ffe8-4cf9-a020-7500d3c3fb78, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: "🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01", server: zzus01.gutingting.com, port: 20220, type: trojan, password: ff9b4cd6-6491-48a3-979f-e107b6f3cea0, sni: zzus01.gutingting.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港M|tg频道:@ripaojiedian, server: hk80.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: dcea7f3e-98ba-4ac8-a294-5092dc381a57, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}}
+  - {name: 🇭🇰 香港直连|tg频道:@ripaojiedian, server: 14.29.124.168, port: 31046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: "🇸🇬 [ T1 ] 新加坡 · 01 · 线路1", server: v01.gutingting.com, port: 20222, type: trojan, password: a38b7e82-fec9-45d6-97c3-9a5712c79f32, sni: v2sg01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国|03|直连, server: kr03.170203.xyz, port: 443, type: trojan, password: 24232c12-9ed4-42f0-aeb2-d205e6819dd9, sni: kr03.170203.xyz, skip-cert-verify: true}
+  - {name: "🇭🇰 _HK_香港\r", server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: d2c435dd-f5d6-4b27-b2af-daddcf85b56c, sni: dc3-download.windowsupdate1.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗, server: avalpardakht.com, port: 80, type: vmess, uuid: 1fc0c185-6050-4b89-eb50-876e1915e1ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@v2rayNG_VPNN, headers: {Host: 2.arsalanv2.sbs}}}
+  - {name: 🇸🇬 JCBB_ 新加坡 02【vip1】, server: gzdx.jcnode.top, port: 23001, type: vmess, uuid: 633f0aa8-fb44-4741-b875-eb55fb1dbb96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: "🇯🇵 [ T1 ] 日本 · 02 · 线路1 2", server: v01.gutingting.com, port: 20221, type: trojan, password: d2465518-69ba-49bf-976b-470ef0d5e6d3, sni: v2jp01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai, server: jp80.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: dcea7f3e-98ba-4ac8-a294-5092dc381a57, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: jp80.af49c4e4c2ef.sanfen001.pics}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -101,252 +106,267 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇨🇳 台湾一
-      - 🇸🇬 Relay 🇸🇬 Singapore(ChatGPT) 12 TG:@nodpai
-      - 🇮🇩 Relay 🇮🇩 Indonesia(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 vip1 英国-03
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
       - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡二
+      - 🇱🇺 Luxembourg(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇨🇳 _CN_中国_2
+      - 🇭🇰 _HK_香港_9
       - tg频道:@sharingnode
-      - 🇰🇷 韩国|01|直连
-      - "🇨🇳 _CN_中国_来源：kkzui.com（快嘴科技）\r"
-      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
       - tg频道:@sharingnode 2
-      - 🇮🇩 Indonesia(ChatGPT) 01 TG:@nodpai
-      - 🇨🇦 _CA_加拿大_1
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 Hong Kong(ChatGPT) 27 TG:@nodpai
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 01 · 线路2
+      - 🇭🇰 vip1 香港-09
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 10 TG:@nodpai
+      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 _HK_香港_7
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
       - tg频道:@sharingnode 3
-      - 🇨🇳 台湾 | 专线 | 2x
-      - tg频道:@sharingnode 4
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1
-      - 🇰🇷 韩国|03|直连
-      - 距离下次重置剩余：1 天
-      - 🇸🇬 新加坡|02|奈飞chatGPT
-      - 🇸🇬 新加坡|05|奈飞隧道
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 04 · 线路2
-      - "🇬🇧 _GB_英国\r_1"
-      - 🇷🇺 俄罗斯|03隧道
-      - 🇸🇬 新加坡五<流媒体>
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02
-      - tg频道:@sharingnode 5
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 22 TG:@nodpai
-      - 🇮🇳 JCBB_印度02【vip1】
-      - 🇸🇬 亚洲 | 新加坡A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - 🇭🇰 _HK_香港_1
+      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
+      - 🇸🇬 vip1 新加坡-02
+      - 🇺🇸 美国-01-3-稳定
+      - 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快
+      - 🇭🇰 香港主力节点
+      - 🇺🇸 美国02 | 流媒体 | 1x
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1
+      - 🇭🇰 香港|安卓用clash
+      - 🇦🇷 美洲 | 阿根廷
       - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 2
+      - tg频道:@sharingnode 4
+      - tg频道:@sharingnode 5
+      - 🇯🇵 日本clash|tg频道:@ripaojiedian
       - tg频道:@sharingnode 6
-      - 🇭🇰 JCBB_香港 01【vip1】
       - tg频道:@sharingnode 7
-      - 🇭🇰 香港-01-2-稳定
       - tg频道:@sharingnode 8
-      - 🇺🇸 美国-01-4-稳定
-      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇸🇬 新加坡-01-1-稳定
+      - 🇭🇰 vip1 香港-05
+      - ""
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 2
+      - 🇳🇱 Netherlands(ChatGPT) 01 TG:@nodpai
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
       - tg频道:@sharingnode 9
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1 2
+      - 🇮🇳 [2x] CN 隧道 印度 NO1
+      - 🇳🇱 [2x] CN 隧道 荷兰 NO1
       - tg频道:@sharingnode 10
       - tg频道:@sharingnode 11
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇲🇾 亚洲 | 马来西亚
-      - 🇸🇬 新加坡|05直连
-      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
-      - 43.154.148.54:24685
-      - 🇸🇬 新加坡-01-2-稳定
-      - 🇸🇬 新加坡A|tg频道:@ripaojiedian
-      - 🇯🇵 JCBB_日本02【vip1】
-      - 🇺🇸 美国|02|直连
-      - 🇺🇸 vip1 美国-04
-      - 🇸🇬 新加坡|01|直连2
-      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇯🇵 日本|02|直连2
-      - 🇯🇵 [2x] CN 隧道 日本 NO1
-      - 🇭🇰 _HK_香港_2
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国_25
-      - 🇨🇳 _CN_中国_6
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02
-      - 🇭🇰 亚洲 | 香港A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02 2
+      - 🇮🇳 vip1 印度-03
       - tg频道:@sharingnode 12
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02 2
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2 2
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇭🇰 香港|06奈飞隧道1
+      - 🇸🇬 新加坡|03|直连
+      - 🏳️‍🌈 注:等级过期后无法订阅
+      - tg频道:@sharingnode 13
+      - 🇸🇬 Singapore(ChatGPT) 16 TG:@nodpai
+      - 🇬🇧 [2x] CN 隧道 英国 NO1
+      - 🇮🇳 亚洲 | 印度
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 3
+      - 距离下次重置剩余：1 天
+      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
+      - " 2"
+      - 🇺🇸 美国-01-2-稳定
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 3
+      - 🇬🇧 JCBB_ 英国03【vip1】
+      - 🇰🇷 亚洲 | 韩国A
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇭🇰 香港M|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
       - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
-      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
-      - 🇨🇳 Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇰🇷 韩国|03|直连
+      - "🇭🇰 _HK_香港\r"
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇸🇬 JCBB_ 新加坡 02【vip1】
+      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1 2
+      - 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾一
-      - 🇸🇬 Relay 🇸🇬 Singapore(ChatGPT) 12 TG:@nodpai
-      - 🇮🇩 Relay 🇮🇩 Indonesia(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 vip1 英国-03
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
       - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡二
+      - 🇱🇺 Luxembourg(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇨🇳 _CN_中国_2
+      - 🇭🇰 _HK_香港_9
       - tg频道:@sharingnode
-      - 🇰🇷 韩国|01|直连
-      - "🇨🇳 _CN_中国_来源：kkzui.com（快嘴科技）\r"
-      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
       - tg频道:@sharingnode 2
-      - 🇮🇩 Indonesia(ChatGPT) 01 TG:@nodpai
-      - 🇨🇦 _CA_加拿大_1
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 Hong Kong(ChatGPT) 27 TG:@nodpai
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 01 · 线路2
+      - 🇭🇰 vip1 香港-09
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 10 TG:@nodpai
+      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 _HK_香港_7
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
       - tg频道:@sharingnode 3
-      - 🇨🇳 台湾 | 专线 | 2x
-      - tg频道:@sharingnode 4
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1
-      - 🇰🇷 韩国|03|直连
-      - 距离下次重置剩余：1 天
-      - 🇸🇬 新加坡|02|奈飞chatGPT
-      - 🇸🇬 新加坡|05|奈飞隧道
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 04 · 线路2
-      - "🇬🇧 _GB_英国\r_1"
-      - 🇷🇺 俄罗斯|03隧道
-      - 🇸🇬 新加坡五<流媒体>
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02
-      - tg频道:@sharingnode 5
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 22 TG:@nodpai
-      - 🇮🇳 JCBB_印度02【vip1】
-      - 🇸🇬 亚洲 | 新加坡A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - 🇭🇰 _HK_香港_1
+      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
+      - 🇸🇬 vip1 新加坡-02
+      - 🇺🇸 美国-01-3-稳定
+      - 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快
+      - 🇭🇰 香港主力节点
+      - 🇺🇸 美国02 | 流媒体 | 1x
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1
+      - 🇭🇰 香港|安卓用clash
+      - 🇦🇷 美洲 | 阿根廷
       - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 2
+      - tg频道:@sharingnode 4
+      - tg频道:@sharingnode 5
+      - 🇯🇵 日本clash|tg频道:@ripaojiedian
       - tg频道:@sharingnode 6
-      - 🇭🇰 JCBB_香港 01【vip1】
       - tg频道:@sharingnode 7
-      - 🇭🇰 香港-01-2-稳定
       - tg频道:@sharingnode 8
-      - 🇺🇸 美国-01-4-稳定
-      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇸🇬 新加坡-01-1-稳定
+      - 🇭🇰 vip1 香港-05
+      - ""
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 2
+      - 🇳🇱 Netherlands(ChatGPT) 01 TG:@nodpai
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
       - tg频道:@sharingnode 9
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1 2
+      - 🇮🇳 [2x] CN 隧道 印度 NO1
+      - 🇳🇱 [2x] CN 隧道 荷兰 NO1
       - tg频道:@sharingnode 10
       - tg频道:@sharingnode 11
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇲🇾 亚洲 | 马来西亚
-      - 🇸🇬 新加坡|05直连
-      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
-      - 43.154.148.54:24685
-      - 🇸🇬 新加坡-01-2-稳定
-      - 🇸🇬 新加坡A|tg频道:@ripaojiedian
-      - 🇯🇵 JCBB_日本02【vip1】
-      - 🇺🇸 美国|02|直连
-      - 🇺🇸 vip1 美国-04
-      - 🇸🇬 新加坡|01|直连2
-      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇯🇵 日本|02|直连2
-      - 🇯🇵 [2x] CN 隧道 日本 NO1
-      - 🇭🇰 _HK_香港_2
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国_25
-      - 🇨🇳 _CN_中国_6
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02
-      - 🇭🇰 亚洲 | 香港A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02 2
+      - 🇮🇳 vip1 印度-03
       - tg频道:@sharingnode 12
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02 2
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2 2
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇭🇰 香港|06奈飞隧道1
+      - 🇸🇬 新加坡|03|直连
+      - 🏳️‍🌈 注:等级过期后无法订阅
+      - tg频道:@sharingnode 13
+      - 🇸🇬 Singapore(ChatGPT) 16 TG:@nodpai
+      - 🇬🇧 [2x] CN 隧道 英国 NO1
+      - 🇮🇳 亚洲 | 印度
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 3
+      - 距离下次重置剩余：1 天
+      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
+      - " 2"
+      - 🇺🇸 美国-01-2-稳定
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 3
+      - 🇬🇧 JCBB_ 英国03【vip1】
+      - 🇰🇷 亚洲 | 韩国A
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇭🇰 香港M|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
       - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
-      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
-      - 🇨🇳 Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇰🇷 韩国|03|直连
+      - "🇭🇰 _HK_香港\r"
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇸🇬 JCBB_ 新加坡 02【vip1】
+      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1 2
+      - 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾一
-      - 🇸🇬 Relay 🇸🇬 Singapore(ChatGPT) 12 TG:@nodpai
-      - 🇮🇩 Relay 🇮🇩 Indonesia(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 vip1 英国-03
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
       - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡二
+      - 🇱🇺 Luxembourg(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇨🇳 _CN_中国_2
+      - 🇭🇰 _HK_香港_9
       - tg频道:@sharingnode
-      - 🇰🇷 韩国|01|直连
-      - "🇨🇳 _CN_中国_来源：kkzui.com（快嘴科技）\r"
-      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
       - tg频道:@sharingnode 2
-      - 🇮🇩 Indonesia(ChatGPT) 01 TG:@nodpai
-      - 🇨🇦 _CA_加拿大_1
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 Hong Kong(ChatGPT) 27 TG:@nodpai
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 01 · 线路2
+      - 🇭🇰 vip1 香港-09
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 10 TG:@nodpai
+      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 _HK_香港_7
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
       - tg频道:@sharingnode 3
-      - 🇨🇳 台湾 | 专线 | 2x
-      - tg频道:@sharingnode 4
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1
-      - 🇰🇷 韩国|03|直连
-      - 距离下次重置剩余：1 天
-      - 🇸🇬 新加坡|02|奈飞chatGPT
-      - 🇸🇬 新加坡|05|奈飞隧道
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 04 · 线路2
-      - "🇬🇧 _GB_英国\r_1"
-      - 🇷🇺 俄罗斯|03隧道
-      - 🇸🇬 新加坡五<流媒体>
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02
-      - tg频道:@sharingnode 5
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 22 TG:@nodpai
-      - 🇮🇳 JCBB_印度02【vip1】
-      - 🇸🇬 亚洲 | 新加坡A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - 🇭🇰 _HK_香港_1
+      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
+      - 🇸🇬 vip1 新加坡-02
+      - 🇺🇸 美国-01-3-稳定
+      - 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快
+      - 🇭🇰 香港主力节点
+      - 🇺🇸 美国02 | 流媒体 | 1x
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1
+      - 🇭🇰 香港|安卓用clash
+      - 🇦🇷 美洲 | 阿根廷
       - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 2
+      - tg频道:@sharingnode 4
+      - tg频道:@sharingnode 5
+      - 🇯🇵 日本clash|tg频道:@ripaojiedian
       - tg频道:@sharingnode 6
-      - 🇭🇰 JCBB_香港 01【vip1】
       - tg频道:@sharingnode 7
-      - 🇭🇰 香港-01-2-稳定
       - tg频道:@sharingnode 8
-      - 🇺🇸 美国-01-4-稳定
-      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇸🇬 新加坡-01-1-稳定
+      - 🇭🇰 vip1 香港-05
+      - ""
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 2
+      - 🇳🇱 Netherlands(ChatGPT) 01 TG:@nodpai
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
       - tg频道:@sharingnode 9
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1 2
+      - 🇮🇳 [2x] CN 隧道 印度 NO1
+      - 🇳🇱 [2x] CN 隧道 荷兰 NO1
       - tg频道:@sharingnode 10
       - tg频道:@sharingnode 11
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇲🇾 亚洲 | 马来西亚
-      - 🇸🇬 新加坡|05直连
-      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
-      - 43.154.148.54:24685
-      - 🇸🇬 新加坡-01-2-稳定
-      - 🇸🇬 新加坡A|tg频道:@ripaojiedian
-      - 🇯🇵 JCBB_日本02【vip1】
-      - 🇺🇸 美国|02|直连
-      - 🇺🇸 vip1 美国-04
-      - 🇸🇬 新加坡|01|直连2
-      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇯🇵 日本|02|直连2
-      - 🇯🇵 [2x] CN 隧道 日本 NO1
-      - 🇭🇰 _HK_香港_2
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国_25
-      - 🇨🇳 _CN_中国_6
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02
-      - 🇭🇰 亚洲 | 香港A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02 2
+      - 🇮🇳 vip1 印度-03
       - tg频道:@sharingnode 12
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02 2
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2 2
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇭🇰 香港|06奈飞隧道1
+      - 🇸🇬 新加坡|03|直连
+      - 🏳️‍🌈 注:等级过期后无法订阅
+      - tg频道:@sharingnode 13
+      - 🇸🇬 Singapore(ChatGPT) 16 TG:@nodpai
+      - 🇬🇧 [2x] CN 隧道 英国 NO1
+      - 🇮🇳 亚洲 | 印度
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 3
+      - 距离下次重置剩余：1 天
+      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
+      - " 2"
+      - 🇺🇸 美国-01-2-稳定
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 3
+      - 🇬🇧 JCBB_ 英国03【vip1】
+      - 🇰🇷 亚洲 | 韩国A
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇭🇰 香港M|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
       - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
-      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
-      - 🇨🇳 Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇰🇷 韩国|03|直连
+      - "🇭🇰 _HK_香港\r"
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇸🇬 JCBB_ 新加坡 02【vip1】
+      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1 2
+      - 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -354,84 +374,89 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾一
-      - 🇸🇬 Relay 🇸🇬 Singapore(ChatGPT) 12 TG:@nodpai
-      - 🇮🇩 Relay 🇮🇩 Indonesia(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 vip1 英国-03
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
       - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡二
+      - 🇱🇺 Luxembourg(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇨🇳 _CN_中国_2
+      - 🇭🇰 _HK_香港_9
       - tg频道:@sharingnode
-      - 🇰🇷 韩国|01|直连
-      - "🇨🇳 _CN_中国_来源：kkzui.com（快嘴科技）\r"
-      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
       - tg频道:@sharingnode 2
-      - 🇮🇩 Indonesia(ChatGPT) 01 TG:@nodpai
-      - 🇨🇦 _CA_加拿大_1
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 Hong Kong(ChatGPT) 27 TG:@nodpai
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 01 · 线路2
+      - 🇭🇰 vip1 香港-09
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 10 TG:@nodpai
+      - 🇲🇽 Relay 🇲🇽 Mexico(ChatGPT) 01 TG:@nodpai
+      - 🇭🇰 _HK_香港_7
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
       - tg频道:@sharingnode 3
-      - 🇨🇳 台湾 | 专线 | 2x
-      - tg频道:@sharingnode 4
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1
-      - 🇰🇷 韩国|03|直连
-      - 距离下次重置剩余：1 天
-      - 🇸🇬 新加坡|02|奈飞chatGPT
-      - 🇸🇬 新加坡|05|奈飞隧道
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 04 · 线路2
-      - "🇬🇧 _GB_英国\r_1"
-      - 🇷🇺 俄罗斯|03隧道
-      - 🇸🇬 新加坡五<流媒体>
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02
-      - tg频道:@sharingnode 5
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 22 TG:@nodpai
-      - 🇮🇳 JCBB_印度02【vip1】
-      - 🇸🇬 亚洲 | 新加坡A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - 🇭🇰 _HK_香港_1
+      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
+      - 🇸🇬 vip1 新加坡-02
+      - 🇺🇸 美国-01-3-稳定
+      - 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快
+      - 🇭🇰 香港主力节点
+      - 🇺🇸 美国02 | 流媒体 | 1x
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1
+      - 🇭🇰 香港|安卓用clash
+      - 🇦🇷 美洲 | 阿根廷
       - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 2
+      - tg频道:@sharingnode 4
+      - tg频道:@sharingnode 5
+      - 🇯🇵 日本clash|tg频道:@ripaojiedian
       - tg频道:@sharingnode 6
-      - 🇭🇰 JCBB_香港 01【vip1】
       - tg频道:@sharingnode 7
-      - 🇭🇰 香港-01-2-稳定
       - tg频道:@sharingnode 8
-      - 🇺🇸 美国-01-4-稳定
-      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇸🇬 新加坡-01-1-稳定
+      - 🇭🇰 vip1 香港-05
+      - ""
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 2
+      - 🇳🇱 Netherlands(ChatGPT) 01 TG:@nodpai
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
       - tg频道:@sharingnode 9
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1 2
+      - 🇮🇳 [2x] CN 隧道 印度 NO1
+      - 🇳🇱 [2x] CN 隧道 荷兰 NO1
       - tg频道:@sharingnode 10
       - tg频道:@sharingnode 11
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇲🇾 亚洲 | 马来西亚
-      - 🇸🇬 新加坡|05直连
-      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
-      - 43.154.148.54:24685
-      - 🇸🇬 新加坡-01-2-稳定
-      - 🇸🇬 新加坡A|tg频道:@ripaojiedian
-      - 🇯🇵 JCBB_日本02【vip1】
-      - 🇺🇸 美国|02|直连
-      - 🇺🇸 vip1 美国-04
-      - 🇸🇬 新加坡|01|直连2
-      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇯🇵 日本|02|直连2
-      - 🇯🇵 [2x] CN 隧道 日本 NO1
-      - 🇭🇰 _HK_香港_2
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国_25
-      - 🇨🇳 _CN_中国_6
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02
-      - 🇭🇰 亚洲 | 香港A
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02 2
+      - 🇮🇳 vip1 印度-03
       - tg频道:@sharingnode 12
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02 2
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2 2
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇭🇰 香港|06奈飞隧道1
+      - 🇸🇬 新加坡|03|直连
+      - 🏳️‍🌈 注:等级过期后无法订阅
+      - tg频道:@sharingnode 13
+      - 🇸🇬 Singapore(ChatGPT) 16 TG:@nodpai
+      - 🇬🇧 [2x] CN 隧道 英国 NO1
+      - 🇮🇳 亚洲 | 印度
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 3
+      - 距离下次重置剩余：1 天
+      - 🇬🇧 [ T1 ] 英国 · 01 · 线路1
+      - " 2"
+      - 🇺🇸 美国-01-2-稳定
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 3
+      - 🇬🇧 JCBB_ 英国03【vip1】
+      - 🇰🇷 亚洲 | 韩国A
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇭🇰 香港M|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
       - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
-      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
-      - 🇨🇳 Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇰🇷 韩国|03|直连
+      - "🇭🇰 _HK_香港\r"
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇸🇬 JCBB_ 新加坡 02【vip1】
+      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1 2
+      - 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
   - name: 📲 电报消息
     type: select
     proxies:
@@ -618,93 +643,95 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 Hong Kong(ChatGPT) 27 TG:@nodpai
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1
-      - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 22 TG:@nodpai
-      - 🇭🇰 JCBB_香港 01【vip1】
-      - 🇭🇰 香港-01-2-稳定
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 01 · 线路1 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
+      - 🇭🇰 _HK_香港_9
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 01 · 线路2
+      - 🇭🇰 vip1 香港-09
+      - 🇭🇰 _HK_香港_7
+      - 🇭🇰 _HK_香港_1
       - 🇭🇰 Relay 🇭🇰 Hong Kong(ChatGPT) 18 TG:@nodpai
-      - 🇭🇰 _HK_香港_2
-      - 🇭🇰 亚洲 | 香港A
-      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇭🇰 香港主力节点
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1
+      - 🇭🇰 香港|安卓用clash
+      - 🇭🇰 vip1 香港-05
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇭🇰 香港|06奈飞隧道1
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 02 · 线路1 3
+      - 🇭🇰 香港M|tg频道:@ripaojiedian
+      - 🇭🇰 香港直连|tg频道:@ripaojiedian
+      - "🇭🇰 _HK_香港\r"
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 04 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
       - 🇯🇵 JCBB_日本02【vip1】
-      - 🇯🇵 日本|02|直连2
-      - 🇯🇵 [2x] CN 隧道 日本 NO1
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 02 2
+      - 🇯🇵 日本东京|tg频道:@ripaojiedian
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快
+      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 2
+      - 🇯🇵 日本clash|tg频道:@ripaojiedian
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1 3
+      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1 2
+      - 🇯🇵 Japan(ChatGPT) 01 TG:@nodpai
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
-      - 🇺🇸 美国-01-4-稳定
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
-      - 🇺🇸 美国|02|直连
-      - 🇺🇸 vip1 美国-04
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国_25
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 02 2
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - 🇺🇸 美国-01-3-稳定
+      - 🇺🇸 美国02 | 流媒体 | 1x
+      - 🇦🇷 美洲 | 阿根廷
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 [ v1 ] 美国 · 02 · 线路1 2
-      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇺🇸 Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - 🇺🇸 美国-01-2-稳定
+      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾一
       - 🇨🇳 台湾|tg频道:@ripaojiedian
-      - 🇨🇳 台湾 | 专线 | 2x
-      - 🇨🇳 Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 Relay 🇸🇬 Singapore(ChatGPT) 12 TG:@nodpai
-      - 🇸🇬 新加坡二
-      - 🇸🇬 新加坡|02|奈飞chatGPT
-      - 🇸🇬 新加坡|05|奈飞隧道
-      - 🇸🇬 新加坡五<流媒体>
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇸🇬 亚洲 | 新加坡A
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - 🇸🇬 新加坡|05直连
-      - 🇸🇬 新加坡-01-2-稳定
-      - 🇸🇬 新加坡A|tg频道:@ripaojiedian
-      - 🇸🇬 新加坡|01|直连2
-      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2 2
+      - 🇸🇬 vip1 新加坡-02
+      - 🇸🇬 推荐使用新加坡直连或者日本直连节点，速度更快
+      - 🇸🇬 新加坡-01-1-稳定
+      - 🇸🇬 新加坡|03|直连
+      - 🇸🇬 Singapore(ChatGPT) 16 TG:@nodpai
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
       - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇸🇬 JCBB_ 新加坡 02【vip1】
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 韩国|01|直连
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 10 TG:@nodpai
+      - 🇰🇷 亚洲 | 韩国A
       - 🇰🇷 韩国|03|直连
-      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇸🇬 新加坡|02|奈飞chatGPT
-      - 🇸🇬 新加坡|05|奈飞隧道
+      - 🇭🇰 香港|06奈飞隧道1
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
