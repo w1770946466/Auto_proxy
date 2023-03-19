@@ -502,11 +502,11 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://raw.fastgit.org/freefq/free/master/v2'
+    sub_url = 'https://raw.fastgit.org/freefq/free/master/v2;https://sub.sharecentre.online/sub'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
-    config_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/config.yaml;https://sub.sharecentre.online/sub'
+    config_url = 'https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/config.yaml'
     config_path = './config.yaml'
 
     if sub_url is None or sub_url == '':
