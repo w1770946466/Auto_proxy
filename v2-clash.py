@@ -6,8 +6,7 @@ import urllib.parse
 import socket
 
 #命名数字
-vmess = [b'vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICI4MOerr+WPoyIsCiAgImFkZCI6ICIxMDMuMTY5LjkxLjE4IiwKICAicG9ydCI6IDgwLAogICJpZCI6ICIwNGExYjQ4YS00YTM5LTRiYmMtZmU3ZC0zMjZjYTNlMWYwMWYiLAogICJhaWQiOiAwLAogICJuZXQiOiAidGNwIiwKICAidHlwZSI6ICJodHRwIiwKICAiaG9zdCI6ICIiLAogICJwYXRoIjogIi8iLAogICJ0bHMiOiAibm9uZSIKfQ==']
-
+vmess = []
 def log(msg):
     time = datetime.datetime.now()
     print('[' + time.strftime('%Y.%m.%d-%H:%M:%S') + '] ' + msg)
@@ -502,7 +501,7 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://raw.fastgit.org/freefq/free/master/v2;https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub;https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub;https://raw.githubusercontent.com/kxswa/k/k/base64'
+    sub_url = 'https://raw.fastgit.org/freefq/free/master/v2;https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub;https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
