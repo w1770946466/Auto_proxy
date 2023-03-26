@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `8`
-Updata：`2023-03-27 02:10:27`
+Updata：`2023-03-27 05:07:40`
 
 
 <details>
@@ -6699,50 +6699,58 @@ Updata：`2023-03-27 02:10:27`
 
 
 
->Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=00c30944ec6d288b0402f6e933691eff`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=9880ab24848558f7f144a1a4306bbe26`
+`https://www.dgycom.com/api/v1/client/subscribe?token=6147bcc3e8a521a8a442ad16d8672802`
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=2305ff028cba2c0ac4b432925d106d53`
+`https://www.dgycom.com/api/v1/client/subscribe?token=5ec4b91b6a683946d4fb6f55793bfcb7`
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=aedc7ce898b2ba565d912593e236514c`
+`https://www.dgycom.com/api/v1/client/subscribe?token=8ef37669e6071bc1060a710dffe91c84`
 
 
 
 
 >Trial subscription：
-`https://feiniaoyun.top/api/v1/client/subscribe?token=390a80f8005199831e1e63dd00ddcfdc`
+`https://www.dgycom.com/api/v1/client/subscribe?token=33afc55d962d58ceab15be412f435165`
 
 
 
 
 >Trial subscription：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=f0fcdc95f4e8b95735b814a6d7fc937f`
+`https://feiniaoyun.top/api/v1/client/subscribe?token=e28983d3ea7ca44442f17b8d2dd06ccd`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=64bc318ae04c657adf0b4de6c98256ab`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=e9a94b2ff307c31fa16583945558c176`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=3f6fa38cff993fba4756445c4a472649`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=bfe21c29a11df0b87731b1d6c9924610`
+
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=724885fc92e5dc2939ae528d963a9562`
 
 
 
