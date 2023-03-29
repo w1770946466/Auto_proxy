@@ -501,7 +501,7 @@ def save_config(path, data):
 if __name__ == '__main__':
     # 订阅地址 多个地址用;隔开
     #sub_url = input('请输入订阅地址(多个地址用;隔开):')
-    sub_url = 'https://raw.fastgit.org/freefq/free/master/v2;https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub;https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1'
+    sub_url = 'https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub;https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub;https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1'
     # 输出路径
     output_path = './output.yaml'
     # 规则策略
