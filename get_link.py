@@ -3,20 +3,6 @@ import requests
 import random, string
 
 get_sub_url()
-#获取clash订阅
-def get_yaml():
-    print("开始获取clsah订阅")
-    urls = ["https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1&insert=false&config=https://raw.githubusercontent.com/w1770946466/fetchProxy/main/config/provider/rxconfig.ini&emoji=true","https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2&insert=false&config=https://raw.githubusercontent.com/w1770946466/fetchProxy/main/config/provider/rxconfig.ini&emoji=true", "https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3&insert=false&config=https://raw.githubusercontent.com/w1770946466/fetchProxy/main/config/provider/rxconfig.ini&emoji=true"]
-    n = 1
-    for i in urls:
-        response = requests.get(i)
-        #print(response.text)
-        file_L = open("Long_term_subscription" + str(n) +".yaml", 'w', encoding='utf-8')
-        file_L.write(response.text)
-        file_L.close()
-        n += 1
-    print("clash订阅获取完成！")
-
 #获取机场试用订阅
 def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
@@ -103,3 +89,4 @@ def get_sub_url():
             except:
                 print("获取订阅失败")
             i += 1
+            #print(f'Number succeeded: {i}\t{subscription_url}')
