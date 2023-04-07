@@ -2,6 +2,7 @@ import re
 import requests
 import random, string
 
+e_sub = []
 
 #获取机场试用订阅
 def get_sub_url():
@@ -33,12 +34,9 @@ def get_sub_url():
                 response = requests.post(current_url+V2B_REG_REL_URL, data=form_data,headers=header)
                 subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                 e_sub.append(subscription_url)
-                try_sub.append(subscription_url)
-                #print(subscription_url)
-                print("add:"+subscription_url)
+                print(subscription_url)
             except:
                 print("获取订阅失败")
             i += 1
-            #print(f'Number succeeded: {i}\t{subscription_url}')
 
 get_sub_url()            
