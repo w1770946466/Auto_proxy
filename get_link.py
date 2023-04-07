@@ -2,7 +2,7 @@ import re
 import requests
 import random, string
 
-get_sub_url()
+
 #获取机场试用订阅
 def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
@@ -90,3 +90,5 @@ def get_sub_url():
                 print("获取订阅失败")
             i += 1
             #print(f'Number succeeded: {i}\t{subscription_url}')
+
+get_sub_url()            
