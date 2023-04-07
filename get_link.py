@@ -2,7 +2,7 @@ import re
 import requests
 import random, string
 
-
+get_sub_url()
 #获取机场试用订阅
 def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
