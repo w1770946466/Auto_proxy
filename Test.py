@@ -58,7 +58,7 @@ def get_sub_url():
                         'Referer': 'https://xn--4gqu8thxjfje.com/',
                     }
                     fan_data = {
-                        'period': 'quarter_price',
+                        'period': 'onetime_price',
                         'plan_id': '1',
                     }
                     fan_res_n = requests.post(
@@ -66,7 +66,7 @@ def get_sub_url():
                     print(fan_res_n.json()["data"])
                     fan_data_n = {
                         'trade_no':fan_res_n.json()["data"],
-                        'method': '1',
+                        #'method': '1',
                     }
                     fan_res_pay = requests.post(
                         'https://xn--4gqu8thxjfje.com/api/v1/user/order/checkout', data=fan_data_n, headers=fan_header)
