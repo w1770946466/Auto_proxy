@@ -12,7 +12,7 @@ def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
     home_urls = (
-        'https://seeworld.pro'           #5T   永久
+        'https://seeworld.pro',          #5T   永久
         'https://xn--4gqu8thxjfje.com',  #100G 永久
         'https://www.dgycom.com',        #10G  2天
         'https://fastestcloud.xyz',      #2G   1天
