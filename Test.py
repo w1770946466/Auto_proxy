@@ -20,7 +20,6 @@ def get_sub_url():
         'https://cloud.hhygj.xyz',
         'https://feiniaoyun.top', 
         'https://www.dgycom.com',
-        'https://xn--sjq02ggyfdmt.com',
         'https://satou.moe',
         'https://fly10086.top',
         'https://party668.com',
