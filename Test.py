@@ -12,19 +12,17 @@ def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
     home_urls = (
-        'https://xn--4gqu8thxjfje.com',
-        'https://dash.vmssr.co',
-        'https://www.ckcloud.xyz',
-        'https://fastestcloud.xyz',
-        'https://user.bafang.vip',
-        'https://cloud.hhygj.xyz',
-        'https://feiniaoyun.top', 
-        'https://www.dgycom.com',
-        'https://satou.moe',
-        'https://fly10086.top',
-        'https://party668.com',
-        'https://www.t3acc.top',
-        'https://seeworld.pro'
+        'https://seeworld.pro'           #5T
+        'https://xn--4gqu8thxjfje.com',  #100G
+        'https://www.dgycom.com',        #10G
+        'https://fastestcloud.xyz',      #2G
+        'https://satou.moe',             #2G
+        'https://dash.vmssr.co',         #1G
+        'https://www.ckcloud.xyz',       #1G
+        'https://user.bafang.vip',       #1G
+        'https://fly10086.top',          #1G
+        'https://party668.com',          #1G
+        'https://www.t3acc.top',         #1G
     )
     times = 1
     for current_url in home_urls:
