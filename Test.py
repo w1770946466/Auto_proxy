@@ -20,6 +20,7 @@ def get_sub_url():
         'https://cloud.hhygj.xyz',
         'https://feiniaoyun.top', 
         'https://www.dgycom.com',
+        'https://xn--sjq02ggyfdmt.com',
         'https://satou.moe',
         'https://fly10086.top',
         'https://party668.com',
@@ -41,7 +42,7 @@ def get_sub_url():
                 'invite_code': '',
                 'email_code': ''
             }
-            if current_url == 'https://xn--4gqu8thxjfje.com':
+            if current_url == 'https://xn--4gqu8thxjfje.com' or current_url == 'https://seeworld.pro':
                 try:
                     fan_res = requests.post(
                         f'{current_url}/api/v1/passport/auth/register', data=form_data, headers=header)
@@ -68,7 +69,7 @@ def get_sub_url():
                         #'method': '1',
                     }
                     fan_res_pay = requests.post(
-                        'https://xn--4gqu8thxjfje.com/api/v1/user/order/checkout', data=fan_data_n, headers=fan_header)
+                        f'{current_url}/api/v1/user/order/checkout', data=fan_data_n, headers=fan_header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={fan_res.json()["data"]["token"]}'
                     e_sub.append(subscription_url)
                     print("add:"+subscription_url)
