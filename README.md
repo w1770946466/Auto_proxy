@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1257`
+`Total number of merge nodes: 1258`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 151`
+`Total number of merge nodes: 152`
 
 - [Clash subscription](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `10`
-Updata：`2023-04-13 17:09:57`
+Updata：`2023-04-13 20:17:21`
 
 
 <details>
@@ -7848,62 +7848,72 @@ Updata：`2023-04-13 17:09:57`
 
 
 
->Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=aede2564da6e9347b8d36e23193cd878`
 
 
 
 
->Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=378f5a9b0f3fffd1d470c0a5fc2f0f8b`
 
 
-
-
->Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=cb364087e16e6f2e4ad5e0c9451bf38a`
 
 
 
 
 >Trial subscription：
-`https://www.dgycom.com/api/v1/client/subscribe?token=6b0c37b4a353f750584528f3e4ab118b`
+`https://www.dgycom.com/api/v1/client/subscribe?token=cca395a1b86d5d4406a78ae733d380fc`
 
 
 
 
 >Trial subscription：
-`https://feiniaoyun.top/api/v1/client/subscribe?token=e7ccbd7314785d8995808d20c6c5c3fa`
+`https://www.dgycom.com/api/v1/client/subscribe?token=35e0641b9233756f3ece449086531791`
 
 
 
 
 >Trial subscription：
-`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=f6dc494578a961c4e13b3bffe6956e4f`
+`https://www.dgycom.com/api/v1/client/subscribe?token=e11bf24de19a73bc914696b57ae74512`
 
 
 
 
 >Trial subscription：
-`https://user.bafang.vip/api/v1/client/subscribe?token=7dccf7491311624f2699a5c2a770d3ac`
+`https://www.dgycom.com/api/v1/client/subscribe?token=00b600213c18a6cb61f31e59343a28bb`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=eb854f9199f9d9564e95519dac08adc1`
+`https://feiniaoyun.top/api/v1/client/subscribe?token=4940941b1d7fdca026b74c2adbfd41d5`
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=58d2a7463684264207580a46a470cb02`
+`https://cloud.hhygj.xyz/api/v1/client/subscribe?token=50d1d9cfeeeb75d9fa5a608dfc6a2a1b`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f8f23e7655b57169f6797d7c66b128d1`
+`https://user.bafang.vip/api/v1/client/subscribe?token=c90e83ea66ffe1b32e7de199fd196050`
+
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=cd7bb311ed1095c45432e3505976968c`
+
+
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=72ce3b524685635ce09dc9359a3f2333`
+
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=1f24e2f09d64f915366241202044572e`
 
 
 
