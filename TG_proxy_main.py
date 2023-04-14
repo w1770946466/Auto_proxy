@@ -316,7 +316,7 @@ def get_sub_url():
         'https://www.dgycom.com',
         'https://www.dgycom.com',
         'https://www.dgycom.com',
-        'https://www.dgycom.com',
+        'https://onlines7.cloud',
     )
     times = 1
     for current_url in home_urls:
