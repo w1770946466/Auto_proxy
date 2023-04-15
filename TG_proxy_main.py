@@ -314,7 +314,7 @@ def get_sub_url():
         'https://cloud.hhygj.xyz',
         'https://feiniaoyun.top',
         'https://www.dgycom.com',
-        'https://www.dgycom.com',
+        'https://xn--6qx250f1ta.site',
         'https://xunfan.co',
         'https://onlines7.cloud',
     )
