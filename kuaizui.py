@@ -1,3 +1,8 @@
+import reuquests
+
+
+e_sub =[]
+
 def get_kkzui():
     # ========== 抓取 kkzui.com 的节点 ==========
     try:
