@@ -315,7 +315,7 @@ def get_sub_url():
         'https://feiniaoyun.top',
         'https://www.dgycom.com',
         'https://www.dgycom.com',
-        'https://www.dgycom.com',
+        'https://xunfan.co',
         'https://onlines7.cloud',
     )
     times = 1
