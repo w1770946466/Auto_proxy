@@ -12,8 +12,8 @@ from time import sleep
 
 #试用机场链接
 home_urls = (
-    'https://fly10086.top',
-    'https://xunfan.co'
+    'https://dash.vmssr.co',
+    'https://www.t3acc.top'
     'https://airport.xiaoheizis.xyz',
     'https://www.ckcloud.xyz',
     'https://fastestcloud.xyz',
