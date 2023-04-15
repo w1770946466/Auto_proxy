@@ -10,7 +10,20 @@ import random, string
 import datetime
 from time import sleep
 
-
+#试用机场链接
+home_urls = (
+    'https://fly10086.top',
+    'https://xunfan.co'
+    'https://airport.xiaoheizis.xyz',
+    'https://www.ckcloud.xyz',
+    'https://fastestcloud.xyz',
+    'https://www.ckcloud.xyz',
+    'https://user.bafang.vip',
+    'https://www.dgycom.com',
+    'https://kuaimiao.cloud',
+    'https://xunfan.co',
+    'https://onlines7.cloud',
+)
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
@@ -301,23 +314,6 @@ def get_yaml():
 def get_sub_url():
     V2B_REG_REL_URL = '/api/v1/passport/auth/register'
     # V2B_SUB_REL_URL = '/api/v1/user/getSubscribe'
-    home_urls = (
-        #'https://www.yifei999.com',
-        #'https://www.funkyun.xyz'
-        #'https://console.ly520.me',
-        'https://www.ckcloud.xyz',
-        'https://fastestcloud.xyz',
-        'https://shan-cloud.xyz',
-        'http://hneko.xyz',
-        'https://www.ckcloud.xyz',
-        'https://user.bafang.vip',
-        'https://cloud.hhygj.xyz',
-        'https://feiniaoyun.top',
-        'https://www.dgycom.com',
-        'https://kuaimiao.cloud',
-        'https://xunfan.co',
-        'https://onlines7.cloud',
-    )
     times = 1
     for current_url in home_urls:
         i = 0
