@@ -17,7 +17,7 @@ home_urls = (
     'https://airport.xiaoheizis.xyz',
     'https://www.ckcloud.xyz',
     'https://fastestcloud.xyz',
-    'https://www.ckcloud.xyz',
+    'https://lemontea.shop',
     'https://user.bafang.vip',
     'https://www.dgycom.com',
     'https://kuaimiao.cloud',
@@ -46,7 +46,7 @@ plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 #机场试用链接
 try_sub = []
 #获取频道订阅的个数
-sub_n = -5
+sub_n = -8
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
