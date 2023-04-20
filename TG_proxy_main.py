@@ -13,23 +13,19 @@ from time import sleep
 #试用机场链接
 home_urls = (
     'https://dash.vmssr.co',
-    'https://www.t3acc.top'
-    'https://airport.xiaoheizis.xyz',
     'https://lemontea.shop',
     'https://kuaimiao.cloud',
     'https://xunfan.co',
     'https://onlines7.cloud',
     'https://seeworld.pro',          #5T   永久
     'https://xn--4gqu8thxjfje.com',  #100G 永久
-    'https://www.dgycom.com',        #10G  2天
+    #'https://www.dgycom.com',        #10G  2天
     'https://fastestcloud.xyz',      #2G   1天
     'https://satou.moe',             #2G   1天
     'https://dash.vmssr.co',         #1G   1天
     'https://www.ckcloud.xyz',       #1G   1天
     'https://user.bafang.vip',       #1G   1天
     'https://fly10086.top',          #1G   1天
-    'https://party668.com',          #1G   1天
-    'https://www.t3acc.top',         #1G   1天
 )
 #文件路径
 update_path = "./sub/"
