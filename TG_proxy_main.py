@@ -363,6 +363,7 @@ def get_sub_url():
                     fan_res_pay = requests.post(
                         f'{current_url}/api/v1/user/order/checkout', data=fan_data_n, headers=fan_header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={fan_res.json()["data"]["token"]}'
+                    try_sub.append(subscription_url)
                     e_sub.append(subscription_url)
                     print("add:"+subscription_url)
                 except Exception as result:
