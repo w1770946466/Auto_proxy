@@ -239,7 +239,7 @@ def write_document():
         file_L.write(plaintext_result)
         #写入试用订阅
         obj_try = base64.b64encode(bas64_try.encode())
-        plaintext_result_try = obj.decode()
+        plaintext_result_try = obj_try.decode()
         file_L_try = open("Long_term_subscription_try", 'w', encoding='utf-8')
         file_L_try.write(plaintext_result_try)
         #写入README
