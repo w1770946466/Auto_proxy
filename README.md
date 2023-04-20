@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `10`
-Updata：`2023-04-20 20:18:48`
+### Try the number of high-speed subscriptions: `9`
+Updata：`2023-04-20 23:11:46`
 
 
 <details>
@@ -8311,62 +8311,69 @@ Updata：`2023-04-20 20:18:48`
 
 
 
->Trial subscription：
-`https://fly10086.top/api/v1/client/subscribe?token=e9a2fb11fe2fb389f11cf5ca727bd755`
 
 
 
 
->Trial subscription：
-`https://user.bafang.vip/api/v1/client/subscribe?token=7aad71c3b09957ef6778312c2b7d54d6`
 
 
 
 
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=99ae1b0bae17c37fd17c0446d76bc894`
+
 
 
 
 
 >Trial subscription：
-`https://dash.vmssr.co/api/v1/client/subscribe?token=faa6a7a1eaa46cdac449c2f491413301`
+`https://fly10086.top/api/v1/client/subscribe?token=b5f23b828f73ef635a144d1ea4deb537`
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=0f4f62cda70ffc8492aaabfb40c175fc`
+`https://user.bafang.vip/api/v1/client/subscribe?token=b4bdbe44f76afad1f09eb9c480a9a40d`
 
 
 
 
 >Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=c6f1b0543f50f411a18f9585d2369a5b`
+`https://dash.vmssr.co/api/v1/client/subscribe?token=c003427fa5d46a2f43666f0f831bdbdf`
 
 
 
 
 >Trial subscription：
-`https://onlines7.cloud/api/v1/client/subscribe?token=26b41a75f69d7ce298d612a7525a1796`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=7c82c86ce1cf47c10f6ef7cd3f1c23f0`
 
 
 
 
 >Trial subscription：
-`https://xunfan.co/api/v1/client/subscribe?token=81dd91844f86344823c58eab42c70545`
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=6216b05401dacdc94caca50cc2b10e72`
 
 
 
 
 >Trial subscription：
-`https://kuaimiao.cloud/api/v1/client/subscribe?token=7eda63e324de2c1ce37268ecc929c25d`
+`https://onlines7.cloud/api/v1/client/subscribe?token=0123c878d708bce28f0432b02430aa34`
 
 
 
 
 >Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=6778e8b944319181ffca68cdc14e6d1e`
+`https://xunfan.co/api/v1/client/subscribe?token=9b03de32b84bf91a0bee2404f24aec63`
+
+
+
+
+>Trial subscription：
+`https://kuaimiao.cloud/api/v1/client/subscribe?token=e816227140a11560cfe3ad343370f440`
+
+
+
+
+>Trial subscription：
+`https://lemontea.shop/api/v1/client/subscribe?token=c825e4bde4aad62db18e9668164b9949`
 
 
 
