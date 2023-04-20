@@ -374,6 +374,7 @@ def get_sub_url():
                     response = requests.post(
                         current_url+V2B_REG_REL_URL, data=form_data, headers=header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
+                    try_sub.append(subscription_url)
                     e_sub.append(subscription_url)
                     print("add:"+subscription_url)
                 except:
