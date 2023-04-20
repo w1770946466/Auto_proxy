@@ -56,6 +56,8 @@ plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 try_sub = []
 #获取频道订阅的个数
 sub_n = -8
+#试用节点明文
+end_try = []
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
@@ -173,26 +175,33 @@ def get_content(url):
 
 def write_document():
     if end_list_v2ray == [] or end_list_clash == []:
-        #print("https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml")
-        return "https://oss.v2rayse.com/proxies/data/2022-07-08/cvSBda.yaml"
+        print("订阅为空请检查！")
     else:
         #永久订阅
-        em = 1
         for e in e_sub:
             try:
                 res = requests.get(e)
                 proxys=jiemi_base64(res.text)
                 end_bas64.extend(proxys.splitlines())
             except:
-                print("第",em,"永久订阅出现错误❌跳过")
-            em += 1
+                print(e,"永久订阅出现错误❌跳过")
         print('永久订阅更新完毕')
-        
-        #去重
+        #试用订阅
+        for t in try_sub:
+            try:t
+                res = requests.get(t)
+                proxys=jiemi_base64(res.text)
+                end_try.extend(proxys.splitlines())
+            except:
+                print(t,"试用订阅出现错误❌跳过")
+        print('试用订阅更新完毕')
+        #永久订阅去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
+        #永久订阅去除多余换行符
         bas64 = '\n'.join(end_bas64_A).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-        
+        #试用去除多余换行符
+        bas64_try = '\n'.join(end_try).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
         #获取时间，给文档命名用
         t = time.localtime()
         date = time.strftime('%y%m', t)
@@ -228,6 +237,11 @@ def write_document():
         plaintext_result = obj.decode()
         file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
         file_L.write(plaintext_result)
+        #写入试用订阅
+        obj_try = base64.b64encode(bas64_try.encode())
+        plaintext_result_try = obj.decode()
+        file_L_try = open("Long_term_subscription_try", 'w', encoding='utf-8')
+        file_L_try.write(plaintext_result_try)
         #写入README
         with open("README.md", 'r', encoding='utf-8') as f:
             lines = f.readlines()
