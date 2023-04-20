@@ -188,7 +188,7 @@ def write_document():
         print('永久订阅更新完毕')
         #试用订阅
         for t in try_sub:
-            try:t
+            try:
                 res = requests.get(t)
                 proxys=jiemi_base64(res.text)
                 end_try.extend(proxys.splitlines())
