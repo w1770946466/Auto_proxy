@@ -194,7 +194,7 @@ def write_document():
                 end_try.extend(proxys.splitlines())
             except:
                 print(t,"试用订阅出现错误❌跳过")
-        print('试用订阅更新完毕',len(try_sub))
+        print('试用订阅更新完毕',try_sub)
         #永久订阅去重
         end_bas64_A = list(set(end_bas64))
         print("去重完毕！！去除",len(end_bas64) - len(end_bas64_A),"个重复节点")
