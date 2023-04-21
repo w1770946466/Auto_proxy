@@ -21,7 +21,6 @@ home_urls = (
     'https://xn--30rs3bu7r87f.com'
     'https://dash.vmssr.co',
     'https://lemontea.shop',
-    'https://kuaimiao.cloud',
     'https://xunfan.co',
     'https://onlines7.cloud',
     'https://seeworld.pro',          #5T   永久
