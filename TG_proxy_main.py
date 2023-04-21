@@ -25,7 +25,6 @@ home_urls = (
     'https://onlines7.cloud',
     'https://seeworld.pro',          #5T   永久
     'https://xn--4gqu8thxjfje.com',  #100G 永久
-    #'https://www.dgycom.com',        #10G  2天
     'https://fastestcloud.xyz',      #2G   1天
     'https://satou.moe',             #2G   1天
     'https://dash.vmssr.co',         #1G   1天
