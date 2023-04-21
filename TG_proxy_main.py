@@ -9,6 +9,7 @@ from tqdm import tqdm
 import random, string
 import datetime
 from time import sleep
+import chardet
 
 #试用机场链接
 home_urls = (
@@ -91,8 +92,10 @@ def jiemi_base64(data):  # 解密base64
 def jiemi_base64(data):  # 解密base64
     # 对 Base64 编码后的字符串进行解码，得到字节字符串
     decoded_bytes = base64.b64decode(data)
+    # 使用 chardet 库自动检测字节字符串的编码格式
+    encoding = chardet.detect(decoded_bytes)['encoding']
     # 将字节字符串转换为字符串
-    decoded_str = decoded_bytes.decode('utf-8')
+    decoded_str = decoded_bytes.decode(encoding)
     return decoded_str
 
 #判读是否为订阅链接
