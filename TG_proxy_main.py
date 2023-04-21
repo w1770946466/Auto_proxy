@@ -81,16 +81,19 @@ def get_channel_http(url):
 
 
 #对bs64解密
+'''
 def jiemi_base64(data):  # 解密base64
-    # data= '''{'aa':'bb'}'''
     missing_padding = 4 - len(data) % 4
     if missing_padding:
         data += '=' * missing_padding
     return base64.b64decode(data).decode('ascii')
-    #print(type(base64.b64decode(data)))
-    #b"{'name':'kkk','age':22}"
-    #<class 'bytes'>
-
+'''
+def jiemi_base64(data):  # 解密base64
+    # 对 Base64 编码后的字符串进行解码，得到字节字符串
+    decoded_bytes = base64.b64decode(data)
+    # 将字节字符串转换为字符串
+    decoded_str = decoded_bytes.decode('utf-8')
+    return decoded_str
 
 #判读是否为订阅链接
 
