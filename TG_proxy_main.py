@@ -192,8 +192,8 @@ def write_document():
                 res = requests.get(t)
                 proxys=jiemi_base64(res.text)
                 end_try.extend(proxys.splitlines())
-            except:
-                print(t,"试用订阅出现错误❌跳过")
+            except Exception as er:
+                print(t,"试用订阅出现错误❌跳过",er)
         print('试用订阅更新完毕',try_sub)
         #永久订阅去重
         end_bas64_A = list(set(end_bas64))
