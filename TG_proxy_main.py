@@ -80,13 +80,6 @@ def get_channel_http(url):
 
 
 #对bs64解密
-'''
-def jiemi_base64(data):  # 解密base64
-    missing_padding = 4 - len(data) % 4
-    if missing_padding:
-        data += '=' * missing_padding
-    return base64.b64decode(data).decode('ascii')
-'''
 def jiemi_base64(data):  # 解密base64
     # 对 Base64 编码后的字符串进行解码，得到字节字符串
     decoded_bytes = base64.b64decode(data)
@@ -97,7 +90,6 @@ def jiemi_base64(data):  # 解密base64
     return decoded_str
 
 #判读是否为订阅链接
-
 def get_content(url):
     #print('【获取频道',url,'】')
     url_lst = get_channel_http(url)
@@ -146,37 +138,8 @@ def get_content(url):
             pass
         i += 1
     return end_bas64
-'''
-def get_content(url):
-    url_lst = get_channel_http(url)
-    new_list = []
-    for i in url_lst:
-        result = i.replace("\\", "").replace('"', "")
-        if result not in new_list:
-            if "t" not in result[8] and "p" not in result[-2]:
-                new_list.append(result)
-    new_list_down = new_list[len(new_list) * 2 // 3:]
-    end_list_clash = []
-    end_list_v2ray = []
-    end_bas64 = []
-    for o in new_list_down:
-        try:
-            res = requests.get(o)
-            try:
-                if re.findall('proxies:', res.text)[0] == "proxies:":
-                    end_list_clash.append(o)
-            except:
-                try:
-                    peoxy = jiemi_base64(res.text)
-                    end_list_v2ray.append(o)
-                    end_bas64.extend(peoxy.splitlines())
-                except:
-                    pass
-        except:
-            pass
-    return end_bas64
-'''
 
+#写入文件
 def write_document():
     if end_list_v2ray == [] or end_list_clash == []:
         print("订阅为空请检查！")
