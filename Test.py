@@ -1,5 +1,5 @@
 import requests
-
+import os
 
 def get_yaml():
     print("开始获取clsah订阅")
