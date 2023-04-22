@@ -442,10 +442,36 @@ def remove_duplicates(lst):
     namesl = []
     i = 1
     for item in lst:
+        if 'name' in item:
+            domain = item['server']
+
+            pattern = '[^\u4e00-\u9fa5\d]+'
+            item['name'] = re.sub(pattern, '', item['name'])
+            item['name'] = re.sub(r'\d', '', item['name'])
+            location = item['name'][:3]
+
+            # Check for duplicate names and append an index if needed
+            original_name = location
+            index = 1
+            while item['name'] in namesl:
+                item['name'] = original_name + '_' + str(index)
+                index += 1
+
+            namesl.append(item['name'])
+            item['name'] = location + '_' + str(i)
+            result.append(item)
+        i += 1
+    return result
+'''
+def remove_duplicates(lst):
+    result = []
+    namesl = []
+    i = 1
+    for item in lst:
         if 'name' in item and item['name'] not in namesl:
             namesl.append(item['name'])
             domain = item['server']
-            '''
+            #'''
             try:
                 if any(domain.isalpha()  for domain in 'ff'):
                     ip = get_ip(domain)
@@ -462,7 +488,7 @@ def remove_duplicates(lst):
                 #print(location)
                 #item['name'] += str(i)
                 #location = "Node"
-             '''
+             #'''
             pattern = '[^\u4e00-\u9fa5\d]+'
             item['name'] = re.sub(pattern, '', item['name'])
             item['name'] = re.sub(r'\d', '', item['name'])
@@ -474,6 +500,8 @@ def remove_duplicates(lst):
     #print(namesl)
     #print(result)
     return result
+'''
+
 
 #查询ip归属地
 def query_location(ip):
