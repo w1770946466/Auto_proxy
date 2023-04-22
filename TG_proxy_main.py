@@ -13,12 +13,13 @@ import chardet
 
 #试用机场链接
 home_urls = (
-    'https://ekim.sbs'
-    'https://xn--rhty98cjxd.xyz'
-    'https://xunfan.co'                 #7天5g
-    'https://xn--9kqu12djx2a.net'       #2小时1g
-    'https://xn--9kq500gcgy.xyz'        #1天1g
-    'https://xn--30rs3bu7r87f.com'
+    'https://xiaolan.vip',
+    'https://ekim.sbs',
+    'https://xn--rhty98cjxd.xyz',
+    'https://xunfan.co',                 #7天5g
+    'https://xn--9kqu12djx2a.net',       #2小时1g
+    'https://xn--9kq500gcgy.xyz',        #1天1g
+    'https://xn--30rs3bu7r87f.com',
     'https://dash.vmssr.co',
     'https://lemontea.shop',
     'https://xunfan.co',
