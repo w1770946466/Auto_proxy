@@ -142,7 +142,7 @@ def get_content(url):
 
 #写入文件
 def write_document():
-    if end_list_v2ray == [] or end_list_clash == []:
+    if e_sub == [] or try_sub == []:
         print("订阅为空请检查！")
     else:
         #永久订阅
