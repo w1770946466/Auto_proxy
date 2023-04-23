@@ -17,8 +17,6 @@ home_urls = (
     'https://ekim.sbs',
     'https://xn--rhty98cjxd.xyz',
     'https://xunfan.co',                 #7天5g
-    'https://xn--9kqu12djx2a.net',       #2小时1g
-    'https://xn--9kq500gcgy.xyz',        #1天1g
     'https://xn--30rs3bu7r87f.com',
     'https://dash.vmssr.co',
     'https://lemontea.shop',
@@ -30,7 +28,6 @@ home_urls = (
     'https://satou.moe',             #2G   1天
     'https://dash.vmssr.co',         #1G   1天
     'https://www.ckcloud.xyz',       #1G   1天
-    'https://user.bafang.vip',       #1G   1天
     'https://fly10086.top',          #1G   1天
 )
 #文件路径
