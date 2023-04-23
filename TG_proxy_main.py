@@ -146,6 +146,7 @@ def write_document():
         print("订阅为空请检查！")
     else:
         #永久订阅
+        random.shuffle(e_sub)
         for e in e_sub:
             try:
                 res = requests.get(e)
@@ -155,6 +156,7 @@ def write_document():
                 print(e,"永久订阅出现错误❌跳过")
         print('永久订阅更新完毕')
         #试用订阅
+        random.shuffle(try_sub)
         for t in try_sub:
             try:
                 res = requests.get(t)
