@@ -22,6 +22,7 @@ home_urls = (
     'https://lemontea.shop',
     'https://xunfan.co',
     'https://onlines7.cloud',
+    'https://vvtestatiantian.top',   #500G 30天
     'https://www.jwckk.top',         #30G  30天
     'https://seeworld.pro',          #5T   永久
     'https://xn--4gqu8thxjfje.com',  #100G 永久
@@ -319,7 +320,7 @@ def get_sub_url():
                 'invite_code': '',
                 'email_code': ''
             }
-            if current_url == 'https://xn--4gqu8thxjfje.com' or current_url == 'https://seeworld.pro'  or current_url == 'https://www.jwckk.top':
+            if current_url == 'https://xn--4gqu8thxjfje.com' or current_url == 'https://seeworld.pro'  or current_url == 'https://www.jwckk.top'or current_url == 'https://vvtestatiantian.top':
                 try:
                     fan_res = requests.post(
                         f'{current_url}/api/v1/passport/auth/register', data=form_data, headers=header)
