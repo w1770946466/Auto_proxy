@@ -52,7 +52,7 @@ plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 #机场试用链接
 try_sub = []
 #获取频道订阅的个数
-sub_n = -8
+sub_n = -5
 #试用节点明文
 end_try = []
 
