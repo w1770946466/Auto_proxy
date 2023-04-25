@@ -5,55 +5,156 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国-01, server: us1.jwckk.top, port: 20001, type: vmess, uuid: 778e3672-cdd9-49ce-ab55-7fac00da22f5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us1.jwckk.top}}}
-  - {name: 🇺🇸 美国-02, server: us2.jwckk.top, port: 20002, type: vmess, uuid: 778e3672-cdd9-49ce-ab55-7fac00da22f5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us2.jwckk.top}}}
-  - {name: 🇺🇸 美国-03, server: us3.jwckk.top, port: 20003, type: vmess, uuid: 778e3672-cdd9-49ce-ab55-7fac00da22f5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us3.jwckk.top}}}
-  - {name: 距离下次重置剩余：1 天, server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b6780c90-c8d1-483b-b1a2-6ef53a455ac5}
-  - {name: "提示: 試用套餐網速較差", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b6780c90-c8d1-483b-b1a2-6ef53a455ac5}
-  - {name: "提示: 請測試后購買正式套餐", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b6780c90-c8d1-483b-b1a2-6ef53a455ac5}
-  - {name: "群聊: @vmssr_chat", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b6780c90-c8d1-483b-b1a2-6ef53a455ac5}
-  - {name: "🇭🇰 香港-试用[1.0x]", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b6780c90-c8d1-483b-b1a2-6ef53a455ac5}
-  - {name: "🇺🇸 美国-试用[1.0x]", server: 00.node.vmssr.info, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: b6780c90-c8d1-483b-b1a2-6ef53a455ac5}
-  - {name: 距离下次重置剩余：7 天, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: 4d062145-fe0d-4dee-b65d-8ac927850b7b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-vip-广东移动-01, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: 4d062145-fe0d-4dee-b65d-8ac927850b7b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-vip-上海电信-02, server: relay-hk-vip-4.nxunfan.com, port: 11432, type: vmess, uuid: 4d062145-fe0d-4dee-b65d-8ac927850b7b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-vip-安徽移动-04, server: relay-hk-vip-3.nxunfan.com, port: 42024, type: vmess, uuid: 4d062145-fe0d-4dee-b65d-8ac927850b7b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡-vip-广东移动-01, server: relay-sg1.nxunfan.com, port: 24183, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇯🇵 日本-vip-广东移动-01, server: relay-jp4.nxunfan.com, port: 33386, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇯🇵 日本-vip-江苏移动-02, server: relay-jp5.nxunfan.com, port: 43001, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇸🇬 新加坡-vip-江苏移动-01, server: relay-sg3.nxunfan.com, port: 27940, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇨🇳 台湾-广东移动-02, server: relay-tw-2.nxunfan.com, port: 38161, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇨🇳 台湾-江苏移动-02, server: relay-tw-3.nxunfan.com, port: 26831, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇭🇰 香港-广东移动-06, server: relay-hk6.nxunfan.com, port: 29673, type: vmess, uuid: 4d062145-fe0d-4dee-b65d-8ac927850b7b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大-广东移动-01, server: relay-cd.nxunfan.com, port: 36059, type: ss, cipher: chacha20-ietf-poly1305, password: 4d062145-fe0d-4dee-b65d-8ac927850b7b}
-  - {name: 🇸🇬 无法使用请更新订阅, server: gd-cn-01.1024.com.s1024.cc, port: 28054, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 下载专用01｜稳定, server: gdcm.r1u.cn, port: 18231, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇭🇰 HK 香港01｜四区 原生, server: gdcm.r1u.cn, port: 41530, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇭🇰 HK 香港02｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 28092, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇭🇰 HK 香港03｜三区 解锁, server: jscm.r1u.cn, port: 31820, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇭🇰 HK 香港04｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 12947, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇯🇵 JP 日本01｜一区 高速, server: gd-cn-01.1024.com.s1024.cc, port: 15232, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇯🇵 JP 日本02｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 38111, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇯🇵 JP 日本03｜四区 高速, server: gdcm.r1u.cn, port: 22866, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇯🇵 JP 日本04｜三区 解锁, server: jscm.r1u.cn, port: 31115, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇯🇵 JP 日本05｜四区 原生, server: gdcm.r1u.cn, port: 10965, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇸🇬 SG 新加坡01｜一区 高速, server: gd-cn-01.1024.com.s1024.cc, port: 33915, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇸🇬 SG 新加坡02｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 29716, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇸🇬 SG 新加坡03｜四区 高速, server: gdcm.r1u.cn, port: 40080, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇸🇬 SG 新加坡04｜三区 解锁, server: jscm.r1u.cn, port: 29593, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇸🇬 SG 新加坡05｜四区 解锁, server: gdcm.r1u.cn, port: 42803, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇺🇸 US 美国01｜一区 高速, server: gd-cn-01.1024.com.s1024.cc, port: 22619, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇺🇸 US 美国03｜一区 解锁, server: gd-cn-01.1024.com.s1024.cc, port: 19275, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇨🇳 TW 台湾01｜四区 解锁, server: gdcm.r1u.cn, port: 16270, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇨🇳 TW 台湾02｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 46023, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇩🇪 DE 德国01｜四区, server: gdcm.r1u.cn, port: 34111, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇨🇦 CA 加拿大1｜二区, server: gd-cn-02.1024.com.s1024.cc, port: 47702, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇰🇷 KR 韩国01｜五区, server: a2.ssicu.com, port: 44616, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇬🇧 GB 英国01｜四区, server: gdcm.r1u.cn, port: 28359, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇹🇷 TU 土耳其01｜二区, server: gd-cn-02.1024.com.s1024.cc, port: 41701, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇲🇾 MY 马来西亚01｜五区, server: a2.ssicu.com, port: 45653, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇦🇺 AU 澳大利亚01｜五区, server: a2.ssicu.com, port: 19510, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
-  - {name: 🇮🇳 IN 印度01｜五区, server: a2.ssicu.com, port: 20489, type: ss, cipher: chacha20-ietf-poly1305, password: 09076200-307a-45f8-a085-da26c088b90f}
+  - {name: 🇺🇸 美国-01, server: us1.jwckk.top, port: 20001, type: vmess, uuid: c4ce708b-23eb-4afc-85ea-0543f6ea7dde, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us1.jwckk.top}}}
+  - {name: 🇺🇸 美国-02, server: us2.jwckk.top, port: 20002, type: vmess, uuid: c4ce708b-23eb-4afc-85ea-0543f6ea7dde, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us2.jwckk.top}}}
+  - {name: 🇺🇸 美国-03, server: us3.jwckk.top, port: 20003, type: vmess, uuid: c4ce708b-23eb-4afc-85ea-0543f6ea7dde, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us3.jwckk.top}}}
+  - {name: 距离下次重置剩余：7 天, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-vip-广东移动-01, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-vip-上海电信-02, server: relay-hk-vip-4.nxunfan.com, port: 11432, type: vmess, uuid: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-vip-安徽移动-04, server: relay-hk-vip-3.nxunfan.com, port: 42024, type: vmess, uuid: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡-vip-广东移动-01, server: relay-sg1.nxunfan.com, port: 24183, type: ss, cipher: chacha20-ietf-poly1305, password: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c}
+  - {name: 🇸🇬 新加坡-vip-江苏移动-01, server: relay-sg3.nxunfan.com, port: 27940, type: ss, cipher: chacha20-ietf-poly1305, password: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c}
+  - {name: 🇨🇳 台湾-广东移动-02, server: relay-tw-2.nxunfan.com, port: 38161, type: ss, cipher: chacha20-ietf-poly1305, password: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c}
+  - {name: 🇨🇳 台湾-江苏移动-02, server: relay-tw-3.nxunfan.com, port: 26831, type: ss, cipher: chacha20-ietf-poly1305, password: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c}
+  - {name: 🇨🇦 加拿大-广东移动-01, server: relay-cd.nxunfan.com, port: 36059, type: ss, cipher: chacha20-ietf-poly1305, password: 6d846a44-f7d5-4ad4-8a8d-7caa6d23b76c}
+  - {name: "快飞永久跳转地址: http://fastfly.club", server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇭🇰 vip1 香港-01, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇭🇰 vip1 香港-02, server: gzyd.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇭🇰 vip1 香港-05, server: gzdx.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇭🇰 vip1 香港-06, server: gzyd.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇭🇰 vip1 香港-09, server: gzdx.jcnode.top, port: 40001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇭🇰 vip1 香港-10, server: gzyd.jcnode.top, port: 40001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇯🇵 vip1 日本-04, server: gzdx.jcnode.top, port: 41000, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇯🇵 vip1 日本-07, server: gzdx.jcnode.top, port: 41003, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇯🇵 vip1 日本-10, server: gzdx.jcnode.top, port: 41001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇨🇳 vip1 台湾-01, server: gzdx.jcnode.top, port: 42000, type: vmess, uuid: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 vip1 台湾-03, server: gzyd02.jcnode.top, port: 42000, type: vmess, uuid: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd02.jcnode.top}}}
+  - {name: 🇨🇳 vip1 台湾-04, server: gzdx.jcnode.top, port: 42001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇨🇳 vip1 台湾-05, server: gzdx01.jcnode.top, port: 42001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇨🇳 vip1 台湾-08, server: gzdx.jcnode.top, port: 42002, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇸🇬 vip1 新加坡-01, server: gzyd.jcnode.top, port: 43000, type: vmess, uuid: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇸🇬 vip1 新加坡-02, server: gzdx.jcnode.top, port: 43000, type: vmess, uuid: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇸🇬 vip1 新加坡-04, server: gzyd.jcnode.top, port: 43002, type: trojan, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, sni: sg01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇸🇬 vip1 新加坡-05, server: gzdx.jcnode.top, port: 43002, type: trojan, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, sni: sg01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇸🇬 vip1 新加坡-08, server: gzdx.jcnode.top, port: 43001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇸🇬 vip1 新加坡-09, server: gzyd.jcnode.top, port: 43001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇺🇸 vip1 美国-04, server: gzdx.jcnode.top, port: 48000, type: trojan, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, sni: us2.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 vip1 美国-05, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇮🇳 vip1 印度-01, server: gzdx.jcnode.top, port: 49000, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇮🇳 vip3 印度-03, server: gzyd02.jcnode.top, port: 49000, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇦🇺 vip1 澳大利亚-01, server: gzdx.jcnode.top, port: 49001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇦🇺 vip2 澳大利亚-02, server: gzdx01.jcnode.top, port: 49001, type: ss, cipher: aes-256-gcm, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b}
+  - {name: 🇬🇧 vip1 英国-03, server: gzdx.jcnode.top, port: 47000, type: trojan, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, sni: uk01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇬🇧 vip1 英国-04, server: gzyd.jcnode.top, port: 47000, type: trojan, password: 642150b6-d25e-4c4d-b54a-c34adeaaf50b, sni: uk01.ckcloud.info, skip-cert-verify: true}
+  - {name: 距离下次重置剩余：1 天, server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 00961a14-4b54-4c03-9d3b-712dccceb067}
+  - {name: "提示: 試用套餐網速較差", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 00961a14-4b54-4c03-9d3b-712dccceb067}
+  - {name: "提示: 請測試后購買正式套餐", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 00961a14-4b54-4c03-9d3b-712dccceb067}
+  - {name: "群聊: @vmssr_chat", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 00961a14-4b54-4c03-9d3b-712dccceb067}
+  - {name: "🇭🇰 香港-试用[1.0x]", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 00961a14-4b54-4c03-9d3b-712dccceb067}
+  - {name: "🇺🇸 美国-试用[1.0x]", server: 00.node.vmssr.info, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 00961a14-4b54-4c03-9d3b-712dccceb067}
+  - {name: 距离下次重置剩余：5 天, server: gzyd.jcnode.top, port: 24003, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: JCBB永久跳转地址 jcbb.cc, server: gzyd.jcnode.top, port: 24003, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇰🇷 JCBB_ 韩国 01【vip1】, server: gzdy.jcnode.top, port: 22000, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇰🇷 JCBB_ 韩国 02【vip1】, server: gzdx.jcnode.top, port: 22000, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇭🇰 JCBB_香港01【vip1】, server: gzyd.jcnode.top, port: 20000, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇭🇰 JCBB_香港02【vip1】, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇭🇰 JCBB_香港03【vip1】, server: gzyd.jcnode.top, port: 20001, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇭🇰 JCBB_香港04【vip1】, server: gzdx.jcnode.top, port: 20000, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇩🇪 JCBB_德国02【vip1】, server: gzyd.jcnode.top, port: 27000, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇩🇪 JCBB_德国01【vip1】, server: hbcu.lele233.top, port: 16157, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇮🇳 JCBB_ 印度01【vip1】, server: gzdx.jcnode.top, port: 25001, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇮🇳 JCBB_ 印度02【vip1】, server: gzyd.jcnode.top, port: 25001, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇬🇧 JCBB_ 英国01【vip1】, server: gzyd.jcnode.top, port: 26000, type: trojan, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, sni: uk01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇬🇧 JCBB_ 英国02【vip1】, server: gxct.lele233.top, port: 24389, type: trojan, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, sni: uk01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇯🇵 JCBB_日本01【vip1】, server: gzdx.jcnode.top, port: 21002, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇯🇵 JCBB_日本02【vip1】, server: gzdx.jcnode.top, port: 21003, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇯🇵 JCBB_日本03【vip1】, server: gzyd.jcnode.top, port: 21003, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇨🇳 JCBB_ 台湾 01【vip1】, server: gzyd.jcnode.top, port: 24000, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 JCBB_ 台湾 02【vip1】, server: gzyd.jcnode.top, port: 24001, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 JCBB_ 台湾 03【vip1】, server: gzdx.jcnode.top, port: 24002, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇹🇷 JCBB_土耳其 01【vip1】, server: gzdx.jcnode.top, port: 29500, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇹🇷 JCBB_土耳其 02【vip1】, server: gzyd.jcnode.top, port: 29500, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇻🇳 JCBB_越南 01【vip1】, server: gzyd.jcnode.top, port: 29200, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇻🇳 JCBB_越南 02【vip1】, server: gzdx.jcnode.top, port: 29200, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇸🇬 JCBB_ 新加坡 01【vip1】, server: gzdx.jcnode.top, port: 23000, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇸🇬 JCBB_新加坡 02【vip1】, server: gzdx.jcnode.top, port: 23001, type: ss, cipher: aes-256-gcm, password: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e}
+  - {name: 🇸🇬 JCBB_ 新加坡 03【vip1】, server: gzyd.jcnode.top, port: 23002, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇺🇸 JCBB_ 美国 01【vip1】, server: gzyd.jcnode.top, port: 28001, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇺🇸 JCBB_ 美国03【vip2】, server: gzdx.jcnode.top, port: 28000, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇺🇸 JCBB_ 美国03【vip1】, server: hbcu.lele233.top, port: 44390, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hbcu.lele233.top}}}
+  - {name: 🇺🇸 JCBB_ 美国04【vip1】, server: gzyd.jcnode.top, port: 28000, type: vmess, uuid: cd95999a-8a3d-4f70-a89b-bfa5f5187b4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇺🇸 美国①★加利福尼亚|解锁, server: ldfgdfgdfus.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇺🇸 美国②★亚特兰蒂斯, server: li1us-fddfv2bgdha.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国★首尔★解锁, server: lin1krgv2tnadha.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾|解锁, server: nsaghhfhitw.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇭🇰 香港①|解锁, server: iohk2dhbuvdad.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇭🇰 香港②, server: li1hkv2b.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇮🇳 印度①|解锁, server: liinewfhvdbka2qoe.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇮🇳 印度②, server: lin2ivdd2vbghwk.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇧🇷 巴西|解锁, server: gdnjqwghsdfmawsbr.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇦🇪 阿联酋|解锁, server: nsafhijklggsddadawscae.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇩🇪 德国①|德国, server: liderejvo2pqbwn.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇩🇪 德国②, server: lin1gbd-fvb2cndjisd.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇬🇧 英国①, server: lifgbe2hvavsbndaj.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇬🇧 英国②, server: lin1gb2bvndjisd.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇹🇭 泰国, server: nsafchjhtijntht.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡①|解锁, server: lidnaivos2nbsg.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡②, server: li1sg2ffhbvjjwtu.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇯🇵 日本①|解锁, server: lixiyjp12gvabkmno.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇯🇵 日本②, server: li1faiubsvdnasjp2.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇯🇵 日本③, server: li1jpfhssvb2-sc.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇯🇵 日本原生IP, server: nsaghhfhintt100tw.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇨🇦 加拿大|解锁, server: li1cahsfvu2bisd-sc.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇦🇺 澳洲澳大利亚|解锁, server: liasg2absvaur.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇳🇱 荷兰|解锁, server: donlievbd2qwjd.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇸🇪 瑞典|解锁, server: lisef2vvbbjfkr.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇫🇷 法国巴黎|解锁, server: ahfuwfhhvvb2sfr.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇵🇭 菲律宾, server: bacmlwrkoph.559xp5.cn, port: 443, type: trojan, password: 97af35eb-480e-405b-ba43-ec858fbb8754, skip-cert-verify: false}
+  - {name: 🇸🇬 无法使用请更新订阅, server: gd-cn-01.1024.com.s1024.cc, port: 28054, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 下载专用01｜稳定, server: gdcm.r1u.cn, port: 18231, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇭🇰 HK 香港01｜四区 原生, server: gdcm.r1u.cn, port: 41530, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇭🇰 HK 香港02｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 28092, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇭🇰 HK 香港03｜三区 解锁, server: jscm.r1u.cn, port: 31820, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇭🇰 HK 香港04｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 12947, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇯🇵 JP 日本01｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 15230, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇯🇵 JP 日本02｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 38111, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇯🇵 JP 日本03｜四区 高速, server: gdcm.r1u.cn, port: 22866, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇯🇵 JP 日本04｜三区 解锁, server: jscm.r1u.cn, port: 31115, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇯🇵 JP 日本05｜四区 原生, server: gdcm.r1u.cn, port: 10965, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇸🇬 SG 新加坡01｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 33915, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇸🇬 SG 新加坡02｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 29716, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇸🇬 SG 新加坡03｜四区 高速, server: gdcm.r1u.cn, port: 40080, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇸🇬 SG 新加坡04｜三区 解锁, server: jscm.r1u.cn, port: 29593, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇸🇬 SG 新加坡05｜四区 解锁, server: gdcm.r1u.cn, port: 42803, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇺🇸 US 美国01｜二区 高速, server: gd-cn-02.1024.com.s1024.cc, port: 22611, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇺🇸 US 美国03｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 19271, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇨🇳 TW 台湾01｜四区 解锁, server: gdcm.r1u.cn, port: 16270, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇨🇳 TW 台湾02｜二区 解锁, server: gd-cn-02.1024.com.s1024.cc, port: 46023, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇩🇪 DE 德国01｜四区, server: gdcm.r1u.cn, port: 34111, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇨🇦 CA 加拿大1｜二区, server: gd-cn-02.1024.com.s1024.cc, port: 47702, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇰🇷 KR 韩国01｜五区, server: a2.ssicu.com, port: 44616, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇬🇧 GB 英国01｜四区, server: gdcm.r1u.cn, port: 28359, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇹🇷 TU 土耳其01｜二区, server: gd-cn-02.1024.com.s1024.cc, port: 41701, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇲🇾 MY 马来西亚01｜五区, server: a2.ssicu.com, port: 45653, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇦🇺 AU 澳大利亚01｜五区, server: a2.ssicu.com, port: 19510, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 🇮🇳 IN 印度01｜五区, server: a2.ssicu.com, port: 20489, type: ss, cipher: chacha20-ietf-poly1305, password: 2b92cfe2-7008-4ec7-ad37-936cb6edfc10}
+  - {name: 美西 01 | Lin直连, server: lin.musekidan.com, port: 443, type: vmess, uuid: 592a1f08-ce18-445d-8ec3-103efda4219b, alterId: 0, cipher: auto, tls: true, servername: lin.musekidan.com, network: ws, ws-opts: {path: /lin, headers: {Host: lin.untilmu.com}}}
+  - {name: 🇸🇬 新加坡 01 | Lin直连, server: sg.musekidan.com, port: 443, type: vmess, uuid: 592a1f08-ce18-445d-8ec3-103efda4219b, alterId: 0, cipher: auto, tls: true, servername: sg.musekidan.com, network: ws, ws-opts: {path: /sg, headers: {Host: sg.musekidan.com}}}
+  - {name: 距离下次重置剩余：7 天 2, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: a054a88a-c40a-428a-a355-dc5c6eafc7da, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-vip-广东移动-01 2, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: a054a88a-c40a-428a-a355-dc5c6eafc7da, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-vip-上海电信-02 2, server: relay-hk-vip-4.nxunfan.com, port: 11432, type: vmess, uuid: a054a88a-c40a-428a-a355-dc5c6eafc7da, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-vip-安徽移动-04 2, server: relay-hk-vip-3.nxunfan.com, port: 42024, type: vmess, uuid: a054a88a-c40a-428a-a355-dc5c6eafc7da, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡-vip-广东移动-01 2, server: relay-sg1.nxunfan.com, port: 24183, type: ss, cipher: chacha20-ietf-poly1305, password: a054a88a-c40a-428a-a355-dc5c6eafc7da}
+  - {name: 🇸🇬 新加坡-vip-江苏移动-01 2, server: relay-sg3.nxunfan.com, port: 27940, type: ss, cipher: chacha20-ietf-poly1305, password: a054a88a-c40a-428a-a355-dc5c6eafc7da}
+  - {name: 🇨🇳 台湾-广东移动-02 2, server: relay-tw-2.nxunfan.com, port: 38161, type: ss, cipher: chacha20-ietf-poly1305, password: a054a88a-c40a-428a-a355-dc5c6eafc7da}
+  - {name: 🇨🇳 台湾-江苏移动-02 2, server: relay-tw-3.nxunfan.com, port: 26831, type: ss, cipher: chacha20-ietf-poly1305, password: a054a88a-c40a-428a-a355-dc5c6eafc7da}
+  - {name: 🇨🇦 加拿大-广东移动-01 2, server: relay-cd.nxunfan.com, port: 36059, type: ss, cipher: chacha20-ietf-poly1305, password: a054a88a-c40a-428a-a355-dc5c6eafc7da}
+  - {name: 距离下次重置剩余：1 天 2, server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d3d62ef1-b554-4568-ba5b-184244ee10dd}
+  - {name: "提示: 試用套餐網速較差 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d3d62ef1-b554-4568-ba5b-184244ee10dd}
+  - {name: "提示: 請測試后購買正式套餐 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d3d62ef1-b554-4568-ba5b-184244ee10dd}
+  - {name: "群聊: @vmssr_chat 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d3d62ef1-b554-4568-ba5b-184244ee10dd}
+  - {name: "🇭🇰 香港-试用[1.0x] 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d3d62ef1-b554-4568-ba5b-184244ee10dd}
+  - {name: "🇺🇸 美国-试用[1.0x] 2", server: 00.node.vmssr.info, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: d3d62ef1-b554-4568-ba5b-184244ee10dd}
   - {name: 🇺🇸 _US_美国, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: 🇺🇸 _US_美国 2, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: 🇺🇸 _US_美国 3, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
@@ -98,82 +199,6 @@ proxies:
   - {name: 🇺🇸 _US_美国 18, server: 54.188.109.146, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇺🇸 _US_美国 19, server: 38.64.138.145, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
   - {name: 🇺🇸 _US_美国->🇳🇱_NL_荷兰, server: 156.225.67.138, port: 49920, type: vmess, uuid: 964bf499-9ec0-4378-92b6-87d8d861b2d0, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国①★加利福尼亚|解锁, server: ldfgdfgdfus.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇺🇸 美国②★亚特兰蒂斯, server: li1us-fddfv2bgdha.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国★首尔★解锁, server: lin1krgv2tnadha.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾|解锁, server: nsaghhfhitw.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇭🇰 香港①|解锁, server: iohk2dhbuvdad.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇭🇰 香港②, server: li1hkv2b.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇮🇳 印度①|解锁, server: liinewfhvdbka2qoe.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇮🇳 印度②, server: lin2ivdd2vbghwk.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇧🇷 巴西|解锁, server: gdnjqwghsdfmawsbr.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇦🇪 阿联酋|解锁, server: nsafhijklggsddadawscae.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇩🇪 德国①|德国, server: liderejvo2pqbwn.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇩🇪 德国②, server: lin1gbd-fvb2cndjisd.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇬🇧 英国①, server: lifgbe2hvavsbndaj.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇬🇧 英国②, server: lin1gb2bvndjisd.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇹🇭 泰国, server: nsafchjhtijntht.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡①|解锁, server: lidnaivos2nbsg.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡②, server: li1sg2ffhbvjjwtu.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇯🇵 日本①|解锁, server: lixiyjp12gvabkmno.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇯🇵 日本②, server: li1faiubsvdnasjp2.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇯🇵 日本③, server: li1jpfhssvb2-sc.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇯🇵 日本原生IP, server: nsaghhfhintt100tw.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇨🇦 加拿大|解锁, server: li1cahsfvu2bisd-sc.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇦🇺 澳洲澳大利亚|解锁, server: liasg2absvaur.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇳🇱 荷兰|解锁, server: donlievbd2qwjd.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇸🇪 瑞典|解锁, server: lisef2vvbbjfkr.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇫🇷 法国巴黎|解锁, server: ahfuwfhhvvb2sfr.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 🇵🇭 菲律宾, server: bacmlwrkoph.559xp5.cn, port: 443, type: trojan, password: 023eec9f-5f86-4a94-9c9d-5627f915bba4, skip-cert-verify: false}
-  - {name: 距离下次重置剩余：7 天 2, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-vip-广东移动-01 2, server: relay-hk-vip-1.nxunfan.com, port: 11432, type: vmess, uuid: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-vip-上海电信-02 2, server: relay-hk-vip-4.nxunfan.com, port: 11432, type: vmess, uuid: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-vip-安徽移动-04 2, server: relay-hk-vip-3.nxunfan.com, port: 42024, type: vmess, uuid: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡-vip-广东移动-01 2, server: relay-sg1.nxunfan.com, port: 24183, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 🇯🇵 日本-vip-广东移动-01 2, server: relay-jp4.nxunfan.com, port: 33386, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 🇯🇵 日本-vip-江苏移动-02 2, server: relay-jp5.nxunfan.com, port: 43001, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 🇸🇬 新加坡-vip-江苏移动-01 2, server: relay-sg3.nxunfan.com, port: 27940, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 🇨🇳 台湾-广东移动-02 2, server: relay-tw-2.nxunfan.com, port: 38161, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 🇨🇳 台湾-江苏移动-02 2, server: relay-tw-3.nxunfan.com, port: 26831, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 🇭🇰 香港-广东移动-06 2, server: relay-hk6.nxunfan.com, port: 29673, type: vmess, uuid: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大-广东移动-01 2, server: relay-cd.nxunfan.com, port: 36059, type: ss, cipher: chacha20-ietf-poly1305, password: 643d7f60-3b91-42cf-9b33-9f5a5c5c2505}
-  - {name: 距离下次重置剩余：1 天 2, server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d163de38-66c3-406c-9d04-152ff8a4b441}
-  - {name: "提示: 試用套餐網速較差 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d163de38-66c3-406c-9d04-152ff8a4b441}
-  - {name: "提示: 請測試后購買正式套餐 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d163de38-66c3-406c-9d04-152ff8a4b441}
-  - {name: "群聊: @vmssr_chat 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d163de38-66c3-406c-9d04-152ff8a4b441}
-  - {name: "🇭🇰 香港-试用[1.0x] 2", server: 00.node.vmssr.info, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: d163de38-66c3-406c-9d04-152ff8a4b441}
-  - {name: "🇺🇸 美国-试用[1.0x] 2", server: 00.node.vmssr.info, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: d163de38-66c3-406c-9d04-152ff8a4b441}
-  - {name: "快飞永久跳转地址: http://fastfly.club", server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇭🇰 vip1 香港-01, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇭🇰 vip1 香港-02, server: gzyd.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇭🇰 vip1 香港-05, server: gzdx.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇭🇰 vip1 香港-06, server: gzyd.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇭🇰 vip1 香港-09, server: gzdx.jcnode.top, port: 40001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇭🇰 vip1 香港-10, server: gzyd.jcnode.top, port: 40001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇯🇵 vip1 日本-04, server: gzdx.jcnode.top, port: 41000, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇯🇵 vip1 日本-07, server: gzdx.jcnode.top, port: 41003, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇯🇵 vip1 日本-10, server: gzdx.jcnode.top, port: 41001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇨🇳 vip1 台湾-01, server: gzdx.jcnode.top, port: 42000, type: vmess, uuid: c2c85e2e-4ffe-44d4-896c-92006dd4299f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 vip1 台湾-03, server: gzyd02.jcnode.top, port: 42000, type: vmess, uuid: c2c85e2e-4ffe-44d4-896c-92006dd4299f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd02.jcnode.top}}}
-  - {name: 🇨🇳 vip1 台湾-04, server: gzdx.jcnode.top, port: 42001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇨🇳 vip1 台湾-05, server: gzdx01.jcnode.top, port: 42001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇨🇳 vip1 台湾-08, server: gzdx.jcnode.top, port: 42002, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇸🇬 vip1 新加坡-01, server: gzyd.jcnode.top, port: 43000, type: vmess, uuid: c2c85e2e-4ffe-44d4-896c-92006dd4299f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇸🇬 vip1 新加坡-02, server: gzdx.jcnode.top, port: 43000, type: vmess, uuid: c2c85e2e-4ffe-44d4-896c-92006dd4299f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇸🇬 vip1 新加坡-04, server: gzyd.jcnode.top, port: 43002, type: trojan, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f, sni: sg01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇸🇬 vip1 新加坡-05, server: gzdx.jcnode.top, port: 43002, type: trojan, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f, sni: sg01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇸🇬 vip1 新加坡-08, server: gzdx.jcnode.top, port: 43001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇸🇬 vip1 新加坡-09, server: gzyd.jcnode.top, port: 43001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇺🇸 vip1 美国-04, server: gzdx.jcnode.top, port: 48000, type: trojan, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f, sni: us2.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 vip1 美国-05, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: c2c85e2e-4ffe-44d4-896c-92006dd4299f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇮🇳 vip1 印度-01, server: gzdx.jcnode.top, port: 49000, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇮🇳 vip3 印度-03, server: gzyd02.jcnode.top, port: 49000, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇦🇺 vip1 澳大利亚-01, server: gzdx.jcnode.top, port: 49001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇦🇺 vip2 澳大利亚-02, server: gzdx01.jcnode.top, port: 49001, type: ss, cipher: aes-256-gcm, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f}
-  - {name: 🇬🇧 vip1 英国-03, server: gzdx.jcnode.top, port: 47000, type: trojan, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f, sni: uk01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇬🇧 vip1 英国-04, server: gzyd.jcnode.top, port: 47000, type: trojan, password: c2c85e2e-4ffe-44d4-896c-92006dd4299f, sni: uk01.ckcloud.info, skip-cert-verify: true}
-  - {name: 美西 01 | Lin直连, server: lin.musekidan.com, port: 443, type: vmess, uuid: 5394b04b-ae48-4550-a12c-45e7d9e41583, alterId: 0, cipher: auto, tls: true, servername: lin.musekidan.com, network: ws, ws-opts: {path: /lin, headers: {Host: lin.untilmu.com}}}
-  - {name: 🇸🇬 新加坡 01 | Lin直连, server: sg.musekidan.com, port: 443, type: vmess, uuid: 5394b04b-ae48-4550-a12c-45e7d9e41583, alterId: 0, cipher: auto, tls: true, servername: sg.musekidan.com, network: ws, ws-opts: {path: /sg, headers: {Host: sg.musekidan.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -195,42 +220,126 @@ proxy-groups:
       - 🇺🇸 美国-01
       - 🇺🇸 美国-02
       - 🇺🇸 美国-03
+      - 距离下次重置剩余：7 天
+      - 🇭🇰 香港-vip-广东移动-01
+      - 🇭🇰 香港-vip-上海电信-02
+      - 🇭🇰 香港-vip-安徽移动-04
+      - 🇸🇬 新加坡-vip-广东移动-01
+      - 🇸🇬 新加坡-vip-江苏移动-01
+      - 🇨🇳 台湾-广东移动-02
+      - 🇨🇳 台湾-江苏移动-02
+      - 🇨🇦 加拿大-广东移动-01
+      - "快飞永久跳转地址: http://fastfly.club"
+      - 🇭🇰 vip1 香港-01
+      - 🇭🇰 vip1 香港-02
+      - 🇭🇰 vip1 香港-05
+      - 🇭🇰 vip1 香港-06
+      - 🇭🇰 vip1 香港-09
+      - 🇭🇰 vip1 香港-10
+      - 🇯🇵 vip1 日本-04
+      - 🇯🇵 vip1 日本-07
+      - 🇯🇵 vip1 日本-10
+      - 🇨🇳 vip1 台湾-01
+      - 🇨🇳 vip1 台湾-03
+      - 🇨🇳 vip1 台湾-04
+      - 🇨🇳 vip1 台湾-05
+      - 🇨🇳 vip1 台湾-08
+      - 🇸🇬 vip1 新加坡-01
+      - 🇸🇬 vip1 新加坡-02
+      - 🇸🇬 vip1 新加坡-04
+      - 🇸🇬 vip1 新加坡-05
+      - 🇸🇬 vip1 新加坡-08
+      - 🇸🇬 vip1 新加坡-09
+      - 🇺🇸 vip1 美国-04
+      - 🇺🇸 vip1 美国-05
+      - 🇮🇳 vip1 印度-01
+      - 🇮🇳 vip3 印度-03
+      - 🇦🇺 vip1 澳大利亚-01
+      - 🇦🇺 vip2 澳大利亚-02
+      - 🇬🇧 vip1 英国-03
+      - 🇬🇧 vip1 英国-04
       - 距离下次重置剩余：1 天
       - "提示: 試用套餐網速較差"
       - "提示: 請測試后購買正式套餐"
       - "群聊: @vmssr_chat"
       - 🇭🇰 香港-试用[1.0x]
       - 🇺🇸 美国-试用[1.0x]
-      - 距离下次重置剩余：7 天
-      - 🇭🇰 香港-vip-广东移动-01
-      - 🇭🇰 香港-vip-上海电信-02
-      - 🇭🇰 香港-vip-安徽移动-04
-      - 🇸🇬 新加坡-vip-广东移动-01
-      - 🇯🇵 日本-vip-广东移动-01
-      - 🇯🇵 日本-vip-江苏移动-02
-      - 🇸🇬 新加坡-vip-江苏移动-01
-      - 🇨🇳 台湾-广东移动-02
-      - 🇨🇳 台湾-江苏移动-02
-      - 🇭🇰 香港-广东移动-06
-      - 🇨🇦 加拿大-广东移动-01
+      - 距离下次重置剩余：5 天
+      - JCBB永久跳转地址 jcbb.cc
+      - 🇰🇷 JCBB_ 韩国 01【vip1】
+      - 🇰🇷 JCBB_ 韩国 02【vip1】
+      - 🇭🇰 JCBB_香港01【vip1】
+      - 🇭🇰 JCBB_香港02【vip1】
+      - 🇭🇰 JCBB_香港03【vip1】
+      - 🇭🇰 JCBB_香港04【vip1】
+      - 🇩🇪 JCBB_德国02【vip1】
+      - 🇩🇪 JCBB_德国01【vip1】
+      - 🇮🇳 JCBB_ 印度01【vip1】
+      - 🇮🇳 JCBB_ 印度02【vip1】
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - 🇬🇧 JCBB_ 英国02【vip1】
+      - 🇯🇵 JCBB_日本01【vip1】
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇨🇳 JCBB_ 台湾 01【vip1】
+      - 🇨🇳 JCBB_ 台湾 02【vip1】
+      - 🇨🇳 JCBB_ 台湾 03【vip1】
+      - 🇹🇷 JCBB_土耳其 01【vip1】
+      - 🇹🇷 JCBB_土耳其 02【vip1】
+      - 🇻🇳 JCBB_越南 01【vip1】
+      - 🇻🇳 JCBB_越南 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 01【vip1】
+      - 🇸🇬 JCBB_新加坡 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 JCBB_ 美国 01【vip1】
+      - 🇺🇸 JCBB_ 美国03【vip2】
+      - 🇺🇸 JCBB_ 美国03【vip1】
+      - 🇺🇸 JCBB_ 美国04【vip1】
+      - 🇺🇸 美国①★加利福尼亚|解锁
+      - 🇺🇸 美国②★亚特兰蒂斯
+      - 🇰🇷 韩国★首尔★解锁
+      - 🇨🇳 台湾|解锁
+      - 🇭🇰 香港①|解锁
+      - 🇭🇰 香港②
+      - 🇮🇳 印度①|解锁
+      - 🇮🇳 印度②
+      - 🇧🇷 巴西|解锁
+      - 🇦🇪 阿联酋|解锁
+      - 🇩🇪 德国①|德国
+      - 🇩🇪 德国②
+      - 🇬🇧 英国①
+      - 🇬🇧 英国②
+      - 🇹🇭 泰国
+      - 🇸🇬 新加坡①|解锁
+      - 🇸🇬 新加坡②
+      - 🇯🇵 日本①|解锁
+      - 🇯🇵 日本②
+      - 🇯🇵 日本③
+      - 🇯🇵 日本原生IP
+      - 🇨🇦 加拿大|解锁
+      - 🇦🇺 澳洲澳大利亚|解锁
+      - 🇳🇱 荷兰|解锁
+      - 🇸🇪 瑞典|解锁
+      - 🇫🇷 法国巴黎|解锁
+      - 🇵🇭 菲律宾
       - 🇸🇬 无法使用请更新订阅
       - 下载专用01｜稳定
       - 🇭🇰 HK 香港01｜四区 原生
       - 🇭🇰 HK 香港02｜二区 解锁
       - 🇭🇰 HK 香港03｜三区 解锁
       - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇯🇵 JP 日本01｜一区 高速
+      - 🇯🇵 JP 日本01｜二区 高速
       - 🇯🇵 JP 日本02｜二区 高速
       - 🇯🇵 JP 日本03｜四区 高速
       - 🇯🇵 JP 日本04｜三区 解锁
       - 🇯🇵 JP 日本05｜四区 原生
-      - 🇸🇬 SG 新加坡01｜一区 高速
+      - 🇸🇬 SG 新加坡01｜二区 高速
       - 🇸🇬 SG 新加坡02｜二区 高速
       - 🇸🇬 SG 新加坡03｜四区 高速
       - 🇸🇬 SG 新加坡04｜三区 解锁
       - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇺🇸 US 美国01｜一区 高速
-      - 🇺🇸 US 美国03｜一区 解锁
+      - 🇺🇸 US 美国01｜二区 高速
+      - 🇺🇸 US 美国03｜二区 解锁
       - 🇨🇳 TW 台湾01｜四区 解锁
       - 🇨🇳 TW 台湾02｜二区 解锁
       - 🇩🇪 DE 德国01｜四区
@@ -241,6 +350,23 @@ proxy-groups:
       - 🇲🇾 MY 马来西亚01｜五区
       - 🇦🇺 AU 澳大利亚01｜五区
       - 🇮🇳 IN 印度01｜五区
+      - 美西 01 | Lin直连
+      - 🇸🇬 新加坡 01 | Lin直连
+      - 距离下次重置剩余：7 天 2
+      - 🇭🇰 香港-vip-广东移动-01 2
+      - 🇭🇰 香港-vip-上海电信-02 2
+      - 🇭🇰 香港-vip-安徽移动-04 2
+      - 🇸🇬 新加坡-vip-广东移动-01 2
+      - 🇸🇬 新加坡-vip-江苏移动-01 2
+      - 🇨🇳 台湾-广东移动-02 2
+      - 🇨🇳 台湾-江苏移动-02 2
+      - 🇨🇦 加拿大-广东移动-01 2
+      - 距离下次重置剩余：1 天 2
+      - "提示: 試用套餐網速較差 2"
+      - "提示: 請測試后購買正式套餐 2"
+      - "群聊: @vmssr_chat 2"
+      - 🇭🇰 香港-试用[1.0x] 2
+      - 🇺🇸 美国-试用[1.0x] 2
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
@@ -285,82 +411,6 @@ proxy-groups:
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸 美国①★加利福尼亚|解锁
-      - 🇺🇸 美国②★亚特兰蒂斯
-      - 🇰🇷 韩国★首尔★解锁
-      - 🇨🇳 台湾|解锁
-      - 🇭🇰 香港①|解锁
-      - 🇭🇰 香港②
-      - 🇮🇳 印度①|解锁
-      - 🇮🇳 印度②
-      - 🇧🇷 巴西|解锁
-      - 🇦🇪 阿联酋|解锁
-      - 🇩🇪 德国①|德国
-      - 🇩🇪 德国②
-      - 🇬🇧 英国①
-      - 🇬🇧 英国②
-      - 🇹🇭 泰国
-      - 🇸🇬 新加坡①|解锁
-      - 🇸🇬 新加坡②
-      - 🇯🇵 日本①|解锁
-      - 🇯🇵 日本②
-      - 🇯🇵 日本③
-      - 🇯🇵 日本原生IP
-      - 🇨🇦 加拿大|解锁
-      - 🇦🇺 澳洲澳大利亚|解锁
-      - 🇳🇱 荷兰|解锁
-      - 🇸🇪 瑞典|解锁
-      - 🇫🇷 法国巴黎|解锁
-      - 🇵🇭 菲律宾
-      - 距离下次重置剩余：7 天 2
-      - 🇭🇰 香港-vip-广东移动-01 2
-      - 🇭🇰 香港-vip-上海电信-02 2
-      - 🇭🇰 香港-vip-安徽移动-04 2
-      - 🇸🇬 新加坡-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-江苏移动-02 2
-      - 🇸🇬 新加坡-vip-江苏移动-01 2
-      - 🇨🇳 台湾-广东移动-02 2
-      - 🇨🇳 台湾-江苏移动-02 2
-      - 🇭🇰 香港-广东移动-06 2
-      - 🇨🇦 加拿大-广东移动-01 2
-      - 距离下次重置剩余：1 天 2
-      - "提示: 試用套餐網速較差 2"
-      - "提示: 請測試后購買正式套餐 2"
-      - "群聊: @vmssr_chat 2"
-      - 🇭🇰 香港-试用[1.0x] 2
-      - 🇺🇸 美国-试用[1.0x] 2
-      - "快飞永久跳转地址: http://fastfly.club"
-      - 🇭🇰 vip1 香港-01
-      - 🇭🇰 vip1 香港-02
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 vip1 香港-06
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 vip1 香港-10
-      - 🇯🇵 vip1 日本-04
-      - 🇯🇵 vip1 日本-07
-      - 🇯🇵 vip1 日本-10
-      - 🇨🇳 vip1 台湾-01
-      - 🇨🇳 vip1 台湾-03
-      - 🇨🇳 vip1 台湾-04
-      - 🇨🇳 vip1 台湾-05
-      - 🇨🇳 vip1 台湾-08
-      - 🇸🇬 vip1 新加坡-01
-      - 🇸🇬 vip1 新加坡-02
-      - 🇸🇬 vip1 新加坡-04
-      - 🇸🇬 vip1 新加坡-05
-      - 🇸🇬 vip1 新加坡-08
-      - 🇸🇬 vip1 新加坡-09
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 vip1 美国-05
-      - 🇮🇳 vip1 印度-01
-      - 🇮🇳 vip3 印度-03
-      - 🇦🇺 vip1 澳大利亚-01
-      - 🇦🇺 vip2 澳大利亚-02
-      - 🇬🇧 vip1 英国-03
-      - 🇬🇧 vip1 英国-04
-      - 美西 01 | Lin直连
-      - 🇸🇬 新加坡 01 | Lin直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -370,42 +420,126 @@ proxy-groups:
       - 🇺🇸 美国-01
       - 🇺🇸 美国-02
       - 🇺🇸 美国-03
+      - 距离下次重置剩余：7 天
+      - 🇭🇰 香港-vip-广东移动-01
+      - 🇭🇰 香港-vip-上海电信-02
+      - 🇭🇰 香港-vip-安徽移动-04
+      - 🇸🇬 新加坡-vip-广东移动-01
+      - 🇸🇬 新加坡-vip-江苏移动-01
+      - 🇨🇳 台湾-广东移动-02
+      - 🇨🇳 台湾-江苏移动-02
+      - 🇨🇦 加拿大-广东移动-01
+      - "快飞永久跳转地址: http://fastfly.club"
+      - 🇭🇰 vip1 香港-01
+      - 🇭🇰 vip1 香港-02
+      - 🇭🇰 vip1 香港-05
+      - 🇭🇰 vip1 香港-06
+      - 🇭🇰 vip1 香港-09
+      - 🇭🇰 vip1 香港-10
+      - 🇯🇵 vip1 日本-04
+      - 🇯🇵 vip1 日本-07
+      - 🇯🇵 vip1 日本-10
+      - 🇨🇳 vip1 台湾-01
+      - 🇨🇳 vip1 台湾-03
+      - 🇨🇳 vip1 台湾-04
+      - 🇨🇳 vip1 台湾-05
+      - 🇨🇳 vip1 台湾-08
+      - 🇸🇬 vip1 新加坡-01
+      - 🇸🇬 vip1 新加坡-02
+      - 🇸🇬 vip1 新加坡-04
+      - 🇸🇬 vip1 新加坡-05
+      - 🇸🇬 vip1 新加坡-08
+      - 🇸🇬 vip1 新加坡-09
+      - 🇺🇸 vip1 美国-04
+      - 🇺🇸 vip1 美国-05
+      - 🇮🇳 vip1 印度-01
+      - 🇮🇳 vip3 印度-03
+      - 🇦🇺 vip1 澳大利亚-01
+      - 🇦🇺 vip2 澳大利亚-02
+      - 🇬🇧 vip1 英国-03
+      - 🇬🇧 vip1 英国-04
       - 距离下次重置剩余：1 天
       - "提示: 試用套餐網速較差"
       - "提示: 請測試后購買正式套餐"
       - "群聊: @vmssr_chat"
       - 🇭🇰 香港-试用[1.0x]
       - 🇺🇸 美国-试用[1.0x]
-      - 距离下次重置剩余：7 天
-      - 🇭🇰 香港-vip-广东移动-01
-      - 🇭🇰 香港-vip-上海电信-02
-      - 🇭🇰 香港-vip-安徽移动-04
-      - 🇸🇬 新加坡-vip-广东移动-01
-      - 🇯🇵 日本-vip-广东移动-01
-      - 🇯🇵 日本-vip-江苏移动-02
-      - 🇸🇬 新加坡-vip-江苏移动-01
-      - 🇨🇳 台湾-广东移动-02
-      - 🇨🇳 台湾-江苏移动-02
-      - 🇭🇰 香港-广东移动-06
-      - 🇨🇦 加拿大-广东移动-01
+      - 距离下次重置剩余：5 天
+      - JCBB永久跳转地址 jcbb.cc
+      - 🇰🇷 JCBB_ 韩国 01【vip1】
+      - 🇰🇷 JCBB_ 韩国 02【vip1】
+      - 🇭🇰 JCBB_香港01【vip1】
+      - 🇭🇰 JCBB_香港02【vip1】
+      - 🇭🇰 JCBB_香港03【vip1】
+      - 🇭🇰 JCBB_香港04【vip1】
+      - 🇩🇪 JCBB_德国02【vip1】
+      - 🇩🇪 JCBB_德国01【vip1】
+      - 🇮🇳 JCBB_ 印度01【vip1】
+      - 🇮🇳 JCBB_ 印度02【vip1】
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - 🇬🇧 JCBB_ 英国02【vip1】
+      - 🇯🇵 JCBB_日本01【vip1】
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇨🇳 JCBB_ 台湾 01【vip1】
+      - 🇨🇳 JCBB_ 台湾 02【vip1】
+      - 🇨🇳 JCBB_ 台湾 03【vip1】
+      - 🇹🇷 JCBB_土耳其 01【vip1】
+      - 🇹🇷 JCBB_土耳其 02【vip1】
+      - 🇻🇳 JCBB_越南 01【vip1】
+      - 🇻🇳 JCBB_越南 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 01【vip1】
+      - 🇸🇬 JCBB_新加坡 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 JCBB_ 美国 01【vip1】
+      - 🇺🇸 JCBB_ 美国03【vip2】
+      - 🇺🇸 JCBB_ 美国03【vip1】
+      - 🇺🇸 JCBB_ 美国04【vip1】
+      - 🇺🇸 美国①★加利福尼亚|解锁
+      - 🇺🇸 美国②★亚特兰蒂斯
+      - 🇰🇷 韩国★首尔★解锁
+      - 🇨🇳 台湾|解锁
+      - 🇭🇰 香港①|解锁
+      - 🇭🇰 香港②
+      - 🇮🇳 印度①|解锁
+      - 🇮🇳 印度②
+      - 🇧🇷 巴西|解锁
+      - 🇦🇪 阿联酋|解锁
+      - 🇩🇪 德国①|德国
+      - 🇩🇪 德国②
+      - 🇬🇧 英国①
+      - 🇬🇧 英国②
+      - 🇹🇭 泰国
+      - 🇸🇬 新加坡①|解锁
+      - 🇸🇬 新加坡②
+      - 🇯🇵 日本①|解锁
+      - 🇯🇵 日本②
+      - 🇯🇵 日本③
+      - 🇯🇵 日本原生IP
+      - 🇨🇦 加拿大|解锁
+      - 🇦🇺 澳洲澳大利亚|解锁
+      - 🇳🇱 荷兰|解锁
+      - 🇸🇪 瑞典|解锁
+      - 🇫🇷 法国巴黎|解锁
+      - 🇵🇭 菲律宾
       - 🇸🇬 无法使用请更新订阅
       - 下载专用01｜稳定
       - 🇭🇰 HK 香港01｜四区 原生
       - 🇭🇰 HK 香港02｜二区 解锁
       - 🇭🇰 HK 香港03｜三区 解锁
       - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇯🇵 JP 日本01｜一区 高速
+      - 🇯🇵 JP 日本01｜二区 高速
       - 🇯🇵 JP 日本02｜二区 高速
       - 🇯🇵 JP 日本03｜四区 高速
       - 🇯🇵 JP 日本04｜三区 解锁
       - 🇯🇵 JP 日本05｜四区 原生
-      - 🇸🇬 SG 新加坡01｜一区 高速
+      - 🇸🇬 SG 新加坡01｜二区 高速
       - 🇸🇬 SG 新加坡02｜二区 高速
       - 🇸🇬 SG 新加坡03｜四区 高速
       - 🇸🇬 SG 新加坡04｜三区 解锁
       - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇺🇸 US 美国01｜一区 高速
-      - 🇺🇸 US 美国03｜一区 解锁
+      - 🇺🇸 US 美国01｜二区 高速
+      - 🇺🇸 US 美国03｜二区 解锁
       - 🇨🇳 TW 台湾01｜四区 解锁
       - 🇨🇳 TW 台湾02｜二区 解锁
       - 🇩🇪 DE 德国01｜四区
@@ -416,6 +550,23 @@ proxy-groups:
       - 🇲🇾 MY 马来西亚01｜五区
       - 🇦🇺 AU 澳大利亚01｜五区
       - 🇮🇳 IN 印度01｜五区
+      - 美西 01 | Lin直连
+      - 🇸🇬 新加坡 01 | Lin直连
+      - 距离下次重置剩余：7 天 2
+      - 🇭🇰 香港-vip-广东移动-01 2
+      - 🇭🇰 香港-vip-上海电信-02 2
+      - 🇭🇰 香港-vip-安徽移动-04 2
+      - 🇸🇬 新加坡-vip-广东移动-01 2
+      - 🇸🇬 新加坡-vip-江苏移动-01 2
+      - 🇨🇳 台湾-广东移动-02 2
+      - 🇨🇳 台湾-江苏移动-02 2
+      - 🇨🇦 加拿大-广东移动-01 2
+      - 距离下次重置剩余：1 天 2
+      - "提示: 試用套餐網速較差 2"
+      - "提示: 請測試后購買正式套餐 2"
+      - "群聊: @vmssr_chat 2"
+      - 🇭🇰 香港-试用[1.0x] 2
+      - 🇺🇸 美国-试用[1.0x] 2
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
@@ -460,82 +611,6 @@ proxy-groups:
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸 美国①★加利福尼亚|解锁
-      - 🇺🇸 美国②★亚特兰蒂斯
-      - 🇰🇷 韩国★首尔★解锁
-      - 🇨🇳 台湾|解锁
-      - 🇭🇰 香港①|解锁
-      - 🇭🇰 香港②
-      - 🇮🇳 印度①|解锁
-      - 🇮🇳 印度②
-      - 🇧🇷 巴西|解锁
-      - 🇦🇪 阿联酋|解锁
-      - 🇩🇪 德国①|德国
-      - 🇩🇪 德国②
-      - 🇬🇧 英国①
-      - 🇬🇧 英国②
-      - 🇹🇭 泰国
-      - 🇸🇬 新加坡①|解锁
-      - 🇸🇬 新加坡②
-      - 🇯🇵 日本①|解锁
-      - 🇯🇵 日本②
-      - 🇯🇵 日本③
-      - 🇯🇵 日本原生IP
-      - 🇨🇦 加拿大|解锁
-      - 🇦🇺 澳洲澳大利亚|解锁
-      - 🇳🇱 荷兰|解锁
-      - 🇸🇪 瑞典|解锁
-      - 🇫🇷 法国巴黎|解锁
-      - 🇵🇭 菲律宾
-      - 距离下次重置剩余：7 天 2
-      - 🇭🇰 香港-vip-广东移动-01 2
-      - 🇭🇰 香港-vip-上海电信-02 2
-      - 🇭🇰 香港-vip-安徽移动-04 2
-      - 🇸🇬 新加坡-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-江苏移动-02 2
-      - 🇸🇬 新加坡-vip-江苏移动-01 2
-      - 🇨🇳 台湾-广东移动-02 2
-      - 🇨🇳 台湾-江苏移动-02 2
-      - 🇭🇰 香港-广东移动-06 2
-      - 🇨🇦 加拿大-广东移动-01 2
-      - 距离下次重置剩余：1 天 2
-      - "提示: 試用套餐網速較差 2"
-      - "提示: 請測試后購買正式套餐 2"
-      - "群聊: @vmssr_chat 2"
-      - 🇭🇰 香港-试用[1.0x] 2
-      - 🇺🇸 美国-试用[1.0x] 2
-      - "快飞永久跳转地址: http://fastfly.club"
-      - 🇭🇰 vip1 香港-01
-      - 🇭🇰 vip1 香港-02
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 vip1 香港-06
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 vip1 香港-10
-      - 🇯🇵 vip1 日本-04
-      - 🇯🇵 vip1 日本-07
-      - 🇯🇵 vip1 日本-10
-      - 🇨🇳 vip1 台湾-01
-      - 🇨🇳 vip1 台湾-03
-      - 🇨🇳 vip1 台湾-04
-      - 🇨🇳 vip1 台湾-05
-      - 🇨🇳 vip1 台湾-08
-      - 🇸🇬 vip1 新加坡-01
-      - 🇸🇬 vip1 新加坡-02
-      - 🇸🇬 vip1 新加坡-04
-      - 🇸🇬 vip1 新加坡-05
-      - 🇸🇬 vip1 新加坡-08
-      - 🇸🇬 vip1 新加坡-09
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 vip1 美国-05
-      - 🇮🇳 vip1 印度-01
-      - 🇮🇳 vip3 印度-03
-      - 🇦🇺 vip1 澳大利亚-01
-      - 🇦🇺 vip2 澳大利亚-02
-      - 🇬🇧 vip1 英国-03
-      - 🇬🇧 vip1 英国-04
-      - 美西 01 | Lin直连
-      - 🇸🇬 新加坡 01 | Lin直连
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -545,42 +620,126 @@ proxy-groups:
       - 🇺🇸 美国-01
       - 🇺🇸 美国-02
       - 🇺🇸 美国-03
+      - 距离下次重置剩余：7 天
+      - 🇭🇰 香港-vip-广东移动-01
+      - 🇭🇰 香港-vip-上海电信-02
+      - 🇭🇰 香港-vip-安徽移动-04
+      - 🇸🇬 新加坡-vip-广东移动-01
+      - 🇸🇬 新加坡-vip-江苏移动-01
+      - 🇨🇳 台湾-广东移动-02
+      - 🇨🇳 台湾-江苏移动-02
+      - 🇨🇦 加拿大-广东移动-01
+      - "快飞永久跳转地址: http://fastfly.club"
+      - 🇭🇰 vip1 香港-01
+      - 🇭🇰 vip1 香港-02
+      - 🇭🇰 vip1 香港-05
+      - 🇭🇰 vip1 香港-06
+      - 🇭🇰 vip1 香港-09
+      - 🇭🇰 vip1 香港-10
+      - 🇯🇵 vip1 日本-04
+      - 🇯🇵 vip1 日本-07
+      - 🇯🇵 vip1 日本-10
+      - 🇨🇳 vip1 台湾-01
+      - 🇨🇳 vip1 台湾-03
+      - 🇨🇳 vip1 台湾-04
+      - 🇨🇳 vip1 台湾-05
+      - 🇨🇳 vip1 台湾-08
+      - 🇸🇬 vip1 新加坡-01
+      - 🇸🇬 vip1 新加坡-02
+      - 🇸🇬 vip1 新加坡-04
+      - 🇸🇬 vip1 新加坡-05
+      - 🇸🇬 vip1 新加坡-08
+      - 🇸🇬 vip1 新加坡-09
+      - 🇺🇸 vip1 美国-04
+      - 🇺🇸 vip1 美国-05
+      - 🇮🇳 vip1 印度-01
+      - 🇮🇳 vip3 印度-03
+      - 🇦🇺 vip1 澳大利亚-01
+      - 🇦🇺 vip2 澳大利亚-02
+      - 🇬🇧 vip1 英国-03
+      - 🇬🇧 vip1 英国-04
       - 距离下次重置剩余：1 天
       - "提示: 試用套餐網速較差"
       - "提示: 請測試后購買正式套餐"
       - "群聊: @vmssr_chat"
       - 🇭🇰 香港-试用[1.0x]
       - 🇺🇸 美国-试用[1.0x]
-      - 距离下次重置剩余：7 天
-      - 🇭🇰 香港-vip-广东移动-01
-      - 🇭🇰 香港-vip-上海电信-02
-      - 🇭🇰 香港-vip-安徽移动-04
-      - 🇸🇬 新加坡-vip-广东移动-01
-      - 🇯🇵 日本-vip-广东移动-01
-      - 🇯🇵 日本-vip-江苏移动-02
-      - 🇸🇬 新加坡-vip-江苏移动-01
-      - 🇨🇳 台湾-广东移动-02
-      - 🇨🇳 台湾-江苏移动-02
-      - 🇭🇰 香港-广东移动-06
-      - 🇨🇦 加拿大-广东移动-01
+      - 距离下次重置剩余：5 天
+      - JCBB永久跳转地址 jcbb.cc
+      - 🇰🇷 JCBB_ 韩国 01【vip1】
+      - 🇰🇷 JCBB_ 韩国 02【vip1】
+      - 🇭🇰 JCBB_香港01【vip1】
+      - 🇭🇰 JCBB_香港02【vip1】
+      - 🇭🇰 JCBB_香港03【vip1】
+      - 🇭🇰 JCBB_香港04【vip1】
+      - 🇩🇪 JCBB_德国02【vip1】
+      - 🇩🇪 JCBB_德国01【vip1】
+      - 🇮🇳 JCBB_ 印度01【vip1】
+      - 🇮🇳 JCBB_ 印度02【vip1】
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - 🇬🇧 JCBB_ 英国02【vip1】
+      - 🇯🇵 JCBB_日本01【vip1】
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇨🇳 JCBB_ 台湾 01【vip1】
+      - 🇨🇳 JCBB_ 台湾 02【vip1】
+      - 🇨🇳 JCBB_ 台湾 03【vip1】
+      - 🇹🇷 JCBB_土耳其 01【vip1】
+      - 🇹🇷 JCBB_土耳其 02【vip1】
+      - 🇻🇳 JCBB_越南 01【vip1】
+      - 🇻🇳 JCBB_越南 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 01【vip1】
+      - 🇸🇬 JCBB_新加坡 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 JCBB_ 美国 01【vip1】
+      - 🇺🇸 JCBB_ 美国03【vip2】
+      - 🇺🇸 JCBB_ 美国03【vip1】
+      - 🇺🇸 JCBB_ 美国04【vip1】
+      - 🇺🇸 美国①★加利福尼亚|解锁
+      - 🇺🇸 美国②★亚特兰蒂斯
+      - 🇰🇷 韩国★首尔★解锁
+      - 🇨🇳 台湾|解锁
+      - 🇭🇰 香港①|解锁
+      - 🇭🇰 香港②
+      - 🇮🇳 印度①|解锁
+      - 🇮🇳 印度②
+      - 🇧🇷 巴西|解锁
+      - 🇦🇪 阿联酋|解锁
+      - 🇩🇪 德国①|德国
+      - 🇩🇪 德国②
+      - 🇬🇧 英国①
+      - 🇬🇧 英国②
+      - 🇹🇭 泰国
+      - 🇸🇬 新加坡①|解锁
+      - 🇸🇬 新加坡②
+      - 🇯🇵 日本①|解锁
+      - 🇯🇵 日本②
+      - 🇯🇵 日本③
+      - 🇯🇵 日本原生IP
+      - 🇨🇦 加拿大|解锁
+      - 🇦🇺 澳洲澳大利亚|解锁
+      - 🇳🇱 荷兰|解锁
+      - 🇸🇪 瑞典|解锁
+      - 🇫🇷 法国巴黎|解锁
+      - 🇵🇭 菲律宾
       - 🇸🇬 无法使用请更新订阅
       - 下载专用01｜稳定
       - 🇭🇰 HK 香港01｜四区 原生
       - 🇭🇰 HK 香港02｜二区 解锁
       - 🇭🇰 HK 香港03｜三区 解锁
       - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇯🇵 JP 日本01｜一区 高速
+      - 🇯🇵 JP 日本01｜二区 高速
       - 🇯🇵 JP 日本02｜二区 高速
       - 🇯🇵 JP 日本03｜四区 高速
       - 🇯🇵 JP 日本04｜三区 解锁
       - 🇯🇵 JP 日本05｜四区 原生
-      - 🇸🇬 SG 新加坡01｜一区 高速
+      - 🇸🇬 SG 新加坡01｜二区 高速
       - 🇸🇬 SG 新加坡02｜二区 高速
       - 🇸🇬 SG 新加坡03｜四区 高速
       - 🇸🇬 SG 新加坡04｜三区 解锁
       - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇺🇸 US 美国01｜一区 高速
-      - 🇺🇸 US 美国03｜一区 解锁
+      - 🇺🇸 US 美国01｜二区 高速
+      - 🇺🇸 US 美国03｜二区 解锁
       - 🇨🇳 TW 台湾01｜四区 解锁
       - 🇨🇳 TW 台湾02｜二区 解锁
       - 🇩🇪 DE 德国01｜四区
@@ -591,6 +750,23 @@ proxy-groups:
       - 🇲🇾 MY 马来西亚01｜五区
       - 🇦🇺 AU 澳大利亚01｜五区
       - 🇮🇳 IN 印度01｜五区
+      - 美西 01 | Lin直连
+      - 🇸🇬 新加坡 01 | Lin直连
+      - 距离下次重置剩余：7 天 2
+      - 🇭🇰 香港-vip-广东移动-01 2
+      - 🇭🇰 香港-vip-上海电信-02 2
+      - 🇭🇰 香港-vip-安徽移动-04 2
+      - 🇸🇬 新加坡-vip-广东移动-01 2
+      - 🇸🇬 新加坡-vip-江苏移动-01 2
+      - 🇨🇳 台湾-广东移动-02 2
+      - 🇨🇳 台湾-江苏移动-02 2
+      - 🇨🇦 加拿大-广东移动-01 2
+      - 距离下次重置剩余：1 天 2
+      - "提示: 試用套餐網速較差 2"
+      - "提示: 請測試后購買正式套餐 2"
+      - "群聊: @vmssr_chat 2"
+      - 🇭🇰 香港-试用[1.0x] 2
+      - 🇺🇸 美国-试用[1.0x] 2
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
@@ -635,82 +811,6 @@ proxy-groups:
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸 美国①★加利福尼亚|解锁
-      - 🇺🇸 美国②★亚特兰蒂斯
-      - 🇰🇷 韩国★首尔★解锁
-      - 🇨🇳 台湾|解锁
-      - 🇭🇰 香港①|解锁
-      - 🇭🇰 香港②
-      - 🇮🇳 印度①|解锁
-      - 🇮🇳 印度②
-      - 🇧🇷 巴西|解锁
-      - 🇦🇪 阿联酋|解锁
-      - 🇩🇪 德国①|德国
-      - 🇩🇪 德国②
-      - 🇬🇧 英国①
-      - 🇬🇧 英国②
-      - 🇹🇭 泰国
-      - 🇸🇬 新加坡①|解锁
-      - 🇸🇬 新加坡②
-      - 🇯🇵 日本①|解锁
-      - 🇯🇵 日本②
-      - 🇯🇵 日本③
-      - 🇯🇵 日本原生IP
-      - 🇨🇦 加拿大|解锁
-      - 🇦🇺 澳洲澳大利亚|解锁
-      - 🇳🇱 荷兰|解锁
-      - 🇸🇪 瑞典|解锁
-      - 🇫🇷 法国巴黎|解锁
-      - 🇵🇭 菲律宾
-      - 距离下次重置剩余：7 天 2
-      - 🇭🇰 香港-vip-广东移动-01 2
-      - 🇭🇰 香港-vip-上海电信-02 2
-      - 🇭🇰 香港-vip-安徽移动-04 2
-      - 🇸🇬 新加坡-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-江苏移动-02 2
-      - 🇸🇬 新加坡-vip-江苏移动-01 2
-      - 🇨🇳 台湾-广东移动-02 2
-      - 🇨🇳 台湾-江苏移动-02 2
-      - 🇭🇰 香港-广东移动-06 2
-      - 🇨🇦 加拿大-广东移动-01 2
-      - 距离下次重置剩余：1 天 2
-      - "提示: 試用套餐網速較差 2"
-      - "提示: 請測試后購買正式套餐 2"
-      - "群聊: @vmssr_chat 2"
-      - 🇭🇰 香港-试用[1.0x] 2
-      - 🇺🇸 美国-试用[1.0x] 2
-      - "快飞永久跳转地址: http://fastfly.club"
-      - 🇭🇰 vip1 香港-01
-      - 🇭🇰 vip1 香港-02
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 vip1 香港-06
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 vip1 香港-10
-      - 🇯🇵 vip1 日本-04
-      - 🇯🇵 vip1 日本-07
-      - 🇯🇵 vip1 日本-10
-      - 🇨🇳 vip1 台湾-01
-      - 🇨🇳 vip1 台湾-03
-      - 🇨🇳 vip1 台湾-04
-      - 🇨🇳 vip1 台湾-05
-      - 🇨🇳 vip1 台湾-08
-      - 🇸🇬 vip1 新加坡-01
-      - 🇸🇬 vip1 新加坡-02
-      - 🇸🇬 vip1 新加坡-04
-      - 🇸🇬 vip1 新加坡-05
-      - 🇸🇬 vip1 新加坡-08
-      - 🇸🇬 vip1 新加坡-09
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 vip1 美国-05
-      - 🇮🇳 vip1 印度-01
-      - 🇮🇳 vip3 印度-03
-      - 🇦🇺 vip1 澳大利亚-01
-      - 🇦🇺 vip2 澳大利亚-02
-      - 🇬🇧 vip1 英国-03
-      - 🇬🇧 vip1 英国-04
-      - 美西 01 | Lin直连
-      - 🇸🇬 新加坡 01 | Lin直连
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -721,42 +821,126 @@ proxy-groups:
       - 🇺🇸 美国-01
       - 🇺🇸 美国-02
       - 🇺🇸 美国-03
+      - 距离下次重置剩余：7 天
+      - 🇭🇰 香港-vip-广东移动-01
+      - 🇭🇰 香港-vip-上海电信-02
+      - 🇭🇰 香港-vip-安徽移动-04
+      - 🇸🇬 新加坡-vip-广东移动-01
+      - 🇸🇬 新加坡-vip-江苏移动-01
+      - 🇨🇳 台湾-广东移动-02
+      - 🇨🇳 台湾-江苏移动-02
+      - 🇨🇦 加拿大-广东移动-01
+      - "快飞永久跳转地址: http://fastfly.club"
+      - 🇭🇰 vip1 香港-01
+      - 🇭🇰 vip1 香港-02
+      - 🇭🇰 vip1 香港-05
+      - 🇭🇰 vip1 香港-06
+      - 🇭🇰 vip1 香港-09
+      - 🇭🇰 vip1 香港-10
+      - 🇯🇵 vip1 日本-04
+      - 🇯🇵 vip1 日本-07
+      - 🇯🇵 vip1 日本-10
+      - 🇨🇳 vip1 台湾-01
+      - 🇨🇳 vip1 台湾-03
+      - 🇨🇳 vip1 台湾-04
+      - 🇨🇳 vip1 台湾-05
+      - 🇨🇳 vip1 台湾-08
+      - 🇸🇬 vip1 新加坡-01
+      - 🇸🇬 vip1 新加坡-02
+      - 🇸🇬 vip1 新加坡-04
+      - 🇸🇬 vip1 新加坡-05
+      - 🇸🇬 vip1 新加坡-08
+      - 🇸🇬 vip1 新加坡-09
+      - 🇺🇸 vip1 美国-04
+      - 🇺🇸 vip1 美国-05
+      - 🇮🇳 vip1 印度-01
+      - 🇮🇳 vip3 印度-03
+      - 🇦🇺 vip1 澳大利亚-01
+      - 🇦🇺 vip2 澳大利亚-02
+      - 🇬🇧 vip1 英国-03
+      - 🇬🇧 vip1 英国-04
       - 距离下次重置剩余：1 天
       - "提示: 試用套餐網速較差"
       - "提示: 請測試后購買正式套餐"
       - "群聊: @vmssr_chat"
       - 🇭🇰 香港-试用[1.0x]
       - 🇺🇸 美国-试用[1.0x]
-      - 距离下次重置剩余：7 天
-      - 🇭🇰 香港-vip-广东移动-01
-      - 🇭🇰 香港-vip-上海电信-02
-      - 🇭🇰 香港-vip-安徽移动-04
-      - 🇸🇬 新加坡-vip-广东移动-01
-      - 🇯🇵 日本-vip-广东移动-01
-      - 🇯🇵 日本-vip-江苏移动-02
-      - 🇸🇬 新加坡-vip-江苏移动-01
-      - 🇨🇳 台湾-广东移动-02
-      - 🇨🇳 台湾-江苏移动-02
-      - 🇭🇰 香港-广东移动-06
-      - 🇨🇦 加拿大-广东移动-01
+      - 距离下次重置剩余：5 天
+      - JCBB永久跳转地址 jcbb.cc
+      - 🇰🇷 JCBB_ 韩国 01【vip1】
+      - 🇰🇷 JCBB_ 韩国 02【vip1】
+      - 🇭🇰 JCBB_香港01【vip1】
+      - 🇭🇰 JCBB_香港02【vip1】
+      - 🇭🇰 JCBB_香港03【vip1】
+      - 🇭🇰 JCBB_香港04【vip1】
+      - 🇩🇪 JCBB_德国02【vip1】
+      - 🇩🇪 JCBB_德国01【vip1】
+      - 🇮🇳 JCBB_ 印度01【vip1】
+      - 🇮🇳 JCBB_ 印度02【vip1】
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - 🇬🇧 JCBB_ 英国02【vip1】
+      - 🇯🇵 JCBB_日本01【vip1】
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇨🇳 JCBB_ 台湾 01【vip1】
+      - 🇨🇳 JCBB_ 台湾 02【vip1】
+      - 🇨🇳 JCBB_ 台湾 03【vip1】
+      - 🇹🇷 JCBB_土耳其 01【vip1】
+      - 🇹🇷 JCBB_土耳其 02【vip1】
+      - 🇻🇳 JCBB_越南 01【vip1】
+      - 🇻🇳 JCBB_越南 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 01【vip1】
+      - 🇸🇬 JCBB_新加坡 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇺🇸 JCBB_ 美国 01【vip1】
+      - 🇺🇸 JCBB_ 美国03【vip2】
+      - 🇺🇸 JCBB_ 美国03【vip1】
+      - 🇺🇸 JCBB_ 美国04【vip1】
+      - 🇺🇸 美国①★加利福尼亚|解锁
+      - 🇺🇸 美国②★亚特兰蒂斯
+      - 🇰🇷 韩国★首尔★解锁
+      - 🇨🇳 台湾|解锁
+      - 🇭🇰 香港①|解锁
+      - 🇭🇰 香港②
+      - 🇮🇳 印度①|解锁
+      - 🇮🇳 印度②
+      - 🇧🇷 巴西|解锁
+      - 🇦🇪 阿联酋|解锁
+      - 🇩🇪 德国①|德国
+      - 🇩🇪 德国②
+      - 🇬🇧 英国①
+      - 🇬🇧 英国②
+      - 🇹🇭 泰国
+      - 🇸🇬 新加坡①|解锁
+      - 🇸🇬 新加坡②
+      - 🇯🇵 日本①|解锁
+      - 🇯🇵 日本②
+      - 🇯🇵 日本③
+      - 🇯🇵 日本原生IP
+      - 🇨🇦 加拿大|解锁
+      - 🇦🇺 澳洲澳大利亚|解锁
+      - 🇳🇱 荷兰|解锁
+      - 🇸🇪 瑞典|解锁
+      - 🇫🇷 法国巴黎|解锁
+      - 🇵🇭 菲律宾
       - 🇸🇬 无法使用请更新订阅
       - 下载专用01｜稳定
       - 🇭🇰 HK 香港01｜四区 原生
       - 🇭🇰 HK 香港02｜二区 解锁
       - 🇭🇰 HK 香港03｜三区 解锁
       - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇯🇵 JP 日本01｜一区 高速
+      - 🇯🇵 JP 日本01｜二区 高速
       - 🇯🇵 JP 日本02｜二区 高速
       - 🇯🇵 JP 日本03｜四区 高速
       - 🇯🇵 JP 日本04｜三区 解锁
       - 🇯🇵 JP 日本05｜四区 原生
-      - 🇸🇬 SG 新加坡01｜一区 高速
+      - 🇸🇬 SG 新加坡01｜二区 高速
       - 🇸🇬 SG 新加坡02｜二区 高速
       - 🇸🇬 SG 新加坡03｜四区 高速
       - 🇸🇬 SG 新加坡04｜三区 解锁
       - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇺🇸 US 美国01｜一区 高速
-      - 🇺🇸 US 美国03｜一区 解锁
+      - 🇺🇸 US 美国01｜二区 高速
+      - 🇺🇸 US 美国03｜二区 解锁
       - 🇨🇳 TW 台湾01｜四区 解锁
       - 🇨🇳 TW 台湾02｜二区 解锁
       - 🇩🇪 DE 德国01｜四区
@@ -767,6 +951,23 @@ proxy-groups:
       - 🇲🇾 MY 马来西亚01｜五区
       - 🇦🇺 AU 澳大利亚01｜五区
       - 🇮🇳 IN 印度01｜五区
+      - 美西 01 | Lin直连
+      - 🇸🇬 新加坡 01 | Lin直连
+      - 距离下次重置剩余：7 天 2
+      - 🇭🇰 香港-vip-广东移动-01 2
+      - 🇭🇰 香港-vip-上海电信-02 2
+      - 🇭🇰 香港-vip-安徽移动-04 2
+      - 🇸🇬 新加坡-vip-广东移动-01 2
+      - 🇸🇬 新加坡-vip-江苏移动-01 2
+      - 🇨🇳 台湾-广东移动-02 2
+      - 🇨🇳 台湾-江苏移动-02 2
+      - 🇨🇦 加拿大-广东移动-01 2
+      - 距离下次重置剩余：1 天 2
+      - "提示: 試用套餐網速較差 2"
+      - "提示: 請測試后購買正式套餐 2"
+      - "群聊: @vmssr_chat 2"
+      - 🇭🇰 香港-试用[1.0x] 2
+      - 🇺🇸 美国-试用[1.0x] 2
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
@@ -811,82 +1012,6 @@ proxy-groups:
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸 美国①★加利福尼亚|解锁
-      - 🇺🇸 美国②★亚特兰蒂斯
-      - 🇰🇷 韩国★首尔★解锁
-      - 🇨🇳 台湾|解锁
-      - 🇭🇰 香港①|解锁
-      - 🇭🇰 香港②
-      - 🇮🇳 印度①|解锁
-      - 🇮🇳 印度②
-      - 🇧🇷 巴西|解锁
-      - 🇦🇪 阿联酋|解锁
-      - 🇩🇪 德国①|德国
-      - 🇩🇪 德国②
-      - 🇬🇧 英国①
-      - 🇬🇧 英国②
-      - 🇹🇭 泰国
-      - 🇸🇬 新加坡①|解锁
-      - 🇸🇬 新加坡②
-      - 🇯🇵 日本①|解锁
-      - 🇯🇵 日本②
-      - 🇯🇵 日本③
-      - 🇯🇵 日本原生IP
-      - 🇨🇦 加拿大|解锁
-      - 🇦🇺 澳洲澳大利亚|解锁
-      - 🇳🇱 荷兰|解锁
-      - 🇸🇪 瑞典|解锁
-      - 🇫🇷 法国巴黎|解锁
-      - 🇵🇭 菲律宾
-      - 距离下次重置剩余：7 天 2
-      - 🇭🇰 香港-vip-广东移动-01 2
-      - 🇭🇰 香港-vip-上海电信-02 2
-      - 🇭🇰 香港-vip-安徽移动-04 2
-      - 🇸🇬 新加坡-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-江苏移动-02 2
-      - 🇸🇬 新加坡-vip-江苏移动-01 2
-      - 🇨🇳 台湾-广东移动-02 2
-      - 🇨🇳 台湾-江苏移动-02 2
-      - 🇭🇰 香港-广东移动-06 2
-      - 🇨🇦 加拿大-广东移动-01 2
-      - 距离下次重置剩余：1 天 2
-      - "提示: 試用套餐網速較差 2"
-      - "提示: 請測試后購買正式套餐 2"
-      - "群聊: @vmssr_chat 2"
-      - 🇭🇰 香港-试用[1.0x] 2
-      - 🇺🇸 美国-试用[1.0x] 2
-      - "快飞永久跳转地址: http://fastfly.club"
-      - 🇭🇰 vip1 香港-01
-      - 🇭🇰 vip1 香港-02
-      - 🇭🇰 vip1 香港-05
-      - 🇭🇰 vip1 香港-06
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 vip1 香港-10
-      - 🇯🇵 vip1 日本-04
-      - 🇯🇵 vip1 日本-07
-      - 🇯🇵 vip1 日本-10
-      - 🇨🇳 vip1 台湾-01
-      - 🇨🇳 vip1 台湾-03
-      - 🇨🇳 vip1 台湾-04
-      - 🇨🇳 vip1 台湾-05
-      - 🇨🇳 vip1 台湾-08
-      - 🇸🇬 vip1 新加坡-01
-      - 🇸🇬 vip1 新加坡-02
-      - 🇸🇬 vip1 新加坡-04
-      - 🇸🇬 vip1 新加坡-05
-      - 🇸🇬 vip1 新加坡-08
-      - 🇸🇬 vip1 新加坡-09
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 vip1 美国-05
-      - 🇮🇳 vip1 印度-01
-      - 🇮🇳 vip3 印度-03
-      - 🇦🇺 vip1 澳大利亚-01
-      - 🇦🇺 vip2 澳大利亚-02
-      - 🇬🇧 vip1 英国-03
-      - 🇬🇧 vip1 英国-04
-      - 美西 01 | Lin直连
-      - 🇸🇬 新加坡 01 | Lin直连
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1028,15 +1153,6 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇭🇰 HK 香港02｜二区 解锁
-      - 🇭🇰 HK 香港03｜三区 解锁
-      - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇯🇵 JP 日本04｜三区 解锁
-      - 🇸🇬 SG 新加坡04｜三区 解锁
-      - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇺🇸 US 美国03｜一区 解锁
-      - 🇨🇳 TW 台湾01｜四区 解锁
-      - 🇨🇳 TW 台湾02｜二区 解锁
       - 🇺🇸 美国①★加利福尼亚|解锁
       - 🇰🇷 韩国★首尔★解锁
       - 🇨🇳 台湾|解锁
@@ -1051,6 +1167,15 @@ proxy-groups:
       - 🇳🇱 荷兰|解锁
       - 🇸🇪 瑞典|解锁
       - 🇫🇷 法国巴黎|解锁
+      - 🇭🇰 HK 香港02｜二区 解锁
+      - 🇭🇰 HK 香港03｜三区 解锁
+      - 🇭🇰 HK 香港04｜二区 解锁
+      - 🇯🇵 JP 日本04｜三区 解锁
+      - 🇸🇬 SG 新加坡04｜三区 解锁
+      - 🇸🇬 SG 新加坡05｜四区 解锁
+      - 🇺🇸 US 美国03｜二区 解锁
+      - 🇨🇳 TW 台湾01｜四区 解锁
+      - 🇨🇳 TW 台湾02｜二区 解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1096,40 +1221,50 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港-试用[1.0x]
       - 🇭🇰 香港-vip-广东移动-01
       - 🇭🇰 香港-vip-上海电信-02
       - 🇭🇰 香港-vip-安徽移动-04
-      - 🇭🇰 香港-广东移动-06
-      - 🇭🇰 HK 香港01｜四区 原生
-      - 🇭🇰 HK 香港02｜二区 解锁
-      - 🇭🇰 HK 香港03｜三区 解锁
-      - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇭🇰 香港①|解锁
-      - 🇭🇰 香港②
-      - 🇭🇰 香港-vip-广东移动-01 2
-      - 🇭🇰 香港-vip-上海电信-02 2
-      - 🇭🇰 香港-vip-安徽移动-04 2
-      - 🇭🇰 香港-广东移动-06 2
-      - 🇭🇰 香港-试用[1.0x] 2
       - 🇭🇰 vip1 香港-01
       - 🇭🇰 vip1 香港-02
       - 🇭🇰 vip1 香港-05
       - 🇭🇰 vip1 香港-06
       - 🇭🇰 vip1 香港-09
       - 🇭🇰 vip1 香港-10
+      - 🇭🇰 香港-试用[1.0x]
+      - 🇭🇰 JCBB_香港01【vip1】
+      - 🇭🇰 JCBB_香港02【vip1】
+      - 🇭🇰 JCBB_香港03【vip1】
+      - 🇭🇰 JCBB_香港04【vip1】
+      - 🇭🇰 香港①|解锁
+      - 🇭🇰 香港②
+      - 🇭🇰 HK 香港01｜四区 原生
+      - 🇭🇰 HK 香港02｜二区 解锁
+      - 🇭🇰 HK 香港03｜三区 解锁
+      - 🇭🇰 HK 香港04｜二区 解锁
+      - 🇭🇰 香港-vip-广东移动-01 2
+      - 🇭🇰 香港-vip-上海电信-02 2
+      - 🇭🇰 香港-vip-安徽移动-04 2
+      - 🇭🇰 香港-试用[1.0x] 2
+      - 🇭🇰 _HK_香港
+      - 🇭🇰 _HK_香港 2
+      - 🇭🇰 _HK_香港 3
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本-vip-广东移动-01
-      - 🇯🇵 日本-vip-江苏移动-02
-      - 🇯🇵 JP 日本01｜一区 高速
+      - 🇯🇵 vip1 日本-04
+      - 🇯🇵 vip1 日本-07
+      - 🇯🇵 vip1 日本-10
+      - 🇯🇵 JCBB_日本01【vip1】
+      - 🇯🇵 JCBB_日本02【vip1】
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇯🇵 日本①|解锁
+      - 🇯🇵 日本②
+      - 🇯🇵 日本③
+      - 🇯🇵 日本原生IP
+      - 🇯🇵 JP 日本01｜二区 高速
       - 🇯🇵 JP 日本02｜二区 高速
       - 🇯🇵 JP 日本03｜四区 高速
       - 🇯🇵 JP 日本04｜三区 解锁
@@ -1138,15 +1273,6 @@ proxy-groups:
       - 🇯🇵 _JP_日本
       - 🇯🇵 _JP_日本 2
       - 🇯🇵 _JP_日本 3
-      - 🇯🇵 日本①|解锁
-      - 🇯🇵 日本②
-      - 🇯🇵 日本③
-      - 🇯🇵 日本原生IP
-      - 🇯🇵 日本-vip-广东移动-01 2
-      - 🇯🇵 日本-vip-江苏移动-02 2
-      - 🇯🇵 vip1 日本-04
-      - 🇯🇵 vip1 日本-07
-      - 🇯🇵 vip1 日本-10
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1156,9 +1282,19 @@ proxy-groups:
       - 🇺🇸 美国-01
       - 🇺🇸 美国-02
       - 🇺🇸 美国-03
+      - 🇺🇸 vip1 美国-04
+      - 🇺🇸 vip1 美国-05
       - 🇺🇸 美国-试用[1.0x]
-      - 🇺🇸 US 美国01｜一区 高速
-      - 🇺🇸 US 美国03｜一区 解锁
+      - 🇺🇸 JCBB_ 美国 01【vip1】
+      - 🇺🇸 JCBB_ 美国03【vip2】
+      - 🇺🇸 JCBB_ 美国03【vip1】
+      - 🇺🇸 JCBB_ 美国04【vip1】
+      - 🇺🇸 美国①★加利福尼亚|解锁
+      - 🇺🇸 美国②★亚特兰蒂斯
+      - 🇺🇸 US 美国01｜二区 高速
+      - 🇺🇸 US 美国03｜二区 解锁
+      - 美西 01 | Lin直连
+      - 🇺🇸 美国-试用[1.0x] 2
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国 2
       - 🇺🇸 _US_美国 3
@@ -1182,12 +1318,6 @@ proxy-groups:
       - 🇺🇸 _US_美国 18
       - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
-      - 🇺🇸 美国①★加利福尼亚|解锁
-      - 🇺🇸 美国②★亚特兰蒂斯
-      - 🇺🇸 美国-试用[1.0x] 2
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 vip1 美国-05
-      - 美西 01 | Lin直连
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1196,20 +1326,23 @@ proxy-groups:
     proxies:
       - 🇨🇳 台湾-广东移动-02
       - 🇨🇳 台湾-江苏移动-02
-      - 🇨🇳 TW 台湾01｜四区 解锁
-      - 🇨🇳 TW 台湾02｜二区 解锁
-      - 🇨🇳 _TW_台湾
-      - 🇨🇳 _TW_台湾 2
-      - 🇨🇳 _TW_台湾 3
-      - 🇨🇳 _TW_台湾 4
-      - 🇨🇳 台湾|解锁
-      - 🇨🇳 台湾-广东移动-02 2
-      - 🇨🇳 台湾-江苏移动-02 2
       - 🇨🇳 vip1 台湾-01
       - 🇨🇳 vip1 台湾-03
       - 🇨🇳 vip1 台湾-04
       - 🇨🇳 vip1 台湾-05
       - 🇨🇳 vip1 台湾-08
+      - 🇨🇳 JCBB_ 台湾 01【vip1】
+      - 🇨🇳 JCBB_ 台湾 02【vip1】
+      - 🇨🇳 JCBB_ 台湾 03【vip1】
+      - 🇨🇳 台湾|解锁
+      - 🇨🇳 TW 台湾01｜四区 解锁
+      - 🇨🇳 TW 台湾02｜二区 解锁
+      - 🇨🇳 台湾-广东移动-02 2
+      - 🇨🇳 台湾-江苏移动-02 2
+      - 🇨🇳 _TW_台湾
+      - 🇨🇳 _TW_台湾 2
+      - 🇨🇳 _TW_台湾 3
+      - 🇨🇳 _TW_台湾 4
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -1218,48 +1351,44 @@ proxy-groups:
     proxies:
       - 🇸🇬 新加坡-vip-广东移动-01
       - 🇸🇬 新加坡-vip-江苏移动-01
-      - 🇸🇬 SG 新加坡01｜一区 高速
-      - 🇸🇬 SG 新加坡02｜二区 高速
-      - 🇸🇬 SG 新加坡03｜四区 高速
-      - 🇸🇬 SG 新加坡04｜三区 解锁
-      - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇸🇬 _SG_新加坡
-      - 🇸🇬 _SG_新加坡 2
-      - 🇸🇬 _SG_新加坡 3
-      - 🇸🇬 _SG_新加坡 4
-      - 🇸🇬 新加坡①|解锁
-      - 🇸🇬 新加坡②
-      - 🇸🇬 新加坡-vip-广东移动-01 2
-      - 🇸🇬 新加坡-vip-江苏移动-01 2
       - 🇸🇬 vip1 新加坡-01
       - 🇸🇬 vip1 新加坡-02
       - 🇸🇬 vip1 新加坡-04
       - 🇸🇬 vip1 新加坡-05
       - 🇸🇬 vip1 新加坡-08
       - 🇸🇬 vip1 新加坡-09
+      - 🇸🇬 JCBB_ 新加坡 01【vip1】
+      - 🇸🇬 JCBB_新加坡 02【vip1】
+      - 🇸🇬 JCBB_ 新加坡 03【vip1】
+      - 🇸🇬 新加坡①|解锁
+      - 🇸🇬 新加坡②
+      - 🇸🇬 SG 新加坡01｜二区 高速
+      - 🇸🇬 SG 新加坡02｜二区 高速
+      - 🇸🇬 SG 新加坡03｜四区 高速
+      - 🇸🇬 SG 新加坡04｜三区 解锁
+      - 🇸🇬 SG 新加坡05｜四区 解锁
       - 🇸🇬 新加坡 01 | Lin直连
+      - 🇸🇬 新加坡-vip-广东移动-01 2
+      - 🇸🇬 新加坡-vip-江苏移动-01 2
+      - 🇸🇬 _SG_新加坡
+      - 🇸🇬 _SG_新加坡 2
+      - 🇸🇬 _SG_新加坡 3
+      - 🇸🇬 _SG_新加坡 4
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇰🇷 JCBB_ 韩国 01【vip1】
+      - 🇰🇷 JCBB_ 韩国 02【vip1】
+      - 🇰🇷 韩国★首尔★解锁
       - 🇰🇷 KR 韩国01｜五区
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国 2
-      - 🇰🇷 韩国★首尔★解锁
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇭🇰 HK 香港02｜二区 解锁
-      - 🇭🇰 HK 香港03｜三区 解锁
-      - 🇭🇰 HK 香港04｜二区 解锁
-      - 🇯🇵 JP 日本04｜三区 解锁
-      - 🇸🇬 SG 新加坡04｜三区 解锁
-      - 🇸🇬 SG 新加坡05｜四区 解锁
-      - 🇺🇸 US 美国03｜一区 解锁
-      - 🇨🇳 TW 台湾01｜四区 解锁
-      - 🇨🇳 TW 台湾02｜二区 解锁
       - 🇺🇸 美国①★加利福尼亚|解锁
       - 🇰🇷 韩国★首尔★解锁
       - 🇨🇳 台湾|解锁
@@ -1274,6 +1403,15 @@ proxy-groups:
       - 🇳🇱 荷兰|解锁
       - 🇸🇪 瑞典|解锁
       - 🇫🇷 法国巴黎|解锁
+      - 🇭🇰 HK 香港02｜二区 解锁
+      - 🇭🇰 HK 香港03｜三区 解锁
+      - 🇭🇰 HK 香港04｜二区 解锁
+      - 🇯🇵 JP 日本04｜三区 解锁
+      - 🇸🇬 SG 新加坡04｜三区 解锁
+      - 🇸🇬 SG 新加坡05｜四区 解锁
+      - 🇺🇸 US 美国03｜二区 解锁
+      - 🇨🇳 TW 台湾01｜四区 解锁
+      - 🇨🇳 TW 台湾02｜二区 解锁
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
