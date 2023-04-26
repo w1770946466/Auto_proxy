@@ -22,6 +22,7 @@ home_urls = (
     'https://lemontea.shop',
     'https://xunfan.co',
     'https://onlines7.cloud',
+    'http://v.vuex.eu.org',          #50G  15天
     'https://pa.moodrfd1.best',      #40G  10天
     'https://vvtestatiantian.top',   #500G 30天
     'https://www.jwckk.top',         #30G  30天
