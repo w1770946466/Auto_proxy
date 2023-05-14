@@ -13,7 +13,6 @@ import chardet
 
 #试用机场链接
 home_urls = (
-    'https://xiaolan.vip',
     'https://ekim.sbs',
     'https://xn--rhty98cjxd.xyz',
     'https://xunfan.co',                 #7天5g
@@ -364,8 +363,8 @@ def get_sub_url():
                     try_sub.append(subscription_url)
                     e_sub.append(subscription_url)
                     print("add:"+subscription_url)
-                except:
-                    print("获取订阅失败")
+                except Exception as e:
+                    print("获取订阅失败",e)
             i += 1
 
             
