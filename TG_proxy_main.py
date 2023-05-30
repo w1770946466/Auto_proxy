@@ -44,7 +44,7 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = ['https://suo.yt/sk3ruF2','https://www.prop.cf/?name=paimon&client=base64','https://sub.pmsub.me/base64','https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray','https://sub.sharecentre.online/sub','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub','https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub']
+e_sub = ['https://suo.yt/sk3ruF2','https://www.prop.cf/?name=paimon&client=base64','https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary','https://sub.pmsub.me/base64','https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray','https://sub.sharecentre.online/sub','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub','https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub']
 #e_sub = ['https://pastebin.com/raw/dmnL3uAR','https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2','https://raw.githubusercontent.com/kxswa/k/k/base64']
 #频道
 urls =["https://t.me/s/masco899","https://t.me/s/wxdy666","https://t.me/s/nice16688","https://t.me/s/airproxies","https://t.me/s/kxswa","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/xuanyizero"]
