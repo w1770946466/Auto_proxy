@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 702`
+`Total number of merge nodes: 696`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 86`
+`Total number of merge nodes: 80`
 
 - [Clash subscription](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `5`
-Updata：`2023-06-03 17:19:38`
+### Try the number of high-speed subscriptions: `6`
+Updata：`2023-06-03 20:24:40`
 
 
 <details>
@@ -11854,26 +11854,10 @@ Updata：`2023-06-03 17:19:38`
 
 
 
->Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=0ebac16515b3291d4b9a8c29ea489de2`
 
 
 
 
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=ce659101023e8ceb986b0a68e78e5578`
-
->Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=0ebac16515b3291d4b9a8c29ea489de2`
-
-
-
-
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=ce659101023e8ceb986b0a68e78e5578`
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2023-06-03/MU5AzpU.txt`
 
 
 
@@ -11881,20 +11865,52 @@ Updata：`2023-06-03 17:19:38`
 `https://oss.v2rayse.com/proxies/data/2023-06-03/MU5AzpU.txt`
 
 
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=d213b1825406c0a0d0866b856d042cbd`
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=d213b1825406c0a0d0866b856d042cbd`
+`https://fly10086.top/api/v1/client/subscribe?token=30e3731119461bbc4d88cc500b5906bd`
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2023-06-03/MU5AzpU.txt`
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=83d46f75df17b348193be6ed7a19eaee`
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=dbfc25ffda79f7db4e9366c0dac00953`
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=83d46f75df17b348193be6ed7a19eaee`
+`https://fly10086.top/api/v1/client/subscribe?token=30e3731119461bbc4d88cc500b5906bd`
+
+
+
+
+>Trial subscription：
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=dbfc25ffda79f7db4e9366c0dac00953`
+
+>Trial subscription：
+`https://lemontea.shop/api/v1/client/subscribe?token=372ca1f85302cb82110110210da8369d`
+
+
+
+>Trial subscription：
+`https://lemontea.shop/api/v1/client/subscribe?token=372ca1f85302cb82110110210da8369d`
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=cd57285691ad1aa2301a7604057cc27f`
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=cd57285691ad1aa2301a7604057cc27f`
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=bc61b2397dfe0fe8a096245c8ff50e7f`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=bc61b2397dfe0fe8a096245c8ff50e7f`
 
 
 
