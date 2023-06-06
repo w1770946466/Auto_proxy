@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2023-06-06 05:08:35`
+Updata：`2023-06-06 08:52:56`
 
 
 <details>
@@ -12057,56 +12057,68 @@ Updata：`2023-06-06 05:08:35`
 
 
 
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2023-06-05/AGCvz2z.txt`
+
+
+
+
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=5edd22773946789ead9bbc5736165c14`
-
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2023-06-05/AGCvz2z.txt`
-
-
-
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=0fbe28904b89c1551934fd9eaa0327ec`
-
->Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=5edd22773946789ead9bbc5736165c14`
+`https://oss.v2rayse.com/proxies/data/2023-06-06/obycypz.txt`
 
 
 
 
 >Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=0fbe28904b89c1551934fd9eaa0327ec`
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=63f1ccdcd638b03ad9fa138d42480aff`
-
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=847e40401a4a66f5e705e0b65b72751d`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=63f1ccdcd638b03ad9fa138d42480aff`
-
-
->Trial subscription：
-`https://fly10086.top/api/v1/client/subscribe?token=a54a1174aa35cd6e97c8e68c7d61ca5a`
-
-
->Trial subscription：
-`https://fly10086.top/api/v1/client/subscribe?token=a54a1174aa35cd6e97c8e68c7d61ca5a`
+`https://oss.v2rayse.com/proxies/data/2023-06-06/obycypz.txt`
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=092f424ff7fb5baf7f77a2479dfa4e05`
+`https://lemontea.shop/api/v1/client/subscribe?token=45623ab7aa026e250d5f8e1299f7705b`
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=092f424ff7fb5baf7f77a2479dfa4e05`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=847e40401a4a66f5e705e0b65b72751d`
+
+
+
+
+>Trial subscription：
+`https://lemontea.shop/api/v1/client/subscribe?token=45623ab7aa026e250d5f8e1299f7705b`
+
+>Trial subscription：
+`https://fly10086.top/api/v1/client/subscribe?token=8dc4185cd04eb1671f7a8bd18ceb070c`
+
+
+
+>Trial subscription：
+`https://fly10086.top/api/v1/client/subscribe?token=8dc4185cd04eb1671f7a8bd18ceb070c`
+
+
+>Trial subscription：
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=9a9221373068b63cefe407e968c4ee7e`
+
+
+>Trial subscription：
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=9a9221373068b63cefe407e968c4ee7e`
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=52c20da2bd287c06a565392774ee67b1`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=52c20da2bd287c06a565392774ee67b1`
 
 
 
