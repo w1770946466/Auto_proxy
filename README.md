@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2023-06-07 20:17:52`
+Updata：`2023-06-07 23:10:13`
 
 
 <details>
@@ -12211,56 +12211,68 @@ Updata：`2023-06-07 20:17:52`
 
 
 
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=91cb48629d367b0a598d8c11137f6583`
+
+
+
+
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=854092057d6bc715ab11b0485014bf53`
+`https://lemontea.shop/api/v1/client/subscribe?token=f683f153f1d67fe0bbdd26cbe5bf782d`
 
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=91cb48629d367b0a598d8c11137f6583`
-
-
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=2aec83dcd8561d381ec24accbfc033db`
-
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=854092057d6bc715ab11b0485014bf53`
-
-
-
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=2aec83dcd8561d381ec24accbfc033db`
-
->Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=96b0f246ae47a720b1f6567b2dd2b494`
-
-
-
->Trial subscription：
-`https://lemontea.shop/api/v1/client/subscribe?token=96b0f246ae47a720b1f6567b2dd2b494`
-
-
->Trial subscription：
-`https://fly10086.top/api/v1/client/subscribe?token=9ee8e21b36f3348692d82c4ca75c789d`
-
-
->Trial subscription：
-`https://fly10086.top/api/v1/client/subscribe?token=9ee8e21b36f3348692d82c4ca75c789d`
 
 
 
 >Trial subscription：
 `https://oss.v2rayse.com/proxies/data/2023-06-07/ehQl6Ij.txt`
 
+
+>Trial subscription：
+`https://lemontea.shop/api/v1/client/subscribe?token=f683f153f1d67fe0bbdd26cbe5bf782d`
+
+
+
+>Trial subscription：
+`https://fly10086.top/api/v1/client/subscribe?token=7791a080757472b14831560ce1a1839c`
+
 >Trial subscription：
 `https://oss.v2rayse.com/proxies/data/2023-06-07/ehQl6Ij.txt`
+
+
+
+
+>Trial subscription：
+`https://fly10086.top/api/v1/client/subscribe?token=7791a080757472b14831560ce1a1839c`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=dba26db5459bb380f912bf16d5adb120`
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=dba26db5459bb380f912bf16d5adb120`
+
+
+>Trial subscription：
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=3b65149edc9165ac588c912a951212fe`
+
+
+>Trial subscription：
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=3b65149edc9165ac588c912a951212fe`
+
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=f7f9cae077254341690d10e39121395d`
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=f7f9cae077254341690d10e39121395d`
 
 
 
