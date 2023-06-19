@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `7`
-Updata：`2023-06-19 05:08:53`
+Updata：`2023-06-19 08:50:04`
 
 
 <details>
@@ -13097,44 +13097,51 @@ Updata：`2023-06-19 05:08:53`
 
 
 
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=ccb68759a739e02eaf5ef080299e28a1`
 
 
 
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=b09ff284dcb806d5a5a0960f40ad6eef`
 
 
 
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2023-06-18/Fk1SDRs.txt`
+`https://dash.vmssr.co/api/v1/client/subscribe?token=ccff31e61ec618dcbdc97c2e7deb904f`
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=45847c353755f88d318de2f7a2bb6831`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=0448a6bfb349a3c79a97d1c0450fe208`
 
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=4c04a285db370556215fa3a040a0e6b2`
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=e884dcae5ed1512563f6ad2d804a0ea7`
 
 
 
 
 >Trial subscription：
-`https://dash.vmssr.co/api/v1/client/subscribe?token=0c19cdbbc3a19daea5e4bb2fa0e967cc`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=35a8aa00c184de96f626530f6d5614b1`
 
 
 
 
 >Trial subscription：
-`https://dash.vmssr.co/api/v1/client/subscribe?token=6ffc5667d39dceddebc694f9fcf0a542`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=ebac96ffea7069cf488f896c0f4c432c`
+
+
+
+
+>Trial subscription：
+`https://dash.vmssr.co/api/v1/client/subscribe?token=82a2c7f54b3534d7206c5b40f83d10a4`
+
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2023-06-19/BtuflMQ.txt`
 
 
 
