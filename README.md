@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `5`
-Updata：`2023-08-13 14:11:13`
+Updata：`2023-08-13 17:08:40`
 
 
 <details>
@@ -17186,39 +17186,49 @@ Updata：`2023-08-13 14:11:13`
 
 
 
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=79c47449e757b80ee073a0af85b5625a`
 
 
 
 
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=fdbfc37642cd92a413f30ab173460b83`
 
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=79c47449e757b80ee073a0af85b5625a`
+
 
 
 
 
 >Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=fdbfc37642cd92a413f30ab173460b83`
-
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=ea1fa5be567fee516e4ad30cef55a662`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=79c25ebaba1f1536fa827c3fbbda8723`
 
 
-
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=ea1fa5be567fee516e4ad30cef55a662`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=ae23ad77d846b93060dcd49a30906ee4`
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=78349abcc6b832f6cec48eb9d4bd4bee`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=79c25ebaba1f1536fa827c3fbbda8723`
+
+
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=ae23ad77d846b93060dcd49a30906ee4`
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=78349abcc6b832f6cec48eb9d4bd4bee`
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=3a78ff0ef5d08670ed21c903fad061ad`
+
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=3a78ff0ef5d08670ed21c903fad061ad`
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=dd5fdeb6eb94c6e2f135abfad5a7f0eb`
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=dd5fdeb6eb94c6e2f135abfad5a7f0eb`
 
 
 
