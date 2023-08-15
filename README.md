@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `5`
-Updata：`2023-08-15 08:37:48`
+Updata：`2023-08-15 11:10:18`
 
 
 <details>
@@ -17316,31 +17316,41 @@ Updata：`2023-08-15 08:37:48`
 
 
 
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=f7b56e4e11133d596825844ff9a98fdb`
 
 
 
 
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=195450cf8b70672e369e231fbd5a00c7`
 
->Trial subscription：
-`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=f7b56e4e11133d596825844ff9a98fdb`
+
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=195450cf8b70672e369e231fbd5a00c7`
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=e2c2f68a8e1fd1eb4374f9d670f01813`
+
+
+
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=35972415bb0cadbf7b0dd28c3bc25932`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=5e2ea992765478601803c0900f2a9ef7`
+
+>Trial subscription：
+`https://xn--4gqu8thxjfje.com/api/v1/client/subscribe?token=e2c2f68a8e1fd1eb4374f9d670f01813`
+
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=35972415bb0cadbf7b0dd28c3bc25932`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=5e2ea992765478601803c0900f2a9ef7`
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=e71f76a2d81403da35ccc69a2bfc7289`
+
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=e71f76a2d81403da35ccc69a2bfc7289`
 
 
 >Trial subscription：
@@ -17353,10 +17363,10 @@ Updata：`2023-08-15 08:37:48`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=be39fb926a60b5484cea726710afb112`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=fa4cf2498951b2a859f147eb0b5ab378`
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=be39fb926a60b5484cea726710afb112`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=fa4cf2498951b2a859f147eb0b5ab378`
 
 
 
