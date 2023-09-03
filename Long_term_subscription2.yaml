@@ -5,183 +5,132 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 United States 364 @nodpai, server: 172.67.166.238, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: "五叶节点分享TG频道: @hkaa0", server: 7.wyhkaa0.gq, port: 2095, type: vmess, uuid: 2f334fd9-98f6-4995-ba45-bb9a8a28eea2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 7.wyhkaa0.gq}}}
-  - {name: 🇨🇳 台湾 - 中妮妮, server: ovozhaws.ovonice.com, port: 60003, type: trojan, password: cdaacb3e-00c4-4d6f-a63c-298cfb36e113, sni: ovo.ovonice.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港直连|@ripaojiedian, server: 183.232.249.40, port: 54004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度 - 小妮妮, server: ovozhaws.ovonice.com, port: 60006, type: trojan, password: cdaacb3e-00c4-4d6f-a63c-298cfb36e113, sni: ovo.ovonice.com, skip-cert-verify: true}
-  - {name: 🇺🇸 中转 🇺🇸 United States 121 @nodpai, server: centauri.verdens.xyz, port: 25007, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 中转 🇺🇸 United States 237 @nodpai, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: 7b5e7dee-645f-476b-bd25-7748d5f69962}
-  - {name: 🇦🇺 中转 🇦🇺 Australia 38 @nodpai, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 CN中国6, server: centauri.verdens.xyz, port: 25025, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 52 @nodpai, server: orionis.weltknoten.xyz, port: 30003, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.64.130.176, port: 80, type: vmess, uuid: c53919e6-fed6-4058-a02c-eb3f4452f691, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: csmg.daozhang.link}}}
-  - {name: 🇱🇺 Luxembourg 01 @nodpai, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 6abfe33a-1894-4f62-8879-83b71a35e5fd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zfc.windowsupdate1.com}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa, server: 172.67.179.254, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ml4.shabijichang.com}}}
-  - {name: 🇺🇸 美国特殊|@ripaojiedian, server: 35.90.249.228, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 United States 351 @nodpai, server: 172.67.93.232, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 2, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: 4a2ee56d-c70a-4c43-b18b-e1e15013a177, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}}
-  - {name: 🇨🇳 中转 🇹🇼 Taiwan 06 @nodpai, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本, server: arlbxldpb5a6rbck.anrida715.me, port: 51023, type: ss, cipher: chacha20-ietf-poly1305, password: 1036e487-9102-4e09-81fd-01b0f832b972}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16, server: us.freebaipiao.tk, port: 8443, type: vmess, uuid: 7e0edc93-87e6-4828-a2ec-da35ace8bbe6, alterId: 0, cipher: auto, tls: true, servername: us.freebaipiao.tk, network: ws, ws-opts: {path: /freebaipiao, headers: {Host: us.freebaipiao.tk}}}
-  - {name: 🇺🇸 United States 63 @nodpai, server: yd1.992688.xyz, port: 8880, type: vmess, uuid: e5f9073b-a23c-487f-b2a8-e5eb6abad21d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: yd1.992688.xyz}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 183.232.249.130, port: 59902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇮🇳 中转 🇮🇳 India 01 @nodpai, server: leonis.verdens.xyz, port: 25018, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
-  - {name: "五叶节点分享TG频道: @hkaa0 2", server: 23.26.239.111, port: 33760, type: vmess, uuid: c0d89f6c-b8ca-4450-967c-39f5a84925f4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0}}
-  - {name: 🇺🇸 中转 🇺🇸 United States 117 @nodpai, server: aquaril.verdens.xyz, port: 25006, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 118 @nodpai, server: 120.226.50.92, port: 53300, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 234 @nodpai, server: 172.67.120.174, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇷🇴 Romania 06 @nodpai, server: csgo.com, port: 2086, type: vmess, uuid: 0805caaf-bd20-45fd-c5f7-ef59756b4b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: csgo.com}}}
-  - {name: 🇸🇬 中转 🇸🇬 Singapore 41 @nodpai, server: monocerotis.weltknoten.xyz, port: 30008, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 vip1 香港-01_1, server: gzdx01.jcnode.top, port: 19682, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: hk05.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 26 @nodpai, server: in06.my1188.org, port: 64096, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 380 @nodpai, server: 137.175.52.22, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1693564312893}}
-  - {name: 🇺🇸 United States 391 @nodpai, server: 38.54.250.50, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1692789157600}}
-  - {name: 「SCP」NL3-CF-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl3.sharecentrepro.org}}}
-  - {name: 🇮🇳 中转 🇮🇳 India 03 @nodpai, server: andromedae.weltknoten.xyz, port: 30016, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 Japan 05 @nodpai, server: 162.159.129.49, port: 80, type: vmess, uuid: 389a8a4a-59d7-4678-8510-cb2b7ed2846a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /videos}}
-  - {name: 🇨🇳 中转 🇨🇳 China 16 @nodpai, server: 123.249.101.15, port: 19709, type: vmess, uuid: 2f278a45-940a-46c1-c886-77f3b2d33987, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇬🇧 英国_Telegram@kxswa, server: 51.141.11.92, port: 33131, type: ss, cipher: chacha20-ietf-poly1305, password: ujbow8ZY46sUMEqvGfh7BT}
-  - {name: 🇨🇱 Chile 01 @nodpai, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sdygarm.e5outllok.me}}}
-  - {name: 🇺🇸 United States 174 @nodpai, server: 172.67.220.2, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 264 @nodpai, server: 171.22.116.22, port: 58082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 268 @nodpai, server: 172.67.87.175, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇳🇱 Netherlands 11 @nodpai, server: 74.119.195.57, port: 443, type: trojan, password: 62963aad-8e90-45b6-949e-33216b260ba6, sni: speed.cloudflare.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 3, server: 172.64.101.91, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}}
-  - {name: 🇺🇸 中转 🇺🇸 United States 98 @nodpai, server: cdn.node.user-sub.pddns-usersdk.com, port: 13003, type: vmess, uuid: 5f9f4df4-5398-35d1-9a6a-44a8a575832d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ef483582-6269-468c-93af-c511eccb8a69, headers: {Host: cdn.node.user-sub.pddns-usersdk.com}}}
-  - {name: 🇳🇱 Netherlands 39 @nodpai, server: 74.119.195.57, port: 443, type: trojan, password: 62963aad-8e90-45b6-949e-33216b260ba6, sni: speed.cloudflare.com, skip-cert-verify: true}
-  - {name: 🇮🇹 Italy 02 @nodpai, server: 172.67.179.254, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "五叶节点分享TG频道: @hkaa0 3", server: 15.wyhkaa0.gq, port: 2095, type: vmess, uuid: d54527c2-27d6-48ab-87b1-c7e22ffd7aac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 15.wyhkaa0.gq}}}
-  - {name: 🇭🇰 Hong Kong 127 @nodpai, server: 58.177.149.6, port: 443, type: trojan, password: 7d6f16c7-d91e-3c05-aa5b-5f800ff93473cmynw, sni: paydiu.com, skip-cert-verify: true}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 14 @nodpai, server: in06.my1188.org, port: 64096, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇷🇺 中转 🇷🇺 Russia 06 @nodpai, server: piscium.verdens.xyz, port: 25020, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: camy3aydjwpettcn.psuddd789.com, port: 51141, type: ss, cipher: chacha20-ietf-poly1305, password: 1036e487-9102-4e09-81fd-01b0f832b972}
-  - {name: 🇮🇳 中转 🇮🇳 India 04 @nodpai, server: in06.my1188.org, port: 64051, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in06.my1188.org}}}
-  - {name: 🇺🇸 United States 46 @nodpai, server: 104.25.13.12, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4}}
-  - {name: 🇦🇺 Australia 41 @nodpai, server: vpnpool.stablize.top, port: 443, type: trojan, password: 2da5d218-4b24-4e79-8df3-ec4a5ae748ae, sni: ap.stablize.top, skip-cert-verify: true}
-  - {name: 🇺🇸 United States 422 @nodpai, server: 104.18.134.125, port: 80, type: vmess, uuid: 6dcadb4f-5fda-4fa9-89dc-ce4564ec1fc6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 中转 🇺🇸 United States 213 @nodpai, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: 7b5e7dee-645f-476b-bd25-7748d5f69962}
-  - {name: 🇨🇳 中转 🇹🇼 Taiwan 41 @nodpai, server: dx.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇯🇵 中转 🇯🇵 Japan 10 @nodpai, server: scorpii.weltknoten.xyz, port: 30006, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇩🇪 _CN_中国->🇩🇪_DE_德国, server: lt.ktmwan.top, port: 10714, type: ss, cipher: chacha20-ietf-poly1305, password: 27de6fe2-606d-4683-aa22-c1a50a3949cb}
-  - {name: 🇭🇰 vip1 香港-10, server: gzyd.jcnode.top, port: 13734, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: hk04.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 United States 258 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: cf-lt.sharecentre.online}}}
-  - {name: 🇨🇳 中转 🇹🇼 Taiwan 11 @nodpai, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: "五叶节点分享TG频道: @hkaa0 4", server: 12.wyhkaa0.gq, port: 2095, type: vmess, uuid: a04e2923-1a96-4998-ec89-2634f7197ebf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 12.wyhkaa0.gq}}}
-  - {name: 🇺🇸 中转 🇺🇸 United States 89 @nodpai, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: 7b5e7dee-645f-476b-bd25-7748d5f69962}
-  - {name: 🇨🇳 中转 🇹🇼 Taiwan 50 @nodpai, server: yd.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.25.13.12, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4, headers: {Host: dd2.1808.cf}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 4, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}}
-  - {name: 🇺🇸 中转 🇺🇸 United States 119 @nodpai, server: andromedae.weltknoten.xyz, port: 30013, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 中转 🇺🇸 United States 34 @nodpai, server: cdn.node.user-sub.pddns-usersdk.com, port: 13003, type: vmess, uuid: 5f9f4df4-5398-35d1-9a6a-44a8a575832d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ef483582-6269-468c-93af-c511eccb8a69, headers: {Host: cdn.node.user-sub.pddns-usersdk.com}}}
-  - {name: 🇺🇸 United States 291 @nodpai, server: 172.67.211.253, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇭🇰 Hong Kong 123 @nodpai, server: zhuanfa.baiduvideos.online, port: 80, type: vmess, uuid: d64eca38-adf2-43b2-ac10-84acf65f50b9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /11451, headers: {Host: zhuanfa.baiduvideos.online}}}
-  - {name: 🇨🇳 China 51 @nodpai, server: 142.4.126.24, port: 51715, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 中转 🇺🇸 United States 112 @nodpai, server: free.node.kk-proxy.pro, port: 54455, type: ss, cipher: chacha20-ietf-poly1305, password: 7b5e7dee-645f-476b-bd25-7748d5f69962}
-  - {name: 🇮🇹 Italy 06 @nodpai, server: 172.67.91.164, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 5, server: 23.224.11.146, port: 41009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 101 @nodpai, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇷🇺 俄罗斯联邦_Telegram@kxswa, server: 185.39.204.69, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: ZtrXk65GFdw7niQYG9a}
-  - {name: 🇨🇦 中转 🇨🇦 Canada 08 @nodpai, server: 15037.kuaiyin.win, port: 15037, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇧🇷 Brazil 07 @nodpai, server: 172.67.205.203, port: 80, type: vmess, uuid: 99c25b0e-db17-494d-bbb4-98397ea8fe4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 Japan 18 @nodpai, server: 139.162.77.62, port: 58656, type: vmess, uuid: a82e7a29-8cc8-45fa-bb3c-2f321f9e2cd5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 vip1 美国-12, server: gzyd.jcnode.top, port: 10340, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: us04.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇿🇦 github.com/freefq - 南非  12, server: 156.225.67.171, port: 35977, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇳 中转 🇹🇼 Taiwan 70 @nodpai, server: lt.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇦🇺 Australia 14 @nodpai, server: vpnhat.stablize.top, port: 443, type: trojan, password: 2da5d218-4b24-4e79-8df3-ec4a5ae748ae, sni: ap.stablize.top, skip-cert-verify: true}
-  - {name: 🇦🇺 中转 🇦🇺 Australia 18 @nodpai, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国_Telegram@kxswa 6, server: 167.88.63.107, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇳🇱 Netherlands 31 @nodpai, server: 156.225.67.171, port: 35977, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇪🇸 Spain 07 @nodpai, server: 172.64.172.9, port: 80, type: vmess, uuid: 59053634-8362-4312-9fcb-f85757cfe02a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇳🇱 Netherlands 27 @nodpai, server: 156.225.67.171, port: 35977, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 中转 🇩🇪 Germany 02 @nodpai, server: centauri.verdens.xyz, port: 25017, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 United States 261 @nodpai, server: 172.67.49.8, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇨🇳 vip1 台湾-01_1, server: gzdx01.jcnode.top, port: 28606, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: rctw01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇪🇸 Spain 05 @nodpai, server: 172.64.172.9, port: 80, type: vmess, uuid: 59053634-8362-4312-9fcb-f85757cfe02a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇩🇪 Germany 14 @nodpai, server: dx1.992688.xyz, port: 8880, type: vmess, uuid: 782e0824-df3e-4c32-de48-beb41c0dadcf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dx1.992688.xyz}}}
-  - {name: 🇨🇳 China 21 @nodpai, server: 142.4.114.17, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1693564312893}}
-  - {name: 🇩🇪 中转 🇩🇪 Germany 03 @nodpai, server: in06.my1188.org, port: 64092, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in06.my1188.org}}}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 70 @nodpai, server: 120.233.43.62, port: 51904, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 CN中国16, server: aquaril.verdens.xyz, port: 25006, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
-  - {name: 🇸🇬 Singapore 16 @nodpai, server: cfyd.starsea.vip, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/1736960111/64ee26041efcc/, headers: {Host: cfyd.starsea.vip}}}
-  - {name: 🇨🇳 中转 🇹🇼 Taiwan 52 @nodpai, server: lt.ktmwan.top, port: 27260, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇺🇸 vip1 美国-04, server: gzdx.jcnode.top, port: 50173, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: us2.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 中转 🇺🇸 United States 114 @nodpai, server: ophiuchi.verdens.xyz, port: 25009, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 vip1 美国-11, server: gzdx.jcnode.top, port: 61802, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: us04.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇸🇬 Singapore 31 @nodpai, server: cfyd.starsea.vip, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/1736960111/64ee26041efcc/, headers: {Host: cfyd.starsea.vip}}}
-  - {name: 🇭🇰 Hong Kong 82 @nodpai, server: s1223.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /opt/video/images, headers: {Host: s1223.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou}}}
-  - {name: 🇺🇸 美国_Telegram@kxswa 7, server: 172.67.91.164, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ml4.shabijichang.com}}}
-  - {name: 🇺🇸 United States 430 @nodpai, server: cf.dalazhi.eu.org, port: 443, type: vmess, uuid: d256e73b-8259-490a-aeb5-23f6a3636a1a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ezbkvws, headers: {Host: cf.dalazhi.eu.org}}}
-  - {name: 🇺🇸 United States 169 @nodpai, server: 172.67.222.19, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 35 @nodpai, server: 216.24.57.1, port: 443, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: a7ee85f4}}
-  - {name: 🇸🇬 Singapore 01 @nodpai, server: s1225.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 80, type: vmess, uuid: 0baaf014-af04-4028-be53-f5c75bb276ae, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: s1225.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou}}}
-  - {name: 🇨🇳 CN中国29, server: andromedae.weltknoten.xyz, port: 30021, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
-  - {name: 🇺🇸 United States 06 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: cf-lt.sharecentre.online}}}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 2, server: apnep2erpyyj4ef86.anrida715.me, port: 51011, type: ss, cipher: chacha20-ietf-poly1305, password: 1036e487-9102-4e09-81fd-01b0f832b972}
-  - {name: 🇺🇸 United States 19 @nodpai, server: 172.64.202.22, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 157 @nodpai, server: 172.64.174.252, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 20 @nodpai, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇺🇸 United States 198 @nodpai, server: 142.4.114.100, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1692873927587}}
-  - {name: 🇺🇸 United States 65 @nodpai, server: 171.22.116.22, port: 58082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 206 @nodpai, server: 162.159.129.168, port: 80, type: vmess, uuid: dc2c948b-8a27-491c-b42b-6109c402cb7f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /videos}}
-  - {name: 🇺🇸 United States 122 @nodpai, server: 171.22.116.22, port: 58082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 16 @nodpai, server: 172.67.120.174, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 245 @nodpai, server: 172.67.100.189, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 距离下次重置剩余：27 天, server: gzdx.jcnode.top, port: 29482, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: sg03.ckcloud.info, skip-cert-verify: true}
-  - {name: "五叶节点分享TG频道: @hkaa0 5", server: 13.wyhkaa0.gq, port: 2095, type: vmess, uuid: 32af4006-0698-4910-806c-b813074f36eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 13.wyhkaa0.gq}}}
-  - {name: 🇧🇷 Brazil 04 @nodpai, server: 172.67.205.203, port: 80, type: vmess, uuid: 99c25b0e-db17-494d-bbb4-98397ea8fe4e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 31 @nodpai, server: in06.my1188.org, port: 64096, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
-  - {name: Viet Nam 05 @nodpai, server: tokyo.mfa.ee, port: 2052, type: vmess, uuid: 992889a7-296e-4a44-98c2-0eb89af4411d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tokyo.mfa.ee}}}
-  - {name: 🇮🇳 中转 🇮🇳 India 07 @nodpai, server: leonis.verdens.xyz, port: 25018, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 中转 🇺🇸 United States 148 @nodpai, server: monocerotis.weltknoten.xyz, port: 30014, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 中转 🇺🇸 United States 336 @nodpai, server: leonis.verdens.xyz, port: 25008, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇫🇷 France 11 @nodpai, server: frsadubibb.76898102.xyz, port: 2095, type: vmess, uuid: f78a8c93-fbd4-38e9-ac8d-5ffc476503d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: frsadubibb.76898102.xyz}}}
-  - {name: 🇦🇺 中转 🇦🇺 Australia 29 @nodpai, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 311 @nodpai, server: 172.64.168.28, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 225 @nodpai, server: 172.67.87.175, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇨🇳 CN中国32, server: phoenicis.weltknoten.xyz, port: 30005, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 3, server: camy3aydjwpettcn.psuddd789.com, port: 51111, type: ss, cipher: chacha20-ietf-poly1305, password: 1036e487-9102-4e09-81fd-01b0f832b972}
-  - {name: 🇨🇱 Chile 20 @nodpai, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sdygarm.e5outllok.me}}}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 29 @nodpai, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇭🇰 vip1 香港-09_1, server: gzdx01.jcnode.top, port: 32631, type: trojan, password: afc3f34f-1d26-479b-a78c-86f7a756eec9, sni: hk04.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 United States 173 @nodpai, server: 172.67.59.121, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇦🇺 Australia 19 @nodpai, server: vpnpool.stablize.top, port: 443, type: trojan, password: 30c80314-a395-45d9-b0ab-0171ad07c082, sni: ap.stablize.top, skip-cert-verify: true}
-  - {name: 🇯🇵 Japan 28 @nodpai, server: jp6.lianpi.xyz, port: 23234, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 255 @nodpai, server: 172.67.120.174, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 167 @nodpai, server: 172.67.194.31, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 1元100G  https://ovofast.com, server: ovozhaws.ovonice.com, port: 60001, type: trojan, password: cdaacb3e-00c4-4d6f-a63c-298cfb36e113, sni: ovo.ovonice.com, skip-cert-verify: true}
-  - {name: 🇳🇱 Netherlands 32 @nodpai, server: 156.249.18.24, port: 44775, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States 275 @nodpai, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: singapore.com}}}
-  - {name: 🇰🇷 韩国_Telegram@kxswa, server: xiongda006.daxiongda.top, port: 23333, type: ss, cipher: chacha20-ietf-poly1305, password: f1865e50-2510-46d1-bcb2-e00b4b656305}
+  - {name: 🇺🇸 美国_Telegram@kxswa, server: 167.88.63.107, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇸🇬 Singapore 31 @nodpai, server: 172.67.181.226, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vsg1.0bad.com/chat}}
+  - {name: "🇳🇱 「狗狗加速,15天免费,专线hy协议」NL-CF-HTTP", server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}}
+  - {name: 🇨🇦 加拿大_Telegram@kxswa, server: 108.181.18.186, port: 55002, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
+  - {name: 🇺🇸 vip1 美国-11, server: gzdx.jcnode.top, port: 61802, type: trojan, password: a481e7c0-01de-4791-9f29-b7eb68ecb767, sni: us04.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇩🇪 vip1 德国-01, server: gzdx.jcnode.top, port: 62951, type: trojan, password: a481e7c0-01de-4791-9f29-b7eb68ecb767, sni: de01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇷🇴 Romania 01 @nodpai, server: csgo.com, port: 2086, type: vmess, uuid: 0805caaf-bd20-45fd-c5f7-ef59756b4b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: csgo.com}}}
+  - {name: 🇺🇸 United States 102 @nodpai, server: 172.67.93.232, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇦🇺 Australia 06 @nodpai, server: free2.node.kk-proxy.pro, port: 443, type: vmess, uuid: 7b5e7dee-645f-476b-bd25-7748d5f69962, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ec3a017507e0/, headers: {Host: free2.node.kk-proxy.pro}}}
   - {name: 🇪🇸 Spain 04 @nodpai, server: 172.64.172.9, port: 80, type: vmess, uuid: 59053634-8362-4312-9fcb-f85757cfe02a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇳🇱 Netherlands 47 @nodpai, server: 156.225.67.47, port: 49224, type: vmess, uuid: 3ca912da-6ac2-418f-b9cf-45b6f694579b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 中转 🇸🇬 Singapore 38 @nodpai, server: leonis.verdens.xyz, port: 25012, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇳🇱 Netherlands 15 @nodpai, server: 74.119.195.57, port: 443, type: trojan, password: 62963aad-8e90-45b6-949e-33216b260ba6, sni: speed.cloudflare.com, skip-cert-verify: true}
-  - {name: 🇫🇷 France 10 @nodpai, server: frsadubibb.76898102.xyz, port: 2095, type: vmess, uuid: f78a8c93-fbd4-38e9-ac8d-5ffc476503d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: frsadubibb.76898102.xyz}}}
-  - {name: 🇯🇵 中转 🇯🇵 Japan 11 @nodpai, server: aquaril.verdens.xyz, port: 25027, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 United States 180 @nodpai, server: 140.99.128.102, port: 32712, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 「SCP」US-DP1-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
-  - {name: 🇺🇸 United States 142 @nodpai, server: 172.67.22.15, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 135 @nodpai, server: 172.64.138.141, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 369 @nodpai, server: 172.64.130.126, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 368 @nodpai, server: 172.67.22.15, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇦🇺 Australia 39 @nodpai, server: vpnhat.stablize.top, port: 443, type: trojan, password: 30c80314-a395-45d9-b0ab-0171ad07c082, sni: ap.stablize.top, skip-cert-verify: true}
-  - {name: 🇪🇸 Spain 06 @nodpai, server: 172.64.172.9, port: 80, type: vmess, uuid: 59053634-8362-4312-9fcb-f85757cfe02a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 CN中国9, server: piscium.verdens.xyz, port: 25023, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
-  - {name: 🇺🇸 United States 354 @nodpai, server: 172.67.211.254, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai, server: dx.ktmwan.top, port: 27259, type: ss, cipher: chacha20-ietf-poly1305, password: 20240d6f-d536-4dfc-88f5-b3ccd1614a53}
-  - {name: 🇺🇸 United States 246 @nodpai, server: 172.67.129.158, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇺🇸 United States 38 @nodpai, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: singapore.com}}}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港 4, server: camy3aydjwpettcn.psuddd789.com, port: 51142, type: ss, cipher: chacha20-ietf-poly1305, password: 1036e487-9102-4e09-81fd-01b0f832b972}
-  - {name: 🇦🇺 Australia 17 @nodpai, server: vpnpool.stablize.top, port: 443, type: trojan, password: 2da5d218-4b24-4e79-8df3-ec4a5ae748ae, sni: ap.stablize.top, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_Telegram@kxswa 8, server: 172.67.135.195, port: 443, type: vmess, uuid: AB135628-07F6-4F78-AF4D-E9CD8715143C, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/speedtest?ed=2048", headers: {Host: Amsterdam.bobbykotick.rip}}}
-  - {name: 🇺🇸 United States 152 @nodpai, server: 172.64.142.31, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇰🇷 South Korea 03 @nodpai, server: s1224.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 8080, type: vmess, uuid: c2eb5ff8-508d-4100-e0ca-9739f4d1c52c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tg@herhero6, headers: {Host: s1224.v2line.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou}}}
-  - {name: 🇺🇸 United States 433 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4, headers: {Host: cf-lt.sharecentre.online}}}
-  - {name: 🇺🇸 United States 301 @nodpai, server: 162.159.253.16, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 🇨🇳 Taiwan 23 @nodpai, server: tw98-1g-hinet.mytls888.com, port: 443, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tw98-1g-hinet.mytls888.com}}}
-  - {name: 🇺🇸 United States 215 @nodpai, server: 172.67.189.168, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
-  - {name: 纽约测试|@ripaojiedian, server: 216.52.183.244, port: 443, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true}}
+  - {name: 🇦🇺 Australia 25 @nodpai, server: 139.99.245.164, port: 49921, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 United States 48 @nodpai, server: 104.16.171.210, port: 2052, type: vmess, uuid: 483fb52e-37df-4726-9bcb-15f0e5d40e54, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /public}}
+  - {name: 🇺🇸 United States 216 @nodpai, server: 45.92.161.139, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1692789157600}}
+  - {name: 🇺🇸 United States 83 @nodpai, server: 172.64.169.211, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 59 @nodpai, server: 1807516e-rr0tc0-1cwfu.hk.tcpbbr.net, port: 8388, type: vmess, uuid: 6550ed3c-f4de-11eb-a0fc-f23c913c8d2b, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 中转 🇨🇳 China 18 @nodpai, server: 123.249.101.15, port: 19709, type: vmess, uuid: 2f278a45-940a-46c1-c886-77f3b2d33987, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇫🇷 法国_Telegram@kxswa, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
+  - {name: 🇺🇸 United States 09 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4, headers: {Host: cf-lt.sharecentre.online}}}
+  - {name: 🇺🇸 「SCP」US-DP3-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}}
+  - {name: 🇺🇸 美国_Telegram@kxswa 2, server: cdn.twitter.now.cc, port: 443, type: vmess, uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ikun, headers: {Host: eu2.twittei.me}}}
+  - {name: 🇨🇳 Taiwan 34 @nodpai, server: 118.167.20.180, port: 443, type: trojan, password: 7d6f16c7-d91e-3c05-aa5b-5f800ff93473cmynw, sni: paydiu.com, skip-cert-verify: true}
+  - {name: 🇺🇸 United States 173 @nodpai, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: singapore.com}}}
+  - {name: 🇺🇸 United States 69 @nodpai, server: 172.67.59.39, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇨🇳 CN中国26, server: monocerotis.weltknoten.xyz, port: 30002, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
+  - {name: 🇺🇸 _US_美国->🇳🇱_NL_荷兰, server: 156.225.67.171, port: 35977, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_Telegram@kxswa 3, server: 172.67.211.253, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
+  - {name: 🇸🇬 Singapore 05 @nodpai, server: gsawssg1.aiopen.cfd, port: 443, type: trojan, password: a30ba00c-802e-4a2d-bb93-aa15adaebc6d, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true}
+  - {name: 🇦🇺 Australia 09 @nodpai, server: vpnpool.stablize.top, port: 443, type: trojan, password: 2da5d218-4b24-4e79-8df3-ec4a5ae748ae, sni: ap.stablize.top, skip-cert-verify: true}
+  - {name: 🇨🇱 Chile 06 @nodpai, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sdygarm.e5outllok.me}}}
+  - {name: 🇯🇵 中转 🇯🇵 Japan 09 @nodpai, server: centauri.verdens.xyz, port: 25024, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: "五叶节点分享TG频道: @hkaa0", server: 8.wyhkaa0.gq, port: 2095, type: vmess, uuid: 2c4db0b1-5cd9-4bad-e957-33c36e261987, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 8.wyhkaa0.gq}}}
+  - {name: 距离下次重置剩余：27 天, server: gzdx.jcnode.top, port: 29482, type: trojan, password: a481e7c0-01de-4791-9f29-b7eb68ecb767, sni: sg03.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇩🇪 Germany 14 @nodpai, server: cdn.twitter.now.cc, port: 443, type: vmess, uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ikun, headers: {Host: cdn.twitter.now.cc}}}
+  - {name: 🇺🇸 United States 178 @nodpai, server: 104.19.213.33, port: 80, type: vmess, uuid: 567d3fe2-8df2-466c-ab0d-640cc151c62c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue}}
+  - {name: 🇺🇸 美国 - 大妮妮, server: ovozhaws.ovonice.com, port: 60004, type: trojan, password: cdaacb3e-00c4-4d6f-a63c-298cfb36e113, sni: ovo.ovonice.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_Telegram@kxswa 4, server: 172.67.91.164, port: 80, type: vmess, uuid: 1db82775-c1fe-4305-94ff-eee83174528e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ml4.shabijichang.com}}}
+  - {name: 🇺🇸 United States 107 @nodpai, server: 172.67.11.19, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇨🇳 中转 🇹🇼 Taiwan 38 @nodpai, server: orionis.weltknoten.xyz, port: 30009, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 中转 🇺🇸 United States 65 @nodpai, server: ophiuchi.verdens.xyz, port: 25009, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 United States 206 @nodpai, server: 104.20.27.27, port: 443, type: vmess, uuid: fd8ef620-48b4-11ee-b336-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /@hopev2ray}}
+  - {name: 🇨🇳 中转 🇨🇳 China 25 @nodpai, server: 39.103.165.178, port: 56002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 Singapore 22 @nodpai, server: 104.21.31.254, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vsg1.0bad.com/chat}}
+  - {name: 🇺🇸 United States 226 @nodpai, server: 172.67.136.25, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇯🇵 中转 🇯🇵 Japan 14 @nodpai, server: aquaril.verdens.xyz, port: 25027, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 Taiwan 26 @nodpai, server: hinettw1.applebench.tech, port: 56568, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港_Telegram@kxswa, server: 183.232.249.130, port: 59902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 vip1 香港-13_1, server: gzdx01.jcnode.top, port: 62525, type: trojan, password: a481e7c0-01de-4791-9f29-b7eb68ecb767, sni: hk03.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇸🇬 _CN_中国->🇸🇬_SG_新加坡, server: in06.my1188.org, port: 64012, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 United States 194 @nodpai, server: 162.159.142.229, port: 80, type: vmess, uuid: f425df23-6ab6-449a-87bd-3ba74fdc1777, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1654431}}
+  - {name: 🇨🇳 CN中国16, server: aquaril.verdens.xyz, port: 25006, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
+  - {name: 🇺🇸 United States 24 @nodpai, server: microsoftdebug.com, port: 80, type: vmess, uuid: 73facc71-00ee-4807-a289-472122372fa6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /windows7.ios, headers: {Host: microsoftdebug.com}}}
+  - {name: 🇸🇬 Singapore 37 @nodpai, server: 172.67.74.240, port: 80, type: vmess, uuid: 389a8a4a-59d7-4678-8510-cb2b7ed2846a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /videos}}
+  - {name: "五叶节点分享TG频道: @hkaa0 2", server: 23.26.239.111, port: 33760, type: vmess, uuid: c0d89f6c-b8ca-4450-967c-39f5a84925f4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0}}
+  - {name: "五叶节点分享TG频道: @hkaa0 3", server: 12.wyhkaa0.gq, port: 2095, type: vmess, uuid: a04e2923-1a96-4998-ec89-2634f7197ebf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 12.wyhkaa0.gq}}}
+  - {name: 🇸🇬 Singapore 21 @nodpai, server: cfyd.starsea.vip, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/1736960111/64ee26041efcc/, headers: {Host: cfyd.starsea.vip}}}
+  - {name: "五叶节点分享TG频道: @hkaa0 4", server: 5.wyhkaa0.gq, port: 2095, type: vmess, uuid: 2733e8cb-b074-4d66-e7c0-99f1db465e4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 5.wyhkaa0.gq}}}
+  - {name: 🇺🇸 美国_Telegram@kxswa 5, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: 4a2ee56d-c70a-4c43-b18b-e1e15013a177, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}}
+  - {name: 🇫🇷 France 01 @nodpai, server: frsadubibb.76898102.xyz, port: 2095, type: vmess, uuid: f78a8c93-fbd4-38e9-ac8d-5ffc476503d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: frsadubibb.76898102.xyz}}}
+  - {name: 🇰🇷 中转 🇰🇷 South Korea 01 @nodpai, server: andromedae.weltknoten.xyz, port: 30024, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 _US_美国, server: 172.67.27.227, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}}
+  - {name: 🇳🇱 Netherlands 14 @nodpai, server: 156.249.18.24, port: 44775, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾|@ripaojiedian, server: apsc52dp7cj6bnhd.anrida715.me, port: 51052, type: ss, cipher: chacha20-ietf-poly1305, password: 1036e487-9102-4e09-81fd-01b0f832b972}
+  - {name: 🇺🇸 United States 39 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: cf-lt.sharecentre.online}}}
+  - {name: 🇨🇳 台湾独家|@ripaojiedian, server: 103.177.33.189, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: b0f52ff5be5b, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wtw1000mline005.chilines.club, path: /smabwqyo, tls: true, mux: true}}
+  - {name: 🇳🇱 Netherlands 08 @nodpai, server: 156.225.67.130, port: 443, type: vmess, uuid: 515bcb4d-0ba1-4cae-87cf-a047007eec54, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/146731261014}}
+  - {name: 🇺🇸 United States 88 @nodpai, server: 162.159.129.96, port: 80, type: vmess, uuid: dc2c948b-8a27-491c-b42b-6109c402cb7f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /videos}}
+  - {name: 🇩🇪 Germany 23 @nodpai, server: 66.81.247.49, port: 443, type: vmess, uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /1c5854ba-1b44-11ee-a146-8213fd3be4b9}}
+  - {name: 🇨🇱 Chile 09 @nodpai, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sdygarm.e5outllok.me}}}
+  - {name: 🇺🇸 United States 61 @nodpai, server: 162.159.142.230, port: 80, type: vmess, uuid: f425df23-6ab6-449a-87bd-3ba74fdc1777, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1654431}}
+  - {name: 🇨🇳 Taiwan 28 @nodpai, server: hinettw1.applebench.tech, port: 56568, type: vmess, uuid: 1f3d67b4-6929-4598-90ca-84a841bf02e4, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.64.202.22, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
+  - {name: 🇬🇧 中转 🇬🇧 United Kingdom 01 @nodpai, server: phoenicis.weltknoten.xyz, port: 30015, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 United States 02 @nodpai, server: 104.25.13.12, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4}}
+  - {name: 🇺🇸 United States 167 @nodpai, server: 172.64.130.176, port: 80, type: vmess, uuid: c53919e6-fed6-4058-a02c-eb3f4452f691, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇦🇺 Australia 18 @nodpai, server: vpnpool.stablize.top, port: 443, type: trojan, password: 30c80314-a395-45d9-b0ab-0171ad07c082, sni: ap.stablize.top, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 2, server: 172.67.95.171, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}}
+  - {name: 🇺🇸 United States 63 @nodpai, server: 104.233.249.242, port: 443, type: vmess, uuid: b65da4af-a12a-4a59-9316-4549e12ba62c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/022013252317}}
+  - {name: 🇺🇸 「SCP」US-DP4-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}}
+  - {name: 🇸🇬 Singapore 36 @nodpai, server: 104.21.31.254, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vsg1.0bad.com/chat}}
+  - {name: 🇺🇸 美国_Telegram@kxswa 6, server: 172.67.6.189, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
+  - {name: 🇨🇳 中转 🇹🇼 Taiwan 24 @nodpai, server: piscium.verdens.xyz, port: 25014, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 United States 73 @nodpai, server: 162.159.243.53, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 41 @nodpai, server: in06.my1188.org, port: 64096, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN中国19, server: ophiuchi.verdens.xyz, port: 25009, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
+  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai, server: scorpii.weltknoten.xyz, port: 30020, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇯🇵 中转 🇯🇵 Japan 22 @nodpai, server: in06.my1188.org, port: 64005, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in06.my1188.org}}}
+  - {name: 🇦🇺 Australia 48 @nodpai, server: vpnhat.stablize.top, port: 443, type: trojan, password: 30c80314-a395-45d9-b0ab-0171ad07c082, sni: ap.stablize.top, skip-cert-verify: true}
+  - {name: 🇯🇵 中转 🇯🇵 Japan 15 @nodpai, server: centauri.verdens.xyz, port: 25024, type: vmess, uuid: ae63dcc2-fea8-3ccd-999b-a162c5dbb5db, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 United States 250 @nodpai, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: singapore.com}}}
+  - {name: 🇺🇸 United States 190 @nodpai, server: 162.159.142.224, port: 80, type: vmess, uuid: f425df23-6ab6-449a-87bd-3ba74fdc1777, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1654431}}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 21, server: 172.64.130.176, port: 80, type: vmess, uuid: c53919e6-fed6-4058-a02c-eb3f4452f691, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: csmg.daozhang.link}}}
+  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 07 @nodpai, server: in06.my1188.org, port: 64096, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 Netherlands 21 @nodpai, server: amstdhebb.76898102.xyz, port: 2095, type: vmess, uuid: 0bb55212-6c02-39d5-8189-e6c5a9f825be, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: amstdhebb.76898102.xyz}}}
+  - {name: 🇺🇸 United States 116 @nodpai, server: 172.64.130.126, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇩🇪 Germany 01 @nodpai, server: cdn.twitter.now.cc, port: 443, type: vmess, uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ikun, headers: {Host: cdn.twitter.now.cc}}}
+  - {name: 🇺🇸 美国_Telegram@kxswa 7, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}}
+  - {name: "五叶节点分享TG频道: @hkaa0 5", server: 11.wyhkaa0.gq, port: 2095, type: vmess, uuid: a54fd3bc-3764-40cd-ff5a-471470417eac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 11.wyhkaa0.gq}}}
+  - {name: 🇺🇸 United States 217 @nodpai, server: 74.217.182.71, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/176300203323}}
+  - {name: 🇯🇵 中转 🇯🇵 Japan 10 @nodpai, server: scorpii.weltknoten.xyz, port: 30006, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 CN中国12, server: leonis.verdens.xyz, port: 25012, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
+  - {name: 🇭🇰 香港快|@ripaojiedian, server: 58.177.149.6, port: 443, type: trojan, password: 7d6f16c7-d91e-3c05-aa5b-5f800ff93473cmynw, sni: paydiu.com, skip-cert-verify: true}
+  - {name: 🇦🇺 中转 🇦🇺 Australia 05 @nodpai, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 United States 124 @nodpai, server: 104.16.91.78, port: 443, type: vmess, uuid: f3e36b53-e75e-48c0-b9f1-f918f397e996, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest}}
+  - {name: "五叶节点分享TG频道: @hkaa0 6", server: 9.wyhkaa0.gq, port: 2095, type: vmess, uuid: d838d99a-6806-4be4-c126-7fca613cf6a9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: 9.wyhkaa0.gq}}}
+  - {name: 🇺🇸 United States 26 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4, headers: {Host: cf-lt.sharecentre.online}}}
+  - {name: 🇰🇷 中转 🇰🇷 South Korea 02 @nodpai, server: andromedae.weltknoten.xyz, port: 30024, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇳🇱 Netherlands 16 @nodpai, server: 74.119.195.57, port: 443, type: trojan, password: 62963aad-8e90-45b6-949e-33216b260ba6, sni: speed.cloudflare.com, skip-cert-verify: true}
+  - {name: 🇺🇸 United States 215 @nodpai, server: 142.4.98.27, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1692873927587}}
+  - {name: 🇷🇺 中转 🇷🇺 Russia 04 @nodpai, server: in06.my1188.org, port: 64009, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in06.my1188.org}}}
+  - {name: 「SCP」NL3-CF-HTTP, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl3.sharecentrepro.org}}}
+  - {name: 🇦🇺 中转 🇦🇺 Australia 37 @nodpai, server: in06.my1188.org, port: 64003, type: vmess, uuid: 886ac452-590a-3dae-bed9-96203e9aacfb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 Singapore 02 @nodpai, server: cfyd.starsea.vip, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/1736960111/64ee26041efcc/, headers: {Host: cfyd.starsea.vip}}}
+  - {name: 🇰🇷 韩国_Telegram@kxswa, server: xiongda006.daxiongda.top, port: 23334, type: ss, cipher: chacha20-ietf-poly1305, password: f1865e50-2510-46d1-bcb2-e00b4b656305}
+  - {name: 🇩🇪 中转 🇩🇪 Germany 22 @nodpai, server: scorpii.weltknoten.xyz, port: 30017, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 CN中国13, server: ophiuchi.verdens.xyz, port: 25013, type: vmess, uuid: 64e4e80c-d929-390e-aa08-9ad23a633511, alterId: 2, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国_Telegram@kxswa 8, server: bobbykotick.rip, port: 443, type: vmess, uuid: 6ADADFFD-6614-43AE-9D72-895FE6129403, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.bobbykotick.rip}}}
+  - {name: 🇺🇸 United States 27 @nodpai, server: yd1.992688.xyz, port: 8880, type: vmess, uuid: e5f9073b-a23c-487f-b2a8-e5eb6abad21d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: yd1.992688.xyz}}}
+  - {name: 🇳🇱 Netherlands 04 @nodpai, server: 74.119.195.57, port: 443, type: trojan, password: 62963aad-8e90-45b6-949e-33216b260ba6, sni: speed.cloudflare.com, skip-cert-verify: true}
+  - {name: 🇺🇸 United States 111 @nodpai, server: 172.67.239.136, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker}}
+  - {name: 🇺🇸 United States 141 @nodpai, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: a7ee85f4-2528-412e-994f-ce65f54754e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: a7ee85f4, headers: {Host: cf-lt.sharecentre.online}}}
+  - {name: 🇭🇰 中转 🇭🇰 Hong Kong 50 @nodpai, server: piscium.verdens.xyz, port: 25023, type: vmess, uuid: 9ff96fbd-91d0-3aef-a229-b53280623d39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇳🇱 Netherlands 26 @nodpai, server: 74.119.195.57, port: 443, type: trojan, password: 62963aad-8e90-45b6-949e-33216b260ba6, sni: speed.cloudflare.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: 172.64.130.176, port: 80, type: vmess, uuid: c53919e6-fed6-4058-a02c-eb3f4452f691, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: csmg.daozhang.link}}}
+  - {name: Viet Nam 03 @nodpai, server: a12.wuxianliulianng.xyz, port: 443, type: vmess, uuid: 3a4d4b52-81ff-4aea-a451-99ed4587bfb4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /mp4, headers: {Host: a12.wuxianliulianng.xyz}}}
+  - {name: 🇳🇱 Netherlands 24 @nodpai, server: 156.249.18.24, port: 44775, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_Telegram@kxswa 9, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: 4a2ee56d-c70a-4c43-b18b-e1e15013a177, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v02.ssrsub.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -200,549 +149,396 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇺🇸 United States 364 @nodpai
-      - "五叶节点分享TG频道: @hkaa0"
-      - 🇨🇳 台湾 - 中妮妮
-      - 🇭🇰 香港直连|@ripaojiedian
-      - 🇮🇳 印度 - 小妮妮
-      - 🇺🇸 中转 🇺🇸 United States 121 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 237 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 38 @nodpai
-      - 🇨🇳 CN中国6
-      - 🇭🇰 中转 🇭🇰 Hong Kong 52 @nodpai
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇱🇺 Luxembourg 01 @nodpai
       - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国特殊|@ripaojiedian
-      - 🇺🇸 United States 351 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇨🇳 中转 🇹🇼 Taiwan 06 @nodpai
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇺🇸 United States 63 @nodpai
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇮🇳 中转 🇮🇳 India 01 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 2"
-      - 🇺🇸 中转 🇺🇸 United States 117 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 118 @nodpai
-      - 🇺🇸 United States 234 @nodpai
-      - 🇷🇴 Romania 06 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 41 @nodpai
-      - 🇭🇰 vip1 香港-01_1
-      - 🇭🇰 中转 🇭🇰 Hong Kong 26 @nodpai
-      - 🇺🇸 United States 380 @nodpai
-      - 🇺🇸 United States 391 @nodpai
-      - 「SCP」NL3-CF-HTTP
-      - 🇮🇳 中转 🇮🇳 India 03 @nodpai
-      - 🇯🇵 Japan 05 @nodpai
-      - 🇨🇳 中转 🇨🇳 China 16 @nodpai
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇨🇱 Chile 01 @nodpai
-      - 🇺🇸 United States 174 @nodpai
-      - 🇺🇸 United States 264 @nodpai
-      - 🇺🇸 United States 268 @nodpai
-      - 🇳🇱 Netherlands 11 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 中转 🇺🇸 United States 98 @nodpai
-      - 🇳🇱 Netherlands 39 @nodpai
-      - 🇮🇹 Italy 02 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 3"
-      - 🇭🇰 Hong Kong 127 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 14 @nodpai
-      - 🇷🇺 中转 🇷🇺 Russia 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇮🇳 中转 🇮🇳 India 04 @nodpai
-      - 🇺🇸 United States 46 @nodpai
-      - 🇦🇺 Australia 41 @nodpai
-      - 🇺🇸 United States 422 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 213 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 41 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇭🇰 vip1 香港-10
-      - 🇺🇸 United States 258 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 11 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 4"
-      - 🇺🇸 中转 🇺🇸 United States 89 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 50 @nodpai
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 中转 🇺🇸 United States 119 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 34 @nodpai
-      - 🇺🇸 United States 291 @nodpai
-      - 🇭🇰 Hong Kong 123 @nodpai
-      - 🇨🇳 China 51 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 112 @nodpai
-      - 🇮🇹 Italy 06 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇭🇰 中转 🇭🇰 Hong Kong 101 @nodpai
-      - 🇷🇺 俄罗斯联邦_Telegram@kxswa
-      - 🇨🇦 中转 🇨🇦 Canada 08 @nodpai
-      - 🇧🇷 Brazil 07 @nodpai
-      - 🇯🇵 Japan 18 @nodpai
-      - 🇺🇸 vip1 美国-12
-      - 🇿🇦 github.com/freefq - 南非  12
-      - 🇨🇳 中转 🇹🇼 Taiwan 70 @nodpai
-      - 🇦🇺 Australia 14 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 18 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇳🇱 Netherlands 31 @nodpai
-      - 🇪🇸 Spain 07 @nodpai
-      - 🇳🇱 Netherlands 27 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 02 @nodpai
-      - 🇺🇸 United States 261 @nodpai
-      - 🇨🇳 vip1 台湾-01_1
-      - 🇪🇸 Spain 05 @nodpai
-      - 🇩🇪 Germany 14 @nodpai
-      - 🇨🇳 China 21 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 03 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 70 @nodpai
-      - 🇨🇳 CN中国16
-      - 🇸🇬 Singapore 16 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 52 @nodpai
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 中转 🇺🇸 United States 114 @nodpai
-      - 🇺🇸 vip1 美国-11
       - 🇸🇬 Singapore 31 @nodpai
-      - 🇭🇰 Hong Kong 82 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 United States 430 @nodpai
-      - 🇺🇸 United States 169 @nodpai
-      - 🇺🇸 United States 35 @nodpai
-      - 🇸🇬 Singapore 01 @nodpai
-      - 🇨🇳 CN中国29
-      - 🇺🇸 United States 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-      - 🇺🇸 United States 19 @nodpai
-      - 🇺🇸 United States 157 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 20 @nodpai
-      - 🇺🇸 United States 198 @nodpai
-      - 🇺🇸 United States 65 @nodpai
-      - 🇺🇸 United States 206 @nodpai
-      - 🇺🇸 United States 122 @nodpai
-      - 🇺🇸 United States 16 @nodpai
-      - 🇺🇸 United States 245 @nodpai
-      - 距离下次重置剩余：27 天
-      - "五叶节点分享TG频道: @hkaa0 5"
-      - 🇧🇷 Brazil 04 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 31 @nodpai
-      - Viet Nam 05 @nodpai
-      - 🇮🇳 中转 🇮🇳 India 07 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 148 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 336 @nodpai
-      - 🇫🇷 France 11 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 29 @nodpai
-      - 🇺🇸 United States 311 @nodpai
-      - 🇺🇸 United States 225 @nodpai
-      - 🇨🇳 CN中国32
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-      - 🇨🇱 Chile 20 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 29 @nodpai
-      - 🇭🇰 vip1 香港-09_1
-      - 🇺🇸 United States 173 @nodpai
-      - 🇦🇺 Australia 19 @nodpai
-      - 🇯🇵 Japan 28 @nodpai
-      - 🇺🇸 United States 255 @nodpai
-      - 🇺🇸 United States 167 @nodpai
-      - 1元100G  https://ovofast.com
-      - 🇳🇱 Netherlands 32 @nodpai
-      - 🇺🇸 United States 275 @nodpai
-      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇳🇱 「狗狗加速,15天免费,专线hy协议」NL-CF-HTTP
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇺🇸 vip1 美国-11
+      - 🇩🇪 vip1 德国-01
+      - 🇷🇴 Romania 01 @nodpai
+      - 🇺🇸 United States 102 @nodpai
+      - 🇦🇺 Australia 06 @nodpai
       - 🇪🇸 Spain 04 @nodpai
-      - 🇳🇱 Netherlands 47 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 38 @nodpai
-      - 🇳🇱 Netherlands 15 @nodpai
-      - 🇫🇷 France 10 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 11 @nodpai
-      - 🇺🇸 United States 180 @nodpai
-      - 🇺🇸 「SCP」US-DP1-HTTP
-      - 🇺🇸 United States 142 @nodpai
-      - 🇺🇸 United States 135 @nodpai
-      - 🇺🇸 United States 369 @nodpai
-      - 🇺🇸 United States 368 @nodpai
-      - 🇦🇺 Australia 39 @nodpai
-      - 🇪🇸 Spain 06 @nodpai
-      - 🇨🇳 CN中国9
-      - 🇺🇸 United States 354 @nodpai
+      - 🇦🇺 Australia 25 @nodpai
+      - 🇺🇸 United States 48 @nodpai
+      - 🇺🇸 United States 216 @nodpai
+      - 🇺🇸 United States 83 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 59 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 18 @nodpai
+      - 🇫🇷 法国_Telegram@kxswa
+      - 🇺🇸 United States 09 @nodpai
+      - 🇺🇸 「SCP」US-DP3-HTTP
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇨🇳 Taiwan 34 @nodpai
+      - 🇺🇸 United States 173 @nodpai
+      - 🇺🇸 United States 69 @nodpai
+      - 🇨🇳 CN中国26
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸 美国_Telegram@kxswa 3
+      - 🇸🇬 Singapore 05 @nodpai
+      - 🇦🇺 Australia 09 @nodpai
+      - 🇨🇱 Chile 06 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 09 @nodpai
+      - "五叶节点分享TG频道: @hkaa0"
+      - 距离下次重置剩余：27 天
+      - 🇩🇪 Germany 14 @nodpai
+      - 🇺🇸 United States 178 @nodpai
+      - 🇺🇸 美国 - 大妮妮
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 United States 107 @nodpai
+      - 🇨🇳 中转 🇹🇼 Taiwan 38 @nodpai
+      - 🇺🇸 中转 🇺🇸 United States 65 @nodpai
+      - 🇺🇸 United States 206 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 25 @nodpai
+      - 🇸🇬 Singapore 22 @nodpai
+      - 🇺🇸 United States 226 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 14 @nodpai
+      - 🇨🇳 Taiwan 26 @nodpai
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 vip1 香港-13_1
+      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸 United States 194 @nodpai
+      - 🇨🇳 CN中国16
+      - 🇺🇸 United States 24 @nodpai
+      - 🇸🇬 Singapore 37 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 2"
+      - "五叶节点分享TG频道: @hkaa0 3"
+      - 🇸🇬 Singapore 21 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 4"
+      - 🇺🇸 美国_Telegram@kxswa 5
+      - 🇫🇷 France 01 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 01 @nodpai
+      - 🇺🇸 _US_美国
+      - 🇳🇱 Netherlands 14 @nodpai
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇺🇸 United States 39 @nodpai
+      - 🇨🇳 台湾独家|@ripaojiedian
+      - 🇳🇱 Netherlands 08 @nodpai
+      - 🇺🇸 United States 88 @nodpai
+      - 🇩🇪 Germany 23 @nodpai
+      - 🇨🇱 Chile 09 @nodpai
+      - 🇺🇸 United States 61 @nodpai
+      - 🇨🇳 Taiwan 28 @nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 中转 🇬🇧 United Kingdom 01 @nodpai
+      - 🇺🇸 United States 02 @nodpai
+      - 🇺🇸 United States 167 @nodpai
+      - 🇦🇺 Australia 18 @nodpai
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 United States 63 @nodpai
+      - 🇺🇸 「SCP」US-DP4-HTTP
+      - 🇸🇬 Singapore 36 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 6
+      - 🇨🇳 中转 🇹🇼 Taiwan 24 @nodpai
+      - 🇺🇸 United States 73 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 41 @nodpai
+      - 🇨🇳 CN中国19
       - 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai
-      - 🇺🇸 United States 246 @nodpai
-      - 🇺🇸 United States 38 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
-      - 🇦🇺 Australia 17 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 United States 152 @nodpai
-      - 🇰🇷 South Korea 03 @nodpai
-      - 🇺🇸 United States 433 @nodpai
-      - 🇺🇸 United States 301 @nodpai
-      - 🇨🇳 Taiwan 23 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 22 @nodpai
+      - 🇦🇺 Australia 48 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 15 @nodpai
+      - 🇺🇸 United States 250 @nodpai
+      - 🇺🇸 United States 190 @nodpai
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
+      - 🇭🇰 中转 🇭🇰 Hong Kong 07 @nodpai
+      - 🇳🇱 Netherlands 21 @nodpai
+      - 🇺🇸 United States 116 @nodpai
+      - 🇩🇪 Germany 01 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 7
+      - "五叶节点分享TG频道: @hkaa0 5"
+      - 🇺🇸 United States 217 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
+      - 🇨🇳 CN中国12
+      - 🇭🇰 香港快|@ripaojiedian
+      - 🇦🇺 中转 🇦🇺 Australia 05 @nodpai
+      - 🇺🇸 United States 124 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 6"
+      - 🇺🇸 United States 26 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 02 @nodpai
+      - 🇳🇱 Netherlands 16 @nodpai
       - 🇺🇸 United States 215 @nodpai
-      - 纽约测试|@ripaojiedian
+      - 🇷🇺 中转 🇷🇺 Russia 04 @nodpai
+      - 「SCP」NL3-CF-HTTP
+      - 🇦🇺 中转 🇦🇺 Australia 37 @nodpai
+      - 🇸🇬 Singapore 02 @nodpai
+      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇩🇪 中转 🇩🇪 Germany 22 @nodpai
+      - 🇨🇳 CN中国13
+      - 🇺🇸 美国_Telegram@kxswa 8
+      - 🇺🇸 United States 27 @nodpai
+      - 🇳🇱 Netherlands 04 @nodpai
+      - 🇺🇸 United States 111 @nodpai
+      - 🇺🇸 United States 141 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 50 @nodpai
+      - 🇳🇱 Netherlands 26 @nodpai
+      - 🇺🇸 美国3|@ripaojiedian
+      - Viet Nam 03 @nodpai
+      - 🇳🇱 Netherlands 24 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 United States 364 @nodpai
-      - "五叶节点分享TG频道: @hkaa0"
-      - 🇨🇳 台湾 - 中妮妮
-      - 🇭🇰 香港直连|@ripaojiedian
-      - 🇮🇳 印度 - 小妮妮
-      - 🇺🇸 中转 🇺🇸 United States 121 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 237 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 38 @nodpai
-      - 🇨🇳 CN中国6
-      - 🇭🇰 中转 🇭🇰 Hong Kong 52 @nodpai
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇱🇺 Luxembourg 01 @nodpai
       - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国特殊|@ripaojiedian
-      - 🇺🇸 United States 351 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇨🇳 中转 🇹🇼 Taiwan 06 @nodpai
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇺🇸 United States 63 @nodpai
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇮🇳 中转 🇮🇳 India 01 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 2"
-      - 🇺🇸 中转 🇺🇸 United States 117 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 118 @nodpai
-      - 🇺🇸 United States 234 @nodpai
-      - 🇷🇴 Romania 06 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 41 @nodpai
-      - 🇭🇰 vip1 香港-01_1
-      - 🇭🇰 中转 🇭🇰 Hong Kong 26 @nodpai
-      - 🇺🇸 United States 380 @nodpai
-      - 🇺🇸 United States 391 @nodpai
-      - 「SCP」NL3-CF-HTTP
-      - 🇮🇳 中转 🇮🇳 India 03 @nodpai
-      - 🇯🇵 Japan 05 @nodpai
-      - 🇨🇳 中转 🇨🇳 China 16 @nodpai
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇨🇱 Chile 01 @nodpai
-      - 🇺🇸 United States 174 @nodpai
-      - 🇺🇸 United States 264 @nodpai
-      - 🇺🇸 United States 268 @nodpai
-      - 🇳🇱 Netherlands 11 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 中转 🇺🇸 United States 98 @nodpai
-      - 🇳🇱 Netherlands 39 @nodpai
-      - 🇮🇹 Italy 02 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 3"
-      - 🇭🇰 Hong Kong 127 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 14 @nodpai
-      - 🇷🇺 中转 🇷🇺 Russia 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇮🇳 中转 🇮🇳 India 04 @nodpai
-      - 🇺🇸 United States 46 @nodpai
-      - 🇦🇺 Australia 41 @nodpai
-      - 🇺🇸 United States 422 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 213 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 41 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇭🇰 vip1 香港-10
-      - 🇺🇸 United States 258 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 11 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 4"
-      - 🇺🇸 中转 🇺🇸 United States 89 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 50 @nodpai
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 中转 🇺🇸 United States 119 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 34 @nodpai
-      - 🇺🇸 United States 291 @nodpai
-      - 🇭🇰 Hong Kong 123 @nodpai
-      - 🇨🇳 China 51 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 112 @nodpai
-      - 🇮🇹 Italy 06 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇭🇰 中转 🇭🇰 Hong Kong 101 @nodpai
-      - 🇷🇺 俄罗斯联邦_Telegram@kxswa
-      - 🇨🇦 中转 🇨🇦 Canada 08 @nodpai
-      - 🇧🇷 Brazil 07 @nodpai
-      - 🇯🇵 Japan 18 @nodpai
-      - 🇺🇸 vip1 美国-12
-      - 🇿🇦 github.com/freefq - 南非  12
-      - 🇨🇳 中转 🇹🇼 Taiwan 70 @nodpai
-      - 🇦🇺 Australia 14 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 18 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇳🇱 Netherlands 31 @nodpai
-      - 🇪🇸 Spain 07 @nodpai
-      - 🇳🇱 Netherlands 27 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 02 @nodpai
-      - 🇺🇸 United States 261 @nodpai
-      - 🇨🇳 vip1 台湾-01_1
-      - 🇪🇸 Spain 05 @nodpai
-      - 🇩🇪 Germany 14 @nodpai
-      - 🇨🇳 China 21 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 03 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 70 @nodpai
-      - 🇨🇳 CN中国16
-      - 🇸🇬 Singapore 16 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 52 @nodpai
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 中转 🇺🇸 United States 114 @nodpai
-      - 🇺🇸 vip1 美国-11
       - 🇸🇬 Singapore 31 @nodpai
-      - 🇭🇰 Hong Kong 82 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 United States 430 @nodpai
-      - 🇺🇸 United States 169 @nodpai
-      - 🇺🇸 United States 35 @nodpai
-      - 🇸🇬 Singapore 01 @nodpai
-      - 🇨🇳 CN中国29
-      - 🇺🇸 United States 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-      - 🇺🇸 United States 19 @nodpai
-      - 🇺🇸 United States 157 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 20 @nodpai
-      - 🇺🇸 United States 198 @nodpai
-      - 🇺🇸 United States 65 @nodpai
-      - 🇺🇸 United States 206 @nodpai
-      - 🇺🇸 United States 122 @nodpai
-      - 🇺🇸 United States 16 @nodpai
-      - 🇺🇸 United States 245 @nodpai
-      - 距离下次重置剩余：27 天
-      - "五叶节点分享TG频道: @hkaa0 5"
-      - 🇧🇷 Brazil 04 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 31 @nodpai
-      - Viet Nam 05 @nodpai
-      - 🇮🇳 中转 🇮🇳 India 07 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 148 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 336 @nodpai
-      - 🇫🇷 France 11 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 29 @nodpai
-      - 🇺🇸 United States 311 @nodpai
-      - 🇺🇸 United States 225 @nodpai
-      - 🇨🇳 CN中国32
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-      - 🇨🇱 Chile 20 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 29 @nodpai
-      - 🇭🇰 vip1 香港-09_1
-      - 🇺🇸 United States 173 @nodpai
-      - 🇦🇺 Australia 19 @nodpai
-      - 🇯🇵 Japan 28 @nodpai
-      - 🇺🇸 United States 255 @nodpai
-      - 🇺🇸 United States 167 @nodpai
-      - 1元100G  https://ovofast.com
-      - 🇳🇱 Netherlands 32 @nodpai
-      - 🇺🇸 United States 275 @nodpai
-      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇳🇱 「狗狗加速,15天免费,专线hy协议」NL-CF-HTTP
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇺🇸 vip1 美国-11
+      - 🇩🇪 vip1 德国-01
+      - 🇷🇴 Romania 01 @nodpai
+      - 🇺🇸 United States 102 @nodpai
+      - 🇦🇺 Australia 06 @nodpai
       - 🇪🇸 Spain 04 @nodpai
-      - 🇳🇱 Netherlands 47 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 38 @nodpai
-      - 🇳🇱 Netherlands 15 @nodpai
-      - 🇫🇷 France 10 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 11 @nodpai
-      - 🇺🇸 United States 180 @nodpai
-      - 🇺🇸 「SCP」US-DP1-HTTP
-      - 🇺🇸 United States 142 @nodpai
-      - 🇺🇸 United States 135 @nodpai
-      - 🇺🇸 United States 369 @nodpai
-      - 🇺🇸 United States 368 @nodpai
-      - 🇦🇺 Australia 39 @nodpai
-      - 🇪🇸 Spain 06 @nodpai
-      - 🇨🇳 CN中国9
-      - 🇺🇸 United States 354 @nodpai
+      - 🇦🇺 Australia 25 @nodpai
+      - 🇺🇸 United States 48 @nodpai
+      - 🇺🇸 United States 216 @nodpai
+      - 🇺🇸 United States 83 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 59 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 18 @nodpai
+      - 🇫🇷 法国_Telegram@kxswa
+      - 🇺🇸 United States 09 @nodpai
+      - 🇺🇸 「SCP」US-DP3-HTTP
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇨🇳 Taiwan 34 @nodpai
+      - 🇺🇸 United States 173 @nodpai
+      - 🇺🇸 United States 69 @nodpai
+      - 🇨🇳 CN中国26
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸 美国_Telegram@kxswa 3
+      - 🇸🇬 Singapore 05 @nodpai
+      - 🇦🇺 Australia 09 @nodpai
+      - 🇨🇱 Chile 06 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 09 @nodpai
+      - "五叶节点分享TG频道: @hkaa0"
+      - 距离下次重置剩余：27 天
+      - 🇩🇪 Germany 14 @nodpai
+      - 🇺🇸 United States 178 @nodpai
+      - 🇺🇸 美国 - 大妮妮
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 United States 107 @nodpai
+      - 🇨🇳 中转 🇹🇼 Taiwan 38 @nodpai
+      - 🇺🇸 中转 🇺🇸 United States 65 @nodpai
+      - 🇺🇸 United States 206 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 25 @nodpai
+      - 🇸🇬 Singapore 22 @nodpai
+      - 🇺🇸 United States 226 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 14 @nodpai
+      - 🇨🇳 Taiwan 26 @nodpai
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 vip1 香港-13_1
+      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸 United States 194 @nodpai
+      - 🇨🇳 CN中国16
+      - 🇺🇸 United States 24 @nodpai
+      - 🇸🇬 Singapore 37 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 2"
+      - "五叶节点分享TG频道: @hkaa0 3"
+      - 🇸🇬 Singapore 21 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 4"
+      - 🇺🇸 美国_Telegram@kxswa 5
+      - 🇫🇷 France 01 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 01 @nodpai
+      - 🇺🇸 _US_美国
+      - 🇳🇱 Netherlands 14 @nodpai
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇺🇸 United States 39 @nodpai
+      - 🇨🇳 台湾独家|@ripaojiedian
+      - 🇳🇱 Netherlands 08 @nodpai
+      - 🇺🇸 United States 88 @nodpai
+      - 🇩🇪 Germany 23 @nodpai
+      - 🇨🇱 Chile 09 @nodpai
+      - 🇺🇸 United States 61 @nodpai
+      - 🇨🇳 Taiwan 28 @nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 中转 🇬🇧 United Kingdom 01 @nodpai
+      - 🇺🇸 United States 02 @nodpai
+      - 🇺🇸 United States 167 @nodpai
+      - 🇦🇺 Australia 18 @nodpai
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 United States 63 @nodpai
+      - 🇺🇸 「SCP」US-DP4-HTTP
+      - 🇸🇬 Singapore 36 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 6
+      - 🇨🇳 中转 🇹🇼 Taiwan 24 @nodpai
+      - 🇺🇸 United States 73 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 41 @nodpai
+      - 🇨🇳 CN中国19
       - 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai
-      - 🇺🇸 United States 246 @nodpai
-      - 🇺🇸 United States 38 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
-      - 🇦🇺 Australia 17 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 United States 152 @nodpai
-      - 🇰🇷 South Korea 03 @nodpai
-      - 🇺🇸 United States 433 @nodpai
-      - 🇺🇸 United States 301 @nodpai
-      - 🇨🇳 Taiwan 23 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 22 @nodpai
+      - 🇦🇺 Australia 48 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 15 @nodpai
+      - 🇺🇸 United States 250 @nodpai
+      - 🇺🇸 United States 190 @nodpai
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
+      - 🇭🇰 中转 🇭🇰 Hong Kong 07 @nodpai
+      - 🇳🇱 Netherlands 21 @nodpai
+      - 🇺🇸 United States 116 @nodpai
+      - 🇩🇪 Germany 01 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 7
+      - "五叶节点分享TG频道: @hkaa0 5"
+      - 🇺🇸 United States 217 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
+      - 🇨🇳 CN中国12
+      - 🇭🇰 香港快|@ripaojiedian
+      - 🇦🇺 中转 🇦🇺 Australia 05 @nodpai
+      - 🇺🇸 United States 124 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 6"
+      - 🇺🇸 United States 26 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 02 @nodpai
+      - 🇳🇱 Netherlands 16 @nodpai
       - 🇺🇸 United States 215 @nodpai
-      - 纽约测试|@ripaojiedian
+      - 🇷🇺 中转 🇷🇺 Russia 04 @nodpai
+      - 「SCP」NL3-CF-HTTP
+      - 🇦🇺 中转 🇦🇺 Australia 37 @nodpai
+      - 🇸🇬 Singapore 02 @nodpai
+      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇩🇪 中转 🇩🇪 Germany 22 @nodpai
+      - 🇨🇳 CN中国13
+      - 🇺🇸 美国_Telegram@kxswa 8
+      - 🇺🇸 United States 27 @nodpai
+      - 🇳🇱 Netherlands 04 @nodpai
+      - 🇺🇸 United States 111 @nodpai
+      - 🇺🇸 United States 141 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 50 @nodpai
+      - 🇳🇱 Netherlands 26 @nodpai
+      - 🇺🇸 美国3|@ripaojiedian
+      - Viet Nam 03 @nodpai
+      - 🇳🇱 Netherlands 24 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 9
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 United States 364 @nodpai
-      - "五叶节点分享TG频道: @hkaa0"
-      - 🇨🇳 台湾 - 中妮妮
-      - 🇭🇰 香港直连|@ripaojiedian
-      - 🇮🇳 印度 - 小妮妮
-      - 🇺🇸 中转 🇺🇸 United States 121 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 237 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 38 @nodpai
-      - 🇨🇳 CN中国6
-      - 🇭🇰 中转 🇭🇰 Hong Kong 52 @nodpai
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇱🇺 Luxembourg 01 @nodpai
       - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国特殊|@ripaojiedian
-      - 🇺🇸 United States 351 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇨🇳 中转 🇹🇼 Taiwan 06 @nodpai
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇺🇸 United States 63 @nodpai
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇮🇳 中转 🇮🇳 India 01 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 2"
-      - 🇺🇸 中转 🇺🇸 United States 117 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 118 @nodpai
-      - 🇺🇸 United States 234 @nodpai
-      - 🇷🇴 Romania 06 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 41 @nodpai
-      - 🇭🇰 vip1 香港-01_1
-      - 🇭🇰 中转 🇭🇰 Hong Kong 26 @nodpai
-      - 🇺🇸 United States 380 @nodpai
-      - 🇺🇸 United States 391 @nodpai
-      - 「SCP」NL3-CF-HTTP
-      - 🇮🇳 中转 🇮🇳 India 03 @nodpai
-      - 🇯🇵 Japan 05 @nodpai
-      - 🇨🇳 中转 🇨🇳 China 16 @nodpai
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇨🇱 Chile 01 @nodpai
-      - 🇺🇸 United States 174 @nodpai
-      - 🇺🇸 United States 264 @nodpai
-      - 🇺🇸 United States 268 @nodpai
-      - 🇳🇱 Netherlands 11 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 中转 🇺🇸 United States 98 @nodpai
-      - 🇳🇱 Netherlands 39 @nodpai
-      - 🇮🇹 Italy 02 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 3"
-      - 🇭🇰 Hong Kong 127 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 14 @nodpai
-      - 🇷🇺 中转 🇷🇺 Russia 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇮🇳 中转 🇮🇳 India 04 @nodpai
-      - 🇺🇸 United States 46 @nodpai
-      - 🇦🇺 Australia 41 @nodpai
-      - 🇺🇸 United States 422 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 213 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 41 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇭🇰 vip1 香港-10
-      - 🇺🇸 United States 258 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 11 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 4"
-      - 🇺🇸 中转 🇺🇸 United States 89 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 50 @nodpai
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 中转 🇺🇸 United States 119 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 34 @nodpai
-      - 🇺🇸 United States 291 @nodpai
-      - 🇭🇰 Hong Kong 123 @nodpai
-      - 🇨🇳 China 51 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 112 @nodpai
-      - 🇮🇹 Italy 06 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇭🇰 中转 🇭🇰 Hong Kong 101 @nodpai
-      - 🇷🇺 俄罗斯联邦_Telegram@kxswa
-      - 🇨🇦 中转 🇨🇦 Canada 08 @nodpai
-      - 🇧🇷 Brazil 07 @nodpai
-      - 🇯🇵 Japan 18 @nodpai
-      - 🇺🇸 vip1 美国-12
-      - 🇿🇦 github.com/freefq - 南非  12
-      - 🇨🇳 中转 🇹🇼 Taiwan 70 @nodpai
-      - 🇦🇺 Australia 14 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 18 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇳🇱 Netherlands 31 @nodpai
-      - 🇪🇸 Spain 07 @nodpai
-      - 🇳🇱 Netherlands 27 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 02 @nodpai
-      - 🇺🇸 United States 261 @nodpai
-      - 🇨🇳 vip1 台湾-01_1
-      - 🇪🇸 Spain 05 @nodpai
-      - 🇩🇪 Germany 14 @nodpai
-      - 🇨🇳 China 21 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 03 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 70 @nodpai
-      - 🇨🇳 CN中国16
-      - 🇸🇬 Singapore 16 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 52 @nodpai
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 中转 🇺🇸 United States 114 @nodpai
-      - 🇺🇸 vip1 美国-11
       - 🇸🇬 Singapore 31 @nodpai
-      - 🇭🇰 Hong Kong 82 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 United States 430 @nodpai
-      - 🇺🇸 United States 169 @nodpai
-      - 🇺🇸 United States 35 @nodpai
-      - 🇸🇬 Singapore 01 @nodpai
-      - 🇨🇳 CN中国29
-      - 🇺🇸 United States 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-      - 🇺🇸 United States 19 @nodpai
-      - 🇺🇸 United States 157 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 20 @nodpai
-      - 🇺🇸 United States 198 @nodpai
-      - 🇺🇸 United States 65 @nodpai
-      - 🇺🇸 United States 206 @nodpai
-      - 🇺🇸 United States 122 @nodpai
-      - 🇺🇸 United States 16 @nodpai
-      - 🇺🇸 United States 245 @nodpai
-      - 距离下次重置剩余：27 天
-      - "五叶节点分享TG频道: @hkaa0 5"
-      - 🇧🇷 Brazil 04 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 31 @nodpai
-      - Viet Nam 05 @nodpai
-      - 🇮🇳 中转 🇮🇳 India 07 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 148 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 336 @nodpai
-      - 🇫🇷 France 11 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 29 @nodpai
-      - 🇺🇸 United States 311 @nodpai
-      - 🇺🇸 United States 225 @nodpai
-      - 🇨🇳 CN中国32
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-      - 🇨🇱 Chile 20 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 29 @nodpai
-      - 🇭🇰 vip1 香港-09_1
-      - 🇺🇸 United States 173 @nodpai
-      - 🇦🇺 Australia 19 @nodpai
-      - 🇯🇵 Japan 28 @nodpai
-      - 🇺🇸 United States 255 @nodpai
-      - 🇺🇸 United States 167 @nodpai
-      - 1元100G  https://ovofast.com
-      - 🇳🇱 Netherlands 32 @nodpai
-      - 🇺🇸 United States 275 @nodpai
-      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇳🇱 「狗狗加速,15天免费,专线hy协议」NL-CF-HTTP
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇺🇸 vip1 美国-11
+      - 🇩🇪 vip1 德国-01
+      - 🇷🇴 Romania 01 @nodpai
+      - 🇺🇸 United States 102 @nodpai
+      - 🇦🇺 Australia 06 @nodpai
       - 🇪🇸 Spain 04 @nodpai
-      - 🇳🇱 Netherlands 47 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 38 @nodpai
-      - 🇳🇱 Netherlands 15 @nodpai
-      - 🇫🇷 France 10 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 11 @nodpai
-      - 🇺🇸 United States 180 @nodpai
-      - 🇺🇸 「SCP」US-DP1-HTTP
-      - 🇺🇸 United States 142 @nodpai
-      - 🇺🇸 United States 135 @nodpai
-      - 🇺🇸 United States 369 @nodpai
-      - 🇺🇸 United States 368 @nodpai
-      - 🇦🇺 Australia 39 @nodpai
-      - 🇪🇸 Spain 06 @nodpai
-      - 🇨🇳 CN中国9
-      - 🇺🇸 United States 354 @nodpai
+      - 🇦🇺 Australia 25 @nodpai
+      - 🇺🇸 United States 48 @nodpai
+      - 🇺🇸 United States 216 @nodpai
+      - 🇺🇸 United States 83 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 59 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 18 @nodpai
+      - 🇫🇷 法国_Telegram@kxswa
+      - 🇺🇸 United States 09 @nodpai
+      - 🇺🇸 「SCP」US-DP3-HTTP
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇨🇳 Taiwan 34 @nodpai
+      - 🇺🇸 United States 173 @nodpai
+      - 🇺🇸 United States 69 @nodpai
+      - 🇨🇳 CN中国26
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸 美国_Telegram@kxswa 3
+      - 🇸🇬 Singapore 05 @nodpai
+      - 🇦🇺 Australia 09 @nodpai
+      - 🇨🇱 Chile 06 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 09 @nodpai
+      - "五叶节点分享TG频道: @hkaa0"
+      - 距离下次重置剩余：27 天
+      - 🇩🇪 Germany 14 @nodpai
+      - 🇺🇸 United States 178 @nodpai
+      - 🇺🇸 美国 - 大妮妮
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 United States 107 @nodpai
+      - 🇨🇳 中转 🇹🇼 Taiwan 38 @nodpai
+      - 🇺🇸 中转 🇺🇸 United States 65 @nodpai
+      - 🇺🇸 United States 206 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 25 @nodpai
+      - 🇸🇬 Singapore 22 @nodpai
+      - 🇺🇸 United States 226 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 14 @nodpai
+      - 🇨🇳 Taiwan 26 @nodpai
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 vip1 香港-13_1
+      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸 United States 194 @nodpai
+      - 🇨🇳 CN中国16
+      - 🇺🇸 United States 24 @nodpai
+      - 🇸🇬 Singapore 37 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 2"
+      - "五叶节点分享TG频道: @hkaa0 3"
+      - 🇸🇬 Singapore 21 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 4"
+      - 🇺🇸 美国_Telegram@kxswa 5
+      - 🇫🇷 France 01 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 01 @nodpai
+      - 🇺🇸 _US_美国
+      - 🇳🇱 Netherlands 14 @nodpai
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇺🇸 United States 39 @nodpai
+      - 🇨🇳 台湾独家|@ripaojiedian
+      - 🇳🇱 Netherlands 08 @nodpai
+      - 🇺🇸 United States 88 @nodpai
+      - 🇩🇪 Germany 23 @nodpai
+      - 🇨🇱 Chile 09 @nodpai
+      - 🇺🇸 United States 61 @nodpai
+      - 🇨🇳 Taiwan 28 @nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 中转 🇬🇧 United Kingdom 01 @nodpai
+      - 🇺🇸 United States 02 @nodpai
+      - 🇺🇸 United States 167 @nodpai
+      - 🇦🇺 Australia 18 @nodpai
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 United States 63 @nodpai
+      - 🇺🇸 「SCP」US-DP4-HTTP
+      - 🇸🇬 Singapore 36 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 6
+      - 🇨🇳 中转 🇹🇼 Taiwan 24 @nodpai
+      - 🇺🇸 United States 73 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 41 @nodpai
+      - 🇨🇳 CN中国19
       - 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai
-      - 🇺🇸 United States 246 @nodpai
-      - 🇺🇸 United States 38 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
-      - 🇦🇺 Australia 17 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 United States 152 @nodpai
-      - 🇰🇷 South Korea 03 @nodpai
-      - 🇺🇸 United States 433 @nodpai
-      - 🇺🇸 United States 301 @nodpai
-      - 🇨🇳 Taiwan 23 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 22 @nodpai
+      - 🇦🇺 Australia 48 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 15 @nodpai
+      - 🇺🇸 United States 250 @nodpai
+      - 🇺🇸 United States 190 @nodpai
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
+      - 🇭🇰 中转 🇭🇰 Hong Kong 07 @nodpai
+      - 🇳🇱 Netherlands 21 @nodpai
+      - 🇺🇸 United States 116 @nodpai
+      - 🇩🇪 Germany 01 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 7
+      - "五叶节点分享TG频道: @hkaa0 5"
+      - 🇺🇸 United States 217 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
+      - 🇨🇳 CN中国12
+      - 🇭🇰 香港快|@ripaojiedian
+      - 🇦🇺 中转 🇦🇺 Australia 05 @nodpai
+      - 🇺🇸 United States 124 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 6"
+      - 🇺🇸 United States 26 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 02 @nodpai
+      - 🇳🇱 Netherlands 16 @nodpai
       - 🇺🇸 United States 215 @nodpai
-      - 纽约测试|@ripaojiedian
+      - 🇷🇺 中转 🇷🇺 Russia 04 @nodpai
+      - 「SCP」NL3-CF-HTTP
+      - 🇦🇺 中转 🇦🇺 Australia 37 @nodpai
+      - 🇸🇬 Singapore 02 @nodpai
+      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇩🇪 中转 🇩🇪 Germany 22 @nodpai
+      - 🇨🇳 CN中国13
+      - 🇺🇸 美国_Telegram@kxswa 8
+      - 🇺🇸 United States 27 @nodpai
+      - 🇳🇱 Netherlands 04 @nodpai
+      - 🇺🇸 United States 111 @nodpai
+      - 🇺🇸 United States 141 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 50 @nodpai
+      - 🇳🇱 Netherlands 26 @nodpai
+      - 🇺🇸 美国3|@ripaojiedian
+      - Viet Nam 03 @nodpai
+      - 🇳🇱 Netherlands 24 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 9
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -750,183 +546,132 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 United States 364 @nodpai
-      - "五叶节点分享TG频道: @hkaa0"
-      - 🇨🇳 台湾 - 中妮妮
-      - 🇭🇰 香港直连|@ripaojiedian
-      - 🇮🇳 印度 - 小妮妮
-      - 🇺🇸 中转 🇺🇸 United States 121 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 237 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 38 @nodpai
-      - 🇨🇳 CN中国6
-      - 🇭🇰 中转 🇭🇰 Hong Kong 52 @nodpai
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇱🇺 Luxembourg 01 @nodpai
       - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国特殊|@ripaojiedian
-      - 🇺🇸 United States 351 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇨🇳 中转 🇹🇼 Taiwan 06 @nodpai
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇺🇸 United States 63 @nodpai
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇮🇳 中转 🇮🇳 India 01 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 2"
-      - 🇺🇸 中转 🇺🇸 United States 117 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 118 @nodpai
-      - 🇺🇸 United States 234 @nodpai
-      - 🇷🇴 Romania 06 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 41 @nodpai
-      - 🇭🇰 vip1 香港-01_1
-      - 🇭🇰 中转 🇭🇰 Hong Kong 26 @nodpai
-      - 🇺🇸 United States 380 @nodpai
-      - 🇺🇸 United States 391 @nodpai
-      - 「SCP」NL3-CF-HTTP
-      - 🇮🇳 中转 🇮🇳 India 03 @nodpai
-      - 🇯🇵 Japan 05 @nodpai
-      - 🇨🇳 中转 🇨🇳 China 16 @nodpai
-      - 🇬🇧 英国_Telegram@kxswa
-      - 🇨🇱 Chile 01 @nodpai
-      - 🇺🇸 United States 174 @nodpai
-      - 🇺🇸 United States 264 @nodpai
-      - 🇺🇸 United States 268 @nodpai
-      - 🇳🇱 Netherlands 11 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 中转 🇺🇸 United States 98 @nodpai
-      - 🇳🇱 Netherlands 39 @nodpai
-      - 🇮🇹 Italy 02 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 3"
-      - 🇭🇰 Hong Kong 127 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 14 @nodpai
-      - 🇷🇺 中转 🇷🇺 Russia 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇮🇳 中转 🇮🇳 India 04 @nodpai
-      - 🇺🇸 United States 46 @nodpai
-      - 🇦🇺 Australia 41 @nodpai
-      - 🇺🇸 United States 422 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 213 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 41 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇭🇰 vip1 香港-10
-      - 🇺🇸 United States 258 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 11 @nodpai
-      - "五叶节点分享TG频道: @hkaa0 4"
-      - 🇺🇸 中转 🇺🇸 United States 89 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 50 @nodpai
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 中转 🇺🇸 United States 119 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 34 @nodpai
-      - 🇺🇸 United States 291 @nodpai
-      - 🇭🇰 Hong Kong 123 @nodpai
-      - 🇨🇳 China 51 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 112 @nodpai
-      - 🇮🇹 Italy 06 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇭🇰 中转 🇭🇰 Hong Kong 101 @nodpai
-      - 🇷🇺 俄罗斯联邦_Telegram@kxswa
-      - 🇨🇦 中转 🇨🇦 Canada 08 @nodpai
-      - 🇧🇷 Brazil 07 @nodpai
-      - 🇯🇵 Japan 18 @nodpai
-      - 🇺🇸 vip1 美国-12
-      - 🇿🇦 github.com/freefq - 南非  12
-      - 🇨🇳 中转 🇹🇼 Taiwan 70 @nodpai
-      - 🇦🇺 Australia 14 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 18 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇳🇱 Netherlands 31 @nodpai
-      - 🇪🇸 Spain 07 @nodpai
-      - 🇳🇱 Netherlands 27 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 02 @nodpai
-      - 🇺🇸 United States 261 @nodpai
-      - 🇨🇳 vip1 台湾-01_1
-      - 🇪🇸 Spain 05 @nodpai
-      - 🇩🇪 Germany 14 @nodpai
-      - 🇨🇳 China 21 @nodpai
-      - 🇩🇪 中转 🇩🇪 Germany 03 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 70 @nodpai
-      - 🇨🇳 CN中国16
-      - 🇸🇬 Singapore 16 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 52 @nodpai
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 中转 🇺🇸 United States 114 @nodpai
-      - 🇺🇸 vip1 美国-11
       - 🇸🇬 Singapore 31 @nodpai
-      - 🇭🇰 Hong Kong 82 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 United States 430 @nodpai
-      - 🇺🇸 United States 169 @nodpai
-      - 🇺🇸 United States 35 @nodpai
-      - 🇸🇬 Singapore 01 @nodpai
-      - 🇨🇳 CN中国29
-      - 🇺🇸 United States 06 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-      - 🇺🇸 United States 19 @nodpai
-      - 🇺🇸 United States 157 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 20 @nodpai
-      - 🇺🇸 United States 198 @nodpai
-      - 🇺🇸 United States 65 @nodpai
-      - 🇺🇸 United States 206 @nodpai
-      - 🇺🇸 United States 122 @nodpai
-      - 🇺🇸 United States 16 @nodpai
-      - 🇺🇸 United States 245 @nodpai
-      - 距离下次重置剩余：27 天
-      - "五叶节点分享TG频道: @hkaa0 5"
-      - 🇧🇷 Brazil 04 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 31 @nodpai
-      - Viet Nam 05 @nodpai
-      - 🇮🇳 中转 🇮🇳 India 07 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 148 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 336 @nodpai
-      - 🇫🇷 France 11 @nodpai
-      - 🇦🇺 中转 🇦🇺 Australia 29 @nodpai
-      - 🇺🇸 United States 311 @nodpai
-      - 🇺🇸 United States 225 @nodpai
-      - 🇨🇳 CN中国32
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-      - 🇨🇱 Chile 20 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 29 @nodpai
-      - 🇭🇰 vip1 香港-09_1
-      - 🇺🇸 United States 173 @nodpai
-      - 🇦🇺 Australia 19 @nodpai
-      - 🇯🇵 Japan 28 @nodpai
-      - 🇺🇸 United States 255 @nodpai
-      - 🇺🇸 United States 167 @nodpai
-      - 1元100G  https://ovofast.com
-      - 🇳🇱 Netherlands 32 @nodpai
-      - 🇺🇸 United States 275 @nodpai
-      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇳🇱 「狗狗加速,15天免费,专线hy协议」NL-CF-HTTP
+      - 🇨🇦 加拿大_Telegram@kxswa
+      - 🇺🇸 vip1 美国-11
+      - 🇩🇪 vip1 德国-01
+      - 🇷🇴 Romania 01 @nodpai
+      - 🇺🇸 United States 102 @nodpai
+      - 🇦🇺 Australia 06 @nodpai
       - 🇪🇸 Spain 04 @nodpai
-      - 🇳🇱 Netherlands 47 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 38 @nodpai
-      - 🇳🇱 Netherlands 15 @nodpai
-      - 🇫🇷 France 10 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 11 @nodpai
-      - 🇺🇸 United States 180 @nodpai
-      - 🇺🇸 「SCP」US-DP1-HTTP
-      - 🇺🇸 United States 142 @nodpai
-      - 🇺🇸 United States 135 @nodpai
-      - 🇺🇸 United States 369 @nodpai
-      - 🇺🇸 United States 368 @nodpai
-      - 🇦🇺 Australia 39 @nodpai
-      - 🇪🇸 Spain 06 @nodpai
-      - 🇨🇳 CN中国9
-      - 🇺🇸 United States 354 @nodpai
+      - 🇦🇺 Australia 25 @nodpai
+      - 🇺🇸 United States 48 @nodpai
+      - 🇺🇸 United States 216 @nodpai
+      - 🇺🇸 United States 83 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 59 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 18 @nodpai
+      - 🇫🇷 法国_Telegram@kxswa
+      - 🇺🇸 United States 09 @nodpai
+      - 🇺🇸 「SCP」US-DP3-HTTP
+      - 🇺🇸 美国_Telegram@kxswa 2
+      - 🇨🇳 Taiwan 34 @nodpai
+      - 🇺🇸 United States 173 @nodpai
+      - 🇺🇸 United States 69 @nodpai
+      - 🇨🇳 CN中国26
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸 美国_Telegram@kxswa 3
+      - 🇸🇬 Singapore 05 @nodpai
+      - 🇦🇺 Australia 09 @nodpai
+      - 🇨🇱 Chile 06 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 09 @nodpai
+      - "五叶节点分享TG频道: @hkaa0"
+      - 距离下次重置剩余：27 天
+      - 🇩🇪 Germany 14 @nodpai
+      - 🇺🇸 United States 178 @nodpai
+      - 🇺🇸 美国 - 大妮妮
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 United States 107 @nodpai
+      - 🇨🇳 中转 🇹🇼 Taiwan 38 @nodpai
+      - 🇺🇸 中转 🇺🇸 United States 65 @nodpai
+      - 🇺🇸 United States 206 @nodpai
+      - 🇨🇳 中转 🇨🇳 China 25 @nodpai
+      - 🇸🇬 Singapore 22 @nodpai
+      - 🇺🇸 United States 226 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 14 @nodpai
+      - 🇨🇳 Taiwan 26 @nodpai
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 vip1 香港-13_1
+      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 🇺🇸 United States 194 @nodpai
+      - 🇨🇳 CN中国16
+      - 🇺🇸 United States 24 @nodpai
+      - 🇸🇬 Singapore 37 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 2"
+      - "五叶节点分享TG频道: @hkaa0 3"
+      - 🇸🇬 Singapore 21 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 4"
+      - 🇺🇸 美国_Telegram@kxswa 5
+      - 🇫🇷 France 01 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 01 @nodpai
+      - 🇺🇸 _US_美国
+      - 🇳🇱 Netherlands 14 @nodpai
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇺🇸 United States 39 @nodpai
+      - 🇨🇳 台湾独家|@ripaojiedian
+      - 🇳🇱 Netherlands 08 @nodpai
+      - 🇺🇸 United States 88 @nodpai
+      - 🇩🇪 Germany 23 @nodpai
+      - 🇨🇱 Chile 09 @nodpai
+      - 🇺🇸 United States 61 @nodpai
+      - 🇨🇳 Taiwan 28 @nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 中转 🇬🇧 United Kingdom 01 @nodpai
+      - 🇺🇸 United States 02 @nodpai
+      - 🇺🇸 United States 167 @nodpai
+      - 🇦🇺 Australia 18 @nodpai
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 United States 63 @nodpai
+      - 🇺🇸 「SCP」US-DP4-HTTP
+      - 🇸🇬 Singapore 36 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 6
+      - 🇨🇳 中转 🇹🇼 Taiwan 24 @nodpai
+      - 🇺🇸 United States 73 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 41 @nodpai
+      - 🇨🇳 CN中国19
       - 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai
-      - 🇺🇸 United States 246 @nodpai
-      - 🇺🇸 United States 38 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
-      - 🇦🇺 Australia 17 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 United States 152 @nodpai
-      - 🇰🇷 South Korea 03 @nodpai
-      - 🇺🇸 United States 433 @nodpai
-      - 🇺🇸 United States 301 @nodpai
-      - 🇨🇳 Taiwan 23 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 22 @nodpai
+      - 🇦🇺 Australia 48 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 15 @nodpai
+      - 🇺🇸 United States 250 @nodpai
+      - 🇺🇸 United States 190 @nodpai
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
+      - 🇭🇰 中转 🇭🇰 Hong Kong 07 @nodpai
+      - 🇳🇱 Netherlands 21 @nodpai
+      - 🇺🇸 United States 116 @nodpai
+      - 🇩🇪 Germany 01 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 7
+      - "五叶节点分享TG频道: @hkaa0 5"
+      - 🇺🇸 United States 217 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
+      - 🇨🇳 CN中国12
+      - 🇭🇰 香港快|@ripaojiedian
+      - 🇦🇺 中转 🇦🇺 Australia 05 @nodpai
+      - 🇺🇸 United States 124 @nodpai
+      - "五叶节点分享TG频道: @hkaa0 6"
+      - 🇺🇸 United States 26 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 02 @nodpai
+      - 🇳🇱 Netherlands 16 @nodpai
       - 🇺🇸 United States 215 @nodpai
-      - 纽约测试|@ripaojiedian
+      - 🇷🇺 中转 🇷🇺 Russia 04 @nodpai
+      - 「SCP」NL3-CF-HTTP
+      - 🇦🇺 中转 🇦🇺 Australia 37 @nodpai
+      - 🇸🇬 Singapore 02 @nodpai
+      - 🇰🇷 韩国_Telegram@kxswa
+      - 🇩🇪 中转 🇩🇪 Germany 22 @nodpai
+      - 🇨🇳 CN中国13
+      - 🇺🇸 美国_Telegram@kxswa 8
+      - 🇺🇸 United States 27 @nodpai
+      - 🇳🇱 Netherlands 04 @nodpai
+      - 🇺🇸 United States 111 @nodpai
+      - 🇺🇸 United States 141 @nodpai
+      - 🇭🇰 中转 🇭🇰 Hong Kong 50 @nodpai
+      - 🇳🇱 Netherlands 26 @nodpai
+      - 🇺🇸 美国3|@ripaojiedian
+      - Viet Nam 03 @nodpai
+      - 🇳🇱 Netherlands 24 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 9
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1113,152 +858,117 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港直连|@ripaojiedian
-      - 🇭🇰 中转 🇭🇰 Hong Kong 52 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 118 @nodpai
-      - 🇭🇰 vip1 香港-01_1
-      - 🇭🇰 中转 🇭🇰 Hong Kong 26 @nodpai
-      - 🇭🇰 Hong Kong 127 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 14 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇭🇰 vip1 香港-10
-      - 🇭🇰 Hong Kong 123 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 101 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 70 @nodpai
-      - 🇭🇰 Hong Kong 82 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 2
-      - 🇭🇰 中转 🇭🇰 Hong Kong 20 @nodpai
-      - 🇭🇰 中转 🇭🇰 Hong Kong 31 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 3
-      - 🇭🇰 中转 🇭🇰 Hong Kong 29 @nodpai
-      - 🇭🇰 vip1 香港-09_1
+      - 🇭🇰 中转 🇭🇰 Hong Kong 59 @nodpai
+      - 🇭🇰 香港_Telegram@kxswa
+      - 🇭🇰 vip1 香港-13_1
+      - 🇭🇰 中转 🇭🇰 Hong Kong 41 @nodpai
       - 🇭🇰 中转 🇭🇰 Hong Kong 22 @nodpai
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港 4
+      - 🇭🇰 中转 🇭🇰 Hong Kong 07 @nodpai
+      - 🇭🇰 香港快|@ripaojiedian
+      - 🇭🇰 中转 🇭🇰 Hong Kong 50 @nodpai
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇯🇵 Japan 05 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 09 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 14 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 22 @nodpai
+      - 🇯🇵 中转 🇯🇵 Japan 15 @nodpai
       - 🇯🇵 中转 🇯🇵 Japan 10 @nodpai
-      - 🇯🇵 Japan 18 @nodpai
-      - 🇯🇵 Japan 28 @nodpai
-      - 🇯🇵 中转 🇯🇵 Japan 11 @nodpai
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 United States 364 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 121 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 237 @nodpai
-      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国_Telegram@kxswa
-      - 🇺🇸 美国特殊|@ripaojiedian
-      - 🇺🇸 United States 351 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇺🇸 United States 63 @nodpai
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 中转 🇺🇸 United States 117 @nodpai
-      - 🇺🇸 United States 234 @nodpai
-      - 🇺🇸 United States 380 @nodpai
-      - 🇺🇸 United States 391 @nodpai
-      - 🇺🇸 United States 174 @nodpai
-      - 🇺🇸 United States 264 @nodpai
-      - 🇺🇸 United States 268 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 3
-      - 🇺🇸 中转 🇺🇸 United States 98 @nodpai
-      - 🇺🇸 United States 46 @nodpai
-      - 🇺🇸 United States 422 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 213 @nodpai
-      - 🇺🇸 United States 258 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 89 @nodpai
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国_Telegram@kxswa 4
-      - 🇺🇸 中转 🇺🇸 United States 119 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 34 @nodpai
-      - 🇺🇸 United States 291 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 112 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 5
-      - 🇺🇸 vip1 美国-12
-      - 🇺🇸 美国_Telegram@kxswa 6
-      - 🇺🇸 United States 261 @nodpai
-      - 🇺🇸 vip1 美国-04
-      - 🇺🇸 中转 🇺🇸 United States 114 @nodpai
       - 🇺🇸 vip1 美国-11
-      - 🇺🇸 美国_Telegram@kxswa 7
-      - 🇺🇸 United States 430 @nodpai
-      - 🇺🇸 United States 169 @nodpai
-      - 🇺🇸 United States 35 @nodpai
-      - 🇺🇸 United States 06 @nodpai
-      - 🇺🇸 United States 19 @nodpai
-      - 🇺🇸 United States 157 @nodpai
-      - 🇺🇸 United States 198 @nodpai
-      - 🇺🇸 United States 65 @nodpai
-      - 🇺🇸 United States 206 @nodpai
-      - 🇺🇸 United States 122 @nodpai
-      - 🇺🇸 United States 16 @nodpai
-      - 🇺🇸 United States 245 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 148 @nodpai
-      - 🇺🇸 中转 🇺🇸 United States 336 @nodpai
-      - 🇺🇸 United States 311 @nodpai
-      - 🇺🇸 United States 225 @nodpai
+      - 🇺🇸 United States 102 @nodpai
+      - 🇺🇸 United States 48 @nodpai
+      - 🇺🇸 United States 216 @nodpai
+      - 🇺🇸 United States 83 @nodpai
+      - 🇺🇸 United States 09 @nodpai
+      - 🇺🇸 「SCP」US-DP3-HTTP
+      - 🇺🇸 美国_Telegram@kxswa 2
       - 🇺🇸 United States 173 @nodpai
-      - 🇺🇸 United States 255 @nodpai
+      - 🇺🇸 United States 69 @nodpai
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇸 美国_Telegram@kxswa 3
+      - 🇺🇸 United States 178 @nodpai
+      - 🇺🇸 美国 - 大妮妮
+      - 🇺🇸 美国_Telegram@kxswa 4
+      - 🇺🇸 United States 107 @nodpai
+      - 🇺🇸 中转 🇺🇸 United States 65 @nodpai
+      - 🇺🇸 United States 206 @nodpai
+      - 🇺🇸 United States 226 @nodpai
+      - 🇺🇸 United States 194 @nodpai
+      - 🇺🇸 United States 24 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 5
+      - 🇺🇸 _US_美国
+      - 🇺🇸 United States 39 @nodpai
+      - 🇺🇸 United States 88 @nodpai
+      - 🇺🇸 United States 61 @nodpai
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 United States 02 @nodpai
       - 🇺🇸 United States 167 @nodpai
-      - 🇺🇸 United States 275 @nodpai
-      - 🇺🇸 United States 180 @nodpai
-      - 🇺🇸 「SCP」US-DP1-HTTP
-      - 🇺🇸 United States 142 @nodpai
-      - 🇺🇸 United States 135 @nodpai
-      - 🇺🇸 United States 369 @nodpai
-      - 🇺🇸 United States 368 @nodpai
-      - 🇺🇸 United States 354 @nodpai
-      - 🇺🇸 United States 246 @nodpai
-      - 🇺🇸 United States 38 @nodpai
-      - 🇺🇸 美国_Telegram@kxswa 8
-      - 🇺🇸 United States 152 @nodpai
-      - 🇺🇸 United States 433 @nodpai
-      - 🇺🇸 United States 301 @nodpai
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 United States 63 @nodpai
+      - 🇺🇸 「SCP」US-DP4-HTTP
+      - 🇺🇸 美国_Telegram@kxswa 6
+      - 🇺🇸 United States 73 @nodpai
+      - 🇺🇸 United States 250 @nodpai
+      - 🇺🇸 United States 190 @nodpai
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
+      - 🇺🇸 United States 116 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 7
+      - 🇺🇸 United States 217 @nodpai
+      - 🇺🇸 United States 124 @nodpai
+      - 🇺🇸 United States 26 @nodpai
       - 🇺🇸 United States 215 @nodpai
+      - 🇺🇸 美国_Telegram@kxswa 8
+      - 🇺🇸 United States 27 @nodpai
+      - 🇺🇸 United States 111 @nodpai
+      - 🇺🇸 United States 141 @nodpai
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国_Telegram@kxswa 9
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾 - 中妮妮
-      - 🇨🇳 中转 🇹🇼 Taiwan 06 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 41 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 11 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 50 @nodpai
-      - 🇨🇳 中转 🇹🇼 Taiwan 70 @nodpai
-      - 🇨🇳 vip1 台湾-01_1
-      - 🇨🇳 中转 🇹🇼 Taiwan 52 @nodpai
-      - 🇨🇳 Taiwan 23 @nodpai
+      - 🇨🇳 Taiwan 34 @nodpai
+      - 🇨🇳 中转 🇹🇼 Taiwan 38 @nodpai
+      - 🇨🇳 Taiwan 26 @nodpai
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇨🇳 台湾独家|@ripaojiedian
+      - 🇨🇳 Taiwan 28 @nodpai
+      - 🇨🇳 中转 🇹🇼 Taiwan 24 @nodpai
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 中转 🇸🇬 Singapore 41 @nodpai
-      - 🇸🇬 Singapore 16 @nodpai
       - 🇸🇬 Singapore 31 @nodpai
-      - 🇸🇬 Singapore 01 @nodpai
-      - 🇸🇬 中转 🇸🇬 Singapore 38 @nodpai
+      - 🇸🇬 Singapore 05 @nodpai
+      - 🇸🇬 Singapore 22 @nodpai
+      - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
+      - 🇸🇬 Singapore 37 @nodpai
+      - 🇸🇬 Singapore 21 @nodpai
+      - 🇸🇬 Singapore 36 @nodpai
+      - 🇸🇬 Singapore 02 @nodpai
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇰🇷 中转 🇰🇷 South Korea 01 @nodpai
+      - 🇰🇷 中转 🇰🇷 South Korea 02 @nodpai
       - 🇰🇷 韩国_Telegram@kxswa
-      - 🇰🇷 South Korea 03 @nodpai
   - name: 🎥 奈飞节点
     type: select
     proxies:
