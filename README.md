@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 3701`
+`Total number of merge nodes: 3703`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 460`
+`Total number of merge nodes: 462`
 
 - [Clash subscription](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `4`
-Updata：`2023-09-04 08:39:01`
+Updata：`2023-09-04 11:10:06`
 
 
 <details>
@@ -18713,14 +18713,22 @@ Updata：`2023-09-04 08:39:01`
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=aa395bdd98f5ae4ed814e786667076b7`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=aa395bdd98f5ae4ed814e786667076b7`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=cbd7c085d91ec687fdb039e06ee78964`
+
+
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=cbd7c085d91ec687fdb039e06ee78964`
 
 >Trial subscription：
 `https://oss.v2rayse.com/proxies/data/2023-09-04/SQOZ3OM.txt`
@@ -18732,19 +18740,19 @@ Updata：`2023-09-04 08:39:01`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=969aa9cc0ec1579f95bcd43fa1ae17d5`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=23fa346da42def8f58da0b843f327ed7`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=969aa9cc0ec1579f95bcd43fa1ae17d5`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=23fa346da42def8f58da0b843f327ed7`
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=8b3ba941a61947e96d5428ea1c29fe32`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f14161b6b7260de6d656aa6c28673ee2`
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=8b3ba941a61947e96d5428ea1c29fe32`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f14161b6b7260de6d656aa6c28673ee2`
 
 
 
