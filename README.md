@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `5`
-Updata：`2023-11-15 08:44:08`
+Updata：`2023-11-15 11:15:36`
 
 
 <details>
@@ -23745,8 +23745,18 @@ Updata：`2023-11-15 08:44:08`
 
 
 
+
+
+
+
+
+
+
+
+
+
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=70155bf51a110ccff42b9647e5ac1914`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=c90e3a7784cb4d2c54891a1940286117`
 
 
 
@@ -23755,7 +23765,7 @@ Updata：`2023-11-15 08:44:08`
 `https://oss.v2rayse.com/proxies/data/2023-11-14/YKrfSJm.txt`
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=70155bf51a110ccff42b9647e5ac1914`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=c90e3a7784cb4d2c54891a1940286117`
 
 
 
@@ -23764,28 +23774,28 @@ Updata：`2023-11-15 08:44:08`
 `https://oss.v2rayse.com/proxies/data/2023-11-14/YKrfSJm.txt`
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=8bd82dcae354f041b3059cb5f34f023c`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=906038440eb791599dbfdd7a04586979`
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=8bd82dcae354f041b3059cb5f34f023c`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=906038440eb791599dbfdd7a04586979`
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f69841446e390a89ebb2979dfb0b74b7`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=4842c8064876417fd3e26d8e304e9cbd`
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f69841446e390a89ebb2979dfb0b74b7`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=4842c8064876417fd3e26d8e304e9cbd`
 
 
 
 >Trial subscription：
-`https://xn--rhty98cjxd.xyz/api/v1/client/subscribe?token=4dd11386291ae8d321de1f249a63c430`
+`https://xn--rhty98cjxd.xyz/api/v1/client/subscribe?token=df8f6461cb5ec3ef993fd64147fdd7d4`
 
 >Trial subscription：
-`https://xn--rhty98cjxd.xyz/api/v1/client/subscribe?token=4dd11386291ae8d321de1f249a63c430`
+`https://xn--rhty98cjxd.xyz/api/v1/client/subscribe?token=df8f6461cb5ec3ef993fd64147fdd7d4`
 
 
 
