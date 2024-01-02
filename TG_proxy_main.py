@@ -13,25 +13,10 @@ import chardet
 
 #试用机场链接
 home_urls = (
-    'https://ekim.sbs',
-    'https://xn--rhty98cjxd.xyz',
-    'https://xunfan.co',                 #7天5g
     'https://xn--30rs3bu7r87f.com',
-    'https://dash.vmssr.co',
-    'https://lemontea.shop',
-    'https://xunfan.co',
-    'https://onlines7.cloud',
-    'http://v.vuex.eu.org',          #50G  15天
-    'https://pa.moodrfd1.best',      #40G  10天
-    'https://vvtestatiantian.top',   #500G 30天
-    'https://www.jwckk.top',         #30G  30天
     'https://seeworld.pro',          #5T   永久
-    'https://xn--4gqu8thxjfje.com',  #100G 永久
     'https://fastestcloud.xyz',      #2G   1天
-    'https://satou.moe',             #2G   1天
-    'https://dash.vmssr.co',         #1G   1天
     'https://www.ckcloud.xyz',       #1G   1天
-    'https://fly10086.top',          #1G   1天
 )
 #文件路径
 update_path = "./sub/"
