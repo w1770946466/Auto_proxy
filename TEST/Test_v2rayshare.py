@@ -9,14 +9,16 @@ try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
         res = requests.get(
-            "https://www.cfmem.com/search/label/free", headers=headers)
+            "https://v2rayshare.com/", headers=headers)
+        #print(res.text)
         article_url = re.search(
-            r"https?://www\.cfmem\.com/\d{4}/\d{2}/\S+v2rayclash-vpn.html", res.text).group()
+            r'https://v2rayshare.com/p/\d+\.html', res.text).group()
         #print(article_url)
         res = requests.get(article_url, headers=headers)
         sub_url = re.search(
-            r'>v2ray订阅链接&#65306;(.*?)</span>', res.text).groups()[0]
-        print(sub_url)
+            r'<p>https://v2rayshare.com/wp-content/uploads/(.*?)</p>', res.text).groups()[0]
+        sub_url = 'https://v2rayshare.com/wp-content/uploads/'+sub_url
+        #print(sub_url)
         try_sub.append(sub_url)
         e_sub.append(sub_url)
 except Exception as e:
