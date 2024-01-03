@@ -370,7 +370,8 @@ def get_kkzui():
     except Exception as e:
         print(e)
         print("获取kkzui.com失败！")
-    # ========== 抓取 cfmem.com 的节点 ==========
+# ========== 抓取 cfmem.com 的节点 ==========
+def get_cfmem():
     try:
         headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
         res = requests.get("https://www.cfmem.com/search/label/free",headers=headers)
@@ -384,7 +385,9 @@ def get_kkzui():
     except Exception as e:
         print(e)
         print("获取cfmem.com失败！")
-     # ========== 抓取 v2rayshare.com 的节点 ==========
+
+# ========== 抓取 v2rayshare.com 的节点 ==========
+def get_v2rayshare():
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
@@ -403,6 +406,7 @@ def get_kkzui():
     except Exception as e:
         print(e)
         print("获取v2rayshare.com失败！")
+    
         
     
 if __name__ == '__main__':
@@ -410,6 +414,8 @@ if __name__ == '__main__':
     get_sub_url()
     print("========== 开始获取网站订阅链接 ==========")
     get_kkzui()
+    get_cfmem()
+    get_v2rayshare()
     print("========== 开始获取频道订阅链接 ==========")
     for url in urls:
         #print(url, "开始获取......")
