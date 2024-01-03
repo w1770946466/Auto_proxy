@@ -367,7 +367,7 @@ def get_kkzui():
         #print(sub_url)
         e_sub.append(sub_url)
         print("获取kkzui.com完成！")
-     except Exception as e:
+    except Exception as e:
         print(e)
         print("获取kkzui.com失败！")
     # ========== 抓取 cfmem.com 的节点 ==========
