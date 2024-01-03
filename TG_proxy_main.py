@@ -357,16 +357,18 @@ def get_sub_url():
 def get_kkzui():
     # ========== 抓取 kkzui.com 的节点 ==========
     try:
-        headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
-        res = requests.get("https://kkzui.com/jd?orderby=modified",headers=headers)
-        article_url = re.search(r'<h2 class="item-heading"><a href="(https://kkzui.com/(.*?)\.html)"',res.text).groups()[0]
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get("https://kkzui.com/jd?orderby=modified", headers=headers)
+        article_url = re.search(r'class="media-content" href="(.*?)"', res.text).groups()[0]
         #print(article_url)
-        res = requests.get(article_url,headers=headers)
-        sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]
-        print(sub_url)
+        res = requests.get(article_url, headers=headers)
+        sub_url = re.search(
+            r'<strong>这是v2订阅地址：(.*?)</strong>', res.text).groups()[0]
+        #print(sub_url)
         e_sub.append(sub_url)
         print("获取kkzui.com完成！")
-    except:
+     except Exception as e:
+        print(e)
         print("获取kkzui.com失败！")
     # ========== 抓取 cfmem.com 的节点 ==========
     try:
@@ -376,12 +378,13 @@ def get_kkzui():
         #print(article_url)
         res = requests.get(article_url,headers=headers)
         sub_url = re.search(r'>v2ray订阅链接&#65306;(.*?)</span>',res.text).groups()[0]
-        print(sub_url)
+        #print(sub_url)
         try_sub.append(sub_url)
         e_sub.append(sub_url)
     except Exception as e:
         print(e)
-     # ========== 抓取 cfmem.com 的节点 ==========
+        print("获取cfmem.com失败！")
+     # ========== 抓取 v2rayshare.com 的节点 ==========
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
@@ -394,12 +397,12 @@ def get_kkzui():
         res = requests.get(article_url, headers=headers)
         sub_url = re.search(
             r'https://v2rayshare.com/wp-content/uploads/\d+/\d+/\d+.txt', res.text).groups()[0]
-        print(sub_url)
+        #print(sub_url)
         try_sub.append(sub_url)
         e_sub.append(sub_url)
     except Exception as e:
         print(e)
-
+        print("获取v2rayshare.com失败！")
         
     
 if __name__ == '__main__':
