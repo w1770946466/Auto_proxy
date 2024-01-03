@@ -18,8 +18,9 @@ try:
         sub_url = re.search(
             r'<p>https://v2rayshare.com/wp-content/uploads/(.*?)</p>', res.text).groups()[0]
         sub_url = 'https://v2rayshare.com/wp-content/uploads/'+sub_url
-        #print(sub_url)
+        print(sub_url)
         try_sub.append(sub_url)
         e_sub.append(sub_url)
+        print("获取v2rayshare.com成功！")
 except Exception as e:
         print(e)
