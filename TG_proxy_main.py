@@ -368,6 +368,7 @@ def get_kkzui():
         print("获取kkzui.com完成！")
     except:
         print("获取kkzui.com失败！")
+    # ========== 抓取 cfmem.com 的节点 ==========
     try:
         headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
         res = requests.get("https://www.cfmem.com/search/label/free",headers=headers)
