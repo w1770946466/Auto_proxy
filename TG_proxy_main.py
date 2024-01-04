@@ -409,7 +409,28 @@ def get_v2rayshare():
         print("获取v2rayshare.com完成！")
     except Exception as e:
         print("获取v2rayshare.com失败！",e)
-    
+
+# ========== 抓取 nodefree.org 的节点 ==========
+def get_nodefree():
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get(
+            "https://nodefree.org/", headers=headers)
+        #print(res.text)
+        article_url = re.search(
+            r'https://nodefree.org/p/\d+\.html', res.text).group()[0]
+        #print(article_url)
+        res = requests.get(article_url, headers=headers)
+        sub_url = re.search(
+            r'<p>https://nodefree.org/dy/(.*?)</p>', res.text).groups()[0]
+        sub_url = 'https://nodefree.org/dy/'+sub_url
+        #print(sub_url)
+        try_sub.append(sub_url)
+        e_sub.append(sub_url)
+        print("获取nodefree.org完成！")
+    except Exception as e:
+        print("获取nodefree.org失败！",e)
         
     
 if __name__ == '__main__':
@@ -419,6 +440,7 @@ if __name__ == '__main__':
     get_kkzui()
     get_cfmem()
     get_v2rayshare()
+    get_nodefree()
     print("========== 开始获取频道订阅链接 ==========")
     for url in urls:
         #print(url, "开始获取......")
