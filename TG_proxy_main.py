@@ -365,6 +365,7 @@ def get_kkzui():
         sub_url = re.search(
             r'<strong>这是v2订阅地址：(.*?)</strong>', res.text).groups()[0]
         #print(sub_url)
+        try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取kkzui.com完成！")
     except Exception as e:
@@ -382,6 +383,7 @@ def get_cfmem():
         #print(sub_url)
         try_sub.append(sub_url)
         e_sub.append(sub_url)
+        print("获取cfmem.com完成！")
     except Exception as e:
         print(e)
         print("获取cfmem.com失败！")
@@ -399,13 +401,14 @@ def get_v2rayshare():
         #print(article_url)
         res = requests.get(article_url, headers=headers)
         sub_url = re.search(
-            r'https://v2rayshare.com/wp-content/uploads/\d+/\d+/\d+.txt', res.text).groups()[0]
+            r'<p>https://v2rayshare.com/wp-content/uploads/(.*?)</p>', res.text).groups()[0]
+        sub_url = 'https://v2rayshare.com/wp-content/uploads/'+sub_url
         #print(sub_url)
         try_sub.append(sub_url)
         e_sub.append(sub_url)
+        print("获取v2rayshare.com完成！")
     except Exception as e:
-        print(e)
-        print("获取v2rayshare.com失败！")
+        print("获取v2rayshare.com失败！",e)
     
         
     
