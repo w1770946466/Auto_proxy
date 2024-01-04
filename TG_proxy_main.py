@@ -419,7 +419,7 @@ def get_nodefree():
             "https://nodefree.org/", headers=headers)
         #print(res.text)
         article_url = re.search(
-            r'https://nodefree.org/p/\d+\.html', res.text).group()[0]
+            r'https://nodefree.org/p/\d+\.html', res.text).group()
         #print(article_url)
         res = requests.get(article_url, headers=headers)
         sub_url = re.search(
