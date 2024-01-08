@@ -335,7 +335,7 @@ def get_sub_url():
                         f'{current_url}/api/v1/user/order/checkout', data=fan_data_n, headers=fan_header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={fan_res.json()["data"]["token"]}'
                     try_sub.append(subscription_url)
-                    e_sub.append(subscription_url)
+                    #e_sub.append(subscription_url)
                     print("add:"+subscription_url)
                 except Exception as result:
                     print(result)
@@ -346,7 +346,7 @@ def get_sub_url():
                         current_url+V2B_REG_REL_URL, data=form_data, headers=header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                     try_sub.append(subscription_url)
-                    e_sub.append(subscription_url)
+                    #e_sub.append(subscription_url)
                     print("add:"+subscription_url)
                 except Exception as e:
                     print("获取订阅失败",e)
@@ -365,7 +365,7 @@ def get_kkzui():
         sub_url = re.search(
             r'<strong>这是v2订阅地址：(.*?)</strong>', res.text).groups()[0]
         #print(sub_url)
-        try_sub.append(sub_url)
+        #try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取kkzui.com完成！")
     except Exception as e:
@@ -381,7 +381,7 @@ def get_cfmem():
         res = requests.get(article_url,headers=headers)
         sub_url = re.search(r'>v2ray订阅链接&#65306;(.*?)</span>',res.text).groups()[0]
         #print(sub_url)
-        try_sub.append(sub_url)
+        #try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取cfmem.com完成！")
     except Exception as e:
@@ -404,7 +404,7 @@ def get_v2rayshare():
             r'<p>https://v2rayshare.com/wp-content/uploads/(.*?)</p>', res.text).groups()[0]
         sub_url = 'https://v2rayshare.com/wp-content/uploads/'+sub_url
         #print(sub_url)
-        try_sub.append(sub_url)
+        #try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取v2rayshare.com完成！")
     except Exception as e:
@@ -426,7 +426,7 @@ def get_nodefree():
             r'<p>https://nodefree.org/dy/(.*?)</p>', res.text).groups()[0]
         sub_url = 'https://nodefree.org/dy/'+sub_url
         #print(sub_url)
-        try_sub.append(sub_url)
+        #try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取nodefree.org完成！")
     except Exception as e:
