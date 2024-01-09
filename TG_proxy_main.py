@@ -365,7 +365,7 @@ def get_kkzui():
         sub_url = re.search(
             r'<strong>这是v2订阅地址：(.*?)</strong>', res.text).groups()[0]
         #print(sub_url)
-        #try_sub.append(sub_url)
+        try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取kkzui.com完成！")
     except Exception as e:
@@ -381,7 +381,7 @@ def get_cfmem():
         res = requests.get(article_url,headers=headers)
         sub_url = re.search(r'>v2ray订阅链接&#65306;(.*?)</span>',res.text).groups()[0]
         #print(sub_url)
-        #try_sub.append(sub_url)
+        try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取cfmem.com完成！")
     except Exception as e:
@@ -404,7 +404,7 @@ def get_v2rayshare():
             r'<p>https://v2rayshare.com/wp-content/uploads/(.*?)</p>', res.text).groups()[0]
         sub_url = 'https://v2rayshare.com/wp-content/uploads/'+sub_url
         #print(sub_url)
-        #try_sub.append(sub_url)
+        try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取v2rayshare.com完成！")
     except Exception as e:
@@ -426,7 +426,7 @@ def get_nodefree():
             r'<p>https://nodefree.org/dy/(.*?)</p>', res.text).groups()[0]
         sub_url = 'https://nodefree.org/dy/'+sub_url
         #print(sub_url)
-        #try_sub.append(sub_url)
+        try_sub.append(sub_url)
         e_sub.append(sub_url)
         print("获取nodefree.org完成！")
     except Exception as e:
