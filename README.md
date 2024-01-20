@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2024-01-20 05:09:34`
+Updata：`2024-01-20 08:42:16`
 
 
 <details>
@@ -28854,6 +28854,18 @@ Updata：`2024-01-20 05:09:34`
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/01/20240119.txt`
 
@@ -28861,7 +28873,7 @@ Updata：`2024-01-20 05:09:34`
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=dad021f2a902d5c899da9a7f78bd0260`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=216bf1b0290f5dd95727d53c18c2caaf`
 
 
 >Trial subscription：
@@ -28870,32 +28882,32 @@ Updata：`2024-01-20 05:09:34`
 
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-01-18/5nit42a.txt`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=7ca8876300feda2c82b6e49d87b2550f`
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=dad021f2a902d5c899da9a7f78bd0260`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=216bf1b0290f5dd95727d53c18c2caaf`
 
-
-
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-01-18/5nit42a.txt`
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=2a4435a4244779da2dc4356bb0dc7ec2`
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=2a4435a4244779da2dc4356bb0dc7ec2`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=7ca8876300feda2c82b6e49d87b2550f`
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=06939f2bf4d6aa666aecb55996691a5f`
+
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f98e10aa0086dc39f244f094be0fb19b`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=06939f2bf4d6aa666aecb55996691a5f`
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f98e10aa0086dc39f244f094be0fb19b`
+`https://oss.v2rayse.com/proxies/data/2024-01-20/oSGOip3.txt`
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-01-20/oSGOip3.txt`
 
 
 
