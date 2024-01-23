@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2024-01-23 20:18:10`
+Updata：`2024-01-23 23:11:14`
 
 
 <details>
@@ -29186,6 +29186,36 @@ Updata：`2024-01-23 20:18:10`
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=0b622f4881ea617b23c9c08eb42e079d`
+
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-01-23/3tXj87K.txt`
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=0b622f4881ea617b23c9c08eb42e079d`
+
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=369aa6f8b896599e33cbf11ec9e2f85a`
+
 >Trial subscription：
 `https://oss.v2rayse.com/proxies/data/2024-01-23/3tXj87K.txt`
 
@@ -29193,25 +29223,7 @@ Updata：`2024-01-23 20:18:10`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=2d30dfd781e34eb897de42d067b8f0a8`
-
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-01-23/3tXj87K.txt`
-
-
-
->Trial subscription：
-`https://nodefree.org/dy/2024/01/20240123.txt`
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=2d30dfd781e34eb897de42d067b8f0a8`
-
-
-
-
->Trial subscription：
-`https://nodefree.org/dy/2024/01/20240123.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=369aa6f8b896599e33cbf11ec9e2f85a`
 
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/01/20240123.txt`
@@ -29223,19 +29235,19 @@ Updata：`2024-01-23 20:18:10`
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=cfacd65e9c85d3eab2e0c7e1229df50d`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=f7a60d147b7d55fbcd7e01931c3270f2`
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=cfacd65e9c85d3eab2e0c7e1229df50d`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=f7a60d147b7d55fbcd7e01931c3270f2`
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=d25d334b57dacfaef8521639ad52bcf1`
+`https://nodefree.org/dy/2024/01/20240123.txt`
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=d25d334b57dacfaef8521639ad52bcf1`
+`https://nodefree.org/dy/2024/01/20240123.txt`
 
 
 
