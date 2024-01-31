@@ -5,134 +5,64 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 _US_美国, server: 172.67.212.114, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
   - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦, server: 104.18.15.149, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
-  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗, server: www.crispyrainbow.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
-  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩, server: 173.249.197.176, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 101.89.154.94, port: 41082, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link01.top}}}
-  - {name: 🇺🇸 _US_美国 2, server: 104.21.83.10, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大, server: 162.159.200.3, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇨🇿 _CN_中国->🇨🇿_CZ_捷克, server: xibaozi.19890604.day, port: 10846, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇮🇪 _IE_爱尔兰, server: 63.32.156.81, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: 101.91.226.84, port: 46242, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: cache-us-1.db-link01.top}}}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.144.2.113, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.apple.com}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 3, server: xibaozi.19890604.day, port: 10838, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 3, server: 104.21.23.176, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
-  - {name: 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰, server: xibaozi.19890604.day, port: 10845, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2, server: 162.159.200.4, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇺🇸 _US_美国 4, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
-  - {name: 🇮🇳 _CN_中国->🇮🇳_IN_印度, server: 183.232.170.22, port: 30128, type: vmess, uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 4, server: 101.89.219.103, port: 58081, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-3.db-link01.top}}}
-  - {name: 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰, server: 151.248.104.91, port: 80, type: vmess, uuid: 75916879-adcf-45b3-98d8-54a2412470b5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sahar55.serveirc.com}}}
-  - {name: 🇺🇸 _US_美国 5, server: 34.217.80.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2, server: 162.159.200.7, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}}
   - {name: 🇨🇦 _CA_加拿大, server: 108.181.2.154, port: 33445, type: vmess, uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 5, server: xibaozi.19890604.day, port: 10847, type: trojan, password: a8c6bd90-e346-406b-beba-8f9d78f61df0, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3, server: 104.18.15.148, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇺🇸 _US_美国 6, server: 104.18.154.42, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4, server: 162.159.200.5, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 6, server: 120.233.45.104, port: 2095, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link02.top}}}
-  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2, server: pitcairn.ednovas.org, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 _DE_德国, server: 3.72.117.197, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2, server: 162.159.200.6, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
-  - {name: 🇺🇸 _US_美国 7, server: 35.87.209.22, port: 13489, type: vmess, uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3, server: 104.18.15.150, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
+  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩, server: pitcairn.ednovas.org, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3, server: 162.159.200.6, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4, server: 104.18.15.150, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
+  - {name: 🇺🇸 _US_美国, server: 104.18.154.42, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}}
+  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.144.2.113, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 101.89.154.94, port: 41082, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link01.top}}}
   - {name: 🇦🇹 _CN_中国->🇦🇹_AT_奥地利, server: xibaozi.19890604.day, port: 10848, type: trojan, password: aefccacc-d966-4cc7-b7af-91ce103dcd5c, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 7, server: xibaozi.19890604.day, port: 10850, type: trojan, password: a912c063-252d-4c4f-8944-1b3bd93bf9ba, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4, server: 162.159.200.7, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}}
-  - {name: 🇮🇪 _IE_爱尔兰 2, server: 34.247.125.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk}
-  - {name: 🇺🇸 _US_美国 8, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: 101.91.226.84, port: 46242, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: cache-us-1.db-link01.top}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 3, server: xibaozi.19890604.day, port: 10847, type: trojan, password: a8c6bd90-e346-406b-beba-8f9d78f61df0, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 4, server: xibaozi.19890604.day, port: 10850, type: trojan, password: a912c063-252d-4c4f-8944-1b3bd93bf9ba, skip-cert-verify: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 5, server: 120.233.45.104, port: 2095, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link02.top}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 6, server: 101.89.219.103, port: 58081, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-3.db-link01.top}}}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大, server: 104.18.15.148, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 _US_美国 2, server: 35.87.209.22, port: 13489, type: vmess, uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2, server: 162.159.200.5, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰, server: 151.248.104.91, port: 80, type: vmess, uuid: 75916879-adcf-45b3-98d8-54a2412470b5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sahar55.serveirc.com}}}
+  - {name: 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰, server: xibaozi.19890604.day, port: 10845, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇨🇿 _CN_中国->🇨🇿_CZ_捷克, server: xibaozi.19890604.day, port: 10846, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 7, server: xibaozi.19890604.day, port: 10838, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 8, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 9, server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
-  - {name: 🇺🇸 _US_美国 10, server: www.crispyrainbow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
-  - {name: 🇯🇵 vip1 日本-01, server: gdct001.theyydsnode.top, port: 20356, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇯🇵 vip1 日本-02, server: gdct003.theyydsnode.top, port: 20356, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇯🇵 vip1 日本-03, server: shcm002.theyydsnode.top, port: 20356, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇯🇵 vip1 日本-06, server: gdct001.theyydsnode.top, port: 37581, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇯🇵 vip1 日本-07, server: gdct003.theyydsnode.top, port: 37581, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇯🇵 vip1 日本-08, server: shcm002.theyydsnode.top, port: 37581, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-01, server: gdct001.theyydsnode.top, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-02, server: gdct003.theyydsnode.top, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-03, server: shcm002.theyydsnode.top, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-07, server: gdct001.theyydsnode.top, port: 14490, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-08, server: gdct003.theyydsnode.top, port: 14490, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-09, server: shcm002.theyydsnode.top, port: 14490, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-13, server: gdct001.theyydsnode.top, port: 46912, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-14, server: gdct003.theyydsnode.top, port: 46912, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-15, server: shcm002.theyydsnode.top, port: 46912, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-19, server: gdct001.theyydsnode.top, port: 15976, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-20, server: gdct003.theyydsnode.top, port: 15976, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇭🇰 vip1 香港-21, server: shcm002.theyydsnode.top, port: 15976, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇨🇳 vip1 台湾-01, server: gdct001.theyydsnode.top, port: 25074, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇨🇳 vip1 台湾-02, server: gdct003.theyydsnode.top, port: 25074, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇨🇳 vip1 台湾-03, server: shcm002.theyydsnode.top, port: 25074, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇨🇳 vip1 台湾-06, server: gdct001.theyydsnode.top, port: 35672, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇨🇳 vip1 台湾-07, server: gdct003.theyydsnode.top, port: 35672, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇨🇳 vip1 台湾-08, server: shcm002.theyydsnode.top, port: 35672, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇸🇬 vip1 新加坡-01, server: gdct001.theyydsnode.top, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇸🇬 vip1 新加坡-02, server: gdct003.theyydsnode.top, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇸🇬 vip1 新加坡-03, server: shcm002.theyydsnode.top, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇸🇬 vip1 新加坡-06, server: gdct001.theyydsnode.top, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇸🇬 vip1 新加坡-07, server: gdct003.theyydsnode.top, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇸🇬 vip1 新加坡-08, server: shcm002.theyydsnode.top, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇲🇾 vip1 马来西亚-01, server: gdct001.theyydsnode.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇲🇾 vip1 马来西亚-02, server: gdct003.theyydsnode.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇲🇾 vip1 马来西亚-03, server: shcm002.theyydsnode.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-01, server: gdct001.theyydsnode.top, port: 10598, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-02, server: gdct003.theyydsnode.top, port: 10598, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-03, server: shcm002.theyydsnode.top, port: 10598, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-06, server: gdct001.theyydsnode.top, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-07, server: gdct003.theyydsnode.top, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-08, server: shcm002.theyydsnode.top, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-11, server: gdct001.theyydsnode.top, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-12, server: gdct003.theyydsnode.top, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇺🇸 vip1 美国-13, server: shcm002.theyydsnode.top, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇻🇳 vip1 越南-01, server: gdct001.theyydsnode.top, port: 54295, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇻🇳 vip1 越南-02, server: gdct003.theyydsnode.top, port: 54295, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇻🇳 vip1 越南-03, server: shcm002.theyydsnode.top, port: 54295, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇮🇳 vip1 印度-01, server: gdct001.theyydsnode.top, port: 45852, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇮🇳 vip1 印度-02, server: gdct003.theyydsnode.top, port: 45852, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇮🇳 vip1 印度-03, server: shcm002.theyydsnode.top, port: 45852, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇦🇺 vip1 澳大利亚-01, server: gdct001.theyydsnode.top, port: 63640, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇦🇺 vip1 澳大利亚-02, server: gdct003.theyydsnode.top, port: 63640, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇦🇺 vip1 澳大利亚-03, server: shcm002.theyydsnode.top, port: 63640, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇹🇷 vip1 土耳其-01, server: gdct001.theyydsnode.top, port: 15762, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇹🇷 vip1 土耳其-02, server: gdct003.theyydsnode.top, port: 15762, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇹🇷 vip1 土耳其-03, server: shcm002.theyydsnode.top, port: 15762, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇩🇪 vip1 德国-01, server: gdct001.theyydsnode.top, port: 20943, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇩🇪 vip1 德国-02, server: gdct003.theyydsnode.top, port: 20943, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇩🇪 vip1 德国-03, server: shcm002.theyydsnode.top, port: 20943, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇬🇧 vip1 英国-01, server: gdct001.theyydsnode.top, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇬🇧 vip1 英国-02, server: gdct003.theyydsnode.top, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
-  - {name: 🇬🇧 vip1 英国-03, server: shcm002.theyydsnode.top, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 4f9e91d1-a4bd-459a-9f54-bbaaa7758136}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3, server: 162.159.200.4, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4, server: 162.159.200.3, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇮🇳 _CN_中国->🇮🇳_IN_印度, server: 183.232.170.22, port: 30128, type: vmess, uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 _DE_德国, server: 3.72.117.197, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
+  - {name: 🇺🇸 _US_美国 3, server: 34.217.80.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇮🇪 _IE_爱尔兰, server: 34.247.125.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk}
+  - {name: 🇮🇪 _IE_爱尔兰 2, server: 63.32.156.81, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 9, server: 101.89.154.94, port: 41082, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link01.top}}}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 10, server: 101.91.226.84, port: 46242, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: cache-us-1.db-link01.top}}}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 11, server: 101.89.219.103, port: 58081, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-3.db-link01.top}}}
   - {name: 🇨🇦 _CA_加拿大 2, server: 108.181.2.154, port: 33445, type: vmess, uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国 11, server: 34.217.80.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国 4, server: 34.217.80.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇮🇳 _CN_中国->🇮🇳_IN_印度 2, server: 183.232.170.22, port: 30128, type: vmess, uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 12, server: 120.233.45.104, port: 2095, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link02.top}}}
-  - {name: 🇺🇸 _US_美国 12, server: 35.87.209.22, port: 13489, type: vmess, uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇸 _US_美国 5, server: 35.87.209.22, port: 13489, type: vmess, uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: 🇩🇪 _DE_德国 2, server: 3.72.117.197, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false}
   - {name: 🇮🇪 _IE_爱尔兰 3, server: 63.32.156.81, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk, skip-cert-verify: false}
   - {name: 🇮🇪 _IE_爱尔兰 4, server: 34.247.125.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: false}
   - {name: 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2, server: xibaozi.19890604.day, port: 10846, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 13, server: 104.21.83.10, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
-  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3, server: pitcairn.ednovas.org, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国 14, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
-  - {name: 🇺🇸 _US_美国 15, server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
-  - {name: 🇺🇸 _US_美国 16, server: 172.67.212.114, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
-  - {name: 🇺🇸 _US_美国 17, server: www.crispyrainbow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
-  - {name: 🇺🇸 _US_美国 18, server: 104.21.23.176, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
-  - {name: 🇺🇸 _US_美国 19, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}}
-  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3, server: www.crispyrainbow.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
-  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4, server: 173.249.197.176, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
+  - {name: 🇺🇸 _US_美国 6, server: 104.21.83.10, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
+  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2, server: pitcairn.ednovas.org, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国 7, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
+  - {name: 🇺🇸 _US_美国 8, server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
+  - {name: 🇺🇸 _US_美国 9, server: 172.67.212.114, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
+  - {name: 🇺🇸 _US_美国 10, server: www.crispyrainbow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
+  - {name: 🇺🇸 _US_美国 11, server: 104.21.23.176, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
+  - {name: 🇺🇸 _US_美国 12, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗, server: www.crispyrainbow.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
+  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3, server: 173.249.197.176, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
   - {name: 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2, server: 151.248.104.91, port: 80, type: vmess, uuid: 75916879-adcf-45b3-98d8-54a2412470b5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sahar55.serveirc.com}}}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 13, server: xibaozi.19890604.day, port: 10847, type: trojan, password: a8c6bd90-e346-406b-beba-8f9d78f61df0, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 14, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 15, server: xibaozi.19890604.day, port: 10838, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 20, server: 104.18.154.42, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}}
+  - {name: 🇺🇸 _US_美国 13, server: 104.18.154.42, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}}
   - {name: 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2, server: xibaozi.19890604.day, port: 10845, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
   - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5, server: 104.18.15.149, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
   - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6, server: 162.159.200.7, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}}
@@ -145,36 +75,106 @@ proxies:
   - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8, server: 104.18.15.150, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
   - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7, server: 162.159.200.5, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
   - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8, server: 104.18.15.148, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 _US_美国 14, server: 172.67.212.114, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
   - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9, server: 104.18.15.149, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10, server: 162.159.200.7, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}}
-  - {name: 🇨🇦 _CA_加拿大 3, server: 108.181.2.154, port: 33445, type: vmess, uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5, server: pitcairn.ednovas.org, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11, server: 162.159.200.6, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12, server: 104.18.15.150, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
-  - {name: 🇺🇸 _US_美国 21, server: 104.18.154.42, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 3, server: 45.144.2.113, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3, server: www.crispyrainbow.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
+  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4, server: 173.249.197.176, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 17, server: 101.89.154.94, port: 41082, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link01.top}}}
-  - {name: 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3, server: xibaozi.19890604.day, port: 10848, type: trojan, password: aefccacc-d966-4cc7-b7af-91ce103dcd5c, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 18, server: 101.91.226.84, port: 46242, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: cache-us-1.db-link01.top}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 19, server: xibaozi.19890604.day, port: 10847, type: trojan, password: a8c6bd90-e346-406b-beba-8f9d78f61df0, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 20, server: xibaozi.19890604.day, port: 10850, type: trojan, password: a912c063-252d-4c4f-8944-1b3bd93bf9ba, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 21, server: 120.233.45.104, port: 2095, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link02.top}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 22, server: 101.89.219.103, port: 58081, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-3.db-link01.top}}}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9, server: 104.18.15.148, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇺🇸 _US_美国 22, server: 35.87.209.22, port: 13489, type: vmess, uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10, server: 162.159.200.5, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3, server: 151.248.104.91, port: 80, type: vmess, uuid: 75916879-adcf-45b3-98d8-54a2412470b5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sahar55.serveirc.com}}}
-  - {name: 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3, server: xibaozi.19890604.day, port: 10845, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 15, server: 104.21.83.10, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9, server: 162.159.200.3, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
   - {name: 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3, server: xibaozi.19890604.day, port: 10846, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 23, server: xibaozi.19890604.day, port: 10838, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 24, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11, server: 162.159.200.4, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12, server: 162.159.200.3, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇮🇪 _IE_爱尔兰 5, server: 63.32.156.81, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 18, server: 101.91.226.84, port: 46242, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: cache-us-1.db-link01.top}}}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 3, server: 45.144.2.113, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 19, server: xibaozi.19890604.day, port: 10838, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 16, server: 104.21.23.176, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.biz}}}
+  - {name: 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3, server: xibaozi.19890604.day, port: 10845, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10, server: 162.159.200.4, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 _US_美国 17, server: www.coldstone.club, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.coldstone.club}}}
   - {name: 🇮🇳 _CN_中国->🇮🇳_IN_印度 3, server: 183.232.170.22, port: 30128, type: vmess, uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 20, server: 101.89.219.103, port: 58081, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-3.db-link01.top}}}
+  - {name: 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3, server: 151.248.104.91, port: 80, type: vmess, uuid: 75916879-adcf-45b3-98d8-54a2412470b5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sahar55.serveirc.com}}}
+  - {name: 🇺🇸 _US_美国 18, server: 34.217.80.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇦 _CA_加拿大 3, server: 108.181.2.154, port: 33445, type: vmess, uuid: 7de8d7aa-ae4a-4d75-82f4-2e8b46fc0290, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 21, server: xibaozi.19890604.day, port: 10847, type: trojan, password: a8c6bd90-e346-406b-beba-8f9d78f61df0, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11, server: 104.18.15.148, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 _US_美国 19, server: 104.18.154.42, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.visaapp.top}}}
+  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12, server: 162.159.200.5, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 22, server: 120.233.45.104, port: 2095, type: vmess, uuid: 8c456efc-67d7-3190-8b75-5c879e133288, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: data-us-2.db-link02.top}}}
+  - {name: 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5, server: pitcairn.ednovas.org, port: 443, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false}
   - {name: 🇩🇪 _DE_德国 3, server: 3.72.117.197, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
-  - {name: 🇺🇸 _US_美国 23, server: 34.217.80.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇮🇪 _IE_爱尔兰 5, server: 34.247.125.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk}
-  - {name: 🇮🇪 _IE_爱尔兰 6, server: 63.32.156.81, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.miwan.co.uk}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10, server: 162.159.200.6, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
+  - {name: 🇺🇸 _US_美国 20, server: 35.87.209.22, port: 13489, type: vmess, uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11, server: 104.18.15.150, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.889611.com}}}
+  - {name: 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3, server: xibaozi.19890604.day, port: 10848, type: trojan, password: aefccacc-d966-4cc7-b7af-91ce103dcd5c, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 23, server: xibaozi.19890604.day, port: 10850, type: trojan, password: a912c063-252d-4c4f-8944-1b3bd93bf9ba, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12, server: 162.159.200.7, port: 80, type: vmess, uuid: df19a2b5-cb11-4347-ad8c-4afe58a872a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: er3.visaapp.top}}}
+  - {name: 🇮🇪 _IE_爱尔兰 6, server: 34.247.125.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk}
+  - {name: 🇺🇸 _US_美国 21, server: www.blueberrywindow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.blueberrywindow.online}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 24, server: xibaozi.19890604.day, port: 10837, type: trojan, password: 3547bfda-1009-42d4-8319-b027ad049347, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 22, server: 172.67.166.190, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
+  - {name: 🇺🇸 _US_美国 23, server: www.crispyrainbow.online, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.crispyrainbow.online}}}
+  - {name: 🇯🇵 vip1 日本-01, server: gdct001.theyydsnode.top, port: 20356, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇯🇵 vip1 日本-02, server: gdct003.theyydsnode.top, port: 20356, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇯🇵 vip1 日本-03, server: shcm002.theyydsnode.top, port: 20356, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇯🇵 vip1 日本-06, server: gdct001.theyydsnode.top, port: 37581, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇯🇵 vip1 日本-07, server: gdct003.theyydsnode.top, port: 37581, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇯🇵 vip1 日本-08, server: shcm002.theyydsnode.top, port: 37581, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-01, server: gdct001.theyydsnode.top, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-02, server: gdct003.theyydsnode.top, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-03, server: shcm002.theyydsnode.top, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-07, server: gdct001.theyydsnode.top, port: 14490, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-08, server: gdct003.theyydsnode.top, port: 14490, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-09, server: shcm002.theyydsnode.top, port: 14490, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-13, server: gdct001.theyydsnode.top, port: 46912, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-14, server: gdct003.theyydsnode.top, port: 46912, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-15, server: shcm002.theyydsnode.top, port: 46912, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-19, server: gdct001.theyydsnode.top, port: 15976, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-20, server: gdct003.theyydsnode.top, port: 15976, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇭🇰 vip1 香港-21, server: shcm002.theyydsnode.top, port: 15976, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇨🇳 vip1 台湾-01, server: gdct001.theyydsnode.top, port: 25074, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇨🇳 vip1 台湾-02, server: gdct003.theyydsnode.top, port: 25074, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇨🇳 vip1 台湾-03, server: shcm002.theyydsnode.top, port: 25074, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇨🇳 vip1 台湾-06, server: gdct001.theyydsnode.top, port: 35672, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇨🇳 vip1 台湾-07, server: gdct003.theyydsnode.top, port: 35672, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇨🇳 vip1 台湾-08, server: shcm002.theyydsnode.top, port: 35672, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇸🇬 vip1 新加坡-01, server: gdct001.theyydsnode.top, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇸🇬 vip1 新加坡-02, server: gdct003.theyydsnode.top, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇸🇬 vip1 新加坡-03, server: shcm002.theyydsnode.top, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇸🇬 vip1 新加坡-06, server: gdct001.theyydsnode.top, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇸🇬 vip1 新加坡-07, server: gdct003.theyydsnode.top, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇸🇬 vip1 新加坡-08, server: shcm002.theyydsnode.top, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇲🇾 vip1 马来西亚-01, server: gdct001.theyydsnode.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇲🇾 vip1 马来西亚-02, server: gdct003.theyydsnode.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇲🇾 vip1 马来西亚-03, server: shcm002.theyydsnode.top, port: 25881, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-01, server: gdct001.theyydsnode.top, port: 10598, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-02, server: gdct003.theyydsnode.top, port: 10598, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-03, server: shcm002.theyydsnode.top, port: 10598, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-06, server: gdct001.theyydsnode.top, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-07, server: gdct003.theyydsnode.top, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-08, server: shcm002.theyydsnode.top, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-11, server: gdct001.theyydsnode.top, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-12, server: gdct003.theyydsnode.top, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇺🇸 vip1 美国-13, server: shcm002.theyydsnode.top, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇻🇳 vip1 越南-01, server: gdct001.theyydsnode.top, port: 54295, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇻🇳 vip1 越南-02, server: gdct003.theyydsnode.top, port: 54295, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇻🇳 vip1 越南-03, server: shcm002.theyydsnode.top, port: 54295, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇮🇳 vip1 印度-01, server: gdct001.theyydsnode.top, port: 45852, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇮🇳 vip1 印度-02, server: gdct003.theyydsnode.top, port: 45852, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇮🇳 vip1 印度-03, server: shcm002.theyydsnode.top, port: 45852, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇦🇺 vip1 澳大利亚-01, server: gdct001.theyydsnode.top, port: 63640, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇦🇺 vip1 澳大利亚-02, server: gdct003.theyydsnode.top, port: 63640, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇦🇺 vip1 澳大利亚-03, server: shcm002.theyydsnode.top, port: 63640, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇹🇷 vip1 土耳其-01, server: gdct001.theyydsnode.top, port: 15762, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇹🇷 vip1 土耳其-02, server: gdct003.theyydsnode.top, port: 15762, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇹🇷 vip1 土耳其-03, server: shcm002.theyydsnode.top, port: 15762, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇩🇪 vip1 德国-01, server: gdct001.theyydsnode.top, port: 20943, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇩🇪 vip1 德国-02, server: gdct003.theyydsnode.top, port: 20943, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇩🇪 vip1 德国-03, server: shcm002.theyydsnode.top, port: 20943, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇬🇧 vip1 英国-01, server: gdct001.theyydsnode.top, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇬🇧 vip1 英国-02, server: gdct003.theyydsnode.top, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
+  - {name: 🇬🇧 vip1 英国-03, server: shcm002.theyydsnode.top, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 03461376-e9af-4f29-b24b-16844df31f4b}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -193,46 +193,116 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
-      - 🇺🇸 _US_美国 4
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
-      - 🇺🇸 _US_美国 5
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
-      - 🇩🇪 _DE_德国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇮🇪 _IE_爱尔兰 2
-      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 3
+      - 🇮🇪 _IE_爱尔兰
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
+      - 🇨🇦 _CA_加拿大 2
+      - 🇺🇸 _US_美国 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
+      - 🇺🇸 _US_美国 5
+      - 🇩🇪 _DE_德国 2
+      - 🇮🇪 _IE_爱尔兰 3
+      - 🇮🇪 _IE_爱尔兰 4
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
+      - 🇺🇸 _US_美国 13
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
+      - 🇮🇪 _IE_爱尔兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
+      - 🇺🇸 _US_美国 16
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
+      - 🇺🇸 _US_美国 17
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
+      - 🇺🇸 _US_美国 18
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
+      - 🇮🇪 _IE_爱尔兰 6
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
       - 🇯🇵 vip1 日本-01
       - 🇯🇵 vip1 日本-02
       - 🇯🇵 vip1 日本-03
@@ -293,122 +363,122 @@ proxy-groups:
       - 🇬🇧 vip1 英国-01
       - 🇬🇧 vip1 英国-02
       - 🇬🇧 vip1 英国-03
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
-      - 🇨🇦 _CA_加拿大 2
-      - 🇺🇸 _US_美国 11
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
-      - 🇺🇸 _US_美国 12
-      - 🇩🇪 _DE_德国 2
-      - 🇮🇪 _IE_爱尔兰 3
-      - 🇮🇪 _IE_爱尔兰 4
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
-      - 🇺🇸 _US_美国 20
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
-      - 🇨🇦 _CA_加拿大 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
-      - 🇺🇸 _US_美国 21
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国 23
-      - 🇮🇪 _IE_爱尔兰 5
-      - 🇮🇪 _IE_爱尔兰 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
-      - 🇺🇸 _US_美国 4
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
-      - 🇺🇸 _US_美国 5
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
-      - 🇩🇪 _DE_德国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇮🇪 _IE_爱尔兰 2
-      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 3
+      - 🇮🇪 _IE_爱尔兰
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
+      - 🇨🇦 _CA_加拿大 2
+      - 🇺🇸 _US_美国 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
+      - 🇺🇸 _US_美国 5
+      - 🇩🇪 _DE_德国 2
+      - 🇮🇪 _IE_爱尔兰 3
+      - 🇮🇪 _IE_爱尔兰 4
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
+      - 🇺🇸 _US_美国 13
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
+      - 🇮🇪 _IE_爱尔兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
+      - 🇺🇸 _US_美国 16
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
+      - 🇺🇸 _US_美国 17
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
+      - 🇺🇸 _US_美国 18
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
+      - 🇮🇪 _IE_爱尔兰 6
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
       - 🇯🇵 vip1 日本-01
       - 🇯🇵 vip1 日本-02
       - 🇯🇵 vip1 日本-03
@@ -469,122 +539,122 @@ proxy-groups:
       - 🇬🇧 vip1 英国-01
       - 🇬🇧 vip1 英国-02
       - 🇬🇧 vip1 英国-03
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
-      - 🇨🇦 _CA_加拿大 2
-      - 🇺🇸 _US_美国 11
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
-      - 🇺🇸 _US_美国 12
-      - 🇩🇪 _DE_德国 2
-      - 🇮🇪 _IE_爱尔兰 3
-      - 🇮🇪 _IE_爱尔兰 4
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
-      - 🇺🇸 _US_美国 20
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
-      - 🇨🇦 _CA_加拿大 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
-      - 🇺🇸 _US_美国 21
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国 23
-      - 🇮🇪 _IE_爱尔兰 5
-      - 🇮🇪 _IE_爱尔兰 6
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
-      - 🇺🇸 _US_美国 4
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
-      - 🇺🇸 _US_美国 5
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
-      - 🇩🇪 _DE_德国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇮🇪 _IE_爱尔兰 2
-      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 3
+      - 🇮🇪 _IE_爱尔兰
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
+      - 🇨🇦 _CA_加拿大 2
+      - 🇺🇸 _US_美国 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
+      - 🇺🇸 _US_美国 5
+      - 🇩🇪 _DE_德国 2
+      - 🇮🇪 _IE_爱尔兰 3
+      - 🇮🇪 _IE_爱尔兰 4
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
+      - 🇺🇸 _US_美国 13
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
+      - 🇮🇪 _IE_爱尔兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
+      - 🇺🇸 _US_美国 16
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
+      - 🇺🇸 _US_美国 17
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
+      - 🇺🇸 _US_美国 18
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
+      - 🇮🇪 _IE_爱尔兰 6
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
       - 🇯🇵 vip1 日本-01
       - 🇯🇵 vip1 日本-02
       - 🇯🇵 vip1 日本-03
@@ -645,76 +715,6 @@ proxy-groups:
       - 🇬🇧 vip1 英国-01
       - 🇬🇧 vip1 英国-02
       - 🇬🇧 vip1 英国-03
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
-      - 🇨🇦 _CA_加拿大 2
-      - 🇺🇸 _US_美国 11
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
-      - 🇺🇸 _US_美国 12
-      - 🇩🇪 _DE_德国 2
-      - 🇮🇪 _IE_爱尔兰 3
-      - 🇮🇪 _IE_爱尔兰 4
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
-      - 🇺🇸 _US_美国 20
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
-      - 🇨🇦 _CA_加拿大 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
-      - 🇺🇸 _US_美国 21
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国 23
-      - 🇮🇪 _IE_爱尔兰 5
-      - 🇮🇪 _IE_爱尔兰 6
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -722,46 +722,116 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
-      - 🇺🇸 _US_美国 4
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
-      - 🇺🇸 _US_美国 5
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
-      - 🇩🇪 _DE_德国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇮🇪 _IE_爱尔兰 2
-      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国 3
+      - 🇮🇪 _IE_爱尔兰
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
+      - 🇨🇦 _CA_加拿大 2
+      - 🇺🇸 _US_美国 4
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
+      - 🇺🇸 _US_美国 5
+      - 🇩🇪 _DE_德国 2
+      - 🇮🇪 _IE_爱尔兰 3
+      - 🇮🇪 _IE_爱尔兰 4
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
       - 🇺🇸 _US_美国 9
       - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
+      - 🇺🇸 _US_美国 13
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
+      - 🇺🇸 _US_美国 14
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
+      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
+      - 🇮🇪 _IE_爱尔兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
+      - 🇺🇸 _US_美国 16
+      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
+      - 🇺🇸 _US_美国 17
+      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
+      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
+      - 🇺🇸 _US_美国 18
+      - 🇨🇦 _CA_加拿大 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
+      - 🇮🇪 _IE_爱尔兰 6
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
+      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 23
       - 🇯🇵 vip1 日本-01
       - 🇯🇵 vip1 日本-02
       - 🇯🇵 vip1 日本-03
@@ -822,76 +892,6 @@ proxy-groups:
       - 🇬🇧 vip1 英国-01
       - 🇬🇧 vip1 英国-02
       - 🇬🇧 vip1 英国-03
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
-      - 🇨🇦 _CA_加拿大 2
-      - 🇺🇸 _US_美国 11
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
-      - 🇺🇸 _US_美国 12
-      - 🇩🇪 _DE_德国 2
-      - 🇮🇪 _IE_爱尔兰 3
-      - 🇮🇪 _IE_爱尔兰 4
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 2
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
-      - 🇺🇸 _US_美国 20
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 2
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 6
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
-      - 🇨🇦 _CA_加拿大 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
-      - 🇺🇸 _US_美国 21
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
-      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
-      - 🇺🇸 _US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
-      - 🇳🇱 _BH_巴林->🇳🇱_NL_荷兰 3
-      - 🇺🇦 _CN_中国->🇺🇦_UA_乌克兰 3
-      - 🇨🇿 _CN_中国->🇨🇿_CZ_捷克 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
-      - 🇮🇳 _CN_中国->🇮🇳_IN_印度 3
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国 23
-      - 🇮🇪 _IE_爱尔兰 5
-      - 🇮🇪 _IE_爱尔兰 6
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1108,66 +1108,47 @@ proxy-groups:
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2
       - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国
       - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
-      - 🇺🇸 _US_美国 4
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇺🇸 _US_美国 5
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 2
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 8
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇺🇸 vip1 美国-01
-      - 🇺🇸 vip1 美国-02
-      - 🇺🇸 vip1 美国-03
-      - 🇺🇸 vip1 美国-06
-      - 🇺🇸 vip1 美国-07
-      - 🇺🇸 vip1 美国-08
-      - 🇺🇸 vip1 美国-11
-      - 🇺🇸 vip1 美国-12
-      - 🇺🇸 vip1 美国-13
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 3
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 4
+      - 🇺🇸 _US_美国 3
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 11
-      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 4
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 12
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 _US_美国 11
       - 🇺🇸 _US_美国 12
-      - 🇺🇸 _US_美国 13
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗
       - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 3
-      - 🇺🇸 _US_美国 14
-      - 🇺🇸 _US_美国 15
-      - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _US_美国 19
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
-      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 2
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 13
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 15
-      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 13
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 5
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 6
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 16
@@ -1177,26 +1158,45 @@ proxy-groups:
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 8
       - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 7
       - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 8
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 9
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
-      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
-      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 3
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 4
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 17
+      - 🇺🇸 _US_美国 15
+      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 18
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 19
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 9
-      - 🇺🇸 _US_美国 22
+      - 🇺🇸 _US_美国 16
       - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 10
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 20
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 21
       - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 11
+      - 🇺🇸 _US_美国 19
       - 🇺🇸 _US_美国->🇨🇦_CA_加拿大 12
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 22
+      - 🇺🇸 _US_美国->🇵🇳_PN_皮特凯恩 5
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 10
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 11
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 23
+      - 🇺🇸 _US_美国->🇮🇷_IR_伊朗 4
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦 12
+      - 🇺🇸 _US_美国 21
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 24
+      - 🇺🇸 _US_美国 22
       - 🇺🇸 _US_美国 23
+      - 🇺🇸 vip1 美国-01
+      - 🇺🇸 vip1 美国-02
+      - 🇺🇸 vip1 美国-03
+      - 🇺🇸 vip1 美国-06
+      - 🇺🇸 vip1 美国-07
+      - 🇺🇸 vip1 美国-08
+      - 🇺🇸 vip1 美国-11
+      - 🇺🇸 vip1 美国-12
+      - 🇺🇸 vip1 美国-13
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
