@@ -5,81 +5,85 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾省新竹市 中华电信, server: b23.ntbq.dynu.net, port: 5681, type: vmess, uuid: 814879ae-a670-4423-be9d-f4cbf4923ada, alterId: 0, cipher: auto, tls: false}
-  - {name: RELAY-172.67.229.33-3058, server: 172.67.229.33, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}}
-  - {name: RELAY-172.67.229.37-5131, server: 172.67.229.37, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}}
-  - {name: 🇩🇪 德国-上海专线 BGP, server: lbsh.bnnodeservice.com, port: 34011, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇬🇧 _CN_中国->🇬🇧_GB_英国, server: lbhk.bnnodeservice.com, port: 32010, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.21.225.68, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: 104.21.225.7, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇬🇧 GB-212.102.53.196-1037, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇯🇵 日本 多线中继 03 1x, server: stream04.tdm-anime.moe, port: 19032, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: 104.21.237.69, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇭🇰 香港A, server: 183.237.20.153, port: 34602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇩🇪 _NL_荷兰->🇩🇪_DE_德国, server: 188.114.96.11, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇬🇧 GB-77.72.5.150-1066, server: 77.72.5.150, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 US-74.121.191.98-10597, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 4, server: 104.21.225.190, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 5, server: 104.21.225.223, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 142.93.130.99, port: 443, type: vmess, uuid: f0aec29d-9f86-4887-88d5-11a69044ec42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇷 _CN_中国->🇰🇷_KR_韩国, server: lbhk.bnnodeservice.com, port: 32005, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国, server: 104.16.159.9, port: 443, type: trojan, password: ce8b8b30ebba45f2a38dd608b85e8628, sni: bangladeshipatri.com, skip-cert-verify: true, network: ws, ws-opts: {path: 6b777a91, headers: {Host: bangladeshipatri.com}}}
-  - {name: 🇨🇳 台湾 02|HiNet|台北市|1.0, server: 221.131.165.182, port: 19977, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: www.alidns.com}}}
-  - {name: 🇪🇸 ES-176.120.74.142-1094, server: 176.120.74.142, port: 443, type: vmess, uuid: 75695f5a-b6af-44f4-9983-ae250b53ff9c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: internet.life.com.by}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: lbhk.bnnodeservice.com, port: 32028, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
-  - {name: 🇺🇸 US-38.54.104.184-0770, server: 38.54.104.184, port: 18808, type: ss, cipher: aes-256-gcm, password: wwq6Xo5gJ8}
-  - {name: 🇺🇸 _US_美国, server: 104.21.225.155, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: CO-190.120.231.45-1131, server: 190.120.231.45, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 US-38.75.136.135-2350, server: 38.75.136.135, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇯🇵 日本-上海专线 GCore, server: lbsh.bnnodeservice.com, port: 34022, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇬🇧 GB-13.41.131.136-1053, server: v1.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 6, server: 104.21.226.14, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇳🇱 NL-109.201.152.181-1055, server: 109.201.152.181, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: 🇺🇸 US-38.75.136.135-9376, server: 38.75.136.135, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: AT-212.113.106.243-1150, server: 212.113.106.243, port: 13022, type: ss, cipher: chacha20-ietf-poly1305, password: w5drAL7PfCIwQ2ycUuoDsV2Ls}
-  - {name: 🇬🇧 TG频道:@hkaa0|英国, server: 51.145.68.57, port: 13751, type: ss, cipher: chacha20-ietf-poly1305, password: KlJlXXe9KjQX4mh4xC05c9}
-  - {name: RELAY-104.31.16.28-3103, server: 104.31.16.28, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca4.tehme2.fun}}}
-  - {name: 🇺🇸 US-38.75.136.135-9303, server: 38.75.136.135, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 7, server: 104.21.233.47, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇭🇰 香港-广东专线 GCore, server: lbhk.bnnodeservice.com, port: 32027, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 2, server: 172.67.180.248, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.nahck.site}}}
-  - {name: MX-190.103.179.23-1127, server: 190.103.179.23, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: RELAY-172.66.46.215-1652, server: 172.66.46.215, port: 8443, type: vmess, uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: warp-sub.pages.dev}}}
-  - {name: 🇫🇷 FR-51.159.111.208-2250, server: 51.159.111.208, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 8, server: 104.21.230.51, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 9, server: 104.21.225.6, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 US-38.121.43.97-9181, server: 38.121.43.97, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇭🇰 香港 02|HKT-GT|尖沙咀区|1.0, server: 221.131.165.179, port: 19223, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: www.alidns.com}}}
-  - {name: 🇺🇸 US-38.75.137.9-2377, server: 38.75.137.9, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇰🇷 韩国 01|한국|SKcloud|釜山1.0, server: 221.131.165.179, port: 19248, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: kr0102.wakutls.com}}}
-  - {name: 🇨🇭 TG频道:@hkaa0|瑞士, server: unlk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 21852, type: trojan, password: 7ea8830e-3120-4973-a0b6-4c25219eadfc, sni: ip3691376078.mobgslb.tbcache.com, skip-cert-verify: true}
-  - {name: 🇯🇵 JP-154.47.20.240-1081, server: 154.47.20.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇸🇬 SG-202.79.171.239-1857, server: 202.79.171.239, port: 443, type: vmess, uuid: fb3583a3-7717-4fe5-9146-3301861f9f41, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: www.46130221.xyz}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 10, server: 104.21.224.1, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 美国-广东专线 BGP 2, server: lbhk.bnnodeservice.com, port: 32028, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇺🇸 US-80.92.205.112-1119, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇬🇧 TG频道:@hkaa0|英国 2, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c}
-  - {name: 🇰🇷 韩国-上海专线 VUKR, server: lbsh.bnnodeservice.com, port: 34005, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇩🇪 _NL_荷兰->🇩🇪_DE_德国 2, server: 188.114.96.113, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt4.ir}}}
-  - {name: 🇺🇸 US-38.75.136.21-2373, server: 38.75.136.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: RELAY-172.67.170.13-1756, server: 172.67.170.13, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: glweidf.sbs}}}
-  - {name: 🇮🇳 印度-上海专线 GCore, server: lbsh.bnnodeservice.com, port: 34024, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 多线中继 01 1x, server: stream04.tdm-anime.moe, port: 19030, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
-  - {name: CZ-94.131.97.10-5284, server: 94.131.97.10, port: 80, type: vmess, uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: internet.life.com.by}}}
-  - {name: 🇯🇵 日本 多线中继 02 1x, server: stream04.tdm-anime.moe, port: 19031, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
-  - {name: 🇯🇵 日本 05|GMOCloud|涉谷|1.0, server: 221.131.165.182, port: 19096, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: jpp5.wakutls.com}}}
-  - {name: 🇺🇸 US-38.75.136.21-1174, server: 38.75.136.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: www.velvetmountain.xyz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.xyz}}}
+  - {name: 🇨🇳 github.com/freefq - 广东省江门市移动 12, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+  - {name: 🇯🇵 _JP_日本->🇩🇪_DE_德国, server: 141.147.181.148, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}}
+  - {name: 🇺🇸 US-38.68.134.9-2335, server: 38.68.134.9, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: AT-185.180.12.81-1069, server: 185.180.12.81, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇫🇷 FR-195.154.185.174-1058, server: 195.154.185.174, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _US_美国, server: 104.18.15.150, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}}
   - {name: 🇭🇰 香港-广东专线 NeaRoute, server: lbhk.bnnodeservice.com, port: 32029, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: 101.89.154.94, port: 19979, type: vmess, uuid: 941f470e-34e8-3bb0-9b1e-b2c0b4fdb212, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /db00, headers: {Host: cache-hk-2.cn-db.top}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 11, server: 104.21.233.45, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇦🇺 澳大利亚-广东专线 VUAU, server: lbhk.bnnodeservice.com, port: 32012, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
-  - {name: 🇭🇰 HK-182.16.1.194-10470, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 32, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hrgdvpn.flycdnedc55.vip}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 12, server: 104.21.236.82, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇬🇧 GB-13.41.142.250-1043, server: jseyu.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 13, server: 104.21.225.147, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大, server: 162.159.200.5, port: 80, type: vmess, uuid: 91fe996b-5f1b-42b5-9554-a892be98bc31, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca3.889611.com}}}
+  - {name: 🇺🇸 US-38.75.136.21-9384, server: 38.75.136.21, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.21.232.41, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 US-205.134.180.145-1012, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d}
+  - {name: 🇺🇸 Large 美国04 | 倍率:1.5, server: mysql.accessconnect.cc, port: 1800, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: 104.21.224.21, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: 104.21.225.156, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: AT-212.113.106.243-1150, server: 212.113.106.243, port: 13022, type: ss, cipher: chacha20-ietf-poly1305, password: w5drAL7PfCIwQ2ycUuoDsV2Ls}
+  - {name: 🇺🇸 US-18.218.239.120-1015, server: 18.218.239.120, port: 36326, type: ss, cipher: chacha20-ietf-poly1305, password: H6cSTf8vDbVH1cpnrAxFj2}
+  - {name: 🇺🇸 _US_美国 2, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 4, server: 104.21.230.33, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇧🇷 巴西-广东专线 GCore 1, server: lbhk.bnnodeservice.com, port: 32016, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇬🇧 GB-212.102.53.195-1034, server: 212.102.53.195, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: lbsh.bnnodeservice.com, port: 34028, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
+  - {name: 🇯🇵 日本-上海专线 Akari, server: lbsh.bnnodeservice.com, port: 34036, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇨🇦 加拿大-上海专线 BGP, server: lbsh.bnnodeservice.com, port: 34039, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇨🇳 南极-上海专线 WARP, server: lbsh.bnnodeservice.com, port: 34041, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.154.62.22, port: 443, type: trojan, password: 5bae27f5-3b8e-48f3-b91f-30fc680ea78f, sni: lienquan.garena.vn, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 3, server: 89.116.180.179, port: 443, type: trojan, password: d2698cf9-c47e-455c-8384-12e642cbba15, sni: p6us4.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: /pq/us4, headers: {Host: p6us4.pqjc.buzz}}}
+  - {name: 🇺🇸 US-38.75.137.9-2375, server: 38.75.137.9, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇩🇪 DE-130.162.47.123-11288, server: 130.162.47.123, port: 6854, type: vmess, uuid: b5f7e932-f730-4ad2-b425-40977b9db332, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 Large 香港12 | 倍率:1.6, server: mysql.accessconnect.cc, port: 6012, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: TR-45.89.52.66-2180, server: 45.89.52.66, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+  - {name: 🇯🇵 日本-广东专线 GCore, server: lbhk.bnnodeservice.com, port: 32022, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇺🇸 US-23.165.104.186-1108, server: 23.165.104.186, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Ms96ocgN4v7egLXx1wgw9J}
+  - {name: TG频道:@hkaa0|中国, server: 112.28.208.10, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: RELAY-172.67.180.248-2171, server: 172.67.180.248, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.nahck.site}}}
+  - {name: CH-156.146.62.160-1067, server: 156.146.62.160, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 5, server: 104.21.225.96, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇭🇰 香港Test 海外用户直连, server: idc.wakuwakussl.com, port: 16790, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /soda, headers: {Host: cn.bing.com}}}
+  - {name: NO-185.90.61.153-1122, server: 185.90.61.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 US-80.92.205.112-1119, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 46.182.107.16, port: 41002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/271624282113, headers: {Host: www.42077230.xyz}}}
   - {name: 🇺🇸 美国-上海专线 DAOport, server: lbsh.bnnodeservice.com, port: 34031, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇬🇧 GB-13.41.142.250-1043, server: jseyu.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ}
+  - {name: 🇭🇰 Large 香港10 | 倍率:1.6, server: mysql.accessconnect.cc, port: 6010, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 6, server: 104.21.224.22, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: RELAY-104.21.46.66-0147, server: www.ywnouvbale.biz, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 7, server: 104.21.225.27, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇭🇰 香港-上海专线 HKT, server: lbsh.bnnodeservice.com, port: 34033, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇭🇰 HK-182.16.1.194-10468, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hrgdvpn.flycdnedc55.vip}}}
+  - {name: 🇰🇷 Large 韩国01 | 倍率:1.6, server: mysql.accessconnect.cc, port: 6101, type: ssr, cipher: aes-256-cfb, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: AT-212.113.106.243-1147, server: 212.113.106.243, port: 12949, type: ss, cipher: chacha20-ietf-poly1305, password: P2zxXPewlV3BlfqqYiSthvtLc}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 8, server: 104.21.238.93, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国 4, server: 104.21.225.165, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇪🇸 ES-5.188.181.201-1149, server: 5.188.181.201, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+  - {name: 🇸🇬 新加坡 03|Netflix解锁|1.0, server: 221.131.165.182, port: 18079, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: www.alidns.com}}}
+  - {name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心, server: 35.157.201.195, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 9, server: 104.21.225.147, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 10, server: 104.21.225.184, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: "%�\x11�%�P���JP-43.207.4.71-1082", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 11, server: 104.21.230.31, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇬🇧 GB-212.102.53.78-1030, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 12, server: 104.21.225.17, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国 5, server: 104.21.225.154, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 185.244.208.61, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国 6, server: 172.67.136.12, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.ywnouvbale.biz}}}
+  - {name: 🇭🇰 Large 香港19 | 倍率:1.6, server: mysql.accessconnect.cc, port: 6019, type: ssr, cipher: chacha20-ietf, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: 🇯🇵 日本 05|GMOCloud|涉谷|1.0, server: 221.131.165.182, port: 19096, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: jpp5.wakutls.com}}}
+  - {name: 🇸🇬 Large 新加坡10 | 倍率:1.5, server: mysql.accessconnect.cc, port: 3210, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: 🇭🇰 Large 香港01 | 倍率:1.8, server: mysql.accessconnect.cc, port: 6001, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: 🇨🇳 TW-103.159.206.35-0656, server: 103.159.206.35, port: 31945, type: vmess, uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇵🇱 PL-217.30.10.70-1073, server: 217.30.10.70, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA}
+  - {name: 🇩🇪 _NL_荷兰->🇩🇪_DE_德国, server: 188.114.96.113, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt4.ir}}}
+  - {name: 🇭🇰 Super 香港07  | IEPL | 倍率:2.3, server: oracle.accessconnect.cc, port: 7007, type: ssr, cipher: rc4-md5, password: di15PV, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 132326:GeEHwW, obfs-param: 4960d132326.www.gov.hk}
+  - {name: 🇺🇸 美国-上海专线 BGP 1, server: lbsh.bnnodeservice.com, port: 34001, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: 🇯🇵 JP-185.172.113.182-1140, server: 185.172.113.182, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇫🇷 _CN_中国->🇫🇷_FR_法国, server: lbsh.bnnodeservice.com, port: 34009, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 13, server: 104.21.229.46, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇧🇷 巴西-广东专线 GCore 2, server: lbhk.bnnodeservice.com, port: 32025, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: false}
+  - {name: RELAY-104.21.12.103-10443, server: ming2.kiwireich.com, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: ming2.kiwireich.com}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 14, server: 104.21.225.122, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: AR-190.103.176.29-1153, server: 190.103.176.29, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -98,243 +102,252 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇨🇳 台湾省新竹市 中华电信
-      - RELAY-172.67.229.33-3058
-      - RELAY-172.67.229.37-5131
-      - 🇩🇪 德国-上海专线 BGP
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇬🇧 GB-212.102.53.196-1037
-      - 🇯🇵 日本 多线中继 03 1x
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 香港A
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
-      - 🇬🇧 GB-77.72.5.150-1066
-      - 🇺🇸 US-74.121.191.98-10597
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇰🇷 _CN_中国->🇰🇷_KR_韩国
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇨🇳 台湾 02|HiNet|台北市|1.0
-      - 🇪🇸 ES-176.120.74.142-1094
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 US-38.54.104.184-0770
+      - 🇨🇳 github.com/freefq - 广东省江门市移动 12
+      - 🇯🇵 _JP_日本->🇩🇪_DE_德国
+      - 🇺🇸 US-38.68.134.9-2335
+      - AT-185.180.12.81-1069
+      - 🇫🇷 FR-195.154.185.174-1058
       - 🇺🇸 _US_美国
-      - CO-190.120.231.45-1131
-      - 🇺🇸 US-38.75.136.135-2350
-      - 🇯🇵 日本-上海专线 GCore
-      - 🇬🇧 GB-13.41.131.136-1053
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇳🇱 NL-109.201.152.181-1055
-      - 🇺🇸 US-38.75.136.135-9376
-      - AT-212.113.106.243-1150
-      - 🇬🇧 TG频道:@hkaa0|英国
-      - RELAY-104.31.16.28-3103
-      - 🇺🇸 US-38.75.136.135-9303
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇭🇰 香港-广东专线 GCore
-      - 🇺🇸 _US_美国 2
-      - MX-190.103.179.23-1127
-      - RELAY-172.66.46.215-1652
-      - 🇫🇷 FR-51.159.111.208-2250
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 US-38.121.43.97-9181
-      - 🇭🇰 香港 02|HKT-GT|尖沙咀区|1.0
-      - 🇺🇸 US-38.75.137.9-2377
-      - 🇰🇷 韩国 01|한국|SKcloud|釜山1.0
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇸🇬 SG-202.79.171.239-1857
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
-      - 🇺🇸 美国-广东专线 BGP 2
-      - 🇺🇸 US-80.92.205.112-1119
-      - 🇬🇧 TG频道:@hkaa0|英国 2
-      - 🇰🇷 韩国-上海专线 VUKR
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国 2
-      - 🇺🇸 US-38.75.136.21-2373
-      - RELAY-172.67.170.13-1756
-      - 🇮🇳 印度-上海专线 GCore
-      - 🇯🇵 日本 多线中继 01 1x
-      - CZ-94.131.97.10-5284
-      - 🇯🇵 日本 多线中继 02 1x
-      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
-      - 🇺🇸 US-38.75.136.21-1174
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港-广东专线 NeaRoute
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇦🇺 澳大利亚-广东专线 VUAU
-      - 🇭🇰 HK-182.16.1.194-10470
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇬🇧 GB-13.41.142.250-1043
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇺🇸 Large 美国04 | 倍率:1.5
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
+      - AT-212.113.106.243-1150
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇧🇷 巴西-广东专线 GCore 1
+      - 🇬🇧 GB-212.102.53.195-1034
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 日本-上海专线 Akari
+      - 🇨🇦 加拿大-上海专线 BGP
+      - 🇨🇳 南极-上海专线 WARP
+      - 亚太地区 V2CROSS.COM
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇩🇪 DE-130.162.47.123-11288
+      - 🇭🇰 Large 香港12 | 倍率:1.6
+      - TR-45.89.52.66-2180
+      - 🇯🇵 日本-广东专线 GCore
+      - 🇺🇸 US-23.165.104.186-1108
+      - TG频道:@hkaa0|中国
+      - RELAY-172.67.180.248-2171
+      - CH-156.146.62.160-1067
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇭🇰 香港Test 海外用户直连
+      - NO-185.90.61.153-1122
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇺🇸 美国-上海专线 DAOport
+      - 🇬🇧 GB-13.41.142.250-1043
+      - 🇭🇰 Large 香港10 | 倍率:1.6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - RELAY-104.21.46.66-0147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇭🇰 香港-上海专线 HKT
+      - 🇭🇰 HK-182.16.1.194-10468
+      - 🇰🇷 Large 韩国01 | 倍率:1.6
+      - AT-212.113.106.243-1147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇺🇸 _US_美国 4
+      - 🇪🇸 ES-5.188.181.201-1149
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
+      - 🇬🇧 GB-212.102.53.78-1030
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
+      - 🇺🇸 _US_美国 5
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 _US_美国 6
+      - 🇭🇰 Large 香港19 | 倍率:1.6
+      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
+      - 🇸🇬 Large 新加坡10 | 倍率:1.5
+      - 🇭🇰 Large 香港01 | 倍率:1.8
+      - 🇨🇳 TW-103.159.206.35-0656
+      - 🇵🇱 PL-217.30.10.70-1073
+      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
+      - 🇭🇰 Super 香港07  | IEPL | 倍率:2.3
+      - 🇺🇸 美国-上海专线 BGP 1
+      - 🇯🇵 JP-185.172.113.182-1140
+      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - 🇧🇷 巴西-广东专线 GCore 2
+      - RELAY-104.21.12.103-10443
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
+      - AR-190.103.176.29-1153
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾省新竹市 中华电信
-      - RELAY-172.67.229.33-3058
-      - RELAY-172.67.229.37-5131
-      - 🇩🇪 德国-上海专线 BGP
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇬🇧 GB-212.102.53.196-1037
-      - 🇯🇵 日本 多线中继 03 1x
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 香港A
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
-      - 🇬🇧 GB-77.72.5.150-1066
-      - 🇺🇸 US-74.121.191.98-10597
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇰🇷 _CN_中国->🇰🇷_KR_韩国
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇨🇳 台湾 02|HiNet|台北市|1.0
-      - 🇪🇸 ES-176.120.74.142-1094
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 US-38.54.104.184-0770
+      - 🇨🇳 github.com/freefq - 广东省江门市移动 12
+      - 🇯🇵 _JP_日本->🇩🇪_DE_德国
+      - 🇺🇸 US-38.68.134.9-2335
+      - AT-185.180.12.81-1069
+      - 🇫🇷 FR-195.154.185.174-1058
       - 🇺🇸 _US_美国
-      - CO-190.120.231.45-1131
-      - 🇺🇸 US-38.75.136.135-2350
-      - 🇯🇵 日本-上海专线 GCore
-      - 🇬🇧 GB-13.41.131.136-1053
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇳🇱 NL-109.201.152.181-1055
-      - 🇺🇸 US-38.75.136.135-9376
-      - AT-212.113.106.243-1150
-      - 🇬🇧 TG频道:@hkaa0|英国
-      - RELAY-104.31.16.28-3103
-      - 🇺🇸 US-38.75.136.135-9303
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇭🇰 香港-广东专线 GCore
-      - 🇺🇸 _US_美国 2
-      - MX-190.103.179.23-1127
-      - RELAY-172.66.46.215-1652
-      - 🇫🇷 FR-51.159.111.208-2250
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 US-38.121.43.97-9181
-      - 🇭🇰 香港 02|HKT-GT|尖沙咀区|1.0
-      - 🇺🇸 US-38.75.137.9-2377
-      - 🇰🇷 韩国 01|한국|SKcloud|釜山1.0
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇸🇬 SG-202.79.171.239-1857
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
-      - 🇺🇸 美国-广东专线 BGP 2
-      - 🇺🇸 US-80.92.205.112-1119
-      - 🇬🇧 TG频道:@hkaa0|英国 2
-      - 🇰🇷 韩国-上海专线 VUKR
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国 2
-      - 🇺🇸 US-38.75.136.21-2373
-      - RELAY-172.67.170.13-1756
-      - 🇮🇳 印度-上海专线 GCore
-      - 🇯🇵 日本 多线中继 01 1x
-      - CZ-94.131.97.10-5284
-      - 🇯🇵 日本 多线中继 02 1x
-      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
-      - 🇺🇸 US-38.75.136.21-1174
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港-广东专线 NeaRoute
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇦🇺 澳大利亚-广东专线 VUAU
-      - 🇭🇰 HK-182.16.1.194-10470
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇬🇧 GB-13.41.142.250-1043
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇺🇸 Large 美国04 | 倍率:1.5
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
+      - AT-212.113.106.243-1150
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇧🇷 巴西-广东专线 GCore 1
+      - 🇬🇧 GB-212.102.53.195-1034
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 日本-上海专线 Akari
+      - 🇨🇦 加拿大-上海专线 BGP
+      - 🇨🇳 南极-上海专线 WARP
+      - 亚太地区 V2CROSS.COM
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇩🇪 DE-130.162.47.123-11288
+      - 🇭🇰 Large 香港12 | 倍率:1.6
+      - TR-45.89.52.66-2180
+      - 🇯🇵 日本-广东专线 GCore
+      - 🇺🇸 US-23.165.104.186-1108
+      - TG频道:@hkaa0|中国
+      - RELAY-172.67.180.248-2171
+      - CH-156.146.62.160-1067
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇭🇰 香港Test 海外用户直连
+      - NO-185.90.61.153-1122
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇺🇸 美国-上海专线 DAOport
+      - 🇬🇧 GB-13.41.142.250-1043
+      - 🇭🇰 Large 香港10 | 倍率:1.6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - RELAY-104.21.46.66-0147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇭🇰 香港-上海专线 HKT
+      - 🇭🇰 HK-182.16.1.194-10468
+      - 🇰🇷 Large 韩国01 | 倍率:1.6
+      - AT-212.113.106.243-1147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇺🇸 _US_美国 4
+      - 🇪🇸 ES-5.188.181.201-1149
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
+      - 🇬🇧 GB-212.102.53.78-1030
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
+      - 🇺🇸 _US_美国 5
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 _US_美国 6
+      - 🇭🇰 Large 香港19 | 倍率:1.6
+      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
+      - 🇸🇬 Large 新加坡10 | 倍率:1.5
+      - 🇭🇰 Large 香港01 | 倍率:1.8
+      - 🇨🇳 TW-103.159.206.35-0656
+      - 🇵🇱 PL-217.30.10.70-1073
+      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
+      - 🇭🇰 Super 香港07  | IEPL | 倍率:2.3
+      - 🇺🇸 美国-上海专线 BGP 1
+      - 🇯🇵 JP-185.172.113.182-1140
+      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - 🇧🇷 巴西-广东专线 GCore 2
+      - RELAY-104.21.12.103-10443
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
+      - AR-190.103.176.29-1153
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾省新竹市 中华电信
-      - RELAY-172.67.229.33-3058
-      - RELAY-172.67.229.37-5131
-      - 🇩🇪 德国-上海专线 BGP
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇬🇧 GB-212.102.53.196-1037
-      - 🇯🇵 日本 多线中继 03 1x
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 香港A
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
-      - 🇬🇧 GB-77.72.5.150-1066
-      - 🇺🇸 US-74.121.191.98-10597
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇰🇷 _CN_中国->🇰🇷_KR_韩国
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇨🇳 台湾 02|HiNet|台北市|1.0
-      - 🇪🇸 ES-176.120.74.142-1094
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 US-38.54.104.184-0770
+      - 🇨🇳 github.com/freefq - 广东省江门市移动 12
+      - 🇯🇵 _JP_日本->🇩🇪_DE_德国
+      - 🇺🇸 US-38.68.134.9-2335
+      - AT-185.180.12.81-1069
+      - 🇫🇷 FR-195.154.185.174-1058
       - 🇺🇸 _US_美国
-      - CO-190.120.231.45-1131
-      - 🇺🇸 US-38.75.136.135-2350
-      - 🇯🇵 日本-上海专线 GCore
-      - 🇬🇧 GB-13.41.131.136-1053
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇳🇱 NL-109.201.152.181-1055
-      - 🇺🇸 US-38.75.136.135-9376
-      - AT-212.113.106.243-1150
-      - 🇬🇧 TG频道:@hkaa0|英国
-      - RELAY-104.31.16.28-3103
-      - 🇺🇸 US-38.75.136.135-9303
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇭🇰 香港-广东专线 GCore
-      - 🇺🇸 _US_美国 2
-      - MX-190.103.179.23-1127
-      - RELAY-172.66.46.215-1652
-      - 🇫🇷 FR-51.159.111.208-2250
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 US-38.121.43.97-9181
-      - 🇭🇰 香港 02|HKT-GT|尖沙咀区|1.0
-      - 🇺🇸 US-38.75.137.9-2377
-      - 🇰🇷 韩国 01|한국|SKcloud|釜山1.0
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇸🇬 SG-202.79.171.239-1857
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
-      - 🇺🇸 美国-广东专线 BGP 2
-      - 🇺🇸 US-80.92.205.112-1119
-      - 🇬🇧 TG频道:@hkaa0|英国 2
-      - 🇰🇷 韩国-上海专线 VUKR
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国 2
-      - 🇺🇸 US-38.75.136.21-2373
-      - RELAY-172.67.170.13-1756
-      - 🇮🇳 印度-上海专线 GCore
-      - 🇯🇵 日本 多线中继 01 1x
-      - CZ-94.131.97.10-5284
-      - 🇯🇵 日本 多线中继 02 1x
-      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
-      - 🇺🇸 US-38.75.136.21-1174
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港-广东专线 NeaRoute
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇦🇺 澳大利亚-广东专线 VUAU
-      - 🇭🇰 HK-182.16.1.194-10470
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇬🇧 GB-13.41.142.250-1043
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇺🇸 Large 美国04 | 倍率:1.5
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
+      - AT-212.113.106.243-1150
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇧🇷 巴西-广东专线 GCore 1
+      - 🇬🇧 GB-212.102.53.195-1034
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 日本-上海专线 Akari
+      - 🇨🇦 加拿大-上海专线 BGP
+      - 🇨🇳 南极-上海专线 WARP
+      - 亚太地区 V2CROSS.COM
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇩🇪 DE-130.162.47.123-11288
+      - 🇭🇰 Large 香港12 | 倍率:1.6
+      - TR-45.89.52.66-2180
+      - 🇯🇵 日本-广东专线 GCore
+      - 🇺🇸 US-23.165.104.186-1108
+      - TG频道:@hkaa0|中国
+      - RELAY-172.67.180.248-2171
+      - CH-156.146.62.160-1067
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇭🇰 香港Test 海外用户直连
+      - NO-185.90.61.153-1122
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇺🇸 美国-上海专线 DAOport
+      - 🇬🇧 GB-13.41.142.250-1043
+      - 🇭🇰 Large 香港10 | 倍率:1.6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - RELAY-104.21.46.66-0147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇭🇰 香港-上海专线 HKT
+      - 🇭🇰 HK-182.16.1.194-10468
+      - 🇰🇷 Large 韩国01 | 倍率:1.6
+      - AT-212.113.106.243-1147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇺🇸 _US_美国 4
+      - 🇪🇸 ES-5.188.181.201-1149
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
+      - 🇬🇧 GB-212.102.53.78-1030
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
+      - 🇺🇸 _US_美国 5
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 _US_美国 6
+      - 🇭🇰 Large 香港19 | 倍率:1.6
+      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
+      - 🇸🇬 Large 新加坡10 | 倍率:1.5
+      - 🇭🇰 Large 香港01 | 倍率:1.8
+      - 🇨🇳 TW-103.159.206.35-0656
+      - 🇵🇱 PL-217.30.10.70-1073
+      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
+      - 🇭🇰 Super 香港07  | IEPL | 倍率:2.3
+      - 🇺🇸 美国-上海专线 BGP 1
+      - 🇯🇵 JP-185.172.113.182-1140
+      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - 🇧🇷 巴西-广东专线 GCore 2
+      - RELAY-104.21.12.103-10443
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
+      - AR-190.103.176.29-1153
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -342,81 +355,84 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾省新竹市 中华电信
-      - RELAY-172.67.229.33-3058
-      - RELAY-172.67.229.37-5131
-      - 🇩🇪 德国-上海专线 BGP
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇬🇧 GB-212.102.53.196-1037
-      - 🇯🇵 日本 多线中继 03 1x
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 香港A
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
-      - 🇬🇧 GB-77.72.5.150-1066
-      - 🇺🇸 US-74.121.191.98-10597
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇰🇷 _CN_中国->🇰🇷_KR_韩国
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇨🇳 台湾 02|HiNet|台北市|1.0
-      - 🇪🇸 ES-176.120.74.142-1094
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 US-38.54.104.184-0770
+      - 🇨🇳 github.com/freefq - 广东省江门市移动 12
+      - 🇯🇵 _JP_日本->🇩🇪_DE_德国
+      - 🇺🇸 US-38.68.134.9-2335
+      - AT-185.180.12.81-1069
+      - 🇫🇷 FR-195.154.185.174-1058
       - 🇺🇸 _US_美国
-      - CO-190.120.231.45-1131
-      - 🇺🇸 US-38.75.136.135-2350
-      - 🇯🇵 日本-上海专线 GCore
-      - 🇬🇧 GB-13.41.131.136-1053
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇳🇱 NL-109.201.152.181-1055
-      - 🇺🇸 US-38.75.136.135-9376
-      - AT-212.113.106.243-1150
-      - 🇬🇧 TG频道:@hkaa0|英国
-      - RELAY-104.31.16.28-3103
-      - 🇺🇸 US-38.75.136.135-9303
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇭🇰 香港-广东专线 GCore
-      - 🇺🇸 _US_美国 2
-      - MX-190.103.179.23-1127
-      - RELAY-172.66.46.215-1652
-      - 🇫🇷 FR-51.159.111.208-2250
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 US-38.121.43.97-9181
-      - 🇭🇰 香港 02|HKT-GT|尖沙咀区|1.0
-      - 🇺🇸 US-38.75.137.9-2377
-      - 🇰🇷 韩国 01|한국|SKcloud|釜山1.0
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇸🇬 SG-202.79.171.239-1857
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
-      - 🇺🇸 美国-广东专线 BGP 2
-      - 🇺🇸 US-80.92.205.112-1119
-      - 🇬🇧 TG频道:@hkaa0|英国 2
-      - 🇰🇷 韩国-上海专线 VUKR
-      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国 2
-      - 🇺🇸 US-38.75.136.21-2373
-      - RELAY-172.67.170.13-1756
-      - 🇮🇳 印度-上海专线 GCore
-      - 🇯🇵 日本 多线中继 01 1x
-      - CZ-94.131.97.10-5284
-      - 🇯🇵 日本 多线中继 02 1x
-      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
-      - 🇺🇸 US-38.75.136.21-1174
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港-广东专线 NeaRoute
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇦🇺 澳大利亚-广东专线 VUAU
-      - 🇭🇰 HK-182.16.1.194-10470
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇬🇧 GB-13.41.142.250-1043
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇺🇸 Large 美国04 | 倍率:1.5
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
+      - AT-212.113.106.243-1150
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇧🇷 巴西-广东专线 GCore 1
+      - 🇬🇧 GB-212.102.53.195-1034
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 日本-上海专线 Akari
+      - 🇨🇦 加拿大-上海专线 BGP
+      - 🇨🇳 南极-上海专线 WARP
+      - 亚太地区 V2CROSS.COM
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇩🇪 DE-130.162.47.123-11288
+      - 🇭🇰 Large 香港12 | 倍率:1.6
+      - TR-45.89.52.66-2180
+      - 🇯🇵 日本-广东专线 GCore
+      - 🇺🇸 US-23.165.104.186-1108
+      - TG频道:@hkaa0|中国
+      - RELAY-172.67.180.248-2171
+      - CH-156.146.62.160-1067
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇭🇰 香港Test 海外用户直连
+      - NO-185.90.61.153-1122
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇺🇸 美国-上海专线 DAOport
+      - 🇬🇧 GB-13.41.142.250-1043
+      - 🇭🇰 Large 香港10 | 倍率:1.6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - RELAY-104.21.46.66-0147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇭🇰 香港-上海专线 HKT
+      - 🇭🇰 HK-182.16.1.194-10468
+      - 🇰🇷 Large 韩国01 | 倍率:1.6
+      - AT-212.113.106.243-1147
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇺🇸 _US_美国 4
+      - 🇪🇸 ES-5.188.181.201-1149
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
+      - 🇬🇧 GB-212.102.53.78-1030
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
+      - 🇺🇸 _US_美国 5
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 _US_美国 6
+      - 🇭🇰 Large 香港19 | 倍率:1.6
+      - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
+      - 🇸🇬 Large 新加坡10 | 倍率:1.5
+      - 🇭🇰 Large 香港01 | 倍率:1.8
+      - 🇨🇳 TW-103.159.206.35-0656
+      - 🇵🇱 PL-217.30.10.70-1073
+      - 🇩🇪 _NL_荷兰->🇩🇪_DE_德国
+      - 🇭🇰 Super 香港07  | IEPL | 倍率:2.3
+      - 🇺🇸 美国-上海专线 BGP 1
+      - 🇯🇵 JP-185.172.113.182-1140
+      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - 🇧🇷 巴西-广东专线 GCore 2
+      - RELAY-104.21.12.103-10443
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
+      - AR-190.103.176.29-1153
   - name: 📲 电报消息
     type: select
     proxies:
@@ -558,6 +574,7 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -603,89 +620,90 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港A
-      - 🇭🇰 香港-广东专线 GCore
-      - 🇭🇰 香港 02|HKT-GT|尖沙咀区|1.0
       - 🇭🇰 香港-广东专线 NeaRoute
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇭🇰 HK-182.16.1.194-10470
+      - 🇭🇰 Large 香港12 | 倍率:1.6
+      - 🇭🇰 香港Test 海外用户直连
+      - 🇭🇰 Large 香港10 | 倍率:1.6
+      - 🇭🇰 香港-上海专线 HKT
+      - 🇭🇰 HK-182.16.1.194-10468
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 Large 香港19 | 倍率:1.6
+      - 🇭🇰 Large 香港01 | 倍率:1.8
+      - 🇭🇰 Super 香港07  | IEPL | 倍率:2.3
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 多线中继 03 1x
-      - 🇯🇵 日本-上海专线 GCore
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇯🇵 日本 多线中继 01 1x
-      - 🇯🇵 日本 多线中继 02 1x
+      - 🇯🇵 _JP_日本->🇩🇪_DE_德国
+      - 🇯🇵 日本-上海专线 Akari
+      - 🇯🇵 日本-广东专线 GCore
       - 🇯🇵 日本 05|GMOCloud|涉谷|1.0
+      - 🇯🇵 JP-185.172.113.182-1140
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
+      - 🇺🇸 US-38.68.134.9-2335
+      - 🇺🇸 _US_美国
+      - 🇺🇸 US-38.75.136.21-9384
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇺🇸 Large 美国04 | 倍率:1.5
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇸 US-74.121.191.98-10597
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 US-38.54.104.184-0770
-      - 🇺🇸 _US_美国
-      - 🇺🇸 US-38.75.136.135-2350
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇺🇸 US-38.75.136.135-9376
-      - 🇺🇸 US-38.75.136.135-9303
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇺🇸 US-18.218.239.120-1015
       - 🇺🇸 _US_美国 2
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 US-38.121.43.97-9181
-      - 🇺🇸 US-38.75.137.9-2377
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
-      - 🇺🇸 美国-广东专线 BGP 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇺🇸 US-23.165.104.186-1108
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
       - 🇺🇸 US-80.92.205.112-1119
-      - 🇺🇸 US-38.75.136.21-2373
-      - 🇺🇸 US-38.75.136.21-1174
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-上海专线 DAOport
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国-上海专线 BGP 1
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇺🇸 美国-上海专线 DAOport
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾省新竹市 中华电信
-      - 🇨🇳 台湾 02|HiNet|台北市|1.0
+      - 🇨🇳 TW-103.159.206.35-0656
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 SG-202.79.171.239-1857
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇸🇬 Large 新加坡10 | 倍率:1.5
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 _CN_中国->🇰🇷_KR_韩国
-      - 🇰🇷 韩国 01|한국|SKcloud|釜山1.0
-      - 🇰🇷 韩国-上海专线 VUKR
+      - 🇰🇷 Large 韩国01 | 倍率:1.6
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
