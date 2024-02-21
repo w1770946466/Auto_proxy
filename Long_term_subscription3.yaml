@@ -5,92 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡 多线中继 01 1x, server: stream04.tdm-anime.moe, port: 19020, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
-  - {name: 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0, server: 221.131.165.179, port: 18048, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: cn.bing.com}}}
-  - {name: 🇺🇸 US-38.68.134.9-2335, server: 38.68.134.9, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇯🇵 JP-154.47.20.240-1081, server: 154.47.20.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇺🇸 US-167.88.61.175-1195, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: RELAY-172.67.68.246-0310, server: 172.67.68.246, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: vip2323.cfd, network: ws, ws-opts: {path: /, headers: {Host: vip2323.cfd}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.21.235.58, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇸🇬 新加坡SG-T, server: sg.mjt000.com, port: 443, type: trojan, password: c99074bd-bacd-48b5-9561-da069c481602, sni: sg.mjt000.com, skip-cert-verify: false}
-  - {name: RELAY-104.18.202.250-1455, server: 104.18.202.250, port: 2082, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev}}}
-  - {name: 🇭🇰 香港B, server: 183.233.187.193, port: 45055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: EC-179.49.5.114-1156, server: 179.49.5.114, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: RELAY-172.66.46.215-1652, server: 172.66.46.215, port: 8443, type: vmess, uuid: 06195b5b-3815-4a07-96f7-47eefbb1b143, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: warp-sub.pages.dev}}}
-  - {name: 🇺🇸 US-38.114.114.143-2324, server: 38.114.114.143, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇸🇬 新加坡 1, server: south.eeeeeef998.buzz, port: 14001, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
-  - {name: 🇵🇹 葡萄牙PT-T, server: pt.mjt000.com, port: 443, type: trojan, password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, sni: pt.mjt000.com, skip-cert-verify: false}
-  - {name: AT-212.113.106.243-1150, server: 212.113.106.243, port: 13022, type: ss, cipher: chacha20-ietf-poly1305, password: w5drAL7PfCIwQ2ycUuoDsV2Ls}
-  - {name: 🇨🇳 台湾 05|HiNet|WBGP|1.0, server: 183.236.48.151, port: 18075, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: www.alidns.com}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: 104.21.233.45, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇭🇰 香港HY-优化, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: 104.21.233.67, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: RELAY-172.67.168.34-0185, server: 172.67.168.34, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: marien.motorcycles, network: ws, ws-opts: {path: /, headers: {Host: marien.motorcycles}}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: yhnsb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb3.shabijichang.com}}}
-  - {name: 🇭🇰 香港wap-T, server: waphk.mjt000.com, port: 443, type: trojan, password: c99074bd-bacd-48b5-9561-da069c481602, sni: waphk.mjt000.com, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 4, server: 104.21.230.51, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 5, server: 104.21.225.92, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: RELAY-172.67.229.37-5131, server: 172.67.229.37, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}}
-  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 8.217.145.134, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true}}
-  - {name: 🇬🇧 GB-212.102.53.80-1038, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.21.225.204, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇫🇷 FR-51.159.111.208-2250, server: 51.159.111.208, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 US-38.75.136.21-9384, server: 38.75.136.21, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇸🇬 新加坡 5, server: south.eeeeeef998.buzz, port: 14005, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: 104.21.233.46, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: 104.21.225.96, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
   - {name: 🇪🇸 ES-5.188.181.201-2244, server: 5.188.181.201, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
-  - {name: 🇺🇸 美国LA-优化-GPT, server: yes.cnmjcn.net, port: 16648, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}}
-  - {name: 🇵🇱 PL-217.30.10.70-1073, server: 217.30.10.70, port: 9044, type: ss, cipher: aes-256-cfb, password: KBGjZYcy4SyRShmA}
-  - {name: 🇺🇸 US-38.68.134.9-8530, server: 38.68.134.9, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇸🇬 新加坡 多线中继 02 1x, server: stream04.tdm-anime.moe, port: 19021, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
-  - {name: 🇺🇦 UA-5.188.6.8-1083, server: 5.188.6.8, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇯🇵 日本-优化-GPT, server: yes.cnmjcn.net, port: 16617, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: yes.cnmjcn.net}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 6, server: 104.21.228.43, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇩🇪 DE-130.162.47.123-11290, server: 130.162.47.123, port: 6854, type: vmess, uuid: b5f7e932-f730-4ad2-b425-40977b9db332, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国LA-优化-GPT 2, server: yes.cnmjcn.net, port: 16648, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}}
-  - {name: RELAY-104.21.31.62-5315, server: obdii.cfd, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: obdii.cfd}}}
-  - {name: 🇸🇬 新加坡-优化, server: yes.cnmjcn.net, port: 16618, type: vmess, uuid: c99074bd-bacd-48b5-9561-da069c481602, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fe5be62428b65a2ce7a22d9997b4c9d0.mobgslb.tbcache.com}}}
-  - {name: "", server: xt.ylks01.eu.org, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}}
-  - {name: 🇺🇸 美国 03|AperNet|洛杉矶|1.0, server: 221.131.165.179, port: 18098, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: cn.bing.com}}}
-  - {name: 🇦🇺 澳大利亚AU-T, server: au.mjt000.com, port: 443, type: trojan, password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, sni: au.mjt000.com, skip-cert-verify: false}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.21.225.56, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: RELAY-172.67.229.38-3095, server: 172.67.229.38, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}}
-  - {name: 🇺🇸 美国LA-优化2-GPT, server: m.cnmjcn.com, port: 16648, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}}
-  - {name: 🇬🇧 英国 伦敦Amazon数据中心, server: 3.8.144.51, port: 17379, type: trojan, password: TNUIIpUU9eLQ, sni: www.myethblog.com}
-  - {name: ZA-41.203.4.34-1114, server: 41.203.4.34, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇳🇱 NL-172.233.51.96-2291, server: masting.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XlUFgoOqDlVqlZFD3Js0YA}
-  - {name: 🇸🇬 新加坡-优化 2, server: yes.cnmjcn.net, port: 16618, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}}
-  - {name: 🇺🇸 美国 2, server: east.eeeeeef998.buzz, port: 15002, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
-  - {name: 🇫🇷 _CN_中国->🇫🇷_FR_法国, server: lbsh.bnnodeservice.com, port: 34009, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
-  - {name: 🇺🇸 US-172.233.214.104-1008, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN}
-  - {name: RELAY-172.67.229.34-3094, server: 172.67.229.34, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 7, server: 104.21.230.33, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 8, server: 104.21.235.57, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 46.182.107.88, port: 41000, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/271624282113, headers: {Host: www.39803953.xyz}}}
-  - {name: 🇨🇳 TW-103.159.206.35-0656, server: 103.159.206.35, port: 31945, type: vmess, uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇮🇳 印度-优化, server: yes.cnmjcn.net, port: 16626, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}}
+  - {name: 🇭🇰 香港WAP-优化2, server: m.cnmjcn.com, port: 16622, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}}
+  - {name: 🇪🇸 ES-5.188.181.201-1146, server: 5.188.181.201, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+  - {name: 🇮🇱 以色列IL-T, server: il.mjt000.com, port: 443, type: trojan, password: c99074bd-bacd-48b5-9561-da069c481602, sni: il.mjt000.com, skip-cert-verify: false}
+  - {name: 🇫🇷 FR-195.154.169.198-1059, server: 195.154.169.198, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: TR-45.89.52.66-2181, server: 45.89.52.66, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 4, server: 104.21.225.45, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇨🇳 台湾WAP-T, server: hinet.mjt000.com, port: 443, type: trojan, password: e418915e-6459-414d-bc76-bbcbda621f0f, sni: hinet.mjt000.com, skip-cert-verify: false}
+  - {name: RELAY-172.67.68.246-0310, server: 172.67.68.246, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: vip2323.cfd, network: ws, ws-opts: {path: /, headers: {Host: vip2323.cfd}}}
+  - {name: 🇺🇸 US-38.75.137.9-2375, server: 38.75.137.9, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 多线中继 03 1x, server: stream04.tdm-anime.moe, port: 19042, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
+  - {name: 🇺🇸 US-156.146.38.163-0496, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇺🇸 US-18.218.239.120-1015, server: 18.218.239.120, port: 36326, type: ss, cipher: chacha20-ietf-poly1305, password: H6cSTf8vDbVH1cpnrAxFj2}
+  - {name: 🇺🇸 US-38.75.136.135-2347, server: 38.75.136.135, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: RELAY-172.67.196.112-1864, server: kellie.makeup, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: kellie.makeup}}}
+  - {name: 🇺🇸 US-80.92.205.112-1119, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 香港 多线中继 03 1x, server: stream04.tdm-anime.moe, port: 19012, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
+  - {name: 🇺🇸 TG频道:@hkaa0|美国, server: 169.197.141.186, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 5, server: 104.21.225.135, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇨🇭 TG频道:@hkaa0|瑞士, server: unlk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 21852, type: trojan, password: 7ea8830e-3120-4973-a0b6-4c25219eadfc, sni: ip3691376078.mobgslb.tbcache.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0, server: 221.131.165.179, port: 18048, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: cn.bing.com}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 6, server: 104.21.225.205, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 United States 01 @nodpai, server: hytron.io, port: 8080, type: vmess, uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hytron.io}}}
+  - {name: KE-62.12.116.66-1099, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 7, server: 104.21.231.55, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇯🇵 日本 多线中继 03 1x, server: stream04.tdm-anime.moe, port: 19032, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 8, server: 104.21.225.176, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇬🇧 GB-212.102.53.194-0494, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
   - {name: TR-45.89.52.66-2178, server: 45.89.52.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
-  - {name: TR-45.89.52.66-2180, server: 45.89.52.66, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
-  - {name: 🇺🇸 TG频道:@hkaa0|美国, server: a3.bcbot.in, port: 8880, type: vmess, uuid: ce9aadc8-8c6e-4867-d247-9a84b469ac27, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a3.bcbot.in}}}
-  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.38.178.233, port: 17365, type: trojan, password: fNy5xBS3FAHU, sni: www.myethblog.com}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 9, server: 104.21.225.211, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 TG频道:@hkaa0|美国 2, server: 38.68.134.202, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 10, server: 104.21.225.133, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 11, server: 104.21.225.22, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇰🇷 KR-152.67.218.38-1087, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 152.67.218.38}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.21.225.11, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇫🇷 FR-195.154.185.174-1058, server: 195.154.185.174, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: CL-190.120.230.9-1158, server: 190.120.230.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 12, server: 104.21.230.53, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 US-38.68.134.9-1196, server: 38.68.134.9, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇯🇵 日本 6, server: east.eeeeeef998.buzz, port: 13002, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
-  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 15.164.244.104, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 9, server: 104.21.225.92, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇨🇭 瑞士CH-T, server: ch.mjt000.com, port: 443, type: trojan, password: c99074bd-bacd-48b5-9561-da069c481602, sni: ch.mjt000.com, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 10, server: 104.21.225.157, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇨🇳 台湾-优化3, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 104.21.225.38, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 11, server: 104.21.225.133, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇻🇳 TG频道:@hkaa0|越南, server: vn7.5gsieutocdo.com, port: 443, type: trojan, password: c95357eb-2869-4511-8940-f0dc5e1ec9b1, sni: dl.kgvn.garenanow.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港 4, server: south.eeeeeef998.buzz, port: 11004, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇵🇹 葡萄牙PT-T, server: pt.mjt000.com, port: 443, type: trojan, password: c99074bd-bacd-48b5-9561-da069c481602, sni: pt.mjt000.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾|@ripaojiedian, server: 114.37.144.148, port: 5681, type: vmess, uuid: 3bd62189-aebd-4b36-9dfd-335457d70420, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 12, server: 104.21.231.37, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: lbhk.bnnodeservice.com, port: 32031, type: trojan, password: d9ee78a4-ddf6-4650-979e-4eb2c72fd11d, sni: cert.bitbyte.one, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 13, server: 104.21.225.160, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: FI-37.143.129.230-1075, server: 37.143.129.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇬🇧 英国UK-T, server: uk.mjt000.com, port: 443, type: trojan, password: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, sni: uk.mjt000.com, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 14, server: 104.21.233.68, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 15, server: 104.21.225.187, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 16, server: 104.21.229.26, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇨🇳 台湾-优化2, server: m.cnmjcn.com, port: 16616, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}}
+  - {name: 🇺🇸 US-38.75.136.135-1178, server: 38.75.136.135, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: RELAY-172.67.229.25-3074, server: 172.67.229.25, port: 2086, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca6.tehme100.fun}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 13, server: 104.22.51.162, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 14, server: 104.21.224.22, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 TG频道:@hkaa0|美国 3, server: 169.197.141.186, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ}
-  - {name: 🇯🇵 日本-优化-GPT 2, server: yes.cnmjcn.net, port: 16617, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: yes.cnmjcn.net}}}
-  - {name: CO-190.120.231.45-1131, server: 190.120.231.45, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇰🇷 韩国, server: east.eeeeeef998.buzz, port: 16101, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 多线中继 02 1x, server: stream04.tdm-anime.moe, port: 19041, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.21.225.7, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
-  - {name: 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心, server: 54.212.83.177, port: 17378, type: trojan, password: byRLJzDwSbTU, sni: www.myethblog.com}
+  - {name: 🇯🇵 日本 02|AzureCloud|大阪|1.0, server: 221.131.165.179, port: 20001, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: jpp2.wakutls.com}}}
+  - {name: 🇸🇬 新加坡 03|Netflix解锁|1.0, server: 221.131.165.182, port: 18079, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: www.alidns.com}}}
+  - {name: 🇰🇵 朝鲜KP-IPv6, server: kp.useipv6now.com, port: 2052, type: vmess, uuid: e418915e-6459-414d-bc76-bbcbda621f0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1e85f722cb07adf2cffdbcd31ee19a14.mobgslb.tbcache.com}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 17, server: 104.21.232.64, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 US-38.75.137.9-9716, server: 38.75.137.9, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇭🇰 香港 01|HKT-WTT|沙田区|1.0, server: 183.236.48.151, port: 23491, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: cn.bing.com}}}
+  - {name: 🇭🇰 香港 04|HKT-WTT|沙田区|1.0, server: 183.236.48.151, port: 31492, type: vmess, uuid: 796f2257-58f6-320b-9022-2655c256703e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /soda, headers: {Host: cn.bing.com}}}
+  - {name: 🇭🇰 香港wap-T, server: waphk.mjt000.com, port: 443, type: trojan, password: e418915e-6459-414d-bc76-bbcbda621f0f, sni: waphk.mjt000.com, skip-cert-verify: false}
+  - {name: 🇺🇸 US-205.134.180.145-1012, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d}
+  - {name: 🇰🇵 朝鲜-优化2, server: m.cnmjcn.com, port: 16628, type: vmess, uuid: bc90fb72-0b2c-45b4-a8d8-c9baa4eaaef3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: d26ed26c63ea4a2a7e17c68d100791e6.mobgslb.tbcache.com}}}
+  - {name: 🇨🇳 github.com/freefq - 广东省移动 7, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}}
+  - {name: "", server: xt.ylks01.eu.org, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}}
+  - {name: 🇸🇬 新加坡 1, server: south.eeeeeef998.buzz, port: 14001, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 18, server: 104.21.230.30, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 57.180.7.25, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇬🇧 英国UK-T 2, server: uk.mjt000.com, port: 443, type: trojan, password: e418915e-6459-414d-bc76-bbcbda621f0f, sni: uk.mjt000.com, skip-cert-verify: false}
+  - {name: 🇰🇷 KR-125.141.31.73-5376, server: p220.panda001.net, port: 53258, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}}
+  - {name: 🇭🇰 HK-182.16.1.194-10468, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hrgdvpn.flycdnedc55.vip}}}
+  - {name: PA-138.186.142.4-1163, server: 138.186.142.4, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: RELAY-104.21.33.32-0361, server: 104.21.33.32, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: nelly.homes, network: ws, ws-opts: {path: /, headers: {Host: nelly.homes}}}
+  - {name: 🇭🇰 香港 多线中继 01 1x, server: stream04.tdm-anime.moe, port: 19010, type: ss, cipher: aes-256-gcm, password: 1298b28e-4ac9-428e-9e24-02c689a2ff72}
+  - {name: 🇫🇷 法国, server: south.eeeeeef998.buzz, port: 16202, type: trojan, password: f47274d5-f44b-442e-add0-891d81d69df9, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 19, server: 104.21.230.53, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 20, server: 104.21.225.145, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -109,276 +104,261 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇸🇬 新加坡 多线中继 01 1x
-      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
-      - 🇺🇸 US-38.68.134.9-2335
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇺🇸 US-167.88.61.175-1195
-      - RELAY-172.67.68.246-0310
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇸🇬 新加坡SG-T
-      - RELAY-104.18.202.250-1455
-      - 🇭🇰 香港B
-      - EC-179.49.5.114-1156
-      - RELAY-172.66.46.215-1652
-      - 🇺🇸 US-38.114.114.143-2324
-      - 🇸🇬 新加坡 1
-      - 🇵🇹 葡萄牙PT-T
-      - AT-212.113.106.243-1150
-      - 🇨🇳 台湾 05|HiNet|WBGP|1.0
+      - 🇫🇷 FR-51.159.111.208-2250
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇸🇬 新加坡 5
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇭🇰 香港HY-优化
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - RELAY-172.67.168.34-0185
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - RELAY-172.67.229.37-5131
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.80-1038
       - 🇪🇸 ES-5.188.181.201-2244
-      - 🇺🇸 美国LA-优化-GPT
-      - 🇵🇱 PL-217.30.10.70-1073
-      - 🇺🇸 US-38.68.134.9-8530
-      - 🇸🇬 新加坡 多线中继 02 1x
-      - 🇺🇦 UA-5.188.6.8-1083
-      - 🇯🇵 日本-优化-GPT
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇩🇪 DE-130.162.47.123-11290
-      - 🇺🇸 美国LA-优化-GPT 2
-      - RELAY-104.21.31.62-5315
-      - 🇸🇬 新加坡-优化
-      - ""
-      - 🇺🇸 美国 03|AperNet|洛杉矶|1.0
-      - 🇦🇺 澳大利亚AU-T
-      - 🇺🇸 美国 CloudFlare节点 2
-      - RELAY-172.67.229.38-3095
-      - 🇺🇸 美国LA-优化2-GPT
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - ZA-41.203.4.34-1114
-      - 🇳🇱 NL-172.233.51.96-2291
-      - 🇸🇬 新加坡-优化 2
-      - 🇺🇸 美国 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
-      - 🇺🇸 US-172.233.214.104-1008
-      - RELAY-172.67.229.34-3094
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇨🇳 TW-103.159.206.35-0656
-      - 🇮🇳 印度-优化
-      - TR-45.89.52.66-2178
-      - TR-45.89.52.66-2180
+      - 🇭🇰 香港WAP-优化2
+      - 🇪🇸 ES-5.188.181.201-1146
+      - 🇮🇱 以色列IL-T
+      - 🇫🇷 FR-195.154.169.198-1059
+      - TR-45.89.52.66-2181
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇨🇳 台湾WAP-T
+      - RELAY-172.67.68.246-0310
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇺🇸 美国 多线中继 03 1x
+      - 🇺🇸 US-156.146.38.163-0496
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 US-38.75.136.135-2347
+      - RELAY-172.67.196.112-1864
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇭🇰 香港 多线中继 03 1x
       - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇨🇭 TG频道:@hkaa0|瑞士
+      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - 🇺🇸 United States 01 @nodpai
+      - KE-62.12.116.66-1099
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇯🇵 日本 多线中继 03 1x
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇬🇧 GB-212.102.53.194-0494
+      - TR-45.89.52.66-2178
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 TG频道:@hkaa0|美国 2
+      - 🇨🇭 瑞士CH-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇨🇳 台湾-优化3
+      - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇰🇷 KR-152.67.218.38-1087
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇫🇷 FR-195.154.185.174-1058
-      - CL-190.120.230.9-1158
+      - 🇻🇳 TG频道:@hkaa0|越南
+      - 🇭🇰 香港 4
+      - 🇵🇹 葡萄牙PT-T
+      - 🇨🇳 台湾|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇺🇸 US-38.68.134.9-1196
-      - 🇯🇵 日本 6
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - RELAY-172.67.229.25-3074
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - FI-37.143.129.230-1075
+      - 🇬🇧 英国UK-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
-      - 🇺🇸 TG频道:@hkaa0|美国 3
-      - 🇯🇵 日本-优化-GPT 2
-      - CO-190.120.231.45-1131
-      - 🇰🇷 韩国
-      - 🇺🇸 美国 多线中继 02 1x
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 15
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 16
+      - 🇨🇳 台湾-优化2
+      - 🇺🇸 US-38.75.136.135-1178
+      - RELAY-172.67.229.25-3074
+      - 🇯🇵 日本 02|AzureCloud|大阪|1.0
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇰🇵 朝鲜KP-IPv6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 17
+      - 🇺🇸 US-38.75.137.9-9716
+      - 🇭🇰 香港 01|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港 04|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港wap-T
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 github.com/freefq - 广东省移动 7
+      - ""
+      - 🇸🇬 新加坡 1
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 18
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇬🇧 英国UK-T 2
+      - 🇰🇷 KR-125.141.31.73-5376
+      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
+      - 🇭🇰 HK-182.16.1.194-10468
+      - PA-138.186.142.4-1163
+      - RELAY-104.21.33.32-0361
+      - 🇭🇰 香港 多线中继 01 1x
+      - 🇫🇷 法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 19
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 20
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 多线中继 01 1x
-      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
-      - 🇺🇸 US-38.68.134.9-2335
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇺🇸 US-167.88.61.175-1195
-      - RELAY-172.67.68.246-0310
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇸🇬 新加坡SG-T
-      - RELAY-104.18.202.250-1455
-      - 🇭🇰 香港B
-      - EC-179.49.5.114-1156
-      - RELAY-172.66.46.215-1652
-      - 🇺🇸 US-38.114.114.143-2324
-      - 🇸🇬 新加坡 1
-      - 🇵🇹 葡萄牙PT-T
-      - AT-212.113.106.243-1150
-      - 🇨🇳 台湾 05|HiNet|WBGP|1.0
+      - 🇫🇷 FR-51.159.111.208-2250
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇸🇬 新加坡 5
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇭🇰 香港HY-优化
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - RELAY-172.67.168.34-0185
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - RELAY-172.67.229.37-5131
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.80-1038
       - 🇪🇸 ES-5.188.181.201-2244
-      - 🇺🇸 美国LA-优化-GPT
-      - 🇵🇱 PL-217.30.10.70-1073
-      - 🇺🇸 US-38.68.134.9-8530
-      - 🇸🇬 新加坡 多线中继 02 1x
-      - 🇺🇦 UA-5.188.6.8-1083
-      - 🇯🇵 日本-优化-GPT
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇩🇪 DE-130.162.47.123-11290
-      - 🇺🇸 美国LA-优化-GPT 2
-      - RELAY-104.21.31.62-5315
-      - 🇸🇬 新加坡-优化
-      - ""
-      - 🇺🇸 美国 03|AperNet|洛杉矶|1.0
-      - 🇦🇺 澳大利亚AU-T
-      - 🇺🇸 美国 CloudFlare节点 2
-      - RELAY-172.67.229.38-3095
-      - 🇺🇸 美国LA-优化2-GPT
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - ZA-41.203.4.34-1114
-      - 🇳🇱 NL-172.233.51.96-2291
-      - 🇸🇬 新加坡-优化 2
-      - 🇺🇸 美国 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
-      - 🇺🇸 US-172.233.214.104-1008
-      - RELAY-172.67.229.34-3094
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇨🇳 TW-103.159.206.35-0656
-      - 🇮🇳 印度-优化
-      - TR-45.89.52.66-2178
-      - TR-45.89.52.66-2180
+      - 🇭🇰 香港WAP-优化2
+      - 🇪🇸 ES-5.188.181.201-1146
+      - 🇮🇱 以色列IL-T
+      - 🇫🇷 FR-195.154.169.198-1059
+      - TR-45.89.52.66-2181
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇨🇳 台湾WAP-T
+      - RELAY-172.67.68.246-0310
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇺🇸 美国 多线中继 03 1x
+      - 🇺🇸 US-156.146.38.163-0496
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 US-38.75.136.135-2347
+      - RELAY-172.67.196.112-1864
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇭🇰 香港 多线中继 03 1x
       - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇨🇭 TG频道:@hkaa0|瑞士
+      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - 🇺🇸 United States 01 @nodpai
+      - KE-62.12.116.66-1099
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇯🇵 日本 多线中继 03 1x
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇬🇧 GB-212.102.53.194-0494
+      - TR-45.89.52.66-2178
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 TG频道:@hkaa0|美国 2
+      - 🇨🇭 瑞士CH-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇨🇳 台湾-优化3
+      - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇰🇷 KR-152.67.218.38-1087
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇫🇷 FR-195.154.185.174-1058
-      - CL-190.120.230.9-1158
+      - 🇻🇳 TG频道:@hkaa0|越南
+      - 🇭🇰 香港 4
+      - 🇵🇹 葡萄牙PT-T
+      - 🇨🇳 台湾|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇺🇸 US-38.68.134.9-1196
-      - 🇯🇵 日本 6
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - RELAY-172.67.229.25-3074
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - FI-37.143.129.230-1075
+      - 🇬🇧 英国UK-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
-      - 🇺🇸 TG频道:@hkaa0|美国 3
-      - 🇯🇵 日本-优化-GPT 2
-      - CO-190.120.231.45-1131
-      - 🇰🇷 韩国
-      - 🇺🇸 美国 多线中继 02 1x
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 15
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 16
+      - 🇨🇳 台湾-优化2
+      - 🇺🇸 US-38.75.136.135-1178
+      - RELAY-172.67.229.25-3074
+      - 🇯🇵 日本 02|AzureCloud|大阪|1.0
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇰🇵 朝鲜KP-IPv6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 17
+      - 🇺🇸 US-38.75.137.9-9716
+      - 🇭🇰 香港 01|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港 04|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港wap-T
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 github.com/freefq - 广东省移动 7
+      - ""
+      - 🇸🇬 新加坡 1
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 18
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇬🇧 英国UK-T 2
+      - 🇰🇷 KR-125.141.31.73-5376
+      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
+      - 🇭🇰 HK-182.16.1.194-10468
+      - PA-138.186.142.4-1163
+      - RELAY-104.21.33.32-0361
+      - 🇭🇰 香港 多线中继 01 1x
+      - 🇫🇷 法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 19
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 20
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 多线中继 01 1x
-      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
-      - 🇺🇸 US-38.68.134.9-2335
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇺🇸 US-167.88.61.175-1195
-      - RELAY-172.67.68.246-0310
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇸🇬 新加坡SG-T
-      - RELAY-104.18.202.250-1455
-      - 🇭🇰 香港B
-      - EC-179.49.5.114-1156
-      - RELAY-172.66.46.215-1652
-      - 🇺🇸 US-38.114.114.143-2324
-      - 🇸🇬 新加坡 1
-      - 🇵🇹 葡萄牙PT-T
-      - AT-212.113.106.243-1150
-      - 🇨🇳 台湾 05|HiNet|WBGP|1.0
+      - 🇫🇷 FR-51.159.111.208-2250
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇸🇬 新加坡 5
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇭🇰 香港HY-优化
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - RELAY-172.67.168.34-0185
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - RELAY-172.67.229.37-5131
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.80-1038
       - 🇪🇸 ES-5.188.181.201-2244
-      - 🇺🇸 美国LA-优化-GPT
-      - 🇵🇱 PL-217.30.10.70-1073
-      - 🇺🇸 US-38.68.134.9-8530
-      - 🇸🇬 新加坡 多线中继 02 1x
-      - 🇺🇦 UA-5.188.6.8-1083
-      - 🇯🇵 日本-优化-GPT
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇩🇪 DE-130.162.47.123-11290
-      - 🇺🇸 美国LA-优化-GPT 2
-      - RELAY-104.21.31.62-5315
-      - 🇸🇬 新加坡-优化
-      - ""
-      - 🇺🇸 美国 03|AperNet|洛杉矶|1.0
-      - 🇦🇺 澳大利亚AU-T
-      - 🇺🇸 美国 CloudFlare节点 2
-      - RELAY-172.67.229.38-3095
-      - 🇺🇸 美国LA-优化2-GPT
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - ZA-41.203.4.34-1114
-      - 🇳🇱 NL-172.233.51.96-2291
-      - 🇸🇬 新加坡-优化 2
-      - 🇺🇸 美国 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
-      - 🇺🇸 US-172.233.214.104-1008
-      - RELAY-172.67.229.34-3094
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇨🇳 TW-103.159.206.35-0656
-      - 🇮🇳 印度-优化
-      - TR-45.89.52.66-2178
-      - TR-45.89.52.66-2180
+      - 🇭🇰 香港WAP-优化2
+      - 🇪🇸 ES-5.188.181.201-1146
+      - 🇮🇱 以色列IL-T
+      - 🇫🇷 FR-195.154.169.198-1059
+      - TR-45.89.52.66-2181
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇨🇳 台湾WAP-T
+      - RELAY-172.67.68.246-0310
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇺🇸 美国 多线中继 03 1x
+      - 🇺🇸 US-156.146.38.163-0496
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 US-38.75.136.135-2347
+      - RELAY-172.67.196.112-1864
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇭🇰 香港 多线中继 03 1x
       - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇨🇭 TG频道:@hkaa0|瑞士
+      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - 🇺🇸 United States 01 @nodpai
+      - KE-62.12.116.66-1099
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇯🇵 日本 多线中继 03 1x
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇬🇧 GB-212.102.53.194-0494
+      - TR-45.89.52.66-2178
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 TG频道:@hkaa0|美国 2
+      - 🇨🇭 瑞士CH-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇨🇳 台湾-优化3
+      - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇰🇷 KR-152.67.218.38-1087
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇫🇷 FR-195.154.185.174-1058
-      - CL-190.120.230.9-1158
+      - 🇻🇳 TG频道:@hkaa0|越南
+      - 🇭🇰 香港 4
+      - 🇵🇹 葡萄牙PT-T
+      - 🇨🇳 台湾|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇺🇸 US-38.68.134.9-1196
-      - 🇯🇵 日本 6
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - RELAY-172.67.229.25-3074
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - FI-37.143.129.230-1075
+      - 🇬🇧 英国UK-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
-      - 🇺🇸 TG频道:@hkaa0|美国 3
-      - 🇯🇵 日本-优化-GPT 2
-      - CO-190.120.231.45-1131
-      - 🇰🇷 韩国
-      - 🇺🇸 美国 多线中继 02 1x
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 15
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 16
+      - 🇨🇳 台湾-优化2
+      - 🇺🇸 US-38.75.136.135-1178
+      - RELAY-172.67.229.25-3074
+      - 🇯🇵 日本 02|AzureCloud|大阪|1.0
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇰🇵 朝鲜KP-IPv6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 17
+      - 🇺🇸 US-38.75.137.9-9716
+      - 🇭🇰 香港 01|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港 04|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港wap-T
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 github.com/freefq - 广东省移动 7
+      - ""
+      - 🇸🇬 新加坡 1
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 18
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇬🇧 英国UK-T 2
+      - 🇰🇷 KR-125.141.31.73-5376
+      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
+      - 🇭🇰 HK-182.16.1.194-10468
+      - PA-138.186.142.4-1163
+      - RELAY-104.21.33.32-0361
+      - 🇭🇰 香港 多线中继 01 1x
+      - 🇫🇷 法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 19
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 20
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -386,92 +366,87 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 多线中继 01 1x
-      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
-      - 🇺🇸 US-38.68.134.9-2335
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇺🇸 US-167.88.61.175-1195
-      - RELAY-172.67.68.246-0310
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇸🇬 新加坡SG-T
-      - RELAY-104.18.202.250-1455
-      - 🇭🇰 香港B
-      - EC-179.49.5.114-1156
-      - RELAY-172.66.46.215-1652
-      - 🇺🇸 US-38.114.114.143-2324
-      - 🇸🇬 新加坡 1
-      - 🇵🇹 葡萄牙PT-T
-      - AT-212.113.106.243-1150
-      - 🇨🇳 台湾 05|HiNet|WBGP|1.0
+      - 🇫🇷 FR-51.159.111.208-2250
+      - 🇺🇸 US-38.75.136.21-9384
+      - 🇸🇬 新加坡 5
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇭🇰 香港HY-优化
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - RELAY-172.67.168.34-0185
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - RELAY-172.67.229.37-5131
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.80-1038
       - 🇪🇸 ES-5.188.181.201-2244
-      - 🇺🇸 美国LA-优化-GPT
-      - 🇵🇱 PL-217.30.10.70-1073
-      - 🇺🇸 US-38.68.134.9-8530
-      - 🇸🇬 新加坡 多线中继 02 1x
-      - 🇺🇦 UA-5.188.6.8-1083
-      - 🇯🇵 日本-优化-GPT
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇩🇪 DE-130.162.47.123-11290
-      - 🇺🇸 美国LA-优化-GPT 2
-      - RELAY-104.21.31.62-5315
-      - 🇸🇬 新加坡-优化
-      - ""
-      - 🇺🇸 美国 03|AperNet|洛杉矶|1.0
-      - 🇦🇺 澳大利亚AU-T
-      - 🇺🇸 美国 CloudFlare节点 2
-      - RELAY-172.67.229.38-3095
-      - 🇺🇸 美国LA-优化2-GPT
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - ZA-41.203.4.34-1114
-      - 🇳🇱 NL-172.233.51.96-2291
-      - 🇸🇬 新加坡-优化 2
-      - 🇺🇸 美国 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - 🇫🇷 _CN_中国->🇫🇷_FR_法国
-      - 🇺🇸 US-172.233.214.104-1008
-      - RELAY-172.67.229.34-3094
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇨🇳 TW-103.159.206.35-0656
-      - 🇮🇳 印度-优化
-      - TR-45.89.52.66-2178
-      - TR-45.89.52.66-2180
+      - 🇭🇰 香港WAP-优化2
+      - 🇪🇸 ES-5.188.181.201-1146
+      - 🇮🇱 以色列IL-T
+      - 🇫🇷 FR-195.154.169.198-1059
+      - TR-45.89.52.66-2181
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇨🇳 台湾WAP-T
+      - RELAY-172.67.68.246-0310
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇺🇸 美国 多线中继 03 1x
+      - 🇺🇸 US-156.146.38.163-0496
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 US-38.75.136.135-2347
+      - RELAY-172.67.196.112-1864
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇭🇰 香港 多线中继 03 1x
       - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
+      - 🇨🇭 TG频道:@hkaa0|瑞士
+      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
+      - 🇺🇸 United States 01 @nodpai
+      - KE-62.12.116.66-1099
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
+      - 🇯🇵 日本 多线中继 03 1x
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
+      - 🇬🇧 GB-212.102.53.194-0494
+      - TR-45.89.52.66-2178
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 TG频道:@hkaa0|美国 2
+      - 🇨🇭 瑞士CH-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇨🇳 台湾-优化3
+      - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇰🇷 KR-152.67.218.38-1087
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇫🇷 FR-195.154.185.174-1058
-      - CL-190.120.230.9-1158
+      - 🇻🇳 TG频道:@hkaa0|越南
+      - 🇭🇰 香港 4
+      - 🇵🇹 葡萄牙PT-T
+      - 🇨🇳 台湾|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇺🇸 US-38.68.134.9-1196
-      - 🇯🇵 日本 6
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - RELAY-172.67.229.25-3074
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
+      - FI-37.143.129.230-1075
+      - 🇬🇧 英国UK-T
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
-      - 🇺🇸 TG频道:@hkaa0|美国 3
-      - 🇯🇵 日本-优化-GPT 2
-      - CO-190.120.231.45-1131
-      - 🇰🇷 韩国
-      - 🇺🇸 美国 多线中继 02 1x
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 15
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 16
+      - 🇨🇳 台湾-优化2
+      - 🇺🇸 US-38.75.136.135-1178
+      - RELAY-172.67.229.25-3074
+      - 🇯🇵 日本 02|AzureCloud|大阪|1.0
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
+      - 🇰🇵 朝鲜KP-IPv6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 17
+      - 🇺🇸 US-38.75.137.9-9716
+      - 🇭🇰 香港 01|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港 04|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港wap-T
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇰🇵 朝鲜-优化2
+      - 🇨🇳 github.com/freefq - 广东省移动 7
+      - ""
+      - 🇸🇬 新加坡 1
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 18
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇬🇧 英国UK-T 2
+      - 🇰🇷 KR-125.141.31.73-5376
+      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
+      - 🇭🇰 HK-182.16.1.194-10468
+      - PA-138.186.142.4-1163
+      - RELAY-104.21.33.32-0361
+      - 🇭🇰 香港 多线中继 01 1x
+      - 🇫🇷 法国
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 19
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 20
   - name: 📲 电报消息
     type: select
     proxies:
@@ -613,6 +588,7 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -658,96 +634,95 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港B
-      - 🇭🇰 香港HY-优化
+      - 🇭🇰 香港WAP-优化2
+      - 🇭🇰 香港 多线中继 03 1x
+      - 🇭🇰 香港 4
+      - 🇭🇰 香港 01|HKT-WTT|沙田区|1.0
+      - 🇭🇰 香港 04|HKT-WTT|沙田区|1.0
       - 🇭🇰 香港wap-T
-      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 HK-182.16.1.194-10468
+      - 🇭🇰 香港 多线中继 01 1x
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 JP-154.47.20.240-1081
-      - 🇯🇵 日本-优化-GPT
-      - 🇯🇵 日本 6
-      - 🇯🇵 日本-优化-GPT 2
+      - 🇯🇵 日本 多线中继 03 1x
+      - 🇯🇵 日本 02|AzureCloud|大阪|1.0
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
-      - 🇺🇸 US-38.68.134.9-2335
-      - 🇺🇸 US-167.88.61.175-1195
       - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 US-38.114.114.143-2324
+      - 🇺🇸 US-38.75.136.21-9384
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
+      - 🇺🇸 US-38.75.137.9-2375
+      - 🇺🇸 美国 多线中继 03 1x
+      - 🇺🇸 US-156.146.38.163-0496
+      - 🇺🇸 US-18.218.239.120-1015
+      - 🇺🇸 US-38.75.136.135-2347
+      - 🇺🇸 US-80.92.205.112-1119
+      - 🇺🇸 TG频道:@hkaa0|美国
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇺🇸 美国LA-优化-GPT
-      - 🇺🇸 US-38.68.134.9-8530
+      - 🇺🇸 美国 01|NATOLAB|洛杉矶|1.0
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 6
-      - 🇺🇸 美国LA-优化-GPT 2
-      - 🇺🇸 美国 03|AperNet|洛杉矶|1.0
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国LA-优化2-GPT
-      - 🇺🇸 美国 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - 🇺🇸 US-172.233.214.104-1008
+      - 🇺🇸 United States 01 @nodpai
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 7
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 8
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇺🇸 美国 Amazon EC2服务器
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 9
-      - 🇺🇸 TG频道:@hkaa0|美国 2
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 10
+      - 🇺🇸 美国|@ripaojiedian
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 11
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 12
-      - 🇺🇸 US-38.68.134.9-1196
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 13
       - 🇺🇸 _US_美国->🇩🇪_DE_德国 14
-      - 🇺🇸 TG频道:@hkaa0|美国 3
-      - 🇺🇸 美国 多线中继 02 1x
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 15
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 16
+      - 🇺🇸 US-38.75.136.135-1178
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 17
+      - 🇺🇸 US-38.75.137.9-9716
+      - 🇺🇸 US-205.134.180.145-1012
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 18
+      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 19
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 20
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾 05|HiNet|WBGP|1.0
-      - 🇨🇳 TW-103.159.206.35-0656
+      - 🇨🇳 台湾WAP-T
+      - 🇨🇳 台湾-优化3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇨🇳 台湾-优化2
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 多线中继 01 1x
-      - 🇸🇬 新加坡SG-T
+      - 🇸🇬 新加坡 5
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
       - 🇸🇬 新加坡 1
-      - 🇸🇬 新加坡 多线中继 02 1x
-      - 🇸🇬 新加坡-优化
-      - 🇸🇬 新加坡-优化 2
-      - 🇸🇬 狮城特殊|@ripaojiedian
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 KR-152.67.218.38-1087
-      - 🇰🇷 韩国
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 KR-125.141.31.73-5376
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - DIRECT
+      - 🇸🇬 新加坡 03|Netflix解锁|1.0
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
