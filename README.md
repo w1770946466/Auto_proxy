@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2024-03-04 20:22:33`
+Updata：`2024-03-04 23:11:40`
 
 
 <details>
@@ -33050,8 +33050,20 @@ Updata：`2024-03-04 20:22:33`
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-03-04/Fr7GL0a.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=96feda222110bbde21689fe3c807e555`
 
 
 
@@ -33061,12 +33073,12 @@ Updata：`2024-03-04 20:22:33`
 
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-03-04/Fr7GL0a.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=96feda222110bbde21689fe3c807e555`
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=588682879a334973b3a1e22afa749759`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=5e1374e76c12b5cbabdeae0cde5821b0`
 
 >Trial subscription：
 `https://nodefree.org/dy/2024/03/20240304.txt`
@@ -33075,31 +33087,31 @@ Updata：`2024-03-04 20:22:33`
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=588682879a334973b3a1e22afa749759`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=5e1374e76c12b5cbabdeae0cde5821b0`
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=215a6d332e038e98f600840c47af7e3e`
-
-
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=215a6d332e038e98f600840c47af7e3e`
-
-
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=d37d2a88295c9fd37fdce7ffb7ffe52a`
-
-
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=d37d2a88295c9fd37fdce7ffb7ffe52a`
+`https://v2rayshare.com/wp-content/uploads/2024/03/20240304.txt`
 
 
 
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/03/20240304.txt`
 
+
 >Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/03/20240304.txt`
+`https://oss.v2rayse.com/proxies/data/2024-03-04/Fr7GL0a.txt`
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-03-04/Fr7GL0a.txt`
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f1d5bd3452af4af148b4166759ea1367`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=f1d5bd3452af4af148b4166759ea1367`
 
 
 
