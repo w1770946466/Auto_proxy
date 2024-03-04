@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 666`
+`Total number of merge nodes: 668`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 78`
+`Total number of merge nodes: 80`
 
 - [Clash subscription](https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2024-03-04 18:37:45`
+Updata：`2024-03-04 20:22:33`
 
 
 <details>
@@ -33038,8 +33038,14 @@ Updata：`2024-03-04 18:37:45`
 
 
 
->Trial subscription：
-`https://nodefree.org/dy/2024/03/20240304.txt`
+
+
+
+
+
+
+
+
 
 
 
@@ -33048,46 +33054,52 @@ Updata：`2024-03-04 18:37:45`
 `https://oss.v2rayse.com/proxies/data/2024-03-04/Fr7GL0a.txt`
 
 
+
+
 >Trial subscription：
 `https://nodefree.org/dy/2024/03/20240304.txt`
 
-
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=33efbfd23d5e783b56a7b822360c839b`
 
 >Trial subscription：
 `https://oss.v2rayse.com/proxies/data/2024-03-04/Fr7GL0a.txt`
 
 
 
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=588682879a334973b3a1e22afa749759`
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=33efbfd23d5e783b56a7b822360c839b`
+`https://nodefree.org/dy/2024/03/20240304.txt`
+
+
+
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=605d67ca33f6e2ccfd02f08015782f27`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=588682879a334973b3a1e22afa749759`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=215a6d332e038e98f600840c47af7e3e`
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=605d67ca33f6e2ccfd02f08015782f27`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=215a6d332e038e98f600840c47af7e3e`
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=d37d2a88295c9fd37fdce7ffb7ffe52a`
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=d37d2a88295c9fd37fdce7ffb7ffe52a`
+
 
 
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/03/20240304.txt`
 
-
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/03/20240304.txt`
-
-
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=8268c986f6d8b84b3ed2553a3a57b9f6`
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=8268c986f6d8b84b3ed2553a3a57b9f6`
 
 
 
