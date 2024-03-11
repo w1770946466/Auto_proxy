@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2024-03-12 02:11:55`
+Updata：`2024-03-12 05:09:16`
 
 
 <details>
@@ -33746,32 +33746,27 @@ Updata：`2024-03-12 02:11:55`
 
 
 
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=5b1db32f3618d78132c744f907a0ae54`
+
+
+
+
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=0e9c6e07450fe1b691434e71d4f5c928`
-
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=5b1db32f3618d78132c744f907a0ae54`
-
-
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=44aad092b77398f01f16766f4388d649`
-
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=0e9c6e07450fe1b691434e71d4f5c928`
+`https://v2rayshare.com/wp-content/uploads/2024/03/20240311.txt`
 
 
 
 
 >Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=44aad092b77398f01f16766f4388d649`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=7d49bbba9414fb78743e09f267bf28e0`
+
 
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/03/20240311.txt`
@@ -33779,7 +33774,24 @@ Updata：`2024-03-12 02:11:55`
 
 
 >Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/03/20240311.txt`
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=8fe7c2df0a7991565fbe3ee30bf1352b`
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=7d49bbba9414fb78743e09f267bf28e0`
+
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=8fe7c2df0a7991565fbe3ee30bf1352b`
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-03-11/ua9aHoU.txt`
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-03-11/ua9aHoU.txt`
 
 
 >Trial subscription：
@@ -33792,10 +33804,10 @@ Updata：`2024-03-12 02:11:55`
 
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-03-11/ua9aHoU.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=eb3dd1bef0b6eac03470fb84e0ffa88c`
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-03-11/ua9aHoU.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=eb3dd1bef0b6eac03470fb84e0ffa88c`
 
 
 
